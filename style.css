@@ -1,3 +1,7 @@
+body, html {
+    height: 100%;
+}
+
 .construction {
     background-image: url("/img/construction.png");
     background-size:cover;

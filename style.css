@@ -1,5 +1,6 @@
 body, html {
     height: 100%;
+    overflow: hidden;
 }
 
 .construction {
@@ -9,4 +10,5 @@ body, html {
     background-repeat: no-repeat;
     background-color: #1C83BA;
     height: 100%;
+    overflow: hidden;
 }

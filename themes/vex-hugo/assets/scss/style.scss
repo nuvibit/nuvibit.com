@@ -469,6 +469,16 @@ figure.profile:hover img {
 }
 
 @media only screen and (max-width: 990px) {
+  .footer-logo {
+    -ms-flex: 0 0 41.666667% !important;
+    flex: 0 0 41.666667% !important;
+    max-width: 41.666667% !important;
+  }
+  .footer-links {
+    -ms-flex: 0 0 58.333333% !important;
+    flex: 0 0 58.333333% !important;
+    max-width: 58.333333% !important;
+  }
   .about-row {
     padding: 0 !important;
   }
@@ -485,7 +495,27 @@ figure.profile:hover img {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .portrait {
+    max-width: 70% !important;
+  }
+  .footer-logo {
+    -ms-flex: none !important;
+    flex: none !important;
+    max-width: none !important;
+  }
+  .footer-links {
+    -ms-flex: none !important;
+    flex: none !important;
+    max-width: none !important;
+  }
+}
+
 @media only screen and (max-width: 600px) {
+  .portrait {
+    padding: 0 !important;
+    max-width: 80% !important;
+  }
   .about-row {
     padding: 1rem !important;
   }

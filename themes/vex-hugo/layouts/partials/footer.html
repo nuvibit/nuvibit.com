@@ -1,0 +1,91 @@
+<footer>
+	<div class="container pt-5">
+		<div class="row">
+			<div class="col-md-6 mb-3 text-center">
+				<img src="{{ site.Params.logo_dark | absURL }}" alt='{{ site.Params.logo_dark | replaceRE ".*?(\\w+).png" "$1" }}' width="{{ site.Params.logo_width }}">
+			</div>
+			<div class="col-md-6 mb-4 text-left">
+				
+				<!-- Language List -->
+				<div class="bottom-nav col-md-4 p-0 float-left mb-3">
+					<h5 class="mb-4 font-weight-bold text-uppercase">language</h5>
+					<ul class="list-group">
+					{{ if gt .Page.AllTranslations 0 }}
+						{{ $siteLanguages := .Site.Languages }}
+						{{ $pageLang := .Page.Lang }}
+						{{ range .Page.AllTranslations }}
+						{{ $translation := . }}
+						{{ range $siteLanguages }}
+						{{ if eq $translation.Lang .Lang }}
+						{{ $selected := false }}
+							<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+								<a href="{{ $translation.Permalink }}">
+									{{ if eq $pageLang .Lang}}
+									<i class="fas fa-toggle-on"></i>
+									{{ else }}
+									<i class="fas fa-toggle-off"></i>
+									{{ end }}
+									{{ humanize .LanguageName }}
+								</a>
+							</li>
+						{{ end }}
+						{{ end }}
+						{{ end }}
+					{{ else }}
+						<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+							<a href="/" value="default-language">
+								<i class="fas fa-toggle-on"></i>
+								English
+							</a>
+						</li>
+					{{ end }}
+					</ul>
+				</div>
+				<!-- End of Language List -->
+
+				<!-- Footer Navigation -->
+				{{ range site.Menus.footer }}
+				{{ if .HasChildren }}
+				<div class="bottom-nav col-md-4 p-0 float-left mb-3">
+					<h5 class="mb-4 font-weight-bold text-uppercase">{{ .Name }}</h5>
+					<ul class="list-group">
+						{{ range .Children}} 
+						{{ with . }}
+						<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+							
+							<a href="{{ .URL | safeURL }}">
+							{{ if eq .Parent "social" }}
+								<i class="fab fa-{{ lower .Name }} mr-2"></i>
+							{{ end }}
+								{{ .Name }}
+							</a>
+						</li>
+						{{ end }}
+						{{ end }}
+					</ul>
+				</div>
+				{{ end }}
+				{{ end }}
+				<!-- End of Footer Navigation -->
+
+			</div>
+			<div class="col-md-12 pt-4 border-top">
+				<div class="mb-4 d-flex justify-content-center align-items-center">
+					{{ $year := .Date.Format "2006" }}
+					<!-- <p class="copyright-text">{{ replace (site.Params.copyright | markdownify) "YEAR" $year }}</p> -->
+					<p class="copyright-text">{{ site.Params.copyright | markdownify }}</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</footer>
+
+<!-- JS Plugins -->
+{{ range site.Params.plugins.js}}
+<script src="{{ .link | absURL }}"></script>
+{{ end }}
+
+<!-- Main Script -->
+{{ $script := resources.Get "js/script.js" }}
+<script src="{{ $script.Permalink }}"></script>

@@ -1,0 +1,16 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{- if $data.homepage.separator.enable }}
+{{- with $data.homepage.separator }}
+<section class="call-to-action section bg-opacity" style="background-image: url('{{ .bg_image | absURL }}');">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-8 mt-100 text-center mx-auto">
+        <h2 class="subheading text-white">{{ .title | markdownify }}</h2>
+        <p class="text-white">{{ .content | markdownify }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+{{- end }}
+{{- end }}

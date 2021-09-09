@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="{{ with site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+{{- partial "head.html" . -}}
+
+<body id="body">
+	{{- partial "preloader.html" . -}}
+	{{- partial "header.html" . -}}
+	{{- block "main" . }}{{- end }}
+	{{- partial "footer.html" . -}}
+	{{ block "page-script" . }}
+	<script>
+		function image_zoom(element){
+			if (!element.classList.contains("zoomed")){
+				$(".zoomed").removeClass("zoomed");
+			}
+			element.classList.toggle('zoomed');
+		}
+
+		$(document.links).filter(function() {
+			return this.hostname != window.location.hostname;
+		}).attr('target', '_blank');
+		
+		window.cookieconsent.initialise({
+		palette: {
+			popup: {
+				background: "#2b3346",
+				text: "#ffffff"
+			},
+			button: {
+				background: "#3fa7df",
+				text: "#ffffff"
+			}
+		},
+		content: {
+			message: "We use cookies on our website to ensure you get the best experience.",
+			dismiss: "Close",
+			link: "Our cookie policy",
+			href: "/privacy-policy/#51-cookies",
+			target: null
+		},
+		theme: "edgeless",
+		type: "info"
+		});
+	</script>
+	{{ end }}
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.homepage.pricing.enable }}
+{{ with $data.homepage.pricing }}
+<section class="section mb-40" id="prices">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <div class="heading">
+                    <h2 class="subheading">{{ .title | markdownify }}</h2>
+                </div>
+            </div>
+            {{ range .pricing_item }}
+            {{ if .enable }}
+            <div class="col-lg-{{ .width }} col-sm-6 mb-5 mb-lg-0 mb-40 text-center">
+                <div class="card rounded shadow border-0 mb-30">
+                    <div class="card-body p-30">
+                        {{ if .image }}
+                        <img class="img-fluid" src="{{.image}}{{.|absURL}}" alt='Illustration of {{ .Image | replaceRE ".*?(\\w+).png" "$1" }}'>
+                        {{ end }}
+                        <h3 class="h2 font-weight-bold mt-15 mb-10">{{ .name | markdownify }}</h3>
+                        <p class="border-bottom pb-20">{{ .label | markdownify }}</p>
+                        <ul class="list-unstyled check-list-2 mt-30 mb-40 text-left float-left">
+                            {{ range .features }}
+                            {{ if .separator }}
+                                <hr>
+                            {{ else }}
+                            {{ if .enable }}
+                            <li class="mb-25">
+                                <i class="d-inline-block h3 mb-10 tf-ion-ios-checkmark text-success"></i>
+                                <span class="h4 pl-2">{{ .name | markdownify }}</span>
+                            </li>
+                            {{ else }}
+                            <li class="mb-25" style="color:lightgrey;">
+                                <i class="d-inline-block h3 mb-10 tf-ion-ios-close"></i>
+                                <span class="h4 pl-2">{{ .name | markdownify }}</span>
+                            </li>
+                            {{ end }}
+                            {{ end }}
+                            {{ end }}
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+            {{ end }}
+            <div class="col-12 text-center">
+                <a href="{{.link|absLangURL}}" class="btn btn-main">request an offer</a>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}

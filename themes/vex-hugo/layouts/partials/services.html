@@ -1,0 +1,56 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.homepage.services.enable }}
+{{ with $data.homepage.services }}
+<section class="feature-list section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {{ if .title }}
+        <div class="heading">
+          <h2>{{ .title | markdownify }}</h2>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ range $index, $element := (where .items "enable" true) }}
+    {{- if (mod $index 2) }}
+    <div class="row item-row">
+      <div class="col-md-6 text-center p-4 mb-lg-0 zoom" onclick="image_zoom(this)">
+        <img class="img-fluid" src="{{ .image | absURL }}" alt='Illustration of {{ .image | replaceRE ".*?(\\w+).png" "$1" }} service'>
+      </div>
+      <div class="col-md-6 align-self-center text-center text-md-left">
+        <div class="content">
+          <h4 class="subheading">{{ .title | markdownify }}</h4>
+          <p>{{ .content | markdownify }}</p>
+          {{ if .link.enable }}
+          {{ with .link }}
+          <p><a href="{{ .link | absURL }}" class="link-primary">{{ .label }}</a></p>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    {{- else }}
+    <div class="row item-row">
+      <div class="col-md-6 order-md-1 order-2 align-self-center text-center text-md-left">
+        <div class="content">
+          <h4 class="subheading">{{ .title | markdownify }}</h4>
+          <p>{{ .content | markdownify }}</p>
+          {{ if .link.enable }}
+          {{ with .link }}
+          <p><a href="{{ .link | absURL }}" class="link-primary">{{ .label }}</a></p>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      <div class="col-md-6 order-md-2 order-1 text-center p-4 mb-lg-0 zoom" onclick="image_zoom(this)">
+        <img class="img-fluid" src="{{ .image | absURL }}" alt='Illustration of {{ .image | replaceRE ".*?(\\w+).png" "$1" }} service'>
+      </div>
+    </div>
+    {{ end }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+{{ end }}

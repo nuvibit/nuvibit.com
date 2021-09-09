@@ -1,0 +1,46 @@
+{{ define "main" }}
+<section class="section">
+  <div class="container mb-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 text-center mb-5">
+        <h1 class="font-weight-bold">{{.Title}}</h1>
+      </div>
+
+      <div class="col-lg-10 text-center text-md-left mb-5">
+        <div class="content">
+          <p>{{ .Params.about_us.introduction | markdownify }}</p>
+        </div>
+      </div>
+
+      <hr class="w-75 mb-40"/>
+      {{ range $index, $element := shuffle (where .Params.about_us.items "enable" true) }}
+      <div class="row m-3 mt-5 p-3 about-row">
+        <div class="col-md-4 text-center mb-5 mb-lg-0 item animated wow fadeIn zoom" onclick="image_zoom(this)">
+          <img class="img-fluid h-100 p-4 portrait" src="{{ .image | absURL }}" alt='Picture of {{ .name }}'>
+          <!-- <figure class="profile">
+          <a href="{{ .linkedin | safeURL }}" class="h2" title="linkedin">
+            <img class="img-fluid w-75" src="{{ .image | absURL }}" alt="{{ .name | markdownify }}">
+            <figcaption>
+              <h2 class="font-weight-bold">Linked<i class="fab fa-linkedin ml-1"></i></h2>
+            </figcaption>
+          </a>
+          </figure> -->
+        </div>
+        <div class="col-md-8 align-self-center text-center text-md-left">
+          <div class="content">
+            <h4 class="subheading mb-10 pb-0">{{ .name | markdownify }}
+              <a class="social" href="{{ .linkedin | safeURL }}" class="h2" title="linkedin">
+                <i class="fab fa-linkedin m-3"></i>
+              </a>
+            </h4>
+            <h4 class="mb-20">{{ .title | markdownify }}</h4>
+            <p>{{ .content | markdownify }}</p>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}

@@ -465,12 +465,32 @@ figure.profile:hover img {
 }
 
 .portrait {
-  border-radius: 30px !important;
+  border-radius: 2rem !important;
 }
 
-.about-row {
-  @include mobile{
+@media only screen and (max-width: 990px) {
+  .about-row {
     padding: 0 !important;
+  }
+  .about-row > * {
+    padding: 0 !important;
+  }
+  .about-text {
+    padding-left: 2rem !important;
+  }
+  .portrait {
+    border-radius: 1rem !important;
+    padding: 0 !important;
+    margin-top: 2rem !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about-row {
+    padding: 1rem !important;
+  }
+  .about-text {
+    padding-left: 0rem !important;
   }
 }
 
@@ -1244,3 +1264,4 @@ textarea.form-control {
     color: $primary-color;
   }
 }
+

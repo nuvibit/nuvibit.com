@@ -1,0 +1,239 @@
+################################### Default Configuration ############################
+baseurl = "https://nuvibit.com/"
+title = "Nuvibit - Cloud Foundation"
+theme = "vex-hugo"
+# post excert
+summarylength = "20"
+
+# google analytics
+googleAnalytics = "G-65QED8XYJ9"
+# disable language
+disableLanguages = ["de"]
+# check all links for correct absolute language url before enabling language
+
+# unsafe html
+[markup.goldmark.renderer]
+unsafe = true
+
+#################################### Privacy ##########################################
+
+[privacy]
+[privacy.disqus]
+disable = true
+
+[privacy.googleAnalytics]
+anonymizeIP = true
+disable = false
+respectDoNotTrack = true
+useSessionStorage = false
+
+[privacy.instagram]
+disable = true
+simple = false
+
+[privacy.twitter]
+disable = true
+enableDNT = false
+simple = false
+
+[privacy.vimeo]
+disable = true
+enableDNT = false
+simple = false
+
+[privacy.youtube]
+disable = true
+privacyEnhanced = false
+
+
+#################################### Plugins ##########################################
+
+# CSS Plugins
+[[params.plugins.css]]
+link = "https://fonts.googleapis.com/css?family=Open%20Sans:400|Nunito:300,400,600,700"
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/fontawesome/all.min.css"
+[[params.plugins.css]]
+link = "plugins/slick/slick.min.css"
+[[params.plugins.css]]
+link = "plugins/cookieconsent/cookieconsent.min.css"
+
+# JS Plugins
+[[params.plugins.js]]
+link = "plugins/jquery/jquery.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/slick/slick.min.js"
+[[params.plugins.js]]
+link = "plugins/cookieconsent/cookieconsent.min.js"
+
+
+###################################### Navigation ######################################
+
+# homepage section menu
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+identifier = "services"
+name = "Services"
+url = "services"
+weight = 2
+
+[[menu.main]]
+identifier = "service1"
+name = "cloud assistance"
+url = "services/assistance"
+parent = "services"
+weight = 3
+
+[[menu.main]]
+identifier = "service2"
+name = "cloud management at scale"
+url = "services/management"
+parent = "services"
+weight = 4
+
+[[menu.main]]
+identifier = "service3"
+name = "cloud security and compliance"
+url = "services/security"
+parent = "services"
+weight = 5
+
+[[menu.main]]
+identifier = "service4"
+name = "cloud connectivity"
+url = "services/connectivity"
+parent = "services"
+weight = 6
+
+# [[menu.main]]
+# name = "Blog"
+# url = "blog"
+# weight = 7
+
+[[menu.main]]
+name = "About"
+url = "about"
+weight = 8
+
+[[menu.main]]
+name = "Contact"
+url = "contact"
+weight = 9
+
+
+###################################### Footer ######################################
+
+[[menu.footer]]
+identifier = "language"
+name = "Language"
+weight = 1
+
+[[menu.footer]]
+identifier = "company"
+name = "Company"
+weight = 2
+
+[[menu.footer]]
+parent = "company"
+name = "FAQ"
+url = "/faq"
+weight = 3
+
+[[menu.footer]]
+parent = "company"
+name = "About"
+url = "/about"
+weight = 4
+
+[[menu.footer]]
+parent = "company"
+name = "Contact"
+url = "/contact"
+weight = 5
+
+[[menu.footer]]
+parent = "company"
+name = "Privacy Policy"
+url = "/privacy-policy"
+weight = 6
+
+[[menu.footer]]
+parent = "company"
+name = "Cookie Policy"
+url = "/privacy-policy/#51-cookies"
+weight = 7
+
+[[menu.footer]]
+identifier = "social"
+name = "Social"
+weight = 8
+
+[[menu.footer]]
+parent = "social"
+name = "Github"
+url = "https://github.com/nuvibit"
+weight = 9
+
+[[menu.footer]]
+parent = "social"
+name = "Linkedin"
+url = "https://linkedin.com/company/nuvibit"
+weight = 10
+
+[[menu.footer]]
+parent = "social"
+name = "Twitter"
+url = "https://twitter.com/nuvibit"
+weight = 11
+
+[[menu.footer]]
+parent = "social"
+name = "Youtube"
+url = "https://www.youtube.com/channel/UCmQCd8jMiZviVlWOqqbpYBw/playlists"
+weight = 12
+
+
+
+########################### Default parameters ##########################
+[params]
+logo = "images/logo/logo_nuvibit_light.png"
+logo_dark = "images/logo/logo_nuvibit_dark.png"
+logo_width = "230px"
+# Meta data
+description = "We help you build an enterprise ready, compliant and scalable foundation for the public cloud."
+author = "Nuvibit AG"
+# currency
+currency = "$"
+contact_form_action = "https://getform.io/f/057acfac-7557-4882-94b9-8e6a9c894d72"
+
+# Preloader
+[params.preloader]
+enable = true
+preloader = "images/preloader/snake.gif"
+
+
+################################### English language #####################################
+[Languages.en]
+languageName = "english"
+languageCode = "en-us"
+contentDir = "content/english"
+weight = 1
+copyright = "Copyright © 2021 - Nuvibit AG"
+
+
+################################### German language #####################################
+[Languages.de]
+languageName = "german"
+languageCode = "de-de"
+contentDir = "content/deutsch"
+weight = 2
+# copyright
+copyright = "Urheberrechte © 2021 - Nuvibit AG"

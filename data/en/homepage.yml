@@ -1,0 +1,139 @@
+############################# banner ############################
+banner:
+  enable: true
+  title: "All you need for cloud success <br>is ready to ship."
+  content: "We help you build an enterprise ready, compliant and scalable [cloud foundation](/faq/#foundation 'What is a cloud foundation?').<br><br>"
+  image: "images/illustrations/cloud_ready_to_ship.png"
+  button:
+    enable: true
+    label: "Get in touch"
+    link: "/contact"
+
+############################# services ##########################
+services:
+  enable: true
+  title: "Let us join your cloud journey!"
+  items:
+    - image: "images/illustrations/cloud_assistance.png"
+      enable: true
+      title: "Together we are stronger."
+      content: "Rome wasn't built in a day and the same goes for a reliable cloud foundation.<br>
+                As a former cross-functional team in a large enterprise we have conquered numerous cloud challenges.
+                Now it's your turn and we want to guide you along the way!"
+      link:
+        enable: true
+        label: "Discover our assistance services"
+        link: "/services/assistance"
+
+    - image: "images/illustrations/cloud_management.png"
+      enable: true
+      title: "Prime your business for cloud success."
+      content: "Designing a cloud strategy is the first and easiest step. 
+                The hard part is turning the vision into reality and achieving operational excellence.<br>
+                With our practical experience in reshaping organizations we can help you along the way."
+      link:
+        enable: true
+        label: "Discover our management services"
+        link: "/services/management"
+
+    - image: "images/illustrations/cloud_security_compliance.png"
+      enable: true
+      title: "Security Compliance from Day One!"
+      content: "The security maturity of your public cloud environment is business critical.
+                Compliance is a major challenge for an enterprise with numerous workloads.<br>
+                Cloud security is one of our specialties and we are happy to support you!"
+      link:
+        enable: true
+        label: "Discover our security services"
+        link: "/services/security"
+
+    - image: "images/illustrations/cloud_connectivity.png"
+      enable: true
+      title: "First, build a solid network foundation!"
+      content: "Connectivity is one of the first key topics which must be tackled to jump-start your cloud journey.<br>
+                We make sure that all your workloads are seamlessly connected to the AWS and Azure cloud with top-priority on reliability, scalability and security."
+      link:
+        enable: true
+        label: "Discover our connectivity services"
+        link: "/services/connectivity"
+
+############################# pricing ###########################
+# pricing:
+#   enable: false
+#   title: ""
+#   link: "contact"
+#   pricing_item:
+#     - name: "Cloud Hero"
+#       enable: false
+#       width: 4
+#       image: "images/illustrations/hero.png"
+#       price: ""
+#       label: "Foundation for AWS"
+#       features:
+#         - name: "community support"
+#           enable: true
+
+#         - name: "access to terraform modules"
+#           enable: true
+
+#         - name: "security compliance"
+#           enable: false
+
+#         - name: "reference architecture"
+#           enable: false
+
+#     - name: "Cloud Champion"
+#       enable: false
+#       width: 4
+#       image: "images/illustrations/champion.png"
+#       price: ""
+#       label: "Compliant Foundation for AWS"
+#       features:
+#         - name: "professional support"
+#           enable: true
+
+#         - name: "access to terraform modules"
+#           enable: true
+
+#         - name: "security compliance"
+#           enable: true
+
+#         - name: "reference architecture"
+#           enable: false
+
+#     - name: "Cloud Conqueror"
+#       enable: false
+#       width: 4
+#       image: "images/illustrations/conqueror.png"
+#       price: ""
+#       label: "Carefree Foundation for AWS"
+#       features:
+#         - name: "enterprise support"
+#           enable: true
+
+#         - name: "access to terraform modules"
+#           enable: true
+
+#         - name: "security compliance"
+#           enable: true
+
+#         - name: "reference architecture"
+#           enable: true
+
+############################# newsletter ########################
+newsletter:
+  enable: true
+  bg_image: "images/background/foundation.jpg"
+  title: "Newsletter"
+  content: "Stay up to date with our latest news"
+  placeholder: "Enter Your Email"
+
+############################# testimonials ########################
+# testimonial:
+#   title: Our References
+#   enable: false
+#   reference:
+#     - image: ""
+#       enable: true
+#       name: ""
+#       designation: ""

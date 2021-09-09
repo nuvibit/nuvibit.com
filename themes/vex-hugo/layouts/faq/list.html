@@ -1,0 +1,40 @@
+{{ define "main" }}
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 mb-4 mb-md-0">
+        <div class="sticky-image zoom" onclick="image_zoom(this)">
+          {{ with .Params.faq }}
+          <img class="img-fluid w-100" src="{{ .Image | absURL }}" alt='Illustration of {{ .Image | replaceRE ".*?(\\w+).png" "$1" }}'>
+          {{ end }}
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-7 offset-lg-1">
+        <h1 class="faq-title font-weight-bold mb-5">{{ .Title | markdownify }}</h1>
+        <div class="content">
+          {{ range $index, $element := (where .Params.faq.items "enable" true) }}
+          <h1 class="faq-anchor" id="{{ .anchor }}"></h1>
+          <details id="details#{{ .anchor }}" class="faq-detail col-lg-12">
+            <summary class="faq-summary">
+              <span class="faq-question font-weight-bold">{{ .question | markdownify }}</span>
+              <i class="fas fa-plus"></i>
+              <i class="fas fa-minus"></i>
+            </summary>
+            <p class="faq-text">{{ .answer | markdownify }}</p>
+          </details>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  var hash = window.location.hash;
+  if (hash != ""){
+    document.getElementById("details"+hash).open = true;
+  }
+</script>
+
+{{ end }}

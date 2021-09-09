@@ -1,0 +1,30 @@
+{{ define "main" }}
+
+<section class="section">
+	<div class="container min-venn">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class='venn'>404</div>
+                <div class='one'>
+                    <div class='text'>
+                        We Broke
+                        <br>
+                        Something
+                    </div>
+                </div>
+                <div class='two'>
+                    <div class='text'>
+                        You Can't
+                        <br>
+                        Type
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 text-center btn-404">
+                <a href='{{ "/" | relURL }}' class="btn btn-main">back to home</a>
+            </div>
+        </div>
+	</div>
+</section>
+
+{{ end }}

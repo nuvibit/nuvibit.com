@@ -1,17 +1,17 @@
 ---
-title: "Contact"
-description: "You got questions? We got answers! Don't be shy, get in touch with us."
+title: "Kontakt"
+description: "Ihr habt Fragen? Wir haben Antworten! Kommt auf uns zu."
 draft: false
 
 contact:
-  title: "Contact Us"
+  title: "Kontakt"
   image: "images/illustrations/mail.png"
   email: "hello@nuvibit.com"
   phone: "+41 56 511 24 24"
-  location: "Switzerland"
-  content: "You got questions? We got answers!<br>
-            Don't be shy, get in touch with us."
-  reason: "How can we help?"
+  location: "Schweiz"
+  content: "Ihr habt Fragen? Wir haben Antworten!<br>
+            Kommt auf uns zu."
+  reason: "Wie können wir helfen?"
   reasons:
     - name: "cloud foundation"
       key: "foundation"

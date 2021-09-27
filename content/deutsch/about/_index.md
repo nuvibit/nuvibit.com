@@ -4,62 +4,59 @@ description: "Nuvibit was founded by a group of cloud enthusiasts who were eager
 draft: false
 
 about_us:
-  introduction: "Nuvibit was founded by a group of cloud enthusiasts who were eager to take on a fresh challenge.<br>
-                Originally, the founding members worked for the same company in different departments.
-                Right after the company announced it's cloud strategy, we were tasked with building a cloud foundation on AWS.
-                We poured our blood, sweat, and tears into it and managed to achieve an outstanding level of maturity.<br>
-                Each and every one of us has gone above and beyond, which ultimately led to the idea of starting a company with like-minded, motivated people."
+  introduction: "Nuvibit wurde von einer Gruppe Cloud begeisterter Menschen gegründet, die eine neue Herausforderung gesucht haben.<br>
+                Ursprünglich haben alle Gründer in unterschiedlichen Funktionen und Teams für dieselbe Firma gearbeitet. Gemeinsam haben die formulierte Cloud Strategie der Firma technisch und organisatorisch in Form einer Cloud Foundation auf AWS umsetzen dürfen. Mit dem Einsatz von viel Herzblut konnten wir einen sehr gutes Maturitätslevel erreichen.<br>
+                Die Skills, die jeder von uns dabei gefestigt und erarbeitet hat fliessen nun in die neue Firma Nuvibit."
   items:
     - image: "images/profiles/roman_plessl.jpg"
       enable: true
       name: "Roman Plessl"
       linkedin: "https://www.linkedin.com/in/romanplessl"
       title: "Cloud Security Specialist"
-      content: "Roman's strength is the overall view and especially what is missing - the black spots!
-                His working preference is in the border area, where security architecture and people with their corporate culture are mixing.<br>
-                His experience from two decades of designing, operating and consulting services are extremly valuable."
+      content: "Roman's Stärke ist sein Fokus auf das Gesamtbild und speziell die Punkte, die fehlen oder optimiert werden können. 
+                Er arbeitet gerne im Grenzbereich wo Security Architekturen auf Menschen und ihre Firmen Kultur aufeinander treffen und sich mischen.<br>
+                Er hat über zwei Jahrzehnte wertvolle Erfahrungen im Designen, Betreiben von Services sowie im Beraten von Kunden sammeln können."
 
     - image: "images/profiles/christoph_siegrist.jpg"
       enable: true
       name: "Christoph Siegrist"
       linkedin: "https://www.linkedin.com/in/christoph-siegrist"
       title: "Digitalization & Transformation Specialist"
-      content: "Christoph guides you through the cloud jungle. He has many years of experience in taking an entire organization on a journey and establishing DevOps practices.<br>
-                With the view of the big picture and his organizational talent, he creates an environment where the full potential of the cloud can be utilized."
+      content: "Christoph zeigt Euch den Weg durch den Cloud Dschungel. Er hat langjährige Erfahrung darin, Firmen auf eine Tranformationsreise zu nehmen und dabei DevOps Practices einzuführen."
 
     - image: "images/profiles/stefano_franco.jpg"
       enable: true
       name: "Stefano Franco"
       linkedin: "https://www.linkedin.com/in/franco-stefano"
       title: "Cloud Network & Automation Specialist"
-      content: "Stefano is a public cloud networking powerhouse!
-                With years of experience in building connectivity solutions and his passion for automation he is far more than a classic network specialist.<br>
-                He eats AWS and Azure connectivity challenges for breakfast."
+      content: "Stefano ist unser public cloud networking powerhouse!
+                Mit seinen Begeisterung für Automatisierung und der Erfahrung mit komplexen connectivity solutions ist er weit mehr als ein klassischer Netzwerkspezialist.<br>
+                Er isst AWS und Azure Connectivty Issues zum Frühstück."
 
     - image: "images/profiles/michael_ullrich.jpg"
       enable: true
       name: "Michael Ullrich"
       linkedin: "https://www.linkedin.com/in/ullrich-michael"
       title: "Cloud Security Enthusiast"
-      content: "Michael is the go-to expert when it comes to cloud security compliance, with more than 25 years of consulting experience!<br>
-                He holds an MBA and a Master of Science degree in Engineering and is certified AWS Solutions Architect Professional and AWS DevOps Engineer Professional."
+      content: "Michael ist unser Mann für cloud security und compliance und er bringt mehr als 25 Jahre Consulting Erfahrung mit.
+                Er verfügt sowohl über ein MBA und Master of Science Diplom als auch über das AWS Solutions Architect Professional und AWS DevOps Engineer Professional Zertifikat.. "
 
     - image: "images/profiles/jonas_saegesser.jpg"
       enable: true
       name: "Jonas Sägesser"
       linkedin: "https://www.linkedin.com/in/jonas-saegesser"
       title: "Cloud Solution Architect"
-      content: "Cloud services make fast, smart and cool solutions possible. 
-                Jonas loves to enable you to take full advantage of those possibilities with his vast experience in the public cloud domain!<br>
-                He has migrated numerous workloads to AWS and got people excited about the cloud through his engagement as a trainer."
+      content: "Cloud Services ermöglichen schnelle, smarte und coole System möglich.
+                Jonas will Euch mit seinem Erfahrungsschatz befähigen, das volle Potential von public Cloud Services zu nutzen.<br>
+                Er hat bereits zahlreiche Workloads auf AWS augebaut oder migriert und begeisterte als Trainer Menschen für die Cloud."
 
     - image: "images/profiles/andreas_moor.jpg"
       enable: false
       name: "Andreas Moor"
       linkedin: "https://www.linkedin.com/in/andreas-moor"
       title: "Cloud Solution Engineer"
-      content: "Andreas get things done!
-                With many years of expirience with building and designing solutions in the cloud he is your man for getting your projects up and running."
+      content: "Andreas ist ein Problemlöser!
+                Er verfügt über langjährige Erfahrung im Design und Aubfabu von Cloud Lösungen und wird garantiert auch Eure Projekte sauber zum laufen kriegen."
 ---
 <!-- 
 # Mission

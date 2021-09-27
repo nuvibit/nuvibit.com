@@ -12,7 +12,7 @@ faq:
 
       enable: true
 
-    - question: "Welche Provider supporten wir.?"
+    - question: "Welche Provider supporten wir?"
       answer: "Wir sind hauptsächlich spezialisiert auf sichere Enterprise Deployments in AWS. 
               Einige Themen sind aber nicht nur auf einen Provider bezogen sondern lassen sich auf alle public Cloud Provider anwenden. Zögert also nicht uns zu Eurem Anliegen zu [kontaktieren](/contact 'contact form').
       anchor: providers

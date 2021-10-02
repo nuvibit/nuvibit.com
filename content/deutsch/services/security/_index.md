@@ -5,10 +5,10 @@ draft: false
 
 banner_section:
     enable: true
-    title: "Security Compliance from Day One!"
-    content: "The security maturity of your public cloud environment is business critical.
-              Compliance is a major challenge for an enterprise with numerous workloads.<br><br>
-              Cloud security is one of our specialties and we are happy to support you!"
+    title: "Security Compliance ist Prio 1!"
+    content: "Die Security Maturität von der public Cloud Umgebung ist Business kritisch.
+                Compliance stellt eine Herausforderung für Unternehmungen mit einer grossen Applikationslandschaft dar.<br><br>
+                Cloud Security und Compliance ist eines unserer Spezialgebiete und wie unterstützen Euch gerne!
     image: "images/illustrations/cloud_security_compliance.png"
     button:
         enable: true

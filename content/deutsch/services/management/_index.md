@@ -5,10 +5,10 @@ draft: false
 
 banner_section:
     enable: true
-    title: "Prime your business for cloud success."
-    content: "Designing a cloud strategy is the first and easiest step. 
-              The hard part is turning the vision into reality and achieving operational excellence.<br><br>
-              With our practical experience in reshaping organizations we can help you along the way."
+    title: "Bereitet Euer Business auf die Cloud vor."
+    content: "Eine Cloud Strategie zu schreiben ist der erste und einfachste Schritt.
+                Die Vision in die Realität zu überführen und die Organisation zu befähigen ist der komplexe Teil.<br>
+                Wir teilen unsere Erfahrungen, die wir beim Umgestalten und cloud-ready machen von Organisationen gesammelt haben gerne mit Euch."
     image: "images/illustrations/cloud_management.png"
     button:
         enable: true

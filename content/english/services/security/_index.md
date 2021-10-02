@@ -48,7 +48,7 @@ tile_section:
       - title: "Image Lifecycle Management"
         enable: true
         content: "An EC2 image that is not sufficiently hardened provides a large attack surface for unauthorized access.<br><br>
-                  We help you create an image backing process that delivers hardened EC2 images to your organization and validates them continously."
+                  We help you create an image baking process that delivers hardened EC2 images to your organization and validates them continously."
 
       - title: "Logging and Monitoring"
         enable: true
@@ -84,7 +84,7 @@ excerpt_section:
       - title_aws: "AWS Security Baselining"
         enable: true
         image: "images/illustrations/cloud_security_baseline.png"
-        content: "Not only the workflow itself, but also the underlying cloud foundation must be safety-compliant.<br>
+        content: "Not only the workload itself, but also the underlying cloud foundation must be safety-compliant.<br>
                   To simplify this process, we will show you how to define and implement a set of basic security controls in your AWS organization.
                   Once your AWS accounts are 100% compliant, you have a lot less to worry about."
         # button:

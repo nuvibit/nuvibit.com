@@ -42,7 +42,7 @@ tile_section:
       - title: "Cloud Financial Management"
         enable: true
         content: "Ein Key Faktor für den Erfolg der Cloud ist das transparente und Usage basierte Verrechnungsmodell.<br><br>
-        Wir kennen die notwendigen Anpassungen, die es braucht um die Betriebskosten effizient zu senken. Wir helfen Euch [FinOps](/faq/#finops 'What is FinOps?') Prozesse zu anzunehmen und zu leben."
+        Wir kennen die notwendigen Anpassungen, die es braucht um die Betriebskosten effizient zu senken. Wir helfen Euch [FinOps](/faq/#finops 'Was ist FinOps?') Prozesse zu anzunehmen und zu leben."
 
       - title: "Account Lifecycle"
         enable: true
@@ -52,7 +52,7 @@ tile_section:
       - title: "Continuous Integration"
         enable: true
         content: " Infrastructure as Code und automatisierte Tests sind unbedingt notwendig um erfolgreich zu Skalieren.<br><br>
-        Mit unserer umfassenden hands-on Erfahrung in DevOps und [GitOps](/faq/#gitops 'What is GitOps?') Umfeldern können wir Euch bei der Umsetzung der für Euch passenden Lösung optimal unterstützen."
+        Mit unserer umfassenden hands-on Erfahrung in DevOps und [GitOps](/faq/#gitops 'Was ist GitOps?') Umfeldern können wir Euch bei der Umsetzung der für Euch passenden Lösung optimal unterstützen."
 
 excerpt_section:
     enable: true
@@ -74,8 +74,8 @@ excerpt_section:
         enable: true
         image: "images/illustrations/cloud_account_lifecycle.png"
         content: "Bei der Implementierung der Multi-Account Strategie gibt es einige Herausforderungen zu bewältigen.<br>
-        Wie konfiguriere ich meinen Master Account, Wie strukturiere Ich die Accounts in AWS Organizations, Welche Rechte vergebe ich wie, Wie manage ich meine Code Repos und [CI/CD Pipelines](/faq/#cicd 'What is CI/CD?').
-        Wir bieten eine anpassbare Lösung um Eure Accounts, inklusive aller Umsysteme einfach und effizient mit [Infrastructure as Code](/faq/#iac 'What is Infrastructure as Code?') zu verwalten."
+        Wie konfiguriere ich meinen Master Account, Wie strukturiere Ich die Accounts in AWS Organizations, Welche Rechte vergebe ich wie, Wie manage ich meine Code Repos und [CI/CD Pipelines](/faq/#cicd 'Was ist CI/CD?').
+        Wir bieten eine anpassbare Lösung um Eure Accounts, inklusive aller Umsysteme einfach und effizient mit [Infrastructure as Code](/faq/#iac 'Was ist Infrastructure as Code?') zu verwalten."
         link:
           # enable: false
           # label: "read more about nuvibit account manager"

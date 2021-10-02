@@ -1,6 +1,6 @@
 ---
 title: "Cloud Security"
-description: "Security compliance for your public cloud environment."
+description: "Security Compliance für Eure Cloud Umgebung."
 draft: false
 
 banner_section:
@@ -12,8 +12,9 @@ banner_section:
     image: "images/illustrations/cloud_security_compliance.png"
     button:
         enable: true
-        label: "Get in touch"
+        label: "Kontaktiert uns"
         link: "contact"
+
 
 # detail_section:
 #     enable: true
@@ -22,49 +23,49 @@ banner_section:
 
 tile_section:
     enable: true
-    title: "We specialize in"
+    title: "Unser Spezialgebiet"
     list:
       - title: "Compliant Architecture"
         enable: true
-        content: "There is a lot to consider when designing compliant cloud solutions.<br><br>
-                  We offer enterprise-ready reference architectures which are fully [CIS Control](/faq/#cis \"What is CIS compliance?\") compliant.
-                  Furthermore, we are happy to review your existing architectures for possible security vulnerabilities."
+        content: "Es gibt viele Dinge zu beachten, wenn man eine Security Standard konforme Cloud Lösung baut.<br><br>
+                  Wir bieten getestete und Praxis taugliche Referenz Architekturen, die vollständig [CIS Control](/faq/#cis \"Was sind CIS Controls?\") compliant sind.
+                  Ausserdem reviewen wir gerne Eure bestehenden Architekturen und Workloads und untersuchen sie auf mögliche Security Vulnerabilities.
 
       - title: "Security Assessment"
         enable: true
-        content: "When it comes to security, an assessment from a different angle can be crucial.<br><br>
-                  We are happy to perform security audits of your public cloud environment and help you mitigate the findings."
+        content: "Wenn es um Security geht hilft ein neuer Blickwinkel von einer unbeteiligten Stelle enorm..<br><br>
+                  Wir führen gerne Security Audits für Eure public Cloud Setups durch und helfen Euch die Findings zu bearbeiten."
 
       - title: "Security Framework"
         enable: true
-        content: "There are numerous cloud security frameworks (ISO 27000 family, CIS Controls, BSI C5, NIST) with different scopes.<br><br>
-                  We show you how to effectively measure compliance and respond appropriately when violations occur."
+        content: "Es gibt verschiedenste Cloud Security Frameworks (ISO 27000 family, CIS Controls, BSI C5, NIST) mit unterschiedlichen Fokuspunkten.<br><br>
+                  Wir zeigen Euch wie Ihr die Compliance von Euren Cloud workloads effizient überwachen könnt und wie bei Verletzungen der Standards reagiert werden muss."
 
       - title: "Security Event Management"
         enable: true
-        content: "An excess of security events can quickly render you helpless in a critical situation.<br><br>
-                  We offer a cloud-native solution to bring your security events under control and streamline security surveillance."
+        content: "Die grosse Menge an Security relevanten Events kann schnell zu einer Überforderung führen. Damit gehen die entscheidenden Events verloren und kritische Situationen können leicht übersehen werden.<br><br>
+                  Wir bieten eine Cloud native Lösung um Eure Security Events unter Kontrolle zu bringen und die Security Überwachung über alle Accounts zusammen zu führen."
 
       - title: "Image Lifecycle Management"
         enable: true
-        content: "An EC2 image that is not sufficiently hardened provides a large attack surface for unauthorized access.<br><br>
-                  We help you create an image backing process that delivers hardened EC2 images to your organization and validates them continously."
+        content: "Ein schlecht gehärtetes EC2 Image bietet eine grosse Angriffsfläche für unautorisierten Zugriff.<br><br>
+                  Wir helfen euch einen automatisierten Image Build Prozess zu etablieren, der gehärtete Images in Eure Umgebung liefert und sie laufend validiert."
 
-      - title: "Logging and Monitoring"
+      - title: "Logging und Monitoring"
         enable: true
-        content: "Collecting logs in a sizable cloud environment can quickly become a major challenge.<br><br>
-                  We offer several solutions to store logs sensibly and forward them to a monitoring solution of your choice."
+        content: "In Cloud Umgebungen fallen viele Logs an. Diese zu sammeln kann schnell zu einer grossen Herausforderung werden.<br><br>
+                  Wir bieten diverse Optionen, wie Ihr Eure Logs sinnvoll speichern und an das Monitoring System Eurer Wahl weiterleiten könnt."
 
 excerpt_section:
     enable: true
     title: "Let's dive deeper..."
     list:
-      - title: "Swiss Security Standard"
+      - title: "Schweizer Security Standard"
         enable: true
         image: "images/illustrations/cloud_swiss_security.png"
-        content: "We build all our solutions with Swiss security standards in focus.<br>
-                  What meets the security requirements of Swiss financial institutions leaves little room for security vulnerabilities.
-                  You have come to the right place with your security concerns!"
+        content: "Wir bauen alle unsere Lösungen nach Schweizer Security Standards.<br>
+                  Wenn wir die Security Standards von schweizer Finanzinstituten erfüllen bleibt wenig Raum für Sicherheitslöcher.
+                  Wir unterstützen Sie gerne bei Security Fragen in der public Cloud!"
         # button:
         #   enable: false
         #   label: "read more about xxx"
@@ -73,9 +74,8 @@ excerpt_section:
       - title_aws: "AWS Security Event Management - SEMPER"
         enable: true
         image: "images/illustrations/cloud_security_event_management_semper.png"
-        content: "Manage your AWS CloudWatch Event Rules and AWS Security Hub Controls across your AWS organization with a central [Policy as Code](/faq/#pac 'What is Policy as Code?') repository.<br>
-                  Keep track of your security events, filter them by importance and enrich them with valuable information.
-                  Do it continuously with our cloud-native, serverless solution [SEMPER](/contact/ 'Contact us for more information!')."
+        content: "Verwaltet alle Eure AWS CloudWatch Event Rules und AWS Security Hub Controls über alle Eure Accounts in einem zentrales [Policy as Code](/faq/#pac 'Was ist Policy as Code?') Eepository.<br>
+                  Behaltet den Überblick über alle Security Events, filtert sie nach Wichtigkeit und reichert sie mit wichtigen Metadaten an. Mit unserer Cloud nativen, serverless Lösung [SEMPER](/contact/ 'Kontaktiert uns für mehr Infos!') könnt Ihr all das kontinuierlich und nachhaltig tun."
         # button:
         #   enable: true
         #   label: "Contact us to learn more about SEMPER"
@@ -84,9 +84,9 @@ excerpt_section:
       - title_aws: "AWS Security Baselining"
         enable: true
         image: "images/illustrations/cloud_security_baseline.png"
-        content: "Not only the workflow itself, but also the underlying cloud foundation must be safety-compliant.<br>
-                  To simplify this process, we will show you how to define and implement a set of basic security controls in your AWS organization.
-                  Once your AWS accounts are 100% compliant, you have a lot less to worry about."
+        content: "Nicht nur die workloads an sich müssen Security compliant sein sondern auch die darunter liegende [cloud foundation](/faq/#foundation \"Was ist eine Cloud Foundation?\").<br>
+                  Um diesen Prozess zu vereinfachen, zeigen wir Euch wie ihr eine Security Baseline für alle Eure Accounts definieren und implementieren könnt.
+                  Mit 100% Security konformen Accounts lässt es sich einfach besser schlafen."
         # button:
         #   enable: false
         #   label: "read more about xxx"
@@ -95,9 +95,9 @@ excerpt_section:
       - title_aws: "AWS Security Architecture Review"
         enable: true
         image: "images/illustrations/cloud_security_architecture.png"
-        content: "An AWS Well-Architected solution should always be fully compliant.<br>
-                  There are many different security benchmarks to determine the compliance rate.
-                  We can help you decide which criteria to consider for benchmarking and will be happy to review your architecture for potential security vulnerabilities."
+        content: "Eine AWS Well-Architected Solution sollte immer Security compliant sein.<br>
+                  Es gibt verschiedenste Benchmarks um den Compliance Stand einer Lösung zu evaluieren.
+                  Wir zeigen Euch die verschiedenen Benchmarking Kriterien und Reviewen Eure Architekturen um allfällige Security Risiken zu finden."
         # button:
         #   enable: false
         #   label: "read more about xxx"

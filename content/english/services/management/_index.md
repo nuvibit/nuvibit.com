@@ -75,7 +75,7 @@ excerpt_section:
         image: "images/illustrations/cloud_account_lifecycle.png"
         content: "Based on the implementation of a multi-account strategy, you face numerous challenges.<br>
         How to configure the master account, structure AWS Organizations, define access rights, manage code repositories and maintain [code pipelines](/faq/#cicd 'What is CI/CD?').
-        We offer you an adaptable solution to manage your AWS Organization with [Infrastructure as Code](/faq/#iac 'What is Infrastructure as Code?') in a simple and efficient way."
+        We offer you an adaptable solution to manage your AWS Accounts including all surrounding systems with [Infrastructure as Code](/faq/#iac 'What is Infrastructure as Code?') in a simple and efficient way."
         link:
           # enable: false
           # label: "read more about nuvibit account manager"

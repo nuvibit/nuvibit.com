@@ -7,11 +7,11 @@ banner_section:
     enable: true
     title: "Zusammen sind wir stark."
     content: "Rom wurde nicht an einem Tag erbaut und das gleiche gilt für eine zuverlässige Cloud Foundation.<br><br>
-              Als ehemaliges, cross-funktionals Team in einem grossen schweizer Unternehmen haben wir zahlreiche technische wie auch organisatorische Herausforderungen im Zusammenhang mit dem Aufbau einer Cloud Foundation bewältigt."
+              Als ehemaliges, cross-funktionales Team in einem grossen schweizer Unternehmen haben wir zahlreiche technische wie auch organisatorische Herausforderungen im Zusammenhang mit dem Aufbau einer Cloud Foundation bewältigt."
     image: "images/illustrations/cloud_assistance.png"
     button:
         enable: true
-        label: "Konaktiert uns"
+        label: "Kontaktiert uns"
         link: "contact"
 
 # detail_section:
@@ -21,7 +21,7 @@ banner_section:
 
 tile_section:
     enable: true
-    title: "Unsere Spezialität"
+    title: "Unser Spezialgebiet"
     list:
       - title: "Cloud Operations"
         enable: true
@@ -82,7 +82,7 @@ excerpt_section:
       - title_aws: "AWS Terraform Modules"
         enable: true
         image: "images/illustrations/cloud_infrastructure_as_code.png"
-        content: "Infrastructure as Code zu adaptieren ist eine Entscheidende Gundlage um ans Ziel einer robusten und skallierbaren Cloud Foundation zu gelangen.<br>
+        content: "Infrastructure as Code zu adaptieren ist eine Entscheidende Grundlage um ans Ziel einer robusten und skalierbaren Cloud Foundation zu gelangen.<br>
                   Wie viele Andere auch nutzen dafür [Terraform](https://www.terraform.io/intro/index.html 'Introduction to Terraform'. Wir haben eine Sammlung von Terraform Modulen entwickelt.
                   Die frei verfügbaren module findet Ihr in unserer [Terraform Registry](https://registry.terraform.io/namespaces/nuvibit)."
         # button:

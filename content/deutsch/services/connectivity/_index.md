@@ -1,17 +1,17 @@
 ---
 title: "Cloud Connectivity"
-description: "We make sure that all your workloads are seamlessly connected to the AWS and Azure cloud with top-priority on reliability, scalability and security."
+description: "Wir stellen sicher, dass alle Eure Workloads sicher, skalierbar und zuverlässig mit AWS und Azure verbunden sind."
 draft: false
 
 banner_section:
     enable: true
-    title: "First, build a solid network foundation!"
-    content: "Connectivity is one of the first key topics which must be tackled to jump-start your cloud journey.<br><br>
-          We make sure that all your workloads are seamlessly connected to the AWS and Azure cloud with top-priority on reliability, scalability and security."
+    title: "Startet mit einer soliden Netzwerk Foundation!"
+    content: "Connectivity ist eines der ersten Themen, die es auf der Cloud Journey zu lösen gilt.<br><br>
+            Wir stellen sicher, dass alle Eure Workloads sicher, skalierbar und zuverlässig mit AWS und Azure verbunden sind."
     image: "images/illustrations/cloud_connectivity.png"
     button:
         enable: true
-        label: "Get in touch"
+        label: "Kontaktiert uns"
         link: "contact"
 
 # detail_section:
@@ -21,37 +21,37 @@ banner_section:
 
 tile_section:
     enable: true
-    title: "We specialize in"
+    title: "Unser Spezialgebiet"
     list:
       - title: "Infrastructure as Code"
         enable: true
-        content: "We deliver ready to use [Terraform](/faq/#iac 'What is Infrastructure as Code?') modules which implement different reference architectures to meet your connectivity requirements.<br><br>
-              Our modules enable you to conveniently manage your cloud connectivity solution while reducing human error and improving time-to-market."
+        content: "Wir bieten fix fertige Referenzarchitekturen in Form von [Terraform](/faq/#iac 'What is Infrastructure as Code?') Modulen, die die verschiedensten Connectivity Anforderungen abdecken können.
+              Unsere Module vereinfachen das Management Eurer Cloud Connectivity Lösung, reduzieren Fehlerquellen und erhöhen Eure time-to-market"
 
       - title: "Hybrid Connectivity"
         enable: true
-        content: "There are a lot of obstacles to perfectly combine your on-premises data center with a public cloud.<br><br>
-              We can show you viable options and help you implement the best solution for your requirements."
+        content: "Bis die on-premise Datacenter sauber mit der public Cloud verbunden sind gibt es viele Hindernisse.<br><br>
+              Wir zeigen Euch die verschiedenen Optionen, die für Euren Usecase in Frage kommen und helfen Euch die perfekte Lösung zu implementieren."
 
       - title: "Multicloud Networking"
         enable: true
-        content: "While planing a multi-cloud strategy it is paramount to standardize the connectivity.<br><br>
-              We provide homogeneous network architectures for an equivalent connectivity solution across clouds."
+        content: "Bei der Umsetzung einer Multicloud Strategie ist es entscheidend, die Connectivity zu standardisieren.<br><br>
+                  Wir bieten homogene Netzwerkarchitekturen um äquivalente Connectivity Lösungen zu den verschieden Cloud Anbietern zu ermöglichen."
 
       - title: "Reliability"
         enable: true
-        content: "Redundancy is always top of mind for us and will never be treated as an afterthought.<br><br>
-              Connectivity outages in a public cloud will usually lead to a severe impact on your workloads and therefor on your entire business."
+        content: "Redundanz steht bei unsere Connecitivy Lösungen stets im Vordergrund.<br><br>
+              Verbindungsausfälle in einem hybriden Cloud Szenario haben in den meisten Fällen schwere Folgen für die Workloads und damit auf das Business."
 
       - title: "Scalability"
         enable: true
-        content: "One of the key benefits of public cloud services is their ability to scale.<br><br>
-              Our connectivity solutions are specifically build around scalability to keep up with a rapid growth."
+        content: "Einer der ganz grossen Vorteile von public Cloud Services ist ihre Skalierbarkeit.<br><br>
+              Unsere Connectivity Lösungen sin speziell für diese Anforderung entwickelt und skalieren mit Eurem Workload mit."
 
-      - title: "Network Security"
+      - title: "Netzwerk Security"
         enable: true
-        content: "Connectivity and security should go hand in hand.<br><br>
-              We offer various possibilities to enforce security guidelines directly at the network layer."
+        content: "Connectivity und Security müssen Hand in Hand gehen.<br><br>
+              Unsere Lösungen bieten diverse Optionen Security Policies direkt auf dem Netzwerk Layer zu forcieren."
 
 excerpt_section:
     enable: true
@@ -62,9 +62,8 @@ excerpt_section:
         title_azure: "Azure Express Route"
         enable: true
         image: "images/illustrations/cloud_direct_connect.png"
-        content: "There are lots of stumbling blocks when connecting an on-premises data center to the public cloud.<br>
-              Some cases require strong encryption while other cases require the best possible latency and sometimes both is necessary.
-              With our practical experience in building highly redundant Direct Connect and Express Route solutions we can expedite this task."
+        content: "Vermeidet unnötige Stolpersteine beim Aufbau der Connectivity Lösung zwischen den on-premise Rechenzentren und der public Cloud.<br><br>
+            Die Anforderungen an die Connectivity reichen von starker Verschlüsselung, grossem Durchsatz bis zu tiefer Latency und in vielen Fällen ist es eine Kombination davon. Wir kenne all die Stolpersteine bereits aus unserer praktischen Erfahrung im Aufbau von redundanten Direct Connect und Express Route Lösungen und zeigen Euch den Weg drum herum. "
         # button:
         #   enable: false
         #   label: "read more about xxx"
@@ -75,9 +74,8 @@ excerpt_section:
         title_azure: "Azure Hub & Spoke"
         enable: true
         image: "images/illustrations/cloud_hub.png"
-        content: "Scalability is the magic word when designing the network in a public cloud environment.<br>
-              The cloud network needs to scale fluently and quickly to keep up with rapid growth and to improve time-to-market.
-              Our AWS and Azure network architectures offer great flexibility and are built to last."
+        content: "Skalierbarkeit ist der Fokus beim Design  der Netzwerkarchitektur in einer public Cloud Umgebung.<br>
+              Das Cloud Netzwerk muss dynamisch und schnell skalieren können um mit den schnelllebigen Cloud Workloads mitzuhalten."
         # button:
         #   enable: false
         #   label: "read more about xxx"
@@ -88,9 +86,9 @@ excerpt_section:
         title_azure: "Azure DNS"
         enable: true
         image: "images/illustrations/cloud_route53.png"
-        content: "One of the main challenges for a successful hybrid cloud environment is a well thought out DNS solution.<br>
-              DNS in the public cloud has to be reliable and should be adaptable while not being restrictive.
-              We offer scalable and secure DNS reference architectures and enable you to implement the right solution."
+        content: "Eine oft unterschätzte Herausforderung ist eine gut durchdachte hybride DNS Lösung.<br>
+                  DNS in der public cloud muss dynamisch und zuverlässig funktionieren und darf den Arbeitsablauf der Entwicklungsteams nicht ausbremsen.
+                  Wir bieten skalierbare und sichere DNS Referenzarchitekturen und helfen Euch die richtige Lösung für Euer Setup zu implementieren."
         # button:
         #   enable: false
         #   label: "read more about xxx"
@@ -101,9 +99,9 @@ excerpt_section:
         title_azure: "Azure Firewall"
         enable: true
         image: "images/illustrations/cloud_firewall.png"
-        content: "Network security is crucial and a main pillar of our connectivity services.<br>
-              A centrally managed firewall offers many benefits and is essential to keep your public cloud environment safe.
-              We can help you implement the right firewall solution using cloud native principles."
+        content: "Netzwerk Security ist eine integraler Bestandteil von unseren Connectivity Services.<br>
+              Eine zentrale Firewall bietet viele Vorteile und ist entscheidend um Eure Cloud Umgebung sicher zu gestalten.
+              Wir helfen Euch die richtige cloud native Firewall Lösung zu finden."
         # button:
         #   enable: false
         #   label: "read more about xxx"

@@ -12,7 +12,7 @@ banner_section:
     image: "images/illustrations/cloud_management.png"
     button:
         enable: true
-        label: "Get in touch"
+        label: "Kontaktiert uns"
         link: "contact"
 
 # detail_section:
@@ -22,48 +22,48 @@ banner_section:
 
 tile_section:
     enable: true
-    title: "We specialize in"
+    title: "Unser Spezialgebiet"
     list:
-      - title: "Cloud Strategy"
+      - title: "Cloud Strategie"
         enable: true
-        content: "We guide you to securely adapt the benefits of the public cloud while keeping the business goals in mind.<br><br>
-        We can show you the obstacles ahead to avoid show stoppers and accelerate your cloud journey."
+        content: "Wir helfen Euch die Vorteile der public Cloud sicher zu nutzen und gleichzeitig die Business Ziele im Auge zu behalten.<br><br>
+        Wir zeigen Euch die Stolpersteine im Voraus und helfen euch damit Show Stopper zu verhindern und beschleunigen Eure Cloud Journey."
 
-      - title: "Legal, Data Protection and Procurement"
+      - title: "Legal, Datenschutz and Beschaffung"
         enable: true
-        content: "At the beginning of every cloud journey there are plenty of legal and data protection challenges.<br><br>
-        We can close the legal gap and support your procurement team in the cloud paradigm shift."
+        content: "Am Beginn jeder Cloud Journey gibt es diverse Datenschutz und Legal THemen, die behandelt werden müssen.<br><br>
+        Wir beantworten die offenen Fragen und unterstützen Eure Beschaffungsorganisation die Cloud Paradigmen kennen zu lernen und zu adaptieren."
 
       - title: "Cloud Operation Model"
         enable: true
-        content: "Fully automated infrastructure provisioning requires a new mindset and skills.<br><br>
-        We enable your engineers and administrators to share responsibility for the cloud and establish a cross-functional agile mentality."
+        content: "Voll automatisiertes Infrastruktur Provisioning benötigt neben technischen Skills und Tools auch ein neues Mindset.<br><br>
+        Wir befähigen Eure Teams, so dass sie die Verantwortung für die Cloud übernehmen können und helfen ein corss-funktionales agiles Mindeset in die Organisation zu tragen.
 
       - title: "Cloud Financial Management"
         enable: true
-        content: "One of the cloud success factors is a transparent usage-based billing model which enables the business to make informed financial decisions.<br><br>
-        We define the necessary adjustments to efficiently reduce the operating cost by establishing [FinOps](/faq/#finops 'What is FinOps?') practices."
+        content: "Ein Key Faktor für den Erfolg der Cloud ist das transparente und Usage basierte Verrechnungsmodell.<br><br>
+        Wir kennen die notwendigen Anpassungen, die es braucht um die Betriebskosten effizient zu senken. Wir helfen Euch [FinOps](/faq/#finops 'What is FinOps?') Prozesse zu anzunehmen und zu leben."
 
       - title: "Account Lifecycle"
         enable: true
-        content: "Housekeeping a multi-account cloud environment is time consuming and prone to human error.<br><br>
-        We provide an adaptable and highly automated account lifecycle solution to greatly improve your time-to-market."
+        content: "Die Verwaltung von Accounts in einem Multi Account Environment ist extrem aufwändig und Fehleranfällig.<br><br>
+        Wir bieten eine anpassbare, hoch automatisierte Account Lifecycle Lösung, die diese Arbeit extrem vereinfacht und Eure time-to-market entscheidend verbessert."
 
       - title: "Continuous Integration"
         enable: true
-        content: " Infrastructure as Code and run automated tests is essential to scale successfully.<br><br>
-        With our hands-on experience in DevOps and [GitOps](/faq/#gitops 'What is GitOps?') practices we can provide guidance to implement the right solution."
+        content: " Infrastructure as Code und automatisierte Tests sind unbedingt notwendig um erfolgreich zu Skalieren.<br><br>
+        Mit unserer umfassenden hands-on Erfahrung in DevOps und [GitOps](/faq/#gitops 'What is GitOps?') Umfeldern können wir Euch bei der Umsetzung der für Euch passenden Lösung optimal unterstützen."
 
 excerpt_section:
     enable: true
     title: "Let's dive deeper..."
     list:
-      - title_aws: "AWS Multi-Account Strategy"
+      - title_aws: "AWS Multi-Account Strategie"
         enable: true
         image: "images/illustrations/cloud_multi_account.png"
-        content: "Managing everything in a single account is a recipe for disaster when scaling.<br>
-        As the number of workloads grow, you will run into various issues regarding security, isolation, billing and quota limits.
-        We can advise you on best practices and help you define the right strategy for your business."
+        content: "Alle Workloads in einem einzelnen Account zu verwalten endet immer im Chaos sobald Skaliert werden soll.<br>
+        Sobald die Menge an Workloads steigt trifft man diverse Probleme im Zusammenhang mit Workload Isolation, Security, Verrechnung und Provider Limits an.
+        Wir zeigen euch Best Practices und helfen Euch die richtige Multi-Account Strategie für Eure Unternehmung zu finden."
         link:
           # enable: false
           # label: "read more about xxx"
@@ -73,9 +73,9 @@ excerpt_section:
       - title_aws: "AWS Account Lifecycle"
         enable: true
         image: "images/illustrations/cloud_account_lifecycle.png"
-        content: "Based on the implementation of a multi-account strategy, you face numerous challenges.<br>
-        How to configure the master account, structure AWS Organizations, define access rights, manage code repositories and maintain [code pipelines](/faq/#cicd 'What is CI/CD?').
-        We offer you an adaptable solution to manage your AWS Organization with [Infrastructure as Code](/faq/#iac 'What is Infrastructure as Code?') in a simple and efficient way."
+        content: "Bei der Implementierung der Multi-Account Strategie gibt es einige Herausforderungen zu bewältigen.<br>
+        Wie konfiguriere ich meinen Master Account, Wie strukturiere Ich die Accounts in AWS Organizations, Welche Rechte vergebe ich wie, Wie manage ich meine Code Repos und [CI/CD Pipelines](/faq/#cicd 'What is CI/CD?').
+        Wir bieten eine anpassbare Lösung um Eure Accounts, inklusive aller Umsysteme einfach und effizient mit [Infrastructure as Code](/faq/#iac 'What is Infrastructure as Code?') zu verwalten."
         link:
           # enable: false
           # label: "read more about nuvibit account manager"

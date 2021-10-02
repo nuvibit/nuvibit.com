@@ -51,7 +51,7 @@ tile_section:
 
       - title: "Continuous Integration"
         enable: true
-        content: " Infrastructure as Code and run automated tests is essential to scale successfully.<br><br>
+        content: " Infrastructure as Code and running automated tests is essential to scale successfully.<br><br>
         With our hands-on experience in DevOps and [GitOps](/faq/#gitops 'What is GitOps?') practices we can provide guidance to implement the right solution."
 
 excerpt_section:

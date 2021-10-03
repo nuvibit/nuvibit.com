@@ -9,12 +9,11 @@ faq:
     - question: "Was ist eine Cloud Foundation?"
       answer: "Bevor die ersten produktiven Workloads in der Cloud deployed werden können gibt es viele verschiedene Komponenten und Themen, die organisiert und durchgedacht werden sollten. Es gibt sowohl technische Komponenten wie Connectivity, Security und Compliance als auch organisatorische Punkte wie finanzielle Steuerung oder Betriebsorganisation, die beachtet werden müssen."
       anchor: foundation
-
       enable: true
 
     - question: "Welche Provider supporten wir?"
       answer: "Wir sind hauptsächlich spezialisiert auf sichere Enterprise Deployments in AWS. 
-              Einige Themen sind aber nicht nur auf einen Provider bezogen sondern lassen sich auf alle public Cloud Provider anwenden. Zögert also nicht uns zu Eurem Anliegen zu [kontaktieren](/contact 'contact form').
+              Einige Themen sind aber nicht nur auf einen Provider bezogen sondern lassen sich auf alle public Cloud Provider anwenden. Zögert also nicht uns zu Eurem Anliegen zu [kontaktieren](/contact 'contact form')."
       anchor: providers
       enable: true
       
@@ -36,7 +35,7 @@ faq:
     - question: "Was sind CIS Controls?"
       answer: "Das [Center for Internet Security](https://www.cisecurity.org/) veröffentliche regelmässig Best Practices und Guidelines für IT Security.
               Aktuell in der Version 8 verfügbar sind in dem Dokument 18 Control Domains von Data Protection, Audit Logging, Service Provider Configuration bis zu Penetration Testing enthalten.
-              Um tiefer einzusteigen empfehlen wir den CIS [CIS Control Navigator](https://www.cisecurity.org/controls/cis-controls-navigator/).
+              Um tiefer einzusteigen empfehlen wir den CIS [CIS Control Navigator](https://www.cisecurity.org/controls/cis-controls-navigator/)."
       anchor: cis
       enable: true
 
@@ -57,7 +56,7 @@ faq:
       answer: "CI/CD kombiniert continuous integration (CI) und continuous delivery oder continuous deployment (CD).<br>
               CI bedeutet, das Änderungen kontinuierlich und in kleinen Inkrementen in das System integriert werden.
               Automatisierte Build und Test Schritte werden über das CI Tool für jede Änderung angestossen um sicherzustellen, dass die Änderungen den Funktions- und Qualitätsanforderungen entsprechen um in die Produktion integriert zu werden.<br>
-              CD ist dafür zuständig, dass die Änderungen automatisiert in das bestehende System integriert werden."dddd
+              CD ist dafür zuständig, dass die Änderungen automatisiert in das bestehende System integriert werden."
       anchor: cicd
       enable: true
 ---

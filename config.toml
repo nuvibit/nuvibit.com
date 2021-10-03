@@ -8,7 +8,7 @@ summarylength = "20"
 # google analytics
 googleAnalytics = "G-65QED8XYJ9"
 # disable language
-disableLanguages = ["de"]
+disableLanguages = []
 # check all links for correct absolute language url before enabling language
 
 # unsafe html
@@ -216,7 +216,7 @@ contact_form_action = "https://getform.io/f/057acfac-7557-4882-94b9-8e6a9c894d72
 
 # Preloader
 [params.preloader]
-enable = true
+enable = false
 preloader = "images/preloader/snake.gif"
 
 

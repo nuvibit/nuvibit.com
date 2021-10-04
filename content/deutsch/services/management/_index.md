@@ -1,14 +1,14 @@
 ---
 title: "Cloud Management at Scale"
-description: "With our practical experience in reshaping organizations for cloud success we can help you reach operational excellence on AWS"
+description: "Mit unserer praktischen Erfahrung in der Umgestaltung von Unternehmen mit dem Ziel in der Cloud erfolgreich zu sein, können wir euch helfen, auch eine operative Exzellenz in AWS zu erreichen."
 draft: false
 
 banner_section:
     enable: true
-    title: "Bereitet Euer Business auf die Cloud vor."
+    title: "Bereitet Euer Geschäft auf die Cloud vor."
     content: "Eine Cloud Strategie zu schreiben ist der erste und einfachste Schritt.
-                Die Vision in die Realität zu überführen und die Organisation zu befähigen ist der komplexe Teil.<br>
-                Wir teilen unsere Erfahrungen, die wir beim Umgestalten und cloud-ready machen von Organisationen gesammelt haben gerne mit Euch."
+                Diese Vision in die Realität zu überführen und die Organisation zu befähigen ist der komplexe Teil.<br>
+                Wir teilen gerne unsere Erfahrungen, die wir beim Umgestalten und dem Cloud-Ready-Machen von Organisationen gesammelt haben, mit euch.
     image: "images/illustrations/cloud_management.png"
     button:
         enable: true
@@ -26,12 +26,12 @@ tile_section:
     list:
       - title: "Cloud Strategie"
         enable: true
-        content: "Wir helfen Euch die Vorteile der public Cloud sicher zu nutzen und gleichzeitig die Business Ziele im Auge zu behalten.<br><br>
+        content: "Wir helfen Euch die Vorteile der Public Cloud sicher zu nutzen und gleichzeitig die Business Ziele im Auge zu behalten.<br><br>
         Wir zeigen Euch die Stolpersteine im Voraus und helfen euch damit Show Stopper zu verhindern und beschleunigen Eure Cloud Journey."
 
       - title: "Legal, Datenschutz and Beschaffung"
         enable: true
-        content: "Am Beginn jeder Cloud Journey gibt es diverse Datenschutz und Legal THemen, die behandelt werden müssen.<br><br>
+        content: "Am Beginn jeder Cloud Journey gibt es diverse Datenschutz und rechtliche Themen, die behandelt werden müssen.<br><br>
         Wir beantworten die offenen Fragen und unterstützen Eure Beschaffungsorganisation die Cloud Paradigmen kennen zu lernen und zu adaptieren."
 
       - title: "Cloud Operation Model"

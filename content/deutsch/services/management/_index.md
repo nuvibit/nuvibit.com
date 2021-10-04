@@ -37,7 +37,7 @@ tile_section:
       - title: "Cloud Operation Model"
         enable: true
         content: "Voll automatisiertes Infrastruktur Provisioning benötigt neben technischen Skills und Tools auch ein neues Mindset.<br><br>
-        Wir befähigen Eure Teams, so dass sie die Verantwortung für die Cloud übernehmen können und helfen ein corss-funktionales agiles Mindeset in die Organisation zu tragen.
+        Wir befähigen Eure Teams, so dass sie die Verantwortung für die Cloud übernehmen können und helfen ein cross-funktionales agiles Mindset in die Organisation zu tragen.
 
       - title: "Cloud Financial Management"
         enable: true

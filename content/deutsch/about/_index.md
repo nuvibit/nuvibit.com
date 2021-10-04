@@ -56,7 +56,7 @@ about_us:
       linkedin: "https://www.linkedin.com/in/andreas-moor"
       title: "Cloud Solution Engineer"
       content: "Andreas ist ein Problemlöser!
-                Er verfügt über langjährige Erfahrung im Design und Aubfabu von Cloud Lösungen und wird garantiert auch Eure Projekte sauber zum laufen kriegen."
+                Er verfügt über langjährige Erfahrung im Design und Aufbau von Cloud Lösungen und wird garantiert auch Eure Projekte sauber zum laufen kriegen."
 ---
 <!-- 
 # Mission

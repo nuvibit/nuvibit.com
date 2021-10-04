@@ -26,7 +26,7 @@ tile_section:
       - title: "Cloud Operations"
         enable: true
         content: "Eine Cloud Foundation zu betreiben benötigt ein sehr breites Skillset.<br><br>
-                  Wir bieten Euch Schulungen an, die euch das nötige Rüstzeug an die Hand gibt, um eine zuverlässige und skallierbare [cloud foundation](/faq/#foundation \"Was ist eine Cloud Foundation?\") zu betreiben.<br><br>"
+                  Wir bieten Euch Schulungen an, die euch das nötige Rüstzeug an die Hand gibt, um eine zuverlässige und skalierbare [cloud foundation](/faq/#foundation \"Was ist eine Cloud Foundation?\") zu betreiben.<br><br>"
 
       - title: "Architecture Review"
         enable: true

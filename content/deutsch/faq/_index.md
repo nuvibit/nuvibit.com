@@ -7,7 +7,7 @@ faq:
   image: "images/illustrations/questions_and_answers.png"
   items:
     - question: "Was ist eine Cloud Foundation?"
-      answer: "Bevor die ersten produktiven Workloads in der Cloud deployed werden können gibt es viele verschiedene Komponenten und Themen, die organisiert und durchgedacht werden sollten. Es gibt sowohl technische Komponenten wie Connectivity, Security und Compliance als auch organisatorische Punkte wie finanzielle Steuerung oder Betriebsorganisation, die beachtet werden müssen."
+      answer: "Bevor die ersten produktiven Workloads in der Cloud deployed werden können gibt es viele verschiedene Komponenten und Themen, die organisiert und durch gedacht werden sollten. Es gibt sowohl technische Komponenten wie Connectivity, Security und Compliance als auch organisatorische Punkte wie finanzielle Steuerung oder Betriebsorganisation, die beachtet werden müssen."
       anchor: foundation
       enable: true
 
@@ -41,7 +41,7 @@ faq:
 
     - question: "Was ist FinOps?"
       answer: "FinOps steht kurz für \"Cloud Financial Operations\" und beschreibt das Finanz Management im public Cloud Umgebungen.
-              Traditionelle Budgetierungs Prozesse stossen bei Pay-as-you-go Modellen schnell an ihre Grenzen, da sie oft fixe, jährliche oder quartalsweise Budgets voraussetzen. In public Cloud Umgebungen skallieren die Kosten mit dem eigentlichen Workload mit und sind so nur sehr schwer auf einen längeren Zeitraum budgetierbar.<br>
+              Traditionelle Budgetierungs Prozesse stossen bei Pay-as-you-go Modellen schnell an ihre Grenzen, da sie oft fixe, jährliche oder quartalsweise Budgets voraussetzen. In public Cloud Umgebungen skalieren die Kosten mit dem eigentlichen Workload mit und sind so nur sehr schwer auf einen längeren Zeitraum budgetierbar.<br>
               Der Hauptfokus liegt also dabei die Cloud Services optimal zu nutzen um die Kosten zu optimieren und den grössten Business Value zu generieren."
       anchor: finops
       enable: true

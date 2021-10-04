@@ -74,7 +74,7 @@ excerpt_section:
       - title_aws: "AWS Security Event Management - SEMPER"
         enable: true
         image: "images/illustrations/cloud_security_event_management_semper.png"
-        content: "Verwaltet alle Eure AWS CloudWatch Event Rules und AWS Security Hub Controls über alle Eure Accounts in einem zentrales [Policy as Code](/faq/#pac 'Was ist Policy as Code?') Eepository.<br>
+        content: "Verwaltet alle Eure AWS CloudWatch Event Rules und AWS Security Hub Controls über alle Eure Accounts in einem zentrales [Policy as Code](/faq/#pac 'Was ist Policy as Code?') Repository.<br>
                   Behaltet den Überblick über alle Security Events, filtert sie nach Wichtigkeit und reichert sie mit wichtigen Metadaten an. Mit unserer Cloud nativen, serverless Lösung [SEMPER](/contact/ 'Kontaktiert uns für mehr Infos!') könnt Ihr all das kontinuierlich und nachhaltig tun."
         # button:
         #   enable: true
@@ -97,7 +97,7 @@ excerpt_section:
         image: "images/illustrations/cloud_security_architecture.png"
         content: "Eine AWS Well-Architected Solution sollte immer Security compliant sein.<br>
                   Es gibt verschiedenste Benchmarks um den Compliance Stand einer Lösung zu evaluieren.
-                  Wir zeigen Euch die verschiedenen Benchmarking Kriterien und Reviewen Eure Architekturen um allfällige Security Risiken zu finden."
+                  Wir zeigen Euch die verschiedenen Benchmarking Kriterien und reviewen Eure Architekturen um allfällige Security Risiken zu finden."
         # button:
         #   enable: false
         #   label: "read more about xxx"

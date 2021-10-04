@@ -46,9 +46,9 @@ about_us:
       name: "Jonas Sägesser"
       linkedin: "https://www.linkedin.com/in/jonas-saegesser"
       title: "Cloud Solution Architect"
-      content: "Cloud Services ermöglichen schnelle, smarte und coole System möglich.
-                Jonas will Euch mit seinem Erfahrungsschatz befähigen, das volle Potential von public Cloud Services zu nutzen.<br>
-                Er hat bereits zahlreiche Workloads auf AWS augebaut oder migriert und begeisterte als Trainer Menschen für die Cloud."
+      content: "Cloud Services ermöglichen schnelle, smarte und coole Lösungen.
+                Jonas kann Euch mit seinem Erfahrungsschatz befähigen, das volle Potential von public Cloud Services zu nutzen.<br>
+                Er hat bereits zahlreiche Workloads auf AWS aufgebaut oder migriert und begeisterte als Trainer Menschen für die Cloud."
 
     - image: "images/profiles/andreas_moor.jpg"
       enable: false

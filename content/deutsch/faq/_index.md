@@ -7,13 +7,13 @@ faq:
   image: "images/illustrations/questions_and_answers.png"
   items:
     - question: "Was ist eine Cloud Foundation?"
-      answer: "Bevor die ersten produktiven Workloads in der Cloud deployed werden können, gibt es viele verschiedene Komponenten und Themen, die organisiert und durch beachtet werden sollten. Es gibt sowohl technische Komponenten - wie Connectivity, Security und Compliance - als auch organisatorische Punkte - wie finanzielle Steuerung oder der Betriebsorganisation - welche allesamt durchdenkt werden wollen."
+      answer: "Bevor die ersten produktiven Workloads in der Cloud deployed werden können, gibt es viele verschiedene Komponenten und Themen, die organisiert und beachtet werden sollten. Es gibt sowohl technische Komponenten - wie Connectivity, Security und Compliance - als auch organisatorische Punkte - wie finanzielle Steuerung oder der Betriebsorganisation - welche allesamt durchdenkt werden wollen."
       anchor: foundation
       enable: true
 
     - question: "Welche Provider supporten wir?"
       answer: "Wir sind hauptsächlich spezialisiert auf sichere Enterprise Deployments in AWS. 
-              Einige Themen sind jedoch nicht nur auf einen Provider bezogen, sondern lassen sich auf alle gängigen Public Cloud Provider anwenden. Zögert also nicht, uns zu Eurem Anliegen zu [kontaktieren](/contact 'contact form')."
+              Einige Themen sind jedoch nicht nur auf einen Provider bezogen, sondern lassen sich auf alle gängigen Public Cloud Provider anwenden. Zögert also nicht, uns zu eurem Anliegen zu [kontaktieren](/contact 'contact form')."
       anchor: providers
       enable: true
       
@@ -47,7 +47,7 @@ faq:
       enable: true
 
     - question: "Was ist GitOps?"
-      answer: "GitOps beschreibt das Konzept, [Git](https://git-scm.com) als zentrales Versionierunssystem zu nutzen, um den Lifecycle einer Systemumgeb ung zu steuern.<br>
+      answer: "GitOps beschreibt das Konzept, [Git](https://git-scm.com) als zentrales Versionierunssystem zu nutzen, um den Lifecycle einer Systemumgebung zu steuern.<br>
               Aufgaben innerhalb des Lifecycles wie Entwicklung-, Test- und die Abnahme-Prozess werden alle zentral via Git ausgelöst und verwaltet. Gleichzeitig sind alle Aktionen in einer Git History versioniert und nachvollziehbar protokolliert."
       anchor: gitops
       enable: true

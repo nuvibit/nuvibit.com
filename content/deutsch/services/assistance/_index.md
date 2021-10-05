@@ -26,7 +26,7 @@ tile_section:
       - title: "Cloud Operations"
         enable: true
         content: "Eine Cloud Foundation zu betreiben benötigt ein breites Fähigkeites-Spektrum.<br><br>
-                  Wir bieten Euch Schulungen an, die euch das nötige Rüstzeug an die Hand gibt, um eine zuverlässige und skalierbare [Cloud Foundation](/faq/#foundation \"Was ist eine Cloud Foundation?\") zu betreiben.<br><br>"
+                  Wir bieten euch Schulungen an, die euch das nötige Rüstzeug an die Hand gibt, um eine zuverlässige und skalierbare [Cloud Foundation](/faq/#foundation \"Was ist eine Cloud Foundation?\") zu betreiben.<br><br>"
 
       - title: "Architecture Review"
         enable: true
@@ -36,16 +36,16 @@ tile_section:
       - title: "Automation"
         enable: true
         content: "Die Cloud bietet uns die Möglichkeit unsere Systeme zu hundert Prozent zu automatisieren.<br><br>
-                  Wir befähigen Eure Engineers Cloud spezifische [CI/CD](/faq/#cicd \"Was ist CI/CD?\") Pipelines zu bauen und zu betreiben."
+                  Wir befähigen eure Engineers Cloud spezifische [CI/CD](/faq/#cicd \"Was ist CI/CD?\") Pipelines zu bauen und zu betreiben."
 
       - title: "Infrastructure as Code"
         enable: true
         content: "Die beste Methodik um grosse Cloud Umgebungen zu managen ist [Infrastructure as Code](/faq/#iac \"Was ist Infrastructure as Code?\").<br><br>
-                  Wir haben umfangreiches Terraform Knowhow und bauen auch unsere eigenen Module. Wir helfen Euch mit der Implementierung von unseren Modulen und bieten auch Support für diese Module an."
+                  Wir haben umfangreiches Terraform Knowhow und bauen auch unsere eigenen Module. Wir helfen euch mit der Implementierung von unseren Modulen und bieten auch Support für diese Module an."
 
       - title: "Training"
         enable: true
-        content: "Die wichtigste Komponente für Eure Cloud Journey ist Know-How.<br><br>
+        content: "Die wichtigste Komponente für eure Cloud Journey ist Know-How.<br><br>
                   Wir zeigen euren Teams Arbeitsweisen und Praktiken, die im Umgang mit Public Clouds speziell gut funktionieren und sich in unserer Erfahrung bewährt haben."
 
       - title: "Cloud Migration"
@@ -60,8 +60,8 @@ excerpt_section:
       - title_aws: "AWS Foundation Squad"
         enable: true
         image: "images/illustrations/cloud_foundation_squad.png"
-        content: "Wollt Ihr Eurer Cloud Journey so richtig auf die Sprünge helfen?<br>
-                  Wir nehmen die IST Situation auf, erheben alle Anforderungen und stellen ein Team von Spezialisten zusammen, welche Euch eine (eure!) Cloud Foundation in einem Bruchteil der normal benötigten Zeit aufbauen.
+        content: "Wollt Ihr eurer Cloud Journey so richtig auf die Sprünge helfen?<br>
+                  Wir nehmen die IST Situation auf, erheben alle Anforderungen und stellen ein Team von Spezialisten zusammen, welche euch eine (eure!) Cloud Foundation in einem Bruchteil der normal benötigten Zeit aufbauen.
                   Auf dem Weg begleiten und schulen wir euch und eure Organisation so, dass Ihr die Verantwotlichkeit der Foundation komplett übernehmen könnt."
         # button:
         #   enable: false
@@ -83,7 +83,7 @@ excerpt_section:
         enable: true
         image: "images/illustrations/cloud_infrastructure_as_code.png"
         content: " Um ans Ziel einer robusten und skalierbaren Cloud Foundation zu gelangen, ist Infrastructure-as-Code zu adaptieren eine entscheidende Grundlage.<br>
-                  Wie einige andere nutzen selbst dafür [Terraform](https://www.terraform.io/intro/index.html 'Introduction to Terraform'. Wir haben eine eigene Sammlung von Terraform Modulen entwickelt.
+                  Wie einige andere nutzen wir selbst dafür [Terraform](https://www.terraform.io/intro/index.html 'Introduction to Terraform'. Wir haben eine eigene Sammlung von Terraform Modulen entwickelt.
                   Unsere frei verfügbaren Module findet Ihr in unserer [Terraform Registry](https://registry.terraform.io/namespaces/nuvibit)."
         # button:
         #   enable: true

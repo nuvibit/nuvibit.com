@@ -13,7 +13,7 @@ about_us:
       name: "Roman Plessl"
       linkedin: "https://www.linkedin.com/in/romanplessl"
       title: "Cloud Security Specialist"
-      content: "Roman's Stärke ist sein Blick auf ein stimmiges Gesamtbild. Im Speziell auch mit Fokus auf die Punkte, welche fehlen oder optimiert werden können. 
+      content: "Roman's Stärke ist sein Blick auf ein stimmiges Gesamtbild. Im Speziellen auch mit Fokus auf die Punkte, welche fehlen oder optimiert werden können. 
                 Er arbeitet gerne im Grenzbereich, in dem sich die technische Security Architektur als auch Menschen & Firmen Kultur aufeinander treffen und sich mischen.<br>
                 Er hat bereits über zwei Jahrzehnte wertvolle Erfahrungen im Designen, Betreiben von Services, sowie im Beraten von Kunden sammeln können."
 
@@ -22,7 +22,7 @@ about_us:
       name: "Christoph Siegrist"
       linkedin: "https://www.linkedin.com/in/christoph-siegrist"
       title: "Digitalization & Transformation Specialist"
-      content: "Christoph zeigt Euch den Weg durch den Cloud Dschungel. Er hat langjährige Erfahrung darin, Firmen auf eine Tranformationsreise zu nehmen und dabei DevOps Practices einzuführen."
+      content: "Christoph zeigt euch den Weg durch den Cloud Dschungel. Er hat langjährige Erfahrung darin, Firmen auf eine Tranformationsreise zu nehmen und dabei DevOps Practices einzuführen."
 
     - image: "images/profiles/stefano_franco.jpg"
       enable: true
@@ -47,7 +47,7 @@ about_us:
       linkedin: "https://www.linkedin.com/in/jonas-saegesser"
       title: "Cloud Solution Architect"
       content: "Cloud Services ermöglichen schnelle, smarte und coole Lösungen.
-                Jonas kann Euch mit seinem Erfahrungsschatz befähigen, das volle Potential von Public Cloud Services zu nutzen.<br>
+                Jonas kann euch mit seinem Erfahrungsschatz befähigen, das volle Potential von Public Cloud Services zu nutzen.<br>
                 Er hat bereits zahlreiche Workloads auf AWS aufgebaut oder migriert und begeisterte als Trainer Menschen für die Cloud."
 
     - image: "images/profiles/andreas_moor.jpg"
@@ -56,7 +56,7 @@ about_us:
       linkedin: "https://www.linkedin.com/in/andreas-moor"
       title: "Cloud Solution Engineer"
       content: "Andreas ist ein Problemlöser!
-                Er verfügt über langjährige Erfahrung im Design und Aufbau von Cloud Lösungen und wird garantiert auch Eure Projekte sauber zum Laufen zu bringen."
+                Er verfügt über langjährige Erfahrung im Design und Aufbau von Cloud Lösungen und wird garantiert auch eure Projekte sauber zum Laufen zu bringen."
 ---
 <!-- 
 # Mission

@@ -12,7 +12,7 @@ banner:
 ############################# services ##########################
 services:
   enable: true
-  title: "Nehmt uns mit auf Euren Weg in die Cloud!"
+  title: "Nehmt uns mit auf euren Weg in die Cloud!"
   items:
     - image: "images/illustrations/cloud_assistance.png"
       enable: true
@@ -29,7 +29,7 @@ services:
       title: "Bereitet Euer Business auf die Cloud vor."
       content: "Eine Cloud Strategie zu schreiben ist der erste und einfachste Schritt.
                 Die Vision in die Realität zu überführen und die Organisation zu befähigen ist der komplexe Teil.<br>
-                Wir teilen unsere Erfahrungen, die wir beim Umgestalten und cloud-ready machen von Organisationen gesammelt haben gerne mit Euch."
+                Wir teilen unsere Erfahrungen, die wir beim Umgestalten und cloud-ready machen von Organisationen gesammelt haben gerne mit euch."
       link:
         enable: true
         label: "Unsere management services"
@@ -40,7 +40,7 @@ services:
       title: "Security Compliance ist Prio 1!"
       content: "Die Security Maturität von der public Cloud Umgebung ist Business kritisch.
                 Compliance stellt eine Herausforderung für Unternehmungen mit einer grossen Applikationslandschaft dar.<br>
-                Cloud Security und Compliance ist eines unserer Spezialgebiete und wie unterstützen Euch gerne!"
+                Cloud Security und Compliance ist eines unserer Spezialgebiete und wie unterstützen euch gerne!"
       link:
         enable: true
         label: "Unsere security services"
@@ -50,7 +50,7 @@ services:
       enable: true
       title: "Startet mit einer soliden Netzwerk Foundation!"
       content: "Connectivity ist eines der ersten Themen, die es auf der Cloud Journey zu lösen gilt.<br><br>
-            Wir stellen sicher, dass alle Eure Workloads sicher, skalierbar und zuverlässig mit AWS und Azure verbunden sind."
+            Wir stellen sicher, dass alle eure Workloads sicher, skalierbar und zuverlässig mit AWS und Azure verbunden sind."
       link:
         enable: true
         label: "Unsere connectivity services"

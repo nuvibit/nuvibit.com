@@ -7,7 +7,7 @@ faq:
   image: "images/illustrations/questions_and_answers.png"
   items:
     - question: "Was ist eine Cloud Foundation?"
-      answer: "Bevor die ersten produktiven Workloads in der Cloud deployed werden können, gibt es viele verschiedene Komponenten und Themen, die organisiert und beachtet werden sollten. Es gibt sowohl technische Komponenten - wie Connectivity, Security und Compliance - als auch organisatorische Punkte - wie finanzielle Steuerung oder der Betriebsorganisation - welche allesamt durchdenkt werden wollen."
+      answer: "Bevor die ersten produktiven Workloads in der Cloud deployed werden können, gibt es viele verschiedene Komponenten und Themen, die organisiert und beachtet werden sollten. Es gibt sowohl technische Komponenten - wie Connectivity, Security und Compliance - als auch organisatorische Punkte - wie finanzielle Steuerung oder der Betriebsorganisation - welche allesamt durchdacht werden wollen."
       anchor: foundation
       enable: true
 

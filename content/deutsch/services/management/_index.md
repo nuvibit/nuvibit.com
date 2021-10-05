@@ -27,7 +27,7 @@ tile_section:
       - title: "Cloud Strategie"
         enable: true
         content: "Wir helfen euch die Vorteile der Public Cloud sicher zu nutzen und gleichzeitig die Business Ziele im Auge zu behalten.<br><br>
-        Wir zeigen euch die Stolpersteine im Voraus und helfen euch damit späere Show-Stoppers zu verhindern, so  beschleunigen wir eure Cloud Journey."
+        Wir zeigen euch die Stolpersteine im Voraus und helfen euch damit spätere Show-Stoppers zu verhindern, so  beschleunigen wir eure Cloud Journey."
 
       - title: "Legal, Datenschutz and Beschaffung"
         enable: true

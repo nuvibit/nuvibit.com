@@ -88,7 +88,7 @@ excerpt_section:
         image: "images/illustrations/cloud_route53.png"
         content: "Eine oft unterschätzte Herausforderung ist eine gut durchdachte hybride DNS Lösung.<br>
                   DNS in der Public Cloud muss dynamisch und zuverlässig funktionieren und darf den Arbeitsablauf der Entwicklungsteams nicht ausbremsen.
-                  Wir bieten skalierbare und sichere DNS Referenzarchitekturen und helfen euch die richtige Lösung für Euer Setup zu implementieren."
+                  Wir bieten skalierbare und sichere DNS Referenzarchitekturen und helfen euch die richtige Lösung für euer Setup zu implementieren."
         # button:
         #   enable: false
         #   label: "read more about xxx"

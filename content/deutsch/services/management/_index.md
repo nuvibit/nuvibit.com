@@ -5,7 +5,7 @@ draft: false
 
 banner_section:
     enable: true
-    title: "Bereitet Euer Geschäft auf die Cloud vor."
+    title: "Bereitet euer Geschäft auf die Cloud vor."
     content: "Eine Cloud Strategie zu schreiben ist der erste und einfachste Schritt.
                 Diese Vision in die Realität zu überführen und die Organisation zu befähigen ist der komplexe Teil.<br>
                 Wir teilen gerne unsere Erfahrungen, die wir beim Umgestalten und dem Cloud-Ready-Machen von Organisationen gesammelt haben, mit euch.

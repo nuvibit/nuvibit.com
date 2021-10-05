@@ -26,7 +26,7 @@ services:
 
     - image: "images/illustrations/cloud_management.png"
       enable: true
-      title: "Bereitet Euer Business auf die Cloud vor."
+      title: "Bereitet euer Business auf die Cloud vor."
       content: "Eine Cloud Strategie zu schreiben ist der erste und einfachste Schritt.
                 Die Vision in die Realität zu überführen und die Organisation zu befähigen ist der komplexe Teil.<br>
                 Wir teilen unsere Erfahrungen, die wir beim Umgestalten und cloud-ready machen von Organisationen gesammelt haben gerne mit euch."

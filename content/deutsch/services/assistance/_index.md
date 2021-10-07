@@ -6,7 +6,7 @@ draft: false
 banner_section:
     enable: true
     title: "Zusammen sind wir stark."
-    content: "Rom wurde nicht an einem Tag erbaut - und das gleiche gilt für eine zuverlässige Cloud Foundation.<br><br>
+    content: "Rom wurde nicht an einem Tag erbaut - und genau das gleiche gilt für eine zuverlässige Cloud Foundation.<br><br>
               Als ehemaliges, cross-funktionales Team in einem grossen Schweizer Unternehmen haben wir zahlreiche technische, wie auch organisatorische Herausforderungen im Zusammenhang mit dem Aufbau einer Cloud Foundation bewältigt."
     image: "images/illustrations/cloud_assistance.png"
     button:
@@ -26,12 +26,13 @@ tile_section:
       - title: "Cloud Operations"
         enable: true
         content: "Eine Cloud Foundation zu betreiben benötigt ein breites Fähigkeites-Spektrum.<br><br>
-                  Wir bieten euch Schulungen an, die euch das nötige Rüstzeug an die Hand gibt, um eine zuverlässige und skalierbare [Cloud Foundation](/faq/#foundation \"Was ist eine Cloud Foundation?\") zu betreiben.<br><br>"
+                  Wir schulen euch, um euch das nötige Rüstzeug an die Hand zu geben, um eine zuverlässige und skalierbare [Cloud Foundation](/faq/#foundation \"Was ist eine Cloud Foundation?\") zu betreiben.<br><br>"
 
       - title: "Architecture Review"
         enable: true
-        content: "Damit eure Workloads von den Möglichkeiten der Cloud profitieren können ist eine grundliegende Cloud-Ready Architektur entscheidend.<br><br>
-                  Über die Jahre haben wir viele Well-Architected Referenzarchitekturen implementiert und reviewed. Dabei habe wir einen guten Blick und Expertise für mögliche Schwachstellen entwickelt."
+        content: "Damit eure Workloads gut von den Möglichkeiten der Cloud profitieren können, ist eine
+                  grundliegende Cloud-Ready Architektur entscheidend.<br><br>
+                  Über die Jahre haben wir viele Well-Architected Referenzarchitekturen implementiert und gereviewed. Dabei haben wir Expertise und einen guten Blick für Schwachstellen entwickelt."
 
       - title: "Automation"
         enable: true
@@ -55,14 +56,14 @@ tile_section:
 
 excerpt_section:
     enable: true
-    title: "Let's dive deeper..."
+    title: "Lasst uns tiefer eintauchen......"
     list:
       - title_aws: "AWS Foundation Squad"
         enable: true
         image: "images/illustrations/cloud_foundation_squad.png"
         content: "Wollt Ihr eurer Cloud Journey so richtig auf die Sprünge helfen?<br>
                   Wir nehmen die IST Situation auf, erheben alle Anforderungen und stellen ein Team von Spezialisten zusammen, welche euch eine (eure!) Cloud Foundation in einem Bruchteil der normal benötigten Zeit aufbauen.
-                  Auf dem Weg begleiten und schulen wir euch und eure Organisation so, dass Ihr die Verantwotlichkeit der Foundation komplett übernehmen könnt."
+                  Auf dem Weg begleiten und schulen wir euch und eure Organisation so, dass Ihr die Verantwortlichkeit der Foundation komplett übernehmen könnt."
         # button:
         #   enable: false
         #   label: "have a look to our terraform modules"
@@ -82,8 +83,8 @@ excerpt_section:
       - title_aws: "AWS Terraform Modules"
         enable: true
         image: "images/illustrations/cloud_infrastructure_as_code.png"
-        content: " Um ans Ziel einer robusten und skalierbaren Cloud Foundation zu gelangen, ist Infrastructure-as-Code zu adaptieren eine entscheidende Grundlage.<br>
-                  Wie einige andere nutzen wir selbst dafür [Terraform](https://www.terraform.io/intro/index.html 'Introduction to Terraform'. Wir haben eine eigene Sammlung von Terraform Modulen entwickelt.
+        content: "Um ans Ziel einer robusten und skalierbaren Cloud Foundation zu gelangen, ist Infrastructure-as-Code zu adaptieren eine entscheidende Komponente.<br>
+                  Wie einige andere nutzen wir selbst dafür [Terraform](https://www.terraform.io/intro/index.html 'Introduction to Terraform'). Wir haben eine eigene Sammlung von Terraform Modulen entwickelt.
                   Unsere frei verfügbaren Module findet Ihr in unserer [Terraform Registry](https://registry.terraform.io/namespaces/nuvibit)."
         # button:
         #   enable: true

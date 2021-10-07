@@ -8,7 +8,7 @@ banner_section:
     title: "Bereitet euer Geschäft auf die Cloud vor."
     content: "Eine Cloud Strategie zu schreiben ist der erste und einfachste Schritt.
                 Diese Vision in die Realität zu überführen und die Organisation zu befähigen ist der komplexe Teil.<br>
-                Wir teilen gerne unsere Erfahrungen, die wir beim Umgestalten und dem Cloud-Ready-Machen von Organisationen gesammelt haben, mit euch.
+                Wir teilen gerne unsere Erfahrungen, die wir beim Umgestalten und dem Cloud-Ready-Machen von Organisationen gesammelt haben, mit euch."
     image: "images/illustrations/cloud_management.png"
     button:
         enable: true
@@ -37,7 +37,7 @@ tile_section:
       - title: "Cloud Operation Model"
         enable: true
         content: "Voll automatisiertes Infrastruktur Provisioning benötigt neben technischen Skills und Tools auch ein neues Mindset.<br><br>
-        Wir befähigen eure Teams, so dass sie die Verantwortung für die Cloud übernehmen können und helfen ein cross-funktionales agiles Mindset in die Organisation zu tragen.
+        Wir befähigen eure Teams, so dass sie die Verantwortung für die Cloud übernehmen können und helfen ein cross-funktionales agiles Mindset in die Organisation zu tragen."
 
       - title: "Cloud Financial Management"
         enable: true

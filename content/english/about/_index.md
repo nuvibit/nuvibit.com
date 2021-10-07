@@ -49,22 +49,22 @@ about_us:
       name: "Jonas Sägesser"
       linkedin: "https://www.linkedin.com/in/jonas-saegesser"
       title: "Cloud Solution Architect"
-      content: "Cloud services make fast, smart and cool solutions possible. 
+      content: "Cloud services make fast, smart and cool solutions possible.
                 Jonas loves to enable you to take full advantage of those possibilities with his vast experience in the public cloud domain!<br>
                 He has migrated numerous workloads to AWS and got people excited about the cloud through his engagement as a trainer."
 
     - image: "images/profiles/andreas_moor.jpg"
-      enable: false
+      enable: true
       name: "Andreas Moor"
       linkedin: "https://www.linkedin.com/in/andreas-moor"
       title: "Cloud Solution Engineer"
-      content: "Andreas get things done!
+      content: "Andreas get things done!<br>
                 With many years of expirience with building and designing solutions in the cloud he is your man for getting your projects up and running."
 ---
-<!-- 
+<!--
 # Mission
 We are fully convinced that cloud services have the potential to tranform the digital world. We want everyone to be able to facilitate the options those services can offer in an easy, safe and fast way.
-On the journey to the cloud there are lots of technical and organizational challenges to be handled. Our [Services]({{< ref "/services/" >}} "Services") will equip you with all the right tools and skills to master those challenges. 
+On the journey to the cloud there are lots of technical and organizational challenges to be handled. Our [Services]({{< ref "/services/" >}} "Services") will equip you with all the right tools and skills to master those challenges.
 <br>
 <br>
 

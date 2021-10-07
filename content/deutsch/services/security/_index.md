@@ -8,7 +8,7 @@ banner_section:
     title: "Security Compliance ist Prio 1!"
     content: "Die Security Maturität von der public Cloud Umgebung ist Business kritisch.
                 Compliance stellt eine Herausforderung für Unternehmungen mit einer grossen Applikationslandschaft dar.<br><br>
-                Cloud Security und Compliance ist eines unserer Spezialgebiete und wie unterstützen euch gerne!
+                Cloud Security und Compliance ist eines unserer Spezialgebiete und wie unterstützen euch gerne!"
     image: "images/illustrations/cloud_security_compliance.png"
     button:
         enable: true
@@ -29,7 +29,7 @@ tile_section:
         enable: true
         content: "Es gibt viele Dinge zu beachten, wenn man eine Security Standard konforme Cloud Lösung baut.<br><br>
                   Wir bieten getestete und Praxis taugliche Referenz Architekturen, die vollständig [CIS Control](/faq/#cis \"Was sind CIS Controls?\") compliant sind.
-                  Ausserdem reviewen wir gerne eure bestehenden Architekturen und Workloads und untersuchen sie auf mögliche Security Vulnerabilities.
+                  Ausserdem reviewen wir gerne eure bestehenden Architekturen und Workloads und untersuchen sie auf mögliche Security Vulnerabilities."
 
       - title: "Security Assessment"
         enable: true

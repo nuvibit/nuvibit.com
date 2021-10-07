@@ -1,11 +1,12 @@
 ---
 title: "Triff unser Team"
-description: "Nuvibit wurde von einer Gruppe von Cloud-Enthusiasten gegründet, die sich gerne einer neuen   Herausforderung stellen wollen."
+description: "Nuvibit wurde von einer Gruppe von Cloud-Enthusiasten gegründet, die sich gerne neuen   Herausforderungen stellen wollen."
 draft: false
 
 about_us:
-  introduction: "Nuvibit wurde von einer Gruppe von Cloud-Enthusiasten gegründet, die sich gerne einer neuen   Herausforderung stellen wollen.<br>
-                Ursprünglich haben alle Gründer in unterschiedlichen Funktionen und Teams für dieselbe Firma gearbeitet. Gleich nach der Ankündigung der Cloud-Strategie des Unternehmens wurden wir mit dem Aufbau einer Cloud Foundation für AWS beauftragt.  Wir haben unser Blut, unseren Schweiss und unsere Tränen in diese Cloud Foundation hineingesteckt und es geschafft, einen hervorragenden Reifegrad zu erreichen.<br>
+  introduction: "Nuvibit wurde von einer Gruppe von Cloud-Enthusiasten gegründet, die sich gerne neuen
+                Herausforderung stellen wollen.<br>
+                Ursprünglich haben alle Gründer in unterschiedlichen Funktionen und Teams für dieselbe Firma gearbeitet. Gleich nach der Ankündigung der Cloud-Strategie des Unternehmens wurden wir mit dem Aufbau einer Cloud Foundation für AWS beauftragt. Wir haben unser Blut, unseren Schweiss und unsere Tränen in diese Cloud Foundation hineingesteckt und es geschafft, einen hervorragenden Reifegrad zu erreichen.<br>
                 Jeder Einzelne von uns ist über sich hinausgewachsen, was letztlich zu der Idee führte, mit gleichgesinnten, motivierten Menschen ein Unternehmen zu gründen - die Nuvibit."
   items:
     - image: "images/profiles/roman_plessl.jpg"
@@ -13,7 +14,7 @@ about_us:
       name: "Roman Plessl"
       linkedin: "https://www.linkedin.com/in/romanplessl"
       title: "Cloud Security Specialist"
-      content: "Roman's Stärke ist sein Blick auf ein stimmiges Gesamtbild. Im Speziellen auch mit Fokus auf die Punkte, welche fehlen oder optimiert werden können.
+      content: "Roman's Stärke ist sein Blick auf ein stimmiges Gesamtbild. Im Speziellen auch mit Fokus auf die Punkte, welche fehlen oder optimiert werden können.<br>
                 Er arbeitet bevorzugt im Grenzgebiet, wo sich technische Architektur & Security als auch Menschen mit ihrer Unternehemskultur aufeinander treffen und sich vermischen.<br>
                 Er hat bereits über zwei Jahrzehnte wertvolle Erfahrungen im Designen, Betreiben von Services, sowie im Beraten von Kunden sammeln können."
 
@@ -22,7 +23,7 @@ about_us:
       name: "Christoph Siegrist"
       linkedin: "https://www.linkedin.com/in/christoph-siegrist"
       title: "Digitalization & Transformation Specialist"
-      content: "Christoph zeigt euch den Weg durch den Cloud Dschungel. Er hat langjährige Erfahrung darin,
+      content: "Christoph zeigt euch den Weg durch den Cloud Dschungel. Er hat langjährige Erfahrung darin
                 Firmen auf eine Tranformationsreise zu nehmen und dabei DevOps Practices einzuführen.<br>
                 Mit dem Blick für das grosse Ganze und seinem Organisationstalent schafft er eine Umgebung,
                 in der das volle Potenzial der Cloud ausgeschöpft werden kann."
@@ -54,11 +55,11 @@ about_us:
                 Er hat zahlreiche Workloads auf AWS aufgebaut oder von On-Prem migriert. Mit seinem Engagement als Trainer begeisterte er Menschen für die Cloud."
 
     - image: "images/profiles/andreas_moor.jpg"
-      enable: false
+      enable: true
       name: "Andreas Moor"
       linkedin: "https://www.linkedin.com/in/andreas-moor"
       title: "Cloud Solution Engineer"
-      content: "Andi ist ein Problemlöser!
+      content: "Andi ist ein Problemlöser!<br>
                 Mit seiner langjährigen Erfahrung im Aufbau und Design von Lösungen in der Cloud, ist er der richtige Mann, um eure Projekte zum Laufen zu bringen."
 ---
 <!--

@@ -26,7 +26,7 @@ tile_section:
       - title: "Infrastructure as Code"
         enable: true
         content: "Wir bieten fix fertige Referenzarchitekturen in Form von [Terraform](/faq/#iac 'What is Infrastructure as Code?') Modulen, die die verschiedensten Connectivity Anforderungen abdecken können.
-              Unsere Module vereinfachen das Management eurer Cloud Connectivity Lösung, reduzieren Fehlerquellen und erhöhen eure Time-To-Market"
+              Unsere Module vereinfachen das Management eurer Cloud Connectivity Lösung, reduzieren Fehlerquellen und erhöhen eure Time-To-Market."
 
       - title: "Hybrid Connectivity"
         enable: true
@@ -40,13 +40,13 @@ tile_section:
 
       - title: "Reliability"
         enable: true
-        content: "Redundanz steht bei unsere Connecitivy Lösungen stets im Vordergrund.<br><br>
-              Verbindungsausfälle in einem hybriden Cloud Szenario haben in den meisten Fällen schwere Folgen für die Workloads und damit auf das Business."
+        content: "Redundanz steht bei unsere Connectivity Lösungen stets im Vordergrund.<br><br>
+              Verbindungsausfälle in einem hybriden Cloud Szenario haben in den meisten Fällen schwere Folgen für die Workloads und damit auf das gesamte Unternehmen."
 
       - title: "Scalability"
         enable: true
         content: "Einer der ganz grossen Vorteile von public Cloud Services ist ihre Skalierbarkeit.<br><br>
-              Unsere Connectivity Lösungen sin speziell für diese Anforderung entwickelt und skalieren mit eurem Workload mit."
+              Unsere Connectivity Lösungen sind speziell für diese Anforderung entwickelt und skalieren mit eurem Workload mit."
 
       - title: "Netzwerk Security"
         enable: true
@@ -63,7 +63,7 @@ excerpt_section:
         enable: true
         image: "images/illustrations/cloud_direct_connect.png"
         content: "Vermeidet unnötige Stolpersteine beim Aufbau der Connectivity Lösung zwischen den On-Premise Rechenzentren und der Public Cloud.<br><br>
-            Die Anforderungen an die Connectivity reichen von starker Verschlüsselung, grossem Durchsatz bis zu tiefer Latenz und in vielen Fällen ist es eine Kombination davon. Wir kenne all die Stolpersteine bereits aus unserer praktischen Erfahrung im Aufbau von redundanten Direct Connect und Express Route Lösungen und zeigen euch den Weg drum herum."
+            Die Anforderungen an die Connectivity reichen von starker Verschlüsselung, hohem Durchsatz bis hin zu tiefer Latenz und in vielen Fällen ist es eine Kombination davon. Wir kenne all die Stolpersteine bereits aus unserer praktischen Erfahrung im Aufbau von redundanten Direct Connect und Express Route Lösungen und zeigen euch den Weg drum herum."
         # button:
         #   enable: false
         #   label: "read more about xxx"
@@ -88,7 +88,7 @@ excerpt_section:
         image: "images/illustrations/cloud_route53.png"
         content: "Eine oft unterschätzte Herausforderung ist eine gut durchdachte hybride DNS Lösung.<br>
                   DNS in der Public Cloud muss dynamisch und zuverlässig funktionieren und darf den Arbeitsablauf der Entwicklungsteams nicht ausbremsen.
-                  Wir bieten skalierbare und sichere DNS Referenzarchitekturen und helfen euch die richtige Lösung für euer Setup zu implementieren."
+                  Wir bieten skalierbare und sichere DNS Referenzarchitekturen an und helfen euch die richtige Lösung für euer Setup zu implementieren."
         # button:
         #   enable: false
         #   label: "read more about xxx"

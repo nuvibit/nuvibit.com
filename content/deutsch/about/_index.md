@@ -1,20 +1,20 @@
 ---
-title: "Meet Our Team"
-description: "Nuvibit was founded by a group of cloud enthusiasts who were eager to take on a fresh challenge."
+title: "Triff unser Team"
+description: "Nuvibit wurde von einer Gruppe von Cloud-Enthusiasten gegründet, die sich gerne einer neuen   Herausforderung stellen wollen."
 draft: false
 
 about_us:
-  introduction: "Nuvibit wurde von einer Gruppe Cloud begeisterter Menschen gegründet, die eine neue Herausforderung gesucht haben.<br>
-                Ursprünglich haben alle Gründer in unterschiedlichen Funktionen und Teams für dieselbe Firma gearbeitet. Gemeinsam haben wir die formulierte Cloud Strategie der Firma technisch und organisatorisch aufgebaut und in AWS mittels der Form einer Cloud Foundation umgesetzt. Mit  Einsatz und mit viel Herzblut haben wir einen sehr gutes Maturitätslevel erreicht.<br>
-                Die Skills, die sich jeder von uns in diesem Entstehungs-Prozess erarbeitet und verfestigt haben, fliessen nun in die neue Firma - Nuvibit."
+  introduction: "Nuvibit wurde von einer Gruppe von Cloud-Enthusiasten gegründet, die sich gerne einer neuen   Herausforderung stellen wollen.<br>
+                Ursprünglich haben alle Gründer in unterschiedlichen Funktionen und Teams für dieselbe Firma gearbeitet. Gleich nach der Ankündigung der Cloud-Strategie des Unternehmens wurden wir mit dem Aufbau einer Cloud Foundation für AWS beauftragt.  Wir haben unser Blut, unseren Schweiss und unsere Tränen in diese Cloud Foundation hineingesteckt und es geschafft, einen hervorragenden Reifegrad zu erreichen.<br>
+                Jeder Einzelne von uns ist über sich hinausgewachsen, was letztlich zu der Idee führte, mit gleichgesinnten, motivierten Menschen ein Unternehmen zu gründen - die Nuvibit."
   items:
     - image: "images/profiles/roman_plessl.jpg"
       enable: true
       name: "Roman Plessl"
       linkedin: "https://www.linkedin.com/in/romanplessl"
       title: "Cloud Security Specialist"
-      content: "Roman's Stärke ist sein Blick auf ein stimmiges Gesamtbild. Im Speziellen auch mit Fokus auf die Punkte, welche fehlen oder optimiert werden können. 
-                Er arbeitet gerne im Grenzbereich, in dem sich die technische Security Architektur als auch Menschen & Firmen Kultur aufeinander treffen und sich mischen.<br>
+      content: "Roman's Stärke ist sein Blick auf ein stimmiges Gesamtbild. Im Speziellen auch mit Fokus auf die Punkte, welche fehlen oder optimiert werden können.
+                Er arbeitet bevorzugt im Grenzgebiet, wo sich technische Architektur & Security als auch Menschen mit ihrer Unternehemskultur aufeinander treffen und sich vermischen.<br>
                 Er hat bereits über zwei Jahrzehnte wertvolle Erfahrungen im Designen, Betreiben von Services, sowie im Beraten von Kunden sammeln können."
 
     - image: "images/profiles/christoph_siegrist.jpg"
@@ -22,7 +22,10 @@ about_us:
       name: "Christoph Siegrist"
       linkedin: "https://www.linkedin.com/in/christoph-siegrist"
       title: "Digitalization & Transformation Specialist"
-      content: "Christoph zeigt euch den Weg durch den Cloud Dschungel. Er hat langjährige Erfahrung darin, Firmen auf eine Tranformationsreise zu nehmen und dabei DevOps Practices einzuführen."
+      content: "Christoph zeigt euch den Weg durch den Cloud Dschungel. Er hat langjährige Erfahrung darin,
+                Firmen auf eine Tranformationsreise zu nehmen und dabei DevOps Practices einzuführen.<br>
+                Mit dem Blick für das grosse Ganze und seinem Organisationstalent schafft er eine Umgebung,
+                in der das volle Potenzial der Cloud ausgeschöpft werden kann."
 
     - image: "images/profiles/stefano_franco.jpg"
       enable: true
@@ -30,8 +33,8 @@ about_us:
       linkedin: "https://www.linkedin.com/in/franco-stefano"
       title: "Cloud Network & Automation Specialist"
       content: "Stefano ist unser Public Cloud Networking Powerhouse!
-                Mit seinen Begeisterung für Automatisierung und der Erfahrung mit komplexen Connectivity Solutions ist er weit mehr als ein klassischer Netzwerkspezialist.<br>
-                Er isst AWS und Azure Connectivty Issues zum Frühstück."
+                Mit seiner jahrelanger Erfahrung im Aufbau von Konnektivitätslösungen und seiner brennenden Leidenschaft für Automatisierung ist er weit mehr als ein klassischer Netzwerkspezialist.<br>
+                Er isst Herausforderungen zu AWS- und Azure-Konnektivitäten zum Frühstück."
 
     - image: "images/profiles/michael_ullrich.jpg"
       enable: true
@@ -47,21 +50,21 @@ about_us:
       linkedin: "https://www.linkedin.com/in/jonas-saegesser"
       title: "Cloud Solution Architect"
       content: "Cloud Services ermöglichen schnelle, smarte und coole Lösungen.
-                Jonas kann euch mit seinem Erfahrungsschatz befähigen, das volle Potential von Public Cloud Services zu nutzen.<br>
-                Er hat bereits zahlreiche Workloads auf AWS aufgebaut oder migriert und begeisterte als Trainer Menschen für die Cloud."
+                Jonas kann euch mit seinem Erfahrungsschatz befähigen, das volle Potential der Public Cloud Services zu nutzen.<br>
+                Er hat zahlreiche Workloads auf AWS aufgebaut oder von On-Prem migriert. Mit seinem Engagement als Trainer begeisterte er Menschen für die Cloud."
 
     - image: "images/profiles/andreas_moor.jpg"
       enable: false
       name: "Andreas Moor"
       linkedin: "https://www.linkedin.com/in/andreas-moor"
       title: "Cloud Solution Engineer"
-      content: "Andreas ist ein Problemlöser!
-                Er verfügt über langjährige Erfahrung im Design und Aufbau von Cloud Lösungen und wird garantiert auch eure Projekte sauber zum Laufen zu bringen."
+      content: "Andi ist ein Problemlöser!
+                Mit seiner langjährigen Erfahrung im Aufbau und Design von Lösungen in der Cloud, ist er der richtige Mann, um eure Projekte zum Laufen zu bringen."
 ---
-<!-- 
+<!--
 # Mission
 We are fully convinced that cloud services have the potential to tranform the digital world. We want everyone to be able to facilitate the options those services can offer in an easy, safe and fast way.
-On the journey to the cloud there are lots of technical and organizational challenges to be handled. Our [Services]({{< ref "/services/" >}} "Services") will equip you with all the right tools and skills to master those challenges. 
+On the journey to the cloud there are lots of technical and organizational challenges to be handled. Our [Services]({{< ref "/services/" >}} "Services") will equip you with all the right tools and skills to master those challenges.
 <br>
 <br>
 

@@ -1,181 +1,173 @@
 ---
-title: "Privacy Policy"
-description: "This privacy statement informs which personal data is processed for what."
+title: "Datenschutzerklärung"
+description: "Diese Datenschutzerklärung informiert darüber, welche personenbezogenen Daten zu welchem Zweck verarbeitet werden."
 draft: false
 ---
 
-With this **privacy statement** we inform which personal data we process for what, how and where, especially in connection with our **website nuvibit.com** and our other services. We also use this privacy policy to inform you about the rights of individuals whose data we process.
+Mit dieser **Datenschutzerklärung** informieren wir, welche Personendaten wir wofür, wie und wo bearbeiten, insbesondere im Zusammenhang mit unserer **nuvibit.com Website** und unserem sonstigen Angebot. Wir informieren mit dieser Datenschutzerklärung ausserdem über die Rechte von Personen, deren Daten wir bearbeiten.
 
-For individual or additional offers and services, special, supplementary or further data protection declarations as well as other legal documents such as general terms and conditions (GTC), terms of use or conditions of participation may apply.
+Für einzelne oder zusätzliche Angebote und Leistungen können besondere, ergänzende oder weitere Datenschutzerklärungen sowie sonstige rechtliche Dokumente wie Allgemeine Geschäftsbedingungen (AGB), Nutzungsbedingungen oder Teilnahmebedingungen gelten.
 
-Our offer is subject to Swiss data protection law and any applicable foreign data protection law such as, in particular, that of the European Union (EU) with the General Data Protection Regulation (GDPR). The European Commission [recognizes](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32000D0518) that Swiss data protection law ensures adequate data protection.
+Unser Angebot unterliegt dem schweizerischen Datenschutzrecht sowie allenfalls anwendbarem ausländischem Datenschutzrecht wie insbesondere jenem der Europäischen Union (EU) mit der Datenschutz-Grundverordnung (DSGVO). Die Europäische Kommission [anerkennt](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32000D0518), dass das schweizerische Datenschutzrecht einen angemessenen Datenschutz gewährleistet.
 
-## 1\. Contact addresses
+## 1\. Kontaktadressen
 
-Responsibility for the processing of personal data:
+Verantwortung für die Bearbeitung von Personendaten:
 
-**Nuvibit AG**  
-Loonstrasse 36  
+**Nuvibit AG**
+Loonstrasse 36
 5452 Oberrohrdorf
 
 [privacy@nuvibit.com](mailto:privacy@nuvibit.com)
 
-We point out if there are other persons responsible for the processing of personal data in individual cases.
+Wir weisen darauf hin, wenn es im Einzelfall andere Verantwortliche für die Bearbeitung von Personendaten gibt.
 
-### 1.1 Data Protection Officer
+### 1.1 Datenschutzbeauftragter
 
-We have the following data protection officer as a point of contact for data subjects and as a contact for supervisory authorities in the event of data protection-related inquiries:
+Wir verfügen über nachfolgenden Datenschutzbeauftragten als Anlaufstelle für betroffene Personen und als Ansprechpartner für Aufsichtsbehörden bei datenschutzrechtlichen Anfragen:
 
-**Nuvibit AG**  
-Roman Plessl  
-Loonstrasse 36  
+**Nuvibit AG**
+Roman Plessl
+Loonstrasse 36
 5452 Oberrohrdorf
 
 [privacy@nuvibit.com](mailto:privacy@nuvibit.com)
 
-### 1.2 Data protection representation in the European Economic Area (EEA)
+### 1.2 Datenschutz-Vertretung im Europäischen Wirtschaftsraum (EWR)
 
-We have the following data protection representation pursuant to [Article 27 of the GDPR](https://steigerlegal.ch/dsgvo/dsgvo-27/) in the European Economic Area (EEA), including the European Union (EU) and the Principality of Liechtenstein, Iceland and Norway, as an _additional_ point of contact for supervisory authorities and data subjects for inquiries related to the General Data Protection Regulation (GDPR):
+Wir verfügen über nachfolgende Datenschutz-Vertretung gemäss [Art. 27 DSGVO](https://steigerlegal.ch/dsgvo/dsgvo-27/) im Europäischen Wirtschaftsraum (EWR) einschliesslich Europäischer Union (EU) und Fürstentum Liechtenstein, Island und Norwegen als _zusätzliche_ Anlaufstelle für Aufsichtsbehörden und betroffene Personen für Anfragen im Zusammenhang mit der Datenschutz-Grundverordnung (DSGVO):
 
-[**VGS Datenschutzpartner UG**](https://www.datenschutzpartner.eu/kontakt/)  
-At the emperor quay 69  
-20457 Hamburg  
-Germany
+[**VGS Datenschutzpartner UG**](https://www.datenschutzpartner.eu/kontakt/)
+Am Kaiserkai 69
+20457 Hamburg
+Deutschland
 
 [info@datenschutzpartner.eu](mailto:info@datenschutzpartner.eu)
 
-## 2\. Processing of personal data
+## 2\. Bearbeitung von Personendaten
 
-### 2.1 Terms
+### 2.1 Begriffe
 
-**Personal data** is any information that relates to an identified or identifiable individual. A **person concerned** is a person about whom personal data are processed. **Processing** includes _any_ handling of personal data, _independent_ of the means and procedures used, in particular the storage, disclosure, acquisition, collection, deletion, storage, modification, destruction and use of personal data.
+**Personendaten** sind alle Angaben, die sich auf eine bestimmte oder bestimmbare Person beziehen. Eine **betroffene Person** ist eine Person, über die Personendaten bearbeitet werden. **Bearbeiten** umfasst _jeden_ Umgang mit Personendaten, _unabhängig_ von den angewandten Mitteln und Verfahren, insbesondere das Aufbewahren, Bekanntgeben, Beschaffen, Erheben, Löschen, Speichern, Verändern, Vernichten und Verwenden von Personendaten.
 
-The **European Economic Area (EEA)** comprises the European Union (EU) and the Principality of Liechtenstein, Iceland and Norway. The General Data Protection Regulation (GDPR) refers to the processing of personal data as the processing of personal data.
+Der **Europäische Wirtschaftsraum (EWR)** umfasst die Europäische Union (EU) sowie das Fürstentum Liechtenstein, Island und Norwegen. Die Datenschutz-Grundverordnung (DSGVO) bezeichnet die Bearbeitung von Personendaten als Verarbeitung von personenbezogenen Daten.
 
-### 2.2 Legal basis
+### 2.2 Rechtsgrundlagen
 
-We process personal data in accordance with Swiss data protection law such as, in particular, the [Federal Data Protection Act](https://www.admin.ch/opc/de/classified-compilation/19920153/index.html) (DPA) and the [Ordinance to the Federal Data Protection Act](https://www.admin.ch/opc/de/classified-compilation/19930159/index.html) (FDPA).
+Wir bearbeiten Personendaten im Einklang mit dem schweizerischen Datenschutzrecht wie insbesondere dem [Bundesgesetz über den Datenschutz](https://www.admin.ch/opc/de/classified-compilation/19920153/index.html) (DSG) und der [Verordnung zum Bundesgesetz über den Datenschutz](https://www.admin.ch/opc/de/classified-compilation/19930159/index.html) (VDSG).
 
-<span id="dsgvo">We process - if and to the extent that the General Data Protection Regulation (GPPR) is applicable - personal data in accordance with _at least_ one of the following legal bases:</span>
+<span id="dsgvo">Wir bearbeiten – sofern und soweit die Datenschutz-Grundverordnung (DSGVO) anwendbar ist – Personendaten gemäss _mindestens_ einer der folgenden Rechtsgrundlagen:</span>
 
-*   [Art. 6 para. 1 lit. b DSGVO](https://steigerlegal.ch/dsgvo/dsgvo-6/) for the necessary processing of personal data for the performance of a contract with the data subject as well as for the implementation of pre-contractual measures.
-*   Art. 6 para. 1 lit. f DSGVO / GDPR for the necessary processing of personal data to protect the legitimate interests of us or of third parties, unless the fundamental freedoms and rights and interests of the data subject prevail. Legitimate interests are in particular our interest in being able to provide our offer permanently, user-friendly, secure and reliable, as well as to be able to advertise for it if necessary, information security as well as protection against misuse and unauthorized use, the enforcement of our own legal claims and compliance with Swiss law.
-*   Art. 6 para. 1 lit. c DSGVO / GDPR for the necessary processing of personal data to comply with a legal obligation to which we are subject under any applicable law of Member States in the European Economic Area (EEA)
-*   Art. 6 para. 1 lit. e DSGVO / GDPR for the necessary processing of personal data for the performance of a task carried out in the public interest.
-*   Art. 6 para 1 lit. a DSGVO / GDPR for the processing of personal data with the consent of the data subject.
-*   Art. 6 para 1 lit. d DSGVO / GDPR for the necessary processing of personal data to protect vital interests of the data subject or another natural person.
+*   [Art. 6 Abs. 1 lit. b DSGVO](https://steigerlegal.ch/dsgvo/dsgvo-6/) für die erforderliche Bearbeitung von Personendaten zur Erfüllung eines Vertrages mit der betroffenen Person sowie zur Durchführung vorvertraglicher Massnahmen.
+*   Art. 6 Abs. 1 lit. f DSGVO für die erforderliche Bearbeitung von Personendaten, um die berechtigten Interessen von uns oder von Dritten zu wahren, sofern nicht die Grundfreiheiten und Grundrechte sowie Interessen der betroffenen Person überwiegen. Berechtigte Interessen sind insbesondere unser Interesse, unser Angebot dauerhaft, nutzerfreundlich, sicher und zuverlässig bereitstellen sowie dafür bei Bedarf werben zu können, die Informationssicherheit sowie der Schutz vor Missbrauch und unbefugter Nutzung, die Durchsetzung von eigenen rechtlichen Ansprüchen und die Einhaltung von schweizerischem Recht.
+*   Art. 6 Abs. 1 lit. c DSGVO für die erforderliche Bearbeitung von Personendaten zur Erfüllung einer rechtlichen Verpflichtung, der wir gemäss allenfalls anwendbarem Recht von Mitgliedstaaten im Europäischen Wirtschaftsraum (EWR) unterliegen.
+*   Art. 6 Abs. 1 lit. e DSGVO für die erforderliche Bearbeitung von Personendaten zur Wahrnehmung einer Aufgabe, die im öffentlichen Interesse liegt.
+*   Art. 6 Abs. 1 lit. a DSGVO für die Bearbeitung von Personendaten mit Einwilligung der betroffenen Person.
+*   Art. 6 Abs. 1 lit. d DSGVO für die erforderliche Bearbeitung von Personendaten, um lebenswichtige Interessen der betroffenen Person oder einer anderen natürlichen Person zu schützen.
 
-### 2.3 Type, scope and purpose
+### 2.3 Art, Umfang und Zweck
 
-We process those personal data that are **required** to provide our offer permanently, user-friendly, secure and reliable. Such personal data can fall in particular into the categories of inventory and contact data, browser and device data, content data, meta or edge data and usage data, location data, sales, contract and payment data.
+Wir bearbeiten jene Personendaten, die **erforderlich** sind, um unser Angebot dauerhaft, nutzerfreundlich, sicher und zuverlässig bereitstellen zu können. Solche Personendaten können insbesondere in die Kategorien von Bestandes- und Kontaktdaten, Browser- und Gerätedaten, Inhaltsdaten, Meta- beziehungsweise Randdaten und Nutzungsdaten, Standortdaten, Verkaufs-, Vertrags- und Zahlungsdaten fallen.
 
-We process personal data for the **period** that is required for the respective purpose(s) or by law. Personal data whose processing is no longer required will be anonymized or deleted. Persons whose data we process have _in principle_ a right to deletion.
+Wir bearbeiten Personendaten während jener **Dauer**, die für den jeweiligen Zweck beziehungsweise die jeweiligen Zwecke oder gesetzlich erforderlich ist. Personendaten, deren Bearbeitung nicht mehr erforderlich ist, werden anonymisiert oder gelöscht. Personen, deren Daten wir bearbeiten, haben _grundsätzlich_ ein Recht auf Löschung.
 
-We process personal data _in principle_ only after obtaining the consent of the data subject, unless the processing is permitted for other legal reasons, such as for the performance of a contract with the data subject and for corresponding pre-contractual measures, to safeguard our overriding legitimate interests, because the processing is evident from the circumstances, or after prior information.
+Wir bearbeiten Personendaten _grundsätzlich_ nur nach Einwilligung der betroffenen Person, es sei denn, die Bearbeitung ist aus anderen rechtlichen Gründen zulässig, beispielsweise zur Erfüllung eines Vertrages mit der betroffenen Person und für entsprechende vorvertragliche Massnahmen, um unsere überwiegenden berechtigten Interessen zu wahren, weil die Bearbeitung aus den Umständen ersichtlich ist oder nach vorgängiger Information.
 
-In this context, we process in particular information that a data subject provides to us _voluntarily and himself_ when contacting us - for example, by mail, e-mail, contact form, social media or telephone - or when registering for a user account. We may store such information, for example, in an address book or with comparable tools. If you transmit personal data to us via third parties, you are obliged to ensure data protection vis-à-vis such third parties as well as to ensure the accuracy of such personal data.
+In diesem Rahmen bearbeiten wir insbesondere Angaben, die eine betroffene Person bei der Kontaktaufnahme – beispielsweise per Briefpost, E-Mail, Kontaktformular, Social Media oder Telefon – oder bei der Registrierung für ein Nutzerkonto _freiwillig und selbst_ an uns übermittelt. Wir können solche Angaben beispielsweise in einem Adressbuch oder mit vergleichbaren Hilfsmitteln speichern. Sofern Sie Personendaten über Dritte an uns übermitteln, sind Sie verpflichtet, den Datenschutz gegenüber solchen Dritten zu gewährleisten sowie die Richtigkeit solcher Personendaten sicherzustellen.
 
-We also process personal data that we receive from third parties, obtain from publicly available sources or collect in the course of providing our services, if and to the extent that such processing is permitted for legal reasons.
+Wir bearbeiten ausserdem Personendaten, die wir von Dritten erhalten, aus öffentlich zugänglichen Quellen beschaffen oder bei der Bereitstellung unseres Angebotes erheben, sofern und soweit eine solche Bearbeitung aus rechtlichen Gründen zulässig ist.
 
-### 2.4 Processing of personal data by third parties, including abroad
+### 2.4 Bearbeitung von Personendaten durch Dritte, auch im Ausland
 
-We may have personal data processed by commissioned third parties or process it jointly with third parties as well as with the help of third parties or transmit it to third parties. Such third parties are in particular providers whose services we use. We also ensure appropriate data protection for such third parties.
+Wir können Personendaten durch beauftragte Dritte bearbeiten lassen oder gemeinsam mit Dritten sowie mit Hilfe von Dritten bearbeiten oder an Dritte übermitteln. Bei solchen Dritten handelt es sich insbesondere um Anbieter, deren Leistungen wir in Anspruch nehmen. Wir gewährleisten auch bei solchen Dritten einen angemessenen Datenschutz.
 
-Such third parties are _in principle_ located in Switzerland as well as in the European Economic Area (EEA). Such third parties may also be located in [other states and territories on Earth](https://de.wikipedia.org/wiki/Liste_der_Staaten_der_Erde#Tabelle) as well as elsewhere in the universe, provided that their data protection laws are in accordance with [assessment of the Federal Data Protection and Information Commissioner](https://www.edoeb.admin.ch/edoeb/en/home/datenschutz/handel-und-wirtschaft/uebermittlung-ins-ausland.html) (FDPIC) and - if and to the extent that the General Data Protection Regulation (GDPR) is applicable - according to [assessment of the European Commission](https://ec.europa.eu/info/law/law-topic/data-protection/data-transfers-outside-eu/adequacy-protection-personal-data-non-eu-countries_en) an adequate level of data protection is ensured, or if adequate data protection is ensured for other reasons, such as by a corresponding contractual agreement, in particular on the basis of standard contractual clauses, or by a corresponding certification. Exceptionally, such a third party may be located in a country without adequate data protection, provided that the requirements under data protection law, such as the explicit consent of the data subject, are met for this purpose.
+Solche Dritte befinden sich _grundsätzlich_ in der Schweiz sowie im Europäischen Wirtschaftsraum (EWR). Solche Dritte können sich auch in [sonstigen Staaten und Territorien auf der Erde](https://de.wikipedia.org/wiki/Liste_der_Staaten_der_Erde#Tabelle) sowie anderswo im Universum befinden, sofern deren Datenschutzrecht nach [Einschätzung des Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten](https://www.edoeb.admin.ch/edoeb/de/home/datenschutz/handel-und-wirtschaft/uebermittlung-ins-ausland.html) (EDÖB) und – sofern und soweit die Datenschutz-Grundverordnung (DSGVO) anwendbar ist – nach [Einschätzung der Europäischen Kommission](https://ec.europa.eu/info/law/law-topic/data-protection/data-transfers-outside-eu/adequacy-protection-personal-data-non-eu-countries_de) einen angemessenen Datenschutz gewährleistet, oder wenn aus anderen Gründen, wie beispielsweise durch eine entsprechende vertragliche Vereinbarung, insbesondere auf Grundlage von Standardvertragsklauseln, oder durch eine entsprechende Zertifizierung, ein angemessener Datenschutz gewährleistet ist. Ausnahmsweise kann sich ein solcher Dritter in einem Land ohne angemessenen Datenschutz befinden, sofern dafür die datenschutzrechtlichen Voraussetzungen wie beispielsweise die ausdrückliche Einwilligung der betroffenen Person erfüllt werden.
 
-## 3\. Rights of Data Subjects
+## 3\. Rechte von betroffenen Personen
 
-Data subjects whose personal data we process have rights under Swiss data protection law. These include the right to information as well as the right to rectification, deletion or blocking of the personal data processed.
+Betroffene Personen, deren Personendaten wir bearbeiten, verfügen über die Rechte gemäss schweizerischem Datenschutzrecht. Dazu zählen das Recht auf Auskunft sowie das Recht auf Berichtigung, Löschung oder Sperrung der bearbeiteten Personendaten.
 
-Data subjects whose personal data we process may - if and to the extent that the General Data Protection Regulation (GDPR) is applicable - obtain free of charge confirmation as to whether we are processing their personal data and, if so, request information about the processing of their personal data, have the processing of their personal data restricted, exercise their right to data portability, and have their personal data corrected, deleted ("right to be forgotten"), blocked, or completed.
+Betroffene Personen, deren Personendaten wir bearbeiten, können – sofern und soweit die Datenschutz-Grundverordnung (DSGVO) anwendbar ist – unentgeltlich eine Bestätigung, ob wir ihre Personendaten bearbeiten und, falls ja, Auskunft über die Bearbeitung ihrer Personendaten verlangen, die Bearbeitung ihrer Personendaten einschränken lassen, ihr Recht auf Datenübertragbarkeit wahrnehmen sowie ihre Personendaten berichtigen, löschen («Recht auf Vergessen»), sperren oder vervollständigen lassen.
 
-Data subjects whose personal data we process may - if and to the extent that the GDPR applies - revoke any consent they have given at any time with future effect and object to the processing of their personal data at any time.
+Betroffene Personen, deren Personendaten wir bearbeiten, können – sofern und soweit die DSGVO anwendbar ist – eine erteilte Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen und jederzeit Widerspruch gegen die Bearbeitung ihrer Personendaten erheben.
 
-Data subjects whose personal data we process have a right of appeal to a competent supervisory authority. The supervisory authority for data protection in Switzerland is the [Federal Data Protection and Information Commissioner](https://www.edoeb.admin.ch/edoeb/de/home/der-edoeb/kontakt.html) (FDPIC).
+Betroffene Personen, deren Personendaten wir bearbeiten, verfügen über ein Beschwerderecht bei einer zuständigen Aufsichtsbehörde. Aufsichtsbehörde für den Datenschutz in der Schweiz ist der [Eidgenössische Datenschutz- und Öffentlichkeitsbeauftragte](https://www.edoeb.admin.ch/edoeb/de/home/der-edoeb/kontakt.html) (EDÖB).
 
-## 4\. Data security
+## 4\. Datensicherheit
 
-We take appropriate and suitable technical and organizational measures to ensure data protection and, in particular, data security. However, despite such measures, the processing of personal data on the Internet can always have security gaps. We can therefore not guarantee absolute data security.
+Wir treffen angemessene sowie geeignete technische und organisatorische Massnahmen, um den Datenschutz und insbesondere die Datensicherheit zu gewährleisten. Allerdings kann die Bearbeitung von Personendaten im Internet trotz solcher Massnahmen immer Sicherheitslücken aufweisen. Wir können deshalb keine absolute Datensicherheit gewährleisten.
 
-The access to our online offer takes place by means of transport encryption (SSL / TLS, in particular with the Hypertext Transfer Protocol Secure, abbreviated HTTPS). Most browsers mark transport encryption with a padlock in the address bar.
+Der Zugriff auf unser Online-Angebot erfolgt mittels Transportverschlüsselung (SSL / TLS, insbesondere mit dem Hypertext Transfer Protocol Secure, abgekürzt HTTPS). Die meisten Browser kennzeichnen Transportverschlüsselung mit einem Vorhängeschloss in der Adressleiste.
 
-Access to our online offering is subject - as is _basically_ any Internet use - to mass surveillance without cause and without suspicion, as well as other monitoring by security authorities in Switzerland, the European Union (EU), the United States of America (USA) and other countries. We cannot directly influence the corresponding processing of personal data by secret services, police agencies and other security authorities.
+Der Zugriff auf unser Online-Angebot unterliegt – wie _grundsätzlich_ jede Internet-Nutzung – der anlasslosen und verdachtsunabhängigen Massenüberwachung sowie sonstiger Überwachung durch Sicherheitsbehörden in der Schweiz, in der Europäischen Union (EU), in den Vereinigten Staaten von Amerika (USA) und in anderen Staaten. Wir können keinen direkten Einfluss auf die entsprechende Bearbeitung von Personendaten durch Geheimdienste, Polizeistellen und andere Sicherheitsbehörden nehmen.
 
-## 5\. Use of the website
+## 5\. Nutzung der Website
 
 ### 5.1 Cookies
 
-We may use cookies for our website. Cookies - our own cookies (first-party cookies) as well as cookies from third parties whose services we use (third-party cookies or third-party cookies) - are data that are stored in your browser. Such stored data need not be limited to traditional cookies in text form. Cookies cannot run programs or transmit malware such as Trojans and viruses.
+Wir können Cookies für unsere Website verwenden. Bei Cookies – bei eigenen Cookies (First-Party-Cookies) als auch bei Cookies von Dritten, deren Dienste wir nutzen (Cookies von Dritten beziehungsweise Third-Party-Cookies) – handelt es sich um Daten, die in Ihrem Browser gespeichert werden. Solche gespeicherten Daten müssen nicht auf traditionelle Cookies in Textform beschränkt sein. Cookies können keine Programme ausführen oder Schadsoftware wie Trojaner und Viren übertragen.
 
-Cookies may be stored in your browser temporarily as "session cookies" when you visit our website or for a certain period of time as so-called permanent cookies. "Session cookies" are automatically deleted when you close your browser. Permanent cookies have a specific storage period. In particular, they allow us to recognize your browser the next time you visit our website and thus, for example, to measure the reach of our website. However, permanent cookies can also be used for online marketing, for example.
+Cookies können beim Besuch unserer Website in Ihrem Browser temporär als «Session Cookies» oder für einen bestimmten Zeitraum als sogenannte permanente Cookies gespeichert werden. «Session Cookies» werden automatisch gelöscht, wenn Sie Ihren Browser schliessen. Permanente Cookies haben eine bestimmte Speicherdauer. Sie ermöglichen insbesondere, Ihren Browser beim nächsten Besuch unserer Website wiederzuerkennen und dadurch beispielsweise die Reichweite unserer Website zu messen. Permanente Cookies können aber beispielsweise auch für Online-Marketing verwendet werden.
 
-You can disable cookies in your browser settings at any time in whole or in part, as well as delete them. Without cookies, our website may no longer be fully available. We actively request - if and where necessary - your express consent for the use of cookies.
+Sie können Cookies in Ihren Browser-Einstellungen jederzeit ganz oder teilweise deaktivieren sowie löschen. Ohne Cookies steht unsere Website allenfalls nicht mehr in vollem Umfang zur Verfügung. Wir ersuchen Sie – sofern und soweit erforderlich – aktiv um Ihre ausdrückliche Einwilligung für die Verwendung von Cookies.
 
-For cookies used for performance and reach measurement or for advertising, a general objection ("opt-out") is possible for numerous services via the [Network Advertising Initiative](https://optout.networkadvertising.org/) (NAI), [YourAdChoices](https://optout.aboutads.info/) (Digital Advertising Alliance) or [Your Online Choices](https://www.youronlinechoices.com/ch-de/praferenzmanagement) (European Interactive Digital Advertising Alliance, EDAA).
+Bei Cookies, die für die Erfolgs- und Reichweitenmessung oder für Werbung verwendet werden, ist für zahlreiche Dienste ein allgemeiner Widerspruch («Opt-out») über die [Network Advertising Initiative](https://optout.networkadvertising.org/) (NAI), [YourAdChoices](https://optout.aboutads.info/) (Digital Advertising Alliance) oder [Your Online Choices](https://www.youronlinechoices.com/ch-de/praferenzmanagement) (European Interactive Digital Advertising Alliance, EDAA) möglich.
 
-### 5.2 Server logfiles
+### 5.2 Server-Logdateien
 
-We may collect the following information for each access to our website, provided that this information is transmitted by your browser to our server infrastructure or can be determined by our web server: Date and time including time zone, Internet Protocol (IP) address, access status (HTTP status code), operating system including user interface and version, browser including language and version, individual sub-page of our website accessed including amount of data transferred, website last accessed in the same browser window (referer or referrer).
+Wir können für jeden Zugriff auf unsere Website nachfolgende Angaben erfassen, sofern diese von Ihrem Browser an unsere Server-Infrastruktur übermittelt werden oder von unserem Webserver ermittelt werden können: Datum und Zeit einschliesslich Zeitzone, Internet Protocol (IP)-Adresse, Zugriffsstatus (HTTP-Statuscode), Betriebssystem einschliesslich Benutzeroberfläche und Version, Browser einschliesslich Sprache und Version, aufgerufene einzelne Unter-Seite unserer Website einschliesslich übertragener Datenmenge, zuletzt im gleichen Browser-Fenster aufgerufene Webseite (Referer beziehungsweise Referrer).
 
-We store such information as follows.
+Wir speichern solche Angaben, die auch Personendaten darstellen können, in Server-Logdateien. Die Angaben sind erforderlich, um unser Online-Angebot dauerhaft, nutzerfreundlich und zuverlässig bereitstellen sowie um die Datensicherheit und damit insbesondere den Schutz von Personendaten sicherstellen zu können – auch durch Dritte oder mit Hilfe von Dritten.
 
-We store such information, which may also constitute personal data, in server log files. The information is necessary to provide our online offer permanently, user-friendly and reliable, as well as to ensure data security and thus in particular the protection of personal data - also by third parties or with the help of third parties.
+### 5.3 Zählpixel
 
-### 5.3 Tracking pixels
-
-We may use tracking pixels on our website. Tracking pixels are also referred to as web beacons. Tracking pixels - including those from third parties whose services we use - are small, usually invisible images that are automatically retrieved when you visit our website. Counting pixels can be used to collect the same information as server log files.
+Wir können Zählpixel auf unserer Website verwenden. Zählpixel werden auch als Web-Beacons bezeichnet. Bei Zählpixeln – auch von Dritten, deren Dienste wir nutzen – handelt es sich um kleine, üblicherweise nicht sichtbare Bilder, die beim Besuch unserer Website automatisch abgerufen werden. Mit Zählpixeln können die gleichen Angaben wie in Server-Logdateien erfasst werden.
 
 ## 6\. Social Media
 
-We are present on social media platforms and other online platforms in order to be able to communicate with interested persons and inform them about our offer. In doing so, personal data may also be processed outside of Switzerland and the European Economic Area (EEA)
+Wir sind auf Social Media-Plattformen und anderen Online-Plattformen präsent, um mit interessierten Personen kommunizieren und über unser Angebot informieren zu können. Dabei können Personendaten auch ausserhalb der Schweiz und des Europäischen Wirtschaftsraumes (EWR) bearbeitet werden.
 
-The General Terms and Conditions (GTC) and Terms of Use as well as data protection declarations and other provisions of the individual operators of such online platforms also apply in each case. These provisions provide information in particular about the rights of data subjects, which includes in particular the right to information.
+Es gelten jeweils auch die Allgemeinen Geschäftsbedingungen (AGB) und Nutzungsbedingungen sowie Datenschutzerklärungen und sonstigen Bestimmungen der einzelnen Betreiber solcher Online-Plattformen. Diese Bestimmungen informieren insbesondere über die Rechte von betroffenen Personen, wozu insbesondere das Recht auf Auskunft zählt.
 
-## 7\. Performance and reach measurement
+## 7\. Erfolgs- und Reichweitenmessung
 
-We use services and programs to determine how our online offering is used. In this context, we can, for example, measure the success and reach of our online offering and the effect of third-party links to our website. However, we can also, for example, test and compare how different versions of our online offering or parts of our online offering are used ("A/B test" method). Based on the results of the success and reach measurement, we can in particular correct errors, strengthen particularly popular content or make improvements to our online offering.
+Wir verwenden Dienste und Programme, um zu ermitteln, wie unser Online-Angebot genutzt wird. In diesem Rahmen können wir zum Beispiel den Erfolg und die Reichweite unseres Online-Angebotes sowie die Wirkung von Verlinkungen Dritter auf unsere Website messen. Wir können aber beispielsweise auch ausprobieren und vergleichen, wie unterschiedliche Versionen unseres Online-Angebotes oder Teile unseres Online-Angebotes genutzt werden («A/B-Test»-Methode). Aufgrund der Ergebnisse der Erfolgs- und Reichweitenmessung können wir insbesondere Fehler beheben, besonders gefragte Inhalte stärken oder Verbesserungen an unserem Online-Angebot vornehmen.
 
-When using services and programs for performance and reach measurement, the Internet Protocol (IP) addresses of individual users must be stored. IP addresses are _basically_ shortened in order to follow the principle of data economy through the corresponding pseudonymization, as well as to improve the data protection of visitors to our website ("IP masking").
+Bei der Verwendung von Diensten und Programmen für die Erfolgs- und Reichweitenmessung müssen die Internet Protocol (IP)-Adressen von einzelnen Nutzerinnen und Nutzern gespeichert werden. IP-Adressen werden _grundsätzlich_ gekürzt, um durch die entsprechende Pseudonymisierung dem Grundsatz der Datensparsamkeit zu folgen sowie den Datenschutz der Besucherinnen und Besucher unserer Website zu verbessern («IP-Masking»).
 
-When using services and programs for performance and reach measurement, cookies may be used and user profiles may be created. User profiles include, for example, the pages visited or content viewed on our website, information about the size of the screen or browser window and the - at least approximate - location. _In principle_, user profiles are created exclusively in pseudonymous form. We do not use user profiles to identify individual visitors to our website. Individual services with which you are registered as a user can, if necessary, assign the use of our online offer to your profile with the respective service, although you usually had to give your consent to this assignment in advance.
+Bei der Verwendung von Diensten und Programmen für die Erfolgs- und Reichweitenmessung können Cookies zum Einsatz kommen und Nutzerprofile erstellt werden. Nutzerprofile umfassen beispielsweise die besuchten Seiten oder betrachteten Inhalte auf unserer Website, Angaben zur Grösse von Bildschirm oder Browserfenster und den – zumindest ungefähren – Standort. _Grundsätzlich_ werden Nutzerprofile ausschliesslich pseudonymisiert erstellt. Wir verwenden Nutzerprofile nicht für die Identifizierung einzelner Besucherinnen und Besucher unserer Website. Einzelne Dienste, bei denen Sie als Nutzerin oder Nutzer angemeldet sind, können die Nutzung unseres Online-Angebotes allenfalls Ihrem Profil beim jeweiligen Dienst zuordnen, wobei Sie dafür üblicherweise vorgängig Ihre Einwilligung in diese Zuordnung erteilen mussten.
 
-We use in particular:
+Wir verwenden insbesondere:
 
-*   **[Google Analytics:](https://analytics.google.com/)** performance and reach measurement; providers: Google LLC (USA) / Google Ireland Limited (Ireland) for users in the European Economic Area (EEA) and Switzerland; data protection information: measurement also across different browsers and devices **(cross-device tracking)** as well as with pseudonymized Internet Protocol (IP) addresses, which are only _exceptionally_ transmitted in full to Google in the USA, ["Privacy and Security Principles"](https://safety.google/intl/en/principles/), [privacy policy](https://policies.google.com/privacy?hl=en), ["Google Products Privacy Guide" (including Google Analytics)](https://policies.google.com/technologies/product-privacy?hl=en), ["How we use data from websites or apps where our services are used" (provided by Google)](https://policies.google.com/technologies/partner-sites?hl=en), ["How Google uses cookies"](https://policies.google.com/technologies/cookies?hl=en), ["Browser Add-on to disable Google Analytics"](https://tools.google.com/dlpage/gaoptout), ["Personalized Advertising" (enable/disable/settings)](https://adssettings.google.com/)
+*   **[Google Analytics:](https://analytics.google.com/)** Erfolgs- und Reichweitenmessung; Anbieterinnen: Google LLC (USA) / Google Ireland Limited (Irland) für Nutzerinnen und Nutzer im Europäischen Wirtschaftsraum (EWR) und in der Schweiz; Angaben zum Datenschutz: Messung auch über verschiedene Browser und Geräte hinweg **(Cross-Device Tracking)** sowie mit pseudonymisierten Internet Protocol (IP)-Adressen, die nur _ausnahmsweise_ vollständig an Google in den USA übertragen werden, [«Grundsätze zu Datenschutz und Sicherheit»](https://safety.google/intl/de/principles/), [Datenschutzerklärung](https://policies.google.com/privacy?hl=de), [«Leitfaden zum Datenschutz in Google-Produkten» (einschliesslich Google Analytics)](https://policies.google.com/technologies/product-privacy?hl=de), [«Wie wir Daten von Websites oder Apps verwenden, auf beziehungsweise in denen unsere Dienste genutzt werden» (Angaben von Google)](https://policies.google.com/technologies/partner-sites?hl=de), [«So verwendet Google Cookies»](https://policies.google.com/technologies/cookies?hl=de), [«Browser Add-on zur Deaktivierung von Google Analytics»](https://tools.google.com/dlpage/gaoptout), [«Personalisierte Werbung» (Aktivierung / Deaktivierung / Einstellungen)](https://adssettings.google.com/).
 
-## 8\. Third-party services
+## 8\. Dienste von Dritten
 
-We use third-party services to provide our offer permanently, user-friendly, secure and reliable. Such services are also used to embed content into our website. Such services - for example hosting and storage services, video services and payment services - require your Internet Protocol (IP) address, otherwise such services cannot transmit the corresponding content. Such services may be located outside of Switzerland and the European Economic Area (EEA), provided that adequate data protection is guaranteed.
+Wir verwenden Dienste von Dritten, um unser Angebot dauerhaft, nutzerfreundlich, sicher und zuverlässig bereitstellen zu können. Solche Dienste dienen auch dazu, Inhalte in unsere Website einbetten zu können. Solche Dienste – beispielsweise Hosting- und Speicherdienste, Video-Dienste und Zahlungsdienste – benötigen Ihre Internet Protocol (IP)-Adresse, da solche Dienste die entsprechenden Inhalte ansonsten nicht übermitteln können. Solche Dienste können sich ausserhalb der Schweiz und des Europäischen Wirtschaftsraumes (EWR) befinden, sofern ein angemessener Datenschutz gewährleistet ist.
 
-For their own security, statistical and technical purposes, third parties whose services we use may also process data related to our offer as well as from other sources - including with cookies, log files and counting pixels - in aggregated, anonymized or pseudonymized form.
+Für ihre eigenen sicherheitsrelevanten, statistischen und technischen Zwecke können Dritte, deren Dienste wir nutzen, auch Daten im Zusammenhang mit unserem Angebot sowie aus anderen Quellen – unter anderem mit Cookies, Logdateien und Zählpixeln – aggregiert, anonymisiert oder pseudonymisiert bearbeiten.
 
-### 8.1 Digital Infrastructure
+### 8.1 Digitale Infrastruktur
 
-We use services of third parties to make use of required digital infrastructure for our offer. This includes, for example, hosting and storage services from specialized providers.
+Wir nutzen Dienste von Dritten, um benötigte digitale Infrastruktur für unser Angebot in Anspruch nehmen zu können. Dazu zählen beispielsweise Hosting- und Speicherdienste von spezialisierten Anbietern.
 
-### 8.2 Audio and video conferencing
+### 8.2 Audio- und Video-Konferenzen
 
-We use audio and video conferencing services to enable us to communicate online. For example, we can use them to conduct virtual meetings or online classes and webinars. In addition to this privacy policy, any terms and conditions of the services used, such as terms of use or privacy statements, also apply.
+Wir verwenden Dienste für Audio- und Video-Konferenzen, um online kommunizieren zu können. Wir können damit beispielsweise virtuelle Besprechungen oder Online-Unterricht und Webinare durchführen. Es gelten ergänzend zu dieser Datenschutzerklärung jeweils auch allenfalls ersichtliche Bedingungen der verwendeten Dienste wie beispielsweise Nutzungsbedingungen oder Datenschutzerklärungen.
 
-We use the following services in particular:
+Wir verwenden insbesondere:
 
-Audio and video conferencing services.
+*   **[Microsoft Teams:](https://www.microsoft.com/de-de/microsoft-teams/group-chat-software)** Plattform unter anderem für Audio- und Video-Konferenzen; Anbieterinnen: Microsoft Corporation (USA) / Microsoft Ireland Operations Limited (Irland) für Nutzerinnen und Nutzer im Europäischen Wirtschaftsraum (EWR), in Grossbritannien und in der Schweiz; Angaben zum Datenschutz: [«Datenschutz» («Microsoft Trust Center»)](https://www.microsoft.com/de-ch/trust-center/privacy), [Datenschutzerklärung](https://privacy.microsoft.com/de-de/privacystatement), [«Datenschutz bei Microsoft»](https://privacy.microsoft.com/de-de/), [«Datenschutz und Microsoft Teams»](https://docs.microsoft.com/de-de/microsoftteams/teams-privacy).
+*   **[Zoom:](https://zoom.us/)** Video-Konferenzen; Anbieterin: Zoom Video Communications Inc. (USA); Angaben zum Datenschutz: [Datenschutzerklärung](https://zoom.us/de-de/privacy.html), [«Datenschutz bei Zoom»](https://zoom.us/de-de/trust/privacy.html), [«Rechtskonformitäts-Center»](https://zoom.us/de-de/trust/legal-compliance.html).
 
-We use in particular:
+### 8.3 Schriftarten
 
-*   **[Microsoft Teams:](https://www.microsoft.com/de-de/microsoft-teams/group-chat-software)** Platform for, among other things, audio and video conferencing; Providers: Microsoft Corporation (USA) / Microsoft Ireland Operations Limited (Ireland) for users in the European Economic Area (EEA), the United Kingdom and Switzerland; privacy disclosures: ["Privacy" ("Microsoft Trust Center")](https://www.microsoft.com/de-ch/trust-center/privacy), [privacy statement](https://privacy.microsoft.com/en-en/privacystatement), ["Privacy at Microsoft"](https://privacy.microsoft.com/de-de/), ["Privacy and Microsoft Teams"](https://docs.microsoft.com/de-de/microsoftteams/teams-privacy)
-*   **[Zoom:](https://zoom.us/)** Video Conferencing; Provider: Zoom Video Communications Inc. (USA); privacy disclosures: [privacy statement](https://zoom.us/de-de/privacy.html), ["Privacy at Zoom"](https://zoom.us/de-de/trust/privacy.html), ["Legal Compliance Center"](https://zoom.us/de-de/trust/legal-compliance.html)
+Wir verwenden Dienste von Dritten, um ausgewählte Schriftarten sowie Icons, Logos und Symbole in unsere Website einbetten zu können.
 
-### 8.3 Fonts
+Wir verwenden insbesondere:
 
-We use third party services to embed selected fonts, as well as icons, logos and symbols on our website.
+*   **[Google Fonts:](https://fonts.google.com)** Schriftarten; Anbieterinnen: Google LLC (USA) / Google Ireland Limited (Irland) für Nutzerinnen und Nutzer im Europäischen Wirtschaftsraum (EWR) und in der Schweiz; Angaben zum Datenschutz: [«Was bedeutet die Verwendung der Google Fonts-API für die Privatsphäre meiner Nutzerinnen und Nutzer?» («What does using the Google Fonts API mean for the privacy of my users?»)](https://developers.google.com/fonts/faq#what_does_using_the_google_fonts_api_mean_for_the_privacy_of_my_users), [«Grundsätze zu Datenschutz und Sicherheit»](https://safety.google/intl/de/principles/), [Datenschutzerklärung](https://policies.google.com/privacy?hl=de).
 
-We specifically use:
+## 9\. Schlussbestimmungen
 
-*   **[Google Fonts:](https://fonts.google.com)** Fonts; Provider: Google LLC (USA) / Google Ireland Limited (Ireland) for users in the European Economic Area (EEA) and Switzerland; privacy information: ["What does using the Google Fonts API mean for my users' privacy?"](https://developers.google.com/fonts/faq#what_does_using_the_google_fonts_api_mean_for_the_privacy_of_my_users), ["Privacy and Security Principles"](https://safety.google/intl/de/principles/), [Privacy Policy](https://policies.google.com/privacy?hl=de)
-
-## 9\. Final provisions
-
-We have created this privacy statement using the [Privacy Statement Generator](https://www.datenschutzpartner.ch/angebot-datenschutz-generator/) from [Privacy Partner](https://datenschutzpartner.ch/)
-
-We may amend and supplement this Privacy Policy at any time. We will inform about such adjustments and additions in an appropriate form, in particular by publishing the respective current privacy policy on our website.
+Wir haben diese Datenschutzerklärung mit dem [Datenschutz-Generator](https://www.datenschutzpartner.ch/angebot-datenschutz-generator/) von [Datenschutzpartner](https://datenschutzpartner.ch/) erstellt.

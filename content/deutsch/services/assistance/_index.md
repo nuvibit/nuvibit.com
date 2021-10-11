@@ -30,8 +30,8 @@ tile_section:
 
       - title: "Architecture Review"
         enable: true
-        content: "Damit eure Workloads gut von den Möglichkeiten der Cloud profitieren können, ist es entscheidend, dass die Cloud Prinzipien im Design der Architekturen beachtet werden.<br><br>
-                  Über die Jahre haben wir viele Well-Architected Referenzarchitekturen implementiert und gereviewed. Dabei haben wir Expertise und einen guten Blick für Schwachstellen entwickelt."
+        content: "Die Cloud Prinzipien müssen bereits im Design der Architekturen beachtet werden um Cloud Services optimal auszunutzen. <br><br>
+        Wir haben über die Jahre Expertise und einen guten Blick für Schwachstellen entwickelt. Gerne reviewen wir auch eure Architekturen."
 
       - title: "Automation"
         enable: true
@@ -41,7 +41,7 @@ tile_section:
       - title: "Infrastructure as Code"
         enable: true
         content: "Die beste Methodik um grosse Cloud Umgebungen zu managen ist [Infrastructure as Code](/faq/#iac \"Was ist Infrastructure as Code?\").<br><br>
-                  Wir haben umfangreiches Terraform Knowhow und bauen auch unsere eigenen Module. Wir helfen euch mit der Implementierung von unseren Modulen und bieten auch Support für diese Module an."
+                  Unser umfangreiches Knowhow findet ihr in unseren Terraform Modulen wieder. Nutzt diese Module und profitiert von unserem Support."
 
       - title: "Training"
         enable: true

@@ -25,7 +25,7 @@
           <p>{{ .content | markdownify }}</p>
           {{ if .link.enable }}
           {{ with .link }}
-          <p><a href="{{ .link | absURL }}" class="link-primary">{{ .label }}</a></p>
+          <p><a href="{{ .link | absLangURL }}" class="link-primary">{{ .label }}</a></p>
           {{ end }}
           {{ end }}
         </div>
@@ -39,7 +39,7 @@
           <p>{{ .content | markdownify }}</p>
           {{ if .link.enable }}
           {{ with .link }}
-          <p><a href="{{ .link | absURL }}" class="link-primary">{{ .label }}</a></p>
+          <p><a href="{{ .link | absLangURL }}" class="link-primary">{{ .label }}</a></p>
           {{ end }}
           {{ end }}
         </div>

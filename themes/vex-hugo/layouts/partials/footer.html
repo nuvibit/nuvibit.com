@@ -52,8 +52,7 @@
 						{{ range .Children}} 
 						{{ with . }}
 						<li class="list-group-item bg-transparent border-0 p-0 mb-2">
-							
-							<a href="{{ .URL | safeURL }}">
+							<a href="{{ .URL | relLangURL }}">
 							{{ if eq .Parent "social" }}
 								<i class="fab fa-{{ lower .Name }} mr-2"></i>
 							{{ end }}

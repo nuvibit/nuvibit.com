@@ -2,12 +2,12 @@
 banner:
   enable: true
   title: "Alle Werkzeuge die Ihr für den Weg in die Cloud braucht <br>liegen bereit."
-  content: "Wir unterstützen beim Aufbau einer Enterprise Ready, standard konforme und skalierbaren [cloud foundation](/faq/#foundation 'Was ist eine Cloud Foundation?').<br><br>"
+  content: "Wir unterstützen euch beim Aufbau eurer [Cloud Foundation](/faq/#foundation 'Was ist eine Cloud Foundation?'). Skalierbar, Automatisiert, Enterprise Ready.<br><br>"
   image: "images/illustrations/cloud_ready_to_ship.png"
   button:
     enable: true
     label: "Kontaktiert uns"
-    link: "/contact"
+    link: "/de/contact"
 
 ############################# services ##########################
 services:
@@ -22,7 +22,7 @@ services:
       link:
         enable: true
         label: "Unsere assistance services"
-        link: "/services/assistance"
+        link: "/de/services/assistance"
 
     - image: "images/illustrations/cloud_management.png"
       enable: true
@@ -33,7 +33,7 @@ services:
       link:
         enable: true
         label: "Unsere management services"
-        link: "/services/management"
+        link: "/de/services/management"
 
     - image: "images/illustrations/cloud_security_compliance.png"
       enable: true
@@ -44,7 +44,7 @@ services:
       link:
         enable: true
         label: "Unsere security services"
-        link: "/services/security"
+        link: "/de/services/security"
 
     - image: "images/illustrations/cloud_connectivity.png"
       enable: true
@@ -54,7 +54,7 @@ services:
       link:
         enable: true
         label: "Unsere connectivity services"
-        link: "/services/connectivity"
+        link: "/de/services/connectivity"
 
 ############################# pricing ###########################
 # pricing:

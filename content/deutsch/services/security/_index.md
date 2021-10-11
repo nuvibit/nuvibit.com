@@ -58,7 +58,7 @@ tile_section:
 
 excerpt_section:
     enable: true
-    title: "Let's dive deeper..."
+    title: "Lasst uns tiefer eintauchen..."
     list:
       - title: "Schweizer Security Standard"
         enable: true

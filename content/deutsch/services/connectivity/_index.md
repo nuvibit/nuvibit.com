@@ -26,7 +26,7 @@ tile_section:
       - title: "Infrastructure as Code"
         enable: true
         content: "Wir bieten fix fertige Referenzarchitekturen in Form von [Terraform](/faq/#iac 'What is Infrastructure as Code?') Modulen, die die verschiedensten Connectivity Anforderungen abdecken können.
-              Unsere Module vereinfachen das Management eurer Cloud Connectivity Lösung, reduzieren Fehlerquellen und erhöhen eure Time-To-Market."
+              Unsere Module vereinfachen das Management eurer Cloud Connectivity Lösung, reduzieren Fehlerquellen und reduzieren eure Time-To-Market."
 
       - title: "Hybrid Connectivity"
         enable: true
@@ -55,7 +55,7 @@ tile_section:
 
 excerpt_section:
     enable: true
-    title: "Let's dive deeper..."
+    title: "Lasst uns tiefer eintauchen..."
     list:
       - title: false
         title_aws: "AWS Direct Connect"
@@ -63,7 +63,7 @@ excerpt_section:
         enable: true
         image: "images/illustrations/cloud_direct_connect.png"
         content: "Vermeidet unnötige Stolpersteine beim Aufbau der Connectivity Lösung zwischen den On-Premise Rechenzentren und der Public Cloud.<br><br>
-            Die Anforderungen an die Connectivity reichen von starker Verschlüsselung, hohem Durchsatz bis hin zu tiefer Latenz und in vielen Fällen ist es eine Kombination davon. Wir kenne all die Stolpersteine bereits aus unserer praktischen Erfahrung im Aufbau von redundanten Direct Connect und Express Route Lösungen und zeigen euch den Weg drum herum."
+            Die Anforderungen an die Connectivity reichen von starker Verschlüsselung, hohem Durchsatz bis hin zu tiefer Latenz und in vielen Fällen ist es eine Kombination davon. Wir kennen all die Stolpersteine bereits aus unserer praktischen Erfahrung im Aufbau von redundanten Direct Connect und Express Route Lösungen und zeigen euch den Weg drum herum."
         # button:
         #   enable: false
         #   label: "read more about xxx"

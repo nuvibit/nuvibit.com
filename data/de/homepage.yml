@@ -7,7 +7,7 @@ banner:
   button:
     enable: true
     label: "Kontaktiert uns"
-    link: "/de/contact"
+    link: "/contact"
 
 ############################# services ##########################
 services:
@@ -22,7 +22,7 @@ services:
       link:
         enable: true
         label: "Unsere assistance services"
-        link: "/de/services/assistance"
+        link: "/services/assistance"
 
     - image: "images/illustrations/cloud_management.png"
       enable: true
@@ -33,7 +33,7 @@ services:
       link:
         enable: true
         label: "Unsere management services"
-        link: "/de/services/management"
+        link: "/services/management"
 
     - image: "images/illustrations/cloud_security_compliance.png"
       enable: true
@@ -44,7 +44,7 @@ services:
       link:
         enable: true
         label: "Unsere security services"
-        link: "/de/services/security"
+        link: "/services/security"
 
     - image: "images/illustrations/cloud_connectivity.png"
       enable: true
@@ -54,7 +54,7 @@ services:
       link:
         enable: true
         label: "Unsere connectivity services"
-        link: "/de/services/connectivity"
+        link: "/services/connectivity"
 
 ############################# pricing ###########################
 # pricing:

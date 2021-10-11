@@ -5,8 +5,8 @@
     <div class="row justify-content-center">
       {{ with .Params.contact }}
       <div class="col-lg-5 col-sm-6 mb-5">
-        <h2 class="font-weight-bold mb-4">{{ .title | markdownify }}</h2>
-        <p>{{ .content | markdownify }}</p>
+        <h2 class="font-weight-bold mb-4">{{ $.Page.RenderString .title }}</h2>
+        <p>{{ $.Page.RenderString .content }}</p>
         <br>
         <ul class="list-unstyled contact-list">
           {{with .phone}} <li class="mb-3"><a href="tel:{{ . }}"><i class="fas fa-phone mr-3"></i>{{ . }}</a></li>{{ end }}
@@ -16,11 +16,9 @@
       </div>
       {{ end }}
       <div class="col-lg-3 col-sm-6 mb-5">
-        <div class="sticky-image">
-          {{ with .Params.contact }}
-          <img class="img-fluid w-100" src="{{ .Image | absURL }}" alt='Illustration of {{ .Image | replaceRE ".*?(\\w+).png" "$1" }}'>
-          {{ end }}
-        </div>
+        {{ with .Params.contact }}
+        <img class="img-fluid w-100" src="{{ .Image | absURL }}" alt='Illustration of {{ .Image | replaceRE ".*?(\\w+).png" "$1" }}'>
+        {{ end }}
       </div>
     </div>
     <div class="row justify-content-center">

@@ -10,8 +10,8 @@
 			</div>
 			<div class="col-md-6 align-self-center text-center text-md-left">
 				<div class="block">
-					<h1 class="font-weight-bold mb-4 font-size-60">{{ .title | markdownify }}</h1>
-					<p class="mb-4">{{ .content | markdownify }}</p>
+					<h1 class="font-weight-bold mb-4 font-size-60">{{ $.Page.RenderString .title }}</h1>
+					<p class="mb-4">{{ $.Page.RenderString .content }}</p>
 					{{ if .button.enable }}
 					{{ with .button }}
 					<a href="{{ .link | absLangURL }}" class="btn btn-main">{{.label}}</a>

@@ -8,7 +8,7 @@
       <div class="col-md-12">
         {{ if .title }}
         <div class="heading">
-          <h2>{{ .title | markdownify }}</h2>
+          <h2>{{ $.Page.RenderString .title }}</h2>
         </div>
         {{ end }}
       </div>
@@ -21,8 +21,8 @@
       </div>
       <div class="col-md-6 align-self-center text-center text-md-left">
         <div class="content">
-          <h4 class="subheading">{{ .title | markdownify }}</h4>
-          <p>{{ .content | markdownify }}</p>
+          <h4 class="subheading">{{ $.Page.RenderString .title }}</h4>
+          <p>{{ $.Page.RenderString .content }}</p>
           {{ if .link.enable }}
           {{ with .link }}
           <p><a href="{{ .link | absLangURL }}" class="link-primary">{{ .label }}</a></p>
@@ -35,8 +35,8 @@
     <div class="row item-row">
       <div class="col-md-6 order-md-1 order-2 align-self-center text-center text-md-left">
         <div class="content">
-          <h4 class="subheading">{{ .title | markdownify }}</h4>
-          <p>{{ .content | markdownify }}</p>
+          <h4 class="subheading">{{ $.Page.RenderString .title }}</h4>
+          <p>{{ $.Page.RenderString .content }}</p>
           {{ if .link.enable }}
           {{ with .link }}
           <p><a href="{{ .link | absLangURL }}" class="link-primary">{{ .label }}</a></p>

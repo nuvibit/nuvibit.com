@@ -6,8 +6,8 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-md-8 mt-100 text-center mx-auto">
-        <h2 class="subheading text-white">{{ .title | markdownify }}</h2>
-        <p class="text-white">{{ .content | markdownify }}</p>
+        <h2 class="subheading text-white">{{ $.Page.RenderString .title }}</h2>
+        <p class="text-white">{{ $.Page.RenderString .content }}</p>
       </div>
     </div>
   </div>

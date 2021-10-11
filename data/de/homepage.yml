@@ -17,7 +17,7 @@ services:
     - image: "images/illustrations/cloud_assistance.png"
       enable: true
       title: "Zusammen sind wir stark."
-      content: "Rom wurde nicht an einem Tag erbaut und das gleiche gilt für eine zuverlässige Cloud Foundation.<br><br>
+      content: "Rom wurde nicht an einem Tag erbaut und genau das gleiche gilt für eine zuverlässige Cloud Foundation.<br><br>
               Als ehemaliges, cross-funktionales Team in einem grossen schweizer Unternehmen haben wir zahlreiche technische wie auch organisatorische Herausforderungen im Zusammenhang mit dem Aufbau einer Cloud Foundation bewältigt."
       link:
         enable: true
@@ -27,9 +27,9 @@ services:
     - image: "images/illustrations/cloud_management.png"
       enable: true
       title: "Bereitet euer Business auf die Cloud vor."
-      content: "Eine Cloud Strategie zu schreiben ist der erste und einfachste Schritt.
-                Die Vision in die Realität zu überführen und die Organisation zu befähigen ist der komplexe Teil.<br>
-                Wir teilen unsere Erfahrungen, die wir beim Umgestalten und cloud-ready machen von Organisationen gesammelt haben gerne mit euch."
+      content: "Eine Cloud Strategie zu schreiben ist der erste und einfachere Schritt.
+                Diese Vision in die Realität zu überführen und die Organisation zu befähigen ist der komplexe Teil.<br>
+                Wir teilen gerne unsere Praxis-Erfahrungen, die wir beim Umgestalten und dem Cloud-Ready-Machen von Organisationen gesammelt haben."
       link:
         enable: true
         label: "Unsere management services"
@@ -39,7 +39,7 @@ services:
       enable: true
       title: "Security Compliance ist Prio 1!"
       content: "Die Security Maturität von der public Cloud Umgebung ist Business kritisch.
-                Compliance stellt eine Herausforderung für Unternehmungen mit einer grossen Applikationslandschaft dar.<br>
+                Compliance stellt eine Herausforderung für Unternehmungen mit einer grossen Applikationslandschaft dar.<br><br>
                 Cloud Security und Compliance ist eines unserer Spezialgebiete und wie unterstützen euch gerne!"
       link:
         enable: true

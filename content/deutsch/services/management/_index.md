@@ -32,7 +32,7 @@ tile_section:
       - title: "Rechtliches, Datenschutz and Beschaffung"
         enable: true
         content: "Am Beginn jeder Cloud Journey gibt es diverse Datenschutz und rechtliche Themen, die behandelt werden müssen.<br><br>
-        Wir können einen grossteil euerer rechtlichen Lücke schliessen und euer Beschaffungsteam beim Cloud-Paradigmenwechsel unterstützen."
+        Wir können einen Grossteil euerer rechtlichen Lücken schliessen und euer Beschaffungsteam beim Cloud-Paradigmenwechsel unterstützen."
 
       - title: "Cloud Operation Model"
         enable: true

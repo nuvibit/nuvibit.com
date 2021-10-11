@@ -25,13 +25,12 @@ tile_section:
     list:
       - title: "Cloud Operations"
         enable: true
-        content: "Eine Cloud Foundation zu betreiben benötigt ein breites Fähigkeites-Spektrum.<br><br>
+        content: "Eine Cloud Foundation zu betreiben benötigt ein breites Fähigkeits-Spektrum.<br><br>
                   Wir schulen euch, um euch das nötige Rüstzeug an die Hand zu geben, um eine zuverlässige und skalierbare [Cloud Foundation](/faq/#foundation \"Was ist eine Cloud Foundation?\") zu betreiben.<br><br>"
 
       - title: "Architecture Review"
         enable: true
-        content: "Damit eure Workloads gut von den Möglichkeiten der Cloud profitieren können, ist eine
-                  grundliegende Cloud-Ready Architektur entscheidend.<br><br>
+        content: "Damit eure Workloads gut von den Möglichkeiten der Cloud profitieren können, ist es entscheidend, dass die Cloud Prinzipien im Design der Architekturen beachtet werden.<br><br>
                   Über die Jahre haben wir viele Well-Architected Referenzarchitekturen implementiert und gereviewed. Dabei haben wir Expertise und einen guten Blick für Schwachstellen entwickelt."
 
       - title: "Automation"

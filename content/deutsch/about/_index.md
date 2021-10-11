@@ -1,11 +1,11 @@
 ---
 title: "Triff unser Team"
-description: "Nuvibit wurde von einer Gruppe von Cloud-Enthusiasten gegründet, die sich gerne neuen   Herausforderungen stellen wollen."
+description: "Nuvibit wurde von einer Gruppe Cloud-Enthusiasten gegründet, die sich gerne neuen Herausforderungen stellen."
 draft: false
 
 about_us:
-  introduction: "Nuvibit wurde von einer Gruppe von Cloud-Enthusiasten gegründet, die sich gerne neuen
-                Herausforderung stellen wollen.<br>
+  introduction: "Nuvibit wurde von einer Gruppe Cloud-Enthusiasten gegründet, die sich gerne neuen
+                Herausforderung stellen.<br>
                 Ursprünglich haben alle Gründer in unterschiedlichen Funktionen und Teams für dieselbe Firma gearbeitet. Gleich nach der Ankündigung der Cloud-Strategie des Unternehmens wurden wir mit dem Aufbau einer Cloud Foundation für AWS beauftragt. Wir haben unser Blut, unseren Schweiss und unsere Tränen in diese Cloud Foundation hineingesteckt und es geschafft, einen hervorragenden Reifegrad zu erreichen.<br>
                 Jeder Einzelne von uns ist über sich hinausgewachsen, was letztlich zu der Idee führte, mit gleichgesinnten, motivierten Menschen ein Unternehmen zu gründen - die Nuvibit."
   items:
@@ -52,7 +52,7 @@ about_us:
       title: "Cloud Solution Architect"
       content: "Cloud Services ermöglichen schnelle, smarte und coole Lösungen.
                 Jonas kann euch mit seinem Erfahrungsschatz befähigen, das volle Potential der Public Cloud Services zu nutzen.<br>
-                Er hat zahlreiche Workloads auf AWS aufgebaut oder von On-Prem migriert. Mit seinem Engagement als Trainer begeisterte er Menschen für die Cloud."
+                Er hat zahlreiche Workloads auf AWS aufgebaut oder von On-Prem migriert. Mit seinem Engagement als Trainer begeisterte er auch andere Menschen für die Cloud."
 
     - image: "images/profiles/andreas_moor.jpg"
       enable: true

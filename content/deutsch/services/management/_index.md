@@ -27,32 +27,32 @@ tile_section:
       - title: "Cloud Strategie"
         enable: true
         content: "Wir helfen euch die Vorteile der Public Cloud sicher zu nutzen und gleichzeitig die unternehmerischen Ziele im Auge zu behalten.<br><br>
-        Wir zeigen euch die Stolpersteine im Voraus und helfen euch damit spätere Show-Stoppers zu verhindern, genau so beschleunigen wir eure Cloud Journey."
+        Wir zeigen euch die Stolpersteine im Voraus und helfen euch spätere Show-Stoppers zu verhindern. So beschleunigen wir eure Cloud Journey."
 
       - title: "Rechtliches, Datenschutz and Beschaffung"
         enable: true
         content: "Am Beginn jeder Cloud Journey gibt es diverse Datenschutz und rechtliche Themen, die behandelt werden müssen.<br><br>
-        Wir können einen Grossteil euerer rechtlichen Lücken schliessen und euer Beschaffungsteam beim Cloud-Paradigmenwechsel unterstützen."
+        Wir können eure rechtlichen Lücken schliessen und euer Beschaffungsteam beim Cloud-Paradigmenwechsel unterstützen."
 
       - title: "Cloud Operation Model"
         enable: true
         content: "Voll automatisiertes Infrastruktur Provisioning benötigt neben technischen Skills und Tools auch ein neues Mindset.<br><br>
-        Wir befähigen eure Teams, so dass sie die Verantwortung für die Cloud übernehmen können und helfen ein funktionsübergreifende, agile Mentalität in die Organisation zu tragen."
+        Wir helfen euch eine funktionsübergreifende, agile Mentalität in die Organisation zu tragen."
 
       - title: "Cloud Financial Management"
         enable: true
-        content: "Ein Key Faktor für den Erfolg der Cloud ist das transparente und nutzungs-basiertes Verrechnungsmodell.<br><br>
-        Wir kennen die notwendigen Anpassungen, die es braucht um die Betriebskosten effizient zu senken. Wir helfen euch [FinOps](/faq/#finops 'Was ist FinOps?') Prozesse einzuführen und zu leben."
+        content: "Der Erfolg der Cloud basiert auch auf dem transparenten und nutzungs-basierten Verrechnungsmodell.<br><br>
+        Wir kennen die notwendigen Anpassungen, um die Betriebskosten effizient zu senken. Wir helfen euch [FinOps](/faq/#finops 'Was ist FinOps?') Prozesse einzuführen und zu leben."
 
       - title: "Account Lifecycle"
         enable: true
-        content: "Die Verwaltung einer Multi Account Cloud Umgebung ist extrem zeitaufwändig und anfällig für menschliche Fehler.<br><br>
-        Wir bieten eine anpassungsfähige und hochgradig automatisierte Account Lifecycle Lösung, die diese Arbeit extrem vereinfacht und dadurch eure Time-To-Market entscheidend verbessert."
+        content: "Die manuelle Verwaltung einer Multi Account Cloud Umgebung ist extrem zeitaufwändig und fehleranfällig.<br><br>
+        Wir bieten eine anpassungsfähige und automatisierte Account Lifecycle Lösung, die diese Arbeit extrem vereinfacht und dadurch eure Time-To-Market entscheidend verbessert."
 
       - title: "Continuous Integration"
         enable: true
         content: "Infrastructure as Code und die Durchführung von automatisierten Tests sind aus unserer Sicht unerlässlich um erfolgreich zu skalieren.<br><br>
-        Mit unserer praktischen Erfahrung in den Bereichen DevOps und [GitOps](/faq/#gitops 'Was ist GitOps?') können wir euch bei der Implementierung der richtigen Lösung helfen."
+        Mit unserer Erfahrung in den Bereichen DevOps und [GitOps](/faq/#gitops 'Was ist GitOps?') können wir euch bei der Umsetzung der richtigen Lösung helfen."
 
 excerpt_section:
     enable: true

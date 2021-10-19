@@ -71,8 +71,7 @@
 			<div class="col-md-12 pt-4 border-top">
 				<div class="mb-4 d-flex justify-content-center align-items-center">
 					{{ $year := .Date.Format "2006" }}
-					<!-- <p class="copyright-text">{{ replace (site.Params.copyright | markdownify) "YEAR" $year }}</p> -->
-					<p class="copyright-text">{{ site.Params.copyright | markdownify }}</p>
+					<p class="copyright-text">{{ site.Params.copyright }}</p>
 				</div>
 			</div>
 

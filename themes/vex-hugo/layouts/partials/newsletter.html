@@ -6,8 +6,8 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-md-8 text-center mx-auto p-5 newsletter">
-        <h2 class="subheading text-white">{{ .title | markdownify }}</h2>
-        <p class="text-white">{{ .content | markdownify }}</p>
+        <h2 class="subheading text-white">{{ $.Page.RenderString .title }}</h2>
+        <p class="text-white">{{ $.Page.RenderString .content }}</p>
         <div class="input-group">
           <form action="{{ site.Params.contact_form_action }}" method="POST" class="w-100" name="mc-embedded-subscribe-form">
             <input type="hidden" id="type" name="form" value="newsletter">

@@ -3,17 +3,43 @@
 {{- partial "head.html" . -}}
 
 <body id="body">
+	<div class="zoom-blur"></div>
 	{{- partial "preloader.html" . -}}
 	{{- partial "header.html" . -}}
 	{{- block "main" . }}{{- end }}
 	{{- partial "footer.html" . -}}
 	{{ block "page-script" . }}
 	<script>
+		function copy(){
+			var $temp = $("<input>");
+			$("body").append($temp);
+			$temp.val($(".copy").text()).select();
+			document.execCommand("copy");
+			$temp.remove();
+
+			$(".alert").show();
+			$(".alert").delay(2000).slideUp(200, function() {
+				$(this).hide();
+			});
+		}
+		function cancel_zoom(){
+			console.log('scroll')
+			window.removeEventListener('scroll', cancel_zoom);
+			$(".zoomed").removeClass("zoomed");
+			$(".zoom-blur").toggle();
+		}
 		function image_zoom(element){
 			if (!element.classList.contains("zoomed")){
 				$(".zoomed").removeClass("zoomed");
 			}
 			element.classList.toggle('zoomed');
+			$(".zoom-blur").toggle();
+
+			if (element.classList.contains("zoomed")){
+				window.addEventListener('scroll', cancel_zoom, false)
+			}else{
+				window.removeEventListener('scroll', cancel_zoom);
+			}
 		}
 
 		$(document.links).filter(function() {

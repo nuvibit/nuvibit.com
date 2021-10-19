@@ -7,7 +7,7 @@
         <div class="row justify-content-center">
             <div class="col-12 text-center">
                 <div class="heading">
-                    <h2 class="subheading">{{ .title | markdownify }}</h2>
+                    <h2 class="subheading">{{ $.Page.RenderString .title }}</h2>
                 </div>
             </div>
             {{ range .pricing_item }}
@@ -18,8 +18,8 @@
                         {{ if .image }}
                         <img class="img-fluid" src="{{.image}}{{.|absURL}}" alt='Illustration of {{ .Image | replaceRE ".*?(\\w+).png" "$1" }}'>
                         {{ end }}
-                        <h3 class="h2 font-weight-bold mt-15 mb-10">{{ .name | markdownify }}</h3>
-                        <p class="border-bottom pb-20">{{ .label | markdownify }}</p>
+                        <h3 class="h2 font-weight-bold mt-15 mb-10">{{ $.Page.RenderString .name }}</h3>
+                        <p class="border-bottom pb-20">{{ $.Page.RenderString .label }}</p>
                         <ul class="list-unstyled check-list-2 mt-30 mb-40 text-left float-left">
                             {{ range .features }}
                             {{ if .separator }}
@@ -28,12 +28,12 @@
                             {{ if .enable }}
                             <li class="mb-25">
                                 <i class="d-inline-block h3 mb-10 tf-ion-ios-checkmark text-success"></i>
-                                <span class="h4 pl-2">{{ .name | markdownify }}</span>
+                                <span class="h4 pl-2">{{ $.Page.RenderString .name }}</span>
                             </li>
                             {{ else }}
                             <li class="mb-25" style="color:lightgrey;">
                                 <i class="d-inline-block h3 mb-10 tf-ion-ios-close"></i>
-                                <span class="h4 pl-2">{{ .name | markdownify }}</span>
+                                <span class="h4 pl-2">{{ $.Page.RenderString .name }}</span>
                             </li>
                             {{ end }}
                             {{ end }}

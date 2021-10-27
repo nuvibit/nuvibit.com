@@ -63,9 +63,9 @@ excerpt_section:
       - title: "Schweizer Security Standard"
         enable: true
         image: "images/illustrations/cloud_swiss_security.png"
-        content: "Wir bauen alle unsere Lösungen nach Schweizer Security Standards.<br>
-                  Wenn wir die Security Standards von schweizer Finanzinstituten erfüllen bleibt wenig Raum für Sicherheitslöcher.
-                  Wir unterstützen Sie gerne bei Security Fragen in der Cloud!"
+        content: "Wir bauen alle unsere Lösungen nach Schweizer Security Standards. - Wenn wir die Security Standards von Schweizer
+                  Finanzinstituten erfüllen bleibt wenig Raum für Sicherheitslöcher.
+                  Wir unterstützen euch gerne bei Security Fragen in der Cloud!"
         # button:
         #   enable: false
         #   label: "read more about xxx"

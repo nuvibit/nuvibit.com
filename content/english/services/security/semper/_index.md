@@ -5,7 +5,7 @@ draft: true
 
 banner_section:
     enable: false
-    title: "AWS Security Event Purification - SEMPER"
+    title: "AWS native Security Finding Management - SEMPER"
     content: "blabla"
     image: "images/illustrations/cloud_security_compliance.png"
     button:

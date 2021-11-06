@@ -31,7 +31,7 @@ faq:
               Gemäss [McKinsey](https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/security-as-code-the-best-and-maybe-only-path-to-securing-cloud-applications-and-systems)
               und [Gartner](https://www.gartner.com/en/documents/3992070/using-cloud-native-policy-as-code-to-secure-deployments-) trägt die Automatisierung und Kodifizierung entscheidend zum Erfolg von Security Massnahmen bei.<br>
               Wir stimmen dem voll und ganz zu und haben eine Lösung für die Verwaltung von Sicherheitsereignissen in der Cloud entwickelt, die auf Policy as Code basiert.<br>
-              [Kontaktiert uns](/contact 'contact form') um mehr zu unserer Lösung **nbSEMPER** zu erfahren."
+              [Kontakt aufnehmen](/contact 'contact form') um mehr zu unserer Lösung **nbSEMPER** zu erfahren."
       anchor: pac
       enable: true
 

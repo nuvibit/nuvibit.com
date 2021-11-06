@@ -11,7 +11,7 @@ banner_section:
     image: "images/illustrations/cloud_assistance.png"
     button:
         enable: true
-        label: "Kontaktiert uns"
+        label: "Kontakt aufnehmen"
         link: "contact"
 
 # detail_section:

@@ -12,7 +12,7 @@ banner_section:
     image: "images/illustrations/cloud_security_compliance.png"
     button:
         enable: true
-        label: "Kontaktiert uns"
+        label: "Kontakt aufnehmen"
         link: "contact"
 
 
@@ -75,7 +75,7 @@ excerpt_section:
         enable: true
         image: "images/illustrations/cloud_security_event_management_semper.png"
         content: "Verwaltet alle eure AWS CloudWatch Event Rules und AWS Security Hub Controls über alle eure Accounts in einem zentrales [Policy as Code](/faq/#pac 'Was ist Policy as Code?') Repository.<br>
-                  Behaltet den Überblick über alle Security Events, filtert sie nach Wichtigkeit und reichert sie mit wichtigen Metadaten an. Mit unserer cloudnativen, serverless Lösung [SEMPER](/contact/ 'Kontaktiert uns für mehr Infos!') könnt Ihr all das nachvollziehbar und konsistent erreichen."
+                  Behaltet den Überblick über alle Security Events, filtert sie nach Wichtigkeit und reichert sie mit wichtigen Metadaten an. Mit unserer cloudnativen, serverless Lösung [SEMPER](/contact/ 'Kontakt aufnehmen für mehr Infos!') könnt Ihr all das nachvollziehbar und konsistent erreichen."
         # button:
         #   enable: true
         #   label: "Contact us to learn more about SEMPER"

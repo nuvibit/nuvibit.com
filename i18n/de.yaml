@@ -1,9 +1,12 @@
 - id: "send"
-  translation: "Submit message"
+  translation: "Nachricht senden"
   
 - id: "subscribe"
-  translation: "Sign up"
+  translation: "Registrieren"
   
 - id: "read_more"
-  translation: "read more"
+  translation: "Mehr erfahren"
+  
+- id: "languages"
+  translation: "Sprachen"
   

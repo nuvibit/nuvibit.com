@@ -10,7 +10,7 @@ contact:
   phone: "+41 56 511 24 24"
   location: "Schweiz"
   content: "Ihr habt Fragen? Wir haben Antworten!<br>
-            Kontaktiert uns!"
+            Kontakt aufnehmen!"
   reason: "Wie können wir helfen?"
   reasons:
     - name: "cloud foundation"

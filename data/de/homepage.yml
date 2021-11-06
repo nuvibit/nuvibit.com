@@ -6,7 +6,7 @@ banner:
   image: "images/illustrations/cloud_ready_to_ship.png"
   button:
     enable: true
-    label: "Kontaktiert uns"
+    label: "Kontakt aufnehmen"
     link: "/contact"
 
 ############################# services ##########################

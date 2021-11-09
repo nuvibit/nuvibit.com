@@ -42,6 +42,10 @@
 			}
 		}
 
+		//FIXME: implement browser language detection
+		//var userLang = navigator.language || navigator.userLanguage; 
+		//alert ("The language is: " + userLang);
+
 		$(document.links).filter(function() {
 			return this.hostname != window.location.hostname;
 		}).attr('target', '_blank');
@@ -58,9 +62,9 @@
 			}
 		},
 		content: {
-			message: "We use cookies on our website to ensure you get the best experience.",
-			dismiss: "Close",
-			link: "Our cookie policy",
+			message: '{{ i18n "cookie_message" }}',
+			dismiss: '{{ i18n "close" }}',
+			link: '{{ i18n "cookie_policy" }}',
 			href: "/privacy-policy/#51-cookies",
 			target: null
 		},

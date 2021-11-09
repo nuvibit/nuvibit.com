@@ -1,8 +1,8 @@
 ############################# banner ############################
 banner:
   enable: true
-  title: "Alle Werkzeuge die Ihr für den Weg in die Cloud braucht <br>liegen bereit."
-  content: "Wir unterstützen euch beim Aufbau eurer [Cloud Foundation](/faq/#foundation 'Was ist eine Cloud Foundation?'). Skalierbar, Automatisiert, Enterprise Ready.<br><br>"
+  title: "Wir haben alles für den Cloud Erfolg auf Lager."
+  content: "Wir unterstützen beim Aufbau der [Cloud Foundation](/faq/#foundation 'Was ist eine Cloud Foundation?').<br>Skalierbar, Automatisiert, Enterprise Ready.<br><br>"
   image: "images/illustrations/cloud_ready_to_ship.png"
   button:
     enable: true
@@ -12,48 +12,49 @@ banner:
 ############################# services ##########################
 services:
   enable: true
-  title: "Nehmt uns mit auf euren Weg in die Cloud!"
+  title: "Wir möchten Sie auf Ihrer Cloud Journey begleiten!"
   items:
     - image: "images/illustrations/cloud_assistance.png"
       enable: true
       title: "Zusammen sind wir stark."
-      content: "Rom wurde nicht an einem Tag erbaut und genau das gleiche gilt für eine zuverlässige Cloud Foundation.<br><br>
-              Als ehemaliges, cross-funktionales Team in einem grossen schweizer Unternehmen haben wir zahlreiche technische wie auch organisatorische Herausforderungen im Zusammenhang mit dem Aufbau einer Cloud Foundation bewältigt."
+      content: "Rom wurde nicht an einem Tag erbaut, und das Gleiche gilt für eine zuverlässige Cloud Foundation.<br>
+                Als ehemaliges funktionsübergreifendes Team in einem großen schweizer Unternehmen haben wir zahlreiche Cloud Herausforderungen gemeistert.
+                Jetzt sind Sie am Zug und wir können Sie dabei unterstützen!"
       link:
         enable: true
-        label: "Unsere assistance services"
+        label: "Entdecken Sie unsere Assistance Dienstleistungen"
         link: "/services/assistance"
 
     - image: "images/illustrations/cloud_management.png"
       enable: true
-      title: "Bereitet euer Business auf die Cloud vor."
-      content: "Eine Cloud Strategie zu schreiben ist der erste und einfachere Schritt.
-                Diese Vision in die Realität zu überführen und die Organisation zu befähigen ist der komplexe Teil.<br>
-                Wir teilen gerne unsere Praxis-Erfahrungen, die wir beim Umgestalten und dem Cloud-Ready-Machen von Organisationen gesammelt haben."
+      title: "Optimieren Sie Ihr Unternehmen für die Cloud."
+      content: "Die Ausarbeitung einer Cloud Strategie ist der erste und einfachste Schritt.
+                Die Umsetzung dieser Vision in die Realität und die Befähigung der Organisation ist der komplexe Teil.<br>
+                Mit unserer praktischen Erfahrung bei der Umstrukturierung einer Organisation können wir Sie auf diesem Weg tatkräftig unterstützen."
       link:
         enable: true
-        label: "Unsere management services"
+        label: "Entdecken Sie unsere Management Dienstleistungen"
         link: "/services/management"
 
     - image: "images/illustrations/cloud_security_compliance.png"
       enable: true
-      title: "Security Compliance ist Prio 1!"
-      content: "Die Security Maturität von der public Cloud Umgebung ist Business kritisch.
-                Compliance stellt eine Herausforderung für Unternehmungen mit einer grossen Applikationslandschaft dar.<br><br>
-                Cloud Security und Compliance ist eines unserer Spezialgebiete und wie unterstützen euch gerne!"
+      title: "Security Compliance vom ersten Tag an!"
+      content: "Die Sicherheitsreife Ihrer Cloud Umgebung ist geschäftskritisch.
+                Die Compliance ist für Unternehmen mit einer umfangreichen Applikationslandschaft eine große Herausforderung.<br>
+                Cloud Security ist eine unserer Spezialitäten und wir unterstützen Sie gerne!"
       link:
         enable: true
-        label: "Unsere security services"
+        label: "Entdecken Sie unsere Security Dienstleistungen"
         link: "/services/security"
 
     - image: "images/illustrations/cloud_connectivity.png"
       enable: true
-      title: "Startet mit einer soliden Netzwerk Foundation!"
-      content: "Connectivity ist eines der ersten Themen, die es auf der Cloud Journey zu lösen gilt.<br><br>
-            Wir stellen sicher, dass alle eure Workloads sicher, skalierbar und zuverlässig mit AWS und Azure verbunden sind."
+      title: "Bauen Sie zunächst eine solide Netzwerkbasis auf!"
+      content: "Connectivity ist eines der ersten Schlüsselthemen, die es auf der Cloud Journey zu lösen gilt.<br>
+                Wir stellen sicher, dass alle Ihre Workloads sicher, skalierbar und zuverlässig mit der AWS und Azure Cloud verbunden sind."
       link:
         enable: true
-        label: "Unsere connectivity services"
+        label: "Entdecken Sie unsere Connectivity Dienstleistungen"
         link: "/services/connectivity"
 
 ############################# pricing ###########################
@@ -124,7 +125,7 @@ newsletter:
   enable: true
   bg_image: "images/background/foundation.jpg"
   title: "Newsletter"
-  content: "Mit unserem Newsletter bleibt Ihr auf dem Laufenden!"
+  content: "Bleiben Sie mit unserem Newsletter auf dem Laufenden!"
   placeholder: "Email Adresse"
 
 ############################# testimonials ########################

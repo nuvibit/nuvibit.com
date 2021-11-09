@@ -249,7 +249,7 @@ weight = 2
 
 [[Languages.de.menu.main]]
 identifier = "assistance"
-name = "Cloud Unterstützung"
+name = "Cloud Assistance"
 url = "services/assistance"
 parent = "services"
 weight = 3
@@ -270,7 +270,7 @@ weight = 5
 
 [[Languages.de.menu.main]]
 identifier = "connectivity"
-name = "Cloud Konnektivität"
+name = "Cloud Connectivity"
 url = "services/connectivity"
 parent = "services"
 weight = 6

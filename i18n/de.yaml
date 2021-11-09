@@ -15,3 +15,12 @@
 
 - id: "english"
   translation: "Englisch"
+
+- id: "cookie_policy"
+  translation: "Unsere Cookie Richtlinien"
+
+- id: "cookie_message"
+  translation: "Auf dieser Webseite werden Cookies eingesetzt, um Ihnen das beste Nutzererlebnis zu bieten."
+
+- id: "close"
+  translation: "Schliessen"

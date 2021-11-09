@@ -9,3 +9,9 @@
   
 - id: "languages"
   translation: "Languages"
+
+- id: "german"
+  translation: "German"
+
+- id: "english"
+  translation: "English"

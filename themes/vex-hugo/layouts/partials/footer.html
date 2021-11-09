@@ -25,7 +25,7 @@
 									{{ else }}
 									<i class="fas fa-toggle-off"></i>
 									{{ end }}
-									{{ humanize .LanguageName }}
+									{{ humanize (i18n .LanguageName) }}
 								</a>
 							</li>
 						{{ end }}
@@ -35,7 +35,7 @@
 						<li class="list-group-item bg-transparent border-0 p-0 mb-2">
 							<a href="/" value="default-language">
 								<i class="fas fa-toggle-on"></i>
-								English
+								{{ humanize (i18n "english") }}
 							</a>
 						</li>
 					{{ end }}

@@ -263,7 +263,7 @@ weight = 4
 
 [[Languages.de.menu.main]]
 identifier = "security"
-name = "Cloud Sicherheit und Compliance"
+name = "Cloud Security und Compliance"
 url = "services/security"
 parent = "services"
 weight = 5

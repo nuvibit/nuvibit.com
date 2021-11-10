@@ -1,6 +1,6 @@
 ---
 title: "Frequenty Asked Questions"
-description: "Frequenty asked questions regarding our services and cloud topics"
+description: "Frequenty asked questions regarding cloud topics and our services"
 draft: false
 
 faq:

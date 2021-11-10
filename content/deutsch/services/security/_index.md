@@ -6,9 +6,9 @@ draft: false
 banner_section:
     enable: true
     title: "Security ist Prio 1!"
-    content: "Die Security Maturität von Cloud Umgebungen ist geschäftskritisch.
-                Security stellt eine Herausforderung für Unternehmungen dar - besonders im Cloud Umfeld.<br><br>
-                Cloud Security und Compliance ist eines unserer Spezialgebiete und wie unterstützen euch gerne!"
+    content: "Die Sicherheitsreife Ihrer Cloud Umgebung ist geschäftskritisch.
+              Die Compliance ist für Unternehmen mit einer umfangreichen Applikationslandschaft eine große Herausforderung.<br>
+              Cloud Security ist eine unserer Spezialitäten und wir unterstützen Sie gerne!"
     image: "images/illustrations/cloud_security_compliance.png"
     button:
         enable: true

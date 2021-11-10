@@ -6,9 +6,9 @@ draft: false
 banner_section:
     enable: true
     title: "Optimieren Sie Ihr Unternehmen für den Erfolg in der Cloud."
-    content: "Eine Cloud Strategie zu schreiben ist der erste und einfachere Schritt.
-                Diese Vision in die Realität zu überführen und die Organisation zu befähigen ist der komplexe Teil.<br>
-                Wir teilen gerne unsere Praxis-Erfahrungen, die wir beim Umgestalten und dem Cloud-Ready-Machen von Organisationen gesammelt haben."
+    content: "Die Ausarbeitung einer Cloud Strategie ist der erste und einfachste Schritt.
+              Die Umsetzung dieser Vision in die Realität und die Befähigung der Organisation ist der komplexe Teil.<br>
+              Mit unserer praktischen Erfahrung bei der Umstrukturierung einer Organisation können wir Sie auf diesem Weg tatkräftig unterstützen."
     image: "images/illustrations/cloud_management.png"
     button:
         enable: true

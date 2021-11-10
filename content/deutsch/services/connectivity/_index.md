@@ -6,8 +6,8 @@ draft: false
 banner_section:
     enable: true
     title: "Startet mit einer soliden Netzwerk Foundation!"
-    content: "Connectivity ist eines der ersten Themen, die es auf der Cloud Journey zu lösen gilt.<br><br>
-            Wir stellen sicher, dass alle eure Workloads sicher, skalierbar und zuverlässig mit AWS und Azure verbunden sind."
+    content: "Connectivity ist eines der ersten Schlüsselthemen, die es auf der Cloud Journey zu lösen gilt.<br>
+              Wir stellen sicher, dass alle Ihre Workloads sicher, skalierbar und zuverlässig mit der AWS und Azure Cloud verbunden sind."
     image: "images/illustrations/cloud_connectivity.png"
     button:
         enable: true

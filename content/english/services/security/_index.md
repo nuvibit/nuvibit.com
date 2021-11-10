@@ -5,7 +5,7 @@ draft: false
 
 banner_section:
     enable: true
-    title: "Security Compliance from Day One!"
+    title: "Security compliance from day one!"
     content: "The security maturity of your public cloud environment is business critical.
               Compliance is a major challenge for an enterprise with numerous workloads.<br><br>
               Cloud security is one of our specialties and we are happy to support you!"

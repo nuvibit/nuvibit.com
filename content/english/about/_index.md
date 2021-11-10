@@ -1,5 +1,5 @@
 ---
-title: "Meet Our Team"
+title: "Meet our team"
 description: "Nuvibit was founded by a group of cloud enthusiasts who were eager to take on a fresh challenge."
 draft: false
 

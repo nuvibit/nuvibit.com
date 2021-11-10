@@ -24,7 +24,7 @@ about_us:
       name: "Christoph Siegrist"
       linkedin: "https://www.linkedin.com/in/christoph-siegrist"
       title: "Digitalization & Transformation Specialist"
-      content: "Christoph guides you through the cloud jungle. He has many years of experience in taking an entire organization on a journey and establishing DevOps practices.<br>
+      content: "Christoph guides you through the cloud jungle! He has many years of experience in taking an entire organization on a journey and establishing DevOps practices.<br>
                 With the view of the big picture and his organizational talent, he creates an environment where the full potential of the cloud can be utilized."
 
     - image: "images/profiles/stefano_franco.jpg"
@@ -58,9 +58,8 @@ about_us:
       name: "Andreas Moor"
       linkedin: "https://www.linkedin.com/in/moor-andreas"
       title: "Cloud Solution Engineer"
-      content: "Andreas get things done!<br>
-                With many years of expirience with building and designing solutions in the cloud he is your man for getting your projects up and running.<br>
-                As an IaC specialist he will help to codify your infrastructer and automatize tasks you did not even thought about."
+      content: "Andreas gets the ball rolling! With many years of experience in designing and building solutions in the cloud, he gets your projects up and running.<br>
+                As an IaC specialist, he will help you digitalize your infrastructure and automate tasks that you have not considered before."
 ---
 <!--
 # Mission

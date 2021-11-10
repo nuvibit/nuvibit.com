@@ -7,3 +7,20 @@
 - id: "read_more"
   translation: "read more"
   
+- id: "languages"
+  translation: "Languages"
+
+- id: "german"
+  translation: "Deutsch"
+
+- id: "english"
+  translation: "English"
+
+- id: "cookie_policy"
+  translation: "Our cookie policy"
+
+- id: "cookie_message"
+  translation: "We use cookies on our website to ensure you get the best experience."
+
+- id: "close"
+  translation: "Close"

@@ -56,10 +56,11 @@ about_us:
     - image: "images/profiles/andreas_moor.jpg"
       enable: true
       name: "Andreas Moor"
-      linkedin: "https://www.linkedin.com/in/andreas-moor"
+      linkedin: "https://www.linkedin.com/in/moor-andreas"
       title: "Cloud Solution Engineer"
       content: "Andreas get things done!<br>
-                With many years of expirience with building and designing solutions in the cloud he is your man for getting your projects up and running."
+                With many years of expirience with building and designing solutions in the cloud he is your man for getting your projects up and running.<br>
+                As an IaC specialist he will help to codify your infrastructer and automatize tasks you did not even thought about."
 ---
 <!--
 # Mission

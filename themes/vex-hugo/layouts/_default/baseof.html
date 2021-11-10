@@ -23,7 +23,6 @@
 			});
 		}
 		function cancel_zoom(){
-			console.log('scroll')
 			window.removeEventListener('scroll', cancel_zoom);
 			$(".zoomed").removeClass("zoomed");
 			$(".zoom-blur").toggle();
@@ -35,12 +34,19 @@
 			element.classList.toggle('zoomed');
 			$(".zoom-blur").toggle();
 
-			if (element.classList.contains("zoomed")){
-				window.addEventListener('scroll', cancel_zoom, false)
-			}else{
-				window.removeEventListener('scroll', cancel_zoom);
-			}
+			
+			setTimeout(function(){
+				if (element.classList.contains("zoomed")){
+					window.addEventListener('scroll', cancel_zoom, false)
+				}else{
+					window.removeEventListener('scroll', cancel_zoom);
+				}
+			}, 100);
 		}
+
+		//FIXME: implement browser language detection
+		//var userLang = navigator.language || navigator.userLanguage; 
+		//alert ("The language is: " + userLang);
 
 		$(document.links).filter(function() {
 			return this.hostname != window.location.hostname;
@@ -58,10 +64,10 @@
 			}
 		},
 		content: {
-			message: "We use cookies on our website to ensure you get the best experience.",
-			dismiss: "Close",
-			link: "Our cookie policy",
-			href: "/privacy-policy/#51-cookies",
+			message: '{{ i18n "cookie_message" }}',
+			dismiss: '{{ i18n "close" }}',
+			link: '{{ i18n "cookie_policy" }}',
+			href: '{{ "/privacy-policy/#51-cookies" | relLangURL }}',
 			target: null
 		},
 		theme: "edgeless",

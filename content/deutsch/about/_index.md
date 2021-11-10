@@ -57,10 +57,11 @@ about_us:
     - image: "images/profiles/andreas_moor.jpg"
       enable: true
       name: "Andreas Moor"
-      linkedin: "https://www.linkedin.com/in/andreas-moor"
+      linkedin: "https://www.linkedin.com/in/moor-andreas"
       title: "Cloud Solution Engineer"
       content: "Andi ist ein Problemlöser!<br>
-                Mit seiner langjährigen Erfahrung im Aufbau und Design von Lösungen in der Cloud, ist er der richtige Mann, um eure Projekte zum Laufen zu bringen."
+                Mit seiner langjährigen Erfahrung im Aufbau und Design von Lösungen in der Cloud, ist er der richtige Mann, um eure Projekte zum Laufen zu bringen.<br>
+                Als IaC-Spezialist wird er ihnen helfen, Ihre Infrastruktur zu kodifizieren und Aufgaben zu automatisieren, an die Sie noch gar nicht gedacht haben."
 ---
 <!--
 # Mission

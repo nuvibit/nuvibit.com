@@ -12,7 +12,7 @@ banner_section:
     image: "images/illustrations/cloud_management.png"
     button:
         enable: true
-        label: "Kontaktiert uns"
+        label: "Kontakt aufnehmen"
         link: "contact"
 
 # detail_section:

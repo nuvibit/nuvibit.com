@@ -23,7 +23,6 @@
 			});
 		}
 		function cancel_zoom(){
-			console.log('scroll')
 			window.removeEventListener('scroll', cancel_zoom);
 			$(".zoomed").removeClass("zoomed");
 			$(".zoom-blur").toggle();
@@ -35,11 +34,14 @@
 			element.classList.toggle('zoomed');
 			$(".zoom-blur").toggle();
 
-			if (element.classList.contains("zoomed")){
-				window.addEventListener('scroll', cancel_zoom, false)
-			}else{
-				window.removeEventListener('scroll', cancel_zoom);
-			}
+			
+			setTimeout(function(){
+				if (element.classList.contains("zoomed")){
+					window.addEventListener('scroll', cancel_zoom, false)
+				}else{
+					window.removeEventListener('scroll', cancel_zoom);
+				}
+			}, 100);
 		}
 
 		//FIXME: implement browser language detection

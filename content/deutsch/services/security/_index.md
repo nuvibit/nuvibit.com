@@ -86,7 +86,7 @@ excerpt_section:
       - title_aws: "AWS Security Baselining"
         enable: true
         image: "images/illustrations/cloud_security_baseline.png"
-        content: "Nicht nur die Workloads müssen sicherheitskonformen sein sondern auch die darunterliegende [Cloud Foundation](/faq/#foundation \"Was ist eine Cloud Foundation?\").<br>
+        content: "Nicht nur die Workloads müssen sicherheitskonform sein sondern auch die darunterliegende [Cloud Foundation](/faq/#foundation \"Was ist eine Cloud Foundation?\").<br>
                   Hierfür zeigen wir euch, wie ihr eine Security Baseline für alle eure Accounts definieren und applizieren könnt.<br>
                   Mit 100% sicherheitskonformen Accounts lässt es sich einfach besser schlafen."
         # button:
@@ -98,7 +98,7 @@ excerpt_section:
         enable: true
         image: "images/illustrations/cloud_security_architecture.png"
         content: "Wir empfehlen die von AWS publizierte Security Referenz Architektur in Verbindung mit regelmässigen AWS   Well-Architected-Reviews. <br>
-                  Für eure Cloud Landschaft liefern wir fertige Security Architekturen oder bewerten bestehende Architkturen
+                  Für eure Cloud Landschaft liefern wir fertige Security Architekturen oder bewerten bestehende Architekturen
                   Security ist eine der fünf Säulen des AWS Well-Architected-Reviews."
         # button:
         #   enable: false

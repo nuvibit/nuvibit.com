@@ -13,9 +13,6 @@ contact:
             Don't be shy, get in touch with us."
   reason: "How can we help?"
   reasons:
-    - name: "cloud foundation"
-      key: "foundation"
-
     - name: "cloud assistance"
       key: "assistance"
 
@@ -27,8 +24,5 @@ contact:
 
     - name: "cloud connectivity"
       key: "connectivity"
-
-    - name: "other"
-      key: "other"
 
 ---

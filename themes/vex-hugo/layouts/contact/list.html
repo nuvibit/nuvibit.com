@@ -26,29 +26,30 @@
         <form action="{{ site.Params.contact_form_action }}" method="POST" class="row">
           <input type="hidden" id="type" name="form" value="contact">
           <div class="col-lg-6 mb-3">
-            <input type="text" class="form-control mb-2" id="name" name="name" placeholder="First Name" required>
+            <input type="text" class="form-control mb-2" id="name" name="name" placeholder='{{ i18n "first_name"}}' required>
           </div>
           <div class="col-lg-6 mb-3">
-            <input type="text" class="form-control mb-2" id="name" name="name" placeholder="Second Name" required>
+            <input type="text" class="form-control mb-2" id="name" name="name" placeholder='{{ i18n "second_name"}}' required>
           </div>
           <div class="col-lg-6 mb-3">
-            <input type="email" class="form-control mb-2" id="email" name="email" placeholder="Email" required>
+            <input type="email" class="form-control mb-2" id="email" name="email" placeholder='{{ i18n "mail"}}' required>
           </div>
           <div class="col-lg-6 mb-3">
-            <input type="text" class="form-control mb-2" id="company" name="company" placeholder="Company Name" required>
+            <input type="text" class="form-control mb-2" id="company" name="company" placeholder='{{ i18n "company_name"}}' required>
           </div>
           <div class="col-lg-12 mb-3">
-            <select class="form-control mb-2" id="reason" name="reason" required>
+            <select class="form-control mb-2" id="reason" name="reason">
               <option selected="selected" disabled="disabled" value="">{{ .Params.contact.reason }}</option>
               {{ with .Params.contact }}
               {{ range .reasons }}
               <option value="{{ .key }}">{{ .name }}</option>
               {{ end }}
               {{ end }}
+              <option value="other">{{ i18n "other_reason" }}</option>
             </select>
           </div>
           <div class="col-12 mb-3">
-            <textarea name="message" id="message" class="form-control mb-2" placeholder="your message" required></textarea>
+            <textarea name="message" id="message" class="form-control mb-2" placeholder='{{ i18n "input_message"}}' required></textarea>
           </div>
           <div class="col-12 align-self-center text-center text-md-right mt-3">
             <button type="submit" value="send" class="btn btn-main">{{ i18n "send" }}</button>

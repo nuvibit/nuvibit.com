@@ -111,28 +111,28 @@ weight = 2
 
 [[Languages.en.menu.main]]
 identifier = "assistance"
-name = "cloud assistance"
+name = "Cloud Assistance"
 url = "services/assistance"
 parent = "services"
 weight = 3
 
 [[Languages.en.menu.main]]
 identifier = "management"
-name = "cloud management at scale"
+name = "Cloud Management at Scale"
 url = "services/management"
 parent = "services"
 weight = 4
 
 [[Languages.en.menu.main]]
 identifier = "security"
-name = "cloud security and compliance"
+name = "Cloud Security and Compliance"
 url = "services/security"
 parent = "services"
 weight = 5
 
 [[Languages.en.menu.main]]
 identifier = "connectivity"
-name = "cloud connectivity"
+name = "Cloud Connectivity"
 url = "services/connectivity"
 parent = "services"
 weight = 6
@@ -256,14 +256,14 @@ weight = 3
 
 [[Languages.de.menu.main]]
 identifier = "management"
-name = "Cloud Management"
+name = "Cloud Management at Scale"
 url = "services/management"
 parent = "services"
 weight = 4
 
 [[Languages.de.menu.main]]
 identifier = "security"
-name = "Cloud Security und Compliance"
+name = "Cloud Security and Compliance"
 url = "services/security"
 parent = "services"
 weight = 5

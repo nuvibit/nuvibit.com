@@ -13,9 +13,6 @@ contact:
             Seien Sie nicht schüchtern und melden Sie sich bei uns."
   reason: "Wie können wir helfen?"
   reasons:
-    - name: "cloud foundation"
-      key: "foundation"
-
     - name: "cloud assistance"
       key: "assistance"
 
@@ -27,8 +24,5 @@ contact:
 
     - name: "cloud connectivity"
       key: "connectivity"
-
-    - name: "other"
-      key: "other"
 
 ---

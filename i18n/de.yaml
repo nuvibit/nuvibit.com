@@ -24,3 +24,21 @@
 
 - id: "close"
   translation: "Schliessen"
+
+- id: "other_reason"
+  translation: "sonstiges"
+
+- id: "first_name"
+  translation: "Vorname"
+
+- id: "second_name"
+  translation: "Nachname"
+
+- id: "mail"
+  translation: "Email"
+
+- id: "company_name"
+  translation: "Unternehmen"
+
+- id: "input_message"
+  translation: "Ihre Nachricht"

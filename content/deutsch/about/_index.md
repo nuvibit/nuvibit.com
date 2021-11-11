@@ -23,7 +23,7 @@ about_us:
       linkedin: "https://www.linkedin.com/in/christoph-siegrist"
       title: "Digitalization & Transformation Specialist"
       content: "Christoph ist Ihr Begleiter durch den Cloud-Dschungel! Er bringt jahrelange Erfahrung mit, wie man Unternehmen auf den Weg der Transformation bringt und dabei DevOps-Praktiken etabliert.<br>
-                Mit dem Blick für das große Ganze und seinem organisatorischem Talent schafft er eine Umgebung, in der das volle Potenzial der Cloud ausgeschöpft werden kann."
+                Mit dem Blick für das große Ganze und seinem organisatorischen Talent schafft er eine Umgebung, in der das volle Potenzial der Cloud ausgeschöpft werden kann."
 
     - image: "images/profiles/stefano_franco.jpg"
       enable: true
@@ -57,7 +57,7 @@ about_us:
       linkedin: "https://www.linkedin.com/in/moor-andreas"
       title: "Cloud Solution Engineer"
       content: "Andreas bringt den Stein ins Rollen! Mit seiner langjährigen Erfahrung im Entwerfen und Erstellen von Lösungen in der Cloud treibt er Ihre Projekte voran.<br>
-                Als IaC Spezialist hilft er Ihnen, Ihre Infrastruktur zu digitalisieren und Aufgaben zu automatisieren, die Ihnen bislang entgangen sind."
+                Als IaC Spezialist hilft er Ihnen, Ihre Infrastruktur zu digitalisieren und Routineaufgaben zu automatisieren, damit Sie sich auf Ihre Wertschöpfung fokussieren können."
 ---
 <!--
 # Mission

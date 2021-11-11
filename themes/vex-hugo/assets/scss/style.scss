@@ -423,6 +423,11 @@ p.md a:hover {
   margin-bottom: 3rem !important;
 }
 
+//FIXME: make text in cards fit on smaller resolutions
+.card-body {
+  height: 350px;
+}
+
 .card-deck {
   @include mobile {
     padding-left: 15px;

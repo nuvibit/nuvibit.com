@@ -39,8 +39,8 @@ about_us:
       name: "Michael Ullrich"
       linkedin: "https://www.linkedin.com/in/ullrich-michael"
       title: "Cloud Security Enthusiast"
-      content: "Michael ist der Experte, wenn es um Sicherheit und Compliance in der Cloud geht und verfügt über mehr als 25 Jahre Beratungserfahrung!<br>
-                Er hat einen MBA und einen Master of Science in Ingenieurwissenschaften und ist zertifizierter AWS Solutions Architect Professional und AWS DevOps Engineer Professional."
+      content: "Michael ist unser Experte, wenn es um Sicherheit und Compliance in der Cloud geht und verfügt über mehr als 25 Jahre Beratungserfahrung!<br>
+                Er ist Diplomingenieur, hat einen MBA, ist zertifizierter AWS Solutions Architect Professional und AWS DevOps Engineer Professional."
 
     - image: "images/profiles/jonas_saegesser.jpg"
       enable: true

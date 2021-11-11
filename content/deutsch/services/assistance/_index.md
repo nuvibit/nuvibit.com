@@ -7,7 +7,7 @@ banner_section:
     enable: true
     title: "Zusammen sind wir stark."
     content: "Rom wurde nicht an einem Tag erbaut, und das Gleiche gilt für eine zuverlässige Cloud Foundation.<br>
-              Als ehemaliges funktionsübergreifendes Team in einem großen schweizer Unternehmen haben wir zahlreiche Cloud Herausforderungen gemeistert.
+              Als ehemaliges funktionsübergreifendes Team in einem großen Schweizer Unternehmen haben wir zahlreiche Cloud Herausforderungen gemeistert.
               Jetzt sind Sie am Zug und wir können Sie dabei unterstützen!"
     image: "images/illustrations/cloud_assistance.png"
     button:
@@ -73,7 +73,7 @@ excerpt_section:
         enable: true
         image: "images/illustrations/cloud_architecture.png"
         content: "Viele Cloud Referenzarchitekturen tendieren dazu, sehr generisch zu sein, damit ein breites Publikum angesprochen werden kann.<br>
-                  Basierend auf unsere Erfahrungen, die wir beim Designen und Bauen von Cloud Landschaften sammeln konnten haben wir verschiedene "enterprise-ready" und in der Praxis geprüfte Architektur-Blueprints für AWS entwickelt."
+                  Basierend auf unsere Erfahrungen, die wir beim Designen und Bauen von Cloud Landschaften sammeln konnten haben wir verschiedene 'enterprise-ready' und in der Praxis geprüfte Architektur-Blueprints für AWS entwickelt."
         # button:
         #   enable: false
         #   label: "read more about our AWS Reference Architecture"

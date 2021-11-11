@@ -33,7 +33,7 @@ tile_section:
         content: "There are a lot of obstacles to perfectly combine your on-premises data center with a public cloud.<br><br>
               We can show you viable options and help you implement the best solution for your requirements."
 
-      - title: "Multicloud Networking"
+      - title: "Multi-Cloud Networking"
         enable: true
         content: "While planing a multi-cloud strategy it is paramount to standardize the connectivity.<br><br>
               We provide homogeneous network architectures for an equivalent connectivity solution across clouds."

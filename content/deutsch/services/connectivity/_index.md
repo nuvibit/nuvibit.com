@@ -100,7 +100,7 @@ excerpt_section:
         enable: true
         image: "images/illustrations/cloud_firewall.png"
         content: "Netzwerk Security ist eine integraler Bestandteil von unseren Connectivity Services.<br>
-              Eine zentrale Firewall bietet viele Vorteile und ist entscheidend um Ihre Cloud Umgebung sicher zu gestalten.
+              Eine zentrale Firewall bietet viele Vorteile und ist entscheidend, um Ihre Cloud Umgebung sicher zu gestalten.
               Wir helfen Ihnen die richtige cloudnative Firewall-Lösung zu finden."
         # button:
         #   enable: false

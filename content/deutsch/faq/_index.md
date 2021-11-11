@@ -14,7 +14,7 @@ faq:
 
     - question: "Welche Cloud Provider unterstützen wir?"
       answer: "Wir sind hauptsächlich spezialisiert auf sichere Enterprise Deployments in AWS.
-              Einige Themen sind jedoch nicht spezifisch auf einen Provider bezogen, sondern lassen sich auf alle gängigen Public Cloud Provider anwenden. Zögert also nicht, uns zu eurem Anliegen zu [kontaktieren](/contact 'contact form')."
+              Einige Themen sind jedoch nicht spezifisch auf einen Provider bezogen, sondern lassen sich auf alle gängigen Public Cloud Provider anwenden. Zögern Sie also nicht, uns zu Ihrem Anliegen zu [kontaktieren](/contact 'contact form')."
       anchor: providers
       enable: true
 

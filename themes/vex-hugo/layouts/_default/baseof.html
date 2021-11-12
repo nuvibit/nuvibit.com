@@ -10,6 +10,7 @@
 	{{- partial "footer.html" . -}}
 	{{ block "page-script" . }}
 	<script>
+		// function to copy content to clipboard and display message
 		function copy(){
 			var $temp = $("<input>");
 			$("body").append($temp);
@@ -22,11 +23,15 @@
 				$(this).hide();
 			});
 		}
+
+		// function to cancel image zoom
 		function cancel_zoom(){
 			window.removeEventListener('scroll', cancel_zoom);
 			$(".zoomed").removeClass("zoomed");
 			$(".zoom-blur").toggle();
 		}
+
+		// function to image zoom
 		function image_zoom(element){
 			if (!element.classList.contains("zoomed")){
 				$(".zoomed").removeClass("zoomed");
@@ -34,7 +39,6 @@
 			element.classList.toggle('zoomed');
 			$(".zoom-blur").toggle();
 
-			
 			setTimeout(function(){
 				if (element.classList.contains("zoomed")){
 					window.addEventListener('scroll', cancel_zoom, false)
@@ -43,15 +47,33 @@
 				}
 			}, 100);
 		}
+		
+		// function to overwrite language preference
+		function update_language_pref(lang){
+			localStorage.setItem('lang', lang);
+		}
 
-		//FIXME: implement browser language detection
-		//var userLang = navigator.language || navigator.userLanguage; 
-		//alert ("The language is: " + userLang);
+		// determine the language preference for the user
+		var currentLang = "{{ .Site.Language.Lang }}";
+		var userLang = navigator.language || navigator.userLanguage;
+		var supportedLang = ["de", "en"];
+		userLang = userLang.substring(0, 2);
+		userLangPref = localStorage.getItem('lang');
+		if (userLangPref && supportedLang.includes(userLangPref)){
+			if (currentLang !== userLangPref){
+				window.location.href = "/" + userLangPref;
+			}
+		}else{
+			localStorage.setItem('lang', userLang);
+			window.location.href = "/" + userLang;
+		}
 
+		// append open in new tab to links which point outside
 		$(document.links).filter(function() {
 			return this.hostname != window.location.hostname;
 		}).attr('target', '_blank');
 		
+		// cookie consent banner
 		window.cookieconsent.initialise({
 		palette: {
 			popup: {

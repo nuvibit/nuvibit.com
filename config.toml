@@ -184,14 +184,14 @@ weight = 5
 
 [[Languages.en.menu.footer]]
 parent = "company"
-name = "Privacy Policy"
-url = "/privacy-policy"
+name = "Cookie Policy"
+url = "/privacy-policy/#51-cookies"
 weight = 6
 
 [[Languages.en.menu.footer]]
 parent = "company"
-name = "Cookie Policy"
-url = "/privacy-policy/#51-cookies"
+name = "Privacy Policy"
+url = "/privacy-policy"
 weight = 7
 
 [[Languages.en.menu.footer]]
@@ -322,14 +322,14 @@ weight = 5
 
 [[Languages.de.menu.footer]]
 parent = "company"
-name = "Datenschutzerklärung"
-url = "/privacy-policy"
+name = "Cookie Richtlinien"
+url = "/privacy-policy/#51-cookies"
 weight = 6
 
 [[Languages.de.menu.footer]]
 parent = "company"
-name = "Cookie Richtlinien"
-url = "/privacy-policy/#51-cookies"
+name = "Datenschutzerklärung"
+url = "/privacy-policy"
 weight = 7
 
 [[Languages.de.menu.footer]]

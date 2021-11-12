@@ -33,7 +33,7 @@ tile_section:
       - title: "Security Assessment"
         enable: true
         content: "Wenn es um Security geht, hilft ein neuer Blickwinkel von einer unbeteiligten Stelle enorm.<br><br>
-                  Wir führen gerne Security Audits für Ihre Cloud Umgebungen durch und helfen die Schwachstellen zu beheben."
+                  Wir führen gerne Security Audits für Ihre Cloud Umgebungen durch und helfen mögliche Schwachstellen zu beheben."
 
       - title: "Security Framework"
         enable: true
@@ -48,7 +48,7 @@ tile_section:
       - title: "Logging und Monitoring"
         enable: true
         content: "In Cloud Umgebungen fallen sehr viele und wertvolle Logdaten an. Auditsichere Archvierung und Überwachung ist entscheidend für Security Operations.<br><br>
-                  Wir bieten diverse Optionen, wie Logdaten sinnvoll gespeichert und im Monitoring-System Ihrer Wahl bereitgestellt werden."
+                  Wir bieten diverse Optionen, wie Logdaten sinnvoll gespeichert und im Monitoring-System Ihrer Wahl zur Verfügung gestellt werden."
 
       - title: "Security Finding Management"
         enable: true

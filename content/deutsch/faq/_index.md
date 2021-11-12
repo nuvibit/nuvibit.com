@@ -9,7 +9,7 @@ faq:
     - question: "Was ist eine Cloud Foundation?"
       answer: Bevor ein Workload in der Public Cloud bereitgestellt werden kann, müssen zahlreiche Komponenten aufeinander abgestimmt werden.
               Es gibt technische Aspekte wie Konnektivität oder Sicherheit und organisatorische Aspekte wie Finanzen oder Betrieb.<br>
-              Eine sichere, skalierbare Cloud Foundation wird Ihre Cloud Adoption Jounrey erheblich beschleunigen und ist der Schlüssel zum Erfolg."
+              Eine sichere, skalierbare Cloud Foundation wird Ihre Cloud Journey erheblich beschleunigen und ist der Schlüssel zum Erfolg."
       anchor: foundation
       enable: true
 

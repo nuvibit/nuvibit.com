@@ -49,7 +49,7 @@ services:
 
     - image: "images/illustrations/cloud_connectivity.png"
       enable: true
-      title: "Bauen Sie zunächst eine solide Netzwerkbasis auf!"
+      title: "Schaffen Sie zuerst ein solides Netzwerk als Grundstein!"
       content: "Connectivity ist eines der ersten Schlüsselthemen, die es auf der Cloud Journey zu lösen gilt.<br>
                 Wir stellen sicher, dass alle Ihre Workloads sicher, skalierbar und zuverlässig mit der AWS und Azure Cloud verbunden sind."
       link:

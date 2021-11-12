@@ -23,7 +23,7 @@ banner_section:
 
 tile_section:
     enable: true
-    title: "Unsere Spezialgebiete"
+    title: "Wir sind spezialisiert auf"
     list:
       - title: "Sicherheitskonforme Architektur"
         enable: true
@@ -57,7 +57,7 @@ tile_section:
 
 excerpt_section:
     enable: true
-    title: "Lasst uns tiefer eintauchen..."
+    title: "Tauchen wir etwas tiefer ein..."
     list:
       - title: "Schweizer Security Standard"
         enable: true

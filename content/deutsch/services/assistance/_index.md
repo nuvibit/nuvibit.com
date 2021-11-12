@@ -22,7 +22,7 @@ banner_section:
 
 tile_section:
     enable: true
-    title: "Unser Spezialgebiet"
+    title: "Wir sind spezialisiert auf"
     list:
       - title: "Cloud Operations"
         enable: true
@@ -56,7 +56,7 @@ tile_section:
 
 excerpt_section:
     enable: true
-    title: "Lasst uns tiefer eintauchen......"
+    title: "Tauchen wir etwas tiefer ein..."
     list:
       - title_aws: "AWS Foundation Squad"
         enable: true

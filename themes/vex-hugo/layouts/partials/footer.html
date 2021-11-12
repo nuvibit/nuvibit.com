@@ -8,7 +8,7 @@
 				
 				<!-- Language List -->
 				<div class="bottom-nav col-md-4 p-0 float-left mb-3">
-					<h5 class="mb-4 font-weight-bold text-uppercase">{{ i18n "languages" }}</h5>
+					<h5 class="mb-4 font-weight-bold">{{ i18n "languages" }}</h5>
 					<ul class="list-group">
 					{{ if gt .Page.AllTranslations 0 }}
 						{{ $siteLanguages := .Site.Languages }}
@@ -47,7 +47,7 @@
 				{{ range site.Menus.footer }}
 				{{ if .HasChildren }}
 				<div class="bottom-nav col-md-4 p-0 float-left mb-3">
-					<h5 class="mb-4 font-weight-bold text-uppercase">{{ .Name }}</h5>
+					<h5 class="mb-4 font-weight-bold">{{ .Name }}</h5>
 					<ul class="list-group">
 						{{ range .Children}} 
 						{{ with . }}

@@ -423,9 +423,8 @@ p.md a:hover {
   margin-bottom: 3rem !important;
 }
 
-//FIXME: make text in cards fit on smaller resolutions
 .card-body {
-  height: 350px;
+  height: 375px;
 }
 
 .card-deck {
@@ -571,15 +570,15 @@ figure.profile:hover img {
     max-width: 44.7% !important;
   }
   .footer-logo {
-    -ms-flex: 0 0 41.666667% !important;
-    flex: 0 0 41.666667% !important;
-    max-width: 41.666667% !important;
+    -ms-flex: 0 0 30% !important;
+    flex: 0 0 30% !important;
+    max-width: 30% !important;
   }
   //FIXME: optimize width for german translated footer
   .footer-links {
-    -ms-flex: 0 0 58.333333% !important;
-    flex: 0 0 58.333333% !important;
-    max-width: 58.333333% !important;
+    -ms-flex: 0 0 70% !important;
+    flex: 0 0 70% !important;
+    max-width: 70% !important;
   }
   .about-row {
     padding: 0 !important;
@@ -596,11 +595,14 @@ figure.profile:hover img {
     margin-top: 2rem !important;
   }
   .zoomed {
-    max-width: 80%;
+    max-width: 80% !important;
   }
 }
 
 @media only screen and (max-width: 767px) {
+  .card-body {
+    height: 450px !important;
+  }
   .blog-tile-list {
     -ms-flex: 100% !important;
     flex: 100% !important;
@@ -620,7 +622,7 @@ figure.profile:hover img {
     max-width: none !important;
   }
   .zoomed {
-    max-width: 100%;
+    max-width: 100% !important;
   }
 }
 
@@ -634,6 +636,13 @@ figure.profile:hover img {
   }
   .about-text {
     padding-left: 0rem !important;
+  }
+}
+
+@media only screen and (max-width: 574px) {
+  .card-body {
+    min-height: 300px !important;
+    height: auto !important;
   }
 }
 

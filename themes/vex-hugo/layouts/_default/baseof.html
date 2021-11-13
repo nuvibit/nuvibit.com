@@ -65,7 +65,9 @@
 			}
 		}else{
 			localStorage.setItem('lang', userLang);
-			window.location.href = "/" + userLang;
+			if (localStorage.getItem('lang') === userLang){
+				window.location.href = "/" + userLang;
+			}
 		}
 
 		// append open in new tab to links which point outside

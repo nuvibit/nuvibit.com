@@ -90,14 +90,14 @@
 		if (userLangPref && supportedLang.includes(userLangPref)){
 			// switch language if current language is not same as preference
 			if (currentLang !== userLangPref){
-				// translate uri before redirecting
+				// translate uri before redirecting - example: /de/contact -> /contact
 				relocate_uri = uri_translate(uri, lang_now=currentLang, lang_new=userLangPref);
 				window.location.href = base_url + relocate_uri;
 			}
 		}else{
 			localStorage.setItem('lang', userLang);
 			if (localStorage.getItem('lang') === userLang){
-				// translate uri before redirecting
+				// translate uri before redirecting - example: /contact -> /de/contact
 				relocate_uri = uri_translate(uri, lang_now=currentLang, lang_new=userLang);
 				window.location.href = base_url + relocate_uri;
 			}

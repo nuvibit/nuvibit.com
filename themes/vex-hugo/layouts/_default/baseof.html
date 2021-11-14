@@ -53,24 +53,57 @@
 			localStorage.setItem('lang', lang);
 		}
 
+		function uri_translate(uri, lang_now, lang_new){
+			var relocate_uri = uri;
+			// english webpage doesn't include prefix in uri
+			if (lang_now !== "en"){
+				// remove language prefix from uri
+				var uri_arr = uri.split('/');
+				if (uri_arr[1] === lang_now){
+					uri_arr.splice(1, 1);
+					relocate_uri = uri_arr.join('/');
+				}else{
+					// fail-safe in case uri language prefix could not be removed -> redirect to home
+					relocate_uri = "/"
+				}
+			}
+			// add new language prefix to url
+			if (lang_new !== "en"){
+				relocate_uri = "/" + lang_new + relocate_uri;
+			}
+
+			return relocate_uri;
+		}
+
 		// determine the language preference for the user
 		var currentLang = "{{ .Site.Language.Lang }}";
+		// get browser language
 		var userLang = navigator.language || navigator.userLanguage;
 		var supportedLang = ["de", "en"];
+		// use 2 character shortcode - example: de-ch -> de
 		userLang = userLang.substring(0, 2);
+		// get base url and uri
+		var base_url = "{{ .Site.BaseURL }}".replace(/\/$/, "");;
+		var uri = "{{ .Permalink | relURL }}";
+		// try to read language preference from local storage and check if supported
 		userLangPref = localStorage.getItem('lang');
 		if (userLangPref && supportedLang.includes(userLangPref)){
+			// switch language if current language is not same as preference
 			if (currentLang !== userLangPref){
-				window.location.href = "/" + userLangPref;
+				// translate uri before redirecting
+				relocate_uri = uri_translate(uri, lang_now=currentLang, lang_new=userLangPref);
+				window.location.href = base_url + relocate_uri;
 			}
 		}else{
 			localStorage.setItem('lang', userLang);
 			if (localStorage.getItem('lang') === userLang){
-				window.location.href = "/" + userLang;
+				// translate uri before redirecting
+				relocate_uri = uri_translate(uri, lang_now=currentLang, lang_new=userLang);
+				window.location.href = base_url + relocate_uri;
 			}
 		}
 
-		// append open in new tab to links which point outside
+		// append open in new tab to links which are external
 		$(document.links).filter(function() {
 			return this.hostname != window.location.hostname;
 		}).attr('target', '_blank');

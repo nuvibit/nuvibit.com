@@ -77,11 +77,11 @@
 
 		// determine the language preference for the user
 		var currentLang = "{{ .Site.Language.Lang }}";
-		// get browser language
-		var userLang = navigator.language || navigator.userLanguage;
-		var supportedLang = ["de", "en"];
-		// use 2 character shortcode - example: de-ch -> de
-		userLang = userLang.substring(0, 2);
+		// get browser language as shortcode - example: de_ch -> de
+		var userLangBrowser = navigator.language || navigator.userLanguage;
+		userLangBrowser = userLangBrowser.substring(0, 2);
+		// get supported languages from hugo
+		var supportedLang = "{{ .Site.Languages }}".match(/\[(.*?)\]/)[1].split(" ");
 		// get base url and uri
 		var base_url = "{{ .Site.BaseURL }}".replace(/\/$/, "");;
 		var uri = "{{ .Permalink | relURL }}";
@@ -95,10 +95,15 @@
 				window.location.href = base_url + relocate_uri;
 			}
 		}else{
-			localStorage.setItem('lang', userLang);
-			if (localStorage.getItem('lang') === userLang){
+			// set language to english if browser language not supported
+			if (!supportedLang.includes(userLangBrowser)){
+				userLangBrowser = "en";
+			}
+			// save language preference to local storage
+			localStorage.setItem('lang', userLangBrowser);
+			if (localStorage.getItem('lang') === userLangBrowser){
 				// translate uri before redirecting - example: /contact -> /de/contact
-				relocate_uri = uri_translate(uri, lang_now=currentLang, lang_new=userLang);
+				relocate_uri = uri_translate(uri, lang_now=currentLang, lang_new=userLangBrowser);
 				window.location.href = base_url + relocate_uri;
 			}
 		}

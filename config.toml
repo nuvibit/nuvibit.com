@@ -178,14 +178,14 @@ weight = 4
 
 [[Languages.en.menu.footer]]
 parent = "company"
-name = "Partners"
-url = "/partners"
+name = "Contact"
+url = "/contact"
 weight = 5
 
 [[Languages.en.menu.footer]]
 parent = "company"
-name = "Contact"
-url = "/contact"
+name = "Partnerships"
+url = "/partners"
 weight = 6
 
 [[Languages.en.menu.footer]]
@@ -322,14 +322,14 @@ weight = 4
 
 [[Languages.de.menu.footer]]
 parent = "company"
-name = "Partner"
-url = "/partners"
+name = "Kontakt"
+url = "/contact"
 weight = 5
 
 [[Languages.de.menu.footer]]
 parent = "company"
-name = "Kontakt"
-url = "/contact"
+name = "Partnerschaften"
+url = "/partners"
 weight = 6
 
 [[Languages.de.menu.footer]]

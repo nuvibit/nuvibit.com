@@ -123,7 +123,7 @@ services:
 ############################# partners ########################
 partners:
   enable : true
-  title : "Our strategic partners"
+  title : "Our partnerships"
 
 ############################# newsletter ########################
 newsletter:

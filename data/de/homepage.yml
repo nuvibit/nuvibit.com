@@ -120,6 +120,11 @@ services:
 #         - name: "reference architecture"
 #           enable: true
 
+############################# partners ########################
+partners:
+  enable : true
+  title : "Unsere strategischen Partner"
+
 ############################# newsletter ########################
 newsletter:
   enable: true

@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 mb-4 mb-md-0">
+        <!-- partner image slider -->
+        <div class="product-image">
+          <div data-image="{{ .Params.image | absURL }}">
+            <img class="img-fluid w-100" src="{{ .Params.image | absURL }}" alt="product-image">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-7 offset-lg-1">
+        <h1 class="mb-4">{{ .Title }}</h1>
+        <div class="content">{{.Content}}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

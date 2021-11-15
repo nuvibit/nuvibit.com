@@ -1,0 +1,30 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{- if $data.homepage.partners.enable }}
+<section class="gallery" id="partners">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            <div class="heading">
+                {{- with $data.homepage.partners }}
+                <h2>{{ $.Page.RenderString .title }}</h2>
+                {{ end }}
+            </div>
+
+            <div class="product-slider">
+                {{ range (where .Site.RegularPages "Section" "partners") }}
+                <div class="block">
+                    <div class="gallery-overlay">
+                        <a href="{{ .Permalink }}" class="gallery-popup">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                    <img class="img-fluid" src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
+                </div>
+                {{ end }}
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

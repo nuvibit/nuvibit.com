@@ -9,7 +9,6 @@ $primary-color: #3fa7df;
 $icon-font: 'themefisher-font' !important;
 
 
-
 /*--
   :ANCHOR CUSTOM
 --*/
@@ -1259,6 +1258,11 @@ s.price {
   .price {
     font-size: 100%;
   }
+}
+
+// partners
+.gallery .block {
+  padding: 0 !important;
 }
 
 // contact list

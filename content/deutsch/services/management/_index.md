@@ -5,9 +5,9 @@ draft: false
 
 banner_section:
     enable: true
-    title: "Optimieren Sie Ihr Unternehmen für den Erfolg in der Cloud."
+    title: "Optimieren Sie Ihr Unternehmen für die Cloud."
     content: "Die Ausarbeitung einer Cloud Strategie ist der erste und einfachste Schritt.
-              Die Umsetzung dieser Vision in die Realität und die Befähigung der Organisation ist der komplexe Teil.<br>
+              Die Umsetzung dieser Vision in die Realität und die Befähigung der Organisation ist der komplexe Teil.<br><br>
               Mit unserer praktischen Erfahrung bei der Umstrukturierung einer Organisation können wir Sie auf diesem Weg tatkräftig unterstützen."
     image: "images/illustrations/cloud_management.png"
     button:
@@ -24,12 +24,12 @@ tile_section:
     enable: true
     title: "Wir sind spezialisiert auf"
     list:
-      - title: "Cloud Strategie"
+      - title: "Cloud Strategy"
         enable: true
         content: "Wir helfen Ihnen die Vorteile der Public Cloud sicher zu nutzen und gleichzeitig die unternehmerischen Ziele im Auge zu behalten.<br><br>
         Wir zeigen Ihnen die Stolpersteine im Voraus und helfen so Show-Stopper zu verhindern. So beschleunigen wir Ihre Cloud Journey."
 
-      - title: "Rechtliches, Datenschutz and Beschaffung"
+      - title: "Legal, Data Protection and Procurement"
         enable: true
         content: "Am Beginn jeder Cloud Journey gibt es diverse Datenschutz und rechtliche Themen, die behandelt werden müssen.<br><br>
         Wir können Ihre rechtlichen Lücken schliessen und Ihr Beschaffungsteam beim Cloud Paradigmenwechsel unterstützen."

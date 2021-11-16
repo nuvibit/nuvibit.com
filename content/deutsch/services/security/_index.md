@@ -25,7 +25,7 @@ tile_section:
     enable: true
     title: "Wir sind spezialisiert auf"
     list:
-      - title: "Sicherheitskonforme Architektur"
+      - title: "Compliant Architecture"
         enable: true
         content: "Beim Bau einer sicherheitskonformen Cloud Lösung gibt es viele Dinge zu beachten.<br><br>
                   Wir bieten praxistaugliche und getestete Referenzarchitekturen, die vollständig [CIS Control](/faq/#cis \"Was sind CIS Controls?\") konform sind."

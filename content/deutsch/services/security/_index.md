@@ -5,10 +5,10 @@ draft: false
 
 banner_section:
     enable: true
-    title: "Security ist Prio 1!"
+    title: "Security Compliance vom ersten Tag an!"
     content: "Die Sicherheitsreife Ihrer Cloud Umgebung ist geschäftskritisch.
-              Für Unternehmen mit einer umfangreichen Applikationslandschaft kann dies eine große Herausforderung darstellen.<br>
-              Cloud Security ist eine unserer Spezialitäten und wir unterstützen Sie gerne!"
+                Die Compliance ist für Unternehmen mit einer umfangreichen Applikationslandschaft eine große Herausforderung.<br><br>
+                Cloud Security ist eine unserer Spezialitäten und wir unterstützen Sie gerne!"
     image: "images/illustrations/cloud_security_compliance.png"
     button:
         enable: true

@@ -5,7 +5,7 @@ draft: false
 
 banner_section:
     enable: true
-    title: "Schaffen Sie zuerst ein solides Netzwerk als Grundstein!"
+    title: "Legen Sie den Grundstein mit einem soliden Netzwerk!"
     content: "Connectivity ist eines der ersten Schlüsselthemen, die es auf der Cloud Journey zu lösen gilt.<br><br>
               Wir stellen sicher, dass alle Ihre Workloads sicher, skalierbar und zuverlässig mit der AWS und Azure Cloud verbunden sind."
     image: "images/illustrations/cloud_connectivity.png"

@@ -12,8 +12,8 @@ button_link: "#"
 draft: false
 ---
 
-< PLACEHOLDER >
+We build your cloud foundation on a solid platform!
 
-AWS Consulting Partners are professional, consulting, or managed services firms that help customers of all types and sizes accelerate their journey to the cloud.
+Amazon Web Services (AWS) has been the leading provider of public cloud infrastructure for years.
 
-These professional services firms include system integrators, strategic consultancies, agencies, managed service providers (MSPs), and value-added resellers. Unlock more benefits and programs as you progress through the AWS Consulting Tiers and grow with AWS Partner Network (APN).
+Thanks to our close partnership with AWS, you as a customer benefit from first-hand information and experience.

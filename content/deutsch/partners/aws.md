@@ -12,8 +12,8 @@ button_link: "#"
 draft: false
 ---
 
-< PLACEHOLDER >
+Wir bauen Ihre Cloud Foundation auf einer soliden Grundlage!
 
-AWS-Beratungspartner sind professionelle, beratende oder verwaltete Dienstleistungsunternehmen, die Kunden aller Arten und Größen dabei helfen, ihre Reise in die Cloud zu beschleunigen.
+Amazon Web Services (AWS) ist seit Jahren der weltweit führende Anbieter von Public Cloud Infrastruktur.
 
-Zu diesen professionellen Dienstleistungsunternehmen gehören Systemintegratoren, strategische Beratungsunternehmen, Agenturen, Managed Service Provider (MSPs) und Value-Added Reseller. Schalten Sie weitere Vorteile und Programme frei, wenn Sie die AWS Consulting Tiers durchlaufen und mit dem AWS Partner Network (APN) wachsen.
+Dank unserer engen Partnerschaft mit AWS profitieren Sie als Kunde von Informationen und Erfahrungen aus erster Hand.

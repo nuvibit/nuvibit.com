@@ -13,7 +13,7 @@
 
             <div class="product-slider">
                 {{ range (where .Site.RegularPages "Section" "partners") }}
-                <div class="block">
+                <div class="block" onclick='redirect("{{ .Permalink }}")'>
                     <div class="gallery-overlay">
                         <a href="{{ .Permalink }}" class="gallery-popup">
                             <i class="fas fa-plus"></i>

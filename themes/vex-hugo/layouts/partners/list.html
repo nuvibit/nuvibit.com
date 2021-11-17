@@ -8,7 +8,7 @@
         </div>
         {{ range (where .Site.RegularPages "Section" "partners") }}
         <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-            <div class="block mb-4">
+            <div class="block mb-4" onclick='redirect("{{ .Permalink }}")'>
                 <div class="gallery-overlay">
                     <a href="{{ .Permalink }}" class="gallery-popup">
                         <i class="fas fa-plus"></i>

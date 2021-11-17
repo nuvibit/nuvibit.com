@@ -75,7 +75,7 @@ excerpt_section:
         image: "images/illustrations/cloud_account_lifecycle.png"
         content: "Bei der Implementierung der Multi-Account Strategie gibt es zahlreiche Herausforderungen zu bewältigen.<br>
         Wie konfiguriert man den Hauptaccount, strukturiert AWS-Organisationen, definiert Zugriffsrechte, verwaltet Code-Repositories und pflegt [CI/CD Pipelines](/faq/#cicd 'Was ist CI/CD?')?
-        Wir bieten Ihnen eine adaptive Lösung, um Ihre Accounts einschließlich aller Umsysteme mit [Infrastructure as Code](/faq/#iac 'Was ist Infrastructure as Code?') auf eine einfache und effiziente Weise zu verwalten."
+        Wir bieten Ihnen eine adaptive Lösung, um Ihre Accounts einschliesslich aller Umsysteme mit [Infrastructure as Code](/faq/#iac 'Was ist Infrastructure as Code?') auf eine einfache und effiziente Weise zu verwalten."
         link:
           # enable: false
           # label: "read more about nuvibit account manager"

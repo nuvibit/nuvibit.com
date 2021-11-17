@@ -7,7 +7,7 @@ banner_section:
     enable: true
     title: "Zusammen sind wir stark."
     content: "Rom wurde nicht an einem Tag erbaut, und das Gleiche gilt für eine zuverlässige Cloud Foundation.<br><br>
-              Als ehemaliges funktionsübergreifendes Team in einem großen Schweizer Unternehmen haben wir zahlreiche Cloud Herausforderungen gemeistert.
+              Als ehemaliges funktionsübergreifendes Team in einem grossen Schweizer Unternehmen haben wir zahlreiche Cloud Herausforderungen gemeistert.
               Jetzt sind Sie am Zug und wir können Sie dabei unterstützen!"
     image: "images/illustrations/cloud_assistance.png"
     button:

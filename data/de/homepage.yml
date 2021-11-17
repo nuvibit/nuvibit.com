@@ -18,7 +18,7 @@ services:
       enable: true
       title: "Zusammen sind wir stark."
       content: "Rom wurde nicht an einem Tag erbaut, und das Gleiche gilt für eine zuverlässige Cloud Foundation.<br>
-                Als ehemaliges funktionsübergreifendes Team in einem großen Schweizer Unternehmen haben wir zahlreiche Cloud Herausforderungen gemeistert.
+                Als ehemaliges funktionsübergreifendes Team in einem grossen Schweizer Unternehmen haben wir zahlreiche Cloud Herausforderungen gemeistert.
                 Jetzt sind Sie am Zug und wir können Sie dabei unterstützen!"
       link:
         enable: true
@@ -40,7 +40,7 @@ services:
       enable: true
       title: "Security Compliance vom ersten Tag an!"
       content: "Die Sicherheitsreife Ihrer Cloud Umgebung ist geschäftskritisch.
-                Die Compliance ist für Unternehmen mit einer umfangreichen Applikationslandschaft eine große Herausforderung.<br>
+                Die Compliance ist für Unternehmen mit einer umfangreichen Applikationslandschaft eine grosse Herausforderung.<br>
                 Cloud Security ist eine unserer Spezialitäten und wir unterstützen Sie gerne!"
       link:
         enable: true

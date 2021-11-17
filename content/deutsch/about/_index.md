@@ -5,7 +5,7 @@ draft: false
 
 about_us:
   introduction: "Nuvibit wurde von einer Gruppe von Cloud Enthusiasten gegründet, die stets auf der Suche nach neuen Abenteuern sind.<br>
-                Ursprünglich arbeiteten wir für das gleiche Unternehmen in unterschiedlichen Fachbereichen. Direkt nach der Ankündigung der Cloud-Strategie des Unternehmens wurden wir mit der Aufgabe konfrontiert, eine Cloud Foundation für AWS aufzubauen. Wir haben Blut, Schweiß und Tränen in diese Cloud Foundation investiert und es ist uns gelungen, einen hervorragenden Reifegrad zu erreichen.<br>
+                Ursprünglich arbeiteten wir für das gleiche Unternehmen in unterschiedlichen Fachbereichen. Direkt nach der Ankündigung der Cloud-Strategie des Unternehmens wurden wir mit der Aufgabe konfrontiert, eine Cloud Foundation für AWS aufzubauen. Wir haben Blut, Schweiss und Tränen in diese Cloud Foundation investiert und es ist uns gelungen, einen hervorragenden Reifegrad zu erreichen.<br>
                 Jeder Einzelne von uns ist in dieser Zeit weit über das Ziel hinausgeschossen, was letztlich zu der Idee führte, mit gleichgesinnten, motivierten Kollegen ein eigenes Unternehmen zu gründen."
   items:
     - image: "images/profiles/roman_plessl.jpg"
@@ -23,7 +23,7 @@ about_us:
       linkedin: "https://www.linkedin.com/in/christoph-siegrist"
       title: "Digitalization & Transformation Specialist"
       content: "Christoph ist Ihr Begleiter durch den Cloud-Dschungel! Er bringt jahrelange Erfahrung mit, wie man Unternehmen auf den Weg der Transformation bringt und dabei DevOps-Praktiken etabliert.<br>
-                Mit dem Blick für das große Ganze und seinem organisatorischen Talent schafft er eine Umgebung, in der das volle Potenzial der Cloud ausgeschöpft werden kann."
+                Mit dem Blick für das grosse Ganze und seinem organisatorischen Talent schafft er eine Umgebung, in der das volle Potenzial der Cloud ausgeschöpft werden kann."
 
     - image: "images/profiles/stefano_franco.jpg"
       enable: true

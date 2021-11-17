@@ -76,7 +76,7 @@ excerpt_section:
         image: "images/illustrations/cloud_hub.png"
         content: "Skalierbarkeit ist das Zauberwort bei der Konzeption der Netzarchitektur einer Public Cloud Umgebung.<br>
                   Das Cloud Netzwerk muss dynamisch und schnell skalieren, um mit den schnelllebigen Cloud Workloads mitzuhalten.
-                  Unsere AWS- und Azure-Netzarchitekturen bieten große Flexibilität, ohne die Stabilität zu gefährden."
+                  Unsere AWS- und Azure-Netzarchitekturen bieten grosse Flexibilität, ohne die Stabilität zu gefährden."
         # button:
         #   enable: false
         #   label: "read more about xxx"

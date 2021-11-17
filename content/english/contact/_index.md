@@ -4,7 +4,7 @@ description: "You got questions? We got answers! Don't be shy, get in touch with
 draft: false
 
 contact:
-  title: "Contact Us"
+  title: "Contact us"
   image: "images/illustrations/mail.png"
   email: "hello@nuvibit.com"
   phone: "+41 56 511 24 24"
@@ -13,9 +13,6 @@ contact:
             Don't be shy, get in touch with us."
   reason: "How can we help?"
   reasons:
-    - name: "cloud foundation"
-      key: "foundation"
-
     - name: "cloud assistance"
       key: "assistance"
 
@@ -27,8 +24,5 @@ contact:
 
     - name: "cloud connectivity"
       key: "connectivity"
-
-    - name: "other"
-      key: "other"
 
 ---

@@ -38,7 +38,7 @@ services:
 
     - image: "images/illustrations/cloud_security_compliance.png"
       enable: true
-      title: "Security Compliance from Day One!"
+      title: "Security compliance from day one!"
       content: "The security maturity of your public cloud environment is business critical.
                 Compliance is a major challenge for an enterprise with numerous workloads.<br>
                 Cloud security is one of our specialties and we are happy to support you!"
@@ -119,6 +119,11 @@ services:
 
 #         - name: "reference architecture"
 #           enable: true
+
+############################# partners ########################
+partners:
+  enable : true
+  title : "Our partnerships"
 
 ############################# newsletter ########################
 newsletter:

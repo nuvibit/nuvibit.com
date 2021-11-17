@@ -2,13 +2,13 @@
 
 <section class="section">
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center text-center text-md-left">
       <div class="col-lg-10 text-center mb-5">
-        <h1 class="font-weight-bold">{{.Title}}</h1>
+        <h1 class="font-weight-bold text-break">{{.Title}}</h1>
       </div>
       <div class="col-lg-10 mb-5">
         <div class="content markdown">
-          {{.Content}}
+          {{ $.Page.RenderString .Content }}
         </div>
       </div>
     </div>

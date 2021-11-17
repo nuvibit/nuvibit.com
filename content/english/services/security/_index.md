@@ -5,7 +5,7 @@ draft: false
 
 banner_section:
     enable: true
-    title: "Security Compliance from Day One!"
+    title: "Security compliance from day one!"
     content: "The security maturity of your public cloud environment is business critical.
               Compliance is a major challenge for an enterprise with numerous workloads.<br><br>
               Cloud security is one of our specialties and we are happy to support you!"
@@ -40,7 +40,7 @@ tile_section:
         content: "There are numerous cloud security frameworks (ISO 27000 family, CIS Controls, BSI C5, NIST) with different scopes.<br><br>
                   We show you how to effectively measure compliance and respond appropriately when violations occur."
 
-      - title: "Security Event Management"
+      - title: "Security Finding Management"
         enable: true
         content: "An excess of security events can quickly render you helpless in a critical situation.<br><br>
                   We offer a cloud-native solution to bring your security events under control and streamline security surveillance."
@@ -48,7 +48,7 @@ tile_section:
       - title: "Image Lifecycle Management"
         enable: true
         content: "An EC2 image that is not sufficiently hardened provides a large attack surface for unauthorized access.<br><br>
-                  We help you create an image backing process that delivers hardened EC2 images to your organization and validates them continously."
+                  We help you create an image baking process that delivers hardened EC2 images to your organization and validates them continously."
 
       - title: "Logging and Monitoring"
         enable: true
@@ -70,10 +70,10 @@ excerpt_section:
         #   label: "read more about xxx"
         #   link: "/services/security/xxx"
 
-      - title_aws: "AWS Security Event Management"
+      - title_aws: "AWS Security Finding Management"
         enable: true
         image: "images/illustrations/cloud_security_event_management_semper.png"
-        content: "Manage your AWS CloudWatch Event Rules and AWS Security Hub Controls across your AWS organization with a central [Policy as Code](/faq/#pac 'What is Policy as Code?') repository.<br>
+        content: "Manage your Amazon EventBridge Rules and AWS Security Hub Controls across your AWS organization with a central [Policy as Code](/faq/#pac 'What is Policy as Code?') repository.<br>
                   Keep track of your security events, filter them by importance and enrich them with valuable information.
                   Do it continuously with our cloud-native, serverless solution [SEMPER](/contact/ 'Contact us for more information!')."
         # button:
@@ -84,7 +84,7 @@ excerpt_section:
       - title_aws: "AWS Security Baselining"
         enable: true
         image: "images/illustrations/cloud_security_baseline.png"
-        content: "Not only the workflow itself, but also the underlying cloud foundation must be safety-compliant.<br>
+        content: "Not only the workload itself, but also the underlying cloud foundation must be safety-compliant.<br>
                   To simplify this process, we will show you how to define and implement a set of basic security controls in your AWS organization.
                   Once your AWS accounts are 100% compliant, you have a lot less to worry about."
         # button:

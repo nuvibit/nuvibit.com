@@ -3,23 +3,122 @@
 {{- partial "head.html" . -}}
 
 <body id="body">
+	<div class="zoom-blur"></div>
 	{{- partial "preloader.html" . -}}
 	{{- partial "header.html" . -}}
 	{{- block "main" . }}{{- end }}
 	{{- partial "footer.html" . -}}
 	{{ block "page-script" . }}
 	<script>
+		// function to copy content to clipboard and display message
+		function copy(){
+			var $temp = $("<input>");
+			$("body").append($temp);
+			$temp.val($(".copy").text()).select();
+			document.execCommand("copy");
+			$temp.remove();
+
+			$(".alert").show();
+			$(".alert").delay(2000).slideUp(200, function() {
+				$(this).hide();
+			});
+		}
+
+		// function to cancel image zoom
+		function cancel_zoom(){
+			window.removeEventListener('scroll', cancel_zoom);
+			$(".zoomed").removeClass("zoomed");
+			$(".zoom-blur").toggle();
+		}
+
+		// function to image zoom
 		function image_zoom(element){
 			if (!element.classList.contains("zoomed")){
 				$(".zoomed").removeClass("zoomed");
 			}
 			element.classList.toggle('zoomed');
+			$(".zoom-blur").toggle();
+
+			setTimeout(function(){
+				if (element.classList.contains("zoomed")){
+					window.addEventListener('scroll', cancel_zoom, false)
+				}else{
+					window.removeEventListener('scroll', cancel_zoom);
+				}
+			}, 100);
 		}
 
+		// function to redirect to subpage
+		function redirect(url){
+			window.location.href = url;
+		}
+		
+		// function to overwrite language preference
+		function update_language_pref(lang){
+			localStorage.setItem('lang', lang);
+		}
+
+		function uri_translate(uri, lang_now, lang_new){
+			var relocate_uri = uri;
+			// english webpage doesn't include prefix in uri
+			if (lang_now !== "en"){
+				// remove language prefix from uri
+				var uri_arr = uri.split('/');
+				if (uri_arr[1] === lang_now){
+					uri_arr.splice(1, 1);
+					relocate_uri = uri_arr.join('/');
+				}else{
+					// fail-safe in case uri language prefix could not be removed -> redirect to home
+					relocate_uri = "/"
+				}
+			}
+			// add new language prefix to url
+			if (lang_new !== "en"){
+				relocate_uri = "/" + lang_new + relocate_uri;
+			}
+
+			return relocate_uri;
+		}
+
+		// determine the language preference for the user
+		var pageLang = "{{ .Site.Language.Lang }}";
+		// get browser language as shortcode - example: de_ch -> de
+		var browserLang = navigator.language || navigator.userLanguage;
+		browserLang = browserLang.substring(0, 2);
+		// get supported languages from hugo
+		var supportedLang = "{{ .Site.Languages }}".match(/\[(.*?)\]/)[1].split(" ");
+		// get base url and uri
+		var base_url = "{{ .Site.BaseURL }}".replace(/\/$/, "");;
+		var uri = "{{ .Permalink | relURL }}";
+		// try to read language preference from local storage and check if supported
+		userLangPref = localStorage.getItem('lang');
+		if (userLangPref && supportedLang.includes(userLangPref)){
+			// switch language if current language is not same as preference
+			if (pageLang !== userLangPref){
+				// translate uri before redirecting - example: /de/contact -> /contact
+				relocate_uri = uri_translate(uri, lang_now=pageLang, lang_new=userLangPref);
+				window.location.href = base_url + relocate_uri;
+			}
+		}else{
+			// set language to english if browser language not supported
+			if (!supportedLang.includes(browserLang)){
+				browserLang = "en";
+			}
+			// save language preference to local storage
+			localStorage.setItem('lang', browserLang);
+			if (localStorage.getItem('lang') === browserLang && pageLang !== browserLang){
+				// translate uri before redirecting - example: /contact -> /de/contact
+				relocate_uri = uri_translate(uri, lang_now=pageLang, lang_new=browserLang);
+				window.location.href = base_url + relocate_uri;
+			}
+		}
+
+		// append open in new tab to links which are external
 		$(document.links).filter(function() {
 			return this.hostname != window.location.hostname;
 		}).attr('target', '_blank');
 		
+		// cookie consent banner
 		window.cookieconsent.initialise({
 		palette: {
 			popup: {
@@ -32,10 +131,10 @@
 			}
 		},
 		content: {
-			message: "We use cookies on our website to ensure you get the best experience.",
-			dismiss: "Close",
-			link: "Our cookie policy",
-			href: "/privacy-policy/#51-cookies",
+			message: '{{ i18n "cookie_message" }}',
+			dismiss: '{{ i18n "close" }}',
+			link: '{{ i18n "cookie_policy" }}',
+			href: '{{ "/privacy-policy/#51-cookies" | relLangURL }}',
 			target: null
 		},
 		theme: "edgeless",

@@ -1,18 +1,18 @@
 ---
 title: "Cloud Assistance"
-description: "We are happy to support you building a reliable cloud foundation."
+description: "Wir unterstützen Sie beim Bau einer zuverlässigen Cloud Foundation."
 draft: false
 
 banner_section:
     enable: true
-    title: "Together we are stronger."
-    content: "Rome wasn't built in a day and the same goes for a reliable cloud foundation.<br><br>
-              As a former cross-functional team in a large enterprise we have conquered numerous cloud challenges.
-              Now it's your turn and we want to guide you along the way!"
+    title: "Zusammen sind wir stark."
+    content: "Rom wurde nicht an einem Tag erbaut, und das Gleiche gilt für eine zuverlässige Cloud Foundation.<br><br>
+              Als ehemaliges funktionsübergreifendes Team in einem grossen Schweizer Unternehmen haben wir zahlreiche Cloud Herausforderungen gemeistert.
+              Jetzt sind Sie am Zug und wir können Sie dabei unterstützen!"
     image: "images/illustrations/cloud_assistance.png"
     button:
         enable: true
-        label: "Get in touch"
+        label: "Kontakt aufnehmen"
         link: "contact"
 
 # detail_section:
@@ -22,58 +22,58 @@ banner_section:
 
 tile_section:
     enable: true
-    title: "We specialize in"
+    title: "Wir sind spezialisiert auf"
     list:
       - title: "Cloud Operations"
         enable: true
-        content: "Running a cloud foundation requires a broad range of capabilities.<br><br>
-                  We teach the necessary skills to successfully run a reliable and scalable [cloud foundation](/faq/#foundation \"What is a cloud foundation?\").<br><br>"
+        content: "Eine Cloud Foundation zu betreiben benötigt ein breites Spektrum an Fähigkeiten.<br><br>
+                  Wir vermitteln die notwendigen Kompetenzen für den erfolgreichen Betrieb einer zuverlässigen und skalierbaren [Cloud Foundation](/faq/#foundation \"Was ist eine Cloud Foundation?\")."
 
       - title: "Architecture Review"
         enable: true
-        content: "Before any deployment can get going, a cloud-ready architecture is required.<br><br>
-                  Over the years we accumulated many Well-Architected reference architectures and we have developed a keen eye for weak spots."
+        content: "Die Cloud Prinzipien müssen bereits im Design der Architekturen beachtet werden, um Cloud Services optimal auszunutzen. <br><br>
+                  Wir haben im Laufe der Jahre viele bewährte Referenzarchitekturen erarbeitet und ein scharfes Auge für Schwachstellen entwickelt."
 
       - title: "Automation"
         enable: true
-        content: "To fully exploit the benefits of the cloud, a high degree of automation is required.<br><br>
-                  Among other things, we enable your engineers to build and operate [CI/CD](/faq/#cicd \"What is CI/CD?\") pipelines specifically tuned for the cloud."
+        content: "Die Cloud bietet uns die Möglichkeit unsere Systeme zu hundert Prozent zu automatisieren.<br><br>
+                  Unter anderem befähigen wir Ihre Engineers, Cloud-optimierte [CI/CD](/faq/#cicd \"Was ist CI/CD?\") Pipelines zu erstellen und zu betreiben."
 
       - title: "Infrastructure as Code"
         enable: true
-        content: "One of the best tools to manage large cloud environments is [Infrastructure as Code](/faq/#iac \"What is Infrastructure as Code?\").<br><br>
-                  We have extensive Terraform knowhow and develop our own modules. We can help you with the implementation of our modules and offer you support."
+        content: "Die beste Methodik, um grosse Cloud Umgebungen zu managen ist [Infrastructure as Code](/faq/#iac \"Was ist Infrastructure as Code?\").<br><br>
+                  Wir verpacken unser umfangreiches Terraform Fachwissen in unsere Module. Wir unterstützen Sie bei der Implementation und bieten Support."
 
       - title: "Training"
         enable: true
-        content: "The most important asset for the cloud journey is know-how.<br><br>
-                  We empower organizational teams to leverage practices suitable for the cloud and operate cross-functionally."
+        content: "Die wichtigste Komponente für Ihre Cloud Journey ist Fachwissen.<br><br>
+                  Wir befähigen Ihre Organisationseinheiten, Cloud-gerechte Praktiken anzuwenden und funktionsübergreifend zu agieren."
 
       - title: "Cloud Migration"
         enable: true
-        content: "There are many obstacles when migrating an existing workload to the cloud.<br><br>
-                  We can provide guidance on how to successfully move your workloads to the cloud and remain profitable."
+        content: "Es gibt diverse Herausforderungen bei der Migration von bestehenden Workloads in die Cloud.<br><br>
+                  Wir können Sie dabei unterstützen, Ihre Workloads erfolgreich und wirtschaftlich in die Cloud zu verlagern."
 
 excerpt_section:
     enable: true
-    title: "Let's dive deeper..."
+    title: "Tauchen wir etwas tiefer ein..."
     list:
       - title_aws: "AWS Foundation Squad"
         enable: true
         image: "images/illustrations/cloud_foundation_squad.png"
-        content: "Need to significantly accelerate your cloud journey?<br>
-                  We get a picture of the current situation, gather the requirements and assemble a team of specialists to build your cloud foundation in a fraction of the usual time.
-                  Along the way, we prepare your organization to successfully take ownership of the foundation."
+        content: "Wollen Sie Ihre Cloud Journey so richtig auf die Sprünge helfen?<br>
+                  Wir machen uns ein Bild von der aktuellen Situation, sammeln die Anforderungen und stellen ein Team von Spezialisten zusammen, welches Ihnen eine massgeschneiderte Cloud Foundation in einem Bruchteil der üblichen Zeit aufbaut.
+                  Gleichzeitig bereiten wir Ihr Unternehmen darauf vor, diese Cloud Foundation erfolgreich zu übernehmen."
         # button:
         #   enable: false
         #   label: "have a look to our terraform modules"
         #   link: "https://github.com/nuvibit"
 
-      - title_aws: "AWS Reference Architecture"
+      - title_aws: "AWS Referenzarchitekturen"
         enable: true
         image: "images/illustrations/cloud_architecture.png"
-        content: "Most cloud reference architectures tend to be generic in order to appeal to a broad audience.<br>
-                  Based on our many years of experience in designing and implementing cloud reference architectures, we have composed a set of field-tested, enterprise-ready blueprints for AWS."
+        content: "Viele Cloud Referenzarchitekturen tendieren dazu, sehr generisch zu sein, damit ein breites Publikum angesprochen werden kann.<br>
+                  Basierend auf unserer Erfahrung bei der Planung und dem Aufbau von Cloud Landschaften haben wir mehrere unternehmenstaugliche und praxiserprobte Architektur Blueprints für AWS entwickelt."
         # button:
         #   enable: false
         #   label: "read more about our AWS Reference Architecture"
@@ -83,9 +83,9 @@ excerpt_section:
       - title_aws: "AWS Terraform Modules"
         enable: true
         image: "images/illustrations/cloud_infrastructure_as_code.png"
-        content: "Adapting Infrastructure as Code is a critical component to ensure a robust and scalable cloud foundation in the long term.<br>
-                  We rely entirely on [Terraform](https://www.terraform.io/intro/index.html 'Introduction to Terraform') for this purpose and have developed a collection of ready-to-use Terraform modules.
-                  Visit the [Terraform Registry](https://registry.terraform.io/namespaces/nuvibit) and take a look at some of our free to use public modules."
+        content: "Die Adaptierung von Infrastructure as Code ist eine entscheidende Komponente, um langfristig eine stabile und skalierbare Cloud Foundation zu gewährleisten.<br>
+                  Wir setzen vollständig auf [Terraform](https://www.terraform.io/intro/index.html 'Introduction to Terraform') und haben eine eigene Sammlung von Terraform Modulen entwickelt.
+                  Werfen Sie einen Blick auf die [Terraform Registry](https://registry.terraform.io/namespaces/nuvibit) und nutzen Sie unsere öffentlichen Module kostenlos."
         # button:
         #   enable: true
         #   label: "have a look to our terraform modules"

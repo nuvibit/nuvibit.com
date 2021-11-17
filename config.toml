@@ -8,7 +8,7 @@ summarylength = "20"
 # google analytics
 googleAnalytics = "G-65QED8XYJ9"
 # disable language
-disableLanguages = ["de"]
+disableLanguages = []
 # check all links for correct absolute language url before enabling language
 
 # unsafe html
@@ -45,7 +45,6 @@ simple = false
 disable = true
 privacyEnhanced = false
 
-
 #################################### Plugins ##########################################
 
 # CSS Plugins
@@ -70,139 +69,8 @@ link = "plugins/slick/slick.min.js"
 [[params.plugins.js]]
 link = "plugins/cookieconsent/cookieconsent.min.js"
 
-
-###################################### Navigation ######################################
-
-# homepage section menu
-[[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
-
-[[menu.main]]
-identifier = "services"
-name = "Services"
-url = "services"
-weight = 2
-
-[[menu.main]]
-identifier = "service1"
-name = "cloud assistance"
-url = "services/assistance"
-parent = "services"
-weight = 3
-
-[[menu.main]]
-identifier = "service2"
-name = "cloud management at scale"
-url = "services/management"
-parent = "services"
-weight = 4
-
-[[menu.main]]
-identifier = "service3"
-name = "cloud security and compliance"
-url = "services/security"
-parent = "services"
-weight = 5
-
-[[menu.main]]
-identifier = "service4"
-name = "cloud connectivity"
-url = "services/connectivity"
-parent = "services"
-weight = 6
-
-# [[menu.main]]
-# name = "Blog"
-# url = "blog"
-# weight = 7
-
-[[menu.main]]
-name = "About"
-url = "about"
-weight = 8
-
-[[menu.main]]
-name = "Contact"
-url = "contact"
-weight = 9
-
-
-###################################### Footer ######################################
-
-[[menu.footer]]
-identifier = "language"
-name = "Language"
-weight = 1
-
-[[menu.footer]]
-identifier = "company"
-name = "Company"
-weight = 2
-
-[[menu.footer]]
-parent = "company"
-name = "FAQ"
-url = "/faq"
-weight = 3
-
-[[menu.footer]]
-parent = "company"
-name = "About"
-url = "/about"
-weight = 4
-
-[[menu.footer]]
-parent = "company"
-name = "Contact"
-url = "/contact"
-weight = 5
-
-[[menu.footer]]
-parent = "company"
-name = "Privacy Policy"
-url = "/privacy-policy"
-weight = 6
-
-[[menu.footer]]
-parent = "company"
-name = "Cookie Policy"
-url = "/privacy-policy/#51-cookies"
-weight = 7
-
-[[menu.footer]]
-identifier = "social"
-name = "Social"
-weight = 8
-
-[[menu.footer]]
-parent = "social"
-name = "Github"
-url = "https://github.com/nuvibit"
-weight = 9
-
-[[menu.footer]]
-parent = "social"
-name = "Linkedin"
-url = "https://linkedin.com/company/nuvibit"
-weight = 10
-
-[[menu.footer]]
-parent = "social"
-name = "Twitter"
-url = "https://twitter.com/nuvibit"
-weight = 11
-
-[[menu.footer]]
-parent = "social"
-name = "Youtube"
-url = "https://www.youtube.com/channel/UCmQCd8jMiZviVlWOqqbpYBw/playlists"
-weight = 12
-
-
-
 ########################### Default parameters ##########################
+
 [params]
 logo = "images/logo/logo_nuvibit_light.png"
 logo_dark = "images/logo/logo_nuvibit_dark.png"
@@ -216,9 +84,8 @@ contact_form_action = "https://getform.io/f/057acfac-7557-4882-94b9-8e6a9c894d72
 
 # Preloader
 [params.preloader]
-enable = true
+enable = false
 preloader = "images/preloader/snake.gif"
-
 
 ################################### English language #####################################
 [Languages.en]
@@ -228,8 +95,142 @@ contentDir = "content/english"
 weight = 1
 copyright = "Copyright © 2021 - Nuvibit AG"
 
+###################################### English Navigation ######################################
+
+# homepage section menu
+[[Languages.en.menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[Languages.en.menu.main]]
+identifier = "services"
+name = "Services"
+url = "services"
+weight = 2
+
+[[Languages.en.menu.main]]
+identifier = "assistance"
+name = "Cloud Assistance"
+url = "services/assistance"
+parent = "services"
+weight = 3
+
+[[Languages.en.menu.main]]
+identifier = "management"
+name = "Cloud Management at Scale"
+url = "services/management"
+parent = "services"
+weight = 4
+
+[[Languages.en.menu.main]]
+identifier = "security"
+name = "Cloud Security and Compliance"
+url = "services/security"
+parent = "services"
+weight = 5
+
+[[Languages.en.menu.main]]
+identifier = "connectivity"
+name = "Cloud Connectivity"
+url = "services/connectivity"
+parent = "services"
+weight = 6
+
+# [[Languages.en.menu.main]]
+# name = "Blog"
+# url = "blog"
+# weight = 7
+
+[[Languages.en.menu.main]]
+name = "About"
+url = "about"
+weight = 8
+
+[[Languages.en.menu.main]]
+name = "Contact"
+url = "contact"
+weight = 9
+
+###################################### English Footer ######################################
+
+[[Languages.en.menu.footer]]
+identifier = "language"
+name = "Language"
+weight = 1
+
+[[Languages.en.menu.footer]]
+identifier = "company"
+name = "Company"
+weight = 2
+
+[[Languages.en.menu.footer]]
+parent = "company"
+name = "FAQ"
+url = "/faq"
+weight = 3
+
+[[Languages.en.menu.footer]]
+parent = "company"
+name = "About"
+url = "/about"
+weight = 4
+
+[[Languages.en.menu.footer]]
+parent = "company"
+name = "Contact"
+url = "/contact"
+weight = 5
+
+[[Languages.en.menu.footer]]
+parent = "company"
+name = "Partnerships"
+url = "/partners"
+weight = 6
+
+[[Languages.en.menu.footer]]
+parent = "company"
+name = "Cookie Policy"
+url = "/privacy-policy/#51-cookies"
+weight = 7
+
+[[Languages.en.menu.footer]]
+parent = "company"
+name = "Privacy Policy"
+url = "/privacy-policy"
+weight = 8
+
+[[Languages.en.menu.footer]]
+identifier = "social"
+name = "Social Media"
+weight = 9
+
+[[Languages.en.menu.footer]]
+parent = "social"
+name = "Github"
+url = "https://github.com/nuvibit"
+weight = 10
+
+[[Languages.en.menu.footer]]
+parent = "social"
+name = "Linkedin"
+url = "https://linkedin.com/company/nuvibit"
+weight = 11
+
+[[Languages.en.menu.footer]]
+parent = "social"
+name = "Twitter"
+url = "https://twitter.com/nuvibit"
+weight = 12
+
+[[Languages.en.menu.footer]]
+parent = "social"
+name = "Youtube"
+url = "https://www.youtube.com/channel/UCmQCd8jMiZviVlWOqqbpYBw/playlists"
+weight = 13
 
 ################################### German language #####################################
+
 [Languages.de]
 languageName = "german"
 languageCode = "de-de"
@@ -237,3 +238,137 @@ contentDir = "content/deutsch"
 weight = 2
 # copyright
 copyright = "Urheberrechte © 2021 - Nuvibit AG"
+
+###################################### German Navigation ######################################
+
+# homepage section menu
+[[Languages.de.menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[Languages.de.menu.main]]
+identifier = "services"
+name = "Dienstleistungen"
+url = "services"
+weight = 2
+
+[[Languages.de.menu.main]]
+identifier = "assistance"
+name = "Cloud Assistance"
+url = "services/assistance"
+parent = "services"
+weight = 3
+
+[[Languages.de.menu.main]]
+identifier = "management"
+name = "Cloud Management at Scale"
+url = "services/management"
+parent = "services"
+weight = 4
+
+[[Languages.de.menu.main]]
+identifier = "security"
+name = "Cloud Security and Compliance"
+url = "services/security"
+parent = "services"
+weight = 5
+
+[[Languages.de.menu.main]]
+identifier = "connectivity"
+name = "Cloud Connectivity"
+url = "services/connectivity"
+parent = "services"
+weight = 6
+
+# [[Languages.de.menu.main]]
+# name = "Blog"
+# url = "blog"
+# weight = 7
+
+[[Languages.de.menu.main]]
+name = "Über uns"
+url = "about"
+weight = 8
+
+[[Languages.de.menu.main]]
+name = "Kontakt"
+url = "contact"
+weight = 9
+
+###################################### German Footer ######################################
+
+[[Languages.de.menu.footer]]
+identifier = "language"
+name = "Sprache"
+weight = 1
+
+[[Languages.de.menu.footer]]
+identifier = "company"
+name = "Unternehmen"
+weight = 2
+
+[[Languages.de.menu.footer]]
+parent = "company"
+name = "FAQ"
+url = "/faq"
+weight = 3
+
+[[Languages.de.menu.footer]]
+parent = "company"
+name = "Über uns"
+url = "/about"
+weight = 4
+
+[[Languages.de.menu.footer]]
+parent = "company"
+name = "Kontakt"
+url = "/contact"
+weight = 5
+
+[[Languages.de.menu.footer]]
+parent = "company"
+name = "Partnerschaften"
+url = "/partners"
+weight = 6
+
+[[Languages.de.menu.footer]]
+parent = "company"
+name = "Cookie Richtlinien"
+url = "/privacy-policy/#51-cookies"
+weight = 7
+
+[[Languages.de.menu.footer]]
+parent = "company"
+name = "Datenschutzerklärung"
+url = "/privacy-policy"
+weight = 8
+
+[[Languages.de.menu.footer]]
+identifier = "social"
+name = "Soziale Medien"
+weight = 9
+
+[[Languages.de.menu.footer]]
+parent = "social"
+name = "Github"
+url = "https://github.com/nuvibit"
+weight = 10
+
+[[Languages.de.menu.footer]]
+parent = "social"
+name = "Linkedin"
+url = "https://linkedin.com/company/nuvibit"
+weight = 11
+
+[[Languages.de.menu.footer]]
+parent = "social"
+name = "Twitter"
+url = "https://twitter.com/nuvibit"
+weight = 12
+
+[[Languages.de.menu.footer]]
+parent = "social"
+name = "Youtube"
+url = "https://www.youtube.com/channel/UCmQCd8jMiZviVlWOqqbpYBw/playlists"
+weight = 13

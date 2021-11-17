@@ -1,6 +1,6 @@
 ---
 title: "Frequenty Asked Questions"
-description: "Frequenty asked questions regarding our services and cloud topics"
+description: "Frequenty asked questions regarding cloud topics and our services"
 draft: false
 
 faq:
@@ -32,7 +32,7 @@ faq:
               According to [McKinsey](https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/security-as-code-the-best-and-maybe-only-path-to-securing-cloud-applications-and-systems) 
               and [Gartner](https://www.gartner.com/en/documents/3992070/using-cloud-native-policy-as-code-to-secure-deployments-) the success of security at scale depends on automation and codification.<br>
               We fully agree and built a solution for cloud security event management based on Policy as Code.<br>
-              [Get in touch](/contact 'contact form') to learn more about **nbSEMPER**."
+              [Get in touch](/contact 'contact form') to learn more about **SEMPER**."
       anchor: pac
       enable: true
 

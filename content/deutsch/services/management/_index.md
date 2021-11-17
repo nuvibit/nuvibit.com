@@ -1,18 +1,18 @@
 ---
 title: "Cloud Management at Scale"
-description: "With our practical experience in reshaping organizations for cloud success we can help you reach operational excellence on AWS"
+description: "Mit unserer praktischen Erfahrung in der Umgestaltung von Unternehmen mit dem Ziel in der Cloud erfolgreich zu sein, können wir Ihnen helfen, auch eine operative Exzellenz in AWS zu erreichen."
 draft: false
 
 banner_section:
     enable: true
-    title: "Prime your business for cloud success."
-    content: "Designing a cloud strategy is the first and easiest step. 
-              The hard part is turning the vision into reality and achieving operational excellence.<br><br>
-              With our practical experience in reshaping organizations we can help you along the way."
+    title: "Optimieren Sie Ihr Unternehmen für die Cloud."
+    content: "Die Ausarbeitung einer Cloud Strategie ist der erste und einfachste Schritt.
+              Die Umsetzung dieser Vision in die Realität und die Befähigung der Organisation ist der komplexe Teil.<br><br>
+              Mit unserer praktischen Erfahrung bei der Umstrukturierung einer Organisation können wir Sie auf diesem Weg tatkräftig unterstützen."
     image: "images/illustrations/cloud_management.png"
     button:
         enable: true
-        label: "Get in touch"
+        label: "Kontakt aufnehmen"
         link: "contact"
 
 # detail_section:
@@ -22,48 +22,48 @@ banner_section:
 
 tile_section:
     enable: true
-    title: "We specialize in"
+    title: "Wir sind spezialisiert auf"
     list:
       - title: "Cloud Strategy"
         enable: true
-        content: "We guide you to securely adapt the benefits of the public cloud while keeping the business goals in mind.<br><br>
-        We can show you the obstacles ahead to avoid show stoppers and accelerate your cloud journey."
+        content: "Wir helfen Ihnen, die Vorteile der Public Cloud sicher zu adaptieren und dabei die unternehmerischen Ziele im Auge zu behalten.<br><br>
+        Wir können Ihnen bevorstehende Herausforderungen aufzeigen, um Stolpersteine zu vermeiden und Ihre Cloud Journey zu beschleunigen."
 
-      - title: "Legal, Data Protection and Procurement"
+      - title: "Legal, Data Protection und Procurement"
         enable: true
-        content: "At the beginning of every cloud journey there are plenty of legal and data protection challenges.<br><br>
-        We can close the legal gap and support your procurement team in the cloud paradigm shift."
+        content: "Am Anfang der Cloud Journey stehen eine Vielzahl von rechtlichen und datenschutztechnischen Herausforderungen an.<br><br>
+        Wir schliessen Ihre rechtlichen Lücken und unterstützen Ihr Beschaffungsteam beim Cloud Paradigmenwechsel."
 
       - title: "Cloud Operation Model"
         enable: true
-        content: "Fully automated infrastructure provisioning requires a new mindset and skills.<br><br>
-        We enable your engineers and administrators to share responsibility for the cloud and establish a cross-functional agile mentality."
+        content: "Eine vollständig automatisierte Bereitstellung von Infrastruktur erfordert neue Arbeitsweisen und Kompetenzen.<br><br>
+        Wir vermitteln Ihren Engineers und Sysadmins eine gemeinsame Verantwortung der Cloud und fördern eine funktionsübergreifende, agile Mentalität."
 
       - title: "Cloud Financial Management"
         enable: true
-        content: "One of the cloud success factors is a transparent usage-based billing model which enables the business to make informed financial decisions.<br><br>
-        We define the necessary adjustments to efficiently reduce the operating cost by establishing [FinOps](/faq/#finops 'What is FinOps?') practices."
+        content: "Der Erfolg der Cloud basiert auch auf dem transparenten und nutzungsbasierten Verrechnungsmodell.<br><br>
+        Wir kennen die notwendigen Stellschrauben zur effizienten Senkung der Betriebskosten und helfen Ihnen bei der Einführung und Umsetzung von [FinOps](/faq/#finops 'Was ist FinOps?') Prozessen."
 
       - title: "Account Lifecycle"
         enable: true
-        content: "Housekeeping a multi-account cloud environment is time consuming and prone to human error.<br><br>
-        We provide an adaptable and highly automated account lifecycle solution to greatly improve your time-to-market."
+        content: "Die manuelle Verwaltung einer Multi-Account Cloud Organisation ist extrem zeitraubend und fehleranfällig.<br><br>
+        Wir bieten eine anpassungsfähige und automatisierte Account Lifecycle Lösung, welche diese Arbeit extrem vereinfacht und dadurch die Time-To-Market entscheidend verkürzt."
 
       - title: "Continuous Integration"
         enable: true
-        content: " Infrastructure as Code and run automated tests is essential to scale successfully.<br><br>
-        With our hands-on experience in DevOps and [GitOps](/faq/#gitops 'What is GitOps?') practices we can provide guidance to implement the right solution."
+        content: "Infrastructure as Code und die Durchführung automatisierter Tests sind unserer Meinung nach unerlässlich um optimal zu skalieren.<br><br>
+        Mit unserer Erfahrung in den Bereichen DevOps und [GitOps](/faq/#gitops 'Was ist GitOps?') können wir Ihnen bei der Umsetzung der richtigen Lösung helfen."
 
 excerpt_section:
     enable: true
-    title: "Let's dive deeper..."
+    title: "Tauchen wir etwas tiefer ein..."
     list:
-      - title_aws: "AWS Multi-Account Strategy"
+      - title_aws: "AWS Multi-Account Strategie"
         enable: true
         image: "images/illustrations/cloud_multi_account.png"
-        content: "Managing everything in a single account is a recipe for disaster when scaling.<br>
-        As the number of workloads grow, you will run into various issues regarding security, isolation, billing and quota limits.
-        We can advise you on best practices and help you define the right strategy for your business."
+        content: "Alle Workloads in einem einzigen AWS Account zu verwalten endet stets im Chaos, sobald skaliert werden soll.<br>
+        Wenn die Zahl der Workloads steigt, werden diverse Probleme im Zusammenhang mit Isolation, Security, Verrechnung und Provider-Limiten sichtbar.
+        Wir zeigen Best Practices auf und helfen Ihnen, die richtige Multi-Account Strategie für Ihr Unternehmen zu finden."
         link:
           # enable: false
           # label: "read more about xxx"
@@ -73,9 +73,9 @@ excerpt_section:
       - title_aws: "AWS Account Lifecycle"
         enable: true
         image: "images/illustrations/cloud_account_lifecycle.png"
-        content: "Based on the implementation of a multi-account strategy, you face numerous challenges.<br>
-        How to configure the master account, structure AWS Organizations, define access rights, manage code repositories and maintain [code pipelines](/faq/#cicd 'What is CI/CD?').
-        We offer you an adaptable solution to manage your AWS Organization with [Infrastructure as Code](/faq/#iac 'What is Infrastructure as Code?') in a simple and efficient way."
+        content: "Bei der Implementierung der Multi-Account Strategie gibt es zahlreiche Herausforderungen zu bewältigen.<br>
+        Wie konfiguriert man den Hauptaccount, strukturiert AWS-Organisationen, definiert Zugriffsrechte, verwaltet Code-Repositories und pflegt [CI/CD Pipelines](/faq/#cicd 'Was ist CI/CD?')?
+        Wir bieten Ihnen eine adaptive Lösung, um Ihre Accounts einschliesslich aller Umsysteme mit [Infrastructure as Code](/faq/#iac 'Was ist Infrastructure as Code?') auf eine einfache und effiziente Weise zu verwalten."
         link:
           # enable: false
           # label: "read more about nuvibit account manager"

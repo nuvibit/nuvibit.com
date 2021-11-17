@@ -8,7 +8,7 @@
 
       <div class="col-lg-10 text-center text-md-left mb-5">
         <div class="content">
-          <p>{{ .Params.about_us.introduction | markdownify }}</p>
+          <p>{{ $.Page.RenderString .Params.about_us.introduction }}</p>
         </div>
       </div>
 
@@ -21,13 +21,13 @@
         </div>
         <div class="col-md-8 align-self-center text-center text-md-left about-text">
           <div class="content">
-            <h4 class="subheading mb-10 pb-0">{{ .name | markdownify }}
+            <h4 class="subheading mb-10 pb-0">{{ $.Page.RenderString .name }}
               <a class="social" href="{{ .linkedin | safeURL }}" class="h2" title="linkedin">
                 <i class="fab fa-linkedin m-3"></i>
               </a>
             </h4>
-            <h4 class="mb-20">{{ .title | markdownify }}</h4>
-            <p>{{ .content | markdownify }}</p>
+            <h4 class="mb-20">{{ $.Page.RenderString .title }}</h4>
+            <p>{{ $.Page.RenderString .content }}</p>
           </div>
         </div>
       </div>

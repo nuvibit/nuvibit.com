@@ -423,7 +423,7 @@ p.md a:hover {
 }
 
 .tile-body {
-  height: 375px;
+  height: 400px;
 }
 
 .card-deck {
@@ -599,7 +599,8 @@ figure.profile:hover img {
 
 @media only screen and (max-width: 767px) {
   .tile-body {
-    height: 460px !important;
+    min-height: 300px !important;
+    height: auto !important;
   }
   .blog-tile-list {
     -ms-flex: 100% !important;
@@ -634,13 +635,6 @@ figure.profile:hover img {
   }
   .about-text {
     padding-left: 0rem !important;
-  }
-}
-
-@media only screen and (max-width: 574px) {
-  .tile-body {
-    min-height: 300px !important;
-    height: auto !important;
   }
 }
 

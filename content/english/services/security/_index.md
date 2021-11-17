@@ -73,7 +73,7 @@ excerpt_section:
       - title_aws: "AWS Security Finding Management"
         enable: true
         image: "images/illustrations/cloud_security_event_management_semper.png"
-        content: "Manage your AWS CloudWatch Event Rules and AWS Security Hub Controls across your AWS organization with a central [Policy as Code](/faq/#pac 'What is Policy as Code?') repository.<br>
+        content: "Manage your Amazon EventBridge Rules and AWS Security Hub Controls across your AWS organization with a central [Policy as Code](/faq/#pac 'What is Policy as Code?') repository.<br>
                   Keep track of your security events, filter them by importance and enrich them with valuable information.
                   Do it continuously with our cloud-native, serverless solution [SEMPER](/contact/ 'Contact us for more information!')."
         # button:

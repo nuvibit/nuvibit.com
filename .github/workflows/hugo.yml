@@ -30,7 +30,7 @@ jobs:
         uses: benjefferies/branch-protection-bot@master
         if: always()
         with:
-          access-token: ${{ secrets.GH_SA_TOKEN_RO }}
+          access_token: ${{ secrets.GH_SA_TOKEN_RO }}
           enforce_admins: false
           branch: gh-pages
 
@@ -46,6 +46,6 @@ jobs:
         uses: benjefferies/branch-protection-bot@master
         if: always()
         with:
-          access-token: ${{ secrets.GH_SA_TOKEN_RO }}
+          access_token: ${{ secrets.GH_SA_TOKEN_RO }}
           enforce_admins: true
           branch: gh-pages

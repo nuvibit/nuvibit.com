@@ -40,7 +40,7 @@ tile_section:
         content: "There are numerous cloud security frameworks (ISO 27000 family, CIS Controls, BSI C5, NIST) with different scopes.<br><br>
                   We show you how to effectively measure compliance and respond appropriately when violations occur."
 
-      - title: "Security Event Management"
+      - title: "Security Finding Management"
         enable: true
         content: "An excess of security events can quickly render you helpless in a critical situation.<br><br>
                   We offer a cloud-native solution to bring your security events under control and streamline security surveillance."
@@ -70,7 +70,7 @@ excerpt_section:
         #   label: "read more about xxx"
         #   link: "/services/security/xxx"
 
-      - title_aws: "AWS Security Event Management"
+      - title_aws: "AWS Security Finding Management"
         enable: true
         image: "images/illustrations/cloud_security_event_management_semper.png"
         content: "Manage your AWS CloudWatch Event Rules and AWS Security Hub Controls across your AWS organization with a central [Policy as Code](/faq/#pac 'What is Policy as Code?') repository.<br>

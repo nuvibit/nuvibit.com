@@ -2,9 +2,9 @@
 <meta charset=utf-8>
 <title>Frequenty Asked Questions</title>
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1">
-<meta name=description content="Frequenty asked questions regarding our services and cloud topics">
+<meta name=description content="Frequenty asked questions regarding cloud topics and our services">
 <meta name=author content="Nuvibit AG">
-<meta name=generator content="Hugo 0.88.1">
+<meta name=generator content="Hugo 0.89.3">
 <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open%20Sans:400%7cNunito:300,400,600,700">
 <link rel=stylesheet href=https://nuvibit.com/plugins/bootstrap/bootstrap.min.css>
 <link rel=stylesheet href=https://nuvibit.com/plugins/fontawesome/all.min.css>
@@ -15,17 +15,14 @@
 <link rel="shortcut icon" href=https://nuvibit.com/images/favicon/favicon.ico type=image/x-icon>
 <link rel=icon href=https://nuvibit.com/images/favicon/favicon-32x32.png type=image/x-icon>
 <meta property="og:title" content="Frequenty Asked Questions">
-<meta property="og:description" content="Frequenty asked questions regarding our services and cloud topics">
+<meta property="og:description" content="Frequenty asked questions regarding cloud topics and our services">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://nuvibit.com/faq/">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-65QED8XYJ9"></script>
 <script>var dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes";if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-65QED8XYJ9',{anonymize_ip:!0})}</script>
 </head>
 <body id=body>
-<div class=preloader>
-<img src=https://nuvibit.com/images/preloader/snake.gif alt=preloader>
-</div>
-<header class="sticky-top bg-dark">
+<div class=zoom-blur></div><header class="sticky-top bg-dark">
 <div class=container>
 <nav class="navbar navbar-expand-lg navbar-dark">
 <a class=navbar-brand href=/> <img src=https://nuvibit.com/images/logo/logo_nuvibit_light.png alt=logo_nuvibit_light width=230px> </a>
@@ -42,10 +39,10 @@
 Services
 </a>
 <div class="nav-item dropdown-menu" aria-labelledby=navbarDropdown>
-<a class=dropdown-item href=https://nuvibit.com/services/assistance>cloud assistance</a>
-<a class=dropdown-item href=https://nuvibit.com/services/management>cloud management at scale</a>
-<a class=dropdown-item href=https://nuvibit.com/services/security>cloud security and compliance</a>
-<a class=dropdown-item href=https://nuvibit.com/services/connectivity>cloud connectivity</a>
+<a class=dropdown-item href=https://nuvibit.com/services/assistance>Cloud Assistance</a>
+<a class=dropdown-item href=https://nuvibit.com/services/management>Cloud Management at Scale</a>
+<a class=dropdown-item href=https://nuvibit.com/services/security>Cloud Security and Compliance</a>
+<a class=dropdown-item href=https://nuvibit.com/services/connectivity>Cloud Connectivity</a>
 </div>
 </li>
 <li class=nav-item>
@@ -60,15 +57,20 @@ Services
 </div>
 </header>
 <section class=section>
-<div class=container>
-<div class=row>
-<div class="col-md-5 mb-4 mb-md-0">
-<div class="sticky-image zoom" onclick=image_zoom(this)>
+<div class="container mb-5">
+<div class="row justify-content-center">
+<div class="col-md-3 align-self-center text-center text-md-left">
+<div class=block>
+<h1 class="faq-title font-weight-bold">Frequenty Asked Questions</h1>
+</div>
+</div>
+<div class="col-md-5 text-center p-4 zoom" onclick=image_zoom(this)>
 <img class="img-fluid w-100" src=https://nuvibit.com/images/illustrations/questions_and_answers.png alt="Illustration of questions_and_answers">
 </div>
 </div>
-<div class="col-lg-6 col-md-7 offset-lg-1">
-<h1 class="faq-title font-weight-bold mb-5">Frequenty Asked Questions</h1>
+<hr class="w-75 mt-5 pb-5">
+<div class="row justify-content-center">
+<div class="col-lg-8 col-md-7">
 <div class=content>
 <h1 class=faq-anchor id=foundation></h1>
 <details id=details#foundation class="faq-detail col-lg-12">
@@ -95,7 +97,7 @@ Services
 <i class="fas fa-plus"></i>
 <i class="fas fa-minus"></i>
 </summary>
-<p class=faq-text>Infrastructure as Code (IaC) is the management of infrastructure in a descriptive model, using software development methods such as versioning of source code.<br> <a href=https://www.terraform.io/intro/index.html title="Introduction to Terraform">Terraform</a> is a powerful open-source Infrastructure as Code software and an outstanding tool for cloud deployments.<br> Visit the <a href=https://registry.terraform.io/namespaces/nuvibit>Terraform Registry</a> and take a look at some of our free to use public modules.</p>
+<p class=faq-text>Infrastructure as Code (IaC) is the management of infrastructure in a descriptive model, using software development methods such as versioning of source code.<br> <a href=https://www.terraform.io/intro/index.html title="Introduction to Terraform">Terraform</a> is a powerful open-source Infrastructure as Code software and an outstanding tool for cloud deployments.<br> Visit the <a href=https://registry.terraform.io/namespaces/nuvibit title>Terraform Registry</a> and take a look at some of our free to use public modules.</p>
 </details>
 <h1 class=faq-anchor id=pac></h1>
 <details id=details#pac class="faq-detail col-lg-12">
@@ -104,7 +106,7 @@ Services
 <i class="fas fa-plus"></i>
 <i class="fas fa-minus"></i>
 </summary>
-<p class=faq-text>Similar to Infrastructure as Code the industry shifts to Security / Policy as Code. According to <a href=https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/security-as-code-the-best-and-maybe-only-path-to-securing-cloud-applications-and-systems>McKinsey</a> and <a href=https://www.gartner.com/en/documents/3992070/using-cloud-native-policy-as-code-to-secure-deployments->Gartner</a> the success of security at scale depends on automation and codification.<br> We fully agree and built a solution for cloud security event management based on Policy as Code.<br> <a href=/contact title="contact form">Get in touch</a> to learn more about <strong>nbSEMPER</strong>.</p>
+<p class=faq-text>Similar to Infrastructure as Code the industry shifts to Security / Policy as Code. According to <a href=https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/security-as-code-the-best-and-maybe-only-path-to-securing-cloud-applications-and-systems title>McKinsey</a> and <a href=https://www.gartner.com/en/documents/3992070/using-cloud-native-policy-as-code-to-secure-deployments- title>Gartner</a> the success of security at scale depends on automation and codification.<br> We fully agree and built a solution for cloud security event management based on Policy as Code.<br> <a href=/contact title="contact form">Get in touch</a> to learn more about <strong>SEMPER</strong>.</p>
 </details>
 <h1 class=faq-anchor id=cis></h1>
 <details id=details#cis class="faq-detail col-lg-12">
@@ -113,7 +115,7 @@ Services
 <i class="fas fa-plus"></i>
 <i class="fas fa-minus"></i>
 </summary>
-<p class=faq-text>The <a href=https://www.cisecurity.org/>Center for Internet Security</a> publishes best practices guidelines for IT security. Currently published in version 8 it includes 18 control domains from Data Protection, Audit Logging, Service Provider Configuration to Penetration testing and more<br> Take a closer look and visit the <a href=https://www.cisecurity.org/controls/cis-controls-navigator/>CIS Control Navigator</a>.</p>
+<p class=faq-text>The <a href=https://www.cisecurity.org/ title>Center for Internet Security</a> publishes best practices guidelines for IT security. Currently published in version 8 it includes 18 control domains from Data Protection, Audit Logging, Service Provider Configuration to Penetration testing and more<br> Take a closer look and visit the <a href=https://www.cisecurity.org/controls/cis-controls-navigator/ title>CIS Control Navigator</a>.</p>
 </details>
 <h1 class=faq-anchor id=finops></h1>
 <details id=details#finops class="faq-detail col-lg-12">
@@ -131,7 +133,7 @@ Services
 <i class="fas fa-plus"></i>
 <i class="fas fa-minus"></i>
 </summary>
-<p class=faq-text>GitOps describes the concept of using <a href=https://git-scm.com>Git</a> as the central version control system to manage the lifecycle of a solution.<br> Many tasks such as deployments, automated tests and approval workflows are all triggered and managed by Git events while keeping everything versioned.</p>
+<p class=faq-text>GitOps describes the concept of using <a href=https://git-scm.com title>Git</a> as the central version control system to manage the lifecycle of a solution.<br> Many tasks such as deployments, automated tests and approval workflows are all triggered and managed by Git events while keeping everything versioned.</p>
 </details>
 <h1 class=faq-anchor id=cicd></h1>
 <details id=details#cicd class="faq-detail col-lg-12">
@@ -156,18 +158,24 @@ Services
 </div>
 <div class="col-md-6 mb-4 text-left footer-links">
 <div class="bottom-nav col-md-4 p-0 float-left mb-3">
-<h5 class="mb-4 font-weight-bold text-uppercase">language</h5>
+<h5 class="mb-4 font-weight-bold">Languages</h5>
 <ul class=list-group>
 <li class="list-group-item bg-transparent border-0 p-0 mb-2">
-<a href=/ value=default-language>
+<a href=https://nuvibit.com/faq/ onclick='update_language_pref("en")'>
 <i class="fas fa-toggle-on"></i>
 English
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=https://nuvibit.com/de/faq/ onclick='update_language_pref("de")'>
+<i class="fas fa-toggle-off"></i>
+Deutsch
 </a>
 </li>
 </ul>
 </div>
 <div class="bottom-nav col-md-4 p-0 float-left mb-3">
-<h5 class="mb-4 font-weight-bold text-uppercase">Company</h5>
+<h5 class="mb-4 font-weight-bold">Company</h5>
 <ul class=list-group>
 <li class="list-group-item bg-transparent border-0 p-0 mb-2">
 <a href=/faq>
@@ -185,8 +193,8 @@ Contact
 </a>
 </li>
 <li class="list-group-item bg-transparent border-0 p-0 mb-2">
-<a href=/privacy-policy>
-Privacy Policy
+<a href=/partners>
+Partnerships
 </a>
 </li>
 <li class="list-group-item bg-transparent border-0 p-0 mb-2">
@@ -194,10 +202,15 @@ Privacy Policy
 Cookie Policy
 </a>
 </li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=/privacy-policy>
+Privacy Policy
+</a>
+</li>
 </ul>
 </div>
 <div class="bottom-nav col-md-4 p-0 float-left mb-3">
-<h5 class="mb-4 font-weight-bold text-uppercase">Social</h5>
+<h5 class="mb-4 font-weight-bold">Social Media</h5>
 <ul class=list-group>
 <li class="list-group-item bg-transparent border-0 p-0 mb-2">
 <a href=https://github.com/nuvibit>
@@ -239,6 +252,6 @@ Youtube
 <script src=https://nuvibit.com/plugins/slick/slick.min.js></script>
 <script src=https://nuvibit.com/plugins/cookieconsent/cookieconsent.min.js></script>
 <script src=https://nuvibit.com/js/script.js></script>
-<script>function image_zoom(a){a.classList.contains("zoomed")||$(".zoomed").removeClass("zoomed"),a.classList.toggle('zoomed')}$(document.links).filter(function(){return this.hostname!=window.location.hostname}).attr('target','_blank'),window.cookieconsent.initialise({palette:{popup:{background:"#2b3346",text:"#ffffff"},button:{background:"#3fa7df",text:"#ffffff"}},content:{message:"We use cookies on our website to ensure you get the best experience.",dismiss:"Close",link:"Our cookie policy",href:"/privacy-policy/#51-cookies",target:null},theme:"edgeless",type:"info"})</script>
+<script>var pageLang,browserLang,supportedLang,base_url,uri;function copy(){var a=$("<input>");$("body").append(a),a.val($(".copy").text()).select(),document.execCommand("copy"),a.remove(),$(".alert").show(),$(".alert").delay(2e3).slideUp(200,function(){$(this).hide()})}function cancel_zoom(){window.removeEventListener('scroll',cancel_zoom),$(".zoomed").removeClass("zoomed"),$(".zoom-blur").toggle()}function image_zoom(a){a.classList.contains("zoomed")||$(".zoomed").removeClass("zoomed"),a.classList.toggle('zoomed'),$(".zoom-blur").toggle(),setTimeout(function(){a.classList.contains("zoomed")?window.addEventListener('scroll',cancel_zoom,!1):window.removeEventListener('scroll',cancel_zoom)},100)}function redirect(a){window.location.href=a}function update_language_pref(a){localStorage.setItem('lang',a)}function uri_translate(c,d,e){var a=c,b;return d!=="en"&&(b=c.split('/'),b[1]===d?(b.splice(1,1),a=b.join('/')):a="/"),e!=="en"&&(a="/"+e+a),a}pageLang="en",browserLang=navigator.language||navigator.userLanguage,browserLang=browserLang.substring(0,2),supportedLang="[en de]".match(/\[(.*?)\]/)[1].split(" "),base_url="https://nuvibit.com/".replace(/\/$/,""),uri="/faq/",userLangPref=localStorage.getItem('lang'),userLangPref&&supportedLang.includes(userLangPref)?pageLang!==userLangPref&&(relocate_uri=uri_translate(uri,lang_now=pageLang,lang_new=userLangPref),window.location.href=base_url+relocate_uri):(supportedLang.includes(browserLang)||(browserLang="en"),localStorage.setItem('lang',browserLang),localStorage.getItem('lang')===browserLang&&pageLang!==browserLang&&(relocate_uri=uri_translate(uri,lang_now=pageLang,lang_new=browserLang),window.location.href=base_url+relocate_uri)),$(document.links).filter(function(){return this.hostname!=window.location.hostname}).attr('target','_blank'),window.cookieconsent.initialise({palette:{popup:{background:"#2b3346",text:"#ffffff"},button:{background:"#3fa7df",text:"#ffffff"}},content:{message:'We use cookies on our website to ensure you get the best experience.',dismiss:'Close',link:'Our cookie policy',href:'/privacy-policy/#51-cookies',target:null},theme:"edgeless",type:"info"})</script>
 </body>
 </html>

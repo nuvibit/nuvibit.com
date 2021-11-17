@@ -4,7 +4,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1">
 <meta name=description content="We help you build an enterprise ready, compliant and scalable foundation for the public cloud.">
 <meta name=author content="Nuvibit AG">
-<meta name=generator content="Hugo 0.88.1">
+<meta name=generator content="Hugo 0.89.3">
 <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open%20Sans:400%7cNunito:300,400,600,700">
 <link rel=stylesheet href=https://nuvibit.com/plugins/bootstrap/bootstrap.min.css>
 <link rel=stylesheet href=https://nuvibit.com/plugins/fontawesome/all.min.css>
@@ -22,10 +22,7 @@
 <script>var dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes";if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-65QED8XYJ9',{anonymize_ip:!0})}</script>
 </head>
 <body id=body>
-<div class=preloader>
-<img src=https://nuvibit.com/images/preloader/snake.gif alt=preloader>
-</div>
-<header class="sticky-top bg-dark">
+<div class=zoom-blur></div><header class="sticky-top bg-dark">
 <div class=container>
 <nav class="navbar navbar-expand-lg navbar-dark">
 <a class=navbar-brand href=/> <img src=https://nuvibit.com/images/logo/logo_nuvibit_light.png alt=logo_nuvibit_light width=230px> </a>
@@ -42,10 +39,10 @@
 Services
 </a>
 <div class="nav-item dropdown-menu" aria-labelledby=navbarDropdown>
-<a class=dropdown-item href=https://nuvibit.com/services/assistance>cloud assistance</a>
-<a class=dropdown-item href=https://nuvibit.com/services/management>cloud management at scale</a>
-<a class=dropdown-item href=https://nuvibit.com/services/security>cloud security and compliance</a>
-<a class=dropdown-item href=https://nuvibit.com/services/connectivity>cloud connectivity</a>
+<a class=dropdown-item href=https://nuvibit.com/services/assistance>Cloud Assistance</a>
+<a class=dropdown-item href=https://nuvibit.com/services/management>Cloud Management at Scale</a>
+<a class=dropdown-item href=https://nuvibit.com/services/security>Cloud Security and Compliance</a>
+<a class=dropdown-item href=https://nuvibit.com/services/connectivity>Cloud Connectivity</a>
 </div>
 </li>
 <li class=nav-item>
@@ -66,16 +63,16 @@ Services
 <div class=venn>404</div>
 <div class=one>
 <div class=text>
-We Broke
+We broke
 <br>
-Something
+something
 </div>
 </div>
 <div class=two>
 <div class=text>
-You Can't
+You can't
 <br>
-Type
+type
 </div>
 </div>
 </div>
@@ -93,7 +90,7 @@ Type
 </div>
 <div class="col-md-6 mb-4 text-left footer-links">
 <div class="bottom-nav col-md-4 p-0 float-left mb-3">
-<h5 class="mb-4 font-weight-bold text-uppercase">language</h5>
+<h5 class="mb-4 font-weight-bold">Languages</h5>
 <ul class=list-group>
 <li class="list-group-item bg-transparent border-0 p-0 mb-2">
 <a href=/ value=default-language>
@@ -104,7 +101,7 @@ English
 </ul>
 </div>
 <div class="bottom-nav col-md-4 p-0 float-left mb-3">
-<h5 class="mb-4 font-weight-bold text-uppercase">Company</h5>
+<h5 class="mb-4 font-weight-bold">Company</h5>
 <ul class=list-group>
 <li class="list-group-item bg-transparent border-0 p-0 mb-2">
 <a href=/faq>
@@ -122,8 +119,8 @@ Contact
 </a>
 </li>
 <li class="list-group-item bg-transparent border-0 p-0 mb-2">
-<a href=/privacy-policy>
-Privacy Policy
+<a href=/partners>
+Partnerships
 </a>
 </li>
 <li class="list-group-item bg-transparent border-0 p-0 mb-2">
@@ -131,10 +128,15 @@ Privacy Policy
 Cookie Policy
 </a>
 </li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=/privacy-policy>
+Privacy Policy
+</a>
+</li>
 </ul>
 </div>
 <div class="bottom-nav col-md-4 p-0 float-left mb-3">
-<h5 class="mb-4 font-weight-bold text-uppercase">Social</h5>
+<h5 class="mb-4 font-weight-bold">Social Media</h5>
 <ul class=list-group>
 <li class="list-group-item bg-transparent border-0 p-0 mb-2">
 <a href=https://github.com/nuvibit>
@@ -176,6 +178,6 @@ Youtube
 <script src=https://nuvibit.com/plugins/slick/slick.min.js></script>
 <script src=https://nuvibit.com/plugins/cookieconsent/cookieconsent.min.js></script>
 <script src=https://nuvibit.com/js/script.js></script>
-<script>function image_zoom(a){a.classList.contains("zoomed")||$(".zoomed").removeClass("zoomed"),a.classList.toggle('zoomed')}$(document.links).filter(function(){return this.hostname!=window.location.hostname}).attr('target','_blank'),window.cookieconsent.initialise({palette:{popup:{background:"#2b3346",text:"#ffffff"},button:{background:"#3fa7df",text:"#ffffff"}},content:{message:"We use cookies on our website to ensure you get the best experience.",dismiss:"Close",link:"Our cookie policy",href:"/privacy-policy/#51-cookies",target:null},theme:"edgeless",type:"info"})</script>
+<script>var pageLang,browserLang,supportedLang,base_url,uri;function copy(){var a=$("<input>");$("body").append(a),a.val($(".copy").text()).select(),document.execCommand("copy"),a.remove(),$(".alert").show(),$(".alert").delay(2e3).slideUp(200,function(){$(this).hide()})}function cancel_zoom(){window.removeEventListener('scroll',cancel_zoom),$(".zoomed").removeClass("zoomed"),$(".zoom-blur").toggle()}function image_zoom(a){a.classList.contains("zoomed")||$(".zoomed").removeClass("zoomed"),a.classList.toggle('zoomed'),$(".zoom-blur").toggle(),setTimeout(function(){a.classList.contains("zoomed")?window.addEventListener('scroll',cancel_zoom,!1):window.removeEventListener('scroll',cancel_zoom)},100)}function redirect(a){window.location.href=a}function update_language_pref(a){localStorage.setItem('lang',a)}function uri_translate(c,d,e){var a=c,b;return d!=="en"&&(b=c.split('/'),b[1]===d?(b.splice(1,1),a=b.join('/')):a="/"),e!=="en"&&(a="/"+e+a),a}pageLang="en",browserLang=navigator.language||navigator.userLanguage,browserLang=browserLang.substring(0,2),supportedLang="[en de]".match(/\[(.*?)\]/)[1].split(" "),base_url="https://nuvibit.com/".replace(/\/$/,""),uri="/404.html",userLangPref=localStorage.getItem('lang'),userLangPref&&supportedLang.includes(userLangPref)?pageLang!==userLangPref&&(relocate_uri=uri_translate(uri,lang_now=pageLang,lang_new=userLangPref),window.location.href=base_url+relocate_uri):(supportedLang.includes(browserLang)||(browserLang="en"),localStorage.setItem('lang',browserLang),localStorage.getItem('lang')===browserLang&&pageLang!==browserLang&&(relocate_uri=uri_translate(uri,lang_now=pageLang,lang_new=browserLang),window.location.href=base_url+relocate_uri)),$(document.links).filter(function(){return this.hostname!=window.location.hostname}).attr('target','_blank'),window.cookieconsent.initialise({palette:{popup:{background:"#2b3346",text:"#ffffff"},button:{background:"#3fa7df",text:"#ffffff"}},content:{message:'We use cookies on our website to ensure you get the best experience.',dismiss:'Close',link:'Our cookie policy',href:'/privacy-policy/#51-cookies',target:null},theme:"edgeless",type:"info"})</script>
 </body>
 </html>

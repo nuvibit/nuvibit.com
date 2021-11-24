@@ -1,6 +1,6 @@
 ---
 title: "CIS AWS Foundations Benchmark ist cool, aber..."
-date: 2021-09-22T11:00:00+06:00
+date: 2021-11-24T11:00:00+06:00
 image: "images/blog/placeholder.png"
 description: "Den aktuellen Stand der Sicherheits-Compliance im Griff zu behalten, kann eine Herausforderung sein. AWS bietet ein großartiges Tool, das einen kontoübergreifenden Überblick bietet, der insbesondere in AWS Landing Zone-Architekturen wertvoll ist: AWS Security Hub"
 summary: "In diesem Beitrag wird erklärt, warum wir Amazon EventBridge Rules für die Überwachung der CIS AWS 3.x-Kontrollen empfehlen."
@@ -15,10 +15,11 @@ Den aktuellen Stand der Sicherheits-Compliance im Griff zu behalten, kann eine H
 
 AWS Security Hub ist ein Cloud-Sicherheitsservice, der Best-Practice-Prüfungen automatisiert, Findings in Multi-Account-Umgebungen aggregiert und auch automatisierte Behebung unterstützt.  
 Mit AWS Security Hub haben Sie Zugriff auf drei vordefinierte Sicherheitsstandards, die Ihnen mit einem einzigen Klick eine automatisierte Compliance-Messung ermöglichen (Achtung – es fallen Kosten für die bereitgestellten AWS Config Rules an):  
+
 \- CIS AWS Foundations Benchmark [CIS-AWS]  
 \- Payment Card Industry Data Security Standard [PCI-DSS]  
 \- AWS Foundational Security Best Practices [FSBP]  
-  
+
 Ein Sicherheitsstandard ist eine Zusammenfassung von Sicherheitskontrollen, die aktiviert oder deaktiviert werden können. Das Gute an Security Hub ist die automatisierte Auswertung aller zugehörigen AWS-Ressourcen mit einer Compliance-Bewertung. All dies wird zu Sicherheitsbewertungen zusammengefasst, um Ihre Ressourcen-Compliance zu messen.  
 Die folgende Abbildung skizziert das Konzept von AWS Security Hub für die Compliance-Messung:  
 
@@ -55,7 +56,7 @@ Die Verwendung eines Log-Metrikfilters zusammen mit einem Alarm zeigt lediglich 
 Insbesondere bei Multi-Account Umgebungen, welche AWS CloudTrail für AWS Organizations nutzen, geraten Sie in eine potenzielle permanente Alarmsituation. In diesem Szenario ist die Suche nach der eigentlichen Quelle für den Alarm mühsam und zeitintensiv.
 
 Beispiel für einen CIS AWS 3.10-Alarm, der an ein Amazon SNS-Thema gesendet wurde – nicht viele wertvolle Informationen:
-```text 
+```text
 You are receiving this email because your Amazon CloudWatch Alarm "CIS.3.10" in the US East (N. Virginia) region has entered  
 the ALARM state, because "Threshold Crossed: 1 out of the last 1 datapoints [2.0 (15/09/21 18:27:00)] was greater than the  
 threshold (1.0) (minimum 1 datapoint for OK -> ALARM transition)." at "Wednesday 15 September, 2021 18:32:31 UTC".
@@ -187,6 +188,7 @@ Wie Sie sehen, enthält das Ereignis selbst alle Informationen, die für die wei
 ## Schlussfolgerung
 Wir empfehlen, ***Amazon EventBridge Rules für die Überwachung von CIS AWS 3.x zu verwenden*** hinzuzufügen, um den Ereignisinformationen noch mehr Kontext wie zum Beispiel Account-Tags des Ursprungskontos hinzuzufügen.  
 Darüber hinaus empfehlen wir, zusätzlich zu den CIS AWS 3.x-Kontrollen weitere Sensoren zu platzieren, wie:  
+
 \- Monitor for OU-SCP assignment changes  
 \- Monitor for SCP policy changes  
 \- Monitor for OU structure changes   

@@ -1,5 +1,5 @@
 ---
-title: "What is security compliance and why should I care?"
+title: "This is an example blog post and will not be published"
 date: 2021-09-22T11:00:00+06:00
 image: "images/blog/placeholder.png"
 description: "this is a meta description"

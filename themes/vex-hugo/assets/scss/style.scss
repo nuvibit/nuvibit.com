@@ -206,10 +206,12 @@ div.markdown h5,
 div.markdown h6 {
   margin-top: -85px !important;
   padding-top: 85px !important;
+  padding-bottom: 10px !important;
 }
 
 .highlight {
-  padding: 2rem 0 !important;
+  // padding: 1rem 0 !important;
+  margin-bottom: 1rem;
   text-align: left !important;
 }
 

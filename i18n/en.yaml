@@ -42,3 +42,6 @@
 
 - id: "input_message"
   translation: "Your Message"
+
+- id: "reading_duration"
+  translation: "Reading time"

@@ -1,6 +1,6 @@
 ---
 title: "CIS AWS Foundations Benchmark is cool, but..."
-date: 2021-09-22T11:00:00+06:00
+date: 2021-11-24T11:00:00+06:00
 image: "images/blog/placeholder.png"
 description: "Keeping grip on the current level of security compliance can be a challenge. AWS provides a great tool, that is designed to provide an account overarching overview, valuable especially in AWS Landing Zone architectures: AWS Security Hub"
 summary: "This post explains, why we are in favor of using Amazon EventBridge Rules for monitoring the recommended CIS AWS 3.x controls. "
@@ -15,10 +15,11 @@ Keeping grip on the current level of security compliance can be a challenge. AWS
 
 AWS Security Hub is a cloud security service that automates best practice checks, aggregates alerts for multi account setups, and supports also automated remediation.  
 With AWS Security Hub you have access to three predefined security standards that give you automated compliance measurement enabled with a single click (caution - cost for the provisioned config rules will apply):  
+
 \- CIS AWS Foundations Benchmark [CIS-AWS]  
 \- Payment Card Industry Data Security Standard [PCI-DSS]  
 \- AWS Foundational Security Best Practices [FSBP]  
-  
+
 A security standard is a summary of security controls that can be turned on or off. The cool thing about Security Hub is the automated evaluation of all the related AWS resources with a compliance statement. All this is aggregated to security scores on measure your resource compliance.  
 The following image outlines the concept of AWS Security Hub for compliance measurement:
 
@@ -185,6 +186,7 @@ As you see, the event payload itself contains all the information valuable for f
 ## Conclusion
 We recommend to ***use Amazon EventBridge Rules for monitoring of CIS AWS 3.x*** add to even add more context like account-tags of the originating account to the event information.  
 Furthermore we recommend to place more than the CIS AWS 3.x sensors, like:  
+
 \- Monitor for OU-SCP assignment changes  
 \- Monitor for SCP policy changes  
 \- Monitor for OU structure changes   

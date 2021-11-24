@@ -1,7 +1,7 @@
 ---
 title: "CIS AWS Foundations Benchmark ist cool, aber..."
 date: 2021-11-24T11:00:00+06:00
-image: "images/blog/placeholder.png"
+image: "images/blog/cis_aws_3x/cis_controls.png"
 description: "Den aktuellen Stand der Sicherheits-Compliance im Griff zu behalten, kann eine Herausforderung sein. AWS bietet ein großartiges Tool, das einen kontoübergreifenden Überblick bietet, der insbesondere in AWS Landing Zone-Architekturen wertvoll ist: AWS Security Hub"
 summary: "In diesem Beitrag wird erklärt, warum wir Amazon EventBridge Rules für die Überwachung der CIS AWS 3.x-Kontrollen empfehlen."
 duration: 10

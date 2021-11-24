@@ -187,9 +187,9 @@ As you see, the event payload itself contains all the information valuable for f
 We recommend to ***use Amazon EventBridge Rules for monitoring of CIS AWS 3.x*** add to even add more context like account-tags of the originating account to the event information.  
 Furthermore we recommend to place more than the CIS AWS 3.x sensors, like:  
 
-\- Monitor for OU-SCP assignment changes  
-\- Monitor for SCP policy changes  
-\- Monitor for OU structure changes   
-\- Monitor for Account-OU assignment changes  
+\- Monitor for OU-SCP assignment changes<br/>
+\- Monitor for SCP policy changes<br/>
+\- Monitor for OU structure changes<br/>
+\- Monitor for Account-OU assignment changes<br/><br/>
 
 If you are managing multiple accounts and search for a solution to precisely manage Amazon EventBridge Rules in all your accounts, feel free to contact us and learn more about our **[SEMPER](/contact/ 'Contact us for more information!')** solution.

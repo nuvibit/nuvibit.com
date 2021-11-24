@@ -189,9 +189,9 @@ Wie Sie sehen, enthält das Ereignis selbst alle Informationen, die für die wei
 Wir empfehlen, ***Amazon EventBridge Rules für die Überwachung von CIS AWS 3.x zu verwenden*** hinzuzufügen, um den Ereignisinformationen noch mehr Kontext wie zum Beispiel Account-Tags des Ursprungskontos hinzuzufügen.  
 Darüber hinaus empfehlen wir, zusätzlich zu den CIS AWS 3.x-Kontrollen weitere Sensoren zu platzieren, wie:  
 
-\- Monitor for OU-SCP assignment changes  
-\- Monitor for SCP policy changes  
-\- Monitor for OU structure changes   
-\- Monitor for Account-OU assignment changes  
+\- Monitor for OU-SCP assignment changes<br/>
+\- Monitor for SCP policy changes<br/>
+\- Monitor for OU structure changes<br/>
+\- Monitor for Account-OU assignment changes<br/><br/>
 
 Wenn Sie mehrere Accounts verwalten und nach einer Lösung suchen, um die Amazon EventBridge Rules in all Ihren Accounts präzise zu verwalten, können Sie uns gerne kontaktieren und mehr über unser **[SEMPER](/contact/ 'Kontaktieren Sie uns für weitere Informationen!')** Lösung erfahren.

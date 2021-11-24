@@ -16,9 +16,9 @@ Den aktuellen Stand der Sicherheits-Compliance im Griff zu behalten, kann eine H
 AWS Security Hub ist ein Cloud-Sicherheitsservice, der Best-Practice-Prüfungen automatisiert, Findings in Multi-Account-Umgebungen aggregiert und auch automatisierte Behebung unterstützt.  
 Mit AWS Security Hub haben Sie Zugriff auf drei vordefinierte Sicherheitsstandards, die Ihnen mit einem einzigen Klick eine automatisierte Compliance-Messung ermöglichen (Achtung – es fallen Kosten für die bereitgestellten AWS Config Rules an):  
 
-\- CIS AWS Foundations Benchmark [CIS-AWS]  
-\- Payment Card Industry Data Security Standard [PCI-DSS]  
-\- AWS Foundational Security Best Practices [FSBP]  
+\- CIS AWS Foundations Benchmark [**[CIS-AWS](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-cis.html 'CIS AWS Foundations Benchmark standard - AWS Security Hub')**]<br/>
+\- Payment Card Industry Data Security Standard [**[PCI-DSS](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-pcidss.html 'Payment Card Industry Data Security Standard (PCI DSS) - AWS Security Hub')**]<br/>
+\- AWS Foundational Security Best Practices [**[FSBP](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-fsbp.html 'AWS Foundational Security Best Practices standard - AWS Security Hub')**]<br/><br/>
 
 Ein Sicherheitsstandard ist eine Zusammenfassung von Sicherheitskontrollen, die aktiviert oder deaktiviert werden können. Das Gute an Security Hub ist die automatisierte Auswertung aller zugehörigen AWS-Ressourcen mit einer Compliance-Bewertung. All dies wird zu Sicherheitsbewertungen zusammengefasst, um Ihre Ressourcen-Compliance zu messen.  
 Die folgende Abbildung skizziert das Konzept von AWS Security Hub für die Compliance-Messung:  
@@ -48,7 +48,7 @@ Dieser Blog-Beitrag bezieht sich insbesondere auf das Kapitel “Monitoring” d
 
 Wie Sie feststellen, haben die CIS AWS 3.x-Kontrollen eines gemeinsam und das ist der Satzteil: „Ensure a log metric filter and alarm exist for…“  
 Wir stimmen den Zielen von CIS AWS 3.x voll und ganz zu, sind jedoch der Meinung, dass es **nicht ausreichend** ist, nur sicherzustellen, dass für diese Kontrollen ein Log-Metrikfilter und ein Alarm vorhanden sind.  
-Es ist sehr wichtig, dass diese Kontrollen sorgfältig überwacht werden und das SOC problemlos auf alle Ereignisdaten zugreifen kann, um den Befund schnell analysieren zu können.
+Es ist sehr wichtig, dass diese Kontrollen sorgfältig überwacht werden und das SOC problemlos auf alle Ereignisdaten zugreifen kann, um den Befund schnell analysieren zu können.<br/><br/>
 
 ## Erklärung
 
@@ -87,7 +87,7 @@ Monitored Metric:
 
 Im Falle eines Ereignisses möchten Sie weitere Kontextinformationen wie: acting principal, betroffene Ressource mit Account-ID und Region
 
-Um die alarmauslösenden Ereignisinformationen zu finden, müssen Sie die Amazon CloudWatch Logs durchsuchen, was umständlich ist.
+Um die alarmauslösenden Ereignisinformationen zu finden, müssen Sie die Amazon CloudWatch Logs durchsuchen, was umständlich ist.<br/><br/>
 
 ## Empfehlung
 Wir empfehlen die Verwendung von Amazon EventBridge Rules auf dem default event-bus für die CIS AWS 3.x-Ereignissignaturen.  
@@ -183,9 +183,9 @@ Beispiel für ein CIS AWS 3.10-Ereignis:
   }
 }
 ```
-Wie Sie sehen, enthält das Ereignis selbst alle Informationen, die für die weitere Sicherheitsverarbeitung wertvoll sind.
+Wie Sie sehen, enthält das Ereignis selbst alle Informationen, die für die weitere Sicherheitsverarbeitung wertvoll sind.<br/><br/>
 
-## Schlussfolgerung
+## Fazit
 Wir empfehlen, ***Amazon EventBridge Rules für die Überwachung von CIS AWS 3.x zu verwenden*** hinzuzufügen, um den Ereignisinformationen noch mehr Kontext wie zum Beispiel Account-Tags des Ursprungskontos hinzuzufügen.  
 Darüber hinaus empfehlen wir, zusätzlich zu den CIS AWS 3.x-Kontrollen weitere Sensoren zu platzieren, wie:  
 
@@ -194,13 +194,4 @@ Darüber hinaus empfehlen wir, zusätzlich zu den CIS AWS 3.x-Kontrollen weitere
 \- Monitor for OU structure changes   
 \- Monitor for Account-OU assignment changes  
 
-Wenn Sie mehrere Accounts verwalten und nach einer Lösung suchen, um die Amazon EventBridge Rules in all Ihren Accounts präzise zu verwalten, können Sie uns gerne kontaktieren und mehr über unser **[SEMPER](/contact/ 'Kontaktieren Sie uns für weitere Informationen!') Lösung**.
-
-## Referenzen
-{{<table "table table-striped table-bordered">}}
-| ID        | Link           
-| ----------| ------------- 
-| [CIS-AWS] | [CIS AWS Foundations Benchmark standard - AWS Security Hub](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-cis.html)
-| [PCI-DSS] | [Payment Card Industry Data Security Standard (PCI DSS) - AWS Security Hub](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-pcidss.html)
-| [FSBP]    | [AWS Foundational Security Best Practices standard - AWS Security Hub](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-fsbp.html)
-{{</table>}}
+Wenn Sie mehrere Accounts verwalten und nach einer Lösung suchen, um die Amazon EventBridge Rules in all Ihren Accounts präzise zu verwalten, können Sie uns gerne kontaktieren und mehr über unser **[SEMPER](/contact/ 'Kontaktieren Sie uns für weitere Informationen!')** Lösung erfahren.

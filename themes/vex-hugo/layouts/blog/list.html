@@ -24,7 +24,7 @@
               <p class="card-text p-3">{{ $.Page.RenderString .Params.Summary }}</p>
             </div>
             <div class="card-footer bg-transparent text-muted text-left">
-              {{ $.Page.RenderString (.Params.Date.Format "January 2, 2006") }} | {{ $.Page.RenderString .Params.Duration }} min read
+              {{ $.Page.RenderString (.Params.Date.Format "January 2, 2006") }} | {{ i18n "reading_duration" }} {{ $.Page.RenderString .Params.Duration }} min
             </div>
           </a>
         </div>
@@ -41,7 +41,7 @@
               <p class="card-text p-3">{{ $.Page.RenderString .Params.Summary }}</p>
             </div>
             <div class="card-footer bg-transparent text-muted text-left">
-              {{ $.Page.RenderString (.Params.Date.Format "January 2, 2006") }} | {{ $.Page.RenderString .Params.Duration }} min read
+              {{ $.Page.RenderString (.Params.Date.Format "January 2, 2006") }} | {{ i18n "reading_duration" }} {{ $.Page.RenderString .Params.Duration }} min
             </div>
           </a>
         {{ end }}

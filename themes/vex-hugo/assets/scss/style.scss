@@ -415,6 +415,11 @@ p.md a:hover {
   border-top-right-radius: 0.45rem !important;
   height: 15rem !important;
   object-fit: cover !important;
+  padding: 0 3rem !important;
+}
+
+.blog-page .blog-tile-img {
+  height: 22rem !important;
 }
 
 .blog-tile-list {
@@ -600,6 +605,9 @@ figure.profile:hover img {
   .cc-window.cc-floating {
     max-width: none !important;
   }
+  .blog-page .blog-tile-img {
+    height: 15rem !important;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -640,6 +648,9 @@ figure.profile:hover img {
   }
   .about-text {
     padding-left: 0rem !important;
+  }
+  .blog-page .blog-tile-img {
+    height: 10rem !important;
   }
 }
 

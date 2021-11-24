@@ -20,11 +20,11 @@
           <a href="{{.Permalink}}" class="card rounded shadow border-0 mb-30 blog-tile">
             <img class="card-img-top blog-tile-img" src="{{ .Params.image | absURL }}" alt='Illustration of {{ .Params.Image | replaceRE ".*?(\\w+).png" "$1" }}'>
             <div class="card-body blog-tile-body text-left">
-              <h5 class="card-title font-weight-bold p-3 pb-0">{{ $.Page.RenderString .Title }}</h5>
+              <h5 class="card-title font-weight-bold p-3 pb-0">{{ .Title }}</h5>
               <p class="card-text p-3">{{ $.Page.RenderString .Params.Summary }}</p>
             </div>
             <div class="card-footer bg-transparent text-muted text-left">
-              {{ $.Page.RenderString (.Params.Date.Format "January 2, 2006") }} | {{ i18n "reading_duration" }} {{ $.Page.RenderString .Params.Duration }} min
+              {{ .Params.Date | time.Format ":date_long" }} | {{ i18n "reading_duration" }} {{ .Params.Duration }} min
             </div>
           </a>
         </div>
@@ -37,11 +37,11 @@
           <a href="{{.Permalink}}" class="card rounded shadow border-0 mb-30 blog-tile blog-tile-list">
             <img class="card-img-top blog-tile-img" src="{{ .Params.image | absURL }}" alt='Illustration of {{ .Params.Image | replaceRE ".*?(\\w+).png" "$1" }}'>
             <div class="card-body blog-tile-body text-left">
-              <h5 class="card-title font-weight-bold p-3 pb-0">{{ $.Page.RenderString .Title }}</h5>
+              <h5 class="card-title font-weight-bold p-3 pb-0">{{ .Title }}</h5>
               <p class="card-text p-3">{{ $.Page.RenderString .Params.Summary }}</p>
             </div>
             <div class="card-footer bg-transparent text-muted text-left">
-              {{ $.Page.RenderString (.Params.Date.Format "January 2, 2006") }} | {{ i18n "reading_duration" }} {{ $.Page.RenderString .Params.Duration }} min
+              {{ .Params.Date | time.Format ":date_long" }} | {{ i18n "reading_duration" }} {{ .Params.Duration }} min
             </div>
           </a>
         {{ end }}

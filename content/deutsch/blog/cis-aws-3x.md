@@ -25,7 +25,7 @@ Die folgende Abbildung skizziert das Konzept von AWS Security Hub für die Compl
 
 ![img](images/blog/cis_aws_3x/security_hub_model.png)
 
-Dieser Blog-Beitrag bezieht sich insbesondere auf das Kapitel “Monitoring” des **CIS AWS Foundations Benchmark** [CIS-AWS], das die **CIS AWS 3.1 - CIS AWS 3.14**-Kontrollen enthält.
+Dieser Blog-Beitrag bezieht sich insbesondere auf das Kapitel “Monitoring” des **CIS AWS Foundations Benchmark** [**[CIS-AWS](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-cis.html 'CIS AWS Foundations Benchmark standard - AWS Security Hub')**], das die **CIS AWS 3.1 - CIS AWS 3.14**-Kontrollen enthält.
 
 {{<table "table table-striped table-bordered">}}
 | CIS AWS 3.x-Kontrollen |
@@ -48,14 +48,14 @@ Dieser Blog-Beitrag bezieht sich insbesondere auf das Kapitel “Monitoring” d
 
 Wie Sie feststellen, haben die CIS AWS 3.x-Kontrollen eines gemeinsam und das ist der Satzteil: „Ensure a log metric filter and alarm exist for…“  
 Wir stimmen den Zielen von CIS AWS 3.x voll und ganz zu, sind jedoch der Meinung, dass es **nicht ausreichend** ist, nur sicherzustellen, dass für diese Kontrollen ein Log-Metrikfilter und ein Alarm vorhanden sind.  
-Es ist sehr wichtig, dass diese Kontrollen sorgfältig überwacht werden und das SOC problemlos auf alle Ereignisdaten zugreifen kann, um den Befund schnell analysieren zu können.<br/><br/>
+Es ist sehr wichtig, dass diese Kontrollen sorgfältig überwacht werden und das Security Operations Center (SOC) problemlos auf alle Ereignisdaten zugreifen kann, um den Befund schnell analysieren zu können.<br/><br/>
 
 ## Erklärung
 
 Die Verwendung eines Log-Metrikfilters zusammen mit einem Alarm zeigt lediglich an, dass ein Ereignis aufgetreten ist, liefert jedoch keine Daten über das eigentliche Ereignis.
 Insbesondere bei Multi-Account Umgebungen, welche AWS CloudTrail für AWS Organizations nutzen, geraten Sie in eine potenzielle permanente Alarmsituation. In diesem Szenario ist die Suche nach der eigentlichen Quelle für den Alarm mühsam und zeitintensiv.
 
-Beispiel für einen CIS AWS 3.10-Alarm, der an ein Amazon SNS-Thema gesendet wurde – nicht viele wertvolle Informationen:
+Beispiel für einen CIS AWS 3.10-Alarm, der an ein Amazon Simple Notification Service (SNS) Thema gesendet wurde – kaum wertvolle Informationen:
 ```text
 You are receiving this email because your Amazon CloudWatch Alarm "CIS.3.10" in the US East (N. Virginia) region has entered  
 the ALARM state, because "Threshold Crossed: 1 out of the last 1 datapoints [2.0 (15/09/21 18:27:00)] was greater than the  
@@ -85,7 +85,7 @@ Monitored Metric:
 - TreatMissingData:                    missing
 ```
 
-Im Falle eines Ereignisses möchten Sie weitere Kontextinformationen wie: acting principal, betroffene Ressource mit Account-ID und Region
+Im Falle eines Ereignisses möchten Sie weitere Kontextinformationen wie den ausführenden Principal und die betroffene Ressource mit Account-ID und Region erfahren
 
 Um die alarmauslösenden Ereignisinformationen zu finden, müssen Sie die Amazon CloudWatch Logs durchsuchen, was umständlich ist.<br/><br/>
 
@@ -183,15 +183,23 @@ Beispiel für ein CIS AWS 3.10-Ereignis:
   }
 }
 ```
-Wie Sie sehen, enthält das Ereignis selbst alle Informationen, die für die weitere Sicherheitsverarbeitung wertvoll sind.<br/><br/>
+Wie Sie sehen, enthält das Ereignis umfangreiche Informationen, die für die weitere Sicherheitsverarbeitung wertvoll sind.<br/><br/>
 
 ## Fazit
-Wir empfehlen, ***Amazon EventBridge Rules für die Überwachung von CIS AWS 3.x zu verwenden*** hinzuzufügen, um den Ereignisinformationen noch mehr Kontext wie zum Beispiel Account-Tags des Ursprungskontos hinzuzufügen.  
-Darüber hinaus empfehlen wir, zusätzlich zu den CIS AWS 3.x-Kontrollen weitere Sensoren zu platzieren, wie:  
+Wir empfehlen, ***Amazon EventBridge Rules für die Überwachung von CIS AWS 3.x*** zu verwenden, um den Ereignisinformationen noch mehr Kontext wie zum Beispiel Account-Tags des Ursprungskontos hinzuzufügen.<br/>
+Darüber hinaus empfehlen wir, zusätzlich zu den CIS AWS 3.x-Kontrollen weitere Sensoren zu platzieren, wie:
+Darüber hinaus empfehlen wir, über die CIS AWS 3.x-Empfehlung hinaus zusätzliche Sensoren zu platzieren, wie zum Beispiel:
 
 \- Monitor for OU-SCP assignment changes<br/>
 \- Monitor for SCP policy changes<br/>
 \- Monitor for OU structure changes<br/>
 \- Monitor for Account-OU assignment changes<br/><br/>
 
-Wenn Sie mehrere Accounts verwalten und nach einer Lösung suchen, um die Amazon EventBridge Rules in all Ihren Accounts präzise zu verwalten, können Sie uns gerne kontaktieren und mehr über unser **[SEMPER](/contact/ 'Kontaktieren Sie uns für weitere Informationen!')** Lösung erfahren.
+<!-- Wenn Sie eine AWS Multi-Account Umgebung verwalten und nach einer Lösung suchen, um die Amazon EventBridge Rules in all Ihren Accounts präzise zu verwalten, können Sie uns gerne kontaktieren und mehr über **[SEMPER](/de/contact/ 'Kontakt aufnehmen für mehr Infos!')** erfahren. -->
+
+## Unsere Lösung
+
+Ihre Workloads sind über mehrere AWS Accounts und eventuell sogar verschiedene Regionen verteilt?
+
+Mit unserer cloud-nativen, Serverless-Lösung **[SEMPER](/contact/ 'Kontakt aufnehmen für mehr Infos!')** können Sie Amazon EventBridge- und AWS Config Rules zentral bereitstellen und resultierende Events sowie AWS Security Hub und Amazon GuardDuty Findings sinnvoll filtern.
+Darüber hinaus können Sie relevante Findings mit wichtigen Zusatzinformationen anreichern und die gesamte Lösung über ein zentrales **[Policy as Code](/faq/#pac 'Was ist Policy as Code?')** Repository verwalten.

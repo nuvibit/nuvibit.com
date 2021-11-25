@@ -184,7 +184,7 @@ Sample of an CIS AWS 3.10 Event:
 As you can see, the event payload itself contains extensive information that is valuable for further security processing.<br/><br/>
 
 ## Conclusion
-We recommend to use ***Amazon EventBridge Rules for monitoring of CIS AWS 3.x*** to add more context like account-tags of the originating account to the event information.<br/>
+We recommend to use ***Amazon EventBridge Rules for monitoring of CIS AWS 3.x*** and to add more context like account-tags and the OU-ID of the originating account to the event information.<br/>
 Furthermore, we recommend placing additional sensors beyond the CIS AWS 3.x recommendation, such as:
 
 \- Monitor for OU-SCP assignment changes<br/>

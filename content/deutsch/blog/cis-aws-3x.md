@@ -186,8 +186,7 @@ Beispiel für ein CIS AWS 3.10-Ereignis:
 Wie Sie sehen, enthält das Ereignis umfangreiche Informationen, die für die weitere Sicherheitsverarbeitung wertvoll sind.<br/><br/>
 
 ## Fazit
-Wir empfehlen, ***Amazon EventBridge Rules für die Überwachung von CIS AWS 3.x*** zu verwenden, um den Ereignisinformationen noch mehr Kontext wie zum Beispiel Account-Tags des Ursprungskontos hinzuzufügen.<br/>
-Darüber hinaus empfehlen wir, zusätzlich zu den CIS AWS 3.x-Kontrollen weitere Sensoren zu platzieren, wie:
+Wir empfehlen, ***Amazon EventBridge Rules für die Überwachung von CIS AWS 3.x*** zu verwenden und den Ereignisinformationen noch mehr Kontext wie zum Beispiel Account-Tags und OU-ID des verursachenden Accounts  hinzuzufügen.<br/>
 Darüber hinaus empfehlen wir, über die CIS AWS 3.x-Empfehlung hinaus zusätzliche Sensoren zu platzieren, wie zum Beispiel:
 
 \- Monitor for OU-SCP assignment changes<br/>

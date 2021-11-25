@@ -192,8 +192,6 @@ Furthermore, we recommend placing additional sensors beyond the CIS AWS 3.x reco
 \- Monitor for OU structure changes<br/>
 \- Monitor for Account-OU assignment changes<br/><br/>
 
-<!-- If you are managing multiple accounts and search for a solution to precisely manage Amazon EventBridge Rules in all your accounts, feel free to contact us and learn more about our **[SEMPER](/contact/ 'Contact us for more information!')** solution. -->
-
 ## Our Solution
 Your workloads are distributed across multiple AWS accounts and possibly even different regions?
 

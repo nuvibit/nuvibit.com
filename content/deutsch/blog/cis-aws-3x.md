@@ -194,8 +194,6 @@ Darüber hinaus empfehlen wir, über die CIS AWS 3.x-Empfehlung hinaus zusätzli
 \- Monitor for OU structure changes<br/>
 \- Monitor for Account-OU assignment changes<br/><br/>
 
-<!-- Wenn Sie eine AWS Multi-Account Umgebung verwalten und nach einer Lösung suchen, um die Amazon EventBridge Rules in all Ihren Accounts präzise zu verwalten, können Sie uns gerne kontaktieren und mehr über **[SEMPER](/de/contact/ 'Kontakt aufnehmen für mehr Infos!')** erfahren. -->
-
 ## Unsere Lösung
 
 Ihre Workloads sind über mehrere AWS Accounts und eventuell sogar verschiedene Regionen verteilt?

@@ -1,0 +1,521 @@
+<!doctype html><html lang=de-de><head>
+<meta charset=utf-8>
+<title>CIS AWS Foundations Benchmark ist cool, aber...</title>
+<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1">
+<meta name=description content="Den aktuellen Stand der Sicherheits-Compliance im Griff zu behalten, kann eine Herausforderung sein. AWS bietet ein großartiges Tool, das einen kontoübergreifenden Überblick bietet, der insbesondere in AWS Landing Zone-Architekturen wertvoll ist: AWS Security Hub">
+<meta name=author content="Nuvibit AG">
+<meta name=generator content="Hugo 0.89.4">
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open%20Sans:400%7cNunito:300,400,600,700">
+<link rel=stylesheet href=https://nuvibit.com/plugins/bootstrap/bootstrap.min.css>
+<link rel=stylesheet href=https://nuvibit.com/plugins/fontawesome/all.min.css>
+<link rel=stylesheet href=https://nuvibit.com/plugins/slick/slick.min.css>
+<link rel=stylesheet href=https://nuvibit.com/plugins/cookieconsent/cookieconsent.min.css>
+<link rel=stylesheet href=https://nuvibit.com/scss/style.min.css media=screen>
+<link rel=stylesheet href=https://nuvibit.com/scss/style.min.css media=screen>
+<link rel="shortcut icon" href=https://nuvibit.com/images/favicon/favicon.ico type=image/x-icon>
+<link rel=icon href=https://nuvibit.com/images/favicon/favicon-32x32.png type=image/x-icon>
+<meta property="og:image" content="https://nuvibit.com/images/blog/cis_aws_3x/cis_controls.png">
+<meta property="og:title" content="CIS AWS Foundations Benchmark ist cool, aber...">
+<meta property="og:description" content="Den aktuellen Stand der Sicherheits-Compliance im Griff zu behalten, kann eine Herausforderung sein. AWS bietet ein großartiges Tool, das einen kontoübergreifenden Überblick bietet, der insbesondere in AWS Landing Zone-Architekturen wertvoll ist: AWS Security Hub">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://nuvibit.com/de/blog/cis-aws-3x/"><meta property="article:section" content="blog">
+<meta property="article:published_time" content="2021-11-24T11:00:00+06:00">
+<meta property="article:modified_time" content="2021-11-24T11:00:00+06:00">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-65QED8XYJ9"></script>
+<script>var dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes";if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-65QED8XYJ9',{anonymize_ip:!0})}</script>
+</head>
+<body id=body>
+<div class=zoom-blur></div><header class="sticky-top bg-dark">
+<div class=container>
+<nav class="navbar navbar-expand-lg navbar-dark">
+<a class=navbar-brand href=/de> <img src=https://nuvibit.com/images/logo/logo_nuvibit_light.png alt=logo_nuvibit_light width=230px> </a>
+<button class="navbar-toggler border-0" type=button data-toggle=collapse data-target=#navigation aria-controls=navigation aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span>
+</button>
+<div class="collapse navbar-collapse text-center" id=navigation>
+<ul class="navbar-nav ml-auto">
+<li class=nav-item>
+<a class=nav-link href=https://nuvibit.com/de/>Home</a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href=# id=navbarDropdown role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false>
+Dienstleistungen
+</a>
+<div class="nav-item dropdown-menu" aria-labelledby=navbarDropdown>
+<a class=dropdown-item href=https://nuvibit.com/de/services/assistance>Cloud Assistance</a>
+<a class=dropdown-item href=https://nuvibit.com/de/services/management>Cloud Management at Scale</a>
+<a class=dropdown-item href=https://nuvibit.com/de/services/security>Cloud Security and Compliance</a>
+<a class=dropdown-item href=https://nuvibit.com/de/services/connectivity>Cloud Connectivity</a>
+</div>
+</li>
+<li class=nav-item>
+<a class=nav-link href=https://nuvibit.com/de/blog>Blog</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=https://nuvibit.com/de/about>Über uns</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=https://nuvibit.com/de/contact>Kontakt</a>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+</header>
+<section class=section>
+<div class="container mb-5">
+<div class="row justify-content-center">
+<div class="col-lg-10 align-self-center text-center">
+<div class=block>
+<h1 class="font-weight-bold mb-4 font-size-60">CIS AWS Foundations Benchmark ist cool, aber...</h1>
+<div class="col-md-10 m-auto p-3 blog-page">
+<img class="card-img-top blog-tile-img" src=https://nuvibit.com/images/blog/cis_aws_3x/cis_controls.png alt="Illustration of cis_controls">
+</div>
+</div>
+</div>
+<div class="col-md-8 text-center text-md-right mt-5 blog-social">
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fnuvibit.com%2fde%2fblog%2fcis-aws-3x%2f" target=_blank>
+<i class="fab fa-linkedin mr-4"></i>
+</a>
+<a href="https://twitter.com/intent/tweet?text=CIS%20AWS%20Foundations%20Benchmark%20ist%20cool%2c%20aber... https%3a%2f%2fnuvibit.com%2fde%2fblog%2fcis-aws-3x%2f" target=_blank>
+<i class="fab fa-twitter mr-4"></i>
+</a>
+<a href="mailto:?subject=CIS%20AWS%20Foundations%20Benchmark%20ist%20cool%2c%20aber...&body=CIS%20AWS%20Foundations%20Benchmark%20ist%20cool%2c%20aber...%0d%0ahttps%3a%2f%2fnuvibit.com%2fde%2fblog%2fcis-aws-3x%2f" target=_blank alt="send mail">
+<i class="fas fa-envelope mr-4"></i>
+</a>
+<a href=# onclick="copy_url(url='https://nuvibit.com/de/blog/cis-aws-3x/')">
+<i class="fas fa-link"></i>
+</a>
+<div class="mt-md-0 mt-3 col-sm-12 col-md-6 float-left text-muted text-center text-md-left">
+24. November 2021 | Lesezeit 10 min
+</div>
+</div>
+<div class="w-75 mt-4 alert alert-primary" style=display:none id=alert>
+<strong>Link has been copied to clipboard.</strong>
+</div>
+<hr class="w-75 pb-5">
+<div class="col-lg-10 text-center text-md-left mb-5">
+<div class="container markdown">
+<p><h2 id=kontext>Kontext</h2>
+<p>Den aktuellen Stand der Sicherheits-Compliance im Griff zu behalten, kann eine Herausforderung sein. AWS bietet ein großartiges Tool, das einen kontoübergreifenden Überblick bietet, der insbesondere in AWS Landing Zone-Architekturen wertvoll ist: <strong>AWS Security Hub</strong></p>
+<p><div class="col-md-10 m-auto p-3 zoom" onclick=image_zoom(this)>
+<img class=img-fluid src=https://nuvibit.com/images/blog/cis_aws_3x/security_hub_dashboard.png alt="Illustration of security_hub_dashboard">
+</div></p>
+<p>AWS Security Hub ist ein Cloud-Sicherheitsservice, der Best-Practice-Prüfungen automatisiert, Findings in Multi-Account-Umgebungen aggregiert und auch automatisierte Behebung unterstützt.<br>
+Mit AWS Security Hub haben Sie Zugriff auf drei vordefinierte Sicherheitsstandards, die Ihnen mit einem einzigen Klick eine automatisierte Compliance-Messung ermöglichen (Achtung – es fallen Kosten für die bereitgestellten AWS Config Rules an):</p>
+<p>- CIS AWS Foundations Benchmark [<strong><a href=https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-cis.html title="CIS AWS Foundations Benchmark standard - AWS Security Hub">CIS-AWS</a></strong>]<br>
+- Payment Card Industry Data Security Standard [<strong><a href=https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-pcidss.html title="Payment Card Industry Data Security Standard (PCI DSS) - AWS Security Hub">PCI-DSS</a></strong>]<br>
+- AWS Foundational Security Best Practices [<strong><a href=https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-fsbp.html title="AWS Foundational Security Best Practices standard - AWS Security Hub">FSBP</a></strong>]<br><br></p>
+<p>Ein Sicherheitsstandard ist eine Zusammenfassung von Sicherheitskontrollen, die aktiviert oder deaktiviert werden können. Das Gute an Security Hub ist die automatisierte Auswertung aller zugehörigen AWS-Ressourcen mit einer Compliance-Bewertung. All dies wird zu Sicherheitsbewertungen zusammengefasst, um Ihre Ressourcen-Compliance zu messen.<br>
+Die folgende Abbildung skizziert das Konzept von AWS Security Hub für die Compliance-Messung:</p>
+<p><div class="col-md-10 m-auto p-3 zoom" onclick=image_zoom(this)>
+<img class=img-fluid src=https://nuvibit.com/images/blog/cis_aws_3x/security_hub_model.png alt="Illustration of security_hub_model">
+</div></p>
+<p>Dieser Blog-Beitrag bezieht sich insbesondere auf das Kapitel “Monitoring” des <strong>CIS AWS Foundations Benchmark</strong> [<strong><a href=https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-cis.html title="CIS AWS Foundations Benchmark standard - AWS Security Hub">CIS-AWS</a></strong>], das die <strong>CIS AWS 3.1 - CIS AWS 3.14</strong>-Kontrollen enthält.</p>
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>CIS AWS 3.x-Kontrollen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CIS AWS 3.1 Ensure a log metric filter and alarm exist for unauthorized API calls</td>
+</tr>
+<tr>
+<td>CIS AWS 3.2 Ensure a log metric filter and alarm exist for Management Console sign-in without MFA</td>
+</tr>
+<tr>
+<td>CIS AWS 3.3 Ensure a log metric filter and alarm exist for usage of &ldquo;root&rdquo; account </td>
+</tr>
+<tr>
+<td>CIS AWS 3.4 Ensure a log metric filter and alarm exist for IAM policy changes </td>
+</tr>
+<tr>
+<td>CIS AWS 3.5 Ensure a log metric filter and alarm exist for CloudTrail configuration changes </td>
+</tr>
+<tr>
+<td>CIS AWS 3.6 Ensure a log metric filter and alarm exist for AWS Management Console authentication failures </td>
+</tr>
+<tr>
+<td>CIS AWS 3.7 Ensure a log metric filter and alarm exist for disabling or scheduled deletion of customer created CMKs </td>
+</tr>
+<tr>
+<td>CIS AWS 3.8 Ensure a log metric filter and alarm exist for S3 bucket policy changes </td>
+</tr>
+<tr>
+<td>CIS AWS 3.9 Ensure a log metric filter and alarm exist for AWS Config configuration changes </td>
+</tr>
+<tr>
+<td>CIS AWS 3.10 Ensure a log metric filter and alarm exist for security group changes </td>
+</tr>
+<tr>
+<td>CIS AWS 3.11 Ensure a log metric filter and alarm exist for changes to Network Access Control Lists (NACL) </td>
+</tr>
+<tr>
+<td>CIS AWS 3.12 Ensure a log metric filter and alarm exist for changes to network gateways </td>
+</tr>
+<tr>
+<td>CIS AWS 3.13 Ensure a log metric filter and alarm exist for route table changes </td>
+</tr>
+<tr>
+<td>CIS AWS 3.14 Ensure a log metric filter and alarm exist for VPC changes </td>
+</tr>
+</tbody>
+</table>
+<p>Wie Sie feststellen, haben die CIS AWS 3.x-Kontrollen eines gemeinsam und das ist der Satzteil: „Ensure a log metric filter and alarm exist for…“<br>
+Wir stimmen den Zielen von CIS AWS 3.x voll und ganz zu, sind jedoch der Meinung, dass es <strong>nicht ausreichend</strong> ist, nur sicherzustellen, dass für diese Kontrollen ein Log-Metrikfilter und ein Alarm vorhanden sind.<br>
+Es ist sehr wichtig, dass diese Kontrollen sorgfältig überwacht werden und das Security Operations Center (SOC) problemlos auf alle Ereignisdaten zugreifen kann, um den Befund schnell analysieren zu können.<br><br></p>
+<h2 id=erklärung>Erklärung</h2>
+<p>Die Verwendung eines Log-Metrikfilters zusammen mit einem Alarm zeigt lediglich an, dass ein Ereignis aufgetreten ist, liefert jedoch keine Daten über das eigentliche Ereignis.
+Insbesondere bei Multi-Account Umgebungen, welche AWS CloudTrail für AWS Organizations nutzen, geraten Sie in eine potenzielle permanente Alarmsituation. In diesem Szenario ist die Suche nach der eigentlichen Quelle für den Alarm mühsam und zeitintensiv.</p>
+<p>Beispiel für einen CIS AWS 3.10-Alarm, der an ein Amazon Simple Notification Service (SNS) Thema gesendet wurde – kaum wertvolle Informationen:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text>You are receiving this email because your Amazon CloudWatch Alarm &#34;CIS.3.10&#34; in the US East (N. Virginia) region has entered  
+the ALARM state, because &#34;Threshold Crossed: 1 out of the last 1 datapoints [2.0 (15/09/21 18:27:00)] was greater than the  
+threshold (1.0) (minimum 1 datapoint for OK -&gt; ALARM transition).&#34; at &#34;Wednesday 15 September, 2021 18:32:31 UTC&#34;.
+
+View this alarm in the AWS Management Console:
+https://us-east-1.console.aws.amazon.com/cloudwatch/deeplink.js?region=us-east-1#alarmsV2:alarm/CIS.3.10
+
+Alarm Details:
+- Name:                       CIS.3.10
+- Description:                
+- State Change:               OK -&gt; ALARM
+- Reason for State Change:    Threshold Crossed: 1 out of the last 1 datapoints [2.0 (15/09/21 18:27:00)] was greater than the  
+                              threshold (1.0) (minimum 1 datapoint for OK -&gt; ALARM transition).
+- Timestamp:                  Wednesday 15 September, 2021 18:32:31 UTC
+- AWS Account:                215125613612
+- Alarm Arn:                  arn:aws:cloudwatch:us-east-1:215125613612:alarm:CIS.3.10
+Threshold:
+- The alarm is in the ALARM state when the metric is GreaterThanThreshold 1.0 for 300 seconds. 
+Monitored Metric:
+- MetricNamespace:                     LogMetrics
+- MetricName:                          CIS.3.10
+- Dimensions:                          
+- Period:                              300 seconds
+- Statistic:                           Sum
+- Unit:                                not specified
+- TreatMissingData:                    missing
+</code></pre></div><p>Im Falle eines Ereignisses möchten Sie weitere Kontextinformationen wie den ausführenden Principal und die betroffene Ressource mit Account-ID und Region erfahren</p>
+<p>Um die alarmauslösenden Ereignisinformationen zu finden, müssen Sie die Amazon CloudWatch Logs durchsuchen, was umständlich ist.<br><br></p>
+<h2 id=empfehlung>Empfehlung</h2>
+<p>Wir empfehlen die Verwendung von Amazon EventBridge Rules auf dem default event-bus für die CIS AWS 3.x-Ereignissignaturen.<br>
+Sie erhalten so eine sofortige Ereignisbenachrichtigung mit vollständigen Ereignisinformationen.</p>
+<p>Beispiel für ein CIS AWS 3.10-Ereignis:</p>
+<div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 50
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 51
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 52
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 53
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 54
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 55
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 56
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 57
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 58
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 59
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 60
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 61
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 62
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 63
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 64
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 65
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 66
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 67
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 68
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 69
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 70
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 71
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 72
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 73
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 74
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 75
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 76
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 77
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 78
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 79
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 80
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 81
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 82
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 83
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 84
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 85
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 86
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 87
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 88
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 89
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 90
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 91
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 92
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 93
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 94
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 95
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 96
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 97
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 98
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 99
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">100
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">101
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">102
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">103
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">104
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">105
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">106
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">107
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">108
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">109
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">110
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">111
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">112
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">113
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">114
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">115
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">116
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">117
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">118
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">119
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">120
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">121
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">122
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">123
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">124
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">125
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">126
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">127
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">128
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">129
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">130
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">131
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">132
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">133
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">134
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">135
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">136
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
+  <span style=color:#f92672>&#34;version&#34;</span>: <span style=color:#e6db74>&#34;0&#34;</span>,
+  <span style=color:#f92672>&#34;id&#34;</span>: <span style=color:#e6db74>&#34;3bfd2f21-b57f-5cae-5423-cefcda82691b&#34;</span>,
+  <span style=color:#f92672>&#34;detail-type&#34;</span>: <span style=color:#e6db74>&#34;AWS API Call via CloudTrail&#34;</span>,
+  <span style=color:#f92672>&#34;source&#34;</span>: <span style=color:#e6db74>&#34;aws.ec2&#34;</span>,
+  <span style=color:#f92672>&#34;account&#34;</span>: <span style=color:#e6db74>&#34;215125613612&#34;</span>,
+  <span style=color:#f92672>&#34;time&#34;</span>: <span style=color:#e6db74>&#34;2021-11-04T15:56:41Z&#34;</span>,
+  <span style=color:#f92672>&#34;region&#34;</span>: <span style=color:#e6db74>&#34;eu-west-1&#34;</span>,
+  <span style=color:#f92672>&#34;resources&#34;</span>: [],
+  <span style=color:#f92672>&#34;detail&#34;</span>: {
+    <span style=color:#f92672>&#34;eventVersion&#34;</span>: <span style=color:#e6db74>&#34;1.08&#34;</span>,
+    <span style=color:#f92672>&#34;userIdentity&#34;</span>: {
+      <span style=color:#f92672>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;AssumedRole&#34;</span>,
+      <span style=color:#f92672>&#34;principalId&#34;</span>: <span style=color:#e6db74>&#34;AGDLJ51ASFJ15AFGSX15X:noreply@nuvibit.com&#34;</span>,
+      <span style=color:#f92672>&#34;arn&#34;</span>: <span style=color:#e6db74>&#34;arn:aws:sts::215125613612:assumed-role/AWS_AdministratorAccess_11agga1jh2g5jk1/noreply@nuvibit.com&#34;</span>,
+      <span style=color:#f92672>&#34;accountId&#34;</span>: <span style=color:#e6db74>&#34;215125613612&#34;</span>,
+      <span style=color:#f92672>&#34;accessKeyId&#34;</span>: <span style=color:#e6db74>&#34;LJFA22VZY6Q7WVSS2RX&#34;</span>,
+      <span style=color:#f92672>&#34;sessionContext&#34;</span>: {
+        <span style=color:#f92672>&#34;sessionIssuer&#34;</span>: {
+          <span style=color:#f92672>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;Role&#34;</span>,
+          <span style=color:#f92672>&#34;principalId&#34;</span>: <span style=color:#e6db74>&#34;AGDLJ51ASFJ15AFGSX15X&#34;</span>,
+          <span style=color:#f92672>&#34;arn&#34;</span>: <span style=color:#e6db74>&#34;arn:aws:iam::215125613612:role/aws-reserved/sso.amazonaws.com/eu-central-1/AWS_AdministratorAccess_11agga1jh2g5jk1&#34;</span>,
+          <span style=color:#f92672>&#34;accountId&#34;</span>: <span style=color:#e6db74>&#34;215125613612&#34;</span>,
+          <span style=color:#f92672>&#34;userName&#34;</span>: <span style=color:#e6db74>&#34;AWS_AdministratorAccess_11agga1jh2g5jk1&#34;</span>
+        },
+        <span style=color:#f92672>&#34;webIdFederationData&#34;</span>: {},
+        <span style=color:#f92672>&#34;attributes&#34;</span>: {
+          <span style=color:#f92672>&#34;creationDate&#34;</span>: <span style=color:#e6db74>&#34;2021-11-04T15:54:33Z&#34;</span>,
+          <span style=color:#f92672>&#34;mfaAuthenticated&#34;</span>: <span style=color:#e6db74>&#34;false&#34;</span>
+        }
+      }
+    },
+    <span style=color:#f92672>&#34;eventTime&#34;</span>: <span style=color:#e6db74>&#34;2021-11-04T15:56:41Z&#34;</span>,
+    <span style=color:#f92672>&#34;eventSource&#34;</span>: <span style=color:#e6db74>&#34;ec2.amazonaws.com&#34;</span>,
+    <span style=color:#f92672>&#34;eventName&#34;</span>: <span style=color:#e6db74>&#34;AuthorizeSecurityGroupIngress&#34;</span>,
+    <span style=color:#f92672>&#34;awsRegion&#34;</span>: <span style=color:#e6db74>&#34;eu-west-1&#34;</span>,
+    <span style=color:#f92672>&#34;sourceIPAddress&#34;</span>: <span style=color:#e6db74>&#34;72.21.210.29&#34;</span>,
+    <span style=color:#f92672>&#34;userAgent&#34;</span>: <span style=color:#e6db74>&#34;console.ec2.amazonaws.com&#34;</span>,
+    <span style=color:#f92672>&#34;requestParameters&#34;</span>: {
+      <span style=color:#f92672>&#34;groupId&#34;</span>: <span style=color:#e6db74>&#34;sg-b15kasfs&#34;</span>,
+      <span style=color:#f92672>&#34;ipPermissions&#34;</span>: {
+        <span style=color:#f92672>&#34;items&#34;</span>: [
+          {
+            <span style=color:#f92672>&#34;ipProtocol&#34;</span>: <span style=color:#e6db74>&#34;tcp&#34;</span>,
+            <span style=color:#f92672>&#34;fromPort&#34;</span>: <span style=color:#ae81ff>0</span>,
+            <span style=color:#f92672>&#34;toPort&#34;</span>: <span style=color:#ae81ff>65535</span>,
+            <span style=color:#f92672>&#34;groups&#34;</span>: {},
+            <span style=color:#f92672>&#34;ipRanges&#34;</span>: {
+              <span style=color:#f92672>&#34;items&#34;</span>: [
+                {
+                  <span style=color:#f92672>&#34;cidrIp&#34;</span>: <span style=color:#e6db74>&#34;0.0.0.0/0&#34;</span>
+                }
+              ]
+            },
+            <span style=color:#f92672>&#34;ipv6Ranges&#34;</span>: {},
+            <span style=color:#f92672>&#34;prefixListIds&#34;</span>: {}
+          }
+        ]
+      }
+    },
+    <span style=color:#f92672>&#34;responseElements&#34;</span>: {
+      <span style=color:#f92672>&#34;requestId&#34;</span>: <span style=color:#e6db74>&#34;233ec260-412d-40dc-918b-e3ced0e85977&#34;</span>,
+      <span style=color:#f92672>&#34;_return&#34;</span>: <span style=color:#66d9ef>true</span>,
+      <span style=color:#f92672>&#34;securityGroupRuleSet&#34;</span>: {
+        <span style=color:#f92672>&#34;items&#34;</span>: [
+          {
+            <span style=color:#f92672>&#34;groupOwnerId&#34;</span>: <span style=color:#e6db74>&#34;215125613612&#34;</span>,
+            <span style=color:#f92672>&#34;groupId&#34;</span>: <span style=color:#e6db74>&#34;sg-b15kasfs&#34;</span>,
+            <span style=color:#f92672>&#34;securityGroupRuleId&#34;</span>: <span style=color:#e6db74>&#34;sgr-0c609eafsa2af10ea&#34;</span>,
+            <span style=color:#f92672>&#34;isEgress&#34;</span>: <span style=color:#66d9ef>false</span>,
+            <span style=color:#f92672>&#34;ipProtocol&#34;</span>: <span style=color:#e6db74>&#34;tcp&#34;</span>,
+            <span style=color:#f92672>&#34;fromPort&#34;</span>: <span style=color:#ae81ff>0</span>,
+            <span style=color:#f92672>&#34;toPort&#34;</span>: <span style=color:#ae81ff>65535</span>,
+            <span style=color:#f92672>&#34;cidrIpv4&#34;</span>: <span style=color:#e6db74>&#34;0.0.0.0/0&#34;</span>
+          }
+        ]
+      }
+    },
+    <span style=color:#f92672>&#34;requestID&#34;</span>: <span style=color:#e6db74>&#34;233ec260-412d-40dc-918b-e3ced0e85977&#34;</span>,
+    <span style=color:#f92672>&#34;eventID&#34;</span>: <span style=color:#e6db74>&#34;ed2b58c7-5b71-49d8-412d-66b695f0e2a7&#34;</span>,
+    <span style=color:#f92672>&#34;readOnly&#34;</span>: <span style=color:#66d9ef>false</span>,
+    <span style=color:#f92672>&#34;eventType&#34;</span>: <span style=color:#e6db74>&#34;AwsApiCall&#34;</span>,
+    <span style=color:#f92672>&#34;managementEvent&#34;</span>: <span style=color:#66d9ef>true</span>,
+    <span style=color:#f92672>&#34;recipientAccountId&#34;</span>: <span style=color:#e6db74>&#34;215125613612&#34;</span>,
+    <span style=color:#f92672>&#34;eventCategory&#34;</span>: <span style=color:#e6db74>&#34;Management&#34;</span>
+  }
+}
+</code></pre></td></tr></table>
+</div>
+</div><p>Wie Sie sehen, enthält das Ereignis umfangreiche Informationen, die für die weitere Sicherheitsverarbeitung wertvoll sind.<br><br></p>
+<h2 id=fazit>Fazit</h2>
+<p>Wir empfehlen, <em><strong>Amazon EventBridge Rules für die Überwachung von CIS AWS 3.x</strong></em> zu verwenden und den Ereignisinformationen noch mehr Kontext wie zum Beispiel Account-Tags und OU-ID des verursachenden Accounts hinzuzufügen.<br>
+Darüber hinaus empfehlen wir, über die CIS AWS 3.x-Empfehlung hinaus zusätzliche Sensoren zu platzieren, wie zum Beispiel:</p>
+<p>- Monitor for OU-SCP assignment changes<br>
+- Monitor for SCP policy changes<br>
+- Monitor for OU structure changes<br>
+- Monitor for Account-OU assignment changes<br><br></p>
+<h2 id=unsere-lösung>Unsere Lösung</h2>
+<p>Ihre Workloads sind über mehrere AWS Accounts und eventuell sogar verschiedene Regionen verteilt?</p>
+<p>Mit unserer cloud-nativen, Serverless-Lösung <strong><a href=/de/contact/ title="Kontakt aufnehmen für mehr Infos!">SEMPER</a></strong> können Sie Amazon EventBridge- und AWS Config Rules zentral bereitstellen und resultierende Events sowie AWS Security Hub und Amazon GuardDuty Findings sinnvoll filtern.
+Darüber hinaus können Sie relevante Findings mit wichtigen Zusatzinformationen anreichern und die gesamte Lösung über ein zentrales <strong><a href=/de/faq/#pac title="Was ist Policy as Code?">Policy as Code</a></strong> Repository verwalten.</p>
+</p>
+</div>
+</div>
+<hr class="w-75 mb-4">
+<div class="col-md-8 text-center text-md-right blog-social">
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fnuvibit.com%2fde%2fblog%2fcis-aws-3x%2f" target=_blank alt="linkedin post">
+<i class="fab fa-linkedin mr-4"></i>
+</a>
+<a href="https://twitter.com/intent/tweet?text=CIS%20AWS%20Foundations%20Benchmark%20ist%20cool%2c%20aber... https%3a%2f%2fnuvibit.com%2fde%2fblog%2fcis-aws-3x%2f" target=_blank alt="twitter post">
+<i class="fab fa-twitter mr-4"></i>
+</a>
+<a href="mailto:?subject=CIS%20AWS%20Foundations%20Benchmark%20ist%20cool%2c%20aber...&body=CIS%20AWS%20Foundations%20Benchmark%20ist%20cool%2c%20aber...%0d%0ahttps%3a%2f%2fnuvibit.com%2fde%2fblog%2fcis-aws-3x%2f" target=_blank alt="send mail">
+<i class="fas fa-envelope mr-4"></i>
+</a>
+<a href=# onclick="copy_url(url='https://nuvibit.com/de/blog/cis-aws-3x/')" alt="copy link">
+<i class="fas fa-link"></i>
+</a>
+</div>
+</div>
+</section>
+<footer>
+<div class="container pt-5">
+<div class=row>
+<div class="col-md-6 mb-3 text-center footer-logo">
+<img src=https://nuvibit.com/images/logo/logo_nuvibit_dark.png alt=logo_nuvibit_dark width=230px>
+</div>
+<div class="col-md-6 mb-4 text-left footer-links">
+<div class="bottom-nav col-md-4 p-0 float-left mb-3">
+<h5 class="mb-4 font-weight-bold">Sprachen</h5>
+<ul class=list-group>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=https://nuvibit.com/blog/cis-aws-3x/ onclick='update_language_pref("en")'>
+<i class="fas fa-toggle-off"></i>
+English
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=https://nuvibit.com/de/blog/cis-aws-3x/ onclick='update_language_pref("de")'>
+<i class="fas fa-toggle-on"></i>
+Deutsch
+</a>
+</li>
+</ul>
+</div>
+<div class="bottom-nav col-md-4 p-0 float-left mb-3">
+<h5 class="mb-4 font-weight-bold">Unternehmen</h5>
+<ul class=list-group>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=/de/faq>
+FAQ
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=/de/about>
+Über uns
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=/de/contact>
+Kontakt
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=/de/partners>
+Partnerschaften
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=/de/privacy-policy/#51-cookies>
+Cookie Richtlinien
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=/de/privacy-policy>
+Datenschutzerklärung
+</a>
+</li>
+</ul>
+</div>
+<div class="bottom-nav col-md-4 p-0 float-left mb-3">
+<h5 class="mb-4 font-weight-bold">Soziale Medien</h5>
+<ul class=list-group>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=https://github.com/nuvibit>
+<i class="fab fa-github mr-2"></i>
+Github
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=https://linkedin.com/company/nuvibit>
+<i class="fab fa-linkedin mr-2"></i>
+Linkedin
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=https://twitter.com/nuvibit>
+<i class="fab fa-twitter mr-2"></i>
+Twitter
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=https://www.youtube.com/channel/UCmQCd8jMiZviVlWOqqbpYBw/playlists>
+<i class="fab fa-youtube mr-2"></i>
+Youtube
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-12 pt-4 border-top">
+<div class="mb-4 d-flex justify-content-center align-items-center">
+<p class=copyright-text>Urheberrechte © 2021 - Nuvibit AG</p>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script src=https://nuvibit.com/plugins/jquery/jquery.js></script>
+<script src=https://nuvibit.com/plugins/bootstrap/bootstrap.min.js></script>
+<script src=https://nuvibit.com/plugins/slick/slick.min.js></script>
+<script src=https://nuvibit.com/plugins/cookieconsent/cookieconsent.min.js></script>
+<script src=https://nuvibit.com/js/script.js></script>
+<script>var pageLang,browserLang,supportedLang,base_url,uri;function copy_url(b){var a=$("<input>");$("body").append(a),a.val(b).select(),document.execCommand("copy"),a.remove(),$(".alert").show(),$(".alert").delay(2e3).slideUp(200,function(){$(this).hide()})}function cancel_zoom(){window.removeEventListener('scroll',cancel_zoom),$(".zoomed").removeClass("zoomed"),$(".zoom-blur").toggle()}function image_zoom(a){a.classList.contains("zoomed")||$(".zoomed").removeClass("zoomed"),a.classList.toggle('zoomed'),$(".zoom-blur").toggle(),setTimeout(function(){a.classList.contains("zoomed")?window.addEventListener('scroll',cancel_zoom,!1):window.removeEventListener('scroll',cancel_zoom)},100)}function redirect(a){window.location.href=a}function update_language_pref(a){localStorage.setItem('lang',a)}function uri_translate(c,d,e){var a=c,b;return d!=="en"&&(b=c.split('/'),b[1]===d?(b.splice(1,1),a=b.join('/')):a="/"),e!=="en"&&(a="/"+e+a),a}pageLang="de",browserLang=navigator.language||navigator.userLanguage,browserLang=browserLang.substring(0,2),supportedLang="[en de]".match(/\[(.*?)\]/)[1].split(" "),base_url="https://nuvibit.com/".replace(/\/$/,""),uri="/de/blog/cis-aws-3x/",userLangPref=localStorage.getItem('lang'),userLangPref&&supportedLang.includes(userLangPref)?pageLang!==userLangPref&&(relocate_uri=uri_translate(uri,lang_now=pageLang,lang_new=userLangPref),window.location.href=base_url+relocate_uri):(supportedLang.includes(browserLang)||(browserLang="en"),localStorage.setItem('lang',browserLang),localStorage.getItem('lang')===browserLang&&pageLang!==browserLang&&(relocate_uri=uri_translate(uri,lang_now=pageLang,lang_new=browserLang),window.location.href=base_url+relocate_uri)),$(document.links).filter(function(){return this.hostname!=window.location.hostname}).attr('target','_blank'),window.cookieconsent.initialise({palette:{popup:{background:"#2b3346",text:"#ffffff"},button:{background:"#3fa7df",text:"#ffffff"}},content:{message:'Auf dieser Webseite werden Cookies eingesetzt, um Ihnen das beste Nutzererlebnis zu bieten.',dismiss:'Schliessen',link:'Unsere Cookie Richtlinien',href:'/de/privacy-policy/#51-cookies',target:null},theme:"edgeless",type:"info"})</script>
+</body>
+</html>

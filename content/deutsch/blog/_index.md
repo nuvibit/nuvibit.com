@@ -1,6 +1,6 @@
 ---
 title: "Nuvibit Blog"
-description: "this is a meta description"
+description: "Nuvibit Blog. Wir teilen unsere Erfahrungen mit der Community: Cloud Native, Infastructure as Code, Connectivity, Security und mehr."
 image: "images/illustrations/blog.png"
 draft: false
 ---

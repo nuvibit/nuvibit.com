@@ -71,8 +71,8 @@ Alarm Details:
 - Reason for State Change:    Threshold Crossed: 1 out of the last 1 datapoints [2.0 (15/09/21 18:27:00)] was greater than the  
                               threshold (1.0) (minimum 1 datapoint for OK -> ALARM transition).
 - Timestamp:                  Wednesday 15 September, 2021 18:32:31 UTC
-- AWS Account:                486183375590
-- Alarm Arn:                  arn:aws:cloudwatch:us-east-1:486183375590:alarm:CIS.3.10
+- AWS Account:                215125613612
+- Alarm Arn:                  arn:aws:cloudwatch:us-east-1:215125613612:alarm:CIS.3.10
 Threshold:
 - The alarm is in the ALARM state when the metric is GreaterThanThreshold 1.0 for 300 seconds. 
 Monitored Metric:
@@ -97,10 +97,10 @@ Beispiel für ein CIS AWS 3.10-Ereignis:
 ```json {linenos=table,hl_lines=[],linenostart=50}
 {
   "version": "0",
-  "id": "3bfd2f04-b57f-5cae-5423-cefcda82691b",
+  "id": "3bfd2f21-b57f-5cae-5423-cefcda82691b",
   "detail-type": "AWS API Call via CloudTrail",
   "source": "aws.ec2",
-  "account": "626708301729",
+  "account": "215125613612",
   "time": "2021-11-04T15:56:41Z",
   "region": "eu-west-1",
   "resources": [],
@@ -108,17 +108,17 @@ Beispiel für ein CIS AWS 3.10-Ereignis:
     "eventVersion": "1.08",
     "userIdentity": {
       "type": "AssumedRole",
-      "principalId": "AROAZD2VZY6QQWB4D7CX6:michael.ullrich@nuvibit.com",
-      "arn": "arn:aws:sts::626708301729:assumed-role/AWSReservedSSO_AdministratorAccess_1f51a532758ff888/michael.ullrich@nuvibit.com",
-      "accountId": "626708301729",
-      "accessKeyId": "ASIAZD2VZY6Q7WV5ARRX",
+      "principalId": "AGDLJ51ASFJ15AFGSX15X:noreply@nuvibit.com",
+      "arn": "arn:aws:sts::215125613612:assumed-role/AWS_AdministratorAccess_11agga1jh2g5jk1/noreply@nuvibit.com",
+      "accountId": "215125613612",
+      "accessKeyId": "LJFA22VZY6Q7WVSS2RX",
       "sessionContext": {
         "sessionIssuer": {
           "type": "Role",
-          "principalId": "AROAZD2VZY6QQWB4D7CX6",
-          "arn": "arn:aws:iam::626708301729:role/aws-reserved/sso.amazonaws.com/eu-central-1/AWSReservedSSO_AdministratorAccess_1f51a532758ff888",
-          "accountId": "626708301729",
-          "userName": "AWSReservedSSO_AdministratorAccess_1f51a532758ff888"
+          "principalId": "AGDLJ51ASFJ15AFGSX15X",
+          "arn": "arn:aws:iam::215125613612:role/aws-reserved/sso.amazonaws.com/eu-central-1/AWS_AdministratorAccess_11agga1jh2g5jk1",
+          "accountId": "215125613612",
+          "userName": "AWS_AdministratorAccess_11agga1jh2g5jk1"
         },
         "webIdFederationData": {},
         "attributes": {
@@ -131,10 +131,10 @@ Beispiel für ein CIS AWS 3.10-Ereignis:
     "eventSource": "ec2.amazonaws.com",
     "eventName": "AuthorizeSecurityGroupIngress",
     "awsRegion": "eu-west-1",
-    "sourceIPAddress": "194.230.147.5",
+    "sourceIPAddress": "72.21.210.29",
     "userAgent": "console.ec2.amazonaws.com",
     "requestParameters": {
-      "groupId": "sg-b0673be3",
+      "groupId": "sg-b15kasfs",
       "ipPermissions": {
         "items": [
           {
@@ -156,14 +156,14 @@ Beispiel für ein CIS AWS 3.10-Ereignis:
       }
     },
     "responseElements": {
-      "requestId": "233ec260-265b-40dc-918b-e3ced0e85977",
+      "requestId": "233ec260-412d-40dc-918b-e3ced0e85977",
       "_return": true,
       "securityGroupRuleSet": {
         "items": [
           {
-            "groupOwnerId": "626708301729",
-            "groupId": "sg-b0673be3",
-            "securityGroupRuleId": "sgr-0c609e6f9cdaf10ea",
+            "groupOwnerId": "215125613612",
+            "groupId": "sg-b15kasfs",
+            "securityGroupRuleId": "sgr-0c609eafsa2af10ea",
             "isEgress": false,
             "ipProtocol": "tcp",
             "fromPort": 0,
@@ -173,12 +173,12 @@ Beispiel für ein CIS AWS 3.10-Ereignis:
         ]
       }
     },
-    "requestID": "233ec260-265b-40dc-918b-e3ced0e85977",
-    "eventID": "ed2b58c7-5b71-49d8-9f26-66b695f0e2a7",
+    "requestID": "233ec260-412d-40dc-918b-e3ced0e85977",
+    "eventID": "ed2b58c7-5b71-49d8-412d-66b695f0e2a7",
     "readOnly": false,
     "eventType": "AwsApiCall",
     "managementEvent": true,
-    "recipientAccountId": "626708301729",
+    "recipientAccountId": "215125613612",
     "eventCategory": "Management"
   }
 }

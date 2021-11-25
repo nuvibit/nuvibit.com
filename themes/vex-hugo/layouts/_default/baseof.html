@@ -11,10 +11,11 @@
 	{{ block "page-script" . }}
 	<script>
 		// function to copy content to clipboard and display message
-		function copy(){
+		function copy_url(url){
 			var $temp = $("<input>");
 			$("body").append($temp);
-			$temp.val($(".copy").text()).select();
+			//var url = $(".copy").text()
+			$temp.val(url).select();
 			document.execCommand("copy");
 			$temp.remove();
 

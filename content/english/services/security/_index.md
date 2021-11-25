@@ -73,9 +73,9 @@ excerpt_section:
       - title_aws: "AWS Security Finding Management"
         enable: true
         image: "images/illustrations/cloud_security_event_management_semper.png"
-        content: "Manage your Amazon EventBridge Rules and AWS Security Hub Controls across your AWS organization with a central [Policy as Code](/faq/#pac 'What is Policy as Code?') repository.<br>
-                  Keep track of your security events, filter them by importance and enrich them with valuable information.
-                  Do it continuously with our cloud-native, serverless solution [SEMPER](/contact/ 'Contact us for more information!')."
+        content: "Your workloads are distributed across multiple AWS accounts and possibly even different regions?<br>
+                  With our cloud-native, serverless solution [SEMPER](/contact/ 'Contact us for more information!'), you can centrally provision Amazon EventBridge and AWS Config Rules and meaningfully filter resulting events as well as AWS Security Hub and Amazon GuardDuty Findings.
+                  In addition, you can enrich relevant findings with valuable additional information and manage the entire solution from a central [Policy as Code](/faq/#pac 'What is Policy as Code?') repository."
         # button:
         #   enable: true
         #   label: "Contact us to learn more about SEMPER"

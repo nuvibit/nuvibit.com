@@ -206,10 +206,12 @@ div.markdown h5,
 div.markdown h6 {
   margin-top: -85px !important;
   padding-top: 85px !important;
+  padding-bottom: 10px !important;
 }
 
 .highlight {
-  padding: 2rem 0 !important;
+  // padding: 1rem 0 !important;
+  margin-bottom: 1rem;
   text-align: left !important;
 }
 
@@ -413,6 +415,11 @@ p.md a:hover {
   border-top-right-radius: 0.45rem !important;
   height: 15rem !important;
   object-fit: cover !important;
+  padding: 0 3rem !important;
+}
+
+.blog-page .blog-tile-img {
+  height: 22rem !important;
 }
 
 .blog-tile-list {
@@ -598,6 +605,9 @@ figure.profile:hover img {
   .cc-window.cc-floating {
     max-width: none !important;
   }
+  .blog-page .blog-tile-img {
+    height: 15rem !important;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -638,6 +648,9 @@ figure.profile:hover img {
   }
   .about-text {
     padding-left: 0rem !important;
+  }
+  .blog-page .blog-tile-img {
+    height: 10rem !important;
   }
 }
 

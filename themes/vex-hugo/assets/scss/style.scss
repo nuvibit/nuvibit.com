@@ -527,6 +527,16 @@ p.copyright-text {
   display: none;
 }
 
+// christmas special
+#snow {
+  height: 100vh;
+  width: 100vw;
+  background:lightgrey;
+  position: fixed;
+  z-index: 0;
+  display: none;
+}
+
 // about
 figure.profile a {
   text-decoration: none !important;

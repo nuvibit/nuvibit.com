@@ -58,6 +58,8 @@ link = "plugins/fontawesome/all.min.css"
 link = "plugins/slick/slick.min.css"
 [[params.plugins.css]]
 link = "plugins/cookieconsent/cookieconsent.min.css"
+[[params.plugins.css]]
+link = "plugins/snow/snow.min.css"
 
 # JS Plugins
 [[params.plugins.js]]
@@ -68,6 +70,8 @@ link = "plugins/bootstrap/bootstrap.min.js"
 link = "plugins/slick/slick.min.js"
 [[params.plugins.js]]
 link = "plugins/cookieconsent/cookieconsent.min.js"
+[[params.plugins.js]]
+link = "plugins/snow/snow.min.js"
 
 ########################### Default parameters ##########################
 

@@ -4,21 +4,43 @@
 
 <body id="body">
 	<div class="zoom-blur"></div>
+	<div id="snow"></div>
 	{{- partial "preloader.html" . -}}
 	{{- partial "header.html" . -}}
 	{{- block "main" . }}{{- end }}
 	{{- partial "footer.html" . -}}
 	{{ block "page-script" . }}
 	<script>
+		// christmas magic
+		document.addEventListener('DOMContentLoaded', function() {
+			const d = new Date();
+			let month = d.getMonth();
+			// if month is december
+			if (month == 10){
+				// replace newsletter background with christmas edition
+				if ( $( ".call-to-action" ).length ) {
+					var bg = $(".call-to-action").css('background-image');
+					var snow_bg = bg.replace(/\.jpg\"\)$/, "_christmas.jpg\")");
+					$(".call-to-action").css('background-image', snow_bg);
+				}
+				// let it snow
+				$("#snow").toggle();
+				new Snow('#snow',{
+					number:50,
+					r: 5,
+					v: 0.8
+				});
+			}
+		});
+
 		// function to copy content to clipboard and display message
 		function copy_url(url){
 			var $temp = $("<input>");
 			$("body").append($temp);
-			//var url = $(".copy").text()
 			$temp.val(url).select();
 			document.execCommand("copy");
 			$temp.remove();
-
+			// display alert message
 			$(".alert").show();
 			$(".alert").delay(2000).slideUp(200, function() {
 				$(this).hide();
@@ -89,7 +111,7 @@
 		// get supported languages from hugo
 		var supportedLang = "{{ .Site.Languages }}".match(/\[(.*?)\]/)[1].split(" ");
 		// get base url and uri
-		var base_url = "{{ .Site.BaseURL }}".replace(/\/$/, "");;
+		var base_url = "{{ .Site.BaseURL }}".replace(/\/$/, "");
 		var uri = "{{ .Permalink | relURL }}";
 		// try to read language preference from local storage and check if supported
 		userLangPref = localStorage.getItem('lang');

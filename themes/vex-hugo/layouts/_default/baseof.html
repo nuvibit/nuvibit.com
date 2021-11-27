@@ -11,16 +11,14 @@
 	{{- partial "footer.html" . -}}
 	{{ block "page-script" . }}
 	<script>
-		// christmas magic
+		// in december (11) let it snow on landing page
 		document.addEventListener('DOMContentLoaded', function() {
 			const d = new Date();
 			let month = d.getMonth();
-			// let it snow in december (11) on landing page
-			// for testing november (10)
 			if (month == 10 && $( ".call-to-action" ).length){
-				// replace newsletter background with christmas edition
+				// replace newsletter background
 				var bg = $(".call-to-action").css('background-image');
-				var snow_bg = bg.replace(/\.jpg\"\)$/, "_christmas.jpg\")");
+				var snow_bg = bg.replace(/foundation\.jpg/, "foundation_snow.jpg");
 				$(".call-to-action").css('background-image', snow_bg);
 				// let it snow
 				$("#snow").toggle();

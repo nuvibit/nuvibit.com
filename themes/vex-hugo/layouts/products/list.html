@@ -3,7 +3,7 @@
 <!-- BANNER -->
 {{- if .Params.banner_section.enable }}
 {{- with .Params.banner_section }}
-<section class="section">
+<section class="section" id="banner">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 text-center p-4 mb-md-0 zoom" onclick="image_zoom(this)">
@@ -25,6 +25,7 @@
 </section>
 {{- end }}
 {{- end }}
+<!-- /BANNER -->
 
 <!-- FEATURES -->
 {{- if .Params.feature_section.enable }}
@@ -34,40 +35,41 @@
         <div class="row">
         <div class="col-12">
             <div class="heading">
-            <h2>{{ .title | markdownify }}</h2>
+            <h2>{{ $.Page.RenderString .title }}</h2>
             </div>
         </div>
         <div class="col-md-4">
             {{ range .left_side }}
             <div class="mb-40 text-center text-md-left">
-            <i class="fas {{ .icon }} fa-2x"></i>
-            <h4 class="font-weight-bold mb-2">{{ .title | markdownify }}</h4>
-            <p>{{ .content | markdownify }}</p>
+            <i class="fas {{ .icon }} fa-3x"></i>
+            <h4 class="font-weight-bold mb-2">{{ $.Page.RenderString .title }}</h4>
+            <p>{{ $.Page.RenderString .content }}</p>
             </div>
             {{ end }}
         </div>
-        <div class="col-md-4 text-center align-self-center mb-4 mb-md-0">
-            <img class="img-fluid" src="{{ .image | absURL }}" alt="">
+        <div class="col-md-4 text-center align-self-center mb-4 mb-md-0 zoom" onclick="image_zoom(this)">
+            <img class="img-fluid" src="{{ .image | absURL }}" alt='Illustration of {{ .Image | replaceRE ".*?(\\w+).png" "$1" }}'>
         </div>
         <div class="col-md-4">
             {{ range .right_side }}
             <div class="mb-40 text-center text-md-left">
-            <i class="fas {{ .icon }} fa-2x"></i>
-            <h4 class="font-weight-bold mb-2">{{ .title | markdownify }}</h4>
-            <p>{{ .content | markdownify }}</p>
+            <i class="fas {{ .icon }} fa-3x"></i>
+            <h4 class="font-weight-bold mb-2">{{ $.Page.RenderString .title }}</h4>
+            <p>{{ $.Page.RenderString .content }}</p>
             </div>
             {{ end }}
         </div>
         </div>
-    </div><!-- .container close -->
+    </div>
 </section>
 {{- end }}
 {{- end }}
+<!-- /FEATURES -->
 
 <!-- EXCERPTS -->
 {{ if .Params.excerpt_section.enable }}
 {{ with .Params.excerpt_section }}
-<section class="feature-list section pt-0">
+<section class="feature-list section pt-0" id="excepts">
     <div class="container">
     <div class="col-12 text-center">
         <div class="heading">
@@ -131,6 +133,66 @@
 </section>
 {{ end }}
 {{ end }}
+<!-- /EXCERPTS -->
 
+<!-- LINKS -->
+{{- if .Params.link_section.enable }}
+{{- with .Params.link_section }}
+<section class="section pt-0" id="links">
+	<div class="container">
+        {{ range .list }}
+		<div class="row">
+			<div class="col-md-12 align-self-center text-center text-md-left">
+				<div class="block mb-4">
+					<h2 class="font-weight-bold mb-4">{{ $.Page.RenderString .title }}</h1>
+					<p>{{ $.Page.RenderString .content }}
+                    {{ if not .blogs }}
+                        <a href="{{ .link | absLangURL }}" class="link-primary">{{ $.Page.RenderString .link_name }}</a>
+                    </p>
+                    {{- end }}
+                    {{ range .blogs }}
+                    <p>
+                        <a href="{{ .link | absLangURL }}" class="link-primary">{{ $.Page.RenderString .link_name }}</a>
+                    </p>
+                    {{- end }}
+				</div>
+			</div>
+		</div>
+        {{- end }}
+	</div>
+</section>
+{{- end }}
+{{- end }}
+<!-- /LINKS -->
+
+<!-- TESTIMONIALS -->
+{{- if .Params.testimonial_section.enable }}
+{{- with .Params.testimonial_section }}
+<section class="testimonials section pt-0" id="testimonial">
+<div class="container">
+    <div class="row justify-content-center">
+    <div class="col-12">
+        <div class="heading">
+        <h2>{{ $.Page.RenderString .title }}</h2>
+        </div>
+    </div>
+    {{ range .list }}
+    <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0 text-center">
+        <div class="testimonial-block">
+            <i class="fas fa-quote-right"></i>
+            <p>{{ $.Page.RenderString .content }}</p>
+            <div class="author-details">
+                <img class="img-fluid" src="{{ .image | absURL }}" alt='Logo of {{ .image | replaceRE ".*?(\\w+).png" "$1" }}'>
+                <h4>{{ $.Page.RenderString .name }}</h4>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+    </div>
+</div>
+</section>
+{{- end }}
+{{- end }}
+<!-- TESTIMONIALS -->
 
 {{ end }}

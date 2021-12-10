@@ -5,9 +5,10 @@ draft: false
 
 banner_section:
     enable: true
-    title: "Security compliance from day one!"
-    content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-    image: "images/products/semper_logo.png"
+    title: "SEMPER"
+    content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.<br><br>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+    image : "images/illustrations/cloud_security_event_management_semper.png"
     button:
         enable: true
         label: "Get in touch"
@@ -15,8 +16,8 @@ banner_section:
 
 feature_section:
   enable : true
-  title : "Our Core Features"
-  image : "images/illustrations/cloud_security_event_management_semper.png"
+  title : "AWS Security Finding Management"
+  image : "images/logo/logo_semper_iso.png"
 
   # feature at the left of the image
   left_side:
@@ -56,23 +57,42 @@ feature_section:
 
 excerpt_section:
     enable: true
-    title: "Details"
+    title: "SEMPER in a nutshell"
     list:
       - title: "Detail 1"
         enable: true
         image: "images/illustrations/cloud_swiss_security.png"
         content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet"
-        # button:
-        #   enable: false
-        #   label: "read more about xxx"
-        #   link: "/services/security/xxx"
 
       - title_aws: "Detail 2"
         enable: true
         image: "images/illustrations/cloud_security_event_management_semper.png"
         content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet"
-        # button:
-        #   enable: true
-        #   label: "Contact us to learn more about SEMPER"
-        #   link: "/contact"
+
+link_section:
+    enable: true
+    list:
+    - title: "Documentation"
+      content: "Visit our full documentation with examples and the full architecture on"
+      link: "https://github.com/nuvibit/SEMPER"
+      link_name: "github.com"
+    
+    - title: "Blog"
+      content: "Read more about SEMPER in these blog posts"
+      blogs:
+        - link: "blog1"
+          link_name: "CIS Controls"
+        - link: "blog2"
+          link_name: "Serverless"
+        - link: "blog3"
+          link_name: "Security"
+
+testimonial_section:
+    enable: false
+    title: "Customer References"
+    list:
+      - image: "images/logo/logo_nuvibit_dark.png"
+        name: "Lorem ipsum dolor"
+        content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt"
+
 ---

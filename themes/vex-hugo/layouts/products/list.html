@@ -1,0 +1,136 @@
+{{ define "main" }}
+
+<!-- BANNER -->
+{{- if .Params.banner_section.enable }}
+{{- with .Params.banner_section }}
+<section class="section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 text-center p-4 mb-md-0 zoom" onclick="image_zoom(this)">
+				<img class="img-fluid" src="{{ .image | absURL }}" alt='Illustration of {{ .Image | replaceRE ".*?(\\w+).png" "$1" }}'>
+			</div>
+			<div class="col-md-6 align-self-center text-center text-md-left">
+				<div class="block">
+					<h1 class="font-weight-bold mb-4 font-size-60">{{ $.Page.RenderString .title }}</h1>
+					<p class="mb-4">{{ $.Page.RenderString .content }}</p>
+					{{ if .button.enable }}
+					{{ with .button }}
+					<a href="{{.link|absLangURL}}" class="btn btn-main">{{.label}}</a>
+					{{ end }}
+					{{ end }}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{{- end }}
+{{- end }}
+
+<!-- FEATURES -->
+{{- if .Params.feature_section.enable }}
+{{- with .Params.feature_section }}
+<section class="section" id="features">
+    <div class="container">
+        <div class="row">
+        <div class="col-12">
+            <div class="heading">
+            <h2>{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-md-4">
+            {{ range .left_side }}
+            <div class="mb-40 text-center text-md-left">
+            <i class="fas {{ .icon }} fa-2x"></i>
+            <h4 class="font-weight-bold mb-2">{{ .title | markdownify }}</h4>
+            <p>{{ .content | markdownify }}</p>
+            </div>
+            {{ end }}
+        </div>
+        <div class="col-md-4 text-center align-self-center mb-4 mb-md-0">
+            <img class="img-fluid" src="{{ .image | absURL }}" alt="">
+        </div>
+        <div class="col-md-4">
+            {{ range .right_side }}
+            <div class="mb-40 text-center text-md-left">
+            <i class="fas {{ .icon }} fa-2x"></i>
+            <h4 class="font-weight-bold mb-2">{{ .title | markdownify }}</h4>
+            <p>{{ .content | markdownify }}</p>
+            </div>
+            {{ end }}
+        </div>
+        </div>
+    </div><!-- .container close -->
+</section>
+{{- end }}
+{{- end }}
+
+<!-- EXCERPTS -->
+{{ if .Params.excerpt_section.enable }}
+{{ with .Params.excerpt_section }}
+<section class="feature-list section pt-0">
+    <div class="container">
+    <div class="col-12 text-center">
+        <div class="heading">
+            <h2>{{ $.Page.RenderString .title }}</h2>
+        </div>
+    </div>
+    {{range $index, $element := (where .list "enable" true) }}
+    {{- if (mod $index 2) }}
+    <div class="row item-row">
+        <div class="col-md-6 text-center p-4 mb-lg-0 zoom" onclick="image_zoom(this)">
+        <img class="img-fluid" src="{{ .image | absURL }}" alt='Illustration of {{ .Image | replaceRE ".*?(\\w+).png" "$1" }}'>
+        </div>
+        <div class="col-md-6 align-self-center text-center text-md-left">
+        <div class="content">
+            {{ if .title }}
+            <h4 class="subheading">{{ $.Page.RenderString .title }}</h4>
+            {{ end }}
+            {{ if .title_aws }}
+            <h4 class="subheading mt--20 color-aws">{{ $.Page.RenderString .title_aws }}</h4>
+            {{ end }}
+            {{ if .title_azure }}
+            <h4 class="subheading mt--20 color-azure">{{ $.Page.RenderString .title_azure }}</h4>
+            {{ end }}
+            <p class="md">{{ $.Page.RenderString .content }}</p>
+            {{ if .button.enable }}
+            {{ with .button }}
+            <p><a href="{{ .link | absLangURL }}" class="link-primary">{{ .label }}</a></p>
+            {{ end }}
+            {{ end }}
+        </div>
+        </div>
+    </div>
+    {{- else }}
+    <div class="row item-row">
+        <div class="col-md-6 order-md-1 order-2 align-self-center text-center text-md-left">
+        <div class="content">
+            {{ if .title }}
+            <h4 class="subheading">{{ $.Page.RenderString .title }}</h4>
+            {{ end }}
+            {{ if .title_aws }}
+            <h4 class="subheading mt--20 color-aws">{{ $.Page.RenderString .title_aws }}</h4>
+            {{ end }}
+            {{ if .title_azure }}
+            <h4 class="subheading mt--20 color-azure">{{ $.Page.RenderString .title_azure }}</h4>
+            {{ end }}
+            <p class="md">{{ $.Page.RenderString .content }}</p>
+            {{ if .button.enable }}
+            {{ with .button }}
+            <p><a href="{{ .link | absLangURL }}" class="link-primary">{{ .label }}</a></p>
+            {{ end }}
+            {{ end }}
+        </div>
+        </div>
+        <div class="col-md-6 order-md-2 order-1 text-center p-4 mb-lg-0 zoom" onclick="image_zoom(this)">
+        <img class="img-fluid" src="{{ .image | absURL }}" alt='Illustration of {{ .Image | replaceRE ".*?(\\w+).png" "$1" }}'>
+        </div>
+    </div>
+    {{ end }}
+    {{ end }}
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ end }}

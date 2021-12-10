@@ -142,19 +142,32 @@ parent = "services"
 weight = 6
 
 [[Languages.en.menu.main]]
+identifier = "products"
+name = "Products"
+url = "products"
+weight = 7
+
+[[Languages.en.menu.main]]
+identifier = "semper"
+name = "SEMPER"
+url = "products/semper"
+parent = "products"
+weight = 8
+
+[[Languages.en.menu.main]]
 name = "Blog"
 url = "blog"
-weight = 7
+weight = 9
 
 [[Languages.en.menu.main]]
 name = "About"
 url = "about"
-weight = 8
+weight = 10
 
 [[Languages.en.menu.main]]
 name = "Contact"
 url = "contact"
-weight = 9
+weight = 11
 
 ###################################### English Footer ######################################
 
@@ -286,19 +299,32 @@ parent = "services"
 weight = 6
 
 [[Languages.de.menu.main]]
-name = "Blog"
-url = "blog"
+identifier = "products"
+name = "Products"
+url = "products"
 weight = 7
 
 [[Languages.de.menu.main]]
-name = "Über uns"
-url = "about"
+identifier = "semper"
+name = "SEMPER"
+url = "products/semper"
+parent = "products"
 weight = 8
 
 [[Languages.de.menu.main]]
-name = "Kontakt"
-url = "contact"
+name = "Blog"
+url = "blog"
 weight = 9
+
+[[Languages.de.menu.main]]
+name = "About"
+url = "about"
+weight = 10
+
+[[Languages.de.menu.main]]
+name = "Contact"
+url = "contact"
+weight = 11
 
 ###################################### German Footer ######################################
 

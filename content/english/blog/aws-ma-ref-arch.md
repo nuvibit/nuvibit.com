@@ -18,16 +18,17 @@ The Nuvibit Reference Architecture is derived and implements best practices from
 \- [Multi Account Network Architecture](https://docs.aws.amazon.com/managedservices/latest/userguide/malz-net-arch.html 'Multi Account Network Architecture')<br/>
 \- Industry proven best practices based on our experiences<br/><br/>
 
-This topic is directly linked to the Cloud **Cloud Foundation Core Domains** described here: **TODO Add link to Nuvibit Cloud Foundation Landscape**
+This topic is directly linked to the **Core Domains** of the **Cloud Foundation** described here: **[Nuvibit Cloud Foundation Map](/blog/cloud-foundation-map 'Blog post on the Nuvibit Cloud Foundation Map')** 
+
 ![img](images/blog/aws_ma_ref_arch/foundation_core_domains.png)
 
 ## AWS Account Domains
 Not all accounts are the same and are used for the same kind of workloads and purposes. To simplify the discussion about the different account we can categorize accounts into domains. <br/>
-We use the terms **Foundation Core Accounts**, **Foundation Shared Service Account** and **Business Workload Accounts** to describe the different domains.<br/>
+We use the terms **Foundation Core Accounts**, **Foundation Shared Service Accounts** and **Business Workload Accounts** to describe the different domains.<br/>
 The following graph shows a set of accounts categorized into mentioned domains:
 ![img](images/blog/aws_ma_ref_arch/aws_ma_account_types.png)
 
-We recommend to establish the following **Foundation Core Accounts** and at least two accounts per business workload. Shared Service Accounts are not required for a working Foundation. If you need such an account depends on the systems and platforms you want your teams to use.<br/>
+We recommend to establish the following **Foundation Core Accounts** and at least two accounts per business workload. **Foundation Shared Service Accounts** are not required for a working Foundation. If you need such an account depends on the systems and platforms you want your teams to use.<br/>
 
 {{<table "table table-striped table-bordered">}}
 | Domain | Account Type | Description |
@@ -36,7 +37,7 @@ We recommend to establish the following **Foundation Core Accounts** and at leas
 | Foundation Core | Core Account Lifecycle | Account lifecycle management including vending, baselining and retirement. |
 | Foundation Core | Core Security | Aggregation of [AWS Config](https://aws.amazon.com/config/), [AWS Security Hub](https://aws.amazon.com/security-hub/) and [Amazon GuardDuty](https://aws.amazon.com/guardduty/). <br/> Our security event management solution [SEMPER](linktosemper) is also a citizen of this account. |
 | Foundation Core | Core Logging | Log aggregation and archiving account. No direct access to ensure log integrity. |
-| Foundation Core | Core Monitoring | Hosts your central monitoring solutions (i.e. [AWS openSearch](https://aws.amazon.com/opensearch-service/), [Splunk](https://www.splunk.com/), etc).<br/>This account is separated from the logging account to protect the log archive from [tampering](https://capec.mitre.org/data/definitions/268.html). The integrity of the log archive has to be protected rigorously.|
+| Foundation Core | Core Monitoring | Hosts your central monitoring solutions (i.e. [AWS OpenSearch](https://aws.amazon.com/opensearch-service/), [Splunk](https://www.splunk.com/), etc).<br/>This account is separated from the Core Logging account to protect the log archive from [tampering](https://capec.mitre.org/data/definitions/268.html). The integrity of the log archive has to be protected rigorously.|
 | Foundation Core | Core Image Factory | [Amazon Machine Image (AMI)](https://docs.aws.amazon.com/de_de/AWSEC2/latest/UserGuide/AMIs.html) building account. AMIs are built in this account and shared across the AWS organization. |
 | Foundation Core | Core Networking | Core connectivity services ([Transit Gateway](https://aws.amazon.com/transit-gateway/), [Route53](https://aws.amazon.com/route53/), [Direct Connect](https://aws.amazon.com/directconnect/), [VPN](https://aws.amazon.com/vpn/)).<br/> **Optional:** [Shared VPCs](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html#vpc-sharing-share-subnet) for the whole AWS organization to ensure the network configuration is not altered by the Business Workload teams. |
 | Foundation Shared Service | Shared Services | Shared Service Accounts host services or platforms used by jultiple Business Workloads. Great examples would be a shared streaming platform like [Kafka](https://kafka.apache.org/) (i.e. [MSK](https://aws.amazon.com/msk/)), a data lake solution, an [active directory service](https://aws.amazon.com/directoryservice/) or a shared [Kubernetes](https://kubernetes.io/de/docs/concepts/overview/what-is-kubernetes/) cluster (i.e. [EKS](https://aws.amazon.com/eks/)).|
@@ -45,11 +46,11 @@ We recommend to establish the following **Foundation Core Accounts** and at leas
 <br/>
 
 ## Foundation Core Domain - Account Baseline
-The Capabilities in the **Nuvibit Foundation Core Domain** typically consist not only of a **Foundation Core Account** but also requires some components to be deployed in all Accounts within the AWS organization.<br/>
+The Capabilities in the **Nuvibit Foundation Core Domain** typically consist not only of the **Foundation Core Accounts** but also requires some components to be deployed in all Accounts within the AWS organization.<br/>
 Those distributed components are summarized in the term **Account Baseline**.<br/>
-The Baseline includes account hardening, implementing compliance and security policies as well as wiring the accounts up with the **Foundation Core Account**.<br/><br/>
+The **Account Baseline** includes account hardening, implementing compliance and security policies as well as wiring the accounts up with the **Foundation Core Accounts**.<br/><br/>
 
-This **Account Baseline** is managed in a central place and rolled out to all AWS accounts within the organization.
+This **Account Baseline** is managed in a central place and rolled out to all AWS accounts within the AWS organization.
 
 ![img](images/blog/aws_ma_ref_arch/aws_foundation_core.png)
 

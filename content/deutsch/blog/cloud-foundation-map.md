@@ -18,7 +18,7 @@ Jeder, der mit Hyperscalern wie AWS, Azure oder GCP zu tun hat, ist bereits mit 
 In großen Unternehmen, in denen mehrere Entwicklungsteams mehrere Workloads in der Cloud betreuen, ist es von Vorteil, einige der Aufgaben zu zentralisieren, um die internen Entwicklungsteams zu entlasten.
 
 ## Erweitertes Modell der geteilten Verantwortung
-Dies führt zu einem **Erweitertes Modell der geteilten Verantwortung**, das sich von einer bidirektionalen Beziehung zwischen **Corporate Cloud Consumer** und dem **Cloud Provider** zu einer Dreiecksbeziehung zwischen dem **Corporate Cloud Consumer**, den **Corporate Cloud Foundation Squad** und dem **Cloud Provider** entwickelt. 
+Dies führt zu einem **Erweitertes Modell der geteilten Verantwortung**, das sich von einer bidirektionalen Beziehung zwischen **Cloud Consumer** und dem **Cloud Provider** zu einer Dreiecksbeziehung zwischen dem **Cloud Consumer**, den **Cloud Foundation Team(s)** und dem **Cloud Provider** entwickelt. 
 
 ![img](images/blog/ncfcm/extended_srm.png)
 

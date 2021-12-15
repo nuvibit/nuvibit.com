@@ -41,14 +41,14 @@ We recommend to establish the following **Foundation Core Accounts** and at leas
 | Foundation Core | Core Image Factory | [Amazon Machine Image (AMI)](https://docs.aws.amazon.com/de_de/AWSEC2/latest/UserGuide/AMIs.html) building account. AMIs are built in this account and shared across the AWS organization. |
 | Foundation Core | Core Networking | Core connectivity services ([Transit Gateway](https://aws.amazon.com/transit-gateway/), [Route53](https://aws.amazon.com/route53/), [Direct Connect](https://aws.amazon.com/directconnect/), [VPN](https://aws.amazon.com/vpn/)).<br/> **Optional:** [Shared VPCs](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html#vpc-sharing-share-subnet) for the whole AWS organization to ensure the network configuration is not altered by the Business Workload teams. |
 | Foundation Shared Service | Shared Services | Shared Service Accounts host services or platforms used by jultiple Business Workloads. Great examples would be a shared streaming platform like [Kafka](https://kafka.apache.org/) (i.e. [MSK](https://aws.amazon.com/msk/)), a data lake solution, an [active directory service](https://aws.amazon.com/directoryservice/) or a shared [Kubernetes](https://kubernetes.io/de/docs/concepts/overview/what-is-kubernetes/) cluster (i.e. [EKS](https://aws.amazon.com/eks/)).|
-| Foundation Customer | Business Workload | How you organize your business accounts, is up to you. We recommend to have at least two accounts per business workload to separate production workloads from non-production workloads and reduce the blast radius. Also this enables you to apply different rules and policies to production and non-production accounts. |
+| Foundation Consumer | Business Workload | How you organize your business accounts, is up to you. We recommend to have at least two accounts per business workload to separate production workloads from non-production workloads and reduce the blast radius. Also this enables you to apply different rules and policies to production and non-production accounts. |
 {{</table>}}
 <br/>
 
 ## Foundation Core Domain - Account Baseline
 The Capabilities in the **Nuvibit Foundation Core Domain** typically consist not only of the **Foundation Core Accounts** but also requires some components to be deployed in all Accounts within the AWS organization.<br/>
 Those distributed components are summarized in the term **Account Baseline**.<br/>
-The **Account Baseline** includes account hardening, implementing compliance and security policies as well as wiring the accounts up with the **Foundation Core Accounts**.<br/><br/>
+The **Account Baseline** includes account hardening, implementing compliance and security policies as well as wiring up the accounts with the **Foundation Core Accounts**.<br/><br/>
 
 This **Account Baseline** is managed in a central place and rolled out to all AWS accounts within the AWS organization.
 
@@ -56,7 +56,7 @@ This **Account Baseline** is managed in a central place and rolled out to all AW
 
 We strongly recommended to provision all resources used for the **Foundation Core Capabilities** via **[Infrastructure as Code](/faq/#iac 'What is Infrastructure as Code?')**. Nuvibit made great experience in leveraging [Terraform](https://www.terraform.io/intro/index.html 'Introduction to Terraform').
 
-Nuvibit is specialized in introducing the **Core Capabilities** of a **Corporate Cloud Foundation** to companies.
+Nuvibit is specialized in introducing the **Core Capabilities** of a **Cloud Foundation** to companies.
 
 We will tailor our Foundation Core Terraform modules to your needs and enable you to serve the **Foundation Capabilities** to your **Cloud Workload Development Teams** in a high maturity.
 

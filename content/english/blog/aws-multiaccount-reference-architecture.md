@@ -1,7 +1,7 @@
 ---
 title: "Reference Architecture for AWS Multi-Account Customers"
 date: 2021-12-15T11:00:00+06:00
-image: "images/blog/aws_ma_ref_arch/tile.png"
+image: "images/blog/aws-multiaccount-reference-architecture/tile.png"
 description: "Nuvibit Multi Account Reference Architecture."
 summary: "Introducing the Nuvibit Reference Architecture for customers with a multi-account environment on AWS."
 duration: 15
@@ -20,13 +20,13 @@ The Nuvibit Reference Architecture is derived and implements best practices from
 
 This topic is directly linked to the **Core Domains** of the **Cloud Foundation** described here: **[Nuvibit Cloud Foundation Map](/blog/cloud-foundation-map 'Blog post on the Nuvibit Cloud Foundation Map')** 
 
-![img](images/blog/aws_ma_ref_arch/foundation_core_domains.png)
+![img](images/blog/aws-multiaccount-reference-architecture/foundation-core-domains.png)
 
 ## AWS Account Domains
 Not all accounts are the same and are used for the same kind of workloads and purposes. To simplify the discussion about the different account we can categorize accounts into domains. <br/>
 We use the terms **Foundation Core Accounts**, **Foundation Shared Service Accounts** and **Business Workload Accounts** to describe the different domains.<br/>
 The following graph shows a set of accounts categorized into mentioned domains:
-![img](images/blog/aws_ma_ref_arch/aws_ma_account_types.png)
+![img](images/blog/aws-multiaccount-reference-architecture/aws-ma-account-types.png)
 
 We recommend to establish the following **Foundation Core Accounts** and at least two accounts per business workload. **Foundation Shared Service Accounts** are not required for a working Foundation. If you need such an account depends on the systems and platforms you want your teams to use.<br/>
 
@@ -52,7 +52,7 @@ The **Account Baseline** includes account hardening, implementing compliance and
 
 This **Account Baseline** is managed in a central place and rolled out to all AWS accounts within the AWS organization.
 
-![img](images/blog/aws_ma_ref_arch/aws_foundation_core.png)
+![img](images/blog/aws-multiaccount-reference-architecture/aws-foundation-core.png)
 
 We strongly recommended to provision all resources used for the **Foundation Core Capabilities** via **[Infrastructure as Code](/faq/#iac 'What is Infrastructure as Code?')**. Nuvibit made great experience in leveraging [Terraform](https://www.terraform.io/intro/index.html 'Introduction to Terraform').
 

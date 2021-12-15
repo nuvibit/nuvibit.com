@@ -4,7 +4,7 @@ description: "Häufig gestellte Fragen zu Cloud Themen und unseren Services"
 draft: false
 
 faq:
-  image: "images/illustrations/questions_and_answers.png"
+  image: "images/illustrations/questions-and-answers.png"
   items:
     - question: "Was ist eine Cloud Foundation?"
       answer: Bevor ein Workload in der Public Cloud bereitgestellt werden kann, müssen zahlreiche Komponenten aufeinander abgestimmt werden.

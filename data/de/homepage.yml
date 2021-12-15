@@ -3,7 +3,7 @@ banner:
   enable: true
   title: "Wir haben alles für den Cloud Erfolg auf Lager."
   content: "Wir unterstützen beim Aufbau der [Cloud Foundation](/faq/#foundation 'Was ist eine Cloud Foundation?').<br>Skalierbar, Automatisiert, Enterprise Ready.<br><br>"
-  image: "images/illustrations/cloud_ready_to_ship.png"
+  image: "images/illustrations/cloud-ready-to-ship.png"
   button:
     enable: true
     label: "Kontakt aufnehmen"
@@ -14,7 +14,7 @@ services:
   enable: true
   title: "Wir möchten Sie auf Ihrer Cloud Journey begleiten!"
   items:
-    - image: "images/illustrations/cloud_assistance.png"
+    - image: "images/illustrations/cloud-assistance.png"
       enable: true
       title: "Zusammen sind wir stark."
       content: "Rom wurde nicht an einem Tag erbaut, und das Gleiche gilt für eine zuverlässige Cloud Foundation.<br>
@@ -25,7 +25,7 @@ services:
         label: "Entdecken Sie unsere Assistance Dienstleistungen"
         link: "/services/assistance"
 
-    - image: "images/illustrations/cloud_management.png"
+    - image: "images/illustrations/cloud-management.png"
       enable: true
       title: "Optimieren Sie Ihr Unternehmen für die Cloud."
       content: "Die Ausarbeitung einer Cloud Strategie ist der erste und einfachste Schritt.
@@ -36,7 +36,7 @@ services:
         label: "Entdecken Sie unsere Management Dienstleistungen"
         link: "/services/management"
 
-    - image: "images/illustrations/cloud_security_compliance.png"
+    - image: "images/illustrations/cloud-security-compliance.png"
       enable: true
       title: "Security Compliance vom ersten Tag an!"
       content: "Die Sicherheitsreife Ihrer Cloud Umgebung ist geschäftskritisch.
@@ -47,7 +47,7 @@ services:
         label: "Entdecken Sie unsere Security Dienstleistungen"
         link: "/services/security"
 
-    - image: "images/illustrations/cloud_connectivity.png"
+    - image: "images/illustrations/cloud-connectivity.png"
       enable: true
       title: "Legen Sie den Grundstein mit einem soliden Netzwerk!"
       content: "Connectivity ist eines der ersten Schlüsselthemen, die es auf der Cloud Journey zu lösen gilt.<br>

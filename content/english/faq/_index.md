@@ -4,7 +4,7 @@ description: "Frequenty asked questions regarding cloud topics and our services"
 draft: false
 
 faq:
-  image: "images/illustrations/questions_and_answers.png"
+  image: "images/illustrations/questions-and-answers.png"
   items:
     - question: "what is a cloud foundation?"
       answer: "Before deploying a workload on the public cloud there are many moving parts which have to be coordinated.

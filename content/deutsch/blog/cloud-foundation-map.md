@@ -1,7 +1,7 @@
 ---
 title: "Nuvibit Cloud Foundation Map"
 date: 2021-12-01T11:00:00+06:00
-image: "images/blog/ncfcm/tile.png"
+image: "images/blog/cloud-foundation-map/tile.png"
 description: "Von der Erweiterung des Modells der geteilten Verantwortung zur Nuvibit Cloud Foundation Capability Map mit Fokus auf die Core Domains."
 summary: "In diesem Beitrag wird das erweiterte Modell der geteilten Verantwortung eingeführt und die Nuvibit Cloud Foundation Capability Map vorgestellt."
 duration: 15
@@ -20,7 +20,7 @@ In großen Unternehmen, in denen mehrere Entwicklungsteams mehrere Workloads in 
 ## Erweitertes Modell der geteilten Verantwortung
 Dies führt zu einem **Erweitertes Modell der geteilten Verantwortung**, das sich von einer bidirektionalen Beziehung zwischen **Cloud Consumer** und dem **Cloud Provider** zu einer Dreiecksbeziehung zwischen dem **Cloud Consumer**, den **Cloud Foundation Team(s)** und dem **Cloud Provider** entwickelt. 
 
-![img](images/blog/ncfcm/extended_srm.png)
+![img](images/blog/cloud-foundation-map/extended-srm.png)
 
 In diesem Blog-Beitrag geht es um die Vorstellung der Capabilities der **Cloud Foundation**, die wiederum in **Core Domains** und **Shared Service Domains** unterteilt werden kann. 
 
@@ -32,15 +32,15 @@ Der große Vorteil dieses Modells wird den **Cloud Workload Development Teams** 
 
 Betrachten wir das Beispiel der Sicherheitskontrollen. Ein großer Teil der Sicherheitskontrollen wird direkt von der **Foundation Core Domain** bereitgestellt. Optional wird die **Shared Service Domain** die domänenspezifischen Sicherheitsaspekte hinzufügen. Dadurch kann der eigentliche **Cloud Consumer** bereits mit einem sehr hohen Maß an Sicherheit "out of the box" starten und sich nur auf die workload-spezifischen Sicherheitsaspekte konzentrieren.
 
-![img](images/blog/ncfcm/sample_security.png)
+![img](images/blog/cloud-foundation-map/sample-security.png)
 
 > Die **Cloud Workload Development Teams** können sich auf eine zentral bereitgestellte Cloud-Veredelung verlassen, die von der **Cloud Foundation** angeboten wird.
 
 ## Nuvibit Cloud Foundation Capability Map
 Eine weitere Detaillierung der **Core Domains** der **Cloud Foundation** führt zu dieser **Capability Map**:
 
-![img](images/blog/ncfcm/cloud_capability_map.png)
-<div align="center"><a href="/static/images/blog/ncfcm/cloud_capability_map.png">download image</a></div>  
+![img](images/blog/cloud-foundation-map/cloud-capability-map.png)
+<div align="center"><a href="/images/blog/cloud-foundation-map/cloud-capability-map.png">download image</a></div>  
   
 Jede **Foundation Capability** besteht aus einem technischen Teil und einem Fulfillment-Teil. Eine **Foundation Capability** wird durch ein Foundation Capability Team erbracht (ein Foundation Capability Team kann für mehrere **Foundation Capabilities** verantwortlich sein - z.B. ist das AWS Foundation Security Team für den gesamten **Foundation Security & Governance Bereich** verantwortlich).
 

@@ -1,34 +1,34 @@
 ---
-title: "CIS AWS Foundations Benchmark is cool, but..."
+title: "CIS AWS Foundations Benchmark ist cool, aber..."
 date: 2021-11-24T11:00:00+06:00
-image: "images/blog/cis_aws_3x/cis_controls.png"
-description: "Keeping grip on the current level of security compliance can be a challenge. AWS provides a great tool, that is designed to provide an account overarching overview, valuable especially in AWS Landing Zone architectures: AWS Security Hub"
-summary: "This post explains, why we are in favor of using Amazon EventBridge Rules for monitoring the recommended CIS AWS 3.x controls. "
+image: "images/blog/aws-cis-3x/cis-controls.png"
+description: "Den aktuellen Stand der Sicherheits-Compliance im Griff zu behalten, kann eine Herausforderung sein. AWS bietet ein großartiges Tool, das einen kontoübergreifenden Überblick bietet, der insbesondere in AWS Landing Zone-Architekturen wertvoll ist: AWS Security Hub"
+summary: "In diesem Beitrag wird erklärt, warum wir Amazon EventBridge Rules für die Überwachung der CIS AWS 3.x-Kontrollen empfehlen."
 duration: 10
 draft: false
 ---
-## Context
+## Kontext
 
-Keeping grip on the current level of security compliance can be a challenge. AWS provides a great tool, that is designed to provide an account overarching overview, valuable especially in AWS Landing Zone architectures: **AWS Security Hub**
+Den aktuellen Stand der Sicherheits-Compliance im Griff zu behalten, kann eine Herausforderung sein. AWS bietet ein großartiges Tool, das einen kontoübergreifenden Überblick bietet, der insbesondere in AWS Landing Zone-Architekturen wertvoll ist: **AWS Security Hub**
 
-![img](images/blog/cis_aws_3x/security_hub_dashboard.png)
+![img](images/blog/aws-cis-3x/security-hub-dashboard.png)
 
-AWS Security Hub is a cloud security service that automates best practice checks, aggregates alerts for multi account setups, and supports also automated remediation.  
-With AWS Security Hub you have access to three predefined security standards that give you automated compliance measurement enabled with a single click (caution - cost for the provisioned config rules will apply):  
+AWS Security Hub ist ein Cloud-Sicherheitsservice, der Best-Practice-Prüfungen automatisiert, Findings in Multi-Account-Umgebungen aggregiert und auch automatisierte Behebung unterstützt.  
+Mit AWS Security Hub haben Sie Zugriff auf drei vordefinierte Sicherheitsstandards, die Ihnen mit einem einzigen Klick eine automatisierte Compliance-Messung ermöglichen (Achtung – es fallen Kosten für die bereitgestellten AWS Config Rules an):  
 
 \- CIS AWS Foundations Benchmark [**[CIS-AWS](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-cis.html 'CIS AWS Foundations Benchmark standard - AWS Security Hub')**]<br/>
 \- Payment Card Industry Data Security Standard [**[PCI-DSS](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-pcidss.html 'Payment Card Industry Data Security Standard (PCI DSS) - AWS Security Hub')**]<br/>
 \- AWS Foundational Security Best Practices [**[FSBP](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-fsbp.html 'AWS Foundational Security Best Practices standard - AWS Security Hub')**]<br/><br/>
 
-A security standard is a summary of security controls that can be turned on or off. The cool thing about Security Hub is the automated evaluation of all the related AWS resources with a compliance statement. All this is aggregated to security scores on measure your resource compliance.  
-The following image outlines the concept of AWS Security Hub for compliance measurement:
+Ein Sicherheitsstandard ist eine Zusammenfassung von Sicherheitskontrollen, die aktiviert oder deaktiviert werden können. Das Gute an Security Hub ist die automatisierte Auswertung aller zugehörigen AWS-Ressourcen mit einer Compliance-Bewertung. All dies wird zu Sicherheitsbewertungen zusammengefasst, um Ihre Ressourcen-Compliance zu messen.  
+Die folgende Abbildung skizziert das Konzept von AWS Security Hub für die Compliance-Messung:  
 
-![img](images/blog/cis_aws_3x/security_hub_model.png)
+![img](images/blog/aws-cis-3x/security-hub-model.png)
 
-This blog-post refers especially to the “Monitoring” chapter of the **CIS AWS Foundations Benchmark** [**[CIS-AWS](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-cis.html 'CIS AWS Foundations Benchmark standard - AWS Security Hub')**] which contains the security controls **CIS AWS 3.1 - CIS AWS 3.14**. 
+Dieser Blog-Beitrag bezieht sich insbesondere auf das Kapitel “Monitoring” des **CIS AWS Foundations Benchmark** [**[CIS-AWS](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-cis.html 'CIS AWS Foundations Benchmark standard - AWS Security Hub')**], das die **CIS AWS 3.1 - CIS AWS 3.14**-Kontrollen enthält.
 
 {{<table "table table-striped table-bordered">}}
-| CIS AWS 3.x Security Controls |
+| CIS AWS 3.x-Kontrollen |
 | ------------- |
 | CIS AWS 3.1 Ensure a log metric filter and alarm exist for unauthorized API calls |
 | CIS AWS 3.2 Ensure a log metric filter and alarm exist for Management Console sign-in without MFA |
@@ -46,17 +46,17 @@ This blog-post refers especially to the “Monitoring” chapter of the **CIS AW
 | CIS AWS 3.14 Ensure a log metric filter and alarm exist for VPC changes |
 {{</table>}}
 
-As you notice the CIS AWS 3.x security controls have one thing in common and that is the phrase: “Ensure a log metric filter and alarm exist for …“  
-We fully agree to the goals of CIS AWS 3.x but we think that only ensuring a log metric filter and an alarm exists for those controls is **not sufficient**. 
-It is very important that those controls are carefully monitored and the Security Operations Center (SOC) easily has access to all event data to be able to analyze the finding quickly.<br/><br/>
+Wie Sie feststellen, haben die CIS AWS 3.x-Kontrollen eines gemeinsam und das ist der Satzteil: „Ensure a log metric filter and alarm exist for…“  
+Wir stimmen den Zielen von CIS AWS 3.x voll und ganz zu, sind jedoch der Meinung, dass es **nicht ausreichend** ist, nur sicherzustellen, dass für diese Kontrollen ein Log-Metrikfilter und ein Alarm vorhanden sind.  
+Es ist sehr wichtig, dass diese Kontrollen sorgfältig überwacht werden und das Security Operations Center (SOC) problemlos auf alle Ereignisdaten zugreifen kann, um den Befund schnell analysieren zu können.<br/><br/>
 
-## Clarification
+## Erklärung
 
-Using a log metric filter together with an alarm just indicates that the event occurred, but does not provide data on the actual root cause. 
-Especially in a multi-account setup leveraging AWS CloudTrail for AWS Organizations leaves you in a potential permanent alarm situation. In this scenario, digging for the actual source for the alarm is waste of effort and time.
+Die Verwendung eines Log-Metrikfilters zusammen mit einem Alarm zeigt lediglich an, dass ein Ereignis aufgetreten ist, liefert jedoch keine Daten über das eigentliche Ereignis.
+Insbesondere bei Multi-Account Umgebungen, welche AWS CloudTrail für AWS Organizations nutzen, geraten Sie in eine potenzielle permanente Alarmsituation. In diesem Szenario ist die Suche nach der eigentlichen Quelle für den Alarm mühsam und zeitintensiv.
 
-Sample of an CIS AWS 3.10 alarm sent to a Amazon Simple Notification Service (SNS) topic - hardly any valuable information:
-```text 
+Beispiel für einen CIS AWS 3.10-Alarm, der an ein Amazon Simple Notification Service (SNS) Thema gesendet wurde – kaum wertvolle Informationen:
+```text
 You are receiving this email because your Amazon CloudWatch Alarm "CIS.3.10" in the US East (N. Virginia) region has entered  
 the ALARM state, because "Threshold Crossed: 1 out of the last 1 datapoints [2.0 (15/09/21 18:27:00)] was greater than the  
 threshold (1.0) (minimum 1 datapoint for OK -> ALARM transition)." at "Wednesday 15 September, 2021 18:32:31 UTC".
@@ -85,13 +85,15 @@ Monitored Metric:
 - TreatMissingData:                    missing
 ```
 
-In case of an event you want to know more context information like the acting principal and the affected resource with account and region
+Im Falle eines Ereignisses möchten Sie weitere Kontextinformationen wie den ausführenden Principal und die betroffene Ressource mit Account-ID und Region erfahren
 
-To find the alarm-triggering event information, you need to search the Amazon CloudWatch logs, which is inconvenient.<br/><br/>
+Um die alarmauslösenden Ereignisinformationen zu finden, müssen Sie die Amazon CloudWatch Logs durchsuchen, was umständlich ist.<br/><br/>
 
-## Recommendation
-What we recommend is utilizing Amazon EventBridge Rules on the default event-bus for the CIS AWS 3.x event signatures. You will get an instant event notification with full event information.  
-Sample of an CIS AWS 3.10 Event:
+## Empfehlung
+Wir empfehlen die Verwendung von Amazon EventBridge Rules auf dem default event-bus für die CIS AWS 3.x-Ereignissignaturen.  
+Sie erhalten so eine sofortige Ereignisbenachrichtigung mit vollständigen Ereignisinformationen.  
+  
+Beispiel für ein CIS AWS 3.10-Ereignis:
 ```json {linenos=table,hl_lines=[],linenostart=50}
 {
   "version": "0",
@@ -181,19 +183,20 @@ Sample of an CIS AWS 3.10 Event:
   }
 }
 ```
-As you can see, the event payload itself contains extensive information that is valuable for further security processing.<br/><br/>
+Wie Sie sehen, enthält das Ereignis umfangreiche Informationen, die für die weitere Sicherheitsverarbeitung wertvoll sind.<br/><br/>
 
-## Conclusion
-We recommend to use ***Amazon EventBridge Rules for monitoring of CIS AWS 3.x*** and to add more context like account-tags and the OU-ID of the originating account to the event information.<br/>
-Furthermore, we recommend placing additional sensors beyond the CIS AWS 3.x recommendation, such as:
+## Fazit
+Wir empfehlen, ***Amazon EventBridge Rules für die Überwachung von CIS AWS 3.x*** zu verwenden und den Ereignisinformationen noch mehr Kontext wie zum Beispiel Account-Tags und OU-ID des verursachenden Accounts  hinzuzufügen.<br/>
+Darüber hinaus empfehlen wir, über die CIS AWS 3.x-Empfehlung hinaus zusätzliche Sensoren zu platzieren, wie zum Beispiel:
 
 \- Monitor for OU-SCP assignment changes<br/>
 \- Monitor for SCP policy changes<br/>
 \- Monitor for OU structure changes<br/>
 \- Monitor for Account-OU assignment changes<br/><br/>
 
-## Our Solution
-Your workloads are distributed across multiple AWS accounts and possibly even different regions?
+## Unsere Lösung
 
-With our cloud-native, serverless solution **[SEMPER](/contact/ 'Contact us for more information!')**, you can centrally provision Amazon EventBridge and AWS Config Rules and meaningfully filter resulting events as well as AWS Security Hub and Amazon GuardDuty Findings. 
-In addition, you can enrich relevant findings with valuable additional information and manage the entire solution from a central **[Policy as Code](/faq/#pac 'What is Policy as Code?')** repository.
+Ihre Workloads sind über mehrere AWS Accounts und eventuell sogar verschiedene Regionen verteilt?
+
+Mit unserer cloud-nativen, Serverless-Lösung **[SEMPER](/contact/ 'Kontakt aufnehmen für mehr Infos!')** können Sie Amazon EventBridge- und AWS Config Rules zentral bereitstellen und resultierende Events sowie AWS Security Hub und Amazon GuardDuty Findings sinnvoll filtern.
+Darüber hinaus können Sie relevante Findings mit wichtigen Zusatzinformationen anreichern und die gesamte Lösung über ein zentrales **[Policy as Code](/faq/#pac 'Was ist Policy as Code?')** Repository verwalten.

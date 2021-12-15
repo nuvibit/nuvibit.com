@@ -1,7 +1,7 @@
 ---
 title: "AWS Consulting Partner"
 date: 2021-11-15T11:00:00+06:00
-image: "images/badge/aws_partner_select.png"
+image: "images/badge/aws-partner-select.png"
 
 # meta description
 description : "this is meta description"

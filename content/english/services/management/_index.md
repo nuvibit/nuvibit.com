@@ -9,16 +9,11 @@ banner_section:
     content: "Designing a cloud strategy is the first and easiest step. 
               The hard part is turning the vision into reality and achieving operational excellence.<br><br>
               With our practical experience in reshaping organizations we can help you along the way."
-    image: "images/illustrations/cloud_management.png"
+    image: "images/illustrations/cloud-management.png"
     button:
         enable: true
         label: "Get in touch"
         link: "contact"
-
-# detail_section:
-#     enable: true
-#     title: What do we offer?
-#     content: INSERT CONTENT AS MARKDOWN AT END OF PAGE
 
 tile_section:
     enable: true
@@ -60,24 +55,15 @@ excerpt_section:
     list:
       - title_aws: "AWS Multi-Account Strategy"
         enable: true
-        image: "images/illustrations/cloud_multi_account.png"
+        image: "images/illustrations/cloud-multi-account.png"
         content: "Managing everything in a single account is a recipe for disaster when scaling.<br>
         As the number of workloads grow, you will run into various issues regarding security, isolation, billing and quota limits.
         We can advise you on best practices and help you define the right strategy for your business."
-        link:
-          # enable: false
-          # label: "read more about xxx"
-          # link: "/services/management/xxx"
 
-      # - title_aws: "AWS Account Management"
       - title_aws: "AWS Account Lifecycle"
         enable: true
-        image: "images/illustrations/cloud_account_lifecycle.png"
+        image: "images/illustrations/cloud-account-lifecycle.png"
         content: "Based on the implementation of a multi-account strategy, you face numerous challenges.<br>
         How to configure the master account, structure AWS Organizations, define access rights, manage code repositories and maintain [code pipelines](/faq/#cicd 'What is CI/CD?').
         We offer you an adaptable solution to manage your AWS Accounts including all surrounding systems with [Infrastructure as Code](/faq/#iac 'What is Infrastructure as Code?') in a simple and efficient way."
-        link:
-          # enable: false
-          # label: "read more about nuvibit account manager"
-          # link: "/services/management/xxx"
 ---

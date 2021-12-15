@@ -9,16 +9,11 @@ banner_section:
     content: "Rome wasn't built in a day and the same goes for a reliable cloud foundation.<br><br>
               As a former cross-functional team in a large enterprise we have conquered numerous cloud challenges.
               Now it's your turn and we want to guide you along the way!"
-    image: "images/illustrations/cloud_assistance.png"
+    image: "images/illustrations/cloud-assistance.png"
     button:
         enable: true
         label: "Get in touch"
         link: "contact"
-
-# detail_section:
-#     enable: true
-#     title: What do we offer?
-#     content: INSERT CONTENT AS MARKDOWN AT END OF PAGE
 
 tile_section:
     enable: true
@@ -60,34 +55,21 @@ excerpt_section:
     list:
       - title_aws: "AWS Foundation Squad"
         enable: true
-        image: "images/illustrations/cloud_foundation_squad.png"
+        image: "images/illustrations/cloud-foundation-squad.png"
         content: "Need to significantly accelerate your cloud journey?<br>
                   We get a picture of the current situation, gather the requirements and assemble a team of specialists to build your cloud foundation in a fraction of the usual time.
                   Along the way, we prepare your organization to successfully take ownership of the foundation."
-        # button:
-        #   enable: false
-        #   label: "have a look to our terraform modules"
-        #   link: "https://github.com/nuvibit"
 
       - title_aws: "AWS Reference Architecture"
         enable: true
-        image: "images/illustrations/cloud_architecture.png"
+        image: "images/illustrations/cloud-architecture.png"
         content: "Most cloud reference architectures tend to be generic in order to appeal to a broad audience.<br>
                   Based on our many years of experience in designing and implementing cloud reference architectures, we have composed a set of field-tested, enterprise-ready blueprints for AWS."
-        # button:
-        #   enable: false
-        #   label: "read more about our AWS Reference Architecture"
-        #   link: "/services/assistance/reference_architecture"
 
-      # - title: "Infrastructure as Code Guideance"
       - title_aws: "AWS Terraform Modules"
         enable: true
-        image: "images/illustrations/cloud_infrastructure_as_code.png"
+        image: "images/illustrations/cloud-infrastructure-as-code.png"
         content: "Adapting Infrastructure as Code is a critical component to ensure a robust and scalable cloud foundation in the long term.<br>
                   We rely entirely on [Terraform](https://www.terraform.io/intro/index.html 'Introduction to Terraform') for this purpose and have developed a collection of ready-to-use Terraform modules.
                   Visit the [Terraform Registry](https://registry.terraform.io/namespaces/nuvibit) and take a look at some of our free to use public modules."
-        # button:
-        #   enable: true
-        #   label: "have a look to our terraform modules"
-        #   link: "https://github.com/nuvibit"
 ---

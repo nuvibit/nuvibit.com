@@ -9,16 +9,11 @@ banner_section:
     content: "Rom wurde nicht an einem Tag erbaut, und das Gleiche gilt für eine zuverlässige Cloud Foundation.<br><br>
               Als ehemaliges funktionsübergreifendes Team in einem grossen Schweizer Unternehmen haben wir zahlreiche Cloud Herausforderungen gemeistert.
               Jetzt sind Sie am Zug und wir können Sie dabei unterstützen!"
-    image: "images/illustrations/cloud_assistance.png"
+    image: "images/illustrations/cloud-assistance.png"
     button:
         enable: true
         label: "Kontakt aufnehmen"
         link: "contact"
-
-# detail_section:
-#     enable: true
-#     title: What do we offer?
-#     content: INSERT CONTENT AS MARKDOWN AT END OF PAGE
 
 tile_section:
     enable: true
@@ -60,34 +55,21 @@ excerpt_section:
     list:
       - title_aws: "AWS Foundation Squad"
         enable: true
-        image: "images/illustrations/cloud_foundation_squad.png"
+        image: "images/illustrations/cloud-foundation-squad.png"
         content: "Wollen Sie Ihre Cloud Journey so richtig auf die Sprünge helfen?<br>
                   Wir machen uns ein Bild von der aktuellen Situation, sammeln die Anforderungen und stellen ein Team von Spezialisten zusammen, welches Ihnen eine massgeschneiderte Cloud Foundation in einem Bruchteil der üblichen Zeit aufbaut.
                   Gleichzeitig bereiten wir Ihr Unternehmen darauf vor, diese Cloud Foundation erfolgreich zu übernehmen."
-        # button:
-        #   enable: false
-        #   label: "have a look to our terraform modules"
-        #   link: "https://github.com/nuvibit"
 
       - title_aws: "AWS Referenzarchitekturen"
         enable: true
-        image: "images/illustrations/cloud_architecture.png"
+        image: "images/illustrations/cloud-architecture.png"
         content: "Viele Cloud Referenzarchitekturen tendieren dazu, sehr generisch zu sein, damit ein breites Publikum angesprochen werden kann.<br>
                   Basierend auf unserer Erfahrung bei der Planung und dem Aufbau von Cloud Landschaften haben wir mehrere unternehmenstaugliche und praxiserprobte Architektur Blueprints für AWS entwickelt."
-        # button:
-        #   enable: false
-        #   label: "read more about our AWS Reference Architecture"
-        #   link: "/services/assistance/reference_architecture"
 
-      # - title: "Infrastructure as Code Guideance"
       - title_aws: "AWS Terraform Modules"
         enable: true
-        image: "images/illustrations/cloud_infrastructure_as_code.png"
+        image: "images/illustrations/cloud-infrastructure-as-code.png"
         content: "Die Adaptierung von Infrastructure as Code ist eine entscheidende Komponente, um langfristig eine stabile und skalierbare Cloud Foundation zu gewährleisten.<br>
                   Wir setzen vollständig auf [Terraform](https://www.terraform.io/intro/index.html 'Introduction to Terraform') und haben eine eigene Sammlung von Terraform Modulen entwickelt.
                   Werfen Sie einen Blick auf die [Terraform Registry](https://registry.terraform.io/namespaces/nuvibit) und nutzen Sie unsere öffentlichen Module kostenlos."
-        # button:
-        #   enable: true
-        #   label: "have a look to our terraform modules"
-        #   link: "https://github.com/nuvibit"
 ---

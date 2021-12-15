@@ -1,5 +1,5 @@
 ---
-title: "Nuvibit Referenz Architektur für AWS Multi-Account Kunden"
+title: "Referenz Architektur für AWS Multi-Account Kunden"
 date: 2021-12-15T11:00:00+06:00
 image: "images/blog/aws_ma_ref_arch/tile.png"
 description: "ToDo."

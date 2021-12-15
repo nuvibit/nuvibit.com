@@ -18,7 +18,7 @@ Anyone engaged with hyperscalers like AWS, Azure or GCP has already encountered 
 In large enterprises where multiple development teams run multiple workloads in the cloud, it is beneficial, to centralize some of the customer responsibilities to offer them to the internal development teams in a streamlined way.
 
 ## Extended Shared Responsibility Model
-This leads to an **Extended Shared Responsibility Model** shifting from a bi-directional relationship between **Corporate Cloud Consumer** and the **Cloud Provider** to a triangle relationship between the **Corporate Cloud Consumer**, the **Corporate Cloud Foundation Services** and the **Cloud Provider**. 
+This leads to an **Extended Shared Responsibility Model** shifting from a bi-directional relationship between **Corporate Cloud Consumer** and the **Cloud Provider** to a triangle relationship between the **Corporate Cloud Consumer**, the **Corporate Cloud Foundation Squad** and the **Cloud Provider**. 
 
 
 ![img](images/blog/ncfcm/extended_srm.png)

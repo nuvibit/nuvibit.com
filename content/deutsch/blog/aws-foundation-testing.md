@@ -1,7 +1,7 @@
 ---
 title: "You're probably missing an AWS environment..."
 date: 2021-12-15T11:00:00+06:00
-image: "images/blog/aws-missing-environment/tile.png"
+image: "images/blog/aws-foundation-testing/foundation-testing.png"
 description: "Nuvibit Cloud Foundation IaC CI/CD Reference Architecture."
 summary: "Foundation services such as vending, security, logging, monitoring, image factory, and networking cannot be properly tested in a live AWS environment because they can directly impact all workloads."
 duration: 10
@@ -24,7 +24,7 @@ For example, how should a network failover be tested in a live AWS environment w
 For any testing to be meaningful, the test environment must be as close as possible to the production environment.
 This is the key point why we recommend an additional AWS environment specifically for foundation testing.
 
-![img](images/blog/aws-missing-environment/foundation-environments.png)
+![img](images/blog/aws-foundation-testing/foundation-environments.png)
 
 ## Reference Architecture
 
@@ -36,7 +36,7 @@ Each of these repositories has its own CI/CD pipeline which is responsible for d
 
 The only difference in the CI/CD pipeline configuration is that some point to a separate identical AWS environment.
 
-![img](images/blog/aws-missing-environment/aws-foundation-cicd-reference-architecture.png)
+![img](images/blog/aws-foundation-testing/aws-foundation-cicd-reference-architecture.png)
 
 ## Conclusion
 

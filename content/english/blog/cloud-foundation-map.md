@@ -1,7 +1,7 @@
 ---
 title: "Nuvibit Cloud Foundation Map"
 date: 2021-12-01T11:00:00+06:00
-image: "images/blog/cloud-foundation-map/tile.png"
+image: "images/blog/cloud-foundation-map/foundation-map.png"
 description: "From extending the shared responsibility model to the Nuvibit Cloud Foundation Capability Map with a focus on the Core Domains."
 summary: "This post introduces the extended shared responsibility model and presents the Nuvibit Cloud Foundation Capability Map."
 duration: 10

@@ -44,7 +44,7 @@ feature_section:
     # feature item loop
   - title : "Filter accepted Security Findings"
     icon : "fa-filter"
-    content : "Define policies for filtering out accepted Security Findings and automated reflection to AWS Security Hub and Amazuon GuardDuty."
+    content : "Define policies for filtering out accepted Security Findings and automated reflection to AWS Security Hub and Amazon GuardDuty."
 
     # feature item loop
   - title : "Enrich relevant Security Findings"

@@ -18,7 +18,7 @@ banner_section:
 
 feature_section:
   enable : true
-  title : "AWS Security Finding Management"
+  title : "SEMPER Features"
   image : "images/semper/cloud_security_event_management_semper_no_circle.png"
 
   # feature at the left of the image

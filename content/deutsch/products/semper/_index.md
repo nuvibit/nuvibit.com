@@ -15,7 +15,7 @@ banner_section:
 
 feature_section:
   enable : true
-  title : "Our Core Features"
+  title : "SEMPER Features"
   image : "images/illustrations/semper_logo_circle.png"
 
   # feature at the left of the image

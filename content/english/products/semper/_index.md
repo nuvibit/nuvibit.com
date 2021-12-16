@@ -10,7 +10,7 @@ banner_section:
               Then you know the challenge keeping track of the security compliance of your AWS resources and managing security events in realtime.<br><br>
               SEMPER enables you in a consistent and auditable way to manage your Security Sensors on a very granular level and to filter accepted Security Findings automatically. <br>
               All with a central repository of policies. We take **[Security as Code](/faq/#pac 'What is Security / Policy as Code?')** serious. "
-    image : "images/semper/semper_factory_iso.png"
+    image: "images/semper/semper_logo_iso.png"
     button:
         enable: true
         label: "Get in touch"
@@ -19,7 +19,7 @@ banner_section:
 feature_section:
   enable : true
   title : "AWS Security Finding Management"
-  image : "images/semper/semper_logo_iso.png"
+  image : "images/semper/cloud_security_event_management_semper_no_circle.png"
 
   # feature at the left of the image
   left_side:

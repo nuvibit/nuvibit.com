@@ -8,7 +8,7 @@ banner_section:
     title: "SEMPER"
     content: "You manage multiple AWS Accounts and have your workload distributed in multiple AWS regions?  <br>
               Then you know the challenge keeping track of the security compliance of your AWS resources and managing security events in realtime.<br><br>
-              SEMPER enables you in a consistent and auditable way to manage your Security Sensors on a very granular level and to filter accepted Security Findings automated. <br>
+              SEMPER enables you in a consistent and auditable way to manage your Security Sensors on a very granular level and to filter accepted Security Findings automatically. <br>
               All with a central repository of policies. We take **[Security as Code](/faq/#pac 'What is Security / Policy as Code?')** serious. "
     image : "images/semper/semper_factory_iso.png"
     button:
@@ -26,16 +26,16 @@ feature_section:
     # feature item loop
     # feature item loop
   - title : "Manage all with Policy as Code"
-    icon : "fa-cog"
+    icon : "fa-code"
     content : "Manage all SEMPER features with a single Policy as Code repository."
 
   - title : "Provision AWS Config- and AWS EventBridge Rules"
-    icon : "fa-cog"
+    icon : "fa-share-alt"
     content : "Provision custom AWS Config- and AWS EventBridge Rules precisely in all your required accounts."
     
     # feature item loop
   - title : "Tailor AWS Security Hub Standards"
-    icon : "fa-cog"
+    icon : "fa-cogs"
     content : "Manage the Security Standards of AWS Security Hub on member-account level."
 
 
@@ -43,17 +43,17 @@ feature_section:
   right_side:
     # feature item loop
   - title : "Filter accepted Security Findings"
-    icon : "fa-cog"
+    icon : "fa-filter"
     content : "Define policies for filtering out accepted Security Findings and automated reflection to AWS Security Hub and Amazuon GuardDuty."
 
     # feature item loop
   - title : "Enrich relevant Security Findings"
-    icon : "fa-cog"
+    icon : "fa-pencil-alt"
     content : "Enrich relevant Security Findings with context information like account-tags for better post processing."
 
     # feature item loop
   - title : "Serverless and AWS Native"
-    icon : "fa-cog"
+    icon : "fa-cloud"
     content : "Our serverless solution seamlessly integrates with AWS Config, AWS CloudTrail, AWS Security Hub and Amazon GuardDuty."
 
 
@@ -63,12 +63,12 @@ excerpt_section:
     list:
       - title: "Policy based Securtiy Sensor Distribution"
         enable: true
-        image: "images/semper/semper_configure.png"
+        image: "images/semper/semper_configure_new.png"
         content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet"
 
       - title_aws: "Policy based Securtiy Finding Processing"
         enable: true
-        image: "images/semper/semper_processing.png"
+        image: "images/semper/semper_processing_new.png"
         content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet"
 
 link_section:

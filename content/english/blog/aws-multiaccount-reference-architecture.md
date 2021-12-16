@@ -1,6 +1,6 @@
 ---
 title: "Reference Architecture for AWS Multi-Account Customers"
-date: 2021-12-15T11:00:00+06:00
+date: 2021-12-10T11:00:00+06:00
 image: "images/blog/aws-multiaccount-reference-architecture/tile.png"
 description: "Nuvibit Multi Account Reference Architecture."
 summary: "Introducing the Nuvibit Reference Architecture for customers with a multi-account environment on AWS."
@@ -35,7 +35,7 @@ We use the terms **Foundation Core Accounts**, **Foundation Shared Service Accou
 <br/>
 
 The following graph shows a set of accounts categorized into mentioned domains:
-![img](images/blog/aws-multiaccount-reference-architecture/aws-ma-account-types.png)
+![img](images/blog/aws-multiaccount-reference-architecture/aws-foundation-account-types.png)
 
 We recommend to establish the following **Foundation Core Accounts** and at least two accounts per business workload. **Foundation Shared Service Accounts** are not required for a working Foundation. If you need such an account depends on the systems and platforms you want your teams to use.<br/>
 

@@ -18,19 +18,19 @@ The Nuvibit Reference Architecture is derived and implements best practices from
 \- [Multi Account Network Architecture](https://docs.aws.amazon.com/managedservices/latest/userguide/malz-net-arch.html 'Multi Account Network Architecture')<br/>
 \- Industry proven best practices based on our experiences<br/><br/>
 
-This topic is directly linked to the **Core Domains** of the **Nuvibit Cloud Foundation** described here: **[Nuvibit Cloud Foundation Map](/blog/cloud-foundation-map 'Blog post on the Nuvibit Cloud Foundation Map')** 
+Focus of this post are the  **Core Domains** of the **Nuvibit Cloud Foundation** described here: **[Nuvibit Cloud Foundation Map](/blog/cloud-foundation-map 'Blog post on the Nuvibit Cloud Foundation Map')** 
 
 ![img](images/blog/aws-multiaccount-reference-architecture/foundation-core-domains.png)
 
 ## AWS Account Domains
 Not all accounts are the same and are used for the same kind of workloads and purposes. To simplify the discussion about the different accounts we can categorize them into domains. <br/>
-We use the terms **Foundation Core Accounts**, **Foundation Shared Service Accounts** and **Business Workload Accounts** to describe the different domains.<br/>
+We define the domains **Foundation Core**, **Foundation Shared Service** and **Business Workload** to categorize the different accounts.<br/>
 {{<table "table table-striped table-bordered">}}
 | Domain | Description |
 | ---   | :---  |
-| **Foundation Core Account** | Hosts core components of the Nuvibit Cloud Foundation |
-| **Foundation Shared Service Account** | Hosts shared services and platforms (streaming platform, data lake, analitics platform, API management, etc.) |
-| **Business Workload Account** | Hosts the all the components of the business applications |
+| **Foundation Core** | Accounts that host core components of the Nuvibit Cloud Foundation. Maintained by the Cloud Foundation Core Team(s). |
+| **Foundation Shared Service** | Account that host shared services and platforms (streaming platform, data lake, analitics platform, API management, etc.). Maintained by the Cloud Foundation Shared Service Teams. |
+| **Business Workload** | Accounts that host the all the components of the business applications. Ownerd by the Cloud Workload Development Teams. |
 {{</table>}}
 <br/>
 
@@ -50,12 +50,12 @@ We recommend to establish the following **Foundation Core Accounts** and at leas
 | Foundation Core | Core Image Factory | [Amazon Machine Image (AMI)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html) building account. AMIs are built in this account and shared across the AWS organization. |
 | Foundation Core | Core Networking | Core connectivity services ([Transit Gateway](https://aws.amazon.com/transit-gateway/), [Route53](https://aws.amazon.com/route53/), [Direct Connect](https://aws.amazon.com/directconnect/), [VPN](https://aws.amazon.com/vpn/)).<br/> **Optional:** [Shared VPCs](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html#vpc-sharing-share-subnet) for the whole AWS organization to ensure the network configuration is not altered by the Business Workload teams. |
 | Foundation Shared Service | Shared Services | Shared Service Accounts host services or platforms used by multiple Business Workloads. Great examples would be a shared streaming platform like [Kafka](https://kafka.apache.org/) (i.e. [MSK](https://aws.amazon.com/msk/)), a data lake solution, an [active directory service](https://aws.amazon.com/directoryservice/) or a shared [Kubernetes](https://kubernetes.io/de/docs/concepts/overview/what-is-kubernetes/) cluster (i.e. [EKS](https://aws.amazon.com/eks/)).|
-| Foundation Consumer | Business Workload | How you organize your business workload accounts, is up to you. We recommend to have at least two accounts per business workload to separate production workloads from non-production workloads and reduce the blast radius. Also this enables you to apply different rules and policies to production and non-production accounts. |
+| Business Workload | Workload | How you organize your business workload accounts, is up to you. We recommend to have at least two accounts per business workload to separate production workloads from non-production workloads and reduce the blast radius. Also this enables you to apply different rules and policies to production and non-production accounts. |
 {{</table>}}
 <br/>
 
 ## Foundation Core Domain - Account Baseline
-The Capabilities in the **Nuvibit Foundation Core Domain** typically consist not only of the **Foundation Core Accounts** but also requires some components to be deployed in all Accounts within the AWS organization.<br/>
+The Capabilities in the **Nuvibit Foundation Core Domain** typically consist not only of the **Foundation Core Accounts** but also require some components to be deployed in all Accounts within the AWS organization.<br/>
 Those distributed components are summarized in the term **Account Baseline**.<br/>
 The **Account Baseline** includes account hardening, implementing compliance and security policies as well as wiring up the accounts with the **Foundation Core Accounts**.<br/><br/>
 

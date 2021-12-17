@@ -7,7 +7,7 @@ banner_section:
     enable: true
     title: "Security compliance from day one!"
     content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-    image: "images/products/cloud-security-event-management-semper-no-circle.png"
+    image: "images/products/semper-logo-iso.png"
     button:
         enable: true
         label: "Get in touch"
@@ -16,7 +16,7 @@ banner_section:
 feature_section:
   enable : true
   title : "SEMPER Features"
-  image : "images/illustrations/semper-logo-circle.png"
+  image : "images/products/semper-illustration.png"
 
   # feature at the left of the image
   left_side:

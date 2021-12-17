@@ -23,7 +23,7 @@ This topic is directly linked to the **Core Domains** of the **Nuvibit Cloud Fou
 ![img](images/blog/aws-multiaccount-reference-architecture/foundation-core-domains.png)
 
 ## AWS Account Domains
-Not all accounts are the same and are used for the same kind of workloads and purposes. To simplify the discussion about the different account we can categorize accounts into domains. <br/>
+Not all accounts are the same and are used for the same kind of workloads and purposes. To simplify the discussion about the different accounts we can categorize them into domains. <br/>
 We use the terms **Foundation Core Accounts**, **Foundation Shared Service Accounts** and **Business Workload Accounts** to describe the different domains.<br/>
 {{<table "table table-striped table-bordered">}}
 | Domain | Description |

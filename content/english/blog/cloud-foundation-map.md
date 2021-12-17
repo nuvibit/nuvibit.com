@@ -9,11 +9,10 @@ draft: false
 ---
 ## Context
 
-Anyone engaged with hyperscalers like AWS, Azure or GCP has already encountered some form of the shared responsibility model:
+Anyone engaged with hyperscalers like AWS or Azure has already encountered some form of the shared responsibility model:
 
 \- [AWS Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/?nc1=h_ls 'AWS Shared Responsibility Model Website')  
 \- [Azure Shared responsibility in the cloud](https://docs.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility 'Azure Shared responsibility in the cloud Website')  
-\- [Google Cloud Platform: Shared Responsibility Matrix](https://services.google.com/fh/files/misc/gcp_pci_srm__apr_2019.pdf 'Google Cloud Platform: Shared Responsibility Matrix Whitepaper')  
 
 In large enterprises where multiple development teams run multiple workloads in the cloud, it is beneficial, to centralize some of the customer responsibilities to offer them to the internal development teams in a streamlined way.
 
@@ -30,7 +29,7 @@ The **Core Domains** represent the fundamental capabilities like Cloud Managemen
 **Shared Service Domains** are capabilities like Container, IoT, BigData or Machine Learning that will be consumed by the **Cloud Consumers**.
   
 
-The big advantage of this model is offered to the **Cloud Workload Development Teams** who benefit from a cultivated layer of the **Cloud Provider** offering enabling them to focus on the pure challenge of their workload. 
+The big advantage of this model is offered to the **Cloud Workload Development Teams** who benefit from a cultivated layer of the **Cloud Provider** offering, enabling them to focus on the pure challenge of their workload. 
 
 Let's look at the example of security controls. A large piece of security controls are provided directly by the **Foundation Core Domain**. Optionally the **Shared Service Domain** will add the domain-specific security aspects. This will allow the actual **Cloud Consumer** to start already with a very high level of security “out of the box” and to focus only on the workload specific security aspects.
 
@@ -42,9 +41,7 @@ Let's look at the example of security controls. A large piece of security contro
 ## Nuvibit Cloud Foundation Capability Map
 Further zooming in to the **Core Domains** of the **Cloud Foundation** leads to this **Capability Map**:
 
-![img](images/blog/cloud-foundation-map/cloud-capability-map.png)
-<div align="center"><a href="/images/blog/cloud-foundation-map/cloud-capability-map.png">download image</a></div>  
-  
+![img](images/blog/cloud-foundation-map/cloud-capability-map.png)<div align="center"><a href="/images/blog/cloud-foundation-map/cloud-capability-map.png" target="_blank">download image</a></div><br>
 
 Each **Foundation Capability** consists of technical part and a fulfillment part. A **Foundation Capability** is owned by one Foundation Capability Team (one Foundation Capability Team can be responsible for multiple **Foundation Capabilities** - e.g. the corporate AWS Foundation Security Team is responsible for the whole **Foundation Security & Governance Domain**).
 

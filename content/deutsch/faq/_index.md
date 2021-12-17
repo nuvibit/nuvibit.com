@@ -44,7 +44,7 @@ faq:
       enable: true
 
     - question: "Was ist auto-remediation?"
-      answer: "Mit auto-remediation wird automatisiert auf die Verletzung von Security und Compliance Policies reagiert. Wenn Beispielsweise eine Security Group mit unsicheren Regeln erstellt wird, könnte man auf den Event reagieren und mit auto-remediation die Security Group löschen."
+      answer: "Mit auto-remediation wird automatisiert auf die Verletzung von Security und Compliance Policies reagiert. Wenn beispielsweise eine Security Group mit unsicheren Regeln erstellt wird, könnte man auf den Event reagieren und mit auto-remediation die Security Group löschen."
       anchor: autoremediation
       enable: true
 

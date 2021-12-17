@@ -62,7 +62,7 @@ excerpt_section:
         enable: true
         image: "images/products/semper-processing.png"
         content: "SEMPER consumes all the sensor events centrally and enriches them with important metadata like source account tags, context from AWS Organizations and policy based infos. Furthermore, SEMPER is capable of suppressing and filtering false positives based on your predefined rules.
-        The enriched findings are sent to an SNS Topic and persisted in a CloudWatch Logs stream. From there you can either pass them for further analysis to a third party tool of your choice (Splunk, Logstash, AWS QuickSight, etc) or you can go a step further and implement **[auto-remediation](/faq/autoremediation 'What is auto-remediation?')** for certain findings."
+        The enriched findings are sent to an SNS Topic and persisted in a CloudWatch Logs stream. From there you can either pass them for further analysis to a third party tool of your choice (Splunk, Logstash, AWS QuickSight, etc) or you can go a step further and implement **[auto-remediation](/faq#autoremediation 'What is auto-remediation?')** for certain findings."
 
 link_section:
     enable: true

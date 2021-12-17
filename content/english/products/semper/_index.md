@@ -23,9 +23,9 @@ feature_section:
 
   # feature at the left of the image
   left_side:
-  - title : "Manage all with Policy as Code"
-    icon : "fa-code"
-    content : "Manage all SEMPER features with a single Policy as Code repository."
+  - title : "Serverless and AWS Native"
+    icon : "fa-cloud"
+    content : "Our serverless solution seamlessly integrates with AWS Config, AWS CloudTrail, AWS Security Hub and Amazon GuardDuty."
 
   - title : "Provision AWS Config- and AWS EventBridge Rules"
     icon : "fa-share-alt"
@@ -45,9 +45,10 @@ feature_section:
     icon : "fa-pencil-alt"
     content : "Enrich relevant security findings with context information like account-tags for better post processing."
 
-  - title : "Serverless and AWS Native"
-    icon : "fa-cloud"
-    content : "Our serverless solution seamlessly integrates with AWS Config, AWS CloudTrail, AWS Security Hub and Amazon GuardDuty."
+  - title : "Manage all with Policy as Code"
+    icon : "fa-code"
+    content : "Manage all SEMPER features with a single Policy as Code repository."
+
 
 excerpt_section:
     enable: true

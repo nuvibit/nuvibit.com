@@ -58,7 +58,6 @@ We recommend to establish the following **Foundation Core Accounts** and at leas
 The Capabilities in the **Nuvibit Foundation Core Domain** typically consist not only of the **Foundation Core Accounts** but also require some components to be deployed in all Accounts within the AWS organization.<br/>
 Those distributed components are summarized in the term **Account Baseline**.<br/>
 The **Account Baseline** includes account hardening, implementing compliance and security policies as well as wiring up the accounts with the **Foundation Core Accounts**.<br/><br/>
-
 This **Account Baseline** is managed in a central place and rolled out to all AWS accounts within the AWS organization.
 
 ![img](images/blog/aws-multiaccount-reference-architecture/aws-foundation-core.png)

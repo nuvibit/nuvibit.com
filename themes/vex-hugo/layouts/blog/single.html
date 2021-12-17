@@ -7,7 +7,7 @@
 				<div class="block">
 					<h1 class="font-weight-bold mb-4 font-size-60">{{ .Title }}</h1>
           <div class="col-md-10 m-auto p-3 blog-page">
-            <img class="card-img-top blog-tile-img" src="{{ .Params.image | absURL }}" alt='Illustration of {{ .Params.Image | replaceRE ".*?(\\w+).png" "$1" }}'>
+            <img class="card-img-top blog-tile-img" src="{{ .Params.image | absURL }}" alt='Illustration of {{ .Params.Image | replaceRE ".*?([\\w-]+).png" "$1" }}'>
           </div>
 				</div>
 			</div>

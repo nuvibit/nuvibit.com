@@ -1,3 +1,9 @@
-<div class="col-md-10 m-auto p-3 zoom" onclick="image_zoom(this)">
-    <img class="img-fluid" src="{{ .Destination | absURL }}" alt='Illustration of {{ .Destination | replaceRE ".*?(\\w+).png" "$1" }}'>
+<div class="col-md-10 m-auto p-3 text-right zoom" onclick="image_zoom(this)">
+    {{ $imgPath := .Destination }}
+    {{- if strings.HasSuffix $imgPath "-highres.png" }}
+    <img class="img-fluid" src='{{ (replace .Destination "-highres.png" ".png") | absURL }}' alt='Illustration of {{ (replace .Destination "-highres.png" ".png") | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+    <a href='{{ .Destination | absURL }}' target="_blank"><i class="fas fa-external-link-alt"></i> high resolution</a>
+    {{- else }}
+    <img class="img-fluid" src="{{ .Destination | absURL }}" alt='Illustration of {{ .Destination | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+    {{- end }}
 </div>

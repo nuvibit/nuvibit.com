@@ -14,7 +14,7 @@
       <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0 text-center">
         <div class="testimonial-block">
           <div class="">
-            <img src="{{ .image | absURL }}" alt='Logo of {{ .Image | replaceRE ".*?(\\w+).png" "$1" }}'>
+            <img src="{{ .image | absURL }}" alt='Logo of {{ .Image | replaceRE ".*?([\\w-]+).png" "$1" }}'>
             <h4>{{ .name }}</h4>
             <span>{{ .designation }}</span>
           </div>

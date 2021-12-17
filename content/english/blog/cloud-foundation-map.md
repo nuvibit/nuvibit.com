@@ -41,7 +41,7 @@ Let's look at the example of security controls. A large piece of security contro
 ## Nuvibit Cloud Foundation Capability Map
 Further zooming in to the **Core Domains** of the **Cloud Foundation** leads to this **Capability Map**:
 
-![img](images/blog/cloud-foundation-map/cloud-capability-map.png)<div align="center"><a href="/images/blog/cloud-foundation-map/cloud-capability-map.png" target="_blank">download image</a></div><br>
+![img](images/blog/cloud-foundation-map/cloud-capability-map-highres.png)
 
 Each **Foundation Capability** consists of technical part and a fulfillment part. A **Foundation Capability** is owned by one Foundation Capability Team (one Foundation Capability Team can be responsible for multiple **Foundation Capabilities** - e.g. the corporate AWS Foundation Security Team is responsible for the whole **Foundation Security & Governance Domain**).
 

@@ -11,7 +11,7 @@
 			</div>
       <div class="col-md-5 text-center p-4 zoom" onclick="image_zoom(this)">
 				{{ with .Params.faq }}
-        <img class="img-fluid w-100" src="{{ .Image | absURL }}" alt='Illustration of {{ .Image | replaceRE ".*?(\\w+).png" "$1" }}'>
+        <img class="img-fluid w-100" src="{{ .Image | absURL }}" alt='Illustration of {{ .Image | replaceRE ".*?([\\w-]+).png" "$1" }}'>
         {{ end }}
 			</div>
     </div>
@@ -24,7 +24,7 @@
       <div class="col-md-5 mb-4 mb-md-0">
         <div class="sticky-image zoom" onclick="image_zoom(this)">
           {{ with .Params.faq }}
-          <img class="img-fluid w-100" src="{{ .Image | absURL }}" alt='Illustration of {{ .Image | replaceRE ".*?(\\w+).png" "$1" }}'>
+          <img class="img-fluid w-100" src="{{ .Image | absURL }}" alt='Illustration of {{ .Image | replaceRE ".*?([\\w-]+).png" "$1" }}'>
           {{ end }}
         </div>
       </div>

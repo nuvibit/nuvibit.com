@@ -38,7 +38,7 @@ Betrachten wir das Beispiel der Sicherheitskontrollen. Ein grosser Teil der Sich
 ## Nuvibit Cloud Foundation Capability Map
 Eine weitere Detaillierung der **Core Domains** der **Cloud Foundation** führt zu dieser **Capability Map**:
 
-![img](images/blog/cloud-foundation-map/cloud-capability-map.png)<div align="center"><a href="/images/blog/cloud-foundation-map/cloud-capability-map.png" target="_blank">download image</a></div><br>
+![img](images/blog/cloud-foundation-map/cloud-capability-map-highres.png)
 
 Jede **Foundation Capability** besteht aus einem technischen Teil und einem Fulfillment-Teil. Eine **Foundation Capability** wird durch ein Foundation Capability Team erbracht (ein Foundation Capability Team kann für mehrere **Foundation Capabilities** verantwortlich sein - z.B. ist das AWS Foundation Security Team für den gesamten **Foundation Security & Governance Bereich** verantwortlich).
 

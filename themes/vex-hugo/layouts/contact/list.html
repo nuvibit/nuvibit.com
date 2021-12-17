@@ -17,7 +17,7 @@
       {{ end }}
       <div class="col-lg-3 col-sm-6 mb-5">
         {{ with .Params.contact }}
-        <img class="img-fluid w-100" src="{{ .Image | absURL }}" alt='Illustration of {{ .Image | replaceRE ".*?(\\w+).png" "$1" }}'>
+        <img class="img-fluid w-100" src="{{ .Image | absURL }}" alt='Illustration of {{ .Image | replaceRE ".*?([\\w-]+).png" "$1" }}'>
         {{ end }}
       </div>
     </div>

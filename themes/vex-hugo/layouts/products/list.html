@@ -32,33 +32,33 @@
 {{- with .Params.feature_section }}
 <section class="section" id="features">
     <div class="container">
-        <div class="row">
-        <div class="col-12">
-            <div class="heading">
-            <h2>{{ $.Page.RenderString .title }}</h2>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="heading">
+                <h2>{{ $.Page.RenderString .title }}</h2>
+                </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            {{ range .left_side }}
-            <div class="mb-40 text-center text-md-left">
-            <i class="fa {{ .icon }} fa-3x"></i>
-            <h4 class="font-weight-bold mb-2">{{ $.Page.RenderString .title }}</h4>
-            <p>{{ $.Page.RenderString .content }}</p>
+            <div class="col-md-4">
+                {{ range .left_side }}
+                <div class="feature-body mb-40 text-center text-md-left">
+                    <i class="fa {{ .icon }} fa-3x"></i>
+                    <h4 class="font-weight-bold mb-2">{{ $.Page.RenderString .title }}</h4>
+                    <p>{{ $.Page.RenderString .content }}</p>
+                </div>
+                {{ end }}
             </div>
-            {{ end }}
-        </div>
-        <div class="col-md-4 text-center align-self-center mb-4 mb-md-0 zoom" onclick="image_zoom(this)">
-            <img class="img-fluid" src="{{ .image | absURL }}" alt='Illustration of {{ .Image | replaceRE ".*?(\\w+).png" "$1" }}'>
-        </div>
-        <div class="col-md-4">
-            {{ range .right_side }}
-            <div class="mb-40 text-center text-md-left">
-            <i class="fas {{ .icon }} fa-3x"></i>
-            <h4 class="font-weight-bold mb-2">{{ $.Page.RenderString .title }}</h4>
-            <p>{{ $.Page.RenderString .content }}</p>
+            <div class="col-md-4 text-center align-self-center mb-4 mb-md-0 zoom" onclick="image_zoom(this)">
+                <img class="img-fluid" src="{{ .image | absURL }}" alt='Illustration of {{ .Image | replaceRE ".*?(\\w+).png" "$1" }}'>
             </div>
-            {{ end }}
-        </div>
+            <div class="col-md-4">
+                {{ range .right_side }}
+                <div class="feature-body mb-40 text-center text-md-left">
+                    <i class="fas {{ .icon }} fa-3x"></i>
+                    <h4 class="font-weight-bold mb-2">{{ $.Page.RenderString .title }}</h4>
+                    <p>{{ $.Page.RenderString .content }}</p>
+                </div>
+                {{ end }}
+            </div>
         </div>
     </div>
 </section>

@@ -36,7 +36,7 @@ Each of these repositories has its own CI/CD pipeline which is responsible for d
 
 The only difference in the CI/CD pipeline configuration is that some point to a separate identical AWS environment.
 
-![img](images/blog/aws-foundation-testing/aws-foundation-cicd-reference-architecture.png)
+![img](images/blog/aws-foundation-testing/aws-foundation-cicd-reference-architecture-highres.png)
 
 ## Conclusion
 

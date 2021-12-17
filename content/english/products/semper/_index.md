@@ -51,14 +51,14 @@ feature_section:
 
 excerpt_section:
     enable: true
-    title: "In a nutshell"
+    title: "In a nutshell..."
     list:
       - title: "Policy based Securtiy Sensor Distribution"
         enable: true
         image: "images/products/semper-configure.png"
         content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet"
 
-      - title_aws: "Policy based Securtiy Finding Processing"
+      - title: "Policy based Securtiy Finding Processing"
         enable: true
         image: "images/products/semper-processing.png"
         content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet"
@@ -67,17 +67,17 @@ link_section:
     enable: true
     list:
     - title: "Documentation"
+      enable: false
       content: "Visit our full documentation with examples and the full architecture on"
       link: "https://github.com/nuvibit/SEMPER"
       link_name: "github.com"
     
     - title: "Blog"
+      enable: true
       content: "Read more about SEMPER in these blog posts"
       blogs:
         - link: "blog/cis-aws-3x"
           link_name: "CIS AWS Foundations Benchmark is cool, but..."
-        - link: "blog/aws-ma-ref-arch"
-          link_name: "Reference Architecture for AWS Multi-Account Customers"
 
 testimonial_section:
     enable: false

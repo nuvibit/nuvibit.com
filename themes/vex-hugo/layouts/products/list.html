@@ -77,32 +77,6 @@
         </div>
     </div>
     {{range $index, $element := (where .list "enable" true) }}
-    {{- if (mod $index 2) }}
-    <div class="row item-row">
-        <div class="col-md-6 text-center p-4 mb-lg-0 zoom" onclick="image_zoom(this)">
-        <img class="img-fluid" src="{{ .image | absURL }}" alt='Illustration of {{ .Image | replaceRE ".*?(\\w+).png" "$1" }}'>
-        </div>
-        <div class="col-md-6 align-self-center text-center text-md-left">
-        <div class="content">
-            {{ if .title }}
-            <h4 class="subheading">{{ $.Page.RenderString .title }}</h4>
-            {{ end }}
-            {{ if .title_aws }}
-            <h4 class="subheading mt--20 color-aws">{{ $.Page.RenderString .title_aws }}</h4>
-            {{ end }}
-            {{ if .title_azure }}
-            <h4 class="subheading mt--20 color-azure">{{ $.Page.RenderString .title_azure }}</h4>
-            {{ end }}
-            <p class="md">{{ $.Page.RenderString .content }}</p>
-            {{ if .button.enable }}
-            {{ with .button }}
-            <p><a href="{{ .link | absLangURL }}" class="link-primary">{{ .label }}</a></p>
-            {{ end }}
-            {{ end }}
-        </div>
-        </div>
-    </div>
-    {{- else }}
     <div class="row item-row">
         <div class="col-md-6 order-md-1 order-2 align-self-center text-center text-md-left">
         <div class="content">
@@ -128,7 +102,6 @@
         </div>
     </div>
     {{ end }}
-    {{ end }}
     </div>
 </section>
 {{ end }}
@@ -141,6 +114,7 @@
 <section class="section pt-0" id="links">
 	<div class="container">
         {{ range .list }}
+        {{- if .enable }}
 		<div class="row">
 			<div class="col-md-12 align-self-center text-center text-md-left">
 				<div class="block mb-4">
@@ -150,14 +124,17 @@
                         <a href="{{ .link | absLangURL }}" class="link-primary">{{ $.Page.RenderString .link_name }}</a>
                     </p>
                     {{- end }}
+                    <ul class="list-group">
                     {{ range .blogs }}
-                    <p>
+                    <li class="list-group-item">
                         <a href="{{ .link | absLangURL }}" class="link-primary">{{ $.Page.RenderString .link_name }}</a>
-                    </p>
+                    </li>
                     {{- end }}
+                    </ul>
 				</div>
 			</div>
 		</div>
+        {{- end }}
         {{- end }}
 	</div>
 </section>

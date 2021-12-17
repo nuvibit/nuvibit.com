@@ -65,12 +65,12 @@ excerpt_section:
     list:
       - title: "Policy based Securtiy Sensor Distribution"
         enable: true
-        image: "images/semper/semper-configure-new.png"
+        image: "images/products/semper-configure.png"
         content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet"
 
       - title_aws: "Policy based Securtiy Finding Processing"
         enable: true
-        image: "images/semper/semper-processing-new.png"
+        image: "images/products/semper-processing.png"
         content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet"
 
 link_section:

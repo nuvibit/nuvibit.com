@@ -43,6 +43,11 @@ faq:
       anchor: cis
       enable: true
 
+    - question: "what is auto-remediation?"
+      answer: "Auto-remediation describes the technique to automatically react on a policy violation and actively engage to enforce to a policy. If for example an AWS Security Group with insecure rules is deployed, the Security Group could be automatically destroyed by auto-remediation."
+      anchor: autoremediation
+      enable: true
+
     - question: "what is FinOps?"
       answer: "FinOps is shorthand for \"Cloud Financial Operations\" and describes finance best practices for the cloud.
               Traditional processes are at their limits with pay-as-you-go models, where the costs scale with the actual workload.<br>

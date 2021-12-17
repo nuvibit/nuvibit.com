@@ -6,9 +6,9 @@ draft: false
 banner_section:
     enable: true
     title: "SEMPER"
-    content: "You manage multiple AWS Accounts and have your workload distributed in multiple AWS regions?  <br>
+    content: "You manage multiple AWS accounts and have your workload distributed in multiple AWS regions?  <br>
               Then you know the challenge keeping track of the security compliance of your AWS resources and managing security events in realtime.<br><br>
-              SEMPER enables you in a consistent and auditable way to manage your Security Sensors on a very granular level and to filter accepted Security Findings automatically. <br>
+              SEMPER enables you in a consistent and auditable way to manage your security sensors on a very granular level and to filter accepted security findings automatically. <br>
               All with a central repository of policies. We take **[Security as Code](/faq/#pac 'What is Security / Policy as Code?')** serious. "
     image: "images/products/semper-logo.png"
     button:
@@ -33,17 +33,17 @@ feature_section:
     
   - title : "Tailor AWS Security Hub Standards"
     icon : "fa-cogs"
-    content : "Manage the Security Standards of AWS Security Hub on member-account level."
+    content : "Manage the security standards of AWS Security Hub on member-account level."
 
   # feature at the right of the image
   right_side:
   - title : "Filter accepted Security Findings"
     icon : "fa-filter"
-    content : "Define policies for filtering out accepted Security Findings and automated reflection to AWS Security Hub and Amazon GuardDuty."
+    content : "Define policies for filtering out accepted security findings and automated reflection to AWS Security Hub and Amazon GuardDuty."
 
   - title : "Enrich relevant Security Findings"
     icon : "fa-pencil-alt"
-    content : "Enrich relevant Security Findings with context information like account-tags for better post processing."
+    content : "Enrich relevant security findings with context information like account-tags for better post processing."
 
   - title : "Serverless and AWS Native"
     icon : "fa-cloud"
@@ -56,7 +56,7 @@ excerpt_section:
       - title: "Policy based Securtiy Sensor Distribution"
         enable: true
         image: "images/products/semper-configure.png"
-        content: "SEMPER deploys and configures sensors in all your AWS Accounts based on predefined policy sets that you can customize and extend. The sensors are built on the cloud native services SecurityHub, CloudTrail, Config and GuardDuty. We continuously extend and optimize the policy sets to meet security best practices and compliance standards."
+        content: "SEMPER deploys and configures sensors in all your AWS Accounts based on predefined policy sets that you can customize and extend. The sensors are built on the cloud native services AWS Security Hub, AWS CloudTrail, AWS Config and Amazon GuardDuty. We continuously extend and optimize the policy sets to meet security best practices and compliance standards."
 
       - title: "Policy based Securtiy Finding Processing"
         enable: true

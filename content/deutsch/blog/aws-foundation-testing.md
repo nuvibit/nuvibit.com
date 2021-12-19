@@ -25,22 +25,22 @@ Eine sichere und skalierbare Cloud Foundation wird Ihre Cloud Journey erheblich 
 ## Foundation Testing
 
 Die zuverlässige und sichere Bereitstellung von Workloads in einer **Multi-Account AWS Umgebung** erfordert eine solide und getestete Foundation.
-Die meisten Workloads können in derselben AWS Organisation für Produktion und Testing betrieben werden, da sie leicht voneinander getrennt werden können.
+Die meisten Workloads können in derselben [AWS Organization](https://aws.amazon.com/de/organizations/) für Produktion und Testing betrieben werden, da sie leicht voneinander getrennt werden können.
 Foundation-Services wie Vending, Security, Logging, Monitoring, Image Factory und Networking können in einer produktiven AWS Umgebung nicht ausreichend getestet werden, da diese nicht isoliert werden können oder einen direkten Einfluss auf alle Workloads haben können.
 
-Wie kann beispielsweise ein Netzwerk-Failover in einer produktiven AWS Organisation realistisch getestet werden, ohne die Workloads zu beeinträchtigen?
+Wie kann beispielsweise ein Netzwerk-Failover in einer produktiven AWS Organization realistisch getestet werden, ohne die Workloads zu beeinträchtigen?
 Oder stellen Sie sich eine vorgesehene Anpassung der Organisationsstruktur oder der [Service-Kontrollrichtlinien (SCP)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) vor.
 
 Gründliche Tests sind hier besonders ratsam, da sich ein Fehler sofort auf alle Ihre Cloud-Workloads auswirken kann.
 
 Um aussagekräftige Tests durchführen zu können, muss die Cloud Foundation-Testumgebung so nah wie möglich an der Produktionsumgebung sein.
-Dies ist der entscheidende Punkt, weshalb wir eine zusätzliche AWS-Organisation speziell für **Foundation Testing** empfehlen.
+Dies ist der entscheidende Punkt, weshalb wir eine zusätzliche AWS Organization speziell für **Foundation Testing** empfehlen.
 
 ![img](images/blog/aws-foundation-testing/foundation-environments.png)
 
 ## Referenz Architektur
 
-Die Verwendung von Infrastructure as Code macht das Verwalten einer zusätzlichen AWS-Organisation nahezu mühelos.
+Die Verwendung von Infrastructure as Code macht das Verwalten einer zusätzlichen AWS Organization nahezu mühelos.
 Das Herzstück beider Umgebungen sind **Infrastructure as Code Module**, die jeweils Foundation Core Capabilities darstellen. 
 Diese Module sind wiederverwendbare Komponenten, die mit umgebungsspezifischen Parametern bestückt werden können.
 

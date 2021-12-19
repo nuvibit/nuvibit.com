@@ -13,53 +13,40 @@ First of all, what is a **Cloud Foundation** anyway and why should I care about 
 
 Before deploying a workload to the public cloud there are many moving parts which have to be coordinated.
 There are **technical parts** such as connectivity or security and **organizational parts** such as finance or operations.
-All of these elements are part of your individual cloud Foundation, which dictates the path for future deployments.
+All of these elements are part of your individual Cloud Foundation, which dictates the path for future deployments.
 
-Each cloud customer has a cloud Foundation to some extent, but if that Foundation is not actively shaped from the start, it can cause massive bottlenecks down the road.
+Each cloud customer has a Cloud Foundation to some extent, but if that Foundation is not actively shaped from the start, it can cause massive bottlenecks down the road.
 
 As an example, let's assume that we started with the VPC provided by AWS by default.
 Later in our cloud journey, we decide to set up a VPN from the office to our VPC and encounter overlapping network areas.
 Instead of focusing on our workloads, we now waste time troubleshooting issues we could have avoided if we had initially put more effort into the foundation.
 
-A secure and scalable cloud Foundation will significantly accelerate your cloud adoption journey and is the key to success.
+A secure and scalable Cloud Foundation will significantly accelerate your cloud adoption journey and is the key to success.
 ## Foundation Testing
 
 Running workloads reliably and securely in a **multi-account AWS environment** requires a solid and tested Foundation.
-Most workloads can run in the same AWS environment for production and testing as they can be easily separated.
-Foundation services such as vending, security, logging, monitoring, image factory, and networking cannot be properly tested in a live AWS environment because they cannot be separated or they can directly impact all workloads.
+Most workloads can run in the same AWS Organization for production and testing as they can be easily separated.
+Foundation services such as vending, security, logging, monitoring, image factory, and networking cannot be properly tested in the productive AWS Organization because they cannot be separated or they can directly impact all workloads.
 
-For instance, how can network failover be realistically tested in a live AWS environment without impacting any workloads?
+For instance, how can network failover be realistically tested in a live AWS Organization without impacting any workloads?
+Or imagine a planned change to your organizational unit structure or your guardrailing [service control polcies (SCP)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html). 
 
-To perform meaningful tests, the test environment must be as close as possible to the production environment.
-This is the key point why we recommend an additional AWS environment specifically for **Foundation Testing**.
+Thorough testing is highly recommended as an error will instantly impact all your cloud workloads.
+
+To perform meaningful tests, the Cloud Foundation test environment must be as close as possible to the production environment.
+This is the key point why we recommend an additional AWS Organization specifically for **Foundation Testing**.
 
 ![img](images/blog/aws-foundation-testing/foundation-environments.png)
 
 ## Reference Architecture
 
-Leveraging Infrastructure as Code makes managing an additional AWS environment nearly effortless.
-At the heart of both environments are **Infrastructure as Code modules**, which are reusable components that can be populated with different parameters depending on the environment.
+Leveraging Infrastructure as Code makes managing an additional AWS Organization nearly effortless.
+At the heart of both environments are **Infrastructure as Code modules** representing the Foundation Core Capabilities. This modules are reusable components, populated with the different environment specific parameters.
 
-Each Foundation core service gets a dedicated **pipeline code repository** for each environment where the Infrastructure as Code modules are invoked.
-Each of these repositories has a separate **CI/CD pipeline** responsible for deploying the infrastructure as Code definition in its corresponding AWS environment.
+Each Foundation Core Capability gets a dedicated **pipeline code repository** for each environment where the Infrastructure as Code modules are invoked.
+Each of these repositories has a separate **CI/CD pipeline** responsible for deploying the infrastructure as Code definition in its corresponding Foundation Testing or -Production environment.
 
 ![img](images/blog/aws-foundation-testing/aws-foundation-cicd-reference-architecture-highres.png)
-
-Let's take a look at an example with Terraform:
-```terraform {linenos=table,hl_lines=[7],linenostart=50}
-# This is an excerpt from the code repository of the Image Factory pipeline (Foundation Testing environment)
-# The Terraform module for the image factory is invoked with the "testing" parameter
-module "image_factory" {
-  source  = "nuvibit/foundation-image-factory/aws"
-  version = "~> 1.0"
-  
-  foundation_environment = "testing"
-  platform               = "Linux"
-  base_image_name        = "amzn2-ami-hvm"
-  base_image_arch        = "x86_64"
-}
-```
-<br/>
 
 ## Conclusion
 

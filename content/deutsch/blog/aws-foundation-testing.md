@@ -1,45 +1,59 @@
 ---
-title: "You're probably missing an AWS environment..."
-date: 2021-12-15T11:00:00+06:00
+title: "Ihnen fehlt vermutlich eine AWS Umgebung..."
+date: 2021-12-19T11:00:00+06:00
 image: "images/blog/aws-foundation-testing/foundation-testing.png"
-description: "Nuvibit Cloud Foundation IaC CI/CD Reference Architecture."
-summary: "Foundation services such as vending, security, logging, monitoring, image factory, and networking cannot be properly tested in a live AWS environment because they can directly impact all workloads."
-duration: 10
+description: "Nuvibit Cloud Foundation IaC CI/CD Referenz Architektur."
+summary: "Foundation-Services wie Vending, Security, Logging, Monitoring, Image Factory und Networking können in einer produktiven AWS Umgebung nicht ausreichend getestet werden, da diese nicht isoliert werden können oder einen direkten Einfluss auf alle Workloads haben können."
+duration: 4
 draft: false
 ---
-## Context
+## Kontext
 
-First of all, what is a Cloud Foundation anyway and why should I care about it?
+Was ist eigentlich eine **Cloud Foundation** und warum sollte ich mich dafür interessieren?
 
-[insert cloud foundation summary]
+Bevor ein Workload in die Public Cloud verlagert werden kann, müssen viele Aspekte koordiniert werden.
+Es gibt **technische Aspekte** wie Connectivity oder Security und **organisatorische Aspekte** wie Finance oder Operations.
+Alle diese Elemente sind Teil Ihrer individuellen Cloud Foundation, die den Kurs für künftige Anwendungen vorgibt.
 
+Jeder Cloud-Kunde hat bereits zu einem gewissen Grad eine eigene Cloud Foundation, aber wenn diese Foundation nicht von Anfang an aktiv geformt wird, kann es schnell zu erheblichen Engpässen kommen.
+
+Nehmen wir beispielsweise an, dass wir mit dem von AWS standardmäßig bereitgestellten VPC begonnen haben.
+Zu einem späteren Zeitpunkt unserer Cloud Journey möchten wir ein VPN vom Firmensitz zu unserem VPC einrichten und stossen auf überlappende Netzwerkbereiche.
+Anstatt uns auf unsere Workloads zu konzentrieren, verschwenden wir nun wertvolle Zeit mit der Behebung von Problemen, die wir hätten vermeiden können, wenn wir von Anfang an mehr in die Foundation investiert hätten.
+
+Eine sichere und skalierbare Cloud Foundation wird Ihre Cloud Journey erheblich beschleunigen und ist der Schlüssel zum Erfolg.
 ## Foundation Testing
 
-To run workloads reliably and securely in a multi-account AWS environment, a solid and tested foundation is therefore required.
-Most Workloads can run in the same AWS environment for production and testing as they can be easily separated.
-Foundation services such as vending, security, logging, monitoring, image factory, and networking cannot be properly tested in a live AWS environment because they can directly impact all workloads.
+Die zuverlässige und sichere Bereitstellung von Workloads in einer **Multi-Account AWS Umgebung** erfordert eine solide und getestete Foundation.
+Die meisten Workloads können in derselben AWS Organisation für Produktion und Testing betrieben werden, da sie leicht voneinander getrennt werden können.
+Foundation-Services wie Vending, Security, Logging, Monitoring, Image Factory und Networking können in einer produktiven AWS Umgebung nicht ausreichend getestet werden, da diese nicht isoliert werden können oder einen direkten Einfluss auf alle Workloads haben können.
 
-For example, how should a network failover be tested in a live AWS environment without impacting any workloads?
+Wie kann beispielsweise ein Netzwerk-Failover in einer produktiven AWS Organisation realistisch getestet werden, ohne die Workloads zu beeinträchtigen?
+Oder stellen Sie sich eine vorgesehene Anpassung der Organisationsstruktur oder der [Service-Kontrollrichtlinien (SCP)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) vor.
 
-For any testing to be meaningful, the test environment must be as close as possible to the production environment.
-This is the key point why we recommend an additional AWS environment specifically for foundation testing.
+Gründliche Tests sind hier besonders ratsam, da sich ein Fehler sofort auf alle Ihre Cloud-Workloads auswirken kann.
+
+Um aussagekräftige Tests durchführen zu können, muss die Cloud Foundation-Testumgebung so nah wie möglich an der Produktionsumgebung sein.
+Dies ist der entscheidende Punkt, weshalb wir eine zusätzliche AWS-Organisation speziell für **Foundation Testing** empfehlen.
 
 ![img](images/blog/aws-foundation-testing/foundation-environments.png)
 
-## Reference Architecture
+## Referenz Architektur
 
-By leveraging infrastructure as code, managing the additional AWS environment is virtually a no-brainer.
-At the heart of both environments are Infrastructure as Code modules, which are reusable components that can be populated with different parameters depending on the given environment.
+Die Verwendung von Infrastructure as Code macht das Verwalten einer zusätzlichen AWS-Organisation nahezu mühelos.
+Das Herzstück beider Umgebungen sind **Infrastructure as Code Module**, die jeweils Foundation Core Capabilities darstellen. 
+Diese Module sind wiederverwendbare Komponenten, die mit umgebungsspezifischen Parametern bestückt werden können.
 
-Each Foundation core service gets a separate pipeline code repository for each environment where the Infrastructure as Code modules are invoked.
-Each of these repositories has its own CI/CD pipeline which is responsible for deploying the infrastructure as a code definition in its designated AWS environment.
-
-The only difference in the CI/CD pipeline configuration is that some point to a separate identical AWS environment.
+Jede Foundation Core Capability erhält ein eigenes **Pipeline Code Repository** für jede Umgebung, in der die Infrastructure as Code Module aufgerufen werden.
+Jedes dieser Repositories verfügt über eine separate **CI/CD-Pipeline**, die für die Bereitstellung der Infrastruktur als Code Definition in der entsprechenden Foundation Testumgebung oder Produktionsumgebung verantwortlich ist.
 
 ![img](images/blog/aws-foundation-testing/aws-foundation-cicd-reference-architecture-highres.png)
 
-## Conclusion
+## Fazit
 
-[insert short conclusion]
+Wir liefern hier die Vorlage, aber der Feinschliff besteht darin, diese genau auf Ihre Anforderungen und Vorlieben abzustimmen, um den größten Nutzen daraus zu ziehen.
 
-**[Contact](/contact/ 'Contact us for more information!')** us for further details.
+Nuvibit ist auf den Aufbau von unternehmenstauglichen, sicheren und skalierbaren Cloud Foundations spezialisiert.
+Wir unterstützen Sie gerne bei der Implementierung Ihrer individuellen Cloud Foundation.
+
+**[Kontaktieren Sie uns](/contact/ 'Kontaktieren Sie uns für weitere Informationen.')** für weitere Informationen.

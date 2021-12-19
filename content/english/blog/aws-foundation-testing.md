@@ -3,7 +3,7 @@ title: "You're probably missing an AWS environment..."
 date: 2021-12-19T11:00:00+06:00
 image: "images/blog/aws-foundation-testing/foundation-testing.png"
 description: "Nuvibit Cloud Foundation IaC CI/CD Reference Architecture."
-summary: "Foundation services such as vending, security, logging, monitoring, image factory, and networking cannot be properly tested in a live AWS environment because they cannot be separated or they can directly impact all workloads."
+summary: "Foundation services such as vending, security, logging, monitoring, image factory and networking cannot be properly tested in a productive AWS environment because they cannot be separated or they can directly impact all workloads."
 duration: 4
 draft: false
 ---
@@ -26,12 +26,12 @@ A secure and scalable Cloud Foundation will significantly accelerate your cloud 
 
 Running workloads reliably and securely in a **multi-account AWS environment** requires a solid and tested Foundation.
 Most workloads can run in the same AWS Organization for production and testing as they can be easily separated.
-Foundation services such as vending, security, logging, monitoring, image factory, and networking cannot be properly tested in the productive AWS Organization because they cannot be separated or they can directly impact all workloads.
+Foundation services such as vending, security, logging, monitoring, image factory and networking cannot be properly tested in the productive AWS environment because they cannot be separated or they can directly impact all workloads.
 
 For instance, how can network failover be realistically tested in a live AWS Organization without impacting any workloads?
-Or imagine a planned change to your organizational unit structure or your guardrailing [service control polcies (SCP)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html). 
+Or imagine a proposed change to your organizational unit structure or your [service control polcies (SCP)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html).
 
-Thorough testing is highly recommended as an error will instantly impact all your cloud workloads.
+Thorough testing is highly recommended, as a failure will immediately impact all of your cloud workloads.
 
 To perform meaningful tests, the Cloud Foundation test environment must be as close as possible to the production environment.
 This is the key point why we recommend an additional AWS Organization specifically for **Foundation Testing**.
@@ -41,7 +41,8 @@ This is the key point why we recommend an additional AWS Organization specifical
 ## Reference Architecture
 
 Leveraging Infrastructure as Code makes managing an additional AWS Organization nearly effortless.
-At the heart of both environments are **Infrastructure as Code modules** representing the Foundation Core Capabilities. This modules are reusable components, populated with the different environment specific parameters.
+At the heart of both environments are **Infrastructure as Code modules** representing the Foundation Core Capabilities. 
+This modules are reusable components, populated with the different environment specific parameters.
 
 Each Foundation Core Capability gets a dedicated **pipeline code repository** for each environment where the Infrastructure as Code modules are invoked.
 Each of these repositories has a separate **CI/CD pipeline** responsible for deploying the infrastructure as Code definition in its corresponding Foundation Testing or -Production environment.

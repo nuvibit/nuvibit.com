@@ -1,10 +1,10 @@
 ---
 title: "Referenz Architektur für AWS Multi-Account Kunden"
-date: 2021-12-10T11:00:00+06:00
-image: "images/blog/aws-multiaccount-reference-architecture/tile.png"
+date: 2021-12-18T11:00:00+06:00
+image: "images/blog/aws-multiaccount-reference-architecture/reference-org-architecture.png"
 description: "Nuvibit Multi Account Referenz Architektur."
 summary: "In diesem Post stellen wir die Nuvibit Referenz Architektur für Kunden vor, die in ihrer Umgebung mehrere AWS Accounts betreiben."
-duration: 15
+duration: 5
 
 draft: false
 ---

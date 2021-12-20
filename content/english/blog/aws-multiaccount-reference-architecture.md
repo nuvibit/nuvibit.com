@@ -48,7 +48,8 @@ The following graphic serves as an example and gives an overview of the differen
 
 ![img](images/blog/aws-multiaccount-reference-architecture/aws-foundation-account-types.png)
 
-We recommend to establish the following **Foundation Core Accounts** and at least two accounts per business workload. **Foundation Shared Service Accounts** are not required for a working Foundation. If you need such an account depends on the systems and platforms you want your teams to use.
+We recommend setting up the following **Foundation Core Accounts** and at least two accounts per business application. 
+**Foundation Shared Service Accounts** are optional and whether you need them depends on your individual requirements.
 
 {{<table "table table-striped table-bordered">}}
 | Domain | Account Type | Description |
@@ -74,10 +75,14 @@ This **Account Baseline** is managed in a central place and rolled out to all AW
 
 ![img](images/blog/aws-multiaccount-reference-architecture/aws-foundation-core.png)
 
-We strongly recommended to provision all resources used for the **Foundation Core Capabilities** via **[Infrastructure as Code](/faq/#iac 'What is Infrastructure as Code?')**. Nuvibit made great experience in leveraging [Terraform](https://www.terraform.io/intro/index.html 'Introduction to Terraform').<br/><br/>
+We strongly recommended to provision all resources used for the **Foundation Core Capabilities** via **[Infrastructure as Code](/faq/#iac 'What is Infrastructure as Code?')**. 
+From experience, we rely exclusively on [Terraform](https://www.terraform.io/intro/index.html 'Introduction to Terraform') for this purpose.
+<br/><br/>
 
-Nuvibit is specialized in introducing the **Core Capabilities** of a **Cloud Foundation** to companies.
+### Our service
 
-We will tailor our Foundation Core Terraform modules to your needs and enable you to serve the **Foundation Capabilities** to your **Cloud Workload Development Teams** in a high maturity.
+Nuvibit specializes in providing **Cloud Foundation Capabilities** to organizations.
 
-**[Contact](/contact/ 'Contact us for more information!')** us for further details.
+We will tailor our **Foundation Blueprint** to your needs and enable you to deliver **Foundation Capabilities** to your **Cloud Workload Development Teams** with a high level of maturity.
+
+**[Get in touch](/contact/ 'Contact us for more information!')** with us for further details.

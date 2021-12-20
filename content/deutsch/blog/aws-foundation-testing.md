@@ -4,7 +4,7 @@ date: 2021-12-19T11:00:00+06:00
 image: "images/blog/aws-foundation-testing/foundation-testing.png"
 description: "In diesem Beitrag wird die Nuvibit Cloud Foundation IaC CI/CD Referenz Architektur vorgestellt."
 summary: "Foundation-Services wie Vending, Security, Logging, Monitoring, Image Factory und Networking können in einer produktiven AWS Umgebung nicht ausreichend getestet werden, da diese nicht isoliert werden können oder einen direkten Einfluss auf alle Workloads haben können."
-duration: 4
+duration: 5
 draft: false
 ---
 ## Kontext
@@ -52,8 +52,12 @@ Jedes dieser Repositories verfügt über eine separate **CI/CD-Pipeline**, die f
 ## Fazit
 
 Wir liefern hier die Vorlage, aber der Feinschliff besteht darin, diese genau auf Ihre Anforderungen und Vorlieben abzustimmen, um den größten Nutzen daraus zu ziehen.
+<br/><br/>
 
-Nuvibit ist auf den Aufbau von unternehmenstauglichen, sicheren und skalierbaren Cloud Foundations spezialisiert.
-Wir unterstützen Sie gerne bei der Implementierung Ihrer individuellen Cloud Foundation.
+### Unsere Dienstleistung
+
+Nuvibit ist darauf spezialisiert, **Cloud Foundation Capabilities** in Unternehmen einzuführen.
+
+Wir passen unseren **Foundation Blueprint** an Ihre Bedürfnisse an und befähigen Sie, **Foundation Capabilities** mit einem hohen Reifegrad für Ihre **Cloud Workload Development Teams** bereitzustellen.
 
 **[Kontaktieren Sie uns](/contact/ 'Kontaktieren Sie uns für weitere Informationen.')** für weitere Informationen.

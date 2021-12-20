@@ -49,8 +49,8 @@ Die folgende Grafik dient als Beispiel und gibt einen Überblick über die versc
 
 ![img](images/blog/aws-multiaccount-reference-architecture/aws-foundation-account-types.png)
 
-Unsere Referenzarchitektur empfiehlt die folgenden **Foundation Core Accounts** und zusätzlich mindestend zwei **Business Workload Accounts** pro Workload.
-**Foundation Shared Service Accounts** sind für eine funktionierende Foundation nicht notwendig. Ob Sie solche Accounts benötigen hängt davon ab, welche Plattformen oder Services Sie den Teams mit Ihrer Foundation bereitstellen möchten.<br/>
+Wir empfehlen, die folgenden **Foundation Core Accounts** und mindestens zwei Konten pro Business-Applikation einzurichten.
+**Foundation Shared Service Accounts** sind optional und ob Sie diese benötigen, hängt von Ihren individuellen Anforderungen ab.
 
 {{<table "table table-striped table-bordered">}}
 | Domain | Account Typ | Beschreibung |
@@ -69,17 +69,21 @@ Unsere Referenzarchitektur empfiehlt die folgenden **Foundation Core Accounts** 
 
 ## Foundation Core Domain - Account Baseline
 
-Die Capabilities der **Nuvibit Foundation Core Domain** bestehen typischerweise nicht nur aus den **Foundation Core Accounts** sondern setzen voraus, dass einige Komponenten in allen Accounts innerhalb der AWS Organization deployed werden.<br/>
+Die Capabilities der **Nuvibit Foundation Core Domain** bestehen typischerweise nicht nur aus den **Foundation Core Accounts** sondern setzen voraus, dass einige Komponenten in allen Accounts innerhalb der AWS Organization bereitgestellt werden.<br/>
 Diese verteilten Komponenten nennen wir **Account Baseline**.<br/>
 Die **Account Baseline** umfasst die Härtung der Accounts, Compliance und Security Policies und auch die Konfiguration, um die Accounts mit den jeweiligen **Foundation Core Accounts** zu verbinden.<br/><br/>
 Die **Account Baseline** wird zentral verwaltet und in alle Accounts der AWS Organization ausgerollt.
 
 ![img](images/blog/aws-multiaccount-reference-architecture/aws-foundation-core.png)
 
-Wir empfehlen dringend, alle Komponenten, die für die **Foundation Core Capabilities** verwendet werden, via **[Infrastructure as Code](/faq/#iac 'What is Infrastructure as Code?')** zu deployen. Bei Nuvibit haben wir extrem gute Erfahrungen mit [Terraform](https://www.terraform.io/intro/index.html 'Introduction to Terraform') gemacht.<br/><br/>
+Wir empfehlen dringend, alle für die **Foundation Core Capabilities** verwendeten Ressourcen über **[Infrastructure as Code](/faq/#iac 'What is Infrastructure as Code?')** bereitzustellen.
+Aus Erfahrung setzen wir hierfür ausschliesslich auf [Terraform](https://www.terraform.io/intro/index.html 'Introduction to Terraform').
+<br/><br/>
 
-Nuvibit ist darauf spezialisiert, die **Core Capabilities** einer **Cloud Foundation** in Unternehmen einzuführen.
+### Unsere Dienstleistung
 
-Wir passen unsere Foundation Core Terraform Module auf Ihre Bedürfnisse an und versetzen Sie in die Lage, die **Foundation Capabilities** Ihren **Cloud Workload Development Teams** in einem hohen Reifegrad zur Verfügung zu stellen.
+Nuvibit ist darauf spezialisiert, **Cloud Foundation Capabilities** in Unternehmen einzuführen.
 
-**[Kontaktieren](/contact/ 'Kontakt aufnehmen für mehr Infos!')** Sie uns für weitere Details.
+Wir passen unseren **Foundation Blueprint** an Ihre Bedürfnisse an und befähigen Sie, **Foundation Capabilities** mit einem hohen Reifegrad für Ihre **Cloud Workload Development Teams** bereitzustellen.
+
+**[Kontaktieren Sie uns](/contact/ 'Kontaktieren Sie uns für weitere Informationen.')** für weitere Informationen.

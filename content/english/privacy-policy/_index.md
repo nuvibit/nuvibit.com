@@ -37,7 +37,7 @@ Loonstrasse 36
 
 We have the following data protection representation pursuant to [Article 27 of the GDPR](https://steigerlegal.ch/dsgvo/dsgvo-27/) in the European Economic Area (EEA), including the European Union (EU) and the Principality of Liechtenstein, Iceland and Norway, as an _additional_ point of contact for supervisory authorities and data subjects for inquiries related to the General Data Protection Regulation (GDPR):
 
-[**VGS Datenschutzpartner UG**](https://www.datenschutzpartner.eu/kontakt/)  
+[VGS Datenschutzpartner UG](https://www.datenschutzpartner.eu/kontakt/)
 At the emperor quay 69  
 20457 Hamburg  
 Germany
@@ -141,7 +141,7 @@ When using services and programs for performance and reach measurement, cookies 
 
 We use in particular:
 
-*   **[Google Analytics:](https://analytics.google.com/)** performance and reach measurement; providers: Google LLC (USA) / Google Ireland Limited (Ireland) for users in the European Economic Area (EEA) and Switzerland; data protection information: measurement also across different browsers and devices **(cross-device tracking)** as well as with pseudonymized Internet Protocol (IP) addresses, which are only _exceptionally_ transmitted in full to Google in the USA, ["Privacy and Security Principles"](https://safety.google/intl/en/principles/), [privacy policy](https://policies.google.com/privacy?hl=en), ["Google Products Privacy Guide" (including Google Analytics)](https://policies.google.com/technologies/product-privacy?hl=en), ["How we use data from websites or apps where our services are used" (provided by Google)](https://policies.google.com/technologies/partner-sites?hl=en), ["How Google uses cookies"](https://policies.google.com/technologies/cookies?hl=en), ["Browser Add-on to disable Google Analytics"](https://tools.google.com/dlpage/gaoptout), ["Personalized Advertising" (enable/disable/settings)](https://adssettings.google.com/)
+*   **[Google Analytics:](https://analytics.google.com/)** performance and reach measurement; providers: Google LLC (USA) / Google Ireland Limited (Ireland) for users in the European Economic Area (EEA) and Switzerland; data protection information: measurement also across different browsers and devices **(cross-device tracking)** as well as with pseudonymized Internet Protocol (IP) addresses, which are only _exceptionally_ transmitted in full to Google in the USA, [Privacy and Security Principles](https://safety.google/intl/en/principles/), [privacy policy](https://policies.google.com/privacy?hl=en), [Google Products Privacy Guide (including Google Analytics)](https://policies.google.com/technologies/product-privacy?hl=en), [How we use data from websites or apps where our services are used (provided by Google)](https://policies.google.com/technologies/partner-sites?hl=en), [How Google uses cookies](https://policies.google.com/technologies/cookies?hl=en), [Browser Add-on to disable Google Analytics](https://tools.google.com/dlpage/gaoptout), [Personalized Advertising (enable/disable/settings)](https://adssettings.google.com/)
 
 ## 8\. Third-party services
 
@@ -163,8 +163,8 @@ Audio and video conferencing services.
 
 We use in particular:
 
-*   **[Microsoft Teams:](https://www.microsoft.com/de-de/microsoft-teams/group-chat-software)** Platform for, among other things, audio and video conferencing; Providers: Microsoft Corporation (USA) / Microsoft Ireland Operations Limited (Ireland) for users in the European Economic Area (EEA), the United Kingdom and Switzerland; privacy disclosures: ["Privacy" ("Microsoft Trust Center")](https://www.microsoft.com/de-ch/trust-center/privacy), [privacy statement](https://privacy.microsoft.com/en-en/privacystatement), ["Privacy at Microsoft"](https://privacy.microsoft.com/de-de/), ["Privacy and Microsoft Teams"](https://docs.microsoft.com/de-de/microsoftteams/teams-privacy)
-*   **[Zoom:](https://zoom.us/)** Video Conferencing; Provider: Zoom Video Communications Inc. (USA); privacy disclosures: [privacy statement](https://zoom.us/de-de/privacy.html), ["Privacy at Zoom"](https://zoom.us/de-de/trust/privacy.html), ["Legal Compliance Center"](https://zoom.us/de-de/trust/legal-compliance.html)
+*   **[Microsoft Teams:](https://www.microsoft.com/de-de/microsoft-teams/group-chat-software)** Platform for, among other things, audio and video conferencing; Providers: Microsoft Corporation (USA) / Microsoft Ireland Operations Limited (Ireland) for users in the European Economic Area (EEA), the United Kingdom and Switzerland; privacy disclosures: [Privacy (Microsoft Trust Center)](https://www.microsoft.com/de-ch/trust-center/privacy), [privacy statement](https://privacy.microsoft.com/en-en/privacystatement), [Privacy at Microsoft](https://privacy.microsoft.com/de-de/), [Privacy and Microsoft Teams](https://docs.microsoft.com/de-de/microsoftteams/teams-privacy)
+*   **[Zoom:](https://zoom.us/)** Video Conferencing; Provider: Zoom Video Communications Inc. (USA); privacy disclosures: [privacy statement](https://zoom.us/de-de/privacy.html), [Privacy at Zoom](https://zoom.us/de-de/trust/privacy.html), [Legal Compliance Center](https://zoom.us/de-de/trust/legal-compliance.html)
 
 ### 8.3 Fonts
 
@@ -172,7 +172,7 @@ We use third party services to embed selected fonts, as well as icons, logos and
 
 We specifically use:
 
-*   **[Google Fonts:](https://fonts.google.com)** Fonts; Provider: Google LLC (USA) / Google Ireland Limited (Ireland) for users in the European Economic Area (EEA) and Switzerland; privacy information: ["What does using the Google Fonts API mean for my users' privacy?"](https://developers.google.com/fonts/faq#what_does_using_the_google_fonts_api_mean_for_the_privacy_of_my_users), ["Privacy and Security Principles"](https://safety.google/intl/de/principles/), [Privacy Policy](https://policies.google.com/privacy?hl=de)
+*   **[Google Fonts:](https://fonts.google.com)** Fonts; Provider: Google LLC (USA) / Google Ireland Limited (Ireland) for users in the European Economic Area (EEA) and Switzerland; privacy information: [What does using the Google Fonts API mean for my users' privacy?](https://developers.google.com/fonts/faq#what_does_using_the_google_fonts_api_mean_for_the_privacy_of_my_users), [Privacy and Security Principles](https://safety.google/intl/de/principles/), [Privacy Policy](https://policies.google.com/privacy?hl=de)
 
 ## 9\. Final provisions
 

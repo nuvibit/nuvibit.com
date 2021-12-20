@@ -1,0 +1,284 @@
+<!doctype html><html lang=en-us><head>
+<meta charset=utf-8>
+<title>You're probably missing an AWS environment...</title>
+<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1">
+<meta name=description content="This post introduces the Nuvibit Cloud Foundation IaC CI/CD Reference Architecture.">
+<meta name=author content="Nuvibit AG">
+<meta name=generator content="Hugo 0.91.0">
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open%20Sans:400%7cNunito:300,400,600,700">
+<link rel=stylesheet href=https://nuvibit.com/plugins/bootstrap/bootstrap.min.css>
+<link rel=stylesheet href=https://nuvibit.com/plugins/fontawesome/all.min.css>
+<link rel=stylesheet href=https://nuvibit.com/plugins/slick/slick.min.css>
+<link rel=stylesheet href=https://nuvibit.com/plugins/cookieconsent/cookieconsent.min.css>
+<link rel=stylesheet href=https://nuvibit.com/plugins/snow/snow.min.css>
+<link rel=stylesheet href=https://nuvibit.com/scss/style.min.css media=screen>
+<link rel=stylesheet href=https://nuvibit.com/scss/style.min.css media=screen>
+<link rel="shortcut icon" href=https://nuvibit.com/images/favicon/favicon.ico type=image/x-icon>
+<link rel=icon href=https://nuvibit.com/images/favicon/favicon-32x32.png type=image/x-icon>
+<meta property="og:image" content="https://nuvibit.com/images/blog/aws-foundation-testing/foundation-testing.png">
+<meta property="og:title" content="You're probably missing an AWS environment...">
+<meta property="og:description" content="This post introduces the Nuvibit Cloud Foundation IaC CI/CD Reference Architecture.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://nuvibit.com/blog/aws-foundation-testing/"><meta property="article:section" content="blog">
+<meta property="article:published_time" content="2021-12-19T11:00:00+06:00">
+<meta property="article:modified_time" content="2021-12-19T11:00:00+06:00">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-65QED8XYJ9"></script>
+<script>var dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes";if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-65QED8XYJ9',{anonymize_ip:!0})}</script>
+</head>
+<body id=body>
+<div class=zoom-blur></div>
+<div id=snow></div><header class="sticky-top bg-dark">
+<div class=container>
+<nav class="navbar navbar-expand-lg navbar-dark">
+<a class=navbar-brand href=/> <img src=https://nuvibit.com/images/logo/logo-nuvibit-light.png alt=logo-nuvibit-light width=230px> </a>
+<button class="navbar-toggler border-0" type=button data-toggle=collapse data-target=#navigation aria-controls=navigation aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span>
+</button>
+<div class="collapse navbar-collapse text-center" id=navigation>
+<ul class="navbar-nav ml-auto">
+<li class=nav-item>
+<a class=nav-link href=https://nuvibit.com/>Home</a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href=# id=navbarDropdown role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false>
+Services
+</a>
+<div class="nav-item dropdown-menu" aria-labelledby=navbarDropdown>
+<a class=dropdown-item href=https://nuvibit.com/services/assistance>Cloud Assistance</a>
+<a class=dropdown-item href=https://nuvibit.com/services/management>Cloud Management at Scale</a>
+<a class=dropdown-item href=https://nuvibit.com/services/security>Cloud Security and Compliance</a>
+<a class=dropdown-item href=https://nuvibit.com/services/connectivity>Cloud Connectivity</a>
+</div>
+</li>
+<li class=nav-item>
+<a class=nav-link href=https://nuvibit.com/blog>Blog</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=https://nuvibit.com/about>About</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=https://nuvibit.com/contact>Contact</a>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+</header>
+<section class=section>
+<div class="container mb-5">
+<div class="row justify-content-center">
+<div class="col-lg-10 align-self-center text-center">
+<div class=block>
+<h1 class="font-weight-bold mb-4 font-size-60">You're probably missing an AWS environment...</h1>
+<div class="col-md-10 m-auto p-3 blog-page">
+<img class="card-img-top blog-tile-img" src=https://nuvibit.com/images/blog/aws-foundation-testing/foundation-testing.png alt="Illustration of foundation-testing">
+</div>
+</div>
+</div>
+<div class="col-md-8 text-center text-md-right mt-5 blog-social">
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fnuvibit.com%2fblog%2faws-foundation-testing%2f" target=_blank>
+<i class="fab fa-linkedin mr-4"></i>
+</a>
+<a href="https://twitter.com/intent/tweet?text=You%27re%20probably%20missing%20an%20AWS%20environment... https%3a%2f%2fnuvibit.com%2fblog%2faws-foundation-testing%2f" target=_blank>
+<i class="fab fa-twitter mr-4"></i>
+</a>
+<a href="mailto:?subject=You%27re%20probably%20missing%20an%20AWS%20environment...&body=You%27re%20probably%20missing%20an%20AWS%20environment...%0d%0ahttps%3a%2f%2fnuvibit.com%2fblog%2faws-foundation-testing%2f" target=_blank alt="send mail">
+<i class="fas fa-envelope mr-4"></i>
+</a>
+<a href=# onclick="copy_url(url='https://nuvibit.com/blog/aws-foundation-testing/')">
+<i class="fas fa-link"></i>
+</a>
+<div class="mt-md-0 mt-3 col-sm-12 col-md-6 float-left text-muted text-center text-md-left">
+December 19, 2021 | Reading time 5 min
+</div>
+</div>
+<div class="w-75 mt-4 alert alert-primary" style=display:none id=alert>
+<strong>Link has been copied to clipboard.</strong>
+</div>
+<hr class="w-75 pb-3">
+<div class="col-lg-10 text-center text-md-left mb-5">
+<div class="container markdown">
+<div class=pt-3>
+<h2 id=context class=font-weight-bold>
+Context
+<a class="header-link pl-1" href=#context><i class="fas fa-link fa-2x"></i></a>
+</h2>
+</div><p>First of all, what is a <strong>Cloud Foundation</strong> anyway and why should I care about it?</p>
+<p>Before deploying a workload to the public cloud there are many moving parts which have to be coordinated.
+There are <strong>technical parts</strong> such as connectivity or security and <strong>organizational parts</strong> such as finance or operations.
+All of these elements are part of your individual Cloud Foundation, which dictates the path for future deployments.</p>
+<p>Each cloud customer has a Cloud Foundation to some extent, but if that Foundation is not actively shaped from the start, it can cause massive bottlenecks down the road.</p>
+<p>As an example, let&rsquo;s assume that we started with the VPC provided by AWS by default.
+Later in our cloud journey, we decide to set up a VPN from the office to our VPC and encounter overlapping network areas.
+Instead of focusing on our workloads, we now waste time troubleshooting issues we could have avoided if we had initially put more effort into the foundation.</p>
+<p>A secure and scalable Cloud Foundation will significantly accelerate your cloud adoption journey and is the key to success.</p>
+<div class=pt-3>
+<h2 id=foundation-testing class=font-weight-bold>
+Foundation Testing
+<a class="header-link pl-1" href=#foundation-testing><i class="fas fa-link fa-2x"></i></a>
+</h2>
+</div><p>Running workloads reliably and securely in a <strong>AWS multi-account environment</strong> requires a solid and tested Foundation.
+Most workloads can run in the same <a href=https://aws.amazon.com/organizations/ title>AWS Organization</a> for production and testing as they can be easily separated.
+Foundation services such as vending, security, logging, monitoring, image factory and networking cannot be properly tested in the productive AWS environment because they cannot be separated or they can directly impact all workloads.</p>
+<p>For instance, how can network failover be realistically tested in a live AWS Organization without impacting any workloads?
+Or imagine a proposed change to your organizational unit structure or your <a href=https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html title>service control polcies (SCP)</a>.</p>
+<p>Thorough testing is highly recommended, as a failure will immediately impact all of your cloud workloads.</p>
+<p>To perform meaningful tests, the Cloud Foundation test environment must be as close as possible to the production environment.
+This is the key point why we recommend an additional AWS Organization specifically for <strong>Foundation Testing</strong>.</p>
+<p><div class="col-md-10 m-auto p-3 text-right zoom" onclick=image_zoom(this)>
+<img class=img-fluid src=https://nuvibit.com/images/blog/aws-foundation-testing/foundation-environments.png alt="Illustration of foundation-environments">
+</div></p>
+<div class=pt-3>
+<h2 id=reference-architecture class=font-weight-bold>
+Reference Architecture
+<a class="header-link pl-1" href=#reference-architecture><i class="fas fa-link fa-2x"></i></a>
+</h2>
+</div><p>Leveraging Infrastructure as Code makes managing an additional AWS Organization nearly effortless.
+At the heart of both environments are <strong>Infrastructure as Code modules</strong> representing the Foundation Core Capabilities.
+This modules are reusable components, populated with the different environment specific parameters.</p>
+<p>Each Foundation Core Capability gets a dedicated <strong>pipeline code repository</strong> for each environment where the Infrastructure as Code modules are invoked.
+Each of these repositories has a separate <strong>CI/CD pipeline</strong> responsible for deploying the infrastructure as Code definition in its corresponding Foundation Testing or -Production environment.</p>
+<p><div class="col-md-10 m-auto p-3 text-right zoom" onclick=image_zoom(this)>
+<img class=img-fluid src=https://nuvibit.com/images/blog/aws-foundation-testing/aws-foundation-cicd-reference-architecture.png alt="Illustration of aws-foundation-cicd-reference-architecture">
+<a href=https://nuvibit.com/images/blog/aws-foundation-testing/aws-foundation-cicd-reference-architecture-highres.png target=_blank><i class="fas fa-external-link-alt"></i> high resolution</a>
+</div></p>
+<div class=pt-3>
+<h2 id=conclusion class=font-weight-bold>
+Conclusion
+<a class="header-link pl-1" href=#conclusion><i class="fas fa-link fa-2x"></i></a>
+</h2>
+</div><p>We provide the blueprint here, but the finishing touch is to tailor it to your exact requirements and preferences to make the most of it.
+<br><br></p>
+<div class=pt-3>
+<h2 id=our-service class=font-weight-bold>
+Our service
+<a class="header-link pl-1" href=#our-service><i class="fas fa-link fa-2x"></i></a>
+</h2>
+</div><p>Nuvibit specializes in providing <strong>Cloud Foundation Capabilities</strong> to organizations.</p>
+<p>We will tailor our <strong>Foundation Blueprint</strong> to your needs and enable you to deliver <strong>Foundation Capabilities</strong> to your <strong>Cloud Workload Development Teams</strong> with a high level of maturity.</p>
+<p><strong><a href=/contact/ title="Contact us for more information!">Get in touch</a></strong> with us for further details.</p>
+</div>
+</div>
+<hr class="w-75 mb-4">
+<div class="col-md-8 text-center text-md-right blog-social">
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fnuvibit.com%2fblog%2faws-foundation-testing%2f" target=_blank alt="linkedin post">
+<i class="fab fa-linkedin mr-4"></i>
+</a>
+<a href="https://twitter.com/intent/tweet?text=You%27re%20probably%20missing%20an%20AWS%20environment... https%3a%2f%2fnuvibit.com%2fblog%2faws-foundation-testing%2f" target=_blank alt="twitter post">
+<i class="fab fa-twitter mr-4"></i>
+</a>
+<a href="mailto:?subject=You%27re%20probably%20missing%20an%20AWS%20environment...&body=You%27re%20probably%20missing%20an%20AWS%20environment...%0d%0ahttps%3a%2f%2fnuvibit.com%2fblog%2faws-foundation-testing%2f" target=_blank alt="send mail">
+<i class="fas fa-envelope mr-4"></i>
+</a>
+<a href=# onclick="copy_url(url='https://nuvibit.com/blog/aws-foundation-testing/')" alt="copy link">
+<i class="fas fa-link"></i>
+</a>
+</div>
+</div>
+</section>
+<footer>
+<div class="container pt-5">
+<div class=row>
+<div class="col-md-6 mb-3 text-center footer-logo">
+<img src=https://nuvibit.com/images/logo/logo-nuvibit-dark.png alt=logo-nuvibit-dark width=230px>
+</div>
+<div class="col-md-6 mb-4 text-left footer-links">
+<div class="bottom-nav col-md-4 col-10 p-0 float-left mb-3">
+<h5 class="mb-4 font-weight-bold">Languages</h5>
+<ul class=list-group>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=https://nuvibit.com/blog/aws-foundation-testing/ onclick='update_language_pref("en")'>
+<i class="fas fa-toggle-on"></i>
+English
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=https://nuvibit.com/de/blog/aws-foundation-testing/ onclick='update_language_pref("de")'>
+<i class="fas fa-toggle-off"></i>
+Deutsch
+</a>
+</li>
+</ul>
+</div>
+<div class="bottom-nav col-md-4 col-10 p-0 float-left mb-3">
+<h5 class="mb-4 font-weight-bold">Company</h5>
+<ul class=list-group>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=/faq>
+FAQ
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=/about>
+About
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=/contact>
+Contact
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=/partners>
+Partnerships
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=/privacy-policy/#51-cookies>
+Cookie Policy
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=/privacy-policy>
+Privacy Policy
+</a>
+</li>
+</ul>
+</div>
+<div class="bottom-nav col-md-4 col-10 p-0 float-left mb-3">
+<h5 class="mb-4 font-weight-bold">Social Media</h5>
+<ul class=list-group>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=https://github.com/nuvibit>
+<i class="fab fa-github mr-2"></i>
+Github
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=https://linkedin.com/company/nuvibit>
+<i class="fab fa-linkedin mr-2"></i>
+Linkedin
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=https://twitter.com/nuvibit>
+<i class="fab fa-twitter mr-2"></i>
+Twitter
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=https://www.youtube.com/channel/UCmQCd8jMiZviVlWOqqbpYBw/playlists>
+<i class="fab fa-youtube mr-2"></i>
+Youtube
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-12 pt-4 border-top">
+<div class="mb-4 d-flex justify-content-center align-items-center">
+<p class=copyright-text>Copyright © 2021 - Nuvibit AG</p>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script src=https://nuvibit.com/plugins/jquery/jquery.js></script>
+<script src=https://nuvibit.com/plugins/bootstrap/bootstrap.min.js></script>
+<script src=https://nuvibit.com/plugins/slick/slick.min.js></script>
+<script src=https://nuvibit.com/plugins/cookieconsent/cookieconsent.min.js></script>
+<script src=https://nuvibit.com/plugins/snow/snow.min.js></script>
+<script src=https://nuvibit.com/js/script.js></script>
+<script>var pageLang,browserLang,supportedLang,base_url,uri;document.addEventListener('DOMContentLoaded',function(){var a,b;const c=new Date;let d=c.getMonth();d==11&&$(".call-to-action").length&&(a=$(".call-to-action").css('background-image'),b=a.replace(/foundation\.jpg/,"foundation-snow.jpg"),$(".call-to-action").css('background-image',b),$("#snow").toggle(),new Snow('#snow',{number:50,r:5,v:.8}))});function copy_url(b){var a=$("<input>");$("body").append(a),a.val(b).select(),document.execCommand("copy"),a.remove(),$(".alert").show(),$(".alert").delay(2e3).slideUp(200,function(){$(this).hide()})}function cancel_zoom(){window.removeEventListener('scroll',cancel_zoom),$(".zoomed").removeClass("zoomed"),$(".zoom-blur").toggle()}function image_zoom(a){a.classList.contains("zoomed")||$(".zoomed").removeClass("zoomed"),a.classList.toggle('zoomed'),$(".zoom-blur").toggle(),setTimeout(function(){a.classList.contains("zoomed")?window.addEventListener('scroll',cancel_zoom,!1):window.removeEventListener('scroll',cancel_zoom)},100)}function redirect(a){window.location.href=a}function update_language_pref(a){localStorage.setItem('lang',a)}function uri_translate(c,d,e){var a=c,b;return d!=="en"&&(b=c.split('/'),b[1]===d?(b.splice(1,1),a=b.join('/')):a="/"),e!=="en"&&(a="/"+e+a),a}pageLang="en",browserLang=navigator.language||navigator.userLanguage,browserLang=browserLang.substring(0,2),supportedLang="[en de]".match(/\[(.*?)\]/)[1].split(" "),base_url="https://nuvibit.com/".replace(/\/$/,""),uri="/blog/aws-foundation-testing/",userLangPref=localStorage.getItem('lang'),userLangPref&&supportedLang.includes(userLangPref)?pageLang!==userLangPref&&(relocate_uri=uri_translate(uri,lang_now=pageLang,lang_new=userLangPref),window.location.href=base_url+relocate_uri):(supportedLang.includes(browserLang)||(browserLang="en"),localStorage.setItem('lang',browserLang),localStorage.getItem('lang')===browserLang&&pageLang!==browserLang&&(relocate_uri=uri_translate(uri,lang_now=pageLang,lang_new=browserLang),window.location.href=base_url+relocate_uri)),$(document.links).filter(function(){return this.hostname!=window.location.hostname}).attr('target','_blank'),window.cookieconsent.initialise({palette:{popup:{background:"#2b3346",text:"#ffffff"},button:{background:"#3fa7df",text:"#ffffff"}},content:{message:'We use cookies on our website to ensure you get the best experience.',dismiss:'Close',link:'Our cookie policy',href:'/privacy-policy/#51-cookies',target:null},theme:"edgeless",type:"info"})</script>
+</body>
+</html>

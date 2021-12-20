@@ -1,0 +1,364 @@
+<!doctype html><html lang=en-us><head>
+<meta charset=utf-8>
+<title>Reference architecture for AWS Multi-Account Customers</title>
+<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1">
+<meta name=description content="This post introduces the Nuvibit reference architecture for customers with an AWS multi-account environment.">
+<meta name=author content="Nuvibit AG">
+<meta name=generator content="Hugo 0.91.0">
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open%20Sans:400%7cNunito:300,400,600,700">
+<link rel=stylesheet href=https://nuvibit.com/plugins/bootstrap/bootstrap.min.css>
+<link rel=stylesheet href=https://nuvibit.com/plugins/fontawesome/all.min.css>
+<link rel=stylesheet href=https://nuvibit.com/plugins/slick/slick.min.css>
+<link rel=stylesheet href=https://nuvibit.com/plugins/cookieconsent/cookieconsent.min.css>
+<link rel=stylesheet href=https://nuvibit.com/plugins/snow/snow.min.css>
+<link rel=stylesheet href=https://nuvibit.com/scss/style.min.css media=screen>
+<link rel=stylesheet href=https://nuvibit.com/scss/style.min.css media=screen>
+<link rel="shortcut icon" href=https://nuvibit.com/images/favicon/favicon.ico type=image/x-icon>
+<link rel=icon href=https://nuvibit.com/images/favicon/favicon-32x32.png type=image/x-icon>
+<meta property="og:image" content="https://nuvibit.com/images/blog/aws-multiaccount-reference-architecture/reference-org-architecture.png">
+<meta property="og:title" content="Reference architecture for AWS Multi-Account Customers">
+<meta property="og:description" content="This post introduces the Nuvibit reference architecture for customers with an AWS multi-account environment.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://nuvibit.com/blog/aws-multiaccount-reference-architecture/"><meta property="article:section" content="blog">
+<meta property="article:published_time" content="2021-12-18T11:00:00+06:00">
+<meta property="article:modified_time" content="2021-12-18T11:00:00+06:00">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-65QED8XYJ9"></script>
+<script>var dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes";if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-65QED8XYJ9',{anonymize_ip:!0})}</script>
+</head>
+<body id=body>
+<div class=zoom-blur></div>
+<div id=snow></div><header class="sticky-top bg-dark">
+<div class=container>
+<nav class="navbar navbar-expand-lg navbar-dark">
+<a class=navbar-brand href=/> <img src=https://nuvibit.com/images/logo/logo-nuvibit-light.png alt=logo-nuvibit-light width=230px> </a>
+<button class="navbar-toggler border-0" type=button data-toggle=collapse data-target=#navigation aria-controls=navigation aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span>
+</button>
+<div class="collapse navbar-collapse text-center" id=navigation>
+<ul class="navbar-nav ml-auto">
+<li class=nav-item>
+<a class=nav-link href=https://nuvibit.com/>Home</a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href=# id=navbarDropdown role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false>
+Services
+</a>
+<div class="nav-item dropdown-menu" aria-labelledby=navbarDropdown>
+<a class=dropdown-item href=https://nuvibit.com/services/assistance>Cloud Assistance</a>
+<a class=dropdown-item href=https://nuvibit.com/services/management>Cloud Management at Scale</a>
+<a class=dropdown-item href=https://nuvibit.com/services/security>Cloud Security and Compliance</a>
+<a class=dropdown-item href=https://nuvibit.com/services/connectivity>Cloud Connectivity</a>
+</div>
+</li>
+<li class=nav-item>
+<a class=nav-link href=https://nuvibit.com/blog>Blog</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=https://nuvibit.com/about>About</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=https://nuvibit.com/contact>Contact</a>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+</header>
+<section class=section>
+<div class="container mb-5">
+<div class="row justify-content-center">
+<div class="col-lg-10 align-self-center text-center">
+<div class=block>
+<h1 class="font-weight-bold mb-4 font-size-60">Reference architecture for AWS Multi-Account Customers</h1>
+<div class="col-md-10 m-auto p-3 blog-page">
+<img class="card-img-top blog-tile-img" src=https://nuvibit.com/images/blog/aws-multiaccount-reference-architecture/reference-org-architecture.png alt="Illustration of reference-org-architecture">
+</div>
+</div>
+</div>
+<div class="col-md-8 text-center text-md-right mt-5 blog-social">
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fnuvibit.com%2fblog%2faws-multiaccount-reference-architecture%2f" target=_blank>
+<i class="fab fa-linkedin mr-4"></i>
+</a>
+<a href="https://twitter.com/intent/tweet?text=Reference%20architecture%20for%20AWS%20Multi-Account%20Customers https%3a%2f%2fnuvibit.com%2fblog%2faws-multiaccount-reference-architecture%2f" target=_blank>
+<i class="fab fa-twitter mr-4"></i>
+</a>
+<a href="mailto:?subject=Reference%20architecture%20for%20AWS%20Multi-Account%20Customers&body=Reference%20architecture%20for%20AWS%20Multi-Account%20Customers%0d%0ahttps%3a%2f%2fnuvibit.com%2fblog%2faws-multiaccount-reference-architecture%2f" target=_blank alt="send mail">
+<i class="fas fa-envelope mr-4"></i>
+</a>
+<a href=# onclick="copy_url(url='https://nuvibit.com/blog/aws-multiaccount-reference-architecture/')">
+<i class="fas fa-link"></i>
+</a>
+<div class="mt-md-0 mt-3 col-sm-12 col-md-6 float-left text-muted text-center text-md-left">
+December 18, 2021 | Reading time 5 min
+</div>
+</div>
+<div class="w-75 mt-4 alert alert-primary" style=display:none id=alert>
+<strong>Link has been copied to clipboard.</strong>
+</div>
+<hr class="w-75 pb-3">
+<div class="col-lg-10 text-center text-md-left mb-5">
+<div class="container markdown">
+<div class=pt-3>
+<h2 id=context class=font-weight-bold>
+Context
+<a class="header-link pl-1" href=#context><i class="fas fa-link fa-2x"></i></a>
+</h2>
+</div><p>Customers with an AWS multi-account environment are quickly confronted with the related challenges.
+How should the cloud responsibility be transferred to the different organizational units?</p>
+<p>Our Nuvibit reference architecture provides a solution to this challenge.
+The reference architecture considers and implements best practices from the following sources:</p>
+<p>- <a href=https://aws.amazon.com/solutions/implementations/aws-landing-zone/ title="AWS Landing Zone">AWS Landing Zone</a> and <a href=https://aws.amazon.com/controltower/ title="AWS Control Tower">AWS Control Tower</a><br>
+- <a href=https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/security-services.html title="Apply security services across your AWS organization">Apply security services across your AWS organization</a><br>
+- <a href=https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/architecture.html title="AWS Security Reference Architecture">AWS Security Reference Architecture</a><br>
+- <a href=https://docs.aws.amazon.com/managedservices/latest/userguide/malz-net-arch.html title="Multi Account Network Architecture">Multi Account Network Architecture</a><br></p>
+<p>In addition, our experience with AWS multi-account environments has been included in this reference architecture.</p>
+<p>The focus is on the <strong>Core Domains</strong> of the <strong>Nuvibit Cloud Foundation</strong>, which are fully covered in the blog post <strong><a href=/blog/cloud-foundation-map title="Blog post on the Nuvibit Cloud Foundation Map">Nuvibit Cloud Foundation Map</a></strong>.</p>
+<p><div class="col-md-10 m-auto p-3 text-right zoom" onclick=image_zoom(this)>
+<img class=img-fluid src=https://nuvibit.com/images/blog/aws-multiaccount-reference-architecture/foundation-core-domains.png alt="Illustration of foundation-core-domains">
+</div></p>
+<div class=pt-3>
+<h2 id=aws-account-domains class=font-weight-bold>
+AWS Account Domains
+<a class="header-link pl-1" href=#aws-account-domains><i class="fas fa-link fa-2x"></i></a>
+</h2>
+</div><p>Not all accounts are the same and are used for the same kind of workloads and purposes.
+To maintain a clear overview, we divide the AWS accounts into three domains:</p>
+<p>-<strong>Foundation Core</strong><br>
+-<strong>Foundation Shared Service</strong><br>
+-<strong>Business Workload</strong><br></p>
+<p>
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Domain</th>
+<th style=text-align:left>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Foundation Core</strong></td>
+<td style=text-align:left>Accounts that host core components of the Nuvibit Cloud Foundation and are managed by the Cloud Foundation Core Team(s).</td>
+</tr>
+<tr>
+<td><strong>Foundation Shared Service</strong></td>
+<td style=text-align:left>Account that host shared services and platforms (streaming platform, data lake, analitics platform, API management) and are managed by the Cloud Foundation Shared Service Team(s).</td>
+</tr>
+<tr>
+<td><strong>Business Workload</strong></td>
+<td style=text-align:left>Accounts that host all the components of the business applications and are managed by the Cloud Workload Development Team(s).</td>
+</tr>
+</tbody>
+</table>
+<br></p>
+<p>The following graphic serves as an example and gives an overview of the different accounts, categorized by domains:</p>
+<p><div class="col-md-10 m-auto p-3 text-right zoom" onclick=image_zoom(this)>
+<img class=img-fluid src=https://nuvibit.com/images/blog/aws-multiaccount-reference-architecture/aws-foundation-account-types.png alt="Illustration of aws-foundation-account-types">
+</div></p>
+<p>We recommend setting up the following <strong>Foundation Core Accounts</strong> and at least two accounts per business application.
+<strong>Foundation Shared Service Accounts</strong> are optional and whether you need them depends on your individual requirements.</p>
+<p>
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Domain</th>
+<th style=text-align:left>Account Type</th>
+<th style=text-align:left>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Foundation Core</td>
+<td style=text-align:left>AWS Organizations Management</td>
+<td style=text-align:left><a href=https://aws.amazon.com/organizations/>AWS Organization</a>, <a href=https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html>Organization-unit (OU)</a> and <a href=https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html>service control policy (SCP)</a> management. Consolidated billing over the AWS organization</td>
+</tr>
+<tr>
+<td>Foundation Core</td>
+<td style=text-align:left>Core Account Lifecycle</td>
+<td style=text-align:left>Account lifecycle management including vending, baselining and retirement.</td>
+</tr>
+<tr>
+<td>Foundation Core</td>
+<td style=text-align:left>Core Security</td>
+<td style=text-align:left>Aggregation of <a href=https://aws.amazon.com/config/>AWS Config</a>, <a href=https://aws.amazon.com/security-hub/>AWS Security Hub</a> and <a href=https://aws.amazon.com/guardduty/>Amazon GuardDuty</a>. <br> Our security event management solution <a href=/products/semper>SEMPER</a> is also a citizen of this account.</td>
+</tr>
+<tr>
+<td>Foundation Core</td>
+<td style=text-align:left>Core Logging</td>
+<td style=text-align:left>Log aggregation and archiving account. No direct access to ensure log integrity.</td>
+</tr>
+<tr>
+<td>Foundation Core</td>
+<td style=text-align:left>Core Monitoring</td>
+<td style=text-align:left>Hosts your central monitoring solutions (i.e. <a href=https://aws.amazon.com/opensearch-service/>AWS OpenSearch</a>, <a href=https://www.splunk.com/>Splunk</a>, etc).<br>This account is separated from the Core Logging account to protect the log archive from <a href=https://capec.mitre.org/data/definitions/268.html>tampering</a>. The integrity of the log archive has to be protected rigorously.</td>
+</tr>
+<tr>
+<td>Foundation Core</td>
+<td style=text-align:left>Core Image Factory</td>
+<td style=text-align:left><a href=https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html>Amazon Machine Image (AMI)</a> building account. AMIs are built in this account and shared across the AWS organization.</td>
+</tr>
+<tr>
+<td>Foundation Core</td>
+<td style=text-align:left>Core Networking</td>
+<td style=text-align:left>Core connectivity services (<a href=https://aws.amazon.com/transit-gateway/>Transit Gateway</a>, <a href=https://aws.amazon.com/route53/>Route53</a>, <a href=https://aws.amazon.com/directconnect/>Direct Connect</a>, <a href=https://aws.amazon.com/vpn/>VPN</a>).<br> <strong>Optional:</strong> <a href=https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html#vpc-sharing-share-subnet>Shared VPCs</a> for the whole AWS organization to ensure the network configuration is not altered by the Business Workload teams.</td>
+</tr>
+<tr>
+<td>Foundation Shared Service</td>
+<td style=text-align:left>Shared Services</td>
+<td style=text-align:left>Shared Service Accounts host services or platforms used by multiple Business Workloads. Great examples would be a shared streaming platform like <a href=https://kafka.apache.org/>Kafka</a> (i.e. <a href=https://aws.amazon.com/msk/>MSK</a>), a data lake solution, an <a href=https://aws.amazon.com/directoryservice/>active directory service</a> or a shared <a href=https://kubernetes.io/de/docs/concepts/overview/what-is-kubernetes/>Kubernetes</a> cluster (i.e. <a href=https://aws.amazon.com/eks/>EKS</a>).</td>
+</tr>
+<tr>
+<td>Business Workload</td>
+<td style=text-align:left>Workload</td>
+<td style=text-align:left>How you organize your business workload accounts, is up to you. We recommend to have at least two accounts per business workload to separate production workloads from non-production workloads and reduce the blast radius. Also this enables you to apply different rules and policies to production and non-production accounts.</td>
+</tr>
+</tbody>
+</table>
+<br></p>
+<div class=pt-3>
+<h2 id=foundation-core-domain---account-baseline class=font-weight-bold>
+Foundation Core Domain - Account Baseline
+<a class="header-link pl-1" href=#foundation-core-domain---account-baseline><i class="fas fa-link fa-2x"></i></a>
+</h2>
+</div><p>The Capabilities in the <strong>Nuvibit Foundation Core Domain</strong> typically consist not only of the <strong>Foundation Core Accounts</strong> but also require some components to be deployed in all Accounts within the AWS organization.<br>
+Those distributed components are summarized in the term <strong>Account Baseline</strong>.<br>
+The <strong>Account Baseline</strong> includes account hardening, implementing compliance and security policies as well as wiring up the accounts with the <strong>Foundation Core Accounts</strong>.<br><br>
+This <strong>Account Baseline</strong> is managed in a central place and rolled out to all AWS accounts within the AWS organization.</p>
+<p><div class="col-md-10 m-auto p-3 text-right zoom" onclick=image_zoom(this)>
+<img class=img-fluid src=https://nuvibit.com/images/blog/aws-multiaccount-reference-architecture/aws-foundation-core.png alt="Illustration of aws-foundation-core">
+</div></p>
+<p>We strongly recommended to provision all resources used for the <strong>Foundation Core Capabilities</strong> via <strong><a href=/faq/#iac title="What is Infrastructure as Code?">Infrastructure as Code</a></strong>.
+From experience, we rely exclusively on <a href=https://www.terraform.io/intro/index.html title="Introduction to Terraform">Terraform</a> for this purpose.
+<br><br></p>
+<div class=pt-3>
+<h2 id=our-service class=font-weight-bold>
+Our service
+<a class="header-link pl-1" href=#our-service><i class="fas fa-link fa-2x"></i></a>
+</h2>
+</div><p>Nuvibit specializes in providing <strong>Cloud Foundation Capabilities</strong> to organizations.</p>
+<p>We will tailor our <strong>Foundation Blueprint</strong> to your needs and enable you to deliver <strong>Foundation Capabilities</strong> to your <strong>Cloud Workload Development Teams</strong> with a high level of maturity.</p>
+<p><strong><a href=/contact/ title="Contact us for more information!">Get in touch</a></strong> with us for further details.</p>
+</div>
+</div>
+<hr class="w-75 mb-4">
+<div class="col-md-8 text-center text-md-right blog-social">
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fnuvibit.com%2fblog%2faws-multiaccount-reference-architecture%2f" target=_blank alt="linkedin post">
+<i class="fab fa-linkedin mr-4"></i>
+</a>
+<a href="https://twitter.com/intent/tweet?text=Reference%20architecture%20for%20AWS%20Multi-Account%20Customers https%3a%2f%2fnuvibit.com%2fblog%2faws-multiaccount-reference-architecture%2f" target=_blank alt="twitter post">
+<i class="fab fa-twitter mr-4"></i>
+</a>
+<a href="mailto:?subject=Reference%20architecture%20for%20AWS%20Multi-Account%20Customers&body=Reference%20architecture%20for%20AWS%20Multi-Account%20Customers%0d%0ahttps%3a%2f%2fnuvibit.com%2fblog%2faws-multiaccount-reference-architecture%2f" target=_blank alt="send mail">
+<i class="fas fa-envelope mr-4"></i>
+</a>
+<a href=# onclick="copy_url(url='https://nuvibit.com/blog/aws-multiaccount-reference-architecture/')" alt="copy link">
+<i class="fas fa-link"></i>
+</a>
+</div>
+</div>
+</section>
+<footer>
+<div class="container pt-5">
+<div class=row>
+<div class="col-md-6 mb-3 text-center footer-logo">
+<img src=https://nuvibit.com/images/logo/logo-nuvibit-dark.png alt=logo-nuvibit-dark width=230px>
+</div>
+<div class="col-md-6 mb-4 text-left footer-links">
+<div class="bottom-nav col-md-4 col-10 p-0 float-left mb-3">
+<h5 class="mb-4 font-weight-bold">Languages</h5>
+<ul class=list-group>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=https://nuvibit.com/blog/aws-multiaccount-reference-architecture/ onclick='update_language_pref("en")'>
+<i class="fas fa-toggle-on"></i>
+English
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=https://nuvibit.com/de/blog/aws-multiaccount-reference-architecture/ onclick='update_language_pref("de")'>
+<i class="fas fa-toggle-off"></i>
+Deutsch
+</a>
+</li>
+</ul>
+</div>
+<div class="bottom-nav col-md-4 col-10 p-0 float-left mb-3">
+<h5 class="mb-4 font-weight-bold">Company</h5>
+<ul class=list-group>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=/faq>
+FAQ
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=/about>
+About
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=/contact>
+Contact
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=/partners>
+Partnerships
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=/privacy-policy/#51-cookies>
+Cookie Policy
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=/privacy-policy>
+Privacy Policy
+</a>
+</li>
+</ul>
+</div>
+<div class="bottom-nav col-md-4 col-10 p-0 float-left mb-3">
+<h5 class="mb-4 font-weight-bold">Social Media</h5>
+<ul class=list-group>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=https://github.com/nuvibit>
+<i class="fab fa-github mr-2"></i>
+Github
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=https://linkedin.com/company/nuvibit>
+<i class="fab fa-linkedin mr-2"></i>
+Linkedin
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=https://twitter.com/nuvibit>
+<i class="fab fa-twitter mr-2"></i>
+Twitter
+</a>
+</li>
+<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+<a href=https://www.youtube.com/channel/UCmQCd8jMiZviVlWOqqbpYBw/playlists>
+<i class="fab fa-youtube mr-2"></i>
+Youtube
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-12 pt-4 border-top">
+<div class="mb-4 d-flex justify-content-center align-items-center">
+<p class=copyright-text>Copyright © 2021 - Nuvibit AG</p>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script src=https://nuvibit.com/plugins/jquery/jquery.js></script>
+<script src=https://nuvibit.com/plugins/bootstrap/bootstrap.min.js></script>
+<script src=https://nuvibit.com/plugins/slick/slick.min.js></script>
+<script src=https://nuvibit.com/plugins/cookieconsent/cookieconsent.min.js></script>
+<script src=https://nuvibit.com/plugins/snow/snow.min.js></script>
+<script src=https://nuvibit.com/js/script.js></script>
+<script>var pageLang,browserLang,supportedLang,base_url,uri;document.addEventListener('DOMContentLoaded',function(){var a,b;const c=new Date;let d=c.getMonth();d==11&&$(".call-to-action").length&&(a=$(".call-to-action").css('background-image'),b=a.replace(/foundation\.jpg/,"foundation-snow.jpg"),$(".call-to-action").css('background-image',b),$("#snow").toggle(),new Snow('#snow',{number:50,r:5,v:.8}))});function copy_url(b){var a=$("<input>");$("body").append(a),a.val(b).select(),document.execCommand("copy"),a.remove(),$(".alert").show(),$(".alert").delay(2e3).slideUp(200,function(){$(this).hide()})}function cancel_zoom(){window.removeEventListener('scroll',cancel_zoom),$(".zoomed").removeClass("zoomed"),$(".zoom-blur").toggle()}function image_zoom(a){a.classList.contains("zoomed")||$(".zoomed").removeClass("zoomed"),a.classList.toggle('zoomed'),$(".zoom-blur").toggle(),setTimeout(function(){a.classList.contains("zoomed")?window.addEventListener('scroll',cancel_zoom,!1):window.removeEventListener('scroll',cancel_zoom)},100)}function redirect(a){window.location.href=a}function update_language_pref(a){localStorage.setItem('lang',a)}function uri_translate(c,d,e){var a=c,b;return d!=="en"&&(b=c.split('/'),b[1]===d?(b.splice(1,1),a=b.join('/')):a="/"),e!=="en"&&(a="/"+e+a),a}pageLang="en",browserLang=navigator.language||navigator.userLanguage,browserLang=browserLang.substring(0,2),supportedLang="[en de]".match(/\[(.*?)\]/)[1].split(" "),base_url="https://nuvibit.com/".replace(/\/$/,""),uri="/blog/aws-multiaccount-reference-architecture/",userLangPref=localStorage.getItem('lang'),userLangPref&&supportedLang.includes(userLangPref)?pageLang!==userLangPref&&(relocate_uri=uri_translate(uri,lang_now=pageLang,lang_new=userLangPref),window.location.href=base_url+relocate_uri):(supportedLang.includes(browserLang)||(browserLang="en"),localStorage.setItem('lang',browserLang),localStorage.getItem('lang')===browserLang&&pageLang!==browserLang&&(relocate_uri=uri_translate(uri,lang_now=pageLang,lang_new=browserLang),window.location.href=base_url+relocate_uri)),$(document.links).filter(function(){return this.hostname!=window.location.hostname}).attr('target','_blank'),window.cookieconsent.initialise({palette:{popup:{background:"#2b3346",text:"#ffffff"},button:{background:"#3fa7df",text:"#ffffff"}},content:{message:'We use cookies on our website to ensure you get the best experience.',dismiss:'Close',link:'Our cookie policy',href:'/privacy-policy/#51-cookies',target:null},theme:"edgeless",type:"info"})</script>
+</body>
+</html>

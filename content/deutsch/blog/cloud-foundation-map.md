@@ -4,7 +4,7 @@ date: 2021-12-17T11:00:00+06:00
 image: "images/blog/cloud-foundation-map/foundation-map.png"
 description: "In diesem Beitrag wird das erweiterte Prinzip der geteilten Verantwortung eingeführt und die Nuvibit Cloud Foundation Capability Map vorgestellt."
 summary: "Erfahren Sie mehr darüber, wie Sie das Prinzip der geteilten Verantwortung (shared responsibility model) zur Nuvibit Cloud Foundation Capability Map ausweiten können."
-duration: 3
+duration: 5
 draft: false
 ---
 ## Kontext
@@ -40,16 +40,17 @@ Dadurch kann der eigentliche **Cloud-Konsument** bereits mit einem sehr hohen Ma
 > Die **Cloud Workload Development Teams** können sich auf eine zentral bereitgestellte Cloud-Veredelung verlassen, die von der **Cloud Foundation** angeboten wird.
 
 ## Nuvibit Cloud Foundation Capability Map
-Eine weitere Detaillierung der **Core Domains** der **Cloud Foundation** führt zu dieser **Capability Map**:
+
+Eine weitere Detaillierung der **Cloud Foundation Core Domains** führt zu dieser **Capability Map**:
 
 ![img](images/blog/cloud-foundation-map/cloud-capability-map-highres.png)
 
-Jede **Foundation Capability** besteht aus einem technischen Teil und einem Fulfillment-Teil. Eine **Foundation Capability** wird durch ein Foundation Capability Team erbracht (ein Foundation Capability Team kann für mehrere **Foundation Capabilities** verantwortlich sein - z.B. ist das AWS Foundation Security Team für den gesamten **Foundation Security & Governance Bereich** verantwortlich).
+Jede **Foundation Capability** besteht aus einem technischen Teil und einem Fulfillment-Teil. Eine **Foundation Capability** wird durch ein Foundation Capability Team verantwortet (ein Foundation Capability-Team kann für mehrere **Foundation Capabilities** zuständig sein - so ist beispielsweise das AWS Foundation Security Team für den gesamten **Foundation Security & Governance Bereich** verantwortlich).
 
-Die **Nuvibit Cloud Foundation Capability Map** basiert auf dem [Cloud Operating Model AWS Whitepaper] (https://d1.awsstatic.com/whitepapers/building-a-cloud-operating-model.pdf 'AWS Whitepaper') und dem [AWS Cloud Adoption Framework] (https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html) und setzt deren Hauptprinzipien um.
+Die **Nuvibit Cloud Foundation Capability Map** basiert auf dem [Cloud Operating Model AWS Whitepaper](https://d1.awsstatic.com/whitepapers/building-a-cloud-operating-model.pdf 'AWS Whitepaper') und dem [AWS Cloud Adoption Framework](https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html) und setzt deren Hauptprinzipien um.
 
-Nuvibit ist darauf spezialisiert, die **Core Capabilities** einer **Cloud Foundation** in Unternehmen einzuführen.
+Nuvibit ist darauf spezialisiert, **Cloud Foundation Capabilities** in Unternehmen einzuführen.
 
-Wir passen unsere Foundation Core Terraform Module auf Ihre Bedürfnisse an und versetzen Sie in die Lage, die **Foundation Capabilities** Ihren **Cloud Workload Development Teams** in einem hohen Reifegrad zur Verfügung zu stellen.
+Wir passen unseren **Foundation Blueprint** an Ihre Bedürfnisse an und befähigen Sie, **Foundation Capabilities** mit einem hohen Reifegrad für Ihre **Cloud Workload Development Teams** bereitzustellen.
 
-**[Kontaktieren](/contact/ 'Kontakt aufnehmen für mehr Infos!')** Sie uns für weitere Details..
+**[Kontaktieren Sie uns](/contact/ 'Kontaktieren Sie uns für weitere Informationen.')** für weitere Informationen.

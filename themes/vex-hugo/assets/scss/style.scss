@@ -706,6 +706,7 @@ figure.profile:hover img {
   border: 1px solid #f2f2f2;
   box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06);
   transition: opacity .4s ease-in-out;
+  margin-bottom: 1rem;
 }
 
 .faq-summary:hover,
@@ -730,6 +731,7 @@ figure.profile:hover img {
   text-align: right;
   font-size: 1.4rem;
   margin: 10px;
+  margin-bottom: 2rem;
 }
 
 .faq-summary:after {

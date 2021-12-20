@@ -14,23 +14,12 @@
         <img class="img-fluid w-100" src="{{ .Image | absURL }}" alt='Illustration of {{ .Image | replaceRE ".*?([\\w-]+).png" "$1" }}'>
         {{ end }}
 			</div>
+      <hr class="w-75 mt-5 pb-5"/>
     </div>
 
-    <hr class="w-75 mt-5 pb-5"/>
     <div class="row justify-content-center">
       <div class="col-lg-8 col-md-7">
-  <!-- <div class="container">
-    <div class="row">
-      <div class="col-md-5 mb-4 mb-md-0">
-        <div class="sticky-image zoom" onclick="image_zoom(this)">
-          {{ with .Params.faq }}
-          <img class="img-fluid w-100" src="{{ .Image | absURL }}" alt='Illustration of {{ .Image | replaceRE ".*?([\\w-]+).png" "$1" }}'>
-          {{ end }}
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-7 offset-lg-1">
-        <h1 class="faq-title font-weight-bold mb-5">{{ $.Page.RenderString .Title }}</h1> -->
-        <div class="content">
+        <div class="container">
           {{ range $index, $element := (where .Params.faq.items "enable" true) }}
           <h1 class="faq-anchor" id="{{ .anchor }}"></h1>
           <details id="details#{{ .anchor }}" class="faq-detail col-lg-12">

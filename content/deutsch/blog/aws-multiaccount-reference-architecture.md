@@ -21,7 +21,7 @@ Die Referenzarchitektur berücksichtigt und implementiert Empfehlungen und Richt
 \- [AWS Security Reference Architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/architecture.html 'AWS Security Reference Architecture')<br/>
 \- [Multi Account Network Architecture](https://docs.aws.amazon.com/managedservices/latest/userguide/malz-net-arch.html 'Multi Account Network Architecture')<br/>
 
-Zusätzlich sind unsere Erfahrungen mit Multi-Account-Umgebungen in diese Referenzarchitektur eingeflossen.
+Zusätzlich sind unsere Erfahrungen mit AWS Multi-Account-Umgebungen in diese Referenzarchitektur eingeflossen.
 
 Der Fokus liegt auf den **Core Domains** der **Nuvibit Cloud Foundation**, die im Blogbeitrag **[Nuvibit Cloud Foundation Map](/blog/cloud-foundation-map 'Nuvibit Cloud Foundation Blog Post')** ausführlich behandelt werden.
 

@@ -24,7 +24,7 @@ Instead of focusing on our workloads, we now waste time troubleshooting issues w
 A secure and scalable Cloud Foundation will significantly accelerate your cloud adoption journey and is the key to success.
 ## Foundation Testing
 
-Running workloads reliably and securely in a **multi-account AWS environment** requires a solid and tested Foundation.
+Running workloads reliably and securely in a **AWS multi-account environment** requires a solid and tested Foundation.
 Most workloads can run in the same [AWS Organization](https://aws.amazon.com/organizations/) for production and testing as they can be easily separated.
 Foundation services such as vending, security, logging, monitoring, image factory and networking cannot be properly tested in the productive AWS environment because they cannot be separated or they can directly impact all workloads.
 

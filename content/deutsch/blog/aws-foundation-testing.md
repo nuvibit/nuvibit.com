@@ -24,7 +24,7 @@ Anstatt uns auf unsere Workloads zu konzentrieren, verschwenden wir nun wertvoll
 Eine sichere und skalierbare Cloud Foundation wird Ihre Cloud Journey erheblich beschleunigen und ist der Schlüssel zum Erfolg.
 ## Foundation Testing
 
-Die zuverlässige und sichere Bereitstellung von Workloads in einer **Multi-Account AWS Umgebung** erfordert eine solide und getestete Foundation.
+Die zuverlässige und sichere Bereitstellung von Workloads in einer **AWS Multi-Account-Umgebung** erfordert eine solide und getestete Foundation.
 Die meisten Workloads können in derselben [AWS Organization](https://aws.amazon.com/de/organizations/) für Produktion und Testing betrieben werden, da sie leicht voneinander getrennt werden können.
 Foundation-Services wie Vending, Security, Logging, Monitoring, Image Factory und Networking können in einer produktiven AWS Umgebung nicht ausreichend getestet werden, da diese nicht isoliert werden können oder einen direkten Einfluss auf alle Workloads haben können.
 

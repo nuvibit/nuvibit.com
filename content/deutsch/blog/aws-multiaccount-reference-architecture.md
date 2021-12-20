@@ -80,7 +80,7 @@ Wir empfehlen dringend, alle für die **Foundation Core Capabilities** verwendet
 Aus Erfahrung setzen wir hierfür ausschliesslich auf [Terraform](https://www.terraform.io/intro/index.html 'Introduction to Terraform').
 <br/><br/>
 
-### Unsere Dienstleistung
+## Unsere Dienstleistung
 
 Nuvibit ist darauf spezialisiert, **Cloud Foundation Capabilities** in Unternehmen einzuführen.
 

@@ -54,7 +54,7 @@ Each of these repositories has a separate **CI/CD pipeline** responsible for dep
 We provide the blueprint here, but the finishing touch is to tailor it to your exact requirements and preferences to make the most of it.
 <br/><br/>
 
-### Our service
+## Our service
 
 Nuvibit specializes in providing **Cloud Foundation Capabilities** to organizations.
 

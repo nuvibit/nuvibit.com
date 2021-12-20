@@ -79,7 +79,7 @@ We strongly recommended to provision all resources used for the **Foundation Cor
 From experience, we rely exclusively on [Terraform](https://www.terraform.io/intro/index.html 'Introduction to Terraform') for this purpose.
 <br/><br/>
 
-### Our service
+## Our service
 
 Nuvibit specializes in providing **Cloud Foundation Capabilities** to organizations.
 

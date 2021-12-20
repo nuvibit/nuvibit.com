@@ -54,7 +54,7 @@ Jedes dieser Repositories verfügt über eine separate **CI/CD-Pipeline**, die f
 Wir liefern hier die Vorlage, aber der Feinschliff besteht darin, diese genau auf Ihre Anforderungen und Vorlieben abzustimmen, um den größten Nutzen daraus zu ziehen.
 <br/><br/>
 
-### Unsere Dienstleistung
+## Unsere Dienstleistung
 
 Nuvibit ist darauf spezialisiert, **Cloud Foundation Capabilities** in Unternehmen einzuführen.
 

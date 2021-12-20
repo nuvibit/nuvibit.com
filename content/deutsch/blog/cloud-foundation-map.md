@@ -4,7 +4,7 @@ date: 2021-12-17T11:00:00+06:00
 image: "images/blog/cloud-foundation-map/foundation-map.png"
 description: "In diesem Beitrag wird das erweiterte Prinzip der geteilten Verantwortung eingeführt und die Nuvibit Cloud Foundation Capability Map vorgestellt."
 summary: "Erfahren Sie mehr darüber, wie Sie das Prinzip der geteilten Verantwortung (shared responsibility model) zur Nuvibit Cloud Foundation Capability Map ausweiten können."
-duration: 3
+duration: 5
 draft: false
 ---
 ## Kontext
@@ -22,7 +22,7 @@ Dies führt zu einem **erweiterten Prinzip der geteilten Verantwortung**, das si
 
 ![img](images/blog/cloud-foundation-map/extended-srm.png)
 
-Die **Cloud Foundation** lässt sich in **Core Domains** und **Shared Service Domains** unterteilt, welche sich wiederum aus einzelnen **Capabilities** zusammen setzen.
+Die **Cloud Foundation** lässt sich in **Core Domains** und **Shared Service Domains** unterteilen, welche sich wiederum aus einzelnen **Capabilities** zusammensetzen.
 
 Die **Core Domains** repräsentieren die grundlegenden Capabilities wie Cloud Management, Cloud Security & Governance und Cloud Networking, die von den **Cloud Consumers** und den **Shared Service Domains** genutzt werden.
 
@@ -31,9 +31,9 @@ Bei den **Shared Service Domains** handelt es sich um Capabilities wie Container
 Der grosse Vorteil dieses erweiterten Modells wird **Cloud Workload Development Teams** angeboten, die von einer "Veredelung" des **Cloud Provider**-Angebots profitieren und sich auf ihre Workload-Herausforderungen konzentrieren können.
 
 Werfen wir einen Blick auf das Beispiel der Sicherheitskontrollen. 
-Ein Großteil der Sicherheitskontrollen wird direkt von der **Foundation Core Domain** bereitgestellt. 
+Ein Grossteil der Sicherheitskontrollen wird direkt von der **Foundation Core Domain** bereitgestellt. 
 Optional wird die **Shared Service Domain** domänenspezifische Sicherheitsaspekte hinzufügen.
-Dadurch kann der eigentliche **Cloud-Konsument** bereits mit einem sehr hohen Mass an Sicherheit "out of the box" beginnen und sich nur auf die workload-spezifischen Sicherheitsaspekte konzentrieren.
+Dadurch kann der eigentliche **Cloud Consumer** bereits mit einem sehr hohen Mass an Sicherheit "out of the box" beginnen und sich nur auf die workload-spezifischen Sicherheitsaspekte konzentrieren.
 
 ![img](images/blog/cloud-foundation-map/sample-security.png)
 

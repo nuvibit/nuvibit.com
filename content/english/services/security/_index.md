@@ -9,16 +9,11 @@ banner_section:
     content: "The security maturity of your public cloud environment is business critical.
               Compliance is a major challenge for an enterprise with numerous workloads.<br><br>
               Cloud security is one of our specialties and we are happy to support you!"
-    image: "images/illustrations/cloud_security_compliance.png"
+    image: "images/illustrations/cloud-security-compliance.png"
     button:
         enable: true
         label: "Get in touch"
         link: "contact"
-
-# detail_section:
-#     enable: true
-#     title: What do we offer?
-#     content: INSERT CONTENT AS MARKDOWN AT END OF PAGE
 
 tile_section:
     enable: true
@@ -61,45 +56,29 @@ excerpt_section:
     list:
       - title: "Swiss Security Standard"
         enable: true
-        image: "images/illustrations/cloud_swiss_security.png"
+        image: "images/illustrations/cloud-swiss-security.png"
         content: "We build all our solutions with Swiss security standards in focus.<br>
                   What meets the security requirements of Swiss financial institutions leaves little room for security vulnerabilities.
                   You have come to the right place with your security concerns!"
-        # button:
-        #   enable: false
-        #   label: "read more about xxx"
-        #   link: "/services/security/xxx"
 
       - title_aws: "AWS Security Finding Management"
         enable: true
-        image: "images/illustrations/cloud_security_event_management_semper.png"
+        image: "images/illustrations/cloud-security-event-management-semper.png"
         content: "Your workloads are distributed across multiple AWS accounts and possibly even different regions?<br>
                   With our cloud-native, serverless solution [SEMPER](/contact/ 'Contact us for more information!'), you can centrally provision Amazon EventBridge and AWS Config Rules and meaningfully filter resulting events as well as AWS Security Hub and Amazon GuardDuty Findings.
                   In addition, you can enrich relevant findings with valuable additional information and manage the entire solution from a central [Policy as Code](/faq/#pac 'What is Policy as Code?') repository."
-        # button:
-        #   enable: true
-        #   label: "Contact us to learn more about SEMPER"
-        #   link: "/contact"
 
       - title_aws: "AWS Security Baselining"
         enable: true
-        image: "images/illustrations/cloud_security_baseline.png"
+        image: "images/illustrations/cloud-security-baseline.png"
         content: "Not only the workload itself, but also the underlying cloud foundation must be safety-compliant.<br>
                   To simplify this process, we will show you how to define and implement a set of basic security controls in your AWS organization.
                   Once your AWS accounts are 100% compliant, you have a lot less to worry about."
-        # button:
-        #   enable: false
-        #   label: "read more about xxx"
-        #   link: "/services/security/xxx"
 
       - title_aws: "AWS Security Architecture Review"
         enable: true
-        image: "images/illustrations/cloud_security_architecture.png"
+        image: "images/illustrations/cloud-security-architecture.png"
         content: "An AWS Well-Architected solution should always be fully compliant.<br>
                   There are many different security benchmarks to determine the compliance rate.
                   We can help you decide which criteria to consider for benchmarking and will be happy to review your architecture for potential security vulnerabilities."
-        # button:
-        #   enable: false
-        #   label: "read more about xxx"
-        #   link: "/services/security/xxx"
 ---

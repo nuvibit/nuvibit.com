@@ -3,7 +3,7 @@ banner:
   enable: true
   title: "All you need for cloud success <br>is ready to ship."
   content: "We help you build an enterprise ready, compliant and scalable [cloud foundation](/faq/#foundation 'What is a cloud foundation?').<br><br>"
-  image: "images/illustrations/cloud_ready_to_ship.png"
+  image: "images/illustrations/cloud-ready-to-ship.png"
   button:
     enable: true
     label: "Get in touch"
@@ -14,7 +14,7 @@ services:
   enable: true
   title: "Let us join your cloud journey!"
   items:
-    - image: "images/illustrations/cloud_assistance.png"
+    - image: "images/illustrations/cloud-assistance.png"
       enable: true
       title: "Together we are stronger."
       content: "Rome wasn't built in a day and the same goes for a reliable cloud foundation.<br>
@@ -25,7 +25,7 @@ services:
         label: "Discover our assistance services"
         link: "/services/assistance"
 
-    - image: "images/illustrations/cloud_management.png"
+    - image: "images/illustrations/cloud-management.png"
       enable: true
       title: "Prime your business for cloud success."
       content: "Designing a cloud strategy is the first and easiest step. 
@@ -36,7 +36,7 @@ services:
         label: "Discover our management services"
         link: "/services/management"
 
-    - image: "images/illustrations/cloud_security_compliance.png"
+    - image: "images/illustrations/cloud-security-compliance.png"
       enable: true
       title: "Security compliance from day one!"
       content: "The security maturity of your public cloud environment is business critical.
@@ -47,7 +47,7 @@ services:
         label: "Discover our security services"
         link: "/services/security"
 
-    - image: "images/illustrations/cloud_connectivity.png"
+    - image: "images/illustrations/cloud-connectivity.png"
       enable: true
       title: "First, build a solid network foundation!"
       content: "Connectivity is one of the first key topics which must be tackled to jump-start your cloud journey.<br>

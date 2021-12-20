@@ -9,17 +9,11 @@ banner_section:
     content: "Die Sicherheitsreife Ihrer Cloud Umgebung ist geschäftskritisch.
                 Die Compliance ist für Unternehmen mit einer umfangreichen Applikationslandschaft eine grosse Herausforderung.<br><br>
                 Cloud Security ist eine unserer Spezialitäten und wir unterstützen Sie gerne!"
-    image: "images/illustrations/cloud_security_compliance.png"
+    image: "images/illustrations/cloud-security-compliance.png"
     button:
         enable: true
         label: "Kontakt aufnehmen"
         link: "contact"
-
-
-# detail_section:
-#     enable: true
-#     title: What do we offer?
-#     content: INSERT CONTENT AS MARKDOWN AT END OF PAGE
 
 tile_section:
     enable: true
@@ -62,46 +56,30 @@ excerpt_section:
     list:
       - title: "Schweizer Security Standard"
         enable: true
-        image: "images/illustrations/cloud_swiss_security.png"
+        image: "images/illustrations/cloud-swiss-security.png"
         content: "Wir entwickeln alle unsere Lösungen mit dem Fokus auf Schweizer Security Standards.<br>
                   Lösungen die den Sicherheitsanforderungen der Schweizer Finanzinstitute entsprechen, lassen wenig Raum für Schwachstellen.
                   Bei uns sind Sie mit Ihren Sicherheitsanliegen goldrichtig!"
-        # button:
-        #   enable: false
-        #   label: "read more about xxx"
-        #   link: "/services/security/xxx"
 
       - title_aws: "AWS Security Finding Management - SEMPER"
         enable: true
-        image: "images/illustrations/cloud_security_event_management_semper.png"
+        image: "images/illustrations/cloud-security-event-management-semper.png"
         content: "Ihre Workloads sind über mehrere AWS Accounts und eventuell sogar verschiedene Regionen verteilt?<br>
                   Mit unserer cloud-nativen, Serverless-Lösung [SEMPER](/contact/ 'Kontakt aufnehmen für mehr Infos!') können Sie Amazon EventBridge- und AWS Config Rules zentral bereitstellen und resultierende Events sowie AWS Security Hub und Amazon GuardDuty Findings sinnvoll filtern. 
                   Darüber hinaus können Sie relevante Findings mit wichtigen Zusatzinformationen anreichern und die gesamte Lösung über ein zentrales [Policy as Code](/faq/#pac 'Was ist Policy as Code?') Repository verwalten."
-        # button:
-        #   enable: true
-        #   label: "Contact us to learn more about SEMPER"
-        #   link: "/contact"
 
       - title_aws: "AWS Security Baselining"
         enable: true
-        image: "images/illustrations/cloud_security_baseline.png"
+        image: "images/illustrations/cloud-security-baseline.png"
         content: "Nicht nur die Workloads an sich, sondern auch die zugrunde liegende [Cloud Foundation](/faq/#foundation \"Was ist eine Cloud Foundation?\") muss sicherheitskonform sein.<br>
                   Wir zeigen Ihnen, wie Sie eine Reihe von grundlegenden Sicherheitskontrollen in Ihrer AWS Organisation definieren und implementieren.
                   Mit vollständig sicherheitskonformen AWS Accounts lässt es sich nachts einfach besser schlafen."
-        # button:
-        #   enable: false
-        #   label: "read more about xxx"
-        #   link: "/services/security/xxx"
 
       - title_aws: "AWS Security Architecture Review"
         enable: true
-        image: "images/illustrations/cloud_security_architecture.png"
+        image: "images/illustrations/cloud-security-architecture.png"
         content: "Eine AWS Well-Architected Lösung sollte immer auf Ihre individuellen Sicherheitsanforderungen abgestimmt sein.<br>
                   Es gibt zahlreiche Sicherheits-Benchmarks zur Bestimmung der Compliance-Rate. 
                   Wir können Ihnen bei der Entscheidung helfen, welche Kriterien berücksichtigt werden sollen.
                   Gerne überprüfen wir auch Ihre Architektur auf mögliche Sicherheitslücken und stellen Ihnen Referenzarchitekturen zur Verfügung."
-        # button:
-        #   enable: false
-        #   label: "read more about xxx"
-        #   link: "/services/security/xxx"
 ---

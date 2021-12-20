@@ -16,7 +16,7 @@
                 <div class="card rounded shadow border-0 mb-30">
                     <div class="card-body p-30">
                         {{ if .image }}
-                        <img class="img-fluid" src="{{.image}}{{.|absURL}}" alt='Illustration of {{ .Image | replaceRE ".*?(\\w+).png" "$1" }}'>
+                        <img class="img-fluid" src="{{.image}}{{.|absURL}}" alt='Illustration of {{ .Image | replaceRE ".*?([\\w-]+).png" "$1" }}'>
                         {{ end }}
                         <h3 class="h2 font-weight-bold mt-15 mb-10">{{ $.Page.RenderString .name }}</h3>
                         <p class="border-bottom pb-20">{{ $.Page.RenderString .label }}</p>

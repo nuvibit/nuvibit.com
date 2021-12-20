@@ -9,16 +9,11 @@ banner_section:
     content: "Die Ausarbeitung einer Cloud Strategie ist der erste und einfachste Schritt.
               Die Umsetzung dieser Vision in die Realität und die Befähigung der Organisation ist der komplexe Teil.<br><br>
               Mit unserer praktischen Erfahrung bei der Umstrukturierung einer Organisation können wir Sie auf diesem Weg tatkräftig unterstützen."
-    image: "images/illustrations/cloud_management.png"
+    image: "images/illustrations/cloud-management.png"
     button:
         enable: true
         label: "Kontakt aufnehmen"
         link: "contact"
-
-# detail_section:
-#     enable: true
-#     title: What do we offer?
-#     content: INSERT CONTENT AS MARKDOWN AT END OF PAGE
 
 tile_section:
     enable: true
@@ -60,24 +55,15 @@ excerpt_section:
     list:
       - title_aws: "AWS Multi-Account Strategie"
         enable: true
-        image: "images/illustrations/cloud_multi_account.png"
+        image: "images/illustrations/cloud-multi-account.png"
         content: "Alle Workloads in einem einzigen AWS Account zu verwalten endet stets im Chaos, sobald skaliert werden soll.<br>
         Wenn die Zahl der Workloads steigt, werden diverse Probleme im Zusammenhang mit Isolation, Security, Verrechnung und Provider-Limiten sichtbar.
         Wir zeigen Best Practices auf und helfen Ihnen, die richtige Multi-Account Strategie für Ihr Unternehmen zu finden."
-        link:
-          # enable: false
-          # label: "read more about xxx"
-          # link: "/services/management/xxx"
 
-      # - title_aws: "AWS Account Management"
       - title_aws: "AWS Account Lifecycle"
         enable: true
-        image: "images/illustrations/cloud_account_lifecycle.png"
+        image: "images/illustrations/cloud-account-lifecycle.png"
         content: "Bei der Implementierung der Multi-Account Strategie gibt es zahlreiche Herausforderungen zu bewältigen.<br>
         Wie konfiguriert man den Hauptaccount, strukturiert AWS-Organisationen, definiert Zugriffsrechte, verwaltet Code-Repositories und pflegt [CI/CD Pipelines](/faq/#cicd 'Was ist CI/CD?')?
         Wir bieten Ihnen eine adaptive Lösung, um Ihre Accounts einschliesslich aller Umsysteme mit [Infrastructure as Code](/faq/#iac 'Was ist Infrastructure as Code?') auf eine einfache und effiziente Weise zu verwalten."
-        link:
-          # enable: false
-          # label: "read more about nuvibit account manager"
-          # link: "/services/management/xxx"
 ---

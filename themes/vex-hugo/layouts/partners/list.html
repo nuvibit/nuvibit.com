@@ -14,7 +14,7 @@
                         <i class="fas fa-plus"></i>
                     </a>
                 </div>
-                <img class="img-fluid" src="{{ .Params.image | absURL }}" alt='{{ .Params.image | replaceRE ".*?(\\w+).png" "$1" }} badge'>
+                <img class="img-fluid" src="{{ .Params.image | absURL }}" alt='{{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }} badge'>
             </div>
             <div class="product-info">
                 <h4 class="mb-2"><a href="{{.Permalink}}" class="link-title">{{.Title}}</a></h4>

@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-5 mb-4 mb-md-0 zoom" onclick="image_zoom(this)">
-        <img class="img-fluid w-100" src="{{ .Params.Image | absURL }}" alt='Illustration of {{ .Params.Image | replaceRE ".*?(\\w+).png" "$1" }}'>
+        <img class="img-fluid w-100" src="{{ .Params.Image | absURL }}" alt='Illustration of {{ .Params.Image | replaceRE ".*?([\\w-]+).png" "$1" }}'>
       </div>
       <div class="col-lg-6 col-md-7 offset-lg-1">
         <h1 class="mb-4">{{ $.Page.RenderString .Title }}</h1>

@@ -2,7 +2,7 @@
 title: "Ihnen fehlt vermutlich eine AWS Umgebung..."
 date: 2021-12-19T11:00:00+06:00
 image: "images/blog/aws-foundation-testing/foundation-testing.png"
-description: "Nuvibit Cloud Foundation IaC CI/CD Referenz Architektur."
+description: "In diesem Beitrag wird die Nuvibit Cloud Foundation IaC CI/CD Referenz Architektur vorgestellt."
 summary: "Foundation-Services wie Vending, Security, Logging, Monitoring, Image Factory und Networking können in einer produktiven AWS Umgebung nicht ausreichend getestet werden, da diese nicht isoliert werden können oder einen direkten Einfluss auf alle Workloads haben können."
 duration: 4
 draft: false

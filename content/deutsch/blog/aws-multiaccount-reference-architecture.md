@@ -1,45 +1,55 @@
 ---
-title: "Referenz Architektur für AWS Multi-Account Kunden"
+title: "Referenzarchitektur für AWS Multi-Account Kunden"
 date: 2021-12-18T11:00:00+06:00
 image: "images/blog/aws-multiaccount-reference-architecture/reference-org-architecture.png"
-description: "Nuvibit Multi Account Referenz Architektur."
-summary: "In diesem Post stellen wir die Nuvibit Referenz Architektur für Kunden vor, die in ihrer Umgebung mehrere AWS Accounts betreiben."
+description: "In diesem Beitrag wird die Nuvibit Referenzarchitektur für Kunden mit einer AWS Multi-Account-Umgebung vorgestellt."
+summary: "Wir stellen die Nuvibit Referenzarchitektur für Kunden mit einer AWS Multi-Account-Umgebung vor."
 duration: 5
 
 draft: false
 ---
 ## Context
 
-Dieser Blog Post stellt die Nuvibit Referenz Architektur vor, die für AWS Umgebungen mit mehreren Accounts empfohlen wird.
+Kunden mit einer AWS Multi-Account-Umgebung werden schnell mit den damit verbundenen Herausforderungen konfrontiert.
+Wie soll die Verantwortung für die Cloud auf die unterschiedlichen Organisationseinheiten übertragen werden?
 
-Die Nuvibit Referenz Architektur berücksichtigt und implementiert Empfehlungen und Richtlinien aus folgenden, von AWS empfohlenen Quellen:
+Mit unserer Nuvibit-Referenzarchitektur bieten wir eine Lösung für diese Herausforderung.
+Die Referenzarchitektur berücksichtigt und implementiert Empfehlungen und Richtlinien aus den folgenden von AWS empfohlenen Quellen:
 
 \- [AWS Landing Zone](https://aws.amazon.com/de/solutions/implementations/aws-landing-zone/ 'AWS Landing Zone') and [AWS Control Tower](https://aws.amazon.com/de/controltower/ 'AWS Control Tower')<br/>
 \- [Apply security services across your AWS organization](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/security-services.html 'Apply security services across your AWS organization')<br/>
 \- [AWS Security Reference Architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/architecture.html 'AWS Security Reference Architecture')<br/>
-\- [Multi Account Network Architecture](https://docs.aws.amazon.com/managedservices/latest/userguide/malz-net-arch.html 'Multi Account Network Architecture')<br/>  
-Zusätzlich sind unsere Erfahrungen mit Multi-Account-Umgebungen in diese Referenz Architektur eingeflossen.<br/>
+\- [Multi Account Network Architecture](https://docs.aws.amazon.com/managedservices/latest/userguide/malz-net-arch.html 'Multi Account Network Architecture')<br/>
 
-Dieser Post fokussiert auf die **Core Domains** der **Nuvibit Cloud Foundation**, die im Blog Post **[Nuvibit Cloud Foundation Map](/blog/cloud-foundation-map 'Nuvibit Cloud Foundation Blog Post')** beschrieben und erklärt wird.
+Zusätzlich sind unsere Erfahrungen mit Multi-Account-Umgebungen in diese Referenzarchitektur eingeflossen.
+
+Der Fokus liegt auf den **Core Domains** der **Nuvibit Cloud Foundation**, die im Blogbeitrag **[Nuvibit Cloud Foundation Map](/blog/cloud-foundation-map 'Nuvibit Cloud Foundation Blog Post')** ausführlich behandelt werden.
 
 ![img](images/blog/aws-multiaccount-reference-architecture/foundation-core-domains.png)
 
 ## AWS Account Domains
-In einer Multi-Account-Umgebung dienen nicht alle AWS Accounts dem selben Zweck. Um den Überblick zu behalten, kategorisieren wir die Accounts in drei Domains.<br/>
-Wir führen die Domains **Foundation Core**, **Foundation Shared Service** und **Business Workload** ein.<br/>
+
+In einer AWS Multi-Account-Umgebung sind nicht alle AWS-Accounts für denselben Zweck bestimmt.
+Um den Überblick zu behalten, teilen wir die AWS-Accounts in drei Domänen ein:
+
+\-**Foundation Core**<br/>
+\-**Foundation Shared Service**<br/>
+\-**Business Workload**<br/>
+
 {{<table "table table-striped table-bordered">}}
 | Domain | Beschreibung |
 | ---   | :---  |
-| **Foundation Core** | Accounts, die zentrale Komponenten der Nuvibit Cloud Foundation beinhalten. Verwaltet durch das Cloud Foundation Core Team(s). |
-| **Foundation Shared Service** | Accounts, die Komponenten beinhalten, die von mehreren Workloads genutzt werden (Streaming Plattform, Data Lake, Analytics Plattform, API Management, usw.). Verwaltet durch die Cloud Foundation Shared Service Teams. |
-| **Business Workload** | Accounts, die Komponenten der eigentlichen Business Applikationen beinhalten. Genutzt von den Cloud Workload Development Teams. |
+| **Foundation Core** | Accounts, die Kernkomponenten der Nuvibit Cloud Foundation beinhalten und vom Cloud Foundation Core Team(s) verwaltet werden. |
+| **Foundation Shared Service** | Accounts, die gemeinsame Dienste und Plattformen hosten (Streaming Plattform, Data Lake, Analytics Plattform, API Management) und vom Cloud Foundation Shared Service Team(s) verwaltet werden. |
+| **Business Workload** | Accounts, auf denen alle Komponenten der Business-Applikationen gehostet werden und die vom Cloud Workload Development Team(s) verwaltet werden. |
 {{</table>}}
 <br/>
 
-Die folgende Grafik zeigt beispielhaft verschiedene Accounts nach Domönen kategorisiert:
+Die folgende Grafik dient als Beispiel und gibt einen Überblick über die verschiedenen Accounts, kategorisiert nach Domänen:
+
 ![img](images/blog/aws-multiaccount-reference-architecture/aws-foundation-account-types.png)
 
-Unsere Referenz Architektur empfiehlt die folgenden **Foundation Core Accounts** und zusätzlich mindestend zwei **Business Workload Accounts** pro Workload.
+Unsere Referenzarchitektur empfiehlt die folgenden **Foundation Core Accounts** und zusätzlich mindestend zwei **Business Workload Accounts** pro Workload.
 **Foundation Shared Service Accounts** sind für eine funktionierende Foundation nicht notwendig. Ob Sie solche Accounts benötigen hängt davon ab, welche Plattformen oder Services Sie den Teams mit Ihrer Foundation bereitstellen möchten.<br/>
 
 {{<table "table table-striped table-bordered">}}
@@ -58,6 +68,7 @@ Unsere Referenz Architektur empfiehlt die folgenden **Foundation Core Accounts**
 <br/>
 
 ## Foundation Core Domain - Account Baseline
+
 Die Capabilities der **Nuvibit Foundation Core Domain** bestehen typischerweise nicht nur aus den **Foundation Core Accounts** sondern setzen voraus, dass einige Komponenten in allen Accounts innerhalb der AWS Organization deployed werden.<br/>
 Diese verteilten Komponenten nennen wir **Account Baseline**.<br/>
 Die **Account Baseline** umfasst die Härtung der Accounts, Compliance und Security Policies und auch die Konfiguration, um die Accounts mit den jeweiligen **Foundation Core Accounts** zu verbinden.<br/><br/>

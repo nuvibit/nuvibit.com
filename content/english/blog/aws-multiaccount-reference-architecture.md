@@ -1,43 +1,54 @@
 ---
-title: "Reference Architecture for AWS Multi-Account Customers"
+title: "Reference architecture for AWS Multi-Account Customers"
 date: 2021-12-18T11:00:00+06:00
 image: "images/blog/aws-multiaccount-reference-architecture/reference-org-architecture.png"
-description: "Nuvibit Multi Account Reference Architecture."
-summary: "Introducing the Nuvibit Reference Architecture for customers with a multi-account environment on AWS."
+description: "This post introduces the Nuvibit reference architecture for customers with an AWS multi-account environment."
+summary: "We introduce the Nuvibit reference architecture for customers with an AWS multi-account environment."
 duration: 5
 draft: false
 ---
 ## Context
 
-This blog post is an introduction of the Nuvibit Reference Architecture for customers with a multi-account environment on AWS.
-The Nuvibit Reference Architecture is derived and implements best practices from the following sources:
+Customers with an AWS multi-account environment are quickly confronted with the related challenges.
+How should the cloud responsibility be transferred to the different organizational units?
+
+Our Nuvibit reference architecture provides a solution to this challenge.
+The reference architecture considers and implements best practices from the following sources:
 
 \- [AWS Landing Zone](https://aws.amazon.com/solutions/implementations/aws-landing-zone/ 'AWS Landing Zone') and [AWS Control Tower](https://aws.amazon.com/controltower/ 'AWS Control Tower')<br/>
 \- [Apply security services across your AWS organization](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/security-services.html 'Apply security services across your AWS organization')<br/>
 \- [AWS Security Reference Architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/architecture.html 'AWS Security Reference Architecture')<br/>
 \- [Multi Account Network Architecture](https://docs.aws.amazon.com/managedservices/latest/userguide/malz-net-arch.html 'Multi Account Network Architecture')<br/>
-\- Industry proven best practices based on our experiences<br/><br/>
 
-Focus of this post are the  **Core Domains** of the **Nuvibit Cloud Foundation** described here: **[Nuvibit Cloud Foundation Map](/blog/cloud-foundation-map 'Blog post on the Nuvibit Cloud Foundation Map')** 
+In addition, our experience with multi-account environments has been included in this reference architecture.
+
+The focus is on the **Core Domains** of the **Nuvibit Cloud Foundation**, which are fully covered in the blog post **[Nuvibit Cloud Foundation Map](/blog/cloud-foundation-map 'Blog post on the Nuvibit Cloud Foundation Map')**.
 
 ![img](images/blog/aws-multiaccount-reference-architecture/foundation-core-domains.png)
 
 ## AWS Account Domains
-Not all accounts are the same and are used for the same kind of workloads and purposes. To simplify the discussion about the different accounts we can categorize them into domains. <br/>
-We define the domains **Foundation Core**, **Foundation Shared Service** and **Business Workload** to categorize the different accounts.<br/>
+
+Not all accounts are the same and are used for the same kind of workloads and purposes.
+To maintain a clear overview, we divide the AWS accounts into three domains:
+
+\-**Foundation Core**<br/>
+\-**Foundation Shared Service**<br/>
+\-**Business Workload**<br/>
+
 {{<table "table table-striped table-bordered">}}
 | Domain | Description |
 | ---   | :---  |
-| **Foundation Core** | Accounts that host core components of the Nuvibit Cloud Foundation. Maintained by the Cloud Foundation Core Team(s). |
-| **Foundation Shared Service** | Account that host shared services and platforms (streaming platform, data lake, analitics platform, API management, etc.). Maintained by the Cloud Foundation Shared Service Teams. |
-| **Business Workload** | Accounts that host the all the components of the business applications. Ownerd by the Cloud Workload Development Teams. |
+| **Foundation Core** | Accounts that host core components of the Nuvibit Cloud Foundation and are managed by the Cloud Foundation Core Team(s). |
+| **Foundation Shared Service** | Account that host shared services and platforms (streaming platform, data lake, analitics platform, API management) and are managed by the Cloud Foundation Shared Service Team(s). |
+| **Business Workload** | Accounts that host all the components of the business applications and are managed by the Cloud Workload Development Team(s). |
 {{</table>}}
 <br/>
 
-The following graph shows a set of accounts categorized into mentioned domains:
+The following graphic serves as an example and gives an overview of the different accounts, categorized by domains:
+
 ![img](images/blog/aws-multiaccount-reference-architecture/aws-foundation-account-types.png)
 
-We recommend to establish the following **Foundation Core Accounts** and at least two accounts per business workload. **Foundation Shared Service Accounts** are not required for a working Foundation. If you need such an account depends on the systems and platforms you want your teams to use.<br/>
+We recommend to establish the following **Foundation Core Accounts** and at least two accounts per business workload. **Foundation Shared Service Accounts** are not required for a working Foundation. If you need such an account depends on the systems and platforms you want your teams to use.
 
 {{<table "table table-striped table-bordered">}}
 | Domain | Account Type | Description |
@@ -55,6 +66,7 @@ We recommend to establish the following **Foundation Core Accounts** and at leas
 <br/>
 
 ## Foundation Core Domain - Account Baseline
+
 The Capabilities in the **Nuvibit Foundation Core Domain** typically consist not only of the **Foundation Core Accounts** but also require some components to be deployed in all Accounts within the AWS organization.<br/>
 Those distributed components are summarized in the term **Account Baseline**.<br/>
 The **Account Baseline** includes account hardening, implementing compliance and security policies as well as wiring up the accounts with the **Foundation Core Accounts**.<br/><br/>

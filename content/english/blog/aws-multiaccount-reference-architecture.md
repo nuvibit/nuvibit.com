@@ -4,6 +4,9 @@ date: 2021-12-18T11:00:00+06:00
 image: "images/blog/aws-multiaccount-reference-architecture/reference-org-architecture.png"
 description: "This post introduces the Nuvibit reference architecture for customers with an AWS multi-account environment."
 summary: "We introduce the Nuvibit reference architecture for customers with an AWS multi-account environment."
+tags:
+  - aws
+  - foundation
 duration: 5
 draft: false
 ---

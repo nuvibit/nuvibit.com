@@ -4,6 +4,10 @@ date: 2021-11-24T11:00:00+06:00
 image: "images/blog/aws-cis-3x/cis-controls.png"
 description: "Keeping grip on the current level of security compliance can be a challenge. AWS provides a great tool, that is designed to provide an account overarching overview, valuable especially in AWS Landing Zone architectures: AWS Security Hub"
 summary: "This post explains, why we are in favor of using Amazon EventBridge Rules for monitoring the recommended CIS AWS 3.x controls. "
+tags:
+  - aws
+  - security
+  - semper
 duration: 10
 draft: false
 ---

@@ -4,6 +4,10 @@ date: 2021-12-17T11:00:00+06:00
 image: "images/blog/cloud-foundation-map/foundation-map.png"
 description: "In diesem Beitrag wird das erweiterte Prinzip der geteilten Verantwortung eingeführt und die Nuvibit Cloud Foundation Capability Map vorgestellt."
 summary: "Erfahren Sie mehr darüber, wie Sie das Prinzip der geteilten Verantwortung (shared responsibility model) zur Nuvibit Cloud Foundation Capability Map ausweiten können."
+tags:
+  - aws
+  - azure
+  - foundation
 duration: 5
 draft: false
 ---

@@ -4,6 +4,9 @@ date: 2021-12-19T11:00:00+06:00
 image: "images/blog/aws-foundation-testing/foundation-testing.png"
 description: "This post introduces the Nuvibit Cloud Foundation IaC CI/CD Reference Architecture."
 summary: "Foundation services such as vending, security, logging, monitoring, image factory and networking cannot be properly tested in a productive AWS environment because they cannot be separated or they can directly impact all workloads."
+tags:
+  - aws
+  - foundation
 duration: 5
 draft: false
 ---

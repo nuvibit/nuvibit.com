@@ -4,6 +4,10 @@ date: 2021-12-17T11:00:00+06:00
 image: "images/blog/cloud-foundation-map/foundation-map.png"
 description: "This post introduces the extended shared responsibility model and presents the Nuvibit Cloud Foundation Capability Map."
 summary: "Learn more about how to extend the shared responsibility model to the Nuvibit Cloud Foundation Capability Map."
+tags:
+  - aws
+  - azure
+  - foundation
 duration: 5
 draft: false
 ---

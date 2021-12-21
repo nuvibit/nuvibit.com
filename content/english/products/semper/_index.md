@@ -77,9 +77,7 @@ link_section:
     - title: "Blog"
       enable: true
       content: "Read more about SEMPER in these blog posts"
-      blogs:
-        - link: "blog/aws-cis-3x"
-          link_name: "CIS AWS Foundations Benchmark is cool, but..."
+      blog_tag: semper
 
 testimonial_section:
     enable: false

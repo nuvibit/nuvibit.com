@@ -73,9 +73,7 @@ link_section:
     - title: "Blog"
       enable: true
       content: "Read more about the Nuvibit Foundation in these blog posts"
-      blogs:
-        - link: "blog/aws-foundation-testing"
-          link_name: "You're probably missing an AWS environment..."
+      blog_tag: foundation
 
 testimonial_section:
     enable: false

@@ -125,11 +125,14 @@
                     </p>
                     {{- end }}
                     <ul class="list-group">
-                    {{ range .blogs }}
-                    <li class="list-group-item">
-                        <a href="{{ .link | absLangURL }}" class="link-primary">{{ $.Page.RenderString .link_name }}</a>
-                    </li>
-                    {{- end }}
+                    {{ $BlogTag := .blog_tag }}
+                    {{ range (where site.RegularPages "Section" "blog") }}
+                    {{ if in .Params.tags $BlogTag }}
+                        <li class="list-group-item">
+                            <a href="{{ .Permalink }}" class="link-primary">{{ $.Page.RenderString .Title }}</a>
+                        </li>
+                    {{ end }}
+                    {{ end }}
                     </ul>
 				</div>
 			</div>

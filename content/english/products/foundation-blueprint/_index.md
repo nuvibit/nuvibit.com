@@ -45,8 +45,8 @@ feature_section:
     icon : "fa-building"
     content : "We put a lot of focus on the organizational structures and cloud strategy to maximize opportunities for success."
 
-  - title : "Training on the Job"
-    icon : "fa-building"
+  - title : "Workshops & Training"
+    icon : "fa-chalkboard-teacher"
     content : "Our goal is to enable our customers to successfully adopt and operate our foundation blueprint."
 
 
@@ -71,7 +71,7 @@ excerpt_section:
 
       - title: "Support stage"
         enable: true
-        image: "images/products/xxx.png"
+        image: "images/products/foundation-blueprint-support.png"
         content: "insert summary description."
 
 link_section:

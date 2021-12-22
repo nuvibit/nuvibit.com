@@ -10,7 +10,7 @@ banner_section:
     There are technical parts such as connectivity or security and organizational parts such as finance or operations.
     A secure, scalable cloud foundation will significantly accelerate your cloud adoption journey and is one of the most important and hardest challenges.<br/><br/>
     Our Foundation Blueprint addresses exactly that and enables anyone to build a tailored Cloud Foundation in just a few steps."
-    image: "images/products/foundation-blueprint-illustration.png"
+    image : "images/products/foundation-blueprint-logo.png"
     button:
         enable: true
         label: "Get in touch"
@@ -19,7 +19,7 @@ banner_section:
 feature_section:
   enable : true
   title : "Key features"
-  image : "images/products/foundation-blueprint-logo.png"
+  image: "images/products/foundation-blueprint-illustration.png"
 
   # feature at the left of the image
   left_side:
@@ -54,17 +54,22 @@ excerpt_section:
     enable: true
     title: "In a nutshell..."
     list:
-      - title: "1. assessment & workshops"
+      - title: "Assessment stage"
         enable: true
-        image: "images/products/xxx.png"
+        image: "images/products/foundation-blueprint-assessment.png"
         content: "insert summary description."
 
-      - title: "2. implementation & training"
+      - title: "Implementation stage"
         enable: true
-        image: "images/products/xxx.png"
+        image: "images/products/foundation-blueprint-implementation.png"
         content: "insert summary description."
 
-      - title: "3. transition & support"
+      - title: "Transition stage"
+        enable: true
+        image: "images/products/foundation-blueprint-transition.png"
+        content: "insert summary description."
+
+      - title: "Support stage"
         enable: true
         image: "images/products/xxx.png"
         content: "insert summary description."

@@ -20,7 +20,7 @@ Alle diese Elemente sind Teil Ihrer individuellen Cloud Foundation, die den Kurs
 
 Jeder Cloud-Kunde hat bereits zu einem gewissen Grad eine eigene Cloud Foundation, aber wenn diese Foundation nicht von Anfang an aktiv geformt wird, kann es schnell zu erheblichen Engpässen kommen.
 
-Nehmen wir beispielsweise an, dass wir mit dem von AWS standardmäßig bereitgestellten VPC begonnen haben.
+Nehmen wir beispielsweise an, dass wir mit dem von AWS standardmässig bereitgestellten VPC begonnen haben.
 Zu einem späteren Zeitpunkt unserer Cloud Journey möchten wir ein VPN vom Firmensitz zu unserem VPC einrichten und stossen auf überlappende Netzwerkbereiche.
 Anstatt uns auf unsere Workloads zu konzentrieren, verschwenden wir nun wertvolle Zeit mit der Behebung von Problemen, die wir hätten vermeiden können, wenn wir von Anfang an mehr in die Foundation investiert hätten.
 
@@ -54,7 +54,7 @@ Jedes dieser Repositories verfügt über eine separate **CI/CD-Pipeline**, die f
 
 ## Fazit
 
-Wir liefern hier die Vorlage, aber der Feinschliff besteht darin, diese genau auf Ihre Anforderungen und Vorlieben abzustimmen, um den größten Nutzen daraus zu ziehen.
+Wir liefern hier die Vorlage, aber der Feinschliff besteht darin, diese genau auf Ihre Anforderungen und Vorlieben abzustimmen, um den grössten Nutzen daraus zu ziehen.
 <br/><br/>
 
 ## Unsere Dienstleistung

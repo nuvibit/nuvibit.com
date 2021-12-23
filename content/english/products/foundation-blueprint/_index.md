@@ -9,7 +9,7 @@ banner_section:
     content: "Before deploying a workload on the public cloud there are many moving parts which have to be coordinated. 
     There are technical parts such as connectivity or security and organizational parts such as finance or operations.
     A secure, scalable cloud foundation will significantly accelerate your cloud adoption journey and is one of the most important and hardest challenges.<br/><br/>
-    Our Foundation Blueprint addresses exactly that and enables anyone to build a Cloud Foundation tailored to the needs."
+    Our Foundation Blueprint addresses exactly this concern and enables an organization to efficiently build a tailored Cloud Foundation."
     image : "images/products/foundation-blueprint-logo.png"
     button:
         enable: true
@@ -25,7 +25,7 @@ feature_section:
   left_side:
   - title : "Infrastructure as Code"
     icon : "fa-file-code"
-    content : "At the heart of our Foundation Blueprint are Terraform modules, which dramatically simplify the management of the entire Cloud Foundation."
+    content : "At the heart of our Foundation Blueprint are [Terraform](https://www.terraform.io/intro/index.html 'Introduction to Terraform') modules, which dramatically simplify the management of the entire Cloud Foundation."
 
   - title : "Scalability"
     icon : "fa-chart-line"
@@ -33,13 +33,13 @@ feature_section:
     
   - title : "Well Architected"
     icon : "fa-drafting-compass"
-    content : "Our reference architectures are based on experience, best practices and the AWS Well-Architected Framework."
+    content : "Our reference architectures are based on experience, best practices and the [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected 'AWS Well-Architected')."
 
   # feature at the right of the image
   right_side:
   - title : "Tailored to the needs"
     icon : "fa-cut"
-    content : "A great Foundation is just as unique as the customer himself and that's why we adjust our Blueprint exactly to your needs"
+    content : "A great Foundation is just as unique as the customer himself and that's why we adjust our Blueprint exactly to your needs."
 
   - title : "Transition of the organization"
     icon : "fa-building"

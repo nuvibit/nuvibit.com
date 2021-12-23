@@ -148,16 +148,16 @@ url = "products"
 weight = 7
 
 [[Languages.en.menu.main]]
-identifier = "semper"
-name = "SEMPER"
-url = "products/semper"
+identifier = "foundation-blueprint"
+name = "Foundation Blueprint"
+url = "products/foundation-blueprint"
 parent = "products"
 weight = 8
 
 [[Languages.en.menu.main]]
-identifier = "foundation-blueprint"
-name = "Foundation Blueprint"
-url = "products/foundation-blueprint"
+identifier = "semper"
+name = "SEMPER"
+url = "products/semper"
 parent = "products"
 weight = 9
 
@@ -312,16 +312,16 @@ url = "products"
 weight = 7
 
 [[Languages.de.menu.main]]
-identifier = "semper"
-name = "SEMPER"
-url = "products/semper"
+identifier = "foundation-blueprint"
+name = "Foundation Blueprint"
+url = "products/foundation-blueprint"
 parent = "products"
 weight = 8
 
 [[Languages.de.menu.main]]
-identifier = "foundation-blueprint"
-name = "Foundation Blueprint"
-url = "products/foundation-blueprint"
+identifier = "semper"
+name = "SEMPER"
+url = "products/semper"
 parent = "products"
 weight = 9
 

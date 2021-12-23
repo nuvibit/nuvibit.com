@@ -60,7 +60,7 @@ excerpt_section:
         content: "First and foremost, we need to get an overview of where you stand on your cloud journey and where you want to go.
                   We need to analyze your cloud strategy and organizational structures to adjust our Blueprint to them.
                   Your connectivity, security and automation requirements are also identified and taken into account.<br/><br/>
-                  Part of the assessment stage also includes workshops to establish a better understanding of the Cloud Foundation."
+                  Part of the assessment also includes workshops to establish a better understanding of the Cloud Foundation."
 
       - title: "Implementation"
         enable: true
@@ -74,7 +74,7 @@ excerpt_section:
         image: "images/products/foundation-blueprint-transition.png"
         content: "We have no interest in building a Cloud Foundation without ensuring that the necessary capabilities are in place to run it successfully.
                   Because we believe that hands-on experience is the best way to learn new skills, we provide on-the-job training.<br/><br/>
-                  Part of the transition stage includes cementing the Cloud Foundation Capabilities which are essential to establish a Cloud Operating Model."
+                  Part of the transition includes cementing the Cloud Foundation Capabilities which are essential to establish a Cloud Operating Model."
 
       - title: "Support"
         enable: true

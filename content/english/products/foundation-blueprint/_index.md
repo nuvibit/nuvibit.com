@@ -9,7 +9,7 @@ banner_section:
     content: "Before deploying a workload on the public cloud there are many moving parts which have to be coordinated. 
     There are technical parts such as connectivity or security and organizational parts such as finance or operations.
     A secure, scalable cloud foundation will significantly accelerate your cloud adoption journey and is one of the most important and hardest challenges.<br/><br/>
-    Our Foundation Blueprint addresses exactly that and enables anyone to build a tailored Cloud Foundation in just a few steps."
+    Our Foundation Blueprint addresses exactly that and enables anyone to build a Cloud Foundation tailored to the needs."
     image : "images/products/foundation-blueprint-logo.png"
     button:
         enable: true

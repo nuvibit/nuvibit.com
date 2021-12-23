@@ -47,32 +47,41 @@ feature_section:
 
   - title : "Workshops & Training"
     icon : "fa-chalkboard-teacher"
-    content : "Our goal is to enable our customers to successfully adopt and operate our foundation blueprint."
+    content : "Our goal is to enable our customers to successfully adopt and operate our Foundation Blueprint."
 
 
 excerpt_section:
     enable: true
     title: "In a nutshell..."
     list:
-      - title: "Assessment stage"
+      - title: "Assessment"
         enable: true
         image: "images/products/foundation-blueprint-assessment.png"
-        content: "insert summary description."
+        content: "First and foremost, we need to get an overview of where you stand on your cloud journey and where you want to go.
+                  We need to analyze your cloud strategy and organizational structures to adjust our Blueprint to them.
+                  Your connectivity, security and automation requirements are also identified and taken into account.<br/><br/>
+                  Part of the assessment stage also includes workshops to establish a better understanding of the Cloud Foundation."
 
-      - title: "Implementation stage"
+      - title: "Implementation"
         enable: true
         image: "images/products/foundation-blueprint-implementation.png"
-        content: "insert summary description."
+        content: "Once we have a clear overview and gathered all requirements, we assemble a team of specialists to build a tailored Cloud Foundation based on our Blueprint.
+                  We adapt our Foundation Blueprint Terraform modules to perfectly fit your needs and support you during implementation.<br/><br/>
+                  If needed, we can also adapt or build the tooling required for Infrastructure as Code deployments with Terraform."
 
-      - title: "Transition stage"
+      - title: "Transition"
         enable: true
         image: "images/products/foundation-blueprint-transition.png"
-        content: "insert summary description."
+        content: "We have no interest in building a Cloud Foundation without ensuring that the necessary capabilities are in place to run it successfully.
+                  Because we believe that hands-on experience is the best way to learn new skills, we provide on-the-job training.<br/><br/>
+                  Part of the transition stage includes cementing the Cloud Foundation Capabilities which are essential to establish a Cloud Operating Model."
 
-      - title: "Support stage"
+      - title: "Support"
         enable: true
         image: "images/products/foundation-blueprint-support.png"
-        content: "insert summary description."
+        content: "Even after the successful implementation of your Cloud Foundation, we want to continue supporting you on your cloud journey.
+                  We can help you troubleshoot and fix issues related to your Foundation and our Terraform modules.<br/><br/>
+                  In addition, we can provide you with updates to our Foundation Terraform modules and implement your feature requests whenever possible."
 
 link_section:
     enable: true

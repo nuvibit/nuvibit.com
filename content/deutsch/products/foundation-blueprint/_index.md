@@ -47,7 +47,7 @@ feature_section:
 
   - title : "Workshops & Schulungen"
     icon : "fa-chalkboard-teacher"
-    content : "Unser Ziel ist es, unsere Kunden zu befähigen, unseren Foundation Blueprint erfolgreich einzuführen und anzuwenden."
+    content : "Unser Ziel ist es, unsere Kunden zu befähigen, unseren Foundation Blueprint erfolgreich einzuführen und zu betreiben."
 
 
 excerpt_section:

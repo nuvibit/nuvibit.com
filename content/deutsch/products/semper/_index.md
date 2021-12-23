@@ -62,7 +62,7 @@ excerpt_section:
         enable: true
         image: "images/products/semper-processing.png"
         content: "SEMPER sammelt alle Sensorereignisse und reichert sie mit wichtigen Metadaten wie Account-Tags, Kontext aus der AWS-Organisation und weiteren richtlinienbasierten Informationen an. Darüber hinaus ist SEMPER in der Lage, falsch-positive Sicherheitswarnungen auf der Grundlage Ihrer vordefinierten Policies zu unterdrücken und herauszufiltern**.
-        Die angereicherten Ergebnisse werden an ein SNS-Thema gesendet und in einem CloudWatch Logs-Stream aufbewahrt. Von dort aus können Sie diese entweder zur weiteren Analyse an ein Drittanbieter-Tool Ihrer Wahl (Splunk, Logstash, AWS QuickSight usw.) **weiterleiten** oder Sie können einen Schritt weiter gehen und eine [automatische Korrektur] (/faq#autoremediation 'Was ist eine automatische Korrektur?') für bestimmte Ergebnisse implementieren."
+        Die angereicherten Ergebnisse werden an ein SNS-Thema gesendet und in einem CloudWatch Logs-Stream aufbewahrt. Von dort aus können Sie diese entweder zur weiteren Analyse an ein Drittanbieter-Tool Ihrer Wahl (Splunk, Logstash, AWS QuickSight usw.) **weiterleiten** oder Sie können einen Schritt weiter gehen und eine [automatische Korrektur](/faq#autoremediation 'Was ist eine automatische Korrektur?') für bestimmte Ergebnisse implementieren."
 
 link_section:
     enable: true

@@ -8,7 +8,7 @@ banner_section:
     title: "SEMPER"
     content: "Sie verwalten mehrere AWS-Konten und haben Ihre Arbeitslast auf mehrere AWS-Regionen verteilt? <br>
               Dann kennen Sie die Herausforderung, den Überblick über die Sicherheitskonformität Ihrer AWS-Ressourcen zu behalten und Sicherheitswarnungen in Echtzeit zu verwalten.<br><br>
-              SEMPER ermöglicht es Ihnen auf konsistente und überprüfbare Weise, Ihre Sicherheitssensoren auf einer sehr granularen Ebene zu verwalten und akzeptierte Sicherheitswarnungen automatisch zu filtern. <br>
+              SEMPER ermöglicht es Ihnen auf konsistente, überprüfbare und automatische Weise, Ihre Sicherheitssensoren auf einer sehr granularen Ebene zu verteilen und akzeptierte Sicherheitswarnungen zu filtern. <br>
               Und das alles mit einem zentralen Repository von Richtlinien. Wir nehmen **[Security as Code](/faq/#pac 'What is Security / Policy as Code?')** ernst."
     image: "images/products/semper-logo.png"
     button:
@@ -33,7 +33,7 @@ feature_section:
     
   - title : "Anpassung von AWS Security Hub Standards"
     icon : "fa-cogs"
-    content : "Verwalten Sie die Sicherheitsstandards von AWS Security Hub auf member-account Ebene."
+    content : "Verwalten Sie die Sicherheitsstandards von AWS Security Hub von zentraler Stelle auf Ebene Member-Account."
 
   # feature at the right of the image
   right_side:
@@ -75,7 +75,7 @@ link_section:
     
     - title: "Blog"
       enable: true
-      content: "Read more about SEMPER in these blog posts"
+      content: "Lesen Sie mehr über SEMPER in diesen Blogbeiträgen"
       blog_tag: semper
 
 testimonial_section:

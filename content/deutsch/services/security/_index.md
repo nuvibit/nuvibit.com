@@ -61,13 +61,6 @@ excerpt_section:
                   Lösungen die den Sicherheitsanforderungen der Schweizer Finanzinstitute entsprechen, lassen wenig Raum für Schwachstellen.
                   Bei uns sind Sie mit Ihren Sicherheitsanliegen goldrichtig!"
 
-      - title_aws: "AWS Security Finding Management - SEMPER"
-        enable: true
-        image: "images/illustrations/cloud-security-event-management-semper.png"
-        content: "Ihre Workloads sind über mehrere AWS Accounts und eventuell sogar verschiedene Regionen verteilt?<br>
-                  Mit unserer cloud-nativen, Serverless-Lösung [SEMPER](/contact/ 'Kontakt aufnehmen für mehr Infos!') können Sie Amazon EventBridge- und AWS Config Rules zentral bereitstellen und resultierende Events sowie AWS Security Hub und Amazon GuardDuty Findings sinnvoll filtern. 
-                  Darüber hinaus können Sie relevante Findings mit wichtigen Zusatzinformationen anreichern und die gesamte Lösung über ein zentrales [Policy as Code](/faq/#pac 'Was ist Policy as Code?') Repository verwalten."
-
       - title_aws: "AWS Security Baselining"
         enable: true
         image: "images/illustrations/cloud-security-baseline.png"

@@ -307,7 +307,7 @@ weight = 6
 
 [[Languages.de.menu.main]]
 identifier = "products"
-name = "Products"
+name = "Produkte"
 url = "products"
 weight = 7
 
@@ -331,12 +331,12 @@ url = "blog"
 weight = 10
 
 [[Languages.de.menu.main]]
-name = "About"
+name = "Über uns"
 url = "about"
 weight = 11
 
 [[Languages.de.menu.main]]
-name = "Contact"
+name = "Kontakt"
 url = "contact"
 weight = 12
 

@@ -18,7 +18,7 @@ banner_section:
 
 feature_section:
   enable : true
-  title : "Wesentliche Merkmale"
+  title : "Key Features"
   image: "images/products/foundation-blueprint-illustration.png"
 
   # feature at the left of the image

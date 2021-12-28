@@ -6,10 +6,10 @@ draft: false
 banner_section:
     enable: true
     title: "SEMPER"
-    content: "Sie verwalten mehrere AWS-Konten und haben Ihre Arbeitslast auf mehrere AWS-Regionen verteilt? <br>
-              Dann kennen Sie die Herausforderung, den Überblick über die Sicherheitskonformität Ihrer AWS-Ressourcen zu behalten und Sicherheitswarnungen in Echtzeit zu verwalten.<br><br>
-              SEMPER ermöglicht es Ihnen auf konsistente, überprüfbare und automatische Weise, Ihre Sicherheitssensoren auf einer sehr granularen Ebene zu verteilen und akzeptierte Sicherheitswarnungen zu filtern. <br>
-              Und das alles mit einem zentralen Repository von Richtlinien. Wir nehmen **[Security as Code](/faq/#pac 'What is Security / Policy as Code?')** ernst."
+    content: "Sie verwalten mehrere AWS Accounts und haben Ihre Workloads auf mehrere AWS Regionen verteilt? <br>
+              Dann wissen Sie, wie schwierig es ist, die Sicherheitskonformität Ihrer AWS Ressourcen zu überwachen und Sicherheitswarnungen in Echtzeit zu verwalten.<br><br>
+              SEMPER ermöglicht es Ihnen, Ihre Sicherheitssensoren sehr granular und auf konsistente und überprüfbare Weise zu verwalten und akzeptierte Sicherheitsergebnisse automatisch zu filtern.<br>
+              Alles bequem über ein zentrales **[Policy as Code](/faq/#pac 'What is Security / Policy as Code?')** Repository verwaltet."
     image: "images/products/semper-logo.png"
     button:
         enable: true
@@ -18,7 +18,7 @@ banner_section:
 
 feature_section:
   enable : true
-  title : "Funktionalitäten"
+  title : "Key Features"
   image : "images/products/semper-illustration.png"
 
   # feature at the left of the image
@@ -27,27 +27,27 @@ feature_section:
     icon : "fa-cloud"
     content : "Unsere serverless Lösung lässt sich nahtlos mit AWS Config, AWS CloudTrail, AWS Security Hub und Amazon GuardDuty integrieren."
 
-  - title : "Bereitstellung von AWS Config- und AWS EventBridge-Regeln"
+  - title : "Bereitstellung von Sicherheitssensoren"
     icon : "fa-share-alt"
-    content : "Stellen Sie benutzerdefinierte AWS-Config- und AWS-EventBridge-Regeln präzise in all Ihren erforderlichen AWS-Konten bereit."
+    content : "Stellen Sie benutzerdefinierte AWS-Config- und AWS-EventBridge-Regeln präzise in all Ihren erforderlichen AWS Accounts bereit."
     
-  - title : "Anpassung von AWS Security Hub Standards"
+  - title : "Massgeschneiderte AWS Security Hub Standards"
     icon : "fa-cogs"
-    content : "Verwalten Sie die Sicherheitsstandards von AWS Security Hub von zentraler Stelle auf Ebene Member-Account."
+    content : "Verwalten Sie die Sicherheitsstandards von AWS Security Hub auf Ebene Member-Account."
 
   # feature at the right of the image
   right_side:
-  - title : "Filterung von akzeptierten Sicherheitswarnungen"
+  - title : "Filtern von Sicherheitswarnungen"
     icon : "fa-filter"
-    content : "Definieren Sie Richtlinien für das Herausfiltern von akzeptierten Sicherheitswarnungen und die automatische Rückspiegelung an AWS Security Hub und Amazon GuardDuty."
+    content : "Definieren Sie Richtlinien für das Herausfiltern von akzeptierten Sicherheitswarnungen und die automatische Weiterleitung an AWS Security Hub und Amazon GuardDuty."
 
-  - title : "Anreicherung von relevanten Sicherheitswarnungen"
+  - title : "Mehr Kontextinformationen"
     icon : "fa-pencil-alt"
-    content : "Anreicherung relevanter Sicherheitswarnungen mit Kontextinformationen wie Account-Tags zur besseren Weiterverarbeitung."
+    content : "Anreicherung relevanter Sicherheitswarnungen mit Kontextinformationen wie Account Tags zur besseren Weiterverarbeitung."
 
-  - title : "Verwalten Sie alles mit Policy as Code"
+  - title : "Policy as Code"
     icon : "fa-code"
-    content : "Verwalten Sie alle SEMPER-Funktionen mit Richtlinien in einem einzigen Policy as Code-Repository."
+    content : "Verwalten Sie alle SEMPER Features mit Richtlinien in einem zentralen Policy as Code Repository."
 
 excerpt_section:
     enable: true
@@ -56,12 +56,12 @@ excerpt_section:
       - title: "Policy-basierte Verteilung von Sicherheitssensoren"
         enable: true
         image: "images/products/semper-configure.png"
-        content: "SEMPER stellt **Sensoren** in all Ihren AWS-Konten bereit und konfiguriert sie auf der Grundlage vordefinierter Richtlinien, die Sie anpassen und erweitern können. Die Sensoren basieren auf den Services AWS Security Hub, AWS CloudTrail, AWS Config und Amazon GuardDuty. Wir erweitern und optimieren die Richtlinienbeispiele kontinuierlich, um **bewährte Sicherheitsverfahren und Compliance-Standards** zu erfüllen."
+        content: "SEMPER stellt **Sensoren** in all Ihren AWS Accounts bereit und konfiguriert sie auf der Grundlage vordefinierter Richtlinien, die Sie anpassen und erweitern können. Die Sensoren basieren auf den Services AWS Security Hub, AWS CloudTrail, AWS Config und Amazon GuardDuty. Wir erweitern und optimieren die Richtlinienbeispiele kontinuierlich, um **bewährte Sicherheitsverfahren und Compliance-Standards** zu erfüllen."
 
       - title: "Policy-basierte Verarbeitung von Sicherheitswarnungen"
         enable: true
         image: "images/products/semper-processing.png"
-        content: "SEMPER sammelt alle Sensorereignisse und reichert sie mit wichtigen Metadaten wie Account-Tags, Kontext aus der AWS-Organisation und weiteren richtlinienbasierten Informationen an. Darüber hinaus ist SEMPER in der Lage, falsch-positive Sicherheitswarnungen auf der Grundlage Ihrer vordefinierten Policies zu unterdrücken und herauszufiltern**.
+        content: "SEMPER sammelt alle Sensorereignisse und reichert sie mit wichtigen Metadaten wie Account Tags, Kontext aus der AWS Organisation und weiteren richtlinienbasierten Informationen an. Darüber hinaus ist SEMPER in der Lage, falsch-positive Sicherheitswarnungen auf der Grundlage Ihrer vordefinierten Policies **zu unterdrücken und herauszufiltern**.
         Die angereicherten Ergebnisse werden an ein SNS-Thema gesendet und in einem CloudWatch Logs-Stream aufbewahrt. Von dort aus können Sie diese entweder zur weiteren Analyse an ein Drittanbieter-Tool Ihrer Wahl (Splunk, Logstash, AWS QuickSight usw.) **weiterleiten** oder Sie können einen Schritt weiter gehen und eine [automatische Korrektur](/faq#autoremediation 'Was ist eine automatische Korrektur?') für bestimmte Ergebnisse implementieren."
 
 link_section:

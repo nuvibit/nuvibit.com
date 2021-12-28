@@ -6,10 +6,10 @@ draft: false
 banner_section:
     enable: true
     title: "SEMPER"
-    content: "You manage multiple AWS accounts and have your workload distributed in multiple AWS regions?  <br>
-              Then you know the challenge keeping track of the security compliance of your AWS resources and managing security events in realtime.<br><br>
-              SEMPER enables you in a consistent and auditable way to manage your security sensors on a very granular level and to filter accepted security findings automatically. <br>
-              All with a central repository of policies. We take **[Security as Code](/faq/#pac 'What is Security / Policy as Code?')** serious. "
+    content: "You manage multiple AWS accounts and have your workload distributed in multiple AWS regions?<br>
+              Then you are familiar with the challenge of keeping track of the security compliance of your AWS resources and managing security events in real time.<br><br>
+              SEMPER enables you to manage your security sensors at a very granular level in a consistent and auditable way and automatically filter accepted security findings.<br>
+              All conveniently managed through a central **[Policy as Code](/faq/#pac 'What is Security / Policy as Code?')** repository."
     image: "images/products/semper-logo.png"
     button:
         enable: true
@@ -27,7 +27,7 @@ feature_section:
     icon : "fa-cloud"
     content : "Our serverless solution seamlessly integrates with AWS Config, AWS CloudTrail, AWS Security Hub and Amazon GuardDuty."
 
-  - title : "Provision AWS Config- and AWS EventBridge Rules"
+  - title : "Provision security sensors"
     icon : "fa-share-alt"
     content : "Provision custom AWS Config- and AWS EventBridge Rules precisely in all your required accounts."
     
@@ -37,15 +37,15 @@ feature_section:
 
   # feature at the right of the image
   right_side:
-  - title : "Filter accepted Security Findings"
+  - title : "Filter Security Findings"
     icon : "fa-filter"
     content : "Define policies for filtering out accepted security findings and automated reflection to AWS Security Hub and Amazon GuardDuty."
 
-  - title : "Enrich relevant Security Findings"
+  - title : "More context information"
     icon : "fa-pencil-alt"
-    content : "Enrich relevant security findings with context information like account-tags for better post processing."
+    content : "Enrich relevant security findings with context information like account tags for better post processing."
 
-  - title : "Manage all with Policy as Code"
+  - title : "Policy as Code"
     icon : "fa-code"
     content : "Manage all SEMPER features with a single Policy as Code repository."
 

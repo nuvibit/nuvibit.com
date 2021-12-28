@@ -6,10 +6,10 @@ draft: false
 banner_section:
     enable: true
     title: "Foundation Blueprint"
-    content: "Before deploying a workload on the public cloud there are many moving parts which have to be coordinated. 
+    content: "Before deploying a productive workload on the public cloud there are many moving parts which have to be coordinated. 
     There are technical parts such as connectivity or security and organizational parts such as finance or operations.
     A secure, scalable cloud foundation will significantly accelerate your cloud adoption journey and is one of the most important and hardest challenges.<br/><br/>
-    Our Foundation Blueprint addresses exactly this concern and enables an organization to efficiently build a tailored Cloud Foundation."
+    Our Foundation Blueprint addresses exactly this concern and enables your organization to efficiently build a tailored Cloud Foundation."
     image : "images/products/foundation-blueprint-logo.png"
     button:
         enable: true
@@ -29,7 +29,7 @@ feature_section:
 
   - title : "Scalability"
     icon : "fa-chart-line"
-    content : "Our Foundation was developed primarily with scalability in mind."
+    content : "Our Foundation was developed with scalability in mind and is able to scale with your workloads."
     
   - title : "Well Architected"
     icon : "fa-drafting-compass"
@@ -65,7 +65,7 @@ excerpt_section:
       - title: "Implementation"
         enable: true
         image: "images/products/foundation-blueprint-implementation.png"
-        content: "Once we have a clear overview and gathered all requirements, we assemble a team of specialists to build a tailored Cloud Foundation based on our Blueprint.
+        content: "Once we have a clear overview and gathered all requirements, we assemble a team of specialists to build your tailored Cloud Foundation based on our Blueprint.
                   We adapt our Foundation Blueprint Terraform modules to perfectly fit your needs and support you during implementation.<br/><br/>
                   If needed, we can also adapt or build the tooling required for Infrastructure as Code deployments with Terraform."
 

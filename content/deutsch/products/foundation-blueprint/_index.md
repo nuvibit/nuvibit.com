@@ -6,7 +6,7 @@ draft: false
 banner_section:
     enable: true
     title: "Foundation Blueprint"
-    content: "Bevor ein Workload in der Public Cloud bereitgestellt werden kann, müssen zahlreiche Komponenten aufeinander abgestimmt werden. 
+    content: "Bevor ein produktiver Workload in der Public Cloud bereitgestellt werden kann, müssen zahlreiche Komponenten aufeinander abgestimmt werden. 
             Es gibt technische Aspekte wie Konnektivität oder Sicherheit und organisatorische Aspekte wie Finanzen oder Betrieb.
             Eine sichere, skalierbare Cloud Foundation wird Ihre Cloud Journey erheblich beschleunigen und ist eine der wichtigsten und schwierigsten Herausforderungen.<br/><br/>
             Unser Foundation Blueprint adressiert genau diese Problematik und ermöglicht einem Unternehmen den effizienten Aufbau einer massgeschneiderten Cloud Foundation."
@@ -29,7 +29,7 @@ feature_section:
 
   - title : "Skalierbarkeit"
     icon : "fa-chart-line"
-    content : "Unsere Foundation wurde in erster Linie unter der Vorgabe der Skalierbarkeit entwickelt."
+    content : "Unsere Foundation wurde in erster Linie unter der Vorgabe der Skalierbarkeit entwickelt und skaliert so mit Ihren Workloads mit."
     
   - title : "Well Architected"
     icon : "fa-drafting-compass"
@@ -47,7 +47,7 @@ feature_section:
 
   - title : "Workshops & Schulungen"
     icon : "fa-chalkboard-teacher"
-    content : "Unser Ziel ist es, unsere Kunden zu befähigen, unseren Foundation Blueprint erfolgreich einzuführen und zu betreiben."
+    content : "Unser Ziel ist es, alle Kunden zu befähigen, den Foundation Blueprint erfolgreich einzuführen und zu betreiben."
 
 
 excerpt_section:
@@ -81,7 +81,7 @@ excerpt_section:
         image: "images/products/foundation-blueprint-support.png"
         content: "Auch nach der erfolgreichen Implementierung Ihrer Cloud Foundation möchten wir Sie auf Ihrer Cloud Journey weiter unterstützen.
                   Wir können Ihnen bei der Fehlersuche und -behebung im Bezug auf Ihre Foundation und unsere Terraform Module helfen.<br/><br/>
-                  Darüber hinaus können wir Sie mit Updates für unsere Foundation Teraform Module versorgen und Ihre Feature-Wünsche nach Möglichkeit umsetzen."
+                  Darüber hinaus können wir Sie mit Updates für unsere Foundation Terraform Module versorgen und Ihre Feature-Wünsche nach Möglichkeit umsetzen."
 
 link_section:
     enable: true

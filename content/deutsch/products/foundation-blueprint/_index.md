@@ -6,10 +6,10 @@ draft: false
 banner_section:
     enable: true
     title: "Foundation Blueprint"
-    content: "Bevor ein produktiver Workload in der Public Cloud bereitgestellt werden kann, müssen zahlreiche Komponenten aufeinander abgestimmt werden. 
-            Es gibt technische Aspekte wie Konnektivität oder Sicherheit und organisatorische Aspekte wie Finanzen oder Betrieb.
-            Eine sichere, skalierbare Cloud Foundation wird Ihre Cloud Journey erheblich beschleunigen und ist eine der wichtigsten und schwierigsten Herausforderungen.<br/><br/>
-            Unser Foundation Blueprint adressiert genau diese Problematik und ermöglicht einem Unternehmen den effizienten Aufbau einer massgeschneiderten Cloud Foundation."
+    content: "Bevor ein produktiver Workload in der Public Cloud bereitgestellt werden kann, müssen zahlreiche Komponenten aufeinander abgestimmt werden.
+            Es gibt technische Aspekte wie Konnektivität oder Sicherheit, sowie organisatorische Aspekte wie Finanzen oder Betrieb.
+            Eine sichere und skalierbare Cloud Foundation wird Ihre Cloud Journey erheblich beschleunigen und ist eine der wichtigsten und schwierigsten Herausforderungen.<br/><br/>
+            Unser Foundation Blueprint adressiert genau diese Problematik und ermöglicht Ihrem Unternehmen den effizienten Aufbau einer massgeschneiderten Cloud Foundation."
     image : "images/products/foundation-blueprint-logo.png"
     button:
         enable: true
@@ -30,7 +30,7 @@ feature_section:
   - title : "Skalierbarkeit"
     icon : "fa-chart-line"
     content : "Unsere Foundation wurde in erster Linie unter der Vorgabe der Skalierbarkeit entwickelt und skaliert so mit Ihren Workloads mit."
-    
+
   - title : "Well Architected"
     icon : "fa-drafting-compass"
     content : "Unsere Referenzarchitekturen basieren auf Praxiserfahrung, Best Practices und des [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected 'AWS Well-Architected')."
@@ -43,7 +43,7 @@ feature_section:
 
   - title : "Wandel der Organisation"
     icon : "fa-building"
-    content : "Wir legen großen Wert auf die Organisationsstrukturen und die Cloud-Strategie, um Ihre Erfolgschancen zu maximieren."
+    content : "Wir legen grossen Wert auf die Organisationsstrukturen und die Cloud-Strategie, um Ihre Erfolgschancen zu maximieren."
 
   - title : "Workshops & Schulungen"
     icon : "fa-chalkboard-teacher"
@@ -65,15 +65,15 @@ excerpt_section:
       - title: "Implementation"
         enable: true
         image: "images/products/foundation-blueprint-implementation.png"
-        content: "Sobald wir uns einen Überblick verschafft und alle Anforderungen gesammelt haben, stellen wir ein Team von Spezialisten zusammen, um eine maßgeschneiderte Cloud Foundation auf der Grundlage unseres Blueprints zu erstellen.
+        content: "Sobald wir uns einen Überblick verschafft und alle Anforderungen gesammelt haben, stellen wir ein Team von Spezialisten zusammen, um eine massgeschneiderte Cloud Foundation auf der Grundlage unseres Blueprints zu erstellen.
                   Wir passen unsere Foundation Blueprint Terraform Module perfekt an Ihre Bedürfnisse an und unterstützen Sie bei der Implementierung.<br/><br/>
                   Bei Bedarf können wir auch die erforderlichen Hilfsmittel anpassen oder aufbauen, die für die Bereitstellung von Infrastructure as Code mit Terraform erforderlich sind."
 
       - title: "Transition"
         enable: true
         image: "images/products/foundation-blueprint-transition.png"
-        content: "Wir haben kein Interesse daran, eine Cloud Foundation aufzubauen, ohne sicherzustellen, dass die erforderlichen Kompetenzen vorhanden sind, um diese erfolgreich zu betreiben.
-                  Da wir der Meinung sind, dass praktische Erfahrung der beste Weg ist, um neue Fähigkeiten zu erlernen, bilden wir direkt in der Praxis aus.<br/><br/>
+        content: "Wir haben kein Interesse daran eine Cloud Foundation aufzubauen ohne sicherzustellen, dass die erforderlichen Kompetenzen vorhanden sind um eine solche erfolgreich zu betreiben.
+                  Wir sind der Meinung sind, dass praktische Erfahrung der beste Weg dafür ist. Um neue Fähigkeiten zu erlernen und anwenden zu können, bilden wir direkt in der Praxis aus.<br/><br/>
                   Ein Teil der Transition umfasst die Festigung der Cloud Foundation Capabilities, die für die Einführung eines Cloud-Betriebsmodells unerlässlich sind."
 
       - title: "Support"
@@ -91,7 +91,7 @@ link_section:
       content: "Visit our full documentation with examples and the full architecture on"
       link: "https://github.com/nuvibit/Foundation-Blueprint"
       link_name: "github.com"
-    
+
     - title: "Blog"
       enable: true
       content: "Lesen Sie mehr über den Nuvibit Foundation Blueprint in den folgenden Blogbeiträgen"

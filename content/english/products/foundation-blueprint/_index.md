@@ -29,7 +29,7 @@ feature_section:
 
   - title : "Scalability"
     icon : "fa-chart-line"
-    content : "Our Foundation was developed with scalability in mind and is able to scale with your workloads."
+    content : "Our Foundation is designed with scalability in mind and can grow with your workloads."
     
   - title : "Well Architected"
     icon : "fa-drafting-compass"

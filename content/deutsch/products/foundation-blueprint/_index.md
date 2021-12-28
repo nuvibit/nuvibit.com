@@ -29,7 +29,7 @@ feature_section:
 
   - title : "Skalierbarkeit"
     icon : "fa-chart-line"
-    content : "Unsere Foundation wurde in erster Linie unter der Vorgabe der Skalierbarkeit entwickelt und skaliert so mit Ihren Workloads mit."
+    content : "Unsere Foundation wurde im Hinblick auf Skalierbarkeit entwickelt und kann mit Ihren Workloads mitwachsen."
 
   - title : "Well Architected"
     icon : "fa-drafting-compass"

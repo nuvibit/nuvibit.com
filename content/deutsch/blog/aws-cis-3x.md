@@ -29,7 +29,7 @@ Die folgende Abbildung skizziert das Konzept von AWS Security Hub für die Compl
 
 ![img](images/blog/aws-cis-3x/security-hub-model.png)
 
-Dieser Blog-Beitrag bezieht sich insbesondere auf das Kapitel “Monitoring” des **CIS AWS Foundations Benchmark** [**[CIS-AWS](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-cis.html 'CIS AWS Foundations Benchmark standard - AWS Security Hub')**], das die **CIS AWS 3.1 - CIS AWS 3.14**-Kontrollen enthält.
+Dieser Blogbeitrag bezieht sich insbesondere auf das Kapitel “Monitoring” des **CIS AWS Foundations Benchmark** [**[CIS-AWS](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-cis.html 'CIS AWS Foundations Benchmark standard - AWS Security Hub')**], das die **CIS AWS 3.1 - CIS AWS 3.14**-Kontrollen enthält.
 
 {{<table "table table-striped table-bordered">}}
 | CIS AWS 3.x-Kontrollen |

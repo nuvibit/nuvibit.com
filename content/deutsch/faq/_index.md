@@ -43,6 +43,11 @@ faq:
       anchor: cis
       enable: true
 
+    - question: "Was ist auto-remediation?"
+      answer: "Mit auto-remediation wird automatisiert auf die Verletzung von Security und Compliance Policies reagiert. Wenn beispielsweise eine Security Group mit unsicheren Regeln erstellt wird, könnte man auf den Event reagieren und mit auto-remediation die Security Group löschen."
+      anchor: autoremediation
+      enable: true
+
     - question: "Was ist FinOps?"
       answer: "FinOps steht kurz für \"Cloud Financial Operations\" und beschreibt das Finanzmanagement in Public Cloud Umgebungen.
               Traditionelle Budgetierungs-Prozesse stossen bei Pay-As-You-Go Modellen schnell an ihre Grenzen, da diese oft fixe, jährliche oder quartalsweise Budgets voraussetzen.

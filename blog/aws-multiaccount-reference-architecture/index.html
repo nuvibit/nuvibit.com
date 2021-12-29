@@ -4,7 +4,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1">
 <meta name=description content="This post introduces the Nuvibit reference architecture for customers with an AWS multi-account environment.">
 <meta name=author content="Nuvibit AG">
-<meta name=generator content="Hugo 0.91.0">
+<meta name=generator content="Hugo 0.91.2">
 <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open%20Sans:400%7cNunito:300,400,600,700">
 <link rel=stylesheet href=https://nuvibit.com/plugins/bootstrap/bootstrap.min.css>
 <link rel=stylesheet href=https://nuvibit.com/plugins/fontawesome/all.min.css>
@@ -48,6 +48,15 @@ Services
 <a class=dropdown-item href=https://nuvibit.com/services/management>Cloud Management at Scale</a>
 <a class=dropdown-item href=https://nuvibit.com/services/security>Cloud Security and Compliance</a>
 <a class=dropdown-item href=https://nuvibit.com/services/connectivity>Cloud Connectivity</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href=# id=navbarDropdown role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false>
+Products
+</a>
+<div class="nav-item dropdown-menu" aria-labelledby=navbarDropdown>
+<a class=dropdown-item href=https://nuvibit.com/products/foundation-blueprint>Foundation Blueprint</a>
+<a class=dropdown-item href=https://nuvibit.com/products/semper>SEMPER</a>
 </div>
 </li>
 <li class=nav-item>
@@ -112,7 +121,7 @@ The reference architecture considers and implements best practices from the foll
 - <a href=https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/architecture.html title="AWS Security Reference Architecture">AWS Security Reference Architecture</a><br>
 - <a href=https://docs.aws.amazon.com/managedservices/latest/userguide/malz-net-arch.html title="Multi Account Network Architecture">Multi Account Network Architecture</a><br></p>
 <p>In addition, our experience with AWS multi-account environments has been included in this reference architecture.</p>
-<p>The focus is on the <strong>Core Domains</strong> of the <strong>Nuvibit Cloud Foundation</strong>, which are fully covered in the blog post <strong><a href=/blog/cloud-foundation-map title="Blog post on the Nuvibit Cloud Foundation Map">Nuvibit Cloud Foundation Map</a></strong>.</p>
+<p>Our Nuvibit reference architecture is a realization of a <strong>Inhouse AWS Platform</strong> in the sense of Gregor Hohpe - The Magic of Platforms <a href="https://youtu.be/K_VKzHfuIpQ?t=1746" title>[1]</a> <a href=https://architectelevator.com/architecture/platforms-fruit-salad/ title>[2]</a> and is a implementation of the <strong>Core Domains</strong> of the <strong>Nuvibit Cloud Foundation</strong>, which are fully covered in the blog post <strong><a href=/blog/cloud-foundation-map title="Blog post on the Nuvibit Cloud Foundation Map">Nuvibit Cloud Foundation Map</a></strong>.</p>
 <p><div class="col-md-10 m-auto p-3 text-right zoom" onclick=image_zoom(this)>
 <img class=img-fluid src=https://nuvibit.com/images/blog/aws-multiaccount-reference-architecture/foundation-core-domains.png alt="Illustration of foundation-core-domains">
 </div></p>

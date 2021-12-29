@@ -33,13 +33,13 @@ feature_section:
 
   - title : "Well Architected"
     icon : "fa-drafting-compass"
-    content : "Unsere Referenzarchitekturen basieren auf Praxiserfahrung, Best Practices und des [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected 'AWS Well-Architected')."
+    content : "Unsere Referenzarchitekturen basieren auf Praxiserfahrung, Best Practices und dem [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected 'AWS Well-Architected')."
 
   # feature at the right of the image
   right_side:
   - title : "Massgeschneidert auf den Bedarf"
     icon : "fa-cut"
-    content : "Eine hervorragende Foundation ist so einzigartig wie der Kunde selbst, und deshalb passen wir unseren Blueprint genau an Ihre Bedürfnisse an."
+    content : "Eine hervorragende Cloud Foundation ist so einzigartig wie der Kunde selbst und deshalb passen wir unseren Blueprint genau an Ihre Bedürfnisse an."
 
   - title : "Wandel der Organisation"
     icon : "fa-building"
@@ -58,30 +58,30 @@ excerpt_section:
         enable: true
         image: "images/products/foundation-blueprint-assessment.png"
         content: "Zuallererst müssen wir uns einen Überblick darüber verschaffen, wo Sie auf Ihrer Cloud Journey stehen und wo Sie hinwollen.
-                  Wir müssen Ihre Cloud-Strategie und Ihre Organisationsstrukturen analysieren, um unseren Blueprint entsprechend abzustimmen.
+                  Wir werden Ihre Cloud-Strategie und Ihre Organisationsstrukturen analysieren, um unseren Blueprint entsprechend abzustimmen.
                   Auch Ihre Anforderungen an Konnektivität, Sicherheit und Automatisierung werden identifiziert und berücksichtigt.<br/><br/>
-                  Teil des Assessments sind auch Workshops, um ein besseres Verständnis der Cloud Foundation zu erlangen."
+                  Teil des Assessments sind auch Workshops, um Ihnen ein besseres Verständnis der Cloud Foundation zu vermitteln."
 
       - title: "Implementation"
         enable: true
         image: "images/products/foundation-blueprint-implementation.png"
         content: "Sobald wir uns einen Überblick verschafft und alle Anforderungen gesammelt haben, stellen wir ein Team von Spezialisten zusammen, um eine massgeschneiderte Cloud Foundation auf der Grundlage unseres Blueprints zu erstellen.
-                  Wir passen unsere Foundation Blueprint Terraform Module perfekt an Ihre Bedürfnisse an und unterstützen Sie bei der Implementierung.<br/><br/>
+                  Wir passen unsere Foundation Blueprint Terraform Module perfekt an Ihre Bedürfnisse an und unterstützen Sie bei der Einführung.<br/><br/>
                   Bei Bedarf können wir auch die erforderlichen Hilfsmittel anpassen oder aufbauen, die für die Bereitstellung von Infrastructure as Code mit Terraform erforderlich sind."
 
       - title: "Transition"
         enable: true
         image: "images/products/foundation-blueprint-transition.png"
-        content: "Wir haben kein Interesse daran eine Cloud Foundation aufzubauen ohne sicherzustellen, dass die erforderlichen Kompetenzen vorhanden sind um eine solche erfolgreich zu betreiben.
-                  Wir sind der Meinung sind, dass praktische Erfahrung der beste Weg dafür ist. Um neue Fähigkeiten zu erlernen und anwenden zu können, bilden wir direkt in der Praxis aus.<br/><br/>
-                  Ein Teil der Transition umfasst die Festigung der Cloud Foundation Capabilities, die für die Einführung eines Cloud-Betriebsmodells unerlässlich sind."
+        content: "Wir haben kein Interesse daran, eine Cloud Foundation aufzubauen ohne sicherzustellen, dass Sie die erforderlichen Kompetenzen aufbauen, um diese erfolgreich zu betreiben.
+                  Wir sind der Meinung sind, dass praktische Nutzung der beste Weg dafür ist. Damit Ihre Mitarbeiter neue Fähigkeiten erlernen und anwenden zu können, bilden wir sie direkt in der Praxis aus.<br/><br/>
+                  Ein Teil der Transition umfasst die Festigung der [Cloud Foundation Capabilities](/blog/cloud-foundation-map 'Nuvibit Cloud Foundation Blog Post'), die für die Einführung eines Cloud-Betriebsmodells unerlässlich sind."
 
       - title: "Support"
         enable: true
         image: "images/products/foundation-blueprint-support.png"
-        content: "Auch nach der erfolgreichen Implementierung Ihrer Cloud Foundation möchten wir Sie auf Ihrer Cloud Journey weiter unterstützen.
-                  Wir können Ihnen bei der Fehlersuche und -behebung im Bezug auf Ihre Foundation und unsere Terraform Module helfen.<br/><br/>
-                  Darüber hinaus können wir Sie mit Updates für unsere Foundation Terraform Module versorgen und Ihre Feature-Wünsche nach Möglichkeit umsetzen."
+        content: "Auch nach der erfolgreichen Einführung Ihrer Cloud Foundation möchten wir Sie auf Ihrer Cloud Journey weiter unterstützen.
+                  Wir können Ihnen bei der Optimierung und Weiterentwicklung im Bezug auf Ihre Foundation und unsere Terraform Module helfen.<br/><br/>
+                  Darüber hinaus können wir Sie mit Updates für unsere Foundation Terraform Module versorgen und Ihre Anforderungen umsetzen."
 
 link_section:
     enable: true

@@ -58,9 +58,9 @@ excerpt_section:
         enable: true
         image: "images/products/foundation-blueprint-assessment.png"
         content: "First and foremost, we need to get an overview of where you stand on your cloud journey and where you want to go.
-                  We need to analyze your cloud strategy and organizational structures to adjust our Blueprint to them.
+                  We will analyze your cloud strategy and organizational structures to adjust our Blueprint to them.
                   Your connectivity, security and automation requirements are also identified and taken into account.<br/><br/>
-                  Part of the assessment also includes workshops to establish a better understanding of the Cloud Foundation."
+                  Part of the assessment also includes workshops to give you a better understanding of our Cloud Foundation."
 
       - title: "Implementation"
         enable: true
@@ -72,16 +72,16 @@ excerpt_section:
       - title: "Transition"
         enable: true
         image: "images/products/foundation-blueprint-transition.png"
-        content: "We have no interest in building a Cloud Foundation without ensuring that the necessary capabilities are in place to run it successfully.
-                  Because we believe that hands-on experience is the best way to learn new skills, we provide on-the-job training.<br/><br/>
-                  Part of the transition includes cementing the Cloud Foundation Capabilities which are essential to establish a Cloud Operating Model."
+        content: "We have no interest in building a Cloud Foundation without ensuring that the necessary capabilities on your side will be established to run it successfully.
+                  Because we believe that hands-on experience is the best way to learn new skills, we support your employees with on-the-job training.<br/><br/>
+                  Part of the transition includes cementing the [Cloud Foundation Capabilities](/blog/cloud-foundation-map 'Nuvibit Cloud Foundation Blog Post') which are essential to establish a Cloud Operating Model."
 
       - title: "Support"
         enable: true
         image: "images/products/foundation-blueprint-support.png"
         content: "Even after the successful implementation of your Cloud Foundation, we want to continue supporting you on your cloud journey.
-                  We can help you troubleshoot and fix issues related to your Foundation and our Terraform modules.<br/><br/>
-                  In addition, we can provide you with updates to our Foundation Terraform modules and implement your feature requests whenever possible."
+                  We can help you to optimize and refine your Foundation based on our Terraform modules.<br/><br/>
+                  In addition, we can provide you with updates to our Foundation Terraform modules and implement your feature requests."
 
 link_section:
     enable: true

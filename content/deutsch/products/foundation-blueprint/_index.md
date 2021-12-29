@@ -73,7 +73,7 @@ excerpt_section:
         enable: true
         image: "images/products/foundation-blueprint-transition.png"
         content: "Wir haben kein Interesse daran, eine Cloud Foundation aufzubauen ohne sicherzustellen, dass Sie die erforderlichen Kompetenzen aufbauen, um diese erfolgreich zu betreiben.
-                  Wir sind der Meinung sind, dass praktische Nutzung der beste Weg dafür ist. Damit Ihre Mitarbeiter neue Fähigkeiten erlernen und anwenden zu können, bilden wir sie direkt in der Praxis aus.<br/><br/>
+                  Wir sind der Meinung sind, dass praktische Nutzung der beste Weg dafür ist. Damit Ihre Mitarbeiter neue Fähigkeiten erlernen und anwenden können, bilden wir sie direkt in der Praxis aus.<br/><br/>
                   Ein Teil der Transition umfasst die Festigung der [Cloud Foundation Capabilities](/blog/cloud-foundation-map 'Nuvibit Cloud Foundation Blog Post'), die für die Einführung eines Cloud-Betriebsmodells unerlässlich sind."
 
       - title: "Support"

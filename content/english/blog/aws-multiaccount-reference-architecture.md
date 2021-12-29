@@ -25,7 +25,7 @@ The reference architecture considers and implements best practices from the foll
 
 In addition, our experience with AWS multi-account environments has been included in this reference architecture.
 
-Our Nuvibit reference architecture is a realization of a **Corporate Inhouse AWS Platform** in the sense of Gregor Hohpe - The Magic of Platforms [[1]](https://youtu.be/K_VKzHfuIpQ?t=1746) [[2]](https://architectelevator.com/architecture/platforms-fruit-salad/) and is a implementation of the **Core Domains** of the **Nuvibit Cloud Foundation**, which are fully covered in the blog post **[Nuvibit Cloud Foundation Map](/blog/cloud-foundation-map 'Blog post on the Nuvibit Cloud Foundation Map')**.
+Our Nuvibit reference architecture is a realization of a **Inhouse AWS Platform** in the sense of Gregor Hohpe - The Magic of Platforms [[1]](https://youtu.be/K_VKzHfuIpQ?t=1746) [[2]](https://architectelevator.com/architecture/platforms-fruit-salad/) and is a implementation of the **Core Domains** of the **Nuvibit Cloud Foundation**, which are fully covered in the blog post **[Nuvibit Cloud Foundation Map](/blog/cloud-foundation-map 'Blog post on the Nuvibit Cloud Foundation Map')**.
 
 ![img](images/blog/aws-multiaccount-reference-architecture/foundation-core-domains.png)
 

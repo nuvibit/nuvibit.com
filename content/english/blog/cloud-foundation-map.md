@@ -52,7 +52,7 @@ Each **Foundation Capability** consists of a technical part and a fulfillment pa
 
 The **Nuvibit Cloud Foundation Capability Map** is based on the [Cloud Operating Model AWS whitepaper](https://d1.awsstatic.com/whitepapers/building-a-cloud-operating-model.pdf 'AWS Whitepaper') and the [AWS Cloud Adoption Framework](https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html) and implements their key principles.
 
-Our model describes the capabilities of a **Corporate Inhouse Cloud Platform** in the sense of Gregor Hohpe - The Magic of Platforms [[1]](https://youtu.be/K_VKzHfuIpQ?t=1746) [[2]](https://architectelevator.com/architecture/platforms-fruit-salad/).
+Our model describes the capabilities of a **Inhouse Cloud Platform** in the sense of Gregor Hohpe - The Magic of Platforms [[1]](https://youtu.be/K_VKzHfuIpQ?t=1746) [[2]](https://architectelevator.com/architecture/platforms-fruit-salad/).
 <br/><br/>
 
 ## Our service

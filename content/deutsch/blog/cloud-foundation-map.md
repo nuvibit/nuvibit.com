@@ -52,6 +52,8 @@ Eine weitere Detaillierung der **Cloud Foundation Core Domains** führt zu diese
 Jede **Foundation Capability** besteht aus einem technischen Teil und einem Fulfillment-Teil. Eine **Foundation Capability** wird durch ein Foundation Capability Team verantwortet (ein Foundation Capability-Team kann für mehrere **Foundation Capabilities** zuständig sein - so ist beispielsweise das AWS Foundation Security Team für den gesamten **Foundation Security & Governance Bereich** verantwortlich).
 
 Die **Nuvibit Cloud Foundation Capability Map** basiert auf dem [Cloud Operating Model AWS Whitepaper](https://d1.awsstatic.com/whitepapers/building-a-cloud-operating-model.pdf 'AWS Whitepaper') und dem [AWS Cloud Adoption Framework](https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/foundational-capabilities.html) und setzt deren Hauptprinzipien um.
+
+Unser Modell beschreibt die Fähigkeiten einer **Inhouse Cloud Platform** im Sinne von Gregor Hohpe - The Magic of Platforms [[1]](https://youtu.be/K_VKzHfuIpQ?t=1746) [[2]](https://architectelevator.com/architecture/platforms-fruit-salad/).
 <br/><br/>
 
 ## Unsere Dienstleistung

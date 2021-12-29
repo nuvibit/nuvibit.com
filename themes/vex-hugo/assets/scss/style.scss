@@ -450,6 +450,11 @@ p.md a:hover {
   margin-bottom: 3rem !important;
 }
 
+// feature and service page
+.feature-body {
+  height: 200px;
+}
+
 .tile-body {
   height: 400px;
 }
@@ -601,6 +606,10 @@ figure.profile:hover img {
 }
 
 @media only screen and (max-width: 990px) {
+  .feature-body {
+    height: 250px;
+  }
+
   .blog-tile-list {
     -ms-flex: 44.7% !important;
     flex: 44.7% !important;
@@ -642,6 +651,10 @@ figure.profile:hover img {
 }
 
 @media only screen and (max-width: 767px) {
+  .feature-body {
+    min-height: auto !important;
+    height: auto !important;
+  }
   .tile-body {
     min-height: 300px !important;
     height: auto !important;
@@ -693,6 +706,7 @@ figure.profile:hover img {
   border: 1px solid #f2f2f2;
   box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06);
   transition: opacity .4s ease-in-out;
+  margin-bottom: 1rem;
 }
 
 .faq-summary:hover,
@@ -717,6 +731,7 @@ figure.profile:hover img {
   text-align: right;
   font-size: 1.4rem;
   margin: 10px;
+  margin-bottom: 2rem;
 }
 
 .faq-summary:after {
@@ -1201,14 +1216,14 @@ a:active {
       margin-top: 30px;
 
       img {
-        border-radius: 50%;
-        width: 50px;
+        // border-radius: 50%;
+        width: 75%;
       }
 
       h4 {
-        font-weight: 700;
+        font-weight: 500;
         font-size: 20px;
-        margin-top: 10px;
+        margin-top: 20px;
       }
     }
   }

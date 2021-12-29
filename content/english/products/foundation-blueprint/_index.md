@@ -73,7 +73,7 @@ excerpt_section:
         enable: true
         image: "images/products/foundation-blueprint-transition.png"
         content: "We have no interest in building a Cloud Foundation without ensuring that the necessary capabilities on your side will be established to run it successfully.
-                  Because we believe that hands-on experience is the best way to learn new skills, we support your employees with on-the-job training.<br/><br/>
+                  Because we believe that hands-on experience is the best way to learn new skills, we support the employees responsible for operations with on-the-job training.<br/><br/>
                   Part of the transition includes cementing the [Cloud Foundation Capabilities](/blog/cloud-foundation-map 'Nuvibit Cloud Foundation Blog Post') which are essential to establish a Cloud Operating Model."
 
       - title: "Support"

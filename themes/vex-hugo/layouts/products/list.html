@@ -126,7 +126,7 @@
                     {{- end }}
                     <ul class="list-group">
                     {{ $BlogTag := .blog_tag }}
-                    {{ range (where site.RegularPages "Section" "blog") }}
+                    {{ range (where site.RegularPages.ByDate "Section" "blog") }}
                     {{ if in .Params.tags $BlogTag }}
                         <li class="list-group-item">
                             <a href="{{ .Permalink }}" class="link-primary">{{ $.Page.RenderString .Title }}</a>

@@ -53,6 +53,9 @@ All the attributes are persisted as tags of the account and are queriable in you
 ## How it works
 
 The account vending can be separated into four stages:
+
+![img](images/blog/account-vending/account-vending-diag.png)
+<br/>
 {{<table "table table-striped table-bordered">}}
 | Stage | Description |
 | ---   | :---  |
@@ -62,7 +65,6 @@ The account vending can be separated into four stages:
 | 4. Global Baseline | The commit to the global baseline repository triggers the pipeline of the global baseline. The account baseline is rolled out to the newly created account and all the core components of the foundation are updated to interact with the new account.<br/>To learn more about the gobal baseline and it's components read our blog post about the [Reference architecture for AWS Multi-Account Customers](blog/aws-multiaccount-reference-architecture)|
 {{</table>}}
 <br/>
-![img](images/blog/account-vending/account-vending-diag.png)
 
 ## Customized to fit your environment
 We understand that tooling is a very individual choice for every organization. It is crucial that the account vending **fits into the existing tooling landscape** to reduce the learning curve for your teams as much as possible.

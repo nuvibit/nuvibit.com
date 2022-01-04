@@ -404,6 +404,10 @@ p.md a:hover {
 }
 
 // blog
+.blog-social {
+  z-index: 999 !important;
+}
+
 .blog-social a {
   color: #3b4045 !important;
   text-decoration: none !important;

@@ -80,7 +80,7 @@ To recycle an account you can simple set a flag in the account registry reposito
   }
 ```
 
-The recycling is done in 5 stages:
+The recycling is done in five stages:
 
 
 ![img](images/blog/aws-account-lifecycle-manager/recycling-diag-highres.png)

@@ -54,7 +54,7 @@ All the attributes are persisted as tags of the account and are queriable in you
 
 The account vending can be separated into four stages:
 
-![img](images/blog/aws-account-lifecycle-manager/account-lifecycle-diagram.png)
+![img](images/blog/aws-account-lifecycle-manager/account-lifecycle-diag-highres.png)
 <br/>
 {{<table "table table-striped table-bordered">}}
 | Stage | Description |

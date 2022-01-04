@@ -37,7 +37,7 @@ We believe that [GitOps](faq/#gitops 'What is GitOps?') is the best way for empl
     tenant        = "core"
     environment   = "prod"
   }
-  aws-c1-0001 = {
+  aws-c1-OOO1 = {
     title         = "marketing application - nonprod"
     account_owner = "max.muster@customer1.com"
     tenant        = "marketing"

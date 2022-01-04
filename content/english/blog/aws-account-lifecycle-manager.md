@@ -13,7 +13,7 @@ draft: false
 ## Context
 
 As soon as your AWS footprint starts to get a little bigger you will encounter the need to automatically and efficiently deploy secure and compliant AWS Accounts. 
-The [Nuvibit Cloud Foundation Blueprint](products/foundation-blueprint) contains our solution to provision new AWS Accounts.
+The [Nuvibit Cloud Foundation Blueprint](products/foundation-blueprint) contains our solution to do exactly that. Not only is the account lifecycle management able to rollout new account, it is also able to recycle accounts that are not needed anymore. This is quite common for accounts that host experimental workloads.
 
 ## GitOps by design
 We believe that [GitOps](faq/#gitops 'What is GitOps?') is the best way for employees to order new resources. Therefor accounts can be ordered with a simple pull request containing the relevant information you need to create a new account.
@@ -50,7 +50,7 @@ Every block represents one account. The pull requests can be approved or decline
 The attributes displayed in this example are required. The account vending determines the [AWS Organizations OU](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html) placement based on those attributes. Of course the list of attributes can be extended with any attributes that are needed by your organization (i.e. cost center, team name, manager mail, etc).
 All the attributes are persisted as tags of the account and are queriable in your [IaC definitions](faq/#iac 'What is Infrastructure as Code?').
 
-## How it works
+## Account Rollout
 
 The account vending can be separated into four stages:
 
@@ -65,6 +65,37 @@ The account vending can be separated into four stages:
 | <span style="color: #FF00FF">**4. Global Baseline**</span> | The commit to the global baseline repository triggers the pipeline of the global baseline. The account baseline is rolled out to the newly created account and all the core components of the foundation are updated to interact with the new account.<br/>To learn more about the gobal baseline and it's components read our blog post about the [Reference architecture for AWS Multi-Account Customers](blog/aws-multiaccount-reference-architecture)|
 {{</table>}}
 <br/>
+
+## Account Recycling
+AWS does not offer a simple way of deleting accounts in an automated manner. To bypass this contraint we implemented the account recycling feature.
+To recycle an account you can simple set a flag in the account registry repository:
+
+```terraform {linenos=table,hl_lines=[],linenostart=50}
+ aws-c1-0001 = {
+    title         = "marketing application - nonprod"
+    account_owner = "max.muster@customer1.com"
+    tenant        = "marketing"
+    environment   = "nonprod"
+    recycled      = "true"
+  }
+```
+
+If the flag is set to true the following steps will be taken:
+1. Destruction of all terraform resources rolled out by the user of the account
+2. Destruction of the account baseline
+3. Removal of all surrounding systems (git repository, pipeline configuration, mail alias, terraform workspace, etc)
+
+The only thing left is an empty hull of the account that does not create any costs.<br/>
+As soon as a new account is needed the recycled account can be reused ba removing the recyled flag and updating the account attributes:
+
+```terraform {linenos=table,hl_lines=[],linenostart=50}
+  aws-c1-0001 = {
+    title         = "sales application - nonprod"
+    account_owner = "john.doe@customer1.com"
+    tenant        = "sales"
+    environment   = "nonprod"
+  }
+```
 
 ## Customized to fit your environment
 We understand that tooling is a very individual choice for every organization. It is crucial that the account vending **fits into the existing tooling landscape** to reduce the learning curve for your teams as much as possible.

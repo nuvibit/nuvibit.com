@@ -22,25 +22,25 @@ We believe that [GitOps](faq/#gitops 'What is GitOps?') is the best way for empl
 aws-c1-vending = {
     title         = "vending account"
     account_owner = "max.muster@customer1.com"
-    mandant       = "core"
+    tenant        = "core"
     environment   = "prod"
   }
   aws-c1-logging = {
     title         = "Logging account"
     account_owner = "max.muster@customer1.com"
-    mandant       = "core"
+    tenant        = "core"
     environment   = "prod"
   }
   aws-c1-security = {
     title         = "security account"
     account_owner = "max.muster@customer1.com"
-    mandant       = "core"
+    tenant        = "core"
     environment   = "prod"
   }
   aws-c1-0001 = {
     title         = "marketing application - nonprod"
     account_owner = "max.muster@customer1.com"
-    mandant       = "marketing"
+    tenant        = "marketing"
     environment   = "nonprod"
   }
 ```

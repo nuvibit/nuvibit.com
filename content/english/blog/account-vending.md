@@ -13,7 +13,7 @@ draft: false
 ## Context
 
 As soon as your AWS footprint starts to get a little bigger you will encounter the need to automatically and efficiently deploy secure and compliant AWS Accounts. 
-The [Nuvibit Cloud Founation Blueprint](products/foundation-blueprint) contains our solution to provision new AWS Accounts.
+The [Nuvibit Cloud Foundation Blueprint](products/foundation-blueprint) contains our solution to provision new AWS Accounts.
 
 ## GitOps by design
 We believe that [GitOps](faq/#gitops 'What is GitOps?') is the best way for employees to order new resources. Therefor accounts can be ordered with a simple pull request containing the relevant information you need to create a new account.
@@ -48,7 +48,7 @@ aws-c1-vending = {
 Every block represents one account. The pull requests can be approved or declined after thorough reviews of the team that is responsible for your Cloud Foundation.
 
 The attributes displayed in this example are required. The account vending determines the [AWS Organizations OU](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html) placement based on those attributes. Of course the list of attributes can be extended with any attributes that are needed by your organization (i.e. cost center, team name, manager mail, etc).
-All the attributes are persisted as tags of the account and are queriable in your [IaC](faq/#iac 'What is Infrastructure as Code?') definitions.
+All the attributes are persisted as tags of the account and are queriable in your [IaC definitions](faq/#iac 'What is Infrastructure as Code?').
 
 ## How it works
 
@@ -59,8 +59,8 @@ The account vending can be separated into four stages:
 {{<table "table table-striped table-bordered">}}
 | Stage | Description |
 | ---   | :---  |
-| 1. Pull request | The user creates a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) in the account repository containing all the required tags. The pull request is reviewed, approved and merged by the team responsible for the cloud foundation |
-| 2. Account creation | Terraform is triggered by the merge commit and creates a new AWS account, adds the account to AWS SSO, creates a new repository and finally creates the [CI/CD](faq/#cicd 'What is CI/CD?') pipeline to be used to deploy IaC definitions to the account. <br/> In our sample we use github for the code repositories and terraform cloud for [CI/CD](faq/#cicd 'What is CI/CD'). The solution can of course be adapted to whatever tooling you would like to use.|
+| 1. Pull request | The user creates a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) in the account inventory repository containing all the required tags. The pull request is reviewed, approved and merged by the team responsible for the cloud foundation |
+| 2. Account creation | Terraform is triggered by the merge commit and creates a new AWS account, adds the account to AWS SSO, creates a new repository and finally creates the [CI/CD](faq/#cicd 'What is CI/CD?') pipeline to be used to deploy IaC definitions to the account. <br/> In our sample we use github for the code repositories and terraform cloud for [CI/CD](faq/#cicd 'What is CI/CD'). |
 | 3. Account Configuration | Not everything can be done via terraform as there are tools or actions that are not supported by terraform. To cover those cases we implemented [AWS Step Functions](https://aws.amazon.com/step-functions/?step-functions.sort-by=item.additionalFields.postDateTime&step-functions.sort-order=desc). <br/>The step functions are triggered by the CloudTrail Event that occurs as soon as a new account gets created. <br/>In our example we deploy three step functions: <br/>**- setup account**: deletes the default VPCs and all attached resources<br/>**- create email alias**: creates an email alias in Microsoft Exchange<br/>**- add account to baseline**: Adds the new account to the global baseline repository
 | 4. Global Baseline | The commit to the global baseline repository triggers the pipeline of the global baseline. The account baseline is rolled out to the newly created account and all the core components of the foundation are updated to interact with the new account.<br/>To learn more about the gobal baseline and it's components read our blog post about the [Reference architecture for AWS Multi-Account Customers](blog/aws-multiaccount-reference-architecture)|
 {{</table>}}

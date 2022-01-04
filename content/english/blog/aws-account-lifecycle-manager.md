@@ -1,7 +1,7 @@
 ---
-title: "Nuvibit Account Vending"
+title: "Nuvibit AWS Account Lifecycle Manager"
 date: 2022-01-01T11:00:00+06:00
-image: "images/blog/account-vending/account-vending-illustration.png"
+image: "images/blog/aws-account-lifecycle-manager/account-lifecycle-illustration.png"
 description: "This post explains the account vending of the nuvibit foundation blueprint."
 summary: "Learn how accounts can be created, baselined and managed in the nuvibit cloud foundation blueprint."
 tags:
@@ -54,7 +54,7 @@ All the attributes are persisted as tags of the account and are queriable in you
 
 The account vending can be separated into four stages:
 
-![img](images/blog/account-vending/account-vending-diag.png)
+![img](images/blog/aws-account-lifecycle-manager/account-lifecycle-diagram.png)
 <br/>
 {{<table "table table-striped table-bordered">}}
 | Stage | Description |

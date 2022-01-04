@@ -18,8 +18,8 @@ The [Nuvibit Cloud Founation Blueprint](products/foundation-blueprint) contains 
 ## GitOps by design
 We believe that [GitOps](faq/#gitops 'What is GitOps?') is the best way for employees to order new resources. Therefor accounts can be ordered with a simple pull request containing the relevant information you need to create a new account.
 
-```
-aws-c1-vending = {
+```terraform {linenos=table,hl_lines=[],linenostart=50}
+  aws-c1-vending = {
     title         = "vending account"
     account_owner = "max.muster@customer1.com"
     tenant        = "core"

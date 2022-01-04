@@ -97,7 +97,8 @@ The recycling is done in five stages:
 {{</table>}}
 <br/>
 
-The only thing left is an empty hull of the account that does not create any costs.<br/>
+The only thing left is an empty hull of the account that does not create any costs.<br/><br/>
+
 As soon as a new account is needed the recycled account can be reused ba removing the recyled flag and updating the account attributes:
 
 ```terraform {linenos=table,hl_lines=[],linenostart=50}

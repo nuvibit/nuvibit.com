@@ -76,6 +76,6 @@ Wenn Sie weder [Terraform Cloud](https://www.terraform.io/cloud) noch [Terraform
 
 Nuvibit ist darauf spezialisiert, **Cloud Foundation Capabilities** in Unternehmen einzuführen.
 
-Wir passen unseren **Foundation Blueprint** an Ihre Bedürfnisse an und befähigen Sie, **Foundation Capabilities** mit einem hohen Reifegrad für Ihre **Cloud Workload Development Teams** bereitzustellen.
+Wir passen unseren **[Foundation Blueprint](products/foundation-blueprint "Foundation Blueprint Produktseite")** an Ihre Bedürfnisse an und befähigen Sie, **Foundation Capabilities** mit einem hohen Reifegrad für Ihre **Cloud Workload Development Teams** bereitzustellen.
 
 **[Kontaktieren Sie uns](/contact/ 'Kontaktieren Sie uns für weitere Informationen.')** für weitere Informationen.

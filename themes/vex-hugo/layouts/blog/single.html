@@ -24,7 +24,7 @@
         <a href="#" onclick="copy_url(url='{{ .Permalink | absURL }}')">
           <i class="fas fa-link"></i>
         </a>
-        <div class="mt-md-0 mt-3 col-sm-12 col-md-6 float-left text-muted text-center text-md-left">
+        <div class="p-0 mt-md-0 mt-3 col-sm-12 col-md-6 float-left text-muted text-center text-md-left">
           {{ .Params.Date | time.Format ":date_long" }} | {{ i18n "reading_duration" }} {{ .Params.Duration }} min
         </div>
       </div>

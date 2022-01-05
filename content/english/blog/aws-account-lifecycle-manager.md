@@ -1,6 +1,6 @@
 ---
 title: "AWS Account Lifecycle Manager"
-date: 2022-01-01T11:00:00+06:00
+date: 2022-01-05T11:00:00+06:00
 image: "images/blog/aws-account-lifecycle-manager/account-lifecycle-illustration.png"
 description: "This post explains the account lifecycle manager of the nuvibit foundation blueprint."
 summary: "Learn how accounts can be created, baselined and managed in the nuvibit cloud foundation blueprint."
@@ -45,10 +45,10 @@ We believe that [GitOps](faq/#gitops 'What is GitOps?') is the best way for empl
   }
 ```
 
-Every AWS Account is defined in a dedicated code block.
+Every AWS Account is defined in a dedicated config code block.
 Pull requests can be approved or denied after thorough review by the team responsible for your Cloud Foundation.
 
-The **Account Lifecycle Manager** determines the [AWS Organizations OU](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html) placement based on the defined attributes. 
+The **Account Lifecycle Manager** determines the [AWS Organizations Unit (OU)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html) placement based on the defined attributes.
 Naturally, the list of attributes can be extended to your organizational requirements (i.e. cost center, DNS zone, team name, manager mail).
 The **Account Lifecycle Manager** can also update these attributes later on and will automatically migrate AWS Accounts into the correct OU, initiate provisioning of network resources and for example assign a new owner.<br/>
 All these attributes are stored as tags of the AWS Account and can be retrieved in your [IaC](faq/#iac 'What is Infrastructure as Code?') definition.
@@ -115,10 +115,11 @@ As soon as a new account is needed the recycled account can be reused by removin
 
 ## Customized to fit your environment
 We understand that tooling is a very individual choice for every organization. It is crucial that the account lifecycle manager **fits into the existing tooling landscape** to reduce the learning curve for your teams as much as possible.
-That is why we designed this solution to be highly flexible.<br/><br/>
-The CI/CD workflows can be implemented with the tooling of your choice (Jenkins, Bamboo, Gitlab, CircleCI, Github Actions, etc). This solution will also work with any source control provider you may already have in place (GitHub, GitLab, Bitbucket, etc).<br/><br/>
+That is why we designed this solution to be highly flexible.<br/>
+
+The [CI/CD](faq/#cicd 'What is CI/CD?') workflows can be implemented with the tooling of your choice (Jenkins, Bamboo, Gitlab, CircleCI, GitHub Actions, etc). This solution will also work with any source control provider you may already have in place (GitHub, GitLab, Bitbucket, etc).<br/><br/>
 We highly recommend to use terraform for the deployment and management of your AWS Accounts and surrounding systems.
-If you do not want to rely on [Terraform Cloud](https://www.terraform.io/cloud) or [Terraform Enterprise](https://www.terraform.io/enterprise), the workflows can also be implemented with the community edition of terraform and the CI/CD tooling of your choice.
+If you do not want to rely on [Terraform Cloud](https://www.terraform.io/cloud) or [Terraform Enterprise](https://www.terraform.io/enterprise), the workflows can also be implemented with the community edition of terraform and the [CI/CD](faq/#cicd 'What is CI/CD?') tooling of your choice.
 
 ## Our service
 

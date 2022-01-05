@@ -2,8 +2,8 @@
 title: "AWS Account Lifecycle Manager"
 date: 2022-01-05T11:00:00+06:00
 image: "images/blog/aws-account-lifecycle-manager/account-lifecycle-illustration.png"
-description: "In diesem Beitrag wird das Account Lifecycle Management des Nuvibit Foundation Blueprint erklärt."
-summary: "In einem Multi Account Environment ist es wichtig, dass Accounts automatisiert erstellt, mit einer Baseline versehen, verwaltet und recycled werden können. In diesem Blog Beitrag wird unsere Lifecycle Management Lösung für AWS Accounts des Nuvibit Foundation Blueprints erklärt mit genau dieser Funktionalität."
+description: "In diesem Blogbeitrag stellen wir unsere Lifecycle-Management-Lösung für AWS Accounts vor."
+summary: "In einer AWS Multi-Account Umgebung ist es wichtig, dass AWS Accounts auf automatisierte Art und Weise erstellt, verwaltet und recycelt werden können. In diesem Blogbeitrag stellen wir unsere Lifecycle-Management-Lösung für AWS Accounts vor."
 tags:
   - aws
   - foundation

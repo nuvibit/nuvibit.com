@@ -11,7 +11,6 @@ duration: 5
 draft: false
 ---
 ## Context
-
 As your AWS footprint grows you will encounter the need to provision secure and compliant AWS Accounts in an automated way.
 Our [Nuvibit Cloud Foundation Blueprint](products/foundation-blueprint "Foundation Blueprint product page") includes the **Account Lifecycle Manager**, which addresses exactly this challenge. Our solution is not only able to provision new AWS Accounts, but also keeps them up to date and recycles them when they are no longer needed (a common requirement for experimental workloads).
 
@@ -26,7 +25,7 @@ We believe that [GitOps](faq/#gitops 'What is GitOps?') is the best way for empl
     environment   = "prod"
   }
   aws-c1-logging = {
-    title         = "Logging account"
+    title         = "logging account"
     account_owner = "max.muster@customer1.com"
     tenant        = "core"
     environment   = "prod"
@@ -54,7 +53,6 @@ The **Account Lifecycle Manager** can also update these attributes later on and 
 All these attributes are stored as tags of the AWS Account and can be retrieved in your [IaC](faq/#iac 'What is Infrastructure as Code?') definition.
 
 ## Account Rollout
-
 The **Account Lifecycle Manager** can be separated into four stages:
 
 ![img](images/blog/aws-account-lifecycle-manager/rollout-diag-highres.png)
@@ -122,7 +120,6 @@ We highly recommend to use terraform for the deployment and management of your A
 If you do not want to rely on [Terraform Cloud](https://www.terraform.io/cloud) or [Terraform Enterprise](https://www.terraform.io/enterprise), the workflows can also be implemented with the community edition of terraform and the [CI/CD](faq/#cicd 'What is CI/CD?') tooling of your choice.
 
 ## Our service
-
 Nuvibit specializes in providing **Cloud Foundation Capabilities** to organizations.
 
 We will tailor our **[Foundation Blueprint](products/foundation-blueprint "Foundation Blueprint product page")** to your needs and enable you to deliver **Foundation Capabilities** to your **Cloud Workload Development Teams** with a high level of maturity.

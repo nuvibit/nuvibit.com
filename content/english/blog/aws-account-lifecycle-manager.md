@@ -1,5 +1,5 @@
 ---
-title: "Nuvibit AWS Account Lifecycle Manager"
+title: "AWS Account Lifecycle Manager"
 date: 2022-01-01T11:00:00+06:00
 image: "images/blog/aws-account-lifecycle-manager/account-lifecycle-illustration.png"
 description: "This post explains the account lifecycle manager of the nuvibit foundation blueprint."
@@ -50,7 +50,7 @@ Pull requests can be approved or denied after thorough review by the team respon
 
 The **Account Lifecycle Manager** determines the [AWS Organizations OU](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html) placement based on the defined attributes. 
 Naturally, the list of attributes can be extended to your organizational requirements (i.e. cost center, DNS zone, team name, manager mail).
-The **Account Lifecycle Manager** can also update these attributes later on and will automatically migrate AWS Accounts into the correct OU, initiate provisioning of network resources and for example assign a new owner.
+The **Account Lifecycle Manager** can also update these attributes later on and will automatically migrate AWS Accounts into the correct OU, initiate provisioning of network resources and for example assign a new owner.<br/>
 All these attributes are stored as tags of the AWS Account and can be retrieved in your [IaC](faq/#iac 'What is Infrastructure as Code?') definition.
 
 ## Account Rollout
@@ -71,7 +71,7 @@ The **Account Lifecycle Manager** can be separated into four stages:
 
 ## Account Recycling
 AWS does not offer a simple solution to delete accounts in an automated manner. To bypass this constraint we implemented an account recycling feature.
-To recycle an AWS Account you can simply update the account inventory repository:
+To recycle an AWS Account you can simply update the account inventory repository with the **recycled flag**:
 
 ```terraform {linenos=table,hl_lines=[6],linenostart=50}
  aws-c1-0001 = {

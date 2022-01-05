@@ -13,7 +13,7 @@ draft: false
 ## Context
 
 Sobald Ihre AWS Umgebung wächst wird, entsteht sofort die Anforderung, dass neue AWS Account automatisiert, wiederholbar, sicher und compliant ausgerollt werden können.
-Der [Nuvibit Cloud Foundation Blueprint](products/foundation-blueprint) beinhaltet unsere Account Vending Lösung mit genau dieser Funktionalität. Das Account Lifecycle Management rollt die Accounts nicht nur aus, sondern hält sie auch aktuell und kann die Accounts bei Bedarf recyclen.
+Der [Nuvibit Cloud Foundation Blueprint](products/foundation-blueprint) beinhaltet unseren Account Lifecycle Manager mit genau dieser Funktionalität. Das Account Lifecycle Management rollt die Accounts nicht nur aus, sondern hält sie auch aktuell und kann die Accounts bei Bedarf recyclen.
 
 ## GitOps by design
 Wir sind überzeugt, dass [GitOps](faq/#gitops 'What is GitOps?') die beste Option für Mitarbeiter ist, um neue, technische Ressourcen zu bestellen. Aus diesem Grund wurde die Lösung so gebaut, dass Accounts mit einem simplen Git Pull Request bestellt werden, welcher alle notwendigen Informationen enthält.

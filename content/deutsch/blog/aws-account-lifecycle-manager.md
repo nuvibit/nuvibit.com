@@ -12,7 +12,7 @@ draft: false
 ---
 ## Context
 
-Sobald Ihre AWS Umgebung wächst wird, entsteht sofort die Anforderung, dass neue AWS Account automatisiert, wiederholbar, sicher und compliant ausgerollt werden können.
+Sobald Ihre AWS Umgebung wächst, entsteht meist der Wunsch und die Anforderung, dass neue AWS Account automatisiert, wiederholbar, sicher und compliant ausgerollt werden können.
 Der [Nuvibit Cloud Foundation Blueprint](products/foundation-blueprint) beinhaltet unseren Account Lifecycle Manager mit genau dieser Funktionalität. Das Account Lifecycle Management rollt die Accounts nicht nur aus, sondern hält sie auch aktuell und kann die Accounts bei Bedarf recyclen.
 
 ## GitOps by design

@@ -53,7 +53,7 @@ The **Account Lifecycle Manager** can also update these attributes later on and 
 All these attributes are stored as tags of the AWS Account and can be retrieved in your [IaC](faq/#iac 'What is Infrastructure as Code?') definition.
 
 ## Account Rollout
-The **Account Lifecycle Manager** can be separated into four stages:
+The rollout of a new AWS Account can be divided into four stages:
 
 ![img](images/blog/aws-account-lifecycle-manager/rollout-diag-highres.png)
 <br/>
@@ -82,7 +82,6 @@ To recycle an AWS Account you can simply update the account inventory repository
 ```
 
 The recycling is done in five stages:
-
 
 ![img](images/blog/aws-account-lifecycle-manager/recycling-diag-highres.png)
 
@@ -115,7 +114,8 @@ As soon as a new account is needed the recycled account can be reused by removin
 We understand that tooling is a very individual choice for every organization. It is crucial that the account lifecycle manager **fits into the existing tooling landscape** to reduce the learning curve for your teams as much as possible.
 That is why we designed this solution to be highly flexible.<br/>
 
-The [CI/CD](faq/#cicd 'What is CI/CD?') workflows can be implemented with the tooling of your choice (Jenkins, Bamboo, Gitlab, CircleCI, GitHub Actions, etc). This solution will also work with any source control provider you may already have in place (GitHub, GitLab, Bitbucket, etc).<br/><br/>
+The [CI/CD](faq/#cicd 'What is CI/CD?') workflows can be implemented with the tooling of your choice (Jenkins, Bamboo, Gitlab, CircleCI, GitHub Actions, etc). 
+This solution will also work with any source control provider you may already have in place (GitHub, GitLab, Bitbucket, etc).<br/><br/>
 We highly recommend to use terraform for the deployment and management of your AWS Accounts and surrounding systems.
 If you do not want to rely on [Terraform Cloud](https://www.terraform.io/cloud) or [Terraform Enterprise](https://www.terraform.io/enterprise), the workflows can also be implemented with the community edition of terraform and the [CI/CD](faq/#cicd 'What is CI/CD?') tooling of your choice.
 

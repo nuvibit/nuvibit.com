@@ -100,7 +100,7 @@ The recycling is done in five stages:
 {{</table>}}
 <br/>
 
-The only thing left is an empty hull of the account that does not create any costs.<br/><br/>
+The only thing left is an empty hull of the account that does not create any costs.<br/>
 
 As soon as a new account is needed the recycled account can be reused by removing the recyled flag and updating the account attributes:
 

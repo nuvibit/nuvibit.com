@@ -96,7 +96,7 @@ Das Recycling wird in fünf Phasen ausgeführt:
 {{</table>}}
 <br/>
 
-Das Einzige, was bleibt, ist eine leere Hülle des Kontos, die keine Kosten verursacht.<br/><br/>
+Das Einzige, was bleibt, ist eine leere Hülle des Kontos, die keine Kosten verursacht.<br/>
 
 Sobald ein neues Konto benötigt wird, kann das recycelte Konto wiederverwendet werden, indem das Kennzeichen "recycelt" entfernt und die Attribute des Kontos aktualisiert werden:
 

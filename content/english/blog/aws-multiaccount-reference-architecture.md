@@ -86,6 +86,6 @@ From experience, we rely exclusively on [Terraform](https://www.terraform.io/int
 
 Nuvibit specializes in providing **Cloud Foundation Capabilities** to organizations.
 
-We will tailor our **Foundation Blueprint** to your needs and enable you to deliver **Foundation Capabilities** to your **Cloud Workload Development Teams** with a high level of maturity.
+We will tailor our **[Foundation Blueprint](products/foundation-blueprint "Foundation Blueprint product page")** to your needs and enable you to deliver **Foundation Capabilities** to your **Cloud Workload Development Teams** with a high level of maturity.
 
 **[Get in touch](/contact/ 'Contact us for more information!')** with us for further details.

@@ -12,7 +12,7 @@ draft: false
 ---
 ## Context
 
-Sobald Ihre AWS Umgebung wächst wird, entsteht sofort die Anforderung, dass neue AWS Account automatisiert, wiederholbar, sicher und compliant ausgerollt werden können.
+Sobald Ihre AWS Umgebung wächst, entsteht meist der Wunsch und die Anforderung, dass neue AWS Accounts automatisiert, wiederholbar, sicher und compliant ausgerollt werden können.
 Der [Nuvibit Cloud Foundation Blueprint](products/foundation-blueprint) beinhaltet unseren Account Lifecycle Manager mit genau dieser Funktionalität. Das Account Lifecycle Management rollt die Accounts nicht nur aus, sondern hält sie auch aktuell und kann die Accounts bei Bedarf recyclen.
 
 ## GitOps by design
@@ -47,7 +47,7 @@ aws-c1-vending = {
 ```
 Jeder Konfigurations Block beschreibt einen Account. Um einen neuen Account zu erstellen wird per Pull Request ein neuer Konfigurations Block hinzugefügt. Das Team, welches für die Cloud Foundation zuständig ist, kann diese Pull Requests wie gewohnt prüfen und im Anschluss freigeben oder ablehnen.
 
-Der **Account Lifecycle Manager** entscheidet anhand der Attribute welcher [AWS Organizations Unit (OU)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html) der Account zuzuweisen ist. Diese Liste kann selbstverständlich mit den Attributen erweitert werden, die für Ihre Organisation wichtig sind (z.B. Kostenstelle, Team Name, DNS Zone, Kostenverantwortlicher, etc). Der **Account Lifecycle Manager** kann diese Attribute auch zu einem späteren Zeitpunkt updaten und den Acccount in eine andere OU schieben, aktualisierten Netzwerkressourcen ausrollen und beispielsweise einen neuen Account Owner hinterlegen.<br/>
+Der **Account Lifecycle Manager** entscheidet anhand der Attribute welcher [AWS Organizations Unit (OU)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html) ein Account zugewiesen ist. Diese Liste kann selbstverständlich mit den Attributen erweitert werden, die für Ihre Organisation wichtig sind (z.B. Kostenstelle, Team Name, DNS Zone, Kostenverantwortlicher, etc). Der **Account Lifecycle Manager** kann diese Attribute auch zu einem späteren Zeitpunkt updaten, den Acccount in eine andere OU schieben, aktualisierten Netzwerkressourcen ausrollen oder beispielsweise einen neuen Account Owner hinterlegen.<br/>
 Alle Attribute werden als Tags des neuen AWS Accounts persistiert und können im [IaC Code](faq/#iac 'What is Infrastructure as Code?') als Variablen verwendet werden.
 
 ## Account Rollout
@@ -96,7 +96,7 @@ Das Recycling wird in fünf Phasen ausgeführt:
 {{</table>}}
 <br/>
 
-Das Einzige, was bleibt, ist eine leere Hülle des Kontos, die keine Kosten verursacht.<br/><br/>
+Das Einzige, was bleibt, ist eine leere Hülle des Kontos, die keine Kosten verursacht.<br/>
 
 Sobald ein neues Konto benötigt wird, kann das recycelte Konto wiederverwendet werden, indem das Kennzeichen "recycelt" entfernt und die Attribute des Kontos aktualisiert werden:
 

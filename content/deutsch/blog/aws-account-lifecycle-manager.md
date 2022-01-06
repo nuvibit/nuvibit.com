@@ -50,7 +50,7 @@ Das Team, welches für die Cloud Foundation zuständig ist, kann diese Pull Requ
 
 Der **Account Lifecycle Manager** entscheidet anhand der Attribute welche [AWS Organizations Unit (OU)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html) ein Account zugewiesen wird. 
 Die Liste kann selbstverständlich mit den Attributen erweitert werden, die für Ihre Organisation wichtig sind (z.B. Kostenstelle, Team Name, DNS Zone, Kostenverantwortlicher, etc). 
-Der **Account Lifecycle Manager** kann diese Attribute auch zu einem späteren Zeitpunkt aktualisieren, den Acccount in eine andere OU schieben, das Bereitstellung von Netzwerkressourcen einleiten und beispielsweise einen neuen Account Owner hinterlegen.<br/>
+Der **Account Lifecycle Manager** kann diese Attribute auch zu einem späteren Zeitpunkt aktualisieren, den Acccount in eine andere OU schieben, die Bereitstellung von Netzwerkressourcen einleiten und beispielsweise einen neuen Account Owner hinterlegen.<br/>
 Alle diese Attribute werden als Tags des AWS Accounts gespeichert und können in Ihrer [IaC](faq/#iac 'What is Infrastructure as Code?') Definition aufgerufen werden.
 
 ## Account Rollout

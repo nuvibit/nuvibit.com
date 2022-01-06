@@ -47,12 +47,20 @@
 		// function to cancel image zoom
 		function cancel_zoom(){
 			window.removeEventListener('scroll', cancel_zoom);
+			if (document.getElementsByClassName("zoomed")[0].querySelectorAll("img-max-400-zoomed")){
+				$(".zoomed").children().removeClass("img-max-400-zoomed");
+				$(".zoomed").children().addClass("img-max-400");
+			}
 			$(".zoomed").removeClass("zoomed");
 			$(".zoom-blur").toggle();
 		}
 
 		// function to image zoom
 		function image_zoom(element){
+			if (element.querySelectorAll("img-max-400")){
+				$(element).children().removeClass("img-max-400");
+				$(element).children().addClass("img-max-400-zoomed");
+			}
 			if (!element.classList.contains("zoomed")){
 				$(".zoomed").removeClass("zoomed");
 			}

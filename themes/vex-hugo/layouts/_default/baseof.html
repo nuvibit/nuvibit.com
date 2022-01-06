@@ -47,19 +47,24 @@
 		// function to cancel image zoom
 		function cancel_zoom(){
 			window.removeEventListener('scroll', cancel_zoom);
-			if (document.getElementsByClassName("zoomed")[0].querySelectorAll("img-max-400-zoomed")){
-				$(".zoomed").children().removeClass("img-max-400-zoomed");
-				$(".zoomed").children().addClass("img-max-400");
+			let zoomed_img = document.getElementById("zoomed-image")
+			if (zoomed_img){
+				zoomed_img.classList.add("img-max-400");
+				zoomed_img.removeAttribute("id");
 			}
 			$(".zoomed").removeClass("zoomed");
 			$(".zoom-blur").toggle();
 		}
 
 		// function to image zoom
-		function image_zoom(element){
-			if (element.querySelectorAll("img-max-400")){
-				$(element).children().removeClass("img-max-400");
-				$(element).children().addClass("img-max-400-zoomed");
+		function image_zoom(element){	
+			let zoomed_img = element.firstElementChild;
+			if (zoomed_img && zoomed_img.id == "zoomed-image"){
+				zoomed_img.classList.add("img-max-400");
+				zoomed_img.removeAttribute("id");
+			}else if (zoomed_img.classList.contains("img-max-400")){
+				zoomed_img.classList.remove("img-max-400");
+				zoomed_img.setAttribute("id", "zoomed-image");
 			}
 			if (!element.classList.contains("zoomed")){
 				$(".zoomed").removeClass("zoomed");

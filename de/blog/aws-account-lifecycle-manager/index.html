@@ -149,7 +149,7 @@ Aus diesem Grund haben wir unsere Lösung so konzipiert, dass ein neuer AWS Acco
 </span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">73
 </span></code></pre></td>
 <td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
-<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-terraform data-lang=terraform><span style=color:#a6e22e>aws</span><span style=color:#f92672>-</span><span style=color:#a6e22e>c1</span><span style=color:#f92672>-</span><span style=color:#a6e22e>lifecycle</span> = {
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-terraform data-lang=terraform>  <span style=color:#a6e22e>aws</span><span style=color:#f92672>-</span><span style=color:#a6e22e>c1</span><span style=color:#f92672>-</span><span style=color:#a6e22e>lifecycle</span> = {
     <span style=color:#a6e22e>title</span>         = <span style=color:#e6db74>&#34;lifecycle account&#34;</span>
     <span style=color:#a6e22e>account_owner</span> = <span style=color:#e6db74>&#34;max.muster@customer1.com&#34;</span>
     <span style=color:#a6e22e>tenant</span>        = <span style=color:#e6db74>&#34;core&#34;</span>
@@ -179,7 +179,7 @@ Aus diesem Grund haben wir unsere Lösung so konzipiert, dass ein neuer AWS Acco
 Das Team, welches für die Cloud Foundation zuständig ist, kann diese Pull Requests sorgfältig prüfen und im Anschluss freigeben oder ablehnen.</p>
 <p>Der <strong>Account Lifecycle Manager</strong> entscheidet anhand der Attribute welche <a href=https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html title>AWS Organizations Unit (OU)</a> ein Account zugewiesen wird.
 Die Liste kann selbstverständlich mit den Attributen erweitert werden, die für Ihre Organisation wichtig sind (z.B. Kostenstelle, Team Name, DNS Zone, Kostenverantwortlicher, etc).
-Der <strong>Account Lifecycle Manager</strong> kann diese Attribute auch zu einem späteren Zeitpunkt aktualisieren, den Acccount in eine andere OU schieben, das Bereitstellung von Netzwerkressourcen einleiten und beispielsweise einen neuen Account Owner hinterlegen.<br>
+Der <strong>Account Lifecycle Manager</strong> kann diese Attribute auch zu einem späteren Zeitpunkt aktualisieren, den Account in eine andere OU schieben, die Bereitstellung von Netzwerkressourcen einleiten und beispielsweise einen neuen Account Owner hinterlegen.<br>
 Alle diese Attribute werden als Tags des AWS Accounts gespeichert und können in Ihrer <a href=/de/faq/#iac title="What is Infrastructure as Code?">IaC</a> Definition aufgerufen werden.</p>
 <div class=pt-3>
 <h2 id=account-rollout class=font-weight-bold>
@@ -202,7 +202,7 @@ Account Rollout
 <tbody>
 <tr>
 <td><span style=color:#090><strong>1. Pull Request</strong></span></td>
-<td style=text-align:left>Der User erstellt den <a href=https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests>Pull Request</a> in dem Account Inventory Repository welcher einen neuen Account Block beinhaltet. Der Pull Request wird von dem Cloud Foundation Team überprüft und freigegeben.</td>
+<td style=text-align:left>Der User erstellt einen <a href=https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests>Pull Request</a> im Account Inventory Repository welcher einen neuen Account Block beinhaltet. Der Pull Request wird von dem Cloud Foundation Team überprüft und freigegeben.</td>
 </tr>
 <tr>
 <td><span style=color:#0008ff><strong>2. Account Erstellung</strong></span></td>
@@ -210,7 +210,7 @@ Account Rollout
 </tr>
 <tr>
 <td><span style=color:#099><strong>3. Account Konfiguration</strong></span></td>
-<td style=text-align:left>Nicht alles kann via Terraform deployed und konfiguriert werden, da hierzu der Terraform Support noch fehlt. Um diese Fälle abzudecken verwenden wir <a href="https://aws.amazon.com/step-functions/?step-functions.sort-by=item.additionalFields.postDateTime&step-functions.sort-order=desc">AWS Step Functions</a>. <br>Die Step Function werden vom CloudTrail Event angestossen, der durch die Erstellung des Accounts ausgelöst wird.<br>In unserem Beispiel haben wir drei Step Functions deployed:<br><strong>- setup account</strong>: Löscht das default VPC und alle dazugehörigen Ressourcen<br><strong>- create email alias</strong>: Erstellt den E-Mail Alias in Microsoft Exchange, der als Root Mail verwendet wird<br><strong>- add account to baseline</strong>: Fügt den Account im Global Baseline Repo hinzu.</td>
+<td style=text-align:left>Nicht alles kann via Terraform deployed und konfiguriert werden, da hierzu der Terraform Support noch fehlt. Um diese Fälle abzudecken, verwenden wir <a href="https://aws.amazon.com/step-functions/?step-functions.sort-by=item.additionalFields.postDateTime&step-functions.sort-order=desc">AWS Step Functions</a>. <br>Der AWS Step Functions workflow wird von einem CloudTrail Event angestossen, das durch die Erstellung des Accounts ausgelöst wird.<br>In unserem Beispiel haben wir drei Schritte deployed:<br><strong>- setup account</strong>: Löscht das default VPC und alle dazugehörigen Ressourcen im neu erstellten Account<br><strong>- create email alias</strong>: Erstellt den E-Mail Alias in Microsoft Exchange, der als Account Root Mail verwendet wird<br><strong>- add account to baseline</strong>: Fügt den Account im Global Baseline Repo hinzu.</td>
 </tr>
 <tr>
 <td><span style=color:#f0f><strong>4. Global Baseline</strong></span></td>
@@ -224,9 +224,9 @@ Account Rollout
 Account Recycling
 <a class="header-link pl-1" href=#account-recycling><i class="fas fa-link fa-2x"></i></a>
 </h2>
-</div><p>AWS bietet keine einfache Lösung um Accounts zu löschen.
+</div><p>AWS bietet keine einfache Lösung, um Accounts zu löschen.
 Um diese Einschränkung zu umgehen, haben wir ein Account Recycling implementiert.
-Um einen AWS Account zu recyclen reicht es, im Account Inventory Repository das Attribut <strong>recycled</strong> zu aktivieren:</p>
+Um einen AWS Account zu recyclen, reicht es, im Account Inventory Repository das Attribut <strong>recycled</strong> zu aktivieren:</p>
 <div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
 <table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
 <pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">50
@@ -247,8 +247,8 @@ Um einen AWS Account zu recyclen reicht es, im Account Inventory Repository das 
 </span>  }
 </code></pre></td></tr></table>
 </div>
-</div><p>Das Recycling wird in fünf Phasen ausgeführt:</p>
-<p><div class="col-md-10 m-auto p-3 text-right zoom" onclick=image_zoom(this)>
+</div><p>Das Recycling wird in fünf Phasen ausgeführt:
+<div class="col-md-10 m-auto p-3 text-right zoom" onclick=image_zoom(this)>
 <img class=img-fluid src=https://nuvibit.com/images/blog/aws-account-lifecycle-manager/recycling-diag.png alt="Illustration of recycling-diag">
 <a href=https://nuvibit.com/images/blog/aws-account-lifecycle-manager/recycling-diag-highres.png target=_blank><i class="fas fa-external-link-alt"></i> high resolution</a>
 </div></p>
@@ -285,7 +285,7 @@ Um einen AWS Account zu recyclen reicht es, im Account Inventory Repository das 
 </table>
 <br>
 <p>Das Einzige, was bleibt, ist eine leere Hülle des AWS Accounts, die keine Kosten verursacht.<br></p>
-<p>Sobald ein neue Account benötigt wird, kann ein recycelter Account wiederverwendet werden, indem das Kennzeichen <strong>recyceled</strong> entfernt und die Attribute des Accounts aktualisiert werden:</p>
+<p>Sobald ein neuer Account benötigt wird, kann ein recycelter Account wiederverwendet werden, indem das Kennzeichen <strong>recyceled</strong> entfernt und die Attribute des Accounts aktualisiert werden:</p>
 <div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
 <table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
 <pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">50
@@ -313,7 +313,7 @@ Massgeschneidert für Ihre Umgebung
 Es ist essentiell, dass der Account Lifecycle Manager <strong>in die bestehende Toolchain passt</strong>.
 Dadurch wird die Einstiegshürde für die Teams auch deutlich verringert.
 Aus diesem Grund haben wir unsere Lösung so konzipiert, dass sie extrem flexibel ist.<br></p>
-<p>Die <a href=/de/faq/#cicd title="What is CI/CD?">CI/CD</a> Workflows können mit Ihren Tools der Wahl implementiert werden (z.B Jenkins, Bamboo, Gitlab, CircleCI, GitHub Action, etc). Auch der Git Provider kann beliebig ausgetauscht werden (GitHub, GitLab, Bitbucket, etc).<br><br></p>
+<p>Die <a href=/de/faq/#cicd title="What is CI/CD?">CI/CD</a> Workflows können mit den Tools Ihrer Wahl implementiert werden (z.B Jenkins, Bamboo, Gitlab, CircleCI, GitHub Action, AWS CodeStar etc). Auch der Git Provider kann beliebig ausgetauscht werden (GitHub, GitLab, Bitbucket, etc).<br><br></p>
 <p>Wir empfehlen wo immer möglich Terraform für das Bereitstellung und die Konfiguration Ihrer AWS Accounts und allen Umsystemen zu verwenden.
 Wenn Sie weder <a href=https://www.terraform.io/cloud title>Terraform Cloud</a> noch <a href=https://www.terraform.io/enterprise title>Terraform Enterprise</a> verwenden wollen, können die Workflows auch mit der Community Edition von Terraform und dem <a href=/de/faq/#cicd title="What is CI/CD?">CI/CD</a> Tool Ihrer Wahl implementiert werden.</p>
 <div class=pt-3>
@@ -434,7 +434,7 @@ Youtube
 </div>
 <div class="col-md-12 pt-4 border-top">
 <div class="mb-4 d-flex justify-content-center align-items-center">
-<p class=copyright-text>Urheberrechte © 2021 - Nuvibit AG</p>
+<p class=copyright-text>Urheberrechte © 2022 - Nuvibit AG</p>
 </div>
 </div>
 </div>
@@ -446,6 +446,6 @@ Youtube
 <script src=https://nuvibit.com/plugins/cookieconsent/cookieconsent.min.js></script>
 <script src=https://nuvibit.com/plugins/snow/snow.min.js></script>
 <script src=https://nuvibit.com/js/script.js></script>
-<script>var pageLang,browserLang,supportedLang,base_url,uri;document.addEventListener('DOMContentLoaded',function(){var a,b;const c=new Date;let d=c.getMonth();d==11&&$(".call-to-action").length&&(a=$(".call-to-action").css('background-image'),b=a.replace(/foundation\.jpg/,"foundation-snow.jpg"),$(".call-to-action").css('background-image',b),$("#snow").toggle(),new Snow('#snow',{number:50,r:5,v:.8}))});function copy_url(b){var a=$("<input>");$("body").append(a),a.val(b).select(),document.execCommand("copy"),a.remove(),$(".alert").show(),$(".alert").delay(2e3).slideUp(200,function(){$(this).hide()})}function cancel_zoom(){window.removeEventListener('scroll',cancel_zoom),$(".zoomed").removeClass("zoomed"),$(".zoom-blur").toggle()}function image_zoom(a){a.classList.contains("zoomed")||$(".zoomed").removeClass("zoomed"),a.classList.toggle('zoomed'),$(".zoom-blur").toggle(),setTimeout(function(){a.classList.contains("zoomed")?window.addEventListener('scroll',cancel_zoom,!1):window.removeEventListener('scroll',cancel_zoom)},100)}function redirect(a){window.location.href=a}function update_language_pref(a){localStorage.setItem('lang',a)}function uri_translate(c,d,e){var a=c,b;return d!=="en"&&(b=c.split('/'),b[1]===d?(b.splice(1,1),a=b.join('/')):a="/"),e!=="en"&&(a="/"+e+a),a}pageLang="de",browserLang=navigator.language||navigator.userLanguage,browserLang=browserLang.substring(0,2),supportedLang="[en de]".match(/\[(.*?)\]/)[1].split(" "),base_url="https://nuvibit.com/".replace(/\/$/,""),uri="/de/blog/aws-account-lifecycle-manager/",userLangPref=localStorage.getItem('lang'),userLangPref&&supportedLang.includes(userLangPref)?pageLang!==userLangPref&&(relocate_uri=uri_translate(uri,lang_now=pageLang,lang_new=userLangPref),window.location.href=base_url+relocate_uri):(supportedLang.includes(browserLang)||(browserLang="en"),localStorage.setItem('lang',browserLang),localStorage.getItem('lang')===browserLang&&pageLang!==browserLang&&(relocate_uri=uri_translate(uri,lang_now=pageLang,lang_new=browserLang),window.location.href=base_url+relocate_uri)),$(document.links).filter(function(){return this.hostname!=window.location.hostname}).attr('target','_blank'),window.cookieconsent.initialise({palette:{popup:{background:"#2b3346",text:"#ffffff"},button:{background:"#3fa7df",text:"#ffffff"}},content:{message:'Auf dieser Webseite werden Cookies eingesetzt, um Ihnen das beste Nutzererlebnis zu bieten.',dismiss:'Schliessen',link:'Unsere Cookie Richtlinien',href:'/de/privacy-policy/#51-cookies',target:null},theme:"edgeless",type:"info"})</script>
+<script>var pageLang,browserLang,supportedLang,base_url,uri;document.addEventListener('DOMContentLoaded',function(){var a,b;const c=new Date;let d=c.getMonth();d==11&&$(".call-to-action").length&&(a=$(".call-to-action").css('background-image'),b=a.replace(/foundation\.jpg/,"foundation-snow.jpg"),$(".call-to-action").css('background-image',b),$("#snow").toggle(),new Snow('#snow',{number:50,r:5,v:.8}))});function copy_url(b){var a=$("<input>");$("body").append(a),a.val(b).select(),document.execCommand("copy"),a.remove(),$(".alert").show(),$(".alert").delay(2e3).slideUp(200,function(){$(this).hide()})}function cancel_zoom(){window.removeEventListener('scroll',cancel_zoom);let a=document.getElementById("zoomed-image");a&&(a.classList.add("img-max-400"),a.removeAttribute("id")),$(".zoomed").removeClass("zoomed"),$(".zoom-blur").toggle()}function image_zoom(b){let a=b.firstElementChild;a&&a.id=="zoomed-image"?(a.classList.add("img-max-400"),a.removeAttribute("id")):a.classList.contains("img-max-400")&&(a.classList.remove("img-max-400"),a.setAttribute("id","zoomed-image")),b.classList.contains("zoomed")||$(".zoomed").removeClass("zoomed"),b.classList.toggle('zoomed'),$(".zoom-blur").toggle(),setTimeout(function(){b.classList.contains("zoomed")?window.addEventListener('scroll',cancel_zoom,!1):window.removeEventListener('scroll',cancel_zoom)},100)}function redirect(a){window.location.href=a}function update_language_pref(a){localStorage.setItem('lang',a)}function uri_translate(c,d,e){var a=c,b;return d!=="en"&&(b=c.split('/'),b[1]===d?(b.splice(1,1),a=b.join('/')):a="/"),e!=="en"&&(a="/"+e+a),a}pageLang="de",browserLang=navigator.language||navigator.userLanguage,browserLang=browserLang.substring(0,2),supportedLang="[en de]".match(/\[(.*?)\]/)[1].split(" "),base_url="https://nuvibit.com/".replace(/\/$/,""),uri="/de/blog/aws-account-lifecycle-manager/",userLangPref=localStorage.getItem('lang'),userLangPref&&supportedLang.includes(userLangPref)?pageLang!==userLangPref&&(relocate_uri=uri_translate(uri,lang_now=pageLang,lang_new=userLangPref),window.location.href=base_url+relocate_uri):(supportedLang.includes(browserLang)||(browserLang="en"),localStorage.setItem('lang',browserLang),localStorage.getItem('lang')===browserLang&&pageLang!==browserLang&&(relocate_uri=uri_translate(uri,lang_now=pageLang,lang_new=browserLang),window.location.href=base_url+relocate_uri)),$(document.links).filter(function(){return this.hostname!=window.location.hostname}).attr('target','_blank'),window.cookieconsent.initialise({palette:{popup:{background:"#2b3346",text:"#ffffff"},button:{background:"#3fa7df",text:"#ffffff"}},content:{message:'Auf dieser Webseite werden Cookies eingesetzt, um Ihnen das beste Nutzererlebnis zu bieten.',dismiss:'Schliessen',link:'Unsere Cookie Richtlinien',href:'/de/privacy-policy/#51-cookies',target:null},theme:"edgeless",type:"info"})</script>
 </body>
 </html>

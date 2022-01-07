@@ -93,8 +93,8 @@
     {{range $index, $element := (where .list "enable" true) }}
     {{- if (mod $index 2) }}
     <div class="row item-row">
-      <div class="col-md-6 text-center p-4 mb-lg-0 zoom" onclick="image_zoom(this)">
-        <img class="img-fluid" src="{{ .image | absURL }}" alt='Illustration of {{ .Image | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+      <div class="col-md-6 text-center p-5 mb-lg-0 zoom" onclick="image_zoom(this)">
+        <img class="img-fluid img-max-400" src="{{ .image | absURL }}" alt='Illustration of {{ .Image | replaceRE ".*?([\\w-]+).png" "$1" }}'>
       </div>
       <div class="col-md-6 align-self-center text-center text-md-left">
         <div class="content">
@@ -137,8 +137,8 @@
           {{ end }}
         </div>
       </div>
-      <div class="col-md-6 order-md-2 order-1 text-center p-4 mb-lg-0 zoom" onclick="image_zoom(this)">
-        <img class="img-fluid" src="{{ .image | absURL }}" alt='Illustration of {{ .Image | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+      <div class="col-md-6 order-md-2 order-1 text-center p-5 mb-lg-0 zoom" onclick="image_zoom(this)">
+        <img class="img-fluid img-max-400" src="{{ .image | absURL }}" alt='Illustration of {{ .Image | replaceRE ".*?([\\w-]+).png" "$1" }}'>
       </div>
     </div>
     {{ end }}

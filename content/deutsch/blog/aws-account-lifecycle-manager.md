@@ -19,7 +19,7 @@ Wir sind überzeugt, dass [GitOps](faq/#gitops 'What is GitOps?') die beste Meth
 Aus diesem Grund haben wir unsere Lösung so konzipiert, dass ein neuer AWS Account mit einem einfachen Pull Request bestellt werden kann, der die erforderlichen Informationen enthält.
 
 ```terraform {linenos=table,hl_lines=[],linenostart=50}
-aws-c1-lifecycle = {
+  aws-c1-lifecycle = {
     title         = "lifecycle account"
     account_owner = "max.muster@customer1.com"
     tenant        = "core"
@@ -50,7 +50,7 @@ Das Team, welches für die Cloud Foundation zuständig ist, kann diese Pull Requ
 
 Der **Account Lifecycle Manager** entscheidet anhand der Attribute welche [AWS Organizations Unit (OU)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html) ein Account zugewiesen wird. 
 Die Liste kann selbstverständlich mit den Attributen erweitert werden, die für Ihre Organisation wichtig sind (z.B. Kostenstelle, Team Name, DNS Zone, Kostenverantwortlicher, etc). 
-Der **Account Lifecycle Manager** kann diese Attribute auch zu einem späteren Zeitpunkt aktualisieren, den Acccount in eine andere OU schieben, das Bereitstellung von Netzwerkressourcen einleiten und beispielsweise einen neuen Account Owner hinterlegen.<br/>
+Der **Account Lifecycle Manager** kann diese Attribute auch zu einem späteren Zeitpunkt aktualisieren, den Account in eine andere OU schieben, die Bereitstellung von Netzwerkressourcen einleiten und beispielsweise einen neuen Account Owner hinterlegen.<br/>
 Alle diese Attribute werden als Tags des AWS Accounts gespeichert und können in Ihrer [IaC](faq/#iac 'What is Infrastructure as Code?') Definition aufgerufen werden.
 
 ## Account Rollout
@@ -61,17 +61,17 @@ Der Rollout eines neuen AWS Accounts kann in vier Phasen unterteilt werden:
 {{<table "table table-striped table-bordered">}}
 | Phase | Beschreibung |
 | ---   | :---  |
-| <span style="color: #009900">**1. Pull Request**</span> | Der User erstellt den [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) in dem Account Inventory Repository welcher einen neuen Account Block beinhaltet. Der Pull Request wird von dem Cloud Foundation Team überprüft und freigegeben. |
+| <span style="color: #009900">**1. Pull Request**</span> | Der User erstellt einen [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) im Account Inventory Repository welcher einen neuen Account Block beinhaltet. Der Pull Request wird von dem Cloud Foundation Team überprüft und freigegeben. |
 | <span style="color: #0008FF">**2. Account Erstellung**</span> | Terraform wird durch den Merge Commit angestossen. Der neue Account wird erstellt und zu AWS SSO hinzugefügt. Zusätzlich wird ein neues Repository und eine [CI/CD](faq/#cicd 'What is CI/CD?') Pipeline erstellt, mit der später die Workload-Ressourcen für den AWS Account bereitgestellt werden können. <br/> In diesem Beispiel verwenden wir Github für die Code-Repositories und Terraform Cloud für CI/CD. |
-| <span style="color: #009999">**3. Account Konfiguration**</span> | Nicht alles kann via Terraform deployed und konfiguriert werden, da hierzu der Terraform Support noch fehlt. Um diese Fälle abzudecken verwenden wir [AWS Step Functions](https://aws.amazon.com/step-functions/?step-functions.sort-by=item.additionalFields.postDateTime&step-functions.sort-order=desc). <br/>Die Step Function werden vom CloudTrail Event angestossen, der durch die Erstellung des Accounts ausgelöst wird.<br/>In unserem Beispiel haben wir drei Step Functions deployed:<br/>**- setup account**: Löscht das default VPC und alle dazugehörigen Ressourcen<br/>**- create email alias**: Erstellt den E-Mail Alias in Microsoft Exchange, der als Root Mail verwendet wird<br/>**- add account to baseline**: Fügt den Account im Global Baseline Repo hinzu.|
+| <span style="color: #009999">**3. Account Konfiguration**</span> | Nicht alles kann via Terraform deployed und konfiguriert werden, da hierzu der Terraform Support noch fehlt. Um diese Fälle abzudecken, verwenden wir [AWS Step Functions](https://aws.amazon.com/step-functions/?step-functions.sort-by=item.additionalFields.postDateTime&step-functions.sort-order=desc). <br/>Der AWS Step Functions workflow wird von einem CloudTrail Event angestossen, das durch die Erstellung des Accounts ausgelöst wird.<br/>In unserem Beispiel haben wir drei Schritte deployed:<br/>**- setup account**: Löscht das default VPC und alle dazugehörigen Ressourcen im neu erstellten Account<br/>**- create email alias**: Erstellt den E-Mail Alias in Microsoft Exchange, der als Account Root Mail verwendet wird<br/>**- add account to baseline**: Fügt den Account im Global Baseline Repo hinzu.|
 | <span style="color: #FF00FF">**4. Global Baseline**</span> | Der Commit im Global Baseline Repository stösst die Pipeline der Global Baseline an. Dadurch wird die Account Baseline im neu erstellten Account ausgerollt. Zusätzlich werden die zentralen Komponenten der Foundation aktualisiert, so dass diese mit den neuen Account interagieren.<br/>Wenn Sie mehr über die Global Baseline und ihre Komponenten wissen wollen, lesen Sie unseren Blogbeitrag über die [Referenzarchitektur für AWS Multi-Account Kunden](blog/aws-multiaccount-reference-architecture).|
 {{</table>}}
 <br/>
 
 ## Account Recycling
-AWS bietet keine einfache Lösung um Accounts zu löschen. 
+AWS bietet keine einfache Lösung, um Accounts zu löschen. 
 Um diese Einschränkung zu umgehen, haben wir ein Account Recycling implementiert.
-Um einen AWS Account zu recyclen reicht es, im Account Inventory Repository das Attribut **recycled** zu aktivieren:
+Um einen AWS Account zu recyclen, reicht es, im Account Inventory Repository das Attribut **recycled** zu aktivieren:
 
 ```terraform {linenos=table,hl_lines=[6],linenostart=50}
  aws-c1-0001 = {
@@ -84,7 +84,6 @@ Um einen AWS Account zu recyclen reicht es, im Account Inventory Repository das 
 ```
 
 Das Recycling wird in fünf Phasen ausgeführt:
-
 ![img](images/blog/aws-account-lifecycle-manager/recycling-diag-highres.png)
 
 <br/>
@@ -101,7 +100,7 @@ Das Recycling wird in fünf Phasen ausgeführt:
 
 Das Einzige, was bleibt, ist eine leere Hülle des AWS Accounts, die keine Kosten verursacht.<br/>
 
-Sobald ein neue Account benötigt wird, kann ein recycelter Account wiederverwendet werden, indem das Kennzeichen **recyceled** entfernt und die Attribute des Accounts aktualisiert werden:
+Sobald ein neuer Account benötigt wird, kann ein recycelter Account wiederverwendet werden, indem das Kennzeichen **recyceled** entfernt und die Attribute des Accounts aktualisiert werden:
 
 ```terraform {linenos=table,hl_lines=[],linenostart=50}
   aws-c1-OOO1 = {
@@ -118,7 +117,7 @@ Es ist essentiell, dass der Account Lifecycle Manager **in die bestehende Toolch
 Dadurch wird die Einstiegshürde für die Teams auch deutlich verringert.
 Aus diesem Grund haben wir unsere Lösung so konzipiert, dass sie extrem flexibel ist.<br/>
 
-Die [CI/CD](faq/#cicd 'What is CI/CD?') Workflows können mit Ihren Tools der Wahl implementiert werden (z.B Jenkins, Bamboo, Gitlab, CircleCI, GitHub Action, etc). Auch der Git Provider kann beliebig ausgetauscht werden (GitHub, GitLab, Bitbucket, etc).<br/><br/>
+Die [CI/CD](faq/#cicd 'What is CI/CD?') Workflows können mit den Tools Ihrer Wahl implementiert werden (z.B Jenkins, Bamboo, Gitlab, CircleCI, GitHub Action, AWS CodeStar etc). Auch der Git Provider kann beliebig ausgetauscht werden (GitHub, GitLab, Bitbucket, etc).<br/><br/>
 
 Wir empfehlen wo immer möglich Terraform für das Bereitstellung und die Konfiguration Ihrer AWS Accounts und allen Umsystemen zu verwenden. 
 Wenn Sie weder [Terraform Cloud](https://www.terraform.io/cloud) noch [Terraform Enterprise](https://www.terraform.io/enterprise) verwenden wollen, können die Workflows auch mit der Community Edition von Terraform und dem [CI/CD](faq/#cicd 'What is CI/CD?') Tool Ihrer Wahl implementiert werden.

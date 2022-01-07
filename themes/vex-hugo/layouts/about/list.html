@@ -17,7 +17,7 @@
       {{ range $index, $element := shuffle (where .Params.about_us.items "enable" true) }}
       <div class="row m-3 mt-5 p-3 about-row">
         <div class="col-md-4 text-center mb-5 mb-lg-0 item animated wow fadeIn zoom" onclick="image_zoom(this)">
-          <img class="img-fluid w-100 p-4 portrait" src="{{ .image | absURL }}" alt='Picture of {{ .name }}'>
+          <img class="img-fluid p-4 portrait" src="{{ .image | absURL }}" alt='Picture of {{ .name }}'>
         </div>
         <div class="col-md-8 align-self-center text-center text-md-left about-text">
           <div class="content">

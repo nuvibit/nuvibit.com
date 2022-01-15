@@ -67,10 +67,10 @@ excerpt_section:
 link_section:
     enable: true
     list:
-    - title: "Documentation"
-      enable: false
-      content: "Visit our full documentation with examples and the full architecture on"
-      link: "https://github.com/nuvibit/SEMPER"
+    - title: "Dokumentation"
+      enable: true
+      content: "Besuchen Sie unsere Dokumentation, in der erklärt wird, wie Sie Ihre Richtlinien erstellen"
+      link: "https://github.com/nuvibit/semper-policy-repo-sample"
       link_name: "github.com"
     
     - title: "Blog"

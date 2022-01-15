@@ -199,5 +199,5 @@ Furthermore, we recommend placing additional sensors beyond the CIS AWS 3.x reco
 ## Our Solution
 Your workloads are distributed across multiple AWS accounts and possibly even different regions?
 
-With our cloud-native, serverless solution **[SEMPER](/contact/ 'Contact us for more information!')**, you can centrally provision Amazon EventBridge and AWS Config Rules and meaningfully filter resulting events as well as AWS Security Hub and Amazon GuardDuty Findings. 
+With our cloud-native, serverless solution **[SEMPER](/products/semper 'Product page!')**, you can centrally provision Amazon EventBridge and AWS Config Rules and meaningfully filter resulting events as well as AWS Security Hub and Amazon GuardDuty Findings. 
 In addition, you can enrich relevant findings with valuable additional information and manage the entire solution from a central **[Policy as Code](/faq/#pac 'What is Policy as Code?')** repository.

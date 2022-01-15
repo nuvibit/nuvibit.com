@@ -69,9 +69,9 @@ link_section:
     enable: true
     list:
     - title: "Documentation"
-      enable: false
-      content: "Visit our full documentation with examples and the full architecture on"
-      link: "https://github.com/nuvibit/SEMPER"
+      enable: true
+      content: "Visit our documentation explaining how you build your policies"
+      link: "https://github.com/nuvibit/semper-policy-repo-sample"
       link_name: "github.com"
     
     - title: "Blog"

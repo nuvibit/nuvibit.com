@@ -1,6 +1,6 @@
 ---
 title: "SEMPER"
-description: "SEMPER is an AWS Native Security Event and Finding Management solution that allows you to manage your security sensors at a very granular level in a consistent and auditable way and automatically filter accepted security findings."
+description: "SEMPER is an AWS Native Security Event and Finding Management solution that allows you to manage your security sensors at a very granular level in a consistent and auditable way and to automatically filter accepted security findings."
 draft: false
 
 banner_section:
@@ -73,9 +73,9 @@ link_section:
         content: "You can find more details in our documentation"
         links:
           - url: "https://github.com/nuvibit/semper-policy-repo-sample"
-            link_name: "Documentation 1"
-          - url: "https://github.com/nuvibit/semper-policy-repo-sample"
-            link_name: "Documentation 2"
+            link_name: "Sample SEMPER policy repository with documentation"
+          - url: "https://nuvibit.com/media/semper.pdf"
+            link_name: "SEMPER product presentation"
       
       - title: "Blog"
         enable: true

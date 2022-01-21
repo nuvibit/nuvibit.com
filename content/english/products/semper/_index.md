@@ -74,7 +74,7 @@ link_section:
         links:
           - url: "https://github.com/nuvibit/semper-policy-repo-sample"
             link_name: "Sample SEMPER policy repository with documentation"
-          - url: "https://nuvibit.com/media/semper.pdf"
+          - url: "media/SEMPER.pdf"
             link_name: "SEMPER product presentation"
       
       - title: "Blog"

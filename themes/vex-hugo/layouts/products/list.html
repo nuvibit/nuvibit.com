@@ -119,21 +119,29 @@
 			<div class="col-md-12 align-self-center text-center text-md-left">
 				<div class="block mb-4">
 					<h2 class="font-weight-bold mb-4">{{ $.Page.RenderString .title }}</h1>
-					<p>{{ $.Page.RenderString .content }}
-                    {{ if not .blogs }}
-                        <a href="{{ .link | absLangURL }}" class="link-primary">{{ $.Page.RenderString .link_name }}</a>
+					<p>
+                        <ul class="list-group">
+                        {{ $.Page.RenderString .content }}
+                        {{ if not .blogs }}
+                        {{ range .links }}
+                            <li class="list-group-item">
+                                <a href="{{ .url | absLangURL }}" class="link-primary">{{ $.Page.RenderString .link_name }}</a>
+                            </li>
+                        {{ end }}
+                        {{ end }}
+                        </ul>
+                        
+                        <ul class="list-group">
+                        {{ $BlogTag := .blog_tag }}
+                        {{ range (where site.RegularPages.ByDate "Section" "blog") }}
+                        {{ if in .Params.tags $BlogTag }}
+                            <li class="list-group-item">
+                                <a href="{{ .Permalink }}" class="link-primary">{{ $.Page.RenderString .Title }}</a>
+                            </li>
+                        {{ end }}
+                        {{ end }}
+                        </ul>
                     </p>
-                    {{- end }}
-                    <ul class="list-group">
-                    {{ $BlogTag := .blog_tag }}
-                    {{ range (where site.RegularPages.ByDate "Section" "blog") }}
-                    {{ if in .Params.tags $BlogTag }}
-                        <li class="list-group-item">
-                            <a href="{{ .Permalink }}" class="link-primary">{{ $.Page.RenderString .Title }}</a>
-                        </li>
-                    {{ end }}
-                    {{ end }}
-                    </ul>
 				</div>
 			</div>
 		</div>

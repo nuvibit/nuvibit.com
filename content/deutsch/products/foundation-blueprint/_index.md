@@ -87,16 +87,19 @@ excerpt_section:
 link_section:
     enable: true
     list:
-    - title: "Documentation"
-      enable: false
-      content: "Visit our full documentation with examples and the full architecture on"
-      link: "https://github.com/nuvibit/Foundation-Blueprint"
-      link_name: "github.com"
+      - title: "Dokumentation"
+        enable: false
+        content: "Genauere Details finden Sie in unserer Dokumentation"
+        links:
+          - url: "https://url1"
+            link_name: "documentation 1"
+          - url: "https://url2"
+            link_name: "documentation 1"
 
-    - title: "Blog"
-      enable: true
-      content: "Lesen Sie mehr über den Nuvibit Foundation Blueprint in den folgenden Blogbeiträgen"
-      blog_tag: foundation
+      - title: "Blog"
+        enable: true
+        content: "Lesen Sie mehr über den Nuvibit Foundation Blueprint in den folgenden Blogbeiträgen"
+        blog_tag: foundation
 
 testimonial_section:
     enable: false

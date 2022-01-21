@@ -1,5 +1,5 @@
 ---
 title: "Unsere Partnerschaften"
-description : "this is a meta description"
+description : "Wir arbeiten nur mit sorgfältig ausgewählten Partnern zusammen, um unseren Kunden die besten Dienstleistungen anbieten zu können."
 draft: false
 ---

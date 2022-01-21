@@ -4,7 +4,7 @@ date: 2021-11-15T11:00:00+06:00
 image: "images/badge/aws-partner-select.png"
 
 # meta description
-description : "this is meta description"
+description : "We maintain a close working relationship directly with AWS to provide fast and expert support to our customers."
 
 # button link
 button_link: "#"

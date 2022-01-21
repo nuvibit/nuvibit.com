@@ -1,6 +1,6 @@
 ---
 title: "SEMPER"
-description: "AWS-Sicherheitsprüfungen und -warnungen automatisiert durch Richtlinien verwalten."
+description: "SEMPER ist eine AWS-Native Security Event and Finding Management Lösung, die es Ihnen ermöglicht es Ihnen, Ihre Sicherheitssensoren sehr granular und auf konsistente und überprüfbare Weise zu verwalten und akzeptierte Sicherheitsergebnisse automatisch zu filtern."
 draft: false
 
 banner_section:
@@ -67,16 +67,19 @@ excerpt_section:
 link_section:
     enable: true
     list:
-    - title: "Dokumentation"
-      enable: true
-      content: "Besuchen Sie unsere Dokumentation, in der erklärt wird, wie Sie Ihre Richtlinien erstellen"
-      link: "https://github.com/nuvibit/semper-policy-repo-sample"
-      link_name: "github.com"
-    
-    - title: "Blog"
-      enable: true
-      content: "Lesen Sie mehr über SEMPER in diesen Blogbeiträgen"
-      blog_tag: semper
+      - title: "Dokumentation"
+        enable: true
+        content: "Genauere Details finden Sie in unserer Dokumentation"
+        links:
+          - url: "https://github.com/nuvibit/semper-policy-repo-sample"
+            link_name: "Documentation 1"
+          - url: "https://github.com/nuvibit/semper-policy-repo-sample"
+            link_name: "Documentation 2"
+      
+      - title: "Blog"
+        enable: true
+        content: "Lesen Sie mehr über SEMPER in diesen Blogbeiträgen"
+        blog_tag: semper
 
 testimonial_section:
     enable: false

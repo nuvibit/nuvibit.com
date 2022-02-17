@@ -15,6 +15,9 @@ disableLanguages = []
 [markup.goldmark.renderer]
 unsafe = true
 
+# robots
+enableRobotsTXT = true
+
 #################################### Privacy ##########################################
 
 [privacy]

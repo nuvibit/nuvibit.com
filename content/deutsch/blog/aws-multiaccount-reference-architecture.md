@@ -60,7 +60,7 @@ Wir empfehlen, die folgenden **Foundation Core Accounts** und mindestens zwei Ko
 | ---   | :---  | :---  |
 | Foundation Core | AWS Organizations Management | Verwaltung der [AWS Organization](https://aws.amazon.com/de/organizations/), der [Organisationseinheiten (OUs)](https://docs.aws.amazon.com/de_de/organizations/latest/userguide/orgs_manage_ous.html) und der [Service Control Policies (SCPs)](https://docs.aws.amazon.com/de_de/organizations/latest/userguide/orgs_manage_policies_scps.html). Abrechnung von Kosten der ganzen AWS Organization (Consolidated Billing) |
 | Foundation Core | Core Account Lifecycle | Management der Erstellung, des Baselinings, und des Abbaus von AWS Accounts |
-| Foundation Core | Core Security | Zusammenzug von [AWS Config](https://aws.amazon.com/de/config/), [AWS Security Hub](https://aws.amazon.com/de/security-hub/) und [Amazon GuardDuty](https://aws.amazon.com/de/guardduty/) Daten. <br/> Unsere Security Event Management Lösung [SEMPER](/products/semper) wird auch in diesem Account aufgebaut. |
+| Foundation Core | Core Security | Zusammenzug von [AWS Config](https://aws.amazon.com/de/config/), [AWS Security Hub](https://aws.amazon.com/de/security-hub/) und [Amazon GuardDuty](https://aws.amazon.com/de/guardduty/) Daten. <br/> Unsere Security Event Management Lösung [SEMPER](/solutions/semper) wird auch in diesem Account aufgebaut. |
 | Foundation Core | Core Logging | Ablage und Archivierung von Logs. Direkter Zugriff wird eingeschränkt um die Integrität der Logs zu gewährleisten. |
 | Foundation Core | Core Monitoring | Beinhaltet zentrale Monitoring Systeme (z.B. [AWS OpenSearch](https://aws.amazon.com/de/opensearch-service/), [Splunk](https://www.splunk.com/), usw.).<br/>Dieser Account wird vom Logging Account getrennt, um zu verhindern, dass Logs [manipuliert](https://capec.mitre.org/data/definitions/268.html) werden können. Die Integrität der Logs hat höchste Priorität und kann so am besten sichergestellt werden. |
 | Foundation Core | Core Image Factory | Account um [Amazon Machine Image (AMI)](https://docs.aws.amazon.com/de_de/AWSEC2/latest/UserGuide/AMIs.html) zu bauen. AMIs werden in diesem Account gebaut und mit der AWS Organization geteilt. |
@@ -87,6 +87,6 @@ Aus Erfahrung setzen wir hierfür ausschliesslich auf [Terraform](https://www.te
 
 Nuvibit ist darauf spezialisiert, **Cloud Foundation Capabilities** in Unternehmen einzuführen.
 
-Wir passen unseren **[Foundation Blueprint](products/foundation-blueprint "Foundation Blueprint Produktseite")** an Ihre Bedürfnisse an und befähigen Sie, **Foundation Capabilities** mit einem hohen Reifegrad für Ihre **Cloud Workload Development Teams** bereitzustellen.
+Wir passen unseren **[Foundation Blueprint](solutions/foundation-blueprint "Foundation Blueprint Produktseite")** an Ihre Bedürfnisse an und befähigen Sie, **Foundation Capabilities** mit einem hohen Reifegrad für Ihre **Cloud Workload Development Teams** bereitzustellen.
 
 **[Kontaktieren Sie uns](/contact/ 'Kontaktieren Sie uns für weitere Informationen.')** für weitere Informationen.

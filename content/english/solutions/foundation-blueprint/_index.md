@@ -10,7 +10,7 @@ banner_section:
     There are technical parts such as connectivity or security and organizational parts such as finance or operations.
     A secure, scalable cloud foundation will significantly accelerate your cloud adoption journey and is one of the most important and hardest challenges.<br/><br/>
     Our Foundation Blueprint addresses exactly this concern and enables your organization to efficiently build a tailored Cloud Foundation."
-    image : "images/products/foundation-blueprint-logo.png"
+    image : "images/solutions/foundation-blueprint-logo.png"
     button:
         enable: true
         label: "Get in touch"
@@ -19,7 +19,7 @@ banner_section:
 feature_section:
   enable : true
   title : "Key features"
-  image: "images/products/foundation-blueprint-illustration.png"
+  image: "images/solutions/foundation-blueprint-illustration.png"
 
   # feature at the left of the image
   left_side:
@@ -56,7 +56,7 @@ excerpt_section:
     list:
       - title: "Assessment"
         enable: true
-        image: "images/products/foundation-blueprint-assessment.png"
+        image: "images/solutions/foundation-blueprint-assessment.png"
         content: "First and foremost, we need to get an overview of where you stand on your cloud journey and where you want to go.
                   We will analyze your cloud strategy and organizational structures to adjust our Blueprint to them.
                   Your connectivity, security and automation requirements are also identified and taken into account.<br/><br/>
@@ -64,21 +64,21 @@ excerpt_section:
 
       - title: "Implementation"
         enable: true
-        image: "images/products/foundation-blueprint-implementation.png"
+        image: "images/solutions/foundation-blueprint-implementation.png"
         content: "Once we have a clear overview and gathered all requirements, we assemble a team of specialists to build your tailored Cloud Foundation based on our Blueprint.
                   We adapt our Foundation Blueprint Terraform modules to perfectly fit your needs and support you during implementation.<br/><br/>
                   If needed, we can also adapt or build the tooling required for Infrastructure as Code deployments with Terraform."
 
       - title: "Transition"
         enable: true
-        image: "images/products/foundation-blueprint-transition.png"
+        image: "images/solutions/foundation-blueprint-transition.png"
         content: "We have no interest in building a Cloud Foundation without ensuring that the necessary capabilities on your side will be established to run it successfully.
                   Because we believe that hands-on experience is the best way to learn new skills, we support the employees responsible for operations with on-the-job training.<br/><br/>
                   Part of the transition includes cementing the [Cloud Foundation Capabilities](/blog/cloud-foundation-map 'Nuvibit Cloud Foundation Blog Post') which are essential to establish a Cloud Operating Model."
 
       - title: "Support"
         enable: true
-        image: "images/products/foundation-blueprint-support.png"
+        image: "images/solutions/foundation-blueprint-support.png"
         content: "Even after the successful implementation of your Cloud Foundation, we want to continue supporting you on your cloud journey.
                   We can help you to optimize and refine your Foundation based on our Terraform modules.<br/><br/>
                   In addition, we can provide you with updates to our Foundation Terraform modules and implement your feature requests."

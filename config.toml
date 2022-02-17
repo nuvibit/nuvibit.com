@@ -142,23 +142,23 @@ parent = "services"
 weight = 6
 
 [[Languages.en.menu.main]]
-identifier = "products"
-name = "Products"
-url = "products"
+identifier = "solutions"
+name = "Solutions"
+url = "solutions"
 weight = 7
 
 [[Languages.en.menu.main]]
 identifier = "foundation-blueprint"
 name = "Foundation Blueprint"
-url = "products/foundation-blueprint"
-parent = "products"
+url = "solutions/foundation-blueprint"
+parent = "solutions"
 weight = 8
 
 [[Languages.en.menu.main]]
 identifier = "semper"
 name = "SEMPER"
-url = "products/semper"
-parent = "products"
+url = "solutions/semper"
+parent = "solutions"
 weight = 9
 
 [[Languages.en.menu.main]]
@@ -306,23 +306,23 @@ parent = "services"
 weight = 6
 
 [[Languages.de.menu.main]]
-identifier = "products"
-name = "Produkte"
-url = "products"
+identifier = "solutions"
+name = "Lösungen"
+url = "solutions"
 weight = 7
 
 [[Languages.de.menu.main]]
 identifier = "foundation-blueprint"
 name = "Foundation Blueprint"
-url = "products/foundation-blueprint"
-parent = "products"
+url = "solutions/foundation-blueprint"
+parent = "solutions"
 weight = 8
 
 [[Languages.de.menu.main]]
 identifier = "semper"
 name = "SEMPER"
-url = "products/semper"
-parent = "products"
+url = "solutions/semper"
+parent = "solutions"
 weight = 9
 
 [[Languages.de.menu.main]]

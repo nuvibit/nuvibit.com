@@ -57,68 +57,10 @@ services:
         label: "Discover our connectivity services"
         link: "/services/connectivity"
 
-############################# pricing ###########################
-# pricing:
-#   enable: false
-#   title: ""
-#   link: "contact"
-#   pricing_item:
-#     - name: "Cloud Hero"
-#       enable: false
-#       width: 4
-#       image: "images/illustrations/hero.png"
-#       price: ""
-#       label: "Foundation for AWS"
-#       features:
-#         - name: "community support"
-#           enable: true
-
-#         - name: "access to terraform modules"
-#           enable: true
-
-#         - name: "security compliance"
-#           enable: false
-
-#         - name: "reference architecture"
-#           enable: false
-
-#     - name: "Cloud Champion"
-#       enable: false
-#       width: 4
-#       image: "images/illustrations/champion.png"
-#       price: ""
-#       label: "Compliant Foundation for AWS"
-#       features:
-#         - name: "professional support"
-#           enable: true
-
-#         - name: "access to terraform modules"
-#           enable: true
-
-#         - name: "security compliance"
-#           enable: true
-
-#         - name: "reference architecture"
-#           enable: false
-
-#     - name: "Cloud Conqueror"
-#       enable: false
-#       width: 4
-#       image: "images/illustrations/conqueror.png"
-#       price: ""
-#       label: "Carefree Foundation for AWS"
-#       features:
-#         - name: "enterprise support"
-#           enable: true
-
-#         - name: "access to terraform modules"
-#           enable: true
-
-#         - name: "security compliance"
-#           enable: true
-
-#         - name: "reference architecture"
-#           enable: true
+############################# customers ########################
+customers:
+  enable : false
+  title : "Our customers"
 
 ############################# partners ########################
 partners:
@@ -132,13 +74,3 @@ newsletter:
   title: "Newsletter"
   content: "Stay up to date with our latest news"
   placeholder: "Enter Your Email"
-
-############################# testimonials ########################
-# testimonial:
-#   title: Our References
-#   enable: false
-#   reference:
-#     - image: ""
-#       enable: true
-#       name: ""
-#       designation: ""

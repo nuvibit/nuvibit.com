@@ -202,5 +202,5 @@ Darüber hinaus empfehlen wir, über die CIS AWS 3.x-Empfehlung hinaus zusätzli
 
 Ihre Workloads sind über mehrere AWS Accounts und eventuell sogar verschiedene Regionen verteilt?
 
-Mit unserer cloud-nativen, Serverless-Lösung **[SEMPER](/products/semper 'Produkt Seite')** können Sie Amazon EventBridge- und AWS Config Rules zentral bereitstellen und resultierende Events sowie AWS Security Hub und Amazon GuardDuty Findings sinnvoll filtern.
+Mit unserer cloud-nativen, Serverless-Lösung **[SEMPER](/solutions/semper 'Produkt Seite')** können Sie Amazon EventBridge- und AWS Config Rules zentral bereitstellen und resultierende Events sowie AWS Security Hub und Amazon GuardDuty Findings sinnvoll filtern.
 Darüber hinaus können Sie relevante Findings mit wichtigen Zusatzinformationen anreichern und die gesamte Lösung über ein zentrales **[Policy as Code](/faq/#pac 'Was ist Policy as Code?')** Repository verwalten.

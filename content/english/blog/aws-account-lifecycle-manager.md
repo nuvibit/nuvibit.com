@@ -12,7 +12,7 @@ draft: false
 ---
 ## Context
 As your AWS footprint grows you will encounter the need to provision secure and compliant AWS Accounts in an automated way.
-Our [Nuvibit Cloud Foundation Blueprint](products/foundation-blueprint "Foundation Blueprint product page") includes the **Account Lifecycle Manager**, which addresses exactly this challenge. Our solution is not only able to provision new AWS Accounts, but also keeps them up to date and recycles them when they are no longer needed (a common requirement for experimental workloads).
+Our [Nuvibit Cloud Foundation Blueprint](solutions/foundation-blueprint "Foundation Blueprint product page") includes the **Account Lifecycle Manager**, which addresses exactly this challenge. Our solution is not only able to provision new AWS Accounts, but also keeps them up to date and recycles them when they are no longer needed (a common requirement for experimental workloads).
 
 ## GitOps by design
 We believe that [GitOps](faq/#gitops 'What is GitOps?') is the best way for employees to order new resources. Therefore, a new AWS Account can be ordered with a simple pull request containing the required information.
@@ -122,6 +122,6 @@ If you do not want to rely on [Terraform Cloud](https://www.terraform.io/cloud) 
 ## Our service
 Nuvibit specializes in providing **Cloud Foundation Capabilities** to organizations.
 
-We will tailor our **[Foundation Blueprint](products/foundation-blueprint "Foundation Blueprint product page")** to your needs and enable you to deliver **Foundation Capabilities** to your **Cloud Workload Development Teams** with a high level of maturity.
+We will tailor our **[Foundation Blueprint](solutions/foundation-blueprint "Foundation Blueprint product page")** to your needs and enable you to deliver **Foundation Capabilities** to your **Cloud Workload Development Teams** with a high level of maturity.
 
 **[Get in touch](/contact/ 'Contact us for more information!')** with us for further details.

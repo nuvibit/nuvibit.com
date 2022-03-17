@@ -1,0 +1,12 @@
+name: HUGO BUILD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  terraform-workspace:
+    uses: nuvibit/github-workflows/.github/workflows/hugo_build.yaml@main
+    secrets:
+      GH_SA_TOKEN_RO: ${{ secrets.GH_SA_TOKEN_RO }}

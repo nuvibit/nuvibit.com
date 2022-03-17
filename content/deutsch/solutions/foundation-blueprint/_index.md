@@ -10,7 +10,7 @@ banner_section:
             Es gibt technische Aspekte wie Konnektivität oder Sicherheit, sowie organisatorische Aspekte wie Finanzen oder Betrieb.
             Eine sichere und skalierbare Cloud Foundation wird Ihre Cloud Journey erheblich beschleunigen und ist eine der wichtigsten und schwierigsten Herausforderungen.<br/><br/>
             Unser Foundation Blueprint adressiert genau diese Problematik und ermöglicht Ihrem Unternehmen den effizienten Aufbau einer massgeschneiderten Cloud Foundation."
-    image : "images/products/foundation-blueprint-logo.png"
+    image : "images/solutions/foundation-blueprint-logo.png"
     button:
         enable: true
         label: "Kontakt aufnehmen"
@@ -19,7 +19,7 @@ banner_section:
 feature_section:
   enable : true
   title : "Key Features"
-  image: "images/products/foundation-blueprint-illustration.png"
+  image: "images/solutions/foundation-blueprint-illustration.png"
 
   # feature at the left of the image
   left_side:
@@ -56,7 +56,7 @@ excerpt_section:
     list:
       - title: "Assessment"
         enable: true
-        image: "images/products/foundation-blueprint-assessment.png"
+        image: "images/solutions/foundation-blueprint-assessment.png"
         content: "Zuallererst müssen wir uns einen Überblick darüber verschaffen, wo Sie auf Ihrer Cloud Journey stehen und wo Sie hinwollen.
                   Wir werden Ihre Cloud-Strategie und Ihre Organisationsstrukturen analysieren, um unseren Blueprint entsprechend abzustimmen.
                   Auch Ihre Anforderungen an Konnektivität, Sicherheit und Automatisierung werden identifiziert und berücksichtigt.<br/><br/>
@@ -64,14 +64,14 @@ excerpt_section:
 
       - title: "Implementation"
         enable: true
-        image: "images/products/foundation-blueprint-implementation.png"
+        image: "images/solutions/foundation-blueprint-implementation.png"
         content: "Sobald wir uns einen Überblick verschafft und alle Anforderungen gesammelt haben, stellen wir ein Team von Spezialisten zusammen, um eine massgeschneiderte Cloud Foundation auf der Grundlage unseres Blueprints zu erstellen.
                   Wir passen unsere Foundation Blueprint Terraform Module perfekt an Ihre Bedürfnisse an und unterstützen Sie bei der Einführung.<br/><br/>
                   Bei Bedarf können wir auch die erforderlichen Hilfsmittel anpassen oder aufbauen, die für die Bereitstellung von Infrastructure as Code mit Terraform erforderlich sind."
 
       - title: "Transition"
         enable: true
-        image: "images/products/foundation-blueprint-transition.png"
+        image: "images/solutions/foundation-blueprint-transition.png"
         content: "Wir haben kein Interesse daran, eine Cloud Foundation aufzubauen, ohne sicherzustellen, dass Sie die für den erfolgreichen Betrieb erforderlichen Kompetenzen erlangen.
                   Wir sind überzeugt, dass die praktische Einbindung der beste Weg ist, dies zu erreichen.
                   Damit die für den Betrieb verantwortlichen Mitarbeiter neue Fähigkeiten erlernen und anwenden können, schulen wir sie direkt in der Praxis.<br/><br/>
@@ -79,7 +79,7 @@ excerpt_section:
 
       - title: "Support"
         enable: true
-        image: "images/products/foundation-blueprint-support.png"
+        image: "images/solutions/foundation-blueprint-support.png"
         content: "Auch nach der erfolgreichen Einführung Ihrer Cloud Foundation möchten wir Sie auf Ihrer Cloud Journey weiter unterstützen.
                   Wir können Ihnen bei der Optimierung und Weiterentwicklung im Bezug auf Ihre Foundation und unsere Terraform Module helfen.<br/><br/>
                   Darüber hinaus können wir Sie mit Updates für unsere Foundation Terraform Module versorgen und Ihre Anforderungen umsetzen."

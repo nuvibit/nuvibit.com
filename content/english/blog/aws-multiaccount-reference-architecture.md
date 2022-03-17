@@ -59,7 +59,7 @@ We recommend setting up the following **Foundation Core Accounts** and at least 
 | ---   | :---  | :---  |
 | Foundation Core | AWS Organizations Management | [AWS Organization](https://aws.amazon.com/organizations/), [Organization-unit (OU)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html) and [service control policy (SCP)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) management. Consolidated billing over the AWS organization |
 | Foundation Core | Core Account Lifecycle | Account lifecycle management including vending, baselining and retirement. |
-| Foundation Core | Core Security | Aggregation of [AWS Config](https://aws.amazon.com/config/), [AWS Security Hub](https://aws.amazon.com/security-hub/) and [Amazon GuardDuty](https://aws.amazon.com/guardduty/). <br/> Our security event management solution [SEMPER](/products/semper) is also a citizen of this account. |
+| Foundation Core | Core Security | Aggregation of [AWS Config](https://aws.amazon.com/config/), [AWS Security Hub](https://aws.amazon.com/security-hub/) and [Amazon GuardDuty](https://aws.amazon.com/guardduty/). <br/> Our security event management solution [SEMPER](/solutions/semper) is also a citizen of this account. |
 | Foundation Core | Core Logging | Log aggregation and archiving account. No direct access to ensure log integrity. |
 | Foundation Core | Core Monitoring | Hosts your central monitoring solutions (i.e. [AWS OpenSearch](https://aws.amazon.com/opensearch-service/), [Splunk](https://www.splunk.com/), etc).<br/>This account is separated from the Core Logging account to protect the log archive from [tampering](https://capec.mitre.org/data/definitions/268.html). The integrity of the log archive has to be protected rigorously.|
 | Foundation Core | Core Image Factory | [Amazon Machine Image (AMI)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html) building account. AMIs are built in this account and shared across the AWS organization. |
@@ -86,6 +86,6 @@ From experience, we rely exclusively on [Terraform](https://www.terraform.io/int
 
 Nuvibit specializes in providing **Cloud Foundation Capabilities** to organizations.
 
-We will tailor our **[Foundation Blueprint](products/foundation-blueprint "Foundation Blueprint product page")** to your needs and enable you to deliver **Foundation Capabilities** to your **Cloud Workload Development Teams** with a high level of maturity.
+We will tailor our **[Foundation Blueprint](solutions/foundation-blueprint "Foundation Blueprint product page")** to your needs and enable you to deliver **Foundation Capabilities** to your **Cloud Workload Development Teams** with a high level of maturity.
 
 **[Get in touch](/contact/ 'Contact us for more information!')** with us for further details.

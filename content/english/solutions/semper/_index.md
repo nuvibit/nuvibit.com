@@ -10,7 +10,7 @@ banner_section:
               Then you are familiar with the challenge of keeping track of the security compliance of your AWS resources and managing security events in real time.<br><br>
               SEMPER enables you to manage your security sensors at a very granular level in a consistent and auditable way and automatically filter accepted security findings.<br>
               All conveniently managed through a central **[Policy as Code](/faq/#pac 'What is Security / Policy as Code?')** repository."
-    image: "images/products/semper-logo.png"
+    image: "images/solutions/semper-logo.png"
     button:
         enable: true
         label: "Get in touch"
@@ -19,7 +19,7 @@ banner_section:
 feature_section:
   enable : true
   title : "Key features"
-  image : "images/products/semper-illustration.png"
+  image : "images/solutions/semper-illustration.png"
 
   # feature at the left of the image
   left_side:
@@ -54,14 +54,14 @@ excerpt_section:
     enable: true
     title: "In a nutshell..."
     list:
-      - title: "Policy based Securtiy Sensor Distribution"
+      - title: "Policy based Security Sensor Distribution"
         enable: true
-        image: "images/products/semper-configure.png"
+        image: "images/solutions/semper-configure.png"
         content: "SEMPER deploys and configures **sensors** in all your AWS Accounts based on predefined policy sets that you can customize and extend. The sensors are built on the cloud native services AWS Security Hub, AWS CloudTrail, AWS Config and Amazon GuardDuty. We continuously extend and optimize the policy sets to meet **security best practices and compliance standards**."
 
-      - title: "Policy based Securtiy Finding Processing"
+      - title: "Policy based Security Finding Processing"
         enable: true
-        image: "images/products/semper-processing.png"
+        image: "images/solutions/semper-processing.png"
         content: "SEMPER **collects** all the sensor events centrally and **enriches** them with important metadata like source account tags, context from AWS Organizations and policy based infos. Furthermore, SEMPER is capable of **suppressing and filtering** false positives based on your predefined rules.
         The enriched findings are sent to an SNS Topic and persisted in a CloudWatch Logs stream. From there you can either **pass** them for further analysis to a third party tool of your choice (Splunk, Logstash, AWS QuickSight, etc) or you can go a step further and implement [auto-remediation](/faq#autoremediation 'What is auto-remediation?') for certain findings."
 
@@ -74,6 +74,11 @@ link_section:
         links:
           - url: "https://github.com/nuvibit/semper-policy-repo-sample"
             link_name: "Sample SEMPER policy repository with documentation"
+      
+      - title: "Media"
+        enable: true
+        content: "Additional media"
+        links:
           - url: "media/SEMPER.pdf"
             link_name: "SEMPER product presentation"
       

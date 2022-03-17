@@ -10,7 +10,7 @@ banner_section:
               Dann wissen Sie, wie schwierig es ist, die Sicherheitskonformität Ihrer AWS Ressourcen zu überwachen und Sicherheitswarnungen in Echtzeit zu verwalten.<br><br>
               SEMPER ermöglicht es Ihnen, Ihre Sicherheitssensoren sehr granular und auf konsistente und überprüfbare Weise zu verwalten und akzeptierte Sicherheitsergebnisse automatisch zu filtern.<br>
               Alles bequem über ein zentrales **[Policy as Code](/faq/#pac 'What is Security / Policy as Code?')** Repository verwaltet."
-    image: "images/products/semper-logo.png"
+    image: "images/solutions/semper-logo.png"
     button:
         enable: true
         label: "Kontakt aufnehmen"
@@ -19,7 +19,7 @@ banner_section:
 feature_section:
   enable : true
   title : "Key Features"
-  image : "images/products/semper-illustration.png"
+  image : "images/solutions/semper-illustration.png"
 
   # feature at the left of the image
   left_side:
@@ -55,12 +55,12 @@ excerpt_section:
     list:
       - title: "Policy-basierte Verteilung von Sicherheitssensoren"
         enable: true
-        image: "images/products/semper-configure.png"
+        image: "images/solutions/semper-configure.png"
         content: "SEMPER stellt **Sensoren** in all Ihren AWS Accounts bereit und konfiguriert sie auf der Grundlage vordefinierter Richtlinien, die Sie anpassen und erweitern können. Die Sensoren basieren auf den Services AWS Security Hub, AWS CloudTrail, AWS Config und Amazon GuardDuty. Wir erweitern und optimieren die Richtlinienbeispiele kontinuierlich, um **bewährte Sicherheitsverfahren und Compliance-Standards** zu erfüllen."
 
       - title: "Policy-basierte Verarbeitung von Sicherheitswarnungen"
         enable: true
-        image: "images/products/semper-processing.png"
+        image: "images/solutions/semper-processing.png"
         content: "SEMPER sammelt alle Sensorereignisse und reichert sie mit wichtigen Metadaten wie Account Tags, Kontext aus der AWS Organisation und weiteren richtlinienbasierten Informationen an. Darüber hinaus ist SEMPER in der Lage, falsch-positive Sicherheitswarnungen auf der Grundlage Ihrer vordefinierten Policies **zu unterdrücken und herauszufiltern**.
         Die angereicherten Ergebnisse werden an ein SNS-Thema gesendet und in einem CloudWatch Logs-Stream aufbewahrt. Von dort aus können Sie diese entweder zur weiteren Analyse an ein Drittanbieter-Tool Ihrer Wahl (Splunk, Logstash, AWS QuickSight usw.) **weiterleiten** oder Sie können einen Schritt weiter gehen und eine [automatische Korrektur](/faq#autoremediation 'Was ist eine automatische Korrektur?') für bestimmte Ergebnisse implementieren."
 
@@ -73,6 +73,11 @@ link_section:
         links:
           - url: "https://github.com/nuvibit/semper-policy-repo-sample"
             link_name: "Beispiel eines SEMPER Policy Repositories mit Dokumentation"
+      
+      - title: "Medien"
+        enable: true
+        content: "Zusätzliche Medien"
+        links:
           - url: "media/SEMPER.pdf"
             link_name: "SEMPER Produktpräsentation"
       

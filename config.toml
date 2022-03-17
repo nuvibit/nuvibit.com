@@ -15,6 +15,9 @@ disableLanguages = []
 [markup.goldmark.renderer]
 unsafe = true
 
+# robots
+enableRobotsTXT = true
+
 #################################### Privacy ##########################################
 
 [privacy]
@@ -97,7 +100,7 @@ languageName = "english"
 languageCode = "en-us"
 contentDir = "content/english"
 weight = 1
-copyright = "Copyright © YEAR_PLACEHOLDER - Nuvibit AG"
+copyright = "Copyright © 2022 - Nuvibit AG"
 
 ###################################### English Navigation ######################################
 
@@ -142,23 +145,23 @@ parent = "services"
 weight = 6
 
 [[Languages.en.menu.main]]
-identifier = "products"
-name = "Products"
-url = "products"
+identifier = "solutions"
+name = "Solutions"
+url = "solutions"
 weight = 7
 
 [[Languages.en.menu.main]]
 identifier = "foundation-blueprint"
 name = "Foundation Blueprint"
-url = "products/foundation-blueprint"
-parent = "products"
+url = "solutions/foundation-blueprint"
+parent = "solutions"
 weight = 8
 
 [[Languages.en.menu.main]]
 identifier = "semper"
 name = "SEMPER"
-url = "products/semper"
-parent = "products"
+url = "solutions/semper"
+parent = "solutions"
 weight = 9
 
 [[Languages.en.menu.main]]
@@ -212,46 +215,52 @@ name = "Partnerships"
 url = "/partners"
 weight = 6
 
+# [[Languages.en.menu.footer]]
+# parent = "company"
+# name = "Customers"
+# url = "/customers"
+# weight = 7
+
 [[Languages.en.menu.footer]]
 parent = "company"
 name = "Cookie Policy"
 url = "/privacy-policy/#51-cookies"
-weight = 7
+weight = 8
 
 [[Languages.en.menu.footer]]
 parent = "company"
 name = "Privacy Policy"
 url = "/privacy-policy"
-weight = 8
+weight = 9
 
 [[Languages.en.menu.footer]]
 identifier = "social"
 name = "Social Media"
-weight = 9
+weight = 10
 
 [[Languages.en.menu.footer]]
 parent = "social"
 name = "Github"
 url = "https://github.com/nuvibit"
-weight = 10
+weight = 11
 
 [[Languages.en.menu.footer]]
 parent = "social"
 name = "Linkedin"
 url = "https://linkedin.com/company/nuvibit"
-weight = 11
+weight = 12
 
 [[Languages.en.menu.footer]]
 parent = "social"
 name = "Twitter"
 url = "https://twitter.com/nuvibit"
-weight = 12
+weight = 13
 
 [[Languages.en.menu.footer]]
 parent = "social"
 name = "Youtube"
 url = "https://www.youtube.com/channel/UCmQCd8jMiZviVlWOqqbpYBw/playlists"
-weight = 13
+weight = 14
 
 ################################### German language #####################################
 
@@ -261,7 +270,7 @@ languageCode = "de-de"
 contentDir = "content/deutsch"
 weight = 2
 # copyright
-copyright = "Urheberrechte © YEAR_PLACEHOLDER - Nuvibit AG"
+copyright = "Urheberrechte © 2022 - Nuvibit AG"
 
 ###################################### German Navigation ######################################
 
@@ -306,23 +315,23 @@ parent = "services"
 weight = 6
 
 [[Languages.de.menu.main]]
-identifier = "products"
-name = "Produkte"
-url = "products"
+identifier = "solutions"
+name = "Lösungen"
+url = "solutions"
 weight = 7
 
 [[Languages.de.menu.main]]
 identifier = "foundation-blueprint"
 name = "Foundation Blueprint"
-url = "products/foundation-blueprint"
-parent = "products"
+url = "solutions/foundation-blueprint"
+parent = "solutions"
 weight = 8
 
 [[Languages.de.menu.main]]
 identifier = "semper"
 name = "SEMPER"
-url = "products/semper"
-parent = "products"
+url = "solutions/semper"
+parent = "solutions"
 weight = 9
 
 [[Languages.de.menu.main]]
@@ -376,43 +385,49 @@ name = "Partnerschaften"
 url = "/partners"
 weight = 6
 
+# [[Languages.en.menu.footer]]
+# parent = "company"
+# name = "Kunden"
+# url = "/customers"
+# weight = 7
+
 [[Languages.de.menu.footer]]
 parent = "company"
 name = "Cookie Richtlinien"
 url = "/privacy-policy/#51-cookies"
-weight = 7
+weight = 8
 
 [[Languages.de.menu.footer]]
 parent = "company"
 name = "Datenschutzerklärung"
 url = "/privacy-policy"
-weight = 8
+weight = 9
 
 [[Languages.de.menu.footer]]
 identifier = "social"
 name = "Soziale Medien"
-weight = 9
+weight = 10
 
 [[Languages.de.menu.footer]]
 parent = "social"
 name = "Github"
 url = "https://github.com/nuvibit"
-weight = 10
+weight = 11
 
 [[Languages.de.menu.footer]]
 parent = "social"
 name = "Linkedin"
 url = "https://linkedin.com/company/nuvibit"
-weight = 11
+weight = 12
 
 [[Languages.de.menu.footer]]
 parent = "social"
 name = "Twitter"
 url = "https://twitter.com/nuvibit"
-weight = 12
+weight = 13
 
 [[Languages.de.menu.footer]]
 parent = "social"
 name = "Youtube"
 url = "https://www.youtube.com/channel/UCmQCd8jMiZviVlWOqqbpYBw/playlists"
-weight = 13
+weight = 14

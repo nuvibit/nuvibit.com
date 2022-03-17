@@ -125,7 +125,11 @@
                         {{ if not .blogs }}
                         {{ range .links }}
                             <li class="list-group-item">
+                                {{ if hasPrefix .url "media/" }}
+                                <a href="{{ .url | absURL }}" target="_blank" class="link-primary">{{ $.Page.RenderString .link_name }}</a>
+                                {{ else }}
                                 <a href="{{ .url | absLangURL }}" class="link-primary">{{ $.Page.RenderString .link_name }}</a>
+                                {{ end }}
                             </li>
                         {{ end }}
                         {{ end }}

@@ -54,12 +54,12 @@ excerpt_section:
     enable: true
     title: "In a nutshell..."
     list:
-      - title: "Policy based Securtiy Sensor Distribution"
+      - title: "Policy based Security Sensor Distribution"
         enable: true
         image: "images/solutions/semper-configure.png"
         content: "SEMPER deploys and configures **sensors** in all your AWS Accounts based on predefined policy sets that you can customize and extend. The sensors are built on the cloud native services AWS Security Hub, AWS CloudTrail, AWS Config and Amazon GuardDuty. We continuously extend and optimize the policy sets to meet **security best practices and compliance standards**."
 
-      - title: "Policy based Securtiy Finding Processing"
+      - title: "Policy based Security Finding Processing"
         enable: true
         image: "images/solutions/semper-processing.png"
         content: "SEMPER **collects** all the sensor events centrally and **enriches** them with important metadata like source account tags, context from AWS Organizations and policy based infos. Furthermore, SEMPER is capable of **suppressing and filtering** false positives based on your predefined rules.

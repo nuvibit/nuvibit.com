@@ -93,6 +93,5 @@ testimonial_section:
     list:
       - image: "images/customers/rwe.svg"
         name: "RWE AG"
+        link: "customers/rwe"
         content: "SEMPER is granting us complete visibility and control over the flood of security events in our AWS organization."
-
----

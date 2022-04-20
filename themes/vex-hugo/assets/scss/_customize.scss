@@ -64,7 +64,8 @@ body {
 
 .navbar-nav .dropdown-menu .dropdown-item:hover {
     color: rgba(255, 255, 255, .75) !important;
-    background-color: #3fa7df !important;
+    // background-color: #3fa7df !important;
+    background-color: inherit !important;
 }
 
 // ANCHOR buttons, links and text

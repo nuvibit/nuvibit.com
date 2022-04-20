@@ -59,7 +59,7 @@ services:
 
 ############################# customers ########################
 customers:
-  enable : false
+  enable : true
   title : "Our customers"
 
 ############################# partners ########################

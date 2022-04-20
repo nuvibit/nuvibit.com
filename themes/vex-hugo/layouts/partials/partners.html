@@ -5,24 +5,25 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-            <div class="heading">
-                {{- with $data.homepage.partners }}
-                <h2>{{ $.Page.RenderString .title }}</h2>
-                {{ end }}
-            </div>
-
-            <div class="product-slider">
-                {{ range (where .Site.RegularPages "Section" "partners") }}
-                <div class="block" onclick='redirect("{{ .Permalink }}")'>
-                    <div class="gallery-overlay">
-                        <a href="{{ .Permalink }}" class="gallery-popup">
-                            <i class="fas fa-plus"></i>
-                        </a>
-                    </div>
-                    <img class="img-fluid" src="{{ .Params.image | absURL }}" alt='{{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }} badge'>
+                <div class="heading">
+                    {{- with $data.homepage.partners }}
+                    <h2>{{ $.Page.RenderString .title }}</h2>
+                    {{ end }}
                 </div>
-                {{ end }}
-            </div>
+
+                <div class="product-slider">
+                    {{ range (where .Site.RegularPages "Section" "partners") }}
+                    <div class="block" onclick='redirect("{{ .Permalink }}")'>
+                        <div class="gallery-overlay">
+                            <a href="{{ .Permalink }}" class="gallery-popup">
+                                <i class="fas fa-plus"></i>
+                            </a>
+                        </div>
+                        <img class="partner-badge img-fluid" src="{{ .Params.image | absURL }}"
+                            alt='{{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }} badge'>
+                    </div>
+                    {{ end }}
+                </div>
             </div>
         </div>
     </div>

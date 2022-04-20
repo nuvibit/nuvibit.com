@@ -215,11 +215,11 @@ name = "Partnerships"
 url = "/partners"
 weight = 6
 
-# [[Languages.en.menu.footer]]
-# parent = "company"
-# name = "Customers"
-# url = "/customers"
-# weight = 7
+[[Languages.en.menu.footer]]
+parent = "company"
+name = "Customers"
+url = "/customers"
+weight = 7
 
 [[Languages.en.menu.footer]]
 parent = "company"
@@ -385,11 +385,11 @@ name = "Partnerschaften"
 url = "/partners"
 weight = 6
 
-# [[Languages.en.menu.footer]]
-# parent = "company"
-# name = "Kunden"
-# url = "/customers"
-# weight = 7
+[[Languages.de.menu.footer]]
+parent = "company"
+name = "Kunden"
+url = "/customers"
+weight = 7
 
 [[Languages.de.menu.footer]]
 parent = "company"

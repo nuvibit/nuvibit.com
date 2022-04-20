@@ -88,11 +88,11 @@ link_section:
         blog_tag: semper
 
 testimonial_section:
-    enable: false
-    title: "Customer References"
+    enable: true
+    title: "Testimonials"
     list:
-      - image: "images/logo/logo_nuvibit_dark.png"
-        name: "Lorem ipsum dolor"
-        content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt"
+      - image: "images/customers/rwe.svg"
+        name: "RWE AG"
+        content: "SEMPER is granting us complete visibility and control over the flood of security events in our AWS organization."
 
 ---

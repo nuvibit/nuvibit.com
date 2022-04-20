@@ -108,6 +108,37 @@
 {{ end }}
 <!-- /EXCERPTS -->
 
+<!-- TESTIMONIALS -->
+{{- if .Params.testimonial_section.enable }}
+{{- with .Params.testimonial_section }}
+<section class="testimonials section pt-0" id="testimonial">
+<div class="container">
+    <div class="row justify-content-center">
+    <div class="col-12">
+        <div class="heading">
+        <h2>{{ $.Page.RenderString .title }}</h2>
+        </div>
+    </div>
+    {{ range .list }}
+    <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0 text-center">
+        <div class="testimonial-block">
+            <i class="fas fa-quote-right"></i>
+            <p>{{ $.Page.RenderString .content }}</p>
+            <div class="">
+                <img class="customer-logo img-fluid" src="{{ .image | absURL }}"
+                            alt='{{ .image | replaceRE ".*?([\\w-]+).(png|svg)" "$1" }} logo'>
+                <h4>{{ $.Page.RenderString .name }}</h4>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+    </div>
+</div>
+</section>
+{{- end }}
+{{- end }}
+<!-- TESTIMONIALS -->
+
 <!-- LINKS -->
 {{- if .Params.link_section.enable }}
 {{- with .Params.link_section }}
@@ -156,35 +187,5 @@
 {{- end }}
 {{- end }}
 <!-- /LINKS -->
-
-<!-- TESTIMONIALS -->
-{{- if .Params.testimonial_section.enable }}
-{{- with .Params.testimonial_section }}
-<section class="testimonials section pt-0" id="testimonial">
-<div class="container">
-    <div class="row justify-content-center">
-    <div class="col-12">
-        <div class="heading">
-        <h2>{{ $.Page.RenderString .title }}</h2>
-        </div>
-    </div>
-    {{ range .list }}
-    <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0 text-center">
-        <div class="testimonial-block">
-            <i class="fas fa-quote-right"></i>
-            <p>{{ $.Page.RenderString .content }}</p>
-            <div class="author-details">
-                <img class="img-fluid" src="{{ .image | absURL }}" alt='Logo of {{ .image | replaceRE ".*?(\\w+).png" "$1" }}'>
-                <h4>{{ $.Page.RenderString .name }}</h4>
-            </div>
-        </div>
-    </div>
-    {{ end }}
-    </div>
-</div>
-</section>
-{{- end }}
-{{- end }}
-<!-- TESTIMONIALS -->
 
 {{ end }}

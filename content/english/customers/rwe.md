@@ -1,6 +1,6 @@
 ---
 title: "RWE AG"
-date: 2021-03-17T11:00:00+06:00
+date: 2022-01-03T11:00:00+06:00
 image: "images/customers/rwe.svg"
 
 # meta description

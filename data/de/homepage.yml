@@ -62,6 +62,11 @@ customers:
   enable : true
   title : "Unsere Kunden"
 
+############################# certifications ########################
+certifications:
+  enable : true
+  title : "Unsere Zertifizierungen"
+
 ############################# partners ########################
 partners:
   enable : true

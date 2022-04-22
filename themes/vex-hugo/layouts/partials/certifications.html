@@ -1,26 +1,26 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 
-{{- if $data.homepage.customers.enable }}
-<section class="gallery" id="customers">
+{{- if $data.homepage.certifications.enable }}
+<section class="gallery" id="certifications">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="heading">
-                    {{- with $data.homepage.customers }}
+                    {{- with $data.homepage.certifications }}
                     <h2>{{ $.Page.RenderString .title }}</h2>
                     {{ end }}
                 </div>
 
                 <div class="product-slider">
-                    {{ range (where .Site.RegularPages "Section" "customers") }}
-                    <div class="block ml-3 mr-3" onclick='redirect("{{ .Permalink }}")'>
+                    {{ range (where .Site.RegularPages "Section" "certifications") }}
+                    <div class="block" onclick='redirect("{{ .Permalink }}")'>
                         <div class="gallery-overlay">
                             <a href="{{ .Permalink }}" class="gallery-popup">
                                 <i class="fas fa-plus"></i>
                             </a>
                         </div>
-                        <img class="customer-logo img-fluid" src="{{ .Params.image | absURL }}"
-                            alt='{{ .Params.image | replaceRE ".*?([\\w-]+).(png|svg)" "$1" }} logo'>
+                        <img class="certification-badge img-fluid" src="{{ .Params.image | absURL }}"
+                            alt='{{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }} badge'>
                     </div>
                     {{ end }}
                 </div>

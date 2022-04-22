@@ -117,14 +117,14 @@
 <section class="gallery testimonials section pt-0" id="testimonial">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 text-center">
                 <div class="heading">
                     <h2>{{ $.Page.RenderString .title }}</h2>
                 </div>
 
                 <div class="product-slider">
                     {{ range .list }}
-                    <div class="block" onclick='redirect("{{ .link | absLangURL }}")'>
+                    <div class="block mr-3 ml-3" onclick='redirect("{{ .link | absLangURL }}")'>
                         <div class="text-center testimonial-block">
                             <i class="fas fa-quote-right"></i>
                             <p>{{ $.Page.RenderString .content }}</p>
@@ -134,7 +134,7 @@
                                 <i class="fas fa-plus"></i>
                             </a>
                         </div>
-                        <div class="text-center">
+                        <div class="mr-5 ml-5">
                             <img class="customer-logo img-fluid" src="{{ .image | absURL }}"
                             alt='{{ .image | replaceRE ".*?([\\w-]+).(png|svg)" "$1" }} logo'>
                         </div>

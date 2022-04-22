@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<section class="section gallery">
+    <div class="container">
+        <div class="row">
+        <div class="col-12 text-center mb-5">
+            <h1 class="font-weight-bold">{{.Title}}</h1>
+        </div>
+        {{ range (where .Site.RegularPages "Section" "certifications") }}
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="block mb-4" onclick='redirect("{{ .Permalink }}")'>
+                <div class="gallery-overlay">
+                    <a href="{{ .Permalink }}" class="gallery-popup">
+                        <i class="fas fa-plus"></i>
+                    </a>
+                </div>
+                <img class="certifications-badge w-100 img-fluid" src="{{ .Params.image | absURL }}"
+                alt='{{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }} badge'>            </div>
+            <div class="product-info">
+                <h4 class="mb-2"><a href="{{ .Permalink }}" class="link-title">{{.Title}}</a></h4>
+            </div>
+        </div>
+        {{ end }}
+        </div>
+    </div>
+</section>
+
+{{ end }}

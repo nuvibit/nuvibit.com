@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 mb-4 mb-md-0">
+        <!-- certifications image slider -->
+        <div class="product-image">
+          <div data-image="{{ .Params.image | absURL }}">
+            <img class="certifications-badge w-100 img-fluid" src="{{ .Params.image | absURL }}"
+            alt='{{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }} badge'>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-7 offset-lg-1 align-self-center text-center text-md-left">
+        <h1 class="mb-4">{{ .Title }}</h1>
+        <div class="content">{{.Content}}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

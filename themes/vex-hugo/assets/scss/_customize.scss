@@ -110,13 +110,17 @@ textarea.form-control {
     color: #007FFF !important;
 }
 
-// ANCHOR customer & partners
+// ANCHOR customers, certifications & partners
 .badge-primary {
     background-color: $primary-color !important;
 }
 
 .customer-logo {
     min-height: 150px;
+}
+
+.certification-badge {
+    max-height: 200px;
 }
 
 .gallery-overlay {

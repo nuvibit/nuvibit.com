@@ -93,6 +93,5 @@ testimonial_section:
       - image: "images/customers/rwe.svg"
         name: "RWE AG"
         link: "customers/rwe"
-        content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt."
-
+        content: "\"Dank der Policy-as-Code Lösung SEMPER haben wir die Compliance von über 100 AWS Accounts jederzeit unter Kontrolle und erleichtern so die Arbeit des Security Operations Centers erheblich.\" Dr. Thomas Gigerl - Head of IT Security"
 ---

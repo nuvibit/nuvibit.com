@@ -87,7 +87,7 @@ link_section:
         blog_tag: semper
 
 testimonial_section:
-    enable: true
+    enable: false
     title: "Referenzen"
     list:
       - image: "images/customers/rwe.svg"

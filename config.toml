@@ -170,8 +170,8 @@ url = "blog"
 weight = 10
 
 [[Languages.en.menu.main]]
-name = "About"
-url = "about"
+name = "Team"
+url = "team"
 weight = 11
 
 [[Languages.en.menu.main]]
@@ -199,8 +199,8 @@ weight = 3
 
 [[Languages.en.menu.footer]]
 parent = "company"
-name = "About"
-url = "/about"
+name = "Team"
+url = "/team"
 weight = 4
 
 [[Languages.en.menu.footer]]
@@ -209,16 +209,16 @@ name = "Contact"
 url = "/contact"
 weight = 5
 
-[[Languages.en.menu.footer]]
-parent = "company"
-name = "Customers"
-url = "/customers"
-weight = 6
+# [[Languages.en.menu.footer]]
+# parent = "company"
+# name = "Customers"
+# url = "/customers"
+# weight = 6
 
 [[Languages.en.menu.footer]]
 parent = "company"
-name = "Partnerships"
-url = "/partners"
+name = "Certifications"
+url = "/certifications"
 weight = 7
 
 [[Languages.en.menu.footer]]
@@ -340,8 +340,8 @@ url = "blog"
 weight = 10
 
 [[Languages.de.menu.main]]
-name = "Über uns"
-url = "about"
+name = "Team"
+url = "team"
 weight = 11
 
 [[Languages.de.menu.main]]
@@ -369,8 +369,8 @@ weight = 3
 
 [[Languages.de.menu.footer]]
 parent = "company"
-name = "Über uns"
-url = "/about"
+name = "Team"
+url = "/team"
 weight = 4
 
 [[Languages.de.menu.footer]]
@@ -379,16 +379,16 @@ name = "Kontakt"
 url = "/contact"
 weight = 5
 
-[[Languages.de.menu.footer]]
-parent = "company"
-name = "Kunden"
-url = "/customers"
-weight = 6
+# [[Languages.de.menu.footer]]
+# parent = "company"
+# name = "Kunden"
+# url = "/customers"
+# weight = 6
 
 [[Languages.de.menu.footer]]
 parent = "company"
-name = "Partnerschaften"
-url = "/partners"
+name = "Zertifizierungen"
+url = "/certifications"
 weight = 7
 
 [[Languages.de.menu.footer]]

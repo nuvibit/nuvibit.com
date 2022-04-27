@@ -1,6 +1,6 @@
 ---
 title: "AWS Security Speciality"
-date: 2021-11-15T11:00:00+06:00
+date: 2021-11-15T11:05:00+06:00
 image: "images/certs/aws-security-speciality.png"
 
 # meta description

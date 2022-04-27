@@ -1,6 +1,6 @@
 ---
 title: "AWS Solution Architect Associate"
-date: 2021-11-15T11:00:00+06:00
+date: 2021-11-15T11:03:00+06:00
 image: "images/certs/aws-solarchitect-associate.png"
 
 # meta description

@@ -1,6 +1,6 @@
 ---
 title: "AWS Developer Associate"
-date: 2021-11-15T11:00:00+06:00
+date: 2021-11-15T11:02:00+06:00
 image: "images/certs/aws-developer-associate.png"
 
 # meta description

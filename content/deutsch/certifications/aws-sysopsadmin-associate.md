@@ -1,6 +1,6 @@
 ---
 title: "AWS SysOps Administrator   Associate"
-date: 2021-11-15T11:00:00+06:00
+date: 2021-11-15T11:01:00+06:00
 image: "images/certs/aws-sysopsadmin-associate.png"
 
 # meta description

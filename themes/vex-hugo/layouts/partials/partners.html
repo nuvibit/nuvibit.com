@@ -7,13 +7,18 @@
             <div class="col-md-12">
                 <div class="heading">
                     {{- with $data.homepage.partners }}
-                    <h2>{{ $.Page.RenderString .title }}</h2>
+                    <h2>
+                        {{ $.Page.RenderString .title }}
+                        <a href="{{ .link | absLangURL }}">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </h2>
                     {{ end }}
                 </div>
 
                 <div class="product-slider">
                     {{ range (where .Site.RegularPages "Section" "partners") }}
-                    <div class="block" onclick='redirect("{{ .Permalink }}")'>
+                    <div class="block m-3" onclick='redirect("{{ .Permalink }}")'>
                         <div class="gallery-overlay">
                             <a href="{{ .Permalink }}" class="gallery-popup">
                                 <i class="fas fa-plus"></i>

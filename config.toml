@@ -56,7 +56,7 @@ link = "https://fonts.googleapis.com/css?family=Open%20Sans:400|Nunito:300,400,6
 [[params.plugins.css]]
 link = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
-link = "plugins/fontawesome/all.min.css"
+link = "plugins/fontawesome/css/all.min.css"
 [[params.plugins.css]]
 link = "plugins/slick/slick.min.css"
 [[params.plugins.css]]
@@ -217,50 +217,44 @@ weight = 5
 
 [[Languages.en.menu.footer]]
 parent = "company"
-name = "Certifications"
-url = "/certifications"
-weight = 7
-
-[[Languages.en.menu.footer]]
-parent = "company"
 name = "Cookie Policy"
 url = "/privacy-policy/#51-cookies"
-weight = 8
+weight = 7
 
 [[Languages.en.menu.footer]]
 parent = "company"
 name = "Privacy Policy"
 url = "/privacy-policy"
-weight = 9
+weight = 8
 
 [[Languages.en.menu.footer]]
 identifier = "social"
 name = "Social Media"
-weight = 10
+weight = 9
 
 [[Languages.en.menu.footer]]
 parent = "social"
 name = "Github"
 url = "https://github.com/nuvibit"
-weight = 11
+weight = 10
 
 [[Languages.en.menu.footer]]
 parent = "social"
 name = "Linkedin"
 url = "https://linkedin.com/company/nuvibit"
-weight = 12
+weight = 11
 
 [[Languages.en.menu.footer]]
 parent = "social"
 name = "Twitter"
 url = "https://twitter.com/nuvibit"
-weight = 13
+weight = 12
 
 [[Languages.en.menu.footer]]
 parent = "social"
 name = "Youtube"
 url = "https://www.youtube.com/channel/UCmQCd8jMiZviVlWOqqbpYBw/playlists"
-weight = 14
+weight = 13
 
 ################################### German language #####################################
 
@@ -387,47 +381,41 @@ weight = 5
 
 [[Languages.de.menu.footer]]
 parent = "company"
-name = "Zertifizierungen"
-url = "/certifications"
-weight = 7
-
-[[Languages.de.menu.footer]]
-parent = "company"
 name = "Cookie Richtlinien"
 url = "/privacy-policy/#51-cookies"
-weight = 8
+weight = 7
 
 [[Languages.de.menu.footer]]
 parent = "company"
 name = "Datenschutzerklärung"
 url = "/privacy-policy"
-weight = 9
+weight = 8
 
 [[Languages.de.menu.footer]]
 identifier = "social"
 name = "Soziale Medien"
-weight = 10
+weight = 9
 
 [[Languages.de.menu.footer]]
 parent = "social"
 name = "Github"
 url = "https://github.com/nuvibit"
-weight = 11
+weight = 10
 
 [[Languages.de.menu.footer]]
 parent = "social"
 name = "Linkedin"
 url = "https://linkedin.com/company/nuvibit"
-weight = 12
+weight = 11
 
 [[Languages.de.menu.footer]]
 parent = "social"
 name = "Twitter"
 url = "https://twitter.com/nuvibit"
-weight = 13
+weight = 12
 
 [[Languages.de.menu.footer]]
 parent = "social"
 name = "Youtube"
 url = "https://www.youtube.com/channel/UCmQCd8jMiZviVlWOqqbpYBw/playlists"
-weight = 14
+weight = 13

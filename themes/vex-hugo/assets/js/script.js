@@ -26,9 +26,11 @@ $(window).on('load', function () {
     slidesToScroll: 1,
     autoplay: true,
     dots: false,
-    arrows: false,
-    // prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-    // nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+    arrows: true,
+    // prevArrow: $('.pull-left'),
+    // nextArrow: $('.pull-right'),
+    prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fas fa-arrow-left' aria-hidden='true'></i></button>",
+    nextArrow:"<button type='button' class='slick-next pull-right'><i class='fas fa-arrow-right' aria-hidden='true'></i></button>",
     responsive: [{
         breakpoint: 1024,
         settings: {

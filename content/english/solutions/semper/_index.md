@@ -89,10 +89,11 @@ link_section:
 
 testimonial_section:
     enable: false
-    title: "Customer References"
+    title: "Testimonials"
     list:
-      - image: "images/logo/logo_nuvibit_dark.png"
-        name: "Lorem ipsum dolor"
-        content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt"
+      - image: "images/customers/rwe.svg"
+        name: "RWE AG"
+        link: "customers/rwe"
+        content: "\"Thanks to the policy-as-code solution SEMPER, we always have the compliance of over 100 AWS accounts under control, making the work of the Security Operations Center much easier.\" Dr. Thomas Gigerl - Head of IT Security"
 
 ---

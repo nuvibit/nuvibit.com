@@ -1,5 +1,5 @@
 ---
 title: "Unsere Kunden"
-description : "Wir arbeiten nur mit sorgfältig ausgewählten Partnern zusammen, um unseren Kunden die besten Dienstleistungen anbieten zu können."
+description : "Als spezialisierter AWS Consulting Partner unterstützen wir unsere Unternehmenskunden auf ihrem Weg in die Public Cloud."
 draft: false
 ---

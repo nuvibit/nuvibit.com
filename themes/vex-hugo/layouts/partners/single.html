@@ -7,7 +7,8 @@
         <!-- partner image slider -->
         <div class="product-image">
           <div data-image="{{ .Params.image | absURL }}">
-            <img class="img-fluid w-100" src="{{ .Params.image | absURL }}" alt='{{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }} badge'>
+            <img class="w-100 img-fluid" src="{{ .Params.image | absURL }}"
+            alt='{{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }} badge'>
           </div>
         </div>
       </div>

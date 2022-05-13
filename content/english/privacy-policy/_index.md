@@ -14,8 +14,8 @@ Our offer is subject to Swiss data protection law and any applicable foreign dat
 
 Responsibility for the processing of personal data:
 
-**Nuvibit AG**  
-Loonstrasse 36  
+**Nuvibit AG**<br/>
+Loonstrasse 36<br/>
 5452 Oberrohrdorf
 
 [privacy@nuvibit.com](mailto:privacy@nuvibit.com)
@@ -26,9 +26,9 @@ We point out if there are other persons responsible for the processing of person
 
 We have the following data protection officer as a point of contact for data subjects and as a contact for supervisory authorities in the event of data protection-related inquiries:
 
-**Nuvibit AG**  
-Roman Plessl  
-Loonstrasse 36  
+**Nuvibit AG**<br/>
+Roman Plessl<br/>
+Loonstrasse 36<br/>
 5452 Oberrohrdorf
 
 [privacy@nuvibit.com](mailto:privacy@nuvibit.com)
@@ -37,9 +37,9 @@ Loonstrasse 36
 
 We have the following data protection representation pursuant to [Article 27 of the GDPR](https://steigerlegal.ch/dsgvo/dsgvo-27/) in the European Economic Area (EEA), including the European Union (EU) and the Principality of Liechtenstein, Iceland and Norway, as an _additional_ point of contact for supervisory authorities and data subjects for inquiries related to the General Data Protection Regulation (GDPR):
 
-[VGS Datenschutzpartner UG](https://www.datenschutzpartner.eu/kontakt/)
-At the emperor quay 69  
-20457 Hamburg  
+[VGS Datenschutzpartner UG](https://www.datenschutzpartner.eu/kontakt/)<br/>
+Am Kaiserkai 69<br/>
+20457 Hamburg<br/>
 Germany
 
 [info@datenschutzpartner.eu](mailto:info@datenschutzpartner.eu)
@@ -176,6 +176,6 @@ We specifically use:
 
 ## 9\. Final provisions
 
-We have created this privacy statement using the [Privacy Statement Generator](https://www.datenschutzpartner.ch/angebot-datenschutz-generator/) from [Privacy Partner](https://datenschutzpartner.ch/)
+We have created this privacy statement using the [Privacy Statement Generator](https://www.datenschutzpartner.ch/angebot-datenschutz-generator/) from [datenschutzpartner.ch](https://datenschutzpartner.ch/)
 
 We may amend and supplement this Privacy Policy at any time. We will inform about such adjustments and additions in an appropriate form, in particular by publishing the respective current privacy policy on our website.

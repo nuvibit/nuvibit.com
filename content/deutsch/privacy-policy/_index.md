@@ -14,8 +14,8 @@ Unser Angebot unterliegt dem schweizerischen Datenschutzrecht sowie allenfalls a
 
 Verantwortung für die Bearbeitung von Personendaten:
 
-**Nuvibit AG**
-Loonstrasse 36
+**Nuvibit AG**<br/>
+Loonstrasse 36<br/>
 5452 Oberrohrdorf
 
 [privacy@nuvibit.com](mailto:privacy@nuvibit.com)
@@ -26,9 +26,9 @@ Wir weisen darauf hin, wenn es im Einzelfall andere Verantwortliche für die Bea
 
 Wir verfügen über nachfolgenden Datenschutzbeauftragten als Anlaufstelle für betroffene Personen und als Ansprechpartner für Aufsichtsbehörden bei datenschutzrechtlichen Anfragen:
 
-**Nuvibit AG**
-Roman Plessl
-Loonstrasse 36
+**Nuvibit AG**<br/>
+Roman Plessl<br/>
+Loonstrasse 36<br/>
 5452 Oberrohrdorf
 
 [privacy@nuvibit.com](mailto:privacy@nuvibit.com)
@@ -37,9 +37,9 @@ Loonstrasse 36
 
 Wir verfügen über nachfolgende Datenschutz-Vertretung gemäss [Art. 27 DSGVO](https://steigerlegal.ch/dsgvo/dsgvo-27/) im Europäischen Wirtschaftsraum (EWR) einschliesslich Europäischer Union (EU) und Fürstentum Liechtenstein, Island und Norwegen als _zusätzliche_ Anlaufstelle für Aufsichtsbehörden und betroffene Personen für Anfragen im Zusammenhang mit der Datenschutz-Grundverordnung (DSGVO):
 
-[VGS Datenschutzpartner UG](https://www.datenschutzpartner.eu/kontakt/)
-Am Kaiserkai 69
-20457 Hamburg
+[VGS Datenschutzpartner UG](https://www.datenschutzpartner.eu/kontakt/)<br/>
+Am Kaiserkai 69<br/>
+20457 Hamburg<br/>
 Deutschland
 
 [info@datenschutzpartner.eu](mailto:info@datenschutzpartner.eu)

@@ -78,7 +78,7 @@ partners:
 ############################# newsletter ########################
 newsletter:
   enable: true
-  bg_image: "images/background/foundation.jpg"
+  bg_image: "images/background/devops.jpg"
   title: "Newsletter"
   content: "Stay up to date with our latest news"
   placeholder: "Enter Your Email"

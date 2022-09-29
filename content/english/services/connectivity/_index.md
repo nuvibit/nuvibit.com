@@ -1,13 +1,13 @@
 ---
 title: "Cloud Connectivity"
-description: "We make sure that all your workloads are seamlessly connected to the AWS and Azure cloud with top-priority on reliability, scalability and security."
+description: "We make sure that all your workloads are seamlessly connected to the AWS cloud with top-priority on reliability, scalability and security."
 draft: false
 
 banner_section:
     enable: true
     title: "First, build a solid network foundation!"
     content: "Connectivity is one of the first key topics which must be tackled to jump-start your cloud journey.<br><br>
-          We make sure that all your workloads are seamlessly connected to the AWS and Azure cloud with top-priority on reliability, scalability and security."
+          We make sure that all your workloads are seamlessly connected to the AWS cloud with top-priority on reliability, scalability and security."
     image: "images/illustrations/cloud-connectivity.png"
     button:
         enable: true
@@ -54,7 +54,6 @@ excerpt_section:
     list:
       - title: false
         title_aws: "AWS Direct Connect"
-        title_azure: "Azure Express Route"
         enable: true
         image: "images/illustrations/cloud-direct-connect.png"
         content: "There are lots of stumbling blocks when connecting an on-premises data center to the public cloud.<br>
@@ -63,16 +62,14 @@ excerpt_section:
 
       - title: false
         title_aws: "AWS Transit Gateway"
-        title_azure: "Azure Hub & Spoke"
         enable: true
         image: "images/illustrations/cloud-hub.png"
         content: "Scalability is the magic word when designing the network in a public cloud environment.<br>
               The cloud network needs to scale fluently and quickly to keep up with rapid growth and to improve time-to-market.
-              Our AWS and Azure network architectures offer great flexibility and are built to last."
+              Our AWS network architectures offer great flexibility and are built to last."
 
       - title: false
         title_aws: "AWS Route 53"
-        title_azure: "Azure DNS"
         enable: true
         image: "images/illustrations/cloud-route53.png"
         content: "One of the main challenges for a successful hybrid cloud environment is a well thought out DNS solution.<br>
@@ -81,7 +78,6 @@ excerpt_section:
 
       - title: false
         title_aws: "AWS Network Firewall"
-        title_azure: "Azure Firewall"
         enable: true
         image: "images/illustrations/cloud-firewall.png"
         content: "Network security is crucial and a main pillar of our connectivity services.<br>

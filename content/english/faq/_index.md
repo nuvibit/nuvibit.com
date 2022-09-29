@@ -15,8 +15,7 @@ faq:
 
     - question: "which cloud providers do we support?"
       answer: "We are mainly specialized in secure enterprise deployments on AWS. 
-              Some topics are not specific to a cloud provider so feel free to [get in touch](/contact 'contact form') anyway!<br>
-              For connectivity topics we offer the same services for AWS and Azure."
+              Some topics are not specific to a cloud provider so feel free to [get in touch](/contact 'contact form') anyway!"
       anchor: providers
       enable: true
       

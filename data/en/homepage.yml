@@ -51,7 +51,7 @@ services:
       enable: true
       title: "First, build a solid network foundation!"
       content: "Connectivity is one of the first key topics which must be tackled to jump-start your cloud journey.<br>
-                We make sure that all your workloads are seamlessly connected to the AWS and Azure cloud with top-priority on reliability, scalability and security."
+                We make sure that all your workloads are seamlessly connected to the AWS cloud with top-priority on reliability, scalability and security."
       link:
         enable: true
         label: "Discover our connectivity services"

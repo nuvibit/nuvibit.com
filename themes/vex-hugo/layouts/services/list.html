@@ -104,9 +104,6 @@
           {{ if .title_aws }}
           <h4 class="subheading mt--20 color-aws">{{ $.Page.RenderString .title_aws }}</h4>
           {{ end }}
-          {{ if .title_azure }}
-          <h4 class="subheading mt--20 color-azure">{{ $.Page.RenderString .title_azure }}</h4>
-          {{ end }}
           <p class="md">{{ $.Page.RenderString .content }}</p>
           {{ if .button.enable }}
           {{ with .button }}
@@ -125,9 +122,6 @@
           {{ end }}
           {{ if .title_aws }}
           <h4 class="subheading mt--20 color-aws">{{ $.Page.RenderString .title_aws }}</h4>
-          {{ end }}
-          {{ if .title_azure }}
-          <h4 class="subheading mt--20 color-azure">{{ $.Page.RenderString .title_azure }}</h4>
           {{ end }}
           <p class="md">{{ $.Page.RenderString .content }}</p>
           {{ if .button.enable }}

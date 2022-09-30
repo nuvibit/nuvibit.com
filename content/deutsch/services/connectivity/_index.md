@@ -1,13 +1,13 @@
 ---
 title: "Cloud Connectivity"
-description: "Wir stellen sicher, dass alle Ihre Workloads sicher, skalierbar und zuverlässig mit AWS und Azure verbunden sind."
+description: "Wir stellen sicher, dass alle Ihre Workloads sicher, skalierbar und zuverlässig mit AWS verbunden sind."
 draft: false
 
 banner_section:
     enable: true
     title: "Legen Sie den Grundstein mit einem soliden Netzwerk!"
     content: "Connectivity ist eines der ersten Schlüsselthemen, die es auf der Cloud Journey zu lösen gilt.<br><br>
-              Wir stellen sicher, dass alle Ihre Workloads sicher, skalierbar und zuverlässig mit der AWS und Azure Cloud verbunden sind."
+              Wir stellen sicher, dass alle Ihre Workloads sicher, skalierbar und zuverlässig mit der AWS Cloud verbunden sind."
     image: "images/illustrations/cloud-connectivity.png"
     button:
         enable: true
@@ -20,7 +20,7 @@ tile_section:
     list:
       - title: "Infrastructure as Code"
         enable: true
-        content: "Wir bieten [Terraform](/faq/#iac 'What is Infrastructure as Code?') Module an, die unterschiedliche         Referenzarchitekturen implementieren und zahlreiche Connectivity Anforderungen abdecken.<br><br>
+        content: "Wir bieten [Terraform](/faq/#iac 'What is Infrastructure as Code?') Module an, die unterschiedliche Referenzarchitekturen implementieren und zahlreiche Connectivity Anforderungen abdecken.<br><br>
                   Unsere Module erleichtern das Management Ihrer Cloud Connectivity Lösung, reduzieren Fehlerquellen und verkürzen Ihre Time-To-Market."
 
       - title: "Hybrid Connectivity"
@@ -54,7 +54,6 @@ excerpt_section:
     list:
       - title: false
         title_aws: "AWS Direct Connect"
-        title_azure: "Azure Express Route"
         enable: true
         image: "images/illustrations/cloud-direct-connect.png"
         content: "Es gibt unzählige Stolpersteine bei der Verbindung eines Rechenzentrums mit der Public Cloud.<br>
@@ -62,16 +61,14 @@ excerpt_section:
 
       - title: false
         title_aws: "AWS Transit Gateway"
-        title_azure: "Azure Hub & Spoke"
         enable: true
         image: "images/illustrations/cloud-hub.png"
         content: "Skalierbarkeit ist das Zauberwort bei der Konzeption der Netzarchitektur einer Public Cloud Umgebung.<br>
                   Das Cloud Netzwerk muss dynamisch und schnell skalieren, um mit den schnelllebigen Cloud Workloads mitzuhalten.
-                  Unsere AWS- und Azure-Netzarchitekturen bieten grosse Flexibilität, ohne die Stabilität zu gefährden."
+                  Unsere AWS-Netzarchitekturen bieten grosse Flexibilität, ohne die Stabilität zu gefährden."
 
       - title: false
         title_aws: "AWS Route 53"
-        title_azure: "Azure DNS"
         enable: true
         image: "images/illustrations/cloud-route53.png"
         content: "Eine oft unterschätzte Herausforderung, insbesondere in einer hybriden Umgebung, ist ein gut durchdachtes DNS Konzept<br>
@@ -80,7 +77,6 @@ excerpt_section:
 
       - title: false
         title_aws: "AWS Network Firewall"
-        title_azure: "Azure Firewall"
         enable: true
         image: "images/illustrations/cloud-firewall.png"
         content: "Netzwerk Security ist ein integraler Bestandteil unserer Connectivity Services.<br>

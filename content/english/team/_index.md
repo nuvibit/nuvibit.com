@@ -34,7 +34,7 @@ about_us:
       title: "Cloud Network & Automation Specialist"
       content: "Stefano is a public cloud networking powerhouse!
                 With years of experience in building connectivity solutions and his passion for automation he is far more than a classic network specialist.<br>
-                He eats AWS and Azure connectivity challenges for breakfast."
+                He eats AWS connectivity challenges for breakfast."
 
     - image: "images/profiles/michael-ullrich.jpg"
       enable: true

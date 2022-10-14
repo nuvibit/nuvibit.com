@@ -22,7 +22,7 @@ Wir dürfen a&f systems auf dem Weg in die Cloud mit folgenden Aktivitäten unte
 \- Solution Architektur Workshops </br>
 \- Terraform Training </br>
 
-Folgende Services werden von a&f systems genutzt:
+Folgende Services werden von a&f systems genutzt:</br>
 \- AWS Control Tower </br>
 \- AWS IAM Idendity Center (SS0) </br>
 \- AWS Lambda </br>

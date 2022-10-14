@@ -35,9 +35,9 @@ Unsere Nuvibit-Referenzarchitektur stellt die Realisierung einer **Inhouse AWS P
 In einer AWS Multi-Account-Umgebung sind nicht alle AWS-Accounts für denselben Zweck bestimmt.
 Um den Überblick zu behalten, teilen wir die AWS-Accounts in drei Domänen ein:
 
-\-**Foundation Core**<br/>
-\-**Foundation Shared Service**<br/>
-\-**Business Workload**<br/>
+\- **Foundation Core**<br/>
+\- **Foundation Shared Service**<br/>
+\- **Business Workload**<br/>
 
 {{<table "table table-striped table-bordered">}}
 | Domain | Beschreibung |

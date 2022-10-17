@@ -1,6 +1,6 @@
 ---
 title: "a&f systems ag"
-date: 2022-01-03T11:00:00+06:00
+date: 2022-10-16T11:00:00+06:00
 image: "images/customers/anf.svg"
 
 # meta description
@@ -12,31 +12,17 @@ button_link: "#"
 draft: false
 ---
 
-Zu den Kernkompetenzen der a&f systems AG gehören Multichannel-Publishing, Produkt-Informations-Management (PIM), Cloud Solutions und Hardware. 
-Durch die Bereitstellung kundenorientierter, skalierbarer Lösungen können sich die Kunden der a&f systems AG auf den Wert ihrer Inhalte konzentrieren.</br>
-Durch die Anforderungen der Kunden und der AWS Strategie des wichtigsten Software Lieferanten will die a&f systems AG ihre Leistungen in AWS weiter ausbauen.
-Deshalb werden Schnittstellenlösungen und komplette Eigenentwicklungen in AWS gebaut und betrieben, mithilfe von Services wie AWS Control Tower, AWS IAM Identitiy Center, AWS Lambda, AWS WAF, Amazon API Gateway und Amazon Route 53.</br>
+Die Standbeine der a&f systems ag umfassen die Bereiche Multichannel-Publishing, Produkt-Informations-Management (PIM), Cloud Solutions, Apple Business Solutions und das Lizenzwesen. Während sie kundenorientierte, skalierbare Lösungen liefern, können sich ihre Auftraggeber auf den Wert ihrer Inhalte konzentrieren.
 
-Wir unterstützen a&f systems auf dem Weg in die Cloud mit folgenden Aktivitäten:
-
-* Optimierung der AWS Landing Zone
-* Reviews der AWS-Umgebung
-* Erarbeitung von Lösungsarchitekturen
-* Schulungen und Workshops</br>
-
-
-<!-- 
-Die Standbeine der a&f systems AG umfassen die Bereiche Multichannel-Publishing, Produkt-Informations-Management (PIM), Cloud Solutions und Hardware. Während sie kundenorientierte, skalierbare Lösungen liefern, können sich ihre Auftraggeber auf den Wert ihrer Inhalte konzentrieren.
-
-Durch die Anforderungen der Kunden und der AWS Strategie des wichtigsten Software Lieferanten will a&f systems ihre Leistungen auch in AWS anbieten können. So werden in Zukunft Schnittstellen Lösungen und komplette Eigenentwicklungen in AWS entwickelt und betrieben.</br>
-Wir dürfen a&f systems auf dem Weg in die Cloud mit folgenden Aktivitäten unterstützen:</br>
+Durch die Anforderungen der Kunden und der AWS Strategie der wichtigsten Software-Lieferanten will a&f systems ag ihre Leistungen auch in AWS anbieten können. So werden in Zukunft Schnittstellen Lösungen und komplette Eigenentwicklungen in AWS entwickelt und betrieben.</br>
+Wir dürfen a&f systems ag auf dem Weg in die Cloud mit folgenden Aktivitäten unterstützen:</br>
 * Landing Zone Review </br>
 * Landing Zone Architektur Workshops </br>
 * Workload Account Review </br>
 * Solution Architektur Workshops </br>
 * Terraform Training </br>
 
-Folgende Services werden von a&f systems genutzt:</br>
+Folgende Services werden von a&f systems ag genutzt:</br>
 * AWS Control Tower </br>
 * AWS IAM Idendity Center (SS0) </br>
 * AWS Lambda </br>
@@ -46,4 +32,3 @@ Folgende Services werden von a&f systems genutzt:</br>
 * Amazon VPC </br>
 * Amazon EC2 </br>
 * Amazon Route53 
--->

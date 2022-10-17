@@ -32,4 +32,4 @@ Folgende Services werden von a&f systems ag genutzt:
 * Amazon API Gateway
 * Amazon VPC
 * Amazon EC2
-* Amazon Route53 </br>
+* Amazon Route53</br>

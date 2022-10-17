@@ -127,11 +127,18 @@ textarea.form-control {
 }
 
 .customer-logo {
-    min-height: 150px;
+    height: 100px;
+    object-fit: contain;
+    width: 100%;
 }
 
 .gallery-overlay {
     cursor: pointer;
+}
+
+// ANCHOR lists
+div.content li {
+    list-style-type: disc;
 }
 
 // ANCHOR spacings

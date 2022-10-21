@@ -79,9 +79,9 @@ link = "plugins/snow/snow.min.js"
 ########################### Default parameters ##########################
 
 [params]
-logo = "images/logo/logo-nuvibit-light.png"
-logo_dark = "images/logo/logo-nuvibit-dark.png"
-logo_width = "230px"
+logo = "images/logo/logo-nuvibit-badge.png"
+logo_banner_width = "75px"
+logo_footer_width = "175px"
 # Meta data
 description = "We help you build an enterprise ready, compliant and scalable foundation for the public cloud."
 author = "Nuvibit AG"

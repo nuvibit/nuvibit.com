@@ -1,7 +1,7 @@
 ---
-title: "AWS Consulting Partner"
+title: "AWS Advanced Consulting Partner"
 date: 2021-11-15T11:00:00+06:00
-image: "images/partners/aws-partner-select.png"
+image: "images/partners/aws-partner-advanced.png"
 
 # meta description
 description : "We maintain a close working relationship directly with Amazon Web Services (AWS) to provide fast and expert support to our customers."

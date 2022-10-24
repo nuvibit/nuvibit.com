@@ -55,6 +55,17 @@ body {
 }
 
 // ANCHOR navbar
+header {
+    line-height: 3rem;
+    @include mobile {
+        line-height: 2rem;
+    }
+}
+
+header .dropdown-menu {
+    line-height: 1.5rem;
+}
+
 .navbar-brand:hover {
     opacity: 70% !important;
 }

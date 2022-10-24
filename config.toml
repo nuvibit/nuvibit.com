@@ -1,6 +1,6 @@
 ################################### Default Configuration ############################
 baseurl = "https://nuvibit.com/"
-title = "Nuvibit - Cloud Foundation"
+title = "Nuvibit | Boutique Consulting | Cloud Foundation"
 theme = "vex-hugo"
 # post excert
 summarylength = "20"
@@ -79,8 +79,9 @@ link = "plugins/snow/snow.min.js"
 ########################### Default parameters ##########################
 
 [params]
-logo = "images/logo/logo-nuvibit-badge.png"
-logo_banner_width = "75px"
+logo_banner = "images/logo/logo-nuvibit-banner.png"
+logo_banner_width = "200px"
+logo_footer = "images/logo/logo-nuvibit-badge.png"
 logo_footer_width = "175px"
 # Meta data
 description = "We help you build an enterprise ready, compliant and scalable foundation for the public cloud."

@@ -1,7 +1,7 @@
 <header class="sticky-top bg-dark">
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">{{ if site.Params.logo }} <img src="{{ site.Params.logo | absURL }}" alt='{{ site.Params.logo | replaceRE ".*?([\\w-]+).png" "$1" }}' {{with site.Params.logo_banner_width}}width="{{.}}"{{end}}> {{ else }} {{ site.Title }} {{ end }}</a>
+      <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">{{ if site.Params.logo_banner }} <img src="{{ site.Params.logo_banner | absURL }}" alt='{{ site.Params.logo_banner | replaceRE ".*?([\\w-]+).png" "$1" }}' {{with site.Params.logo_banner_width}}width="{{.}}"{{end}}> {{ else }} {{ site.Title }} {{ end }}</a>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
         aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

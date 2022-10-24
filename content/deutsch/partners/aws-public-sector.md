@@ -1,7 +1,7 @@
 ---
-title: "AWS Beratungspartner"
+title: "AWS Public Sector Beratungspartner"
 date: 2021-11-15T11:00:00+06:00
-image: "images/partners/aws-partner-select.png"
+image: "images/partners/aws-partner-public-sector.png"
 
 # meta description
 description : "Wir pflegen eine enge Zusammenarbeit direkt mit Amazon Web Services (AWS), um unsere Kunden schnell und kompetent unterstützen zu können."

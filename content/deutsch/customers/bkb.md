@@ -1,6 +1,6 @@
 ---
 title: "Basler Kantonalbank"
-date: 2022-10-28T11:00:00+06:00
+date: 2022-10-27T11:00:00+06:00
 image: "images/customers/bkb.svg"
 
 # meta description

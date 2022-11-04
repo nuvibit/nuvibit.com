@@ -1,9 +1,9 @@
 ############################# banner ############################
 banner:
   enable: true
-  title: "All you need for cloud success <br>is ready to ship."
+  title: "We have the right tools and bits for the cloud."
   content: "We help you build an enterprise ready, compliant and scalable [cloud foundation](/faq/#foundation 'What is a cloud foundation?').<br><br>"
-  image: "images/illustrations/cloud-ready-to-ship.png"
+  image: "images/illustrations/cloud-tools.png"
   button:
     enable: true
     label: "Get in touch"

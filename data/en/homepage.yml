@@ -1,7 +1,7 @@
 ############################# banner ############################
 banner:
   enable: true
-  title: "The right tools and bits for your cloud foundation."
+  title: "We have the right tools and bits for your cloud foundation."
   content: "We help you build an enterprise ready, compliant and scalable [cloud foundation](/faq/#foundation 'What is a cloud foundation?').<br><br>"
   image: "images/illustrations/cloud-tools.png"
   button:

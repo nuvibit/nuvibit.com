@@ -1,9 +1,9 @@
 ############################# banner ############################
 banner:
   enable: true
-  title: "Wir haben alles für den Cloud Erfolg auf Lager."
-  content: "Wir unterstützen beim Aufbau der [Cloud Foundation](/faq/#foundation 'Was ist eine Cloud Foundation?').<br>Skalierbar, Automatisiert, Enterprise Ready.<br><br>"
-  image: "images/illustrations/cloud-ready-to-ship.png"
+  title: "Wir haben die richtigen Tools und Bits für Ihre Cloud Foundation."
+  content: "Wir unterstützen beim Aufbau Ihrer [Cloud Foundation](/faq/#foundation 'Was ist eine Cloud Foundation?').<br>Skalierbar, Automatisiert, Enterprise Ready.<br><br>"
+  image: "images/illustrations/cloud-tools.png"
   button:
     enable: true
     label: "Kontakt aufnehmen"

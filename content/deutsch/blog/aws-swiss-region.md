@@ -1,6 +1,6 @@
 ---
 title: "Die AWS Europa (Zürich) Region in der 🇨🇭 Schweiz ist eröffnet!"
-date: 2021-10-11T11:00:00+06:00
+date: 2022-10-11T11:00:00+06:00
 image: "images/blog/aws-swiss-region/eu-central-2.png"
 description: "Dieser Beitrag stellt die AWS Europa (Zürich) Region in der Schweiz vor."
 summary: "<insert description>"

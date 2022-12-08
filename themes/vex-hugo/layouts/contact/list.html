@@ -23,7 +23,7 @@
     </div>
     <div class="row justify-content-center">
       <div class="col-lg-8">
-        <form action="{{ site.Params.contact_form_action }}" method="POST" class="row">
+        <form name="contact" action="{{ site.Params.contact_form_action }}" method="POST" class="row">
           <input type="hidden" id="type" name="form" value="contact">
           <div class="col-lg-6 mb-3">
             <input type="text" class="form-control mb-2" id="name" name="name" placeholder='{{ i18n "first_name"}}' required>
@@ -52,7 +52,7 @@
             <textarea name="message" id="message" class="form-control mb-2" placeholder='{{ i18n "input_message"}}' required></textarea>
           </div>
           <div class="col-12 align-self-center text-center text-md-right mt-3">
-            <button type="submit" value="send" class="btn btn-main">{{ i18n "send" }}</button>
+            <button type="submit" value="send" class="btn btn-main" onclick="validateInputs()">{{ i18n "send" }}</button>
           </div>
         </form>
       </div>
@@ -60,4 +60,48 @@
   </div>
 </section>
 
+<script>
+  function inputBlacklist(input) {
+    value = input.value.toLowerCase()
+    type = input.type
+
+    mail_blacklist = [
+      "ericjonesmyemail@gmail.com",
+      "info@averoninfotech.com",
+      "charpusey@gmail.com",
+      "zelatcol@gmail.com",
+      "blowmebxtch@ymail.com"
+    ]
+    textarea_blacklist = [
+      "cryptaxbot"
+    ]
+    if (type === "email") {
+      if (mail_blacklist.includes(value)) {
+        input.setCustomValidity("Please enter a valid email address.");
+        input.reportValidity();
+      }
+    }
+    
+    if (type === "textarea") {
+      for (var i = 0, text; text = textarea_blacklist[i++];) {
+        if (value.includes(text)) {
+          input.setCustomValidity("Please enter a valid message.");
+          input.reportValidity();
+        }
+      }
+    }
+  }
+
+  function validateInputs() {
+    var inputs = document.forms["contact"].getElementsByTagName("input");
+    var textareas = document.forms["contact"].getElementsByTagName("textarea");
+    var form_inputs = [...inputs, ...textareas]
+    for (var i = 0, input; input = form_inputs[i++];) {
+      input.setCustomValidity("")
+      if (input.value.length > 0) {
+        inputBlacklist(input)
+      }
+    }
+  }
+</script>
 {{ end }}

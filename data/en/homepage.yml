@@ -77,7 +77,7 @@ partners:
 
 ############################# newsletter ########################
 newsletter:
-  enable: true
+  enable: false
   bg_image: "images/background/devops.jpg"
   title: "Newsletter"
   content: "Stay up to date with our latest news"

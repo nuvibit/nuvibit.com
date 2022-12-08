@@ -643,19 +643,24 @@ p.md a:hover {
     text-decoration: none !important;
 }
 
+footer {
+    background: #2b3346 !important;
+    color: #fafafa !important;
+    @include mobile {
+        padding-top: 0px !important;
+    }
+}
+
 footer a {
-    color: #3b4045 !important;
+    // color: #3b4045 !important;
+    color: #d0d0d0 !important;
     text-decoration: none !important;
 }
 
 footer a:hover {
-    color: #007bff !important;
-}
-
-footer {
-    @include mobile {
-        padding-top: 0px !important;
-    }
+    // color: #007bff !important;
+    color: #fafafa !important;
+    font-weight: bold !important;
 }
 
 footer .bottom-logo {

@@ -37,7 +37,7 @@
           <div class="col-lg-6 mb-3">
             <input type="text" class="form-control mb-2" id="company" name="company" placeholder='{{ i18n "company_name"}}' required>
           </div>
-          <div class="col-lg-12 mb-3">
+          {{/*  <div class="col-lg-12 mb-3">
             <select class="form-control mb-2" id="reason" name="reason">
               <option selected="selected" disabled="disabled" value="">{{ .Params.contact.reason }}</option>
               {{ with .Params.contact }}
@@ -47,7 +47,7 @@
               {{ end }}
               <option value="other">{{ i18n "other_reason" }}</option>
             </select>
-          </div>
+          </div>  */}}
           <div class="col-12 mb-3">
             <textarea name="message" id="message" class="form-control mb-2" placeholder='{{ i18n "input_message"}}' required></textarea>
           </div>

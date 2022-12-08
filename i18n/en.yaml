@@ -32,7 +32,7 @@
   translation: "First Name"
 
 - id: "second_name"
-  translation: "First Name"
+  translation: "Last Name"
 
 - id: "mail"
   translation: "Email"

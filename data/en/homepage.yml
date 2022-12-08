@@ -76,9 +76,9 @@ partners:
   link: "/partners"
 
 ############################# newsletter ########################
-newsletter:
-  enable: false
-  bg_image: "images/background/devops.jpg"
-  title: "Newsletter"
-  content: "Stay up to date with our latest news"
-  placeholder: "Enter Your Email"
+# newsletter:
+#   enable: false
+#   bg_image: "images/background/devops.jpg"
+#   title: "Newsletter"
+#   content: "Stay up to date with our latest news"
+#   placeholder: "Enter Your Email"

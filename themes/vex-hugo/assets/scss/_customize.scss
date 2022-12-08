@@ -653,14 +653,14 @@ footer {
 
 footer a {
     // color: #3b4045 !important;
-    color: #d0d0d0 !important;
+    color: rgba(255,255,255,.5) !important; 
     text-decoration: none !important;
+    font-weight: bold !important;
 }
 
 footer a:hover {
     // color: #007bff !important;
     color: #fafafa !important;
-    font-weight: bold !important;
 }
 
 footer .bottom-logo {

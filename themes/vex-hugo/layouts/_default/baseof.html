@@ -12,18 +12,14 @@
 	{{ block "page-script" . }}
 	<script>
 		// in december (11) let it snow on landing page
-		document.addEventListener('DOMContentLoaded', function() {
+		document.addEventListener('DOMContentLoaded', function () {
 			const d = new Date();
 			let month = d.getMonth();
-			if (month == 11 && $( ".call-to-action" ).length){
-				// replace newsletter background
-				// var bg = $(".call-to-action").css('background-image');
-				// var snow_bg = bg.replace(/devops\.jpg/, "foundation-snow.jpg");
-				// $(".call-to-action").css('background-image', snow_bg);
+			if (month == 11) {
 				// let it snow
 				$("#snow").toggle();
-				new Snow('#snow',{
-					number:50,
+				new Snow('#snow', {
+					number: 50,
 					r: 5,
 					v: 0.8
 				});
@@ -31,7 +27,7 @@
 		});
 
 		// function to copy content to clipboard and display message
-		function copy_url(url){
+		function copy_url(url) {
 			var $temp = $("<input>");
 			$("body").append($temp);
 			$temp.val(url).select();
@@ -39,16 +35,16 @@
 			$temp.remove();
 			// display alert message
 			$(".alert").show();
-			$(".alert").delay(2000).slideUp(200, function() {
+			$(".alert").delay(2000).slideUp(200, function () {
 				$(this).hide();
 			});
 		}
 
 		// function to cancel image zoom
-		function cancel_zoom(){
+		function cancel_zoom() {
 			window.removeEventListener('scroll', cancel_zoom);
 			let zoomed_img = document.getElementById("zoomed-image")
-			if (zoomed_img){
+			if (zoomed_img) {
 				zoomed_img.classList.add("img-max-400");
 				zoomed_img.removeAttribute("id");
 			}
@@ -57,56 +53,56 @@
 		}
 
 		// function to image zoom
-		function image_zoom(element){	
+		function image_zoom(element) {
 			let zoomed_img = element.firstElementChild;
-			if (zoomed_img && zoomed_img.id == "zoomed-image"){
+			if (zoomed_img && zoomed_img.id == "zoomed-image") {
 				zoomed_img.classList.add("img-max-400");
 				zoomed_img.removeAttribute("id");
-			}else if (zoomed_img.classList.contains("img-max-400")){
+			} else if (zoomed_img.classList.contains("img-max-400")) {
 				zoomed_img.classList.remove("img-max-400");
 				zoomed_img.setAttribute("id", "zoomed-image");
 			}
-			if (!element.classList.contains("zoomed")){
+			if (!element.classList.contains("zoomed")) {
 				$(".zoomed").removeClass("zoomed");
 			}
 			element.classList.toggle('zoomed');
 			$(".zoom-blur").toggle();
 
-			setTimeout(function(){
-				if (element.classList.contains("zoomed")){
+			setTimeout(function () {
+				if (element.classList.contains("zoomed")) {
 					window.addEventListener('scroll', cancel_zoom, false)
-				}else{
+				} else {
 					window.removeEventListener('scroll', cancel_zoom);
 				}
 			}, 100);
 		}
 
 		// function to redirect to subpage
-		function redirect(url){
+		function redirect(url) {
 			window.location.href = url;
 		}
-		
+
 		// function to overwrite language preference
-		function update_language_pref(lang){
+		function update_language_pref(lang) {
 			localStorage.setItem('lang', lang);
 		}
 
-		function uri_translate(uri, lang_now, lang_new){
+		function uri_translate(uri, lang_now, lang_new) {
 			var relocate_uri = uri;
 			// english webpage doesn't include prefix in uri
-			if (lang_now !== "en"){
+			if (lang_now !== "en") {
 				// remove language prefix from uri
 				var uri_arr = uri.split('/');
-				if (uri_arr[1] === lang_now){
+				if (uri_arr[1] === lang_now) {
 					uri_arr.splice(1, 1);
 					relocate_uri = uri_arr.join('/');
-				}else{
+				} else {
 					// fail-safe in case uri language prefix could not be removed -> redirect to home
 					relocate_uri = "/"
 				}
 			}
 			// add new language prefix to url
-			if (lang_new !== "en"){
+			if (lang_new !== "en") {
 				relocate_uri = "/" + lang_new + relocate_uri;
 			}
 
@@ -125,54 +121,98 @@
 		var uri = "{{ .Permalink | relURL }}";
 		// try to read language preference from local storage and check if supported
 		userLangPref = localStorage.getItem('lang');
-		if (userLangPref && supportedLang.includes(userLangPref)){
+		if (userLangPref && supportedLang.includes(userLangPref)) {
 			// switch language if current language is not same as preference
-			if (pageLang !== userLangPref){
+			if (pageLang !== userLangPref) {
 				// translate uri before redirecting - example: /de/contact -> /contact
-				relocate_uri = uri_translate(uri, lang_now=pageLang, lang_new=userLangPref);
+				relocate_uri = uri_translate(uri, lang_now = pageLang, lang_new = userLangPref);
 				window.location.href = base_url + relocate_uri;
 			}
-		}else{
+		} else {
 			// set language to english if browser language not supported
-			if (!supportedLang.includes(browserLang)){
+			if (!supportedLang.includes(browserLang)) {
 				browserLang = "en";
 			}
 			// save language preference to local storage
 			localStorage.setItem('lang', browserLang);
-			if (localStorage.getItem('lang') === browserLang && pageLang !== browserLang){
+			if (localStorage.getItem('lang') === browserLang && pageLang !== browserLang) {
 				// translate uri before redirecting - example: /contact -> /de/contact
-				relocate_uri = uri_translate(uri, lang_now=pageLang, lang_new=browserLang);
+				relocate_uri = uri_translate(uri, lang_now = pageLang, lang_new = browserLang);
 				window.location.href = base_url + relocate_uri;
 			}
 		}
 
 		// append open in new tab to links which are external
-		$(document.links).filter(function() {
+		$(document.links).filter(function () {
 			return this.hostname != window.location.hostname;
 		}).attr('target', '_blank');
-		
+
 		// cookie consent banner
 		window.cookieconsent.initialise({
-		palette: {
-			popup: {
-				background: "#2b3346",
-				text: "#ffffff"
+			palette: {
+				popup: {
+					background: "#2b3346",
+					text: "#ffffff"
+				},
+				button: {
+					background: "#3fa7df",
+					text: "#ffffff"
+				}
 			},
-			button: {
-				background: "#3fa7df",
-				text: "#ffffff"
-			}
-		},
-		content: {
-			message: '{{ i18n "cookie_message" }}',
-			dismiss: '{{ i18n "close" }}',
-			link: '{{ i18n "cookie_policy" }}',
-			href: '{{ "/privacy-policy/#51-cookies" | relLangURL }}',
-			target: null
-		},
-		theme: "edgeless",
-		type: "info"
+			content: {
+				message: '{{ i18n "cookie_message" }}',
+				dismiss: '{{ i18n "close" }}',
+				link: '{{ i18n "cookie_policy" }}',
+				href: '{{ "/privacy-policy/#51-cookies" | relLangURL }}',
+				target: null
+			},
+			theme: "edgeless",
+			type: "info"
 		});
+
+		// contact form validation
+		function inputBlacklist(input) {
+			value = input.value.toLowerCase()
+			type = input.type
+
+			mail_blacklist = [
+				"ericjonesmyemail@gmail.com",
+				"info@averoninfotech.com",
+				"charpusey@gmail.com",
+				"zelatcol@gmail.com",
+				"blowmebxtch@ymail.com"
+			]
+			textarea_blacklist = [
+				"cryptaxbot"
+			]
+			if (type === "email") {
+				if (mail_blacklist.includes(value)) {
+					input.setCustomValidity("Please enter a valid email address.");
+					input.reportValidity();
+				}
+			}
+
+			if (type === "textarea") {
+				for (var i = 0, text; text = textarea_blacklist[i++];) {
+					if (value.includes(text)) {
+						input.setCustomValidity("Please enter a valid message.");
+						input.reportValidity();
+					}
+				}
+			}
+		}
+
+		function validateInputs() {
+			var inputs = document.forms["contact"].getElementsByTagName("input");
+			var textareas = document.forms["contact"].getElementsByTagName("textarea");
+			var form_inputs = [...inputs, ...textareas]
+			for (var i = 0, input; input = form_inputs[i++];) {
+				input.setCustomValidity("")
+				if (input.value.length > 0) {
+					inputBlacklist(input)
+				}
+			}
+		}
 	</script>
 	{{ end }}
 </body>

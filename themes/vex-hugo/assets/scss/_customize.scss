@@ -643,19 +643,24 @@ p.md a:hover {
     text-decoration: none !important;
 }
 
-footer a {
-    color: #3b4045 !important;
-    text-decoration: none !important;
-}
-
-footer a:hover {
-    color: #007bff !important;
-}
-
 footer {
+    background: #2b3346 !important;
+    color: #fafafa !important;
     @include mobile {
         padding-top: 0px !important;
     }
+}
+
+footer a {
+    // color: #3b4045 !important;
+    color: rgba(255,255,255,.5) !important; 
+    text-decoration: none !important;
+    font-weight: bold !important;
+}
+
+footer a:hover {
+    // color: #007bff !important;
+    color: #fafafa !important;
 }
 
 footer .bottom-logo {
@@ -682,6 +687,7 @@ footer .list-group-item.selected {
 
 p.copyright-text {
     letter-spacing: 2px !important;
+    font-weight: bold !important;
 }
 
 // ANCHOR zoom
@@ -726,6 +732,7 @@ p.copyright-text {
     position: fixed;
     z-index: 0;
     display: none;
+    opacity: 0.5;
 }
 
 // ANCHOR about

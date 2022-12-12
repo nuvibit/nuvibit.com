@@ -7,6 +7,6 @@ on:
 
 jobs:
   terraform-workspace:
-    uses: nuvibit/github-workflows/.github/workflows/drawio-export.yml@v1
+    uses: nuvibit/github-workflows/.github/workflows/hugo-build.yml@v1
     secrets:
       GH_SA_TOKEN_RO: ${{ secrets.GH_SA_TOKEN_RO }}

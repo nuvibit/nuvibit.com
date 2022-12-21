@@ -1,7 +1,7 @@
 ---
-title: "powercoders"
+title: "Powercoders"
 date: 2022-12-20T11:00:00+06:00
-image: "images/customers/todo"
+image: "images/customers/powercoders.svg"
 
 # meta description
 description : "Wir führen gemeinsam mit Powercoders das erste AWS re/Start Programm in der Schweiz durch."
@@ -16,4 +16,6 @@ Die Mission von Powercoders is sehr klar: Vertriebenen Menschen helfen ihre Unab
 
 Powercoders bietet geflüchteten Menschen und Migranten Programme an, die IT Training, Praktika und Job Coaching kombinieren. Diese Programme sind dank einem riesigen Netzwerk von Firmen, Freiwilligen und IT Trainern möglich.
 
-Wir unterstützen Powercoders als IT Trainer im ersten Teilzeit AWS re/Start Programm in der Schweiz. Es macht uns extrem Spass mit Powercoders zusammenzuarbeiten, unser Wissen weiterzugeben sowie mit und von den Teilnehmern zu lernen.
+Wir unterstützen Powercoders als IT Trainer im ersten Teilzeit [AWS re/Start Programm](https://aws.amazon.com/de/training/restart/) in der Schweiz. Es macht uns extrem Spass mit Powercoders zusammenzuarbeiten, unser Wissen weiterzugeben sowie mit und von den Teilnehmern zu lernen.
+
+![Powercoders at the AWS Office in ZH](images/customers/powercoders_group.jpg)

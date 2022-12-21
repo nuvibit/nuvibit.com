@@ -12,10 +12,11 @@ button_link: "#"
 draft: false
 ---
 
-Powercoders mission is very clear: help displaced people regain their independence, reduce social welfare costs and address the shortage of talent in the IT industry.
+[Powercoders](https://powercoders.org/) mission is very clear: help displaced people regain their independence, reduce social welfare costs and address the shortage of talent in the IT industry.
 
 Powercoders offer programs for refugees and migrants that combine training, internships and job coaching through a vast network
 of companies, volunteers and IT trainers.
  
-We support Powercoders as trainers for the first part time [AWS re/Start program](https://aws.amazon.com/training/restart/) in Switzerland. We are very happy to 
-work with Powercoders, share our knowledge and learn a lot with and from the attendees.
+We support Powercoders as trainers for the first part time [AWS re/Start program](https://aws.amazon.com/training/restart/) in Switzerland. We are very happy to work with Powercoders, share our knowledge and learn a lot with and from the attendees.
+
+![Powercoders at the AWS Office in ZH](images/customers/powercoders_group.jpg)

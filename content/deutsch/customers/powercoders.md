@@ -12,7 +12,7 @@ button_link: "#"
 draft: false
 ---
 
-Die Mission von Powercoders is sehr klar: Vertriebenen Menschen helfen ihre Unabhängigkeit zurück zu gewinnen, Reduktion der Sozialhilfe Kosten und das Problem der fehlenden Talente in der IT Industrie aktiv anzugehen.
+Die Mission von [Powercoders](https://powercoders.org/) is sehr klar: Vertriebenen Menschen helfen ihre Unabhängigkeit zurück zu gewinnen, Reduktion der Sozialhilfe Kosten und das Problem der fehlenden Talente in der IT Industrie aktiv anzugehen.
 
 Powercoders bietet geflüchteten Menschen und Migranten Programme an, die IT Training, Praktika und Job Coaching kombinieren. Diese Programme sind dank einem riesigen Netzwerk von Firmen, Freiwilligen und IT Trainern möglich.
 

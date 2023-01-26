@@ -87,9 +87,7 @@ logo_footer_width = "175px"
 # Meta data
 description = "We help you build an enterprise ready, compliant and scalable foundation for the public cloud."
 author = "Nuvibit AG"
-# currency
-currency = "$"
-contact_form_action = "https://getform.io/f/057acfac-7557-4882-94b9-8e6a9c894d72"
+contact_form_url = "https://forms.zohopublic.eu/nuvibit/form/Contactus/formperma/TUZO-GqMg11XIInReyJqMICqAS7hWGm6YdW3oVM32hE"
 
 # Preloader
 [params.preloader]

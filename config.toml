@@ -76,6 +76,8 @@ link = "plugins/slick/slick.min.js"
 link = "plugins/cookieconsent/cookieconsent.min.js"
 [[params.plugins.js]]
 link = "plugins/snow/snow.min.js"
+[[params.plugins.js]]
+link = "plugins/ipaddr/ipaddr.js"
 
 ########################### Default Parameters ##########################
 
@@ -172,9 +174,9 @@ url = "tools"
 weight = 10
 
 [[Languages.en.menu.main]]
-identifier = "subnet-calculator"
-name = "Subnet Calculator"
-url = "tools/subnet-calculator"
+identifier = "vpc-calculator"
+name = "VPC Network Calculator"
+url = "vpc-calculator"
 parent = "tools"
 weight = 11
 

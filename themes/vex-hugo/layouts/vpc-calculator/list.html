@@ -1,0 +1,60 @@
+{{ define "main" }}
+
+<!-- BANNER -->
+{{- if .Params.banner_section.enable }}
+{{- with .Params.banner_section }}
+<section class="section" id="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center p-5 mb-md-0 zoom" onclick="image_zoom(this)">
+                <img class="img-fluid" src="{{ .image | absURL }}"
+                    alt='Illustration of {{ .Image | replaceRE ".*?(\\w+).png" "$1" }}'>
+            </div>
+            <div class="col-md-6 align-self-center text-center text-md-left">
+                <div class="block">
+                    <h1 class="font-weight-bold mb-4 font-size-60">{{ $.Page.RenderString .title }}</h1>
+                    <p class="mb-4">{{ $.Page.RenderString .content }}</p>
+                    {{ if .button.enable }}
+                    {{ with .button }}
+                    <a href="{{.link|absLangURL}}" class="btn btn-main">{{.label}}</a>
+                    {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{- end }}
+{{- end }}
+<!-- /BANNER -->
+
+<!-- CONTENT -->
+    <div class="container mb-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center text-md-left mb-5">
+                <form name="vpccalc" onsubmit="event.preventDefault();vpcCalculator();" class="row">
+                    <input type="hidden" id="type" name="form" value="vpccalc">
+                    <div class="col-lg-4 mb-3">
+                    <input type="text" class="form-control mb-2 text-md-center" id="ip_range" name="ip_range" pattern="^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}\/([1-9]|[1-2][0-9]|3[0-2])$" placeholder='Network range' required>
+                    </div>
+                    <div class="col-lg-1 m-0 p-0 mb-3" style="line-height: 2.5;font-weight: bold;font-size: 1.2rem;">
+                        move to
+                    </div>
+                    <div class="col-lg-7 mb-3">
+                    <input type="text" class="form-control mb-2" id="subnet_cidrs" name="subnet_cidrs" pattern="^\/*([1-9]|[1-2][0-9]|3[0-2])(,\/*([1-9]|[1-2][0-9]|3[0-2]))*$" placeholder='Subnet cidr(s)' required>
+                    </div>
+                    <div class="col-12 align-self-center text-center mt-3 mb-5">
+                    <button type="submit" value="send" class="btn btn-main">Calculate network</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-10 text-center text-md-left mb-5">
+                <div class="container markdown">
+                    {{ .Content }}
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- /CONTENT -->
+
+{{ end }}

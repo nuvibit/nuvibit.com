@@ -166,19 +166,32 @@ parent = "solutions"
 weight = 9
 
 [[Languages.en.menu.main]]
+identifier = "tools"
+name = "Tools"
+url = "tools"
+weight = 10
+
+[[Languages.en.menu.main]]
+identifier = "subnet-calculator"
+name = "Subnet Calculator"
+url = "tools/subnet-calculator"
+parent = "tools"
+weight = 11
+
+[[Languages.en.menu.main]]
 name = "Blog"
 url = "blog"
-weight = 10
+weight = 12
 
 [[Languages.en.menu.main]]
 name = "Team"
 url = "team"
-weight = 11
+weight = 13
 
 [[Languages.en.menu.main]]
 name = "Contact"
 url = "contact"
-weight = 12
+weight = 14
 
 ###################################### English Footer ######################################
 
@@ -330,19 +343,32 @@ parent = "solutions"
 weight = 9
 
 [[Languages.de.menu.main]]
+identifier = "tools"
+name = "Tools"
+url = "tools"
+weight = 10
+
+[[Languages.de.menu.main]]
+identifier = "subnet-calculator"
+name = "Subnet Calculator"
+url = "tools/subnet-calculator"
+parent = "tools"
+weight = 11
+
+[[Languages.de.menu.main]]
 name = "Blog"
 url = "blog"
-weight = 10
+weight = 12
 
 [[Languages.de.menu.main]]
 name = "Team"
 url = "team"
-weight = 11
+weight = 13
 
 [[Languages.de.menu.main]]
 name = "Kontakt"
 url = "contact"
-weight = 12
+weight = 14
 
 ###################################### German Footer ######################################
 

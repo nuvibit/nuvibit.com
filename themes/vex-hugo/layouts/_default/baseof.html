@@ -114,7 +114,7 @@
 			const subnet_cidrs = document.getElementById('subnet_cidrs');
 
 			if(ip_range.validity.patternMismatch){
-				ip_range.setCustomValidity('Value must be valid IPv4 network range (e.g. 172.31.0.0/16) and CIDR block must be between /8 and /28');
+				ip_range.setCustomValidity('Value must be valid IPv4 network range (e.g. 172.31.0.0/16) and CIDR block must be between 8 and 28');
 			}else{
 				ip_range.setCustomValidity('');
 			}
@@ -153,14 +153,15 @@
 				// loop for every subnet and calculate network address
 				for (let i = 0; i < subnet_count; i++) {
 					subnet_ips = 2**(32-subnet_cidr)
-					subnets_calculated.push(current_network+"/"+subnet_cidr)
+					subnet = current_network+"/"+subnet_cidr
+					subnets_calculated.push(subnet)
 					current_subnet_decimal = IpSubnetCalculator.toDecimal(current_network);
 					current_subnet_decimal += subnet_ips
 					current_network = IpSubnetCalculator.toString(current_subnet_decimal)
 					subnet_ips_sum += subnet_ips
 					// generate new table row
 					var row = table.insertRow(-1);
-					var cell1 = row.insertCell(0);
+					var cell1 = row.insertCell(0); // TODO: add copy icon ?
 					var cell2 = row.insertCell(1);
 					cell1.innerHTML = subnet;
 					cell2.innerHTML = 2**(32-subnet_cidr)-5;
@@ -186,7 +187,7 @@
 					subnet_ips_sum += subnet_ips
 					// generate new table row
 					var row = table.insertRow(-1);
-					var cell1 = row.insertCell(0);
+					var cell1 = row.insertCell(0); // TODO: add copy icon ?
 					var cell2 = row.insertCell(1);
 					cell1.innerHTML = subnet;
 					cell2.innerHTML = 2**(32-subnet_cidr)-5;
@@ -204,7 +205,6 @@
 				status = "not successull";
 				document.getElementById("subnet_stats_status").style.color = "Red";
 				document.getElementById("subnet_stats_usage").style.color = "Red";
-				// TODO: display error message?
 			} else {
 				status = "successull";
 				document.getElementById("subnet_stats_status").style.color = "ForestGreen";

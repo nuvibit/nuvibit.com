@@ -174,9 +174,9 @@ url = "tools"
 weight = 10
 
 [[Languages.en.menu.main]]
-identifier = "vpc-calculator"
+identifier = "subnet-calculator"
 name = "VPC Subnet Calculator"
-url = "vpc-calculator"
+url = "subnet-calculator"
 parent = "tools"
 weight = 11
 
@@ -358,9 +358,9 @@ url = "tools"
 weight = 10
 
 [[Languages.de.menu.main]]
-identifier = "vpc-calculator"
+identifier = "subnet-calculator"
 name = "VPC Subnetz Rechner"
-url = "vpc-calculator"
+url = "subnet-calculator"
 parent = "tools"
 weight = 11
 

@@ -175,7 +175,7 @@ weight = 10
 
 [[Languages.en.menu.main]]
 identifier = "vpc-calculator"
-name = "VPC Network Calculator"
+name = "VPC Subnet Calculator"
 url = "vpc-calculator"
 parent = "tools"
 weight = 11
@@ -299,7 +299,7 @@ weight = 1
 
 [[Languages.de.menu.main]]
 identifier = "services"
-name = "Dienstleistungen"
+name = "Services"
 url = "services"
 weight = 2
 
@@ -358,26 +358,33 @@ url = "tools"
 weight = 10
 
 [[Languages.de.menu.main]]
-identifier = "subnet-calculator"
-name = "Subnet Calculator"
-url = "tools/subnet-calculator"
+identifier = "vpc-calculator"
+name = "VPC Subnetz Rechner"
+url = "vpc-calculator"
 parent = "tools"
 weight = 11
 
 [[Languages.de.menu.main]]
+identifier = "terraform-collection"
+name = "Terraform Sammlung"
+url = "terraform-collection"
+parent = "tools"
+weight = 12
+
+[[Languages.de.menu.main]]
 name = "Blog"
 url = "blog"
-weight = 12
+weight = 13
 
 [[Languages.de.menu.main]]
 name = "Team"
 url = "team"
-weight = 13
+weight = 14
 
 [[Languages.de.menu.main]]
 name = "Kontakt"
 url = "contact"
-weight = 14
+weight = 15
 
 ###################################### German Footer ######################################
 

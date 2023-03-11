@@ -109,63 +109,112 @@
 			return relocate_uri;
 		}
 
-		// function to validate vpc calculator inputs
-		function vpcCalculator() {
+		function validateCalculatorInputs() {
+			const ip_range = document.getElementById('ip_range');
+			const subnet_cidrs = document.getElementById('subnet_cidrs');
+
+			if(ip_range.validity.patternMismatch){
+				ip_range.setCustomValidity('Value must be valid IPv4 network range (e.g. 172.31.0.0/16) and CIDR block must be between /8 and /28');
+			}else{
+				ip_range.setCustomValidity('');
+			}
+			if(subnet_cidrs.validity.patternMismatch){
+				subnet_cidrs.setCustomValidity('Values must be between 16 and 28');
+			}else{
+				subnet_cidrs.setCustomValidity('');
+			}
+		}
+
+		// function to calculate subnets based on network range and cidr blocks
+		function subnetCalculator() {
+			let status = "successfull";
+			// get supernet/major network range from input
 			let supernet = document.getElementById("ip_range").value;
+			// calculate info of supernet
 			let supernet_network = supernet.split("/")[0]
 			let supernet_cidr = supernet.split("/")[1]
 			let supernet_ips = 2**(32-supernet_cidr)
+			// get cidr blocks from input
 			let tmp = document.getElementById("subnet_cidrs").value;
 			let subnet_cidrs = tmp.replace("/", "").split(",").sort()
-
-			var table = document.getElementsByClassName("subnet-table")[0]
+			// define subnet placeholder variables
 			var subnets_calculated = []
 			var subnet_count = 0
 			var subnet_ips_sum = 0
+			// get table to dynamically append with calculation results
+			var table = document.getElementsByClassName("subnet-table")[0]
+			// delete existing table content
 			$(".subnet-table td").remove();
-			// if a single cidr in list then divide network equally
+			// if a single cidr block in list then divide network equally
 			if (subnet_cidrs.length == 1) {
 				subnet_cidr = subnet_cidrs[0]
-				subnet_ips = 2**(32-subnet_cidr)
 				subnet_count = 2**(subnet_cidr-supernet_cidr)
 				current_network = supernet_network
+				// loop for every subnet and calculate network address
 				for (let i = 0; i < subnet_count; i++) {
-					subnets_calculated.push(current_network+"/"+subnet_cidr)
-					current_subnet_decimal = IpSubnetCalculator.toDecimal(current_network);
-					current_subnet_decimal += subnet_ips
-					current_network = IpSubnetCalculator.toString(current_subnet_decimal)
-					subnet_ips_sum += subnet_ips
-				}
-			} else {
-				current_network = supernet_network
-				subnet_count = subnet_cidrs.length
-				// if a multiple cidrs in list then divide network variably
-				for (var i = 0, subnet_cidr; subnet_cidr = subnet_cidrs[i++];) {
 					subnet_ips = 2**(32-subnet_cidr)
 					subnets_calculated.push(current_network+"/"+subnet_cidr)
 					current_subnet_decimal = IpSubnetCalculator.toDecimal(current_network);
 					current_subnet_decimal += subnet_ips
 					current_network = IpSubnetCalculator.toString(current_subnet_decimal)
 					subnet_ips_sum += subnet_ips
+					// generate new table row
+					var row = table.insertRow(-1);
+					var cell1 = row.insertCell(0);
+					var cell2 = row.insertCell(1);
+					cell1.innerHTML = subnet;
+					cell2.innerHTML = 2**(32-subnet_cidr)-5;
+					if (subnet_ips_sum > supernet_ips) {
+						console.log("error")
+						cell1.style.color = "Red";
+						cell2.style.color = "Red";
+					}
+				}
+			} else {
+				// if multiple cidr blocks in list then divide network variably
+				current_network = supernet_network
+				subnet_count = subnet_cidrs.length
+				// loop for every subnet and calculate network address
+				for (var i = 0, subnet_cidr; subnet_cidr = subnet_cidrs[i++];) {
+					subnet_ips = 2**(32-subnet_cidr)
+					subnet = current_network+"/"+subnet_cidr
+					subnets_calculated.push(subnet)
+					// update current network iteration
+					current_subnet_decimal = IpSubnetCalculator.toDecimal(current_network);
+					current_subnet_decimal += subnet_ips
+					current_network = IpSubnetCalculator.toString(current_subnet_decimal)
+					subnet_ips_sum += subnet_ips
+					// generate new table row
+					var row = table.insertRow(-1);
+					var cell1 = row.insertCell(0);
+					var cell2 = row.insertCell(1);
+					cell1.innerHTML = subnet;
+					cell2.innerHTML = 2**(32-subnet_cidr)-5;
+					if (subnet_ips_sum > supernet_ips) {
+						console.log("error")
+						cell1.style.color = "Red";
+						cell2.style.color = "Red";
+					}
 				}
 			}
-
-			for (var i = 0, subnet; subnet = subnets_calculated[i++];) {
-				subnet_cidr = subnet.split("/")[1]
-				// Create an empty <tr> element and add it to the last position of the table:
-				var row = table.insertRow(-1);
-				// Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
-				var cell1 = row.insertCell(0);
-				var cell2 = row.insertCell(1);
-				// Add some text to the new cells:
-				cell1.innerHTML = subnet;
-				cell2.innerHTML = 2**(32-subnet_cidr)-5;
-			}
-			
+			// check if address space was oversubscribed
 			if (subnet_ips_sum > supernet_ips) {
-				alert("ERROR - OUT OF ADDRESS SPACE");
+				status = "not successull";
+				document.getElementById("subnet_stats_status").style.color = "Red";
+				document.getElementById("subnet_stats_usage").style.color = "Red";
+				// TODO: display error message?
+			} else {
+				status = "successull";
+				document.getElementById("subnet_stats_status").style.color = "ForestGreen";
+				document.getElementById("subnet_stats_usage").style.color = "ForestGreen";
 			}
-			// TODO: check if subnets are out of address space - add address space usage stats
+			// enable and update subnet calculator stats
+			subnet_stats_count = document.getElementById("subnet_stats_count") ;
+			subnet_stats_count.innerHTML = subnet_count+" subnets";
+			subnet_stats_status = document.getElementById("subnet_stats_status");
+			subnet_stats_status.innerHTML = status;
+			subnet_stats_usage = document.getElementById("subnet_stats_usage");
+			subnet_stats_usage.innerHTML = subnet_ips_sum/supernet_ips*100;
 		}
 
 		// determine the language preference for the user

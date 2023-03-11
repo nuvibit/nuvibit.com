@@ -10,14 +10,19 @@ banner_section:
     So why have another one?<br>
     Even our cloud network sorcerer needs help from time to time, but he couldn't find the right tool for his needs, so he decided to build his own. This calculator is therefore specifically designed for [AWS VPC subnets](https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html#subnet-sizing) and should be easily accessible.<br><br>
     **Usage example 1**<br>
-    You have an IPv4 network range (172.16.31.0/16) and want to calculate how many VPCs with a CIDR of /24 you can create.<br>
-    --> Insert <mark style='background-color:#fbe3fc;'>172.16.31.0/16</mark> into first field and <mark style='background-color: #fbe3fc;'>24</mark> into second field.<br><br>
+    You have an IPv4 network range (172.31.0.0/16) and want to calculate how many VPCs with a CIDR of /24 you can create.<br>
+    --> Insert <mark style='background-color:#fbe3fc;'>172.31.0.0/16</mark> into first field and <mark style='background-color: #fbe3fc;'>24</mark> into second field.<br><br>
     **Usage example 2**<br>
-    You have a VPC network range (172.16.31.0/24) and you want to calculate variably sized subnets across 3 availability zones.<br>
-    --> Insert <mark style='background-color:#fbe3fc;'>172.16.31.0/24</mark> into first field and <mark style='background-color: #fbe3fc;'>26,26,26,28,28,28</mark> into second field.<br><br>"
+    You have a VPC network range (172.31.0.0/24) and you want to calculate variably sized subnets across 3 availability zones.<br>
+    --> Insert <mark style='background-color:#fbe3fc;'>172.31.0.0/24</mark> into first field and <mark style='background-color: #fbe3fc;'>26,26,26,28,28,28</mark> into second field.<br><br>"
     image : "images/illustrations/network-sorcerer.png"
 ---
-
+<p class="mb-3">
+  Calculation of <span id="subnet_stats_count" style="font-weight:bold;">0 subnets</span> was <span id="subnet_stats_status" style="font-weight:bold;color:ForestGreen">successfull</span>
+</p>
+<p class="mb-5">
+  About <span id="subnet_stats_usage" style="font-weight:bold;color:ForestGreen">0</span>% of available network address space is used
+</p>
 {{<table "table table-striped table-bordered subnet-table">}}
 | SUBNET RANGE | AVAILABLE HOSTS <span style="color:red">*</span> |
 | ------------- | ------------- |

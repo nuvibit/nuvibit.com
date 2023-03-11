@@ -32,16 +32,16 @@
     <div class="container mb-5">
         <div class="row justify-content-center">
             <div class="col-lg-10 text-center text-md-left mb-5">
-                <form name="vpccalc" onsubmit="event.preventDefault();vpcCalculator();" class="row">
+                <form name="vpccalc" onsubmit="event.preventDefault();subnetCalculator();" class="row">
                     <input type="hidden" id="type" name="form" value="vpccalc">
                     <div class="col-lg-6 mb-3">
-                    <input type="text" class="form-control mb-2 text-md-center" id="ip_range" name="ip_range" pattern="^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}\/([1-9]|[1-2][0-9]|3[0-2])$" placeholder='IPv4 Network Range' required>
+                    <input type="text" class="form-control mb-2 text-md-center" id="ip_range" name="ip_range" pattern="^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}\/([8-9]|1[0-9]|2[0-8])$" placeholder='IPv4 Network Range' required>
                     </div>
                     <div class="col-lg-6 mb-3">
-                    <input type="text" class="form-control mb-2 text-md-center" id="subnet_cidrs" name="subnet_cidrs" pattern="^\/*([1-9]|[1-2][0-9]|3[0-2])(,\/*([1-9]|[1-2][0-9]|3[0-2]))*$" placeholder='IPv4 CIDR block(s)' required>
+                    <input type="text" class="form-control mb-2 text-md-center" id="subnet_cidrs" name="subnet_cidrs" pattern="^\/*(1[6-9]|2[0-8])(,\/*(1[6-9]|2[0-8]))*$" placeholder='IPv4 CIDR block(s)' required>
                     </div>
                     <div class="col-12 align-self-center text-center mt-3 mb-5">
-                    <button type="submit" value="send" class="btn btn-main">Calculate</button>
+                    <button type="submit" value="send" class="btn btn-main" onclick="validateCalculatorInputs();">Calculate</button>
                     </div>
                 </form>
             </div>

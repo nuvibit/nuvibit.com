@@ -197,6 +197,8 @@
 					}
 				}
 			}
+			// enable calculation stats
+			document.getElementById("subnet_stats").hidden = false;
 			// check if address space was oversubscribed
 			if (subnet_ips_sum > supernet_ips) {
 				status = "not successull";

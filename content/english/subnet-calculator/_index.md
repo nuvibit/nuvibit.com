@@ -17,12 +17,14 @@ banner_section:
     --> Insert <mark style='background-color:#fbe3fc;'>172.31.0.0/24</mark> into first field and <mark style='background-color: #fbe3fc;'>26,26,26,28,28,28</mark> into second field.<br><br>"
     image : "images/illustrations/network-sorcerer.png"
 ---
+<section id="subnet_stats" hidden>
 <p class="mb-3">
-  Calculation of <span id="subnet_stats_count" style="font-weight:bold;">0 subnets</span> was <span id="subnet_stats_status" style="font-weight:bold;color:ForestGreen">successfull</span>
+  Calculation of <span id="subnet_stats_count" style="font-weight:bold;">0 subnets</span> was <span id="subnet_stats_status" style="font-weight:bold;color:ForestGreen;">successfull</span>
 </p>
 <p class="mb-5">
   About <span id="subnet_stats_usage" style="font-weight:bold;color:ForestGreen">0</span>% of available network address space is used
 </p>
+</section>
 {{<table "table table-striped table-bordered subnet-table">}}
 | SUBNET RANGE | AVAILABLE HOSTS <span style="color:red">*</span> |
 | ------------- | ------------- |
@@ -41,7 +43,6 @@ banner_section:
 | x.x.x.x/28 | 11 |
 {{</table>}}
 <span style="color:red">*</span> In AWS the first four IP addresses and the last IP address in each subnet CIDR block are not available for use.
-<br><br><br/>
-<font size="4">
+<br><br><br>
+
 Any problems or missing a feature? Please open an issue on [Github](https://github.com/nuvibit/nuvibit.com/issues)
-</font>

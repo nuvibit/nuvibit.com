@@ -114,12 +114,14 @@
 			let supernet = document.getElementById("ip_range").value;
 			let supernet_network = supernet.split("/")[0]
 			let supernet_cidr = supernet.split("/")[1]
+			let supernet_ips = 2**(32-supernet_cidr)
 			let tmp = document.getElementById("subnet_cidrs").value;
 			let subnet_cidrs = tmp.replace("/", "").split(",").sort()
 
 			var table = document.getElementsByClassName("subnet-table")[0]
 			var subnets_calculated = []
 			var subnet_count = 0
+			var subnet_ips_sum = 0
 			$(".subnet-table td").remove();
 			// if a single cidr in list then divide network equally
 			if (subnet_cidrs.length == 1) {
@@ -132,6 +134,7 @@
 					current_subnet_decimal = IpSubnetCalculator.toDecimal(current_network);
 					current_subnet_decimal += subnet_ips
 					current_network = IpSubnetCalculator.toString(current_subnet_decimal)
+					subnet_ips_sum += subnet_ips
 				}
 			} else {
 				current_network = supernet_network
@@ -143,6 +146,7 @@
 					current_subnet_decimal = IpSubnetCalculator.toDecimal(current_network);
 					current_subnet_decimal += subnet_ips
 					current_network = IpSubnetCalculator.toString(current_subnet_decimal)
+					subnet_ips_sum += subnet_ips
 				}
 			}
 
@@ -157,7 +161,10 @@
 				cell1.innerHTML = subnet;
 				cell2.innerHTML = 2**(32-subnet_cidr)-5;
 			}
-
+			
+			if (subnet_ips_sum > supernet_ips) {
+				alert("ERROR - OUT OF ADDRESS SPACE");
+			}
 			// TODO: check if subnets are out of address space - add address space usage stats
 		}
 

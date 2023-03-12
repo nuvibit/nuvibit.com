@@ -161,46 +161,60 @@ parent = "solutions"
 weight = 8
 
 [[Languages.en.menu.main]]
+identifier = "account-vending"
+name = "Account Vending"
+url = "solutions/account-vending"
+parent = "solutions"
+weight = 9
+
+[[Languages.en.menu.main]]
+identifier = "account-baseline"
+name = "Account Baseline"
+url = "solutions/account-baseline"
+parent = "solutions"
+weight = 10
+
+[[Languages.en.menu.main]]
 identifier = "semper"
 name = "SEMPER"
 url = "solutions/semper"
 parent = "solutions"
-weight = 9
+weight = 11
 
 [[Languages.en.menu.main]]
 identifier = "tools"
 name = "Tools"
 url = "tools"
-weight = 10
+weight = 12
 
 [[Languages.en.menu.main]]
 identifier = "subnet-calculator"
 name = "VPC Subnet Calculator"
 url = "subnet-calculator"
 parent = "tools"
-weight = 11
+weight = 13
 
 [[Languages.en.menu.main]]
 identifier = "terraform-collection"
 name = "Terraform Collection"
 url = "terraform-collection"
 parent = "tools"
-weight = 12
+weight = 14
 
 [[Languages.en.menu.main]]
 name = "Blog"
 url = "blog"
-weight = 13
+weight = 15
 
 [[Languages.en.menu.main]]
 name = "Team"
 url = "team"
-weight = 14
+weight = 16
 
 [[Languages.en.menu.main]]
 name = "Contact"
 url = "contact"
-weight = 15
+weight = 17
 
 ###################################### English Footer ######################################
 
@@ -333,7 +347,7 @@ weight = 6
 
 [[Languages.de.menu.main]]
 identifier = "solutions"
-name = "Lösungen"
+name = "Solutions"
 url = "solutions"
 weight = 7
 
@@ -345,46 +359,60 @@ parent = "solutions"
 weight = 8
 
 [[Languages.de.menu.main]]
+identifier = "account-vending"
+name = "Account Vending"
+url = "solutions/account-vending"
+parent = "solutions"
+weight = 9
+
+[[Languages.de.menu.main]]
+identifier = "account-baseline"
+name = "Account Baseline"
+url = "solutions/account-baseline"
+parent = "solutions"
+weight = 10
+
+[[Languages.de.menu.main]]
 identifier = "semper"
 name = "SEMPER"
 url = "solutions/semper"
 parent = "solutions"
-weight = 9
+weight = 11
 
 [[Languages.de.menu.main]]
 identifier = "tools"
 name = "Tools"
 url = "tools"
-weight = 10
+weight = 12
 
 [[Languages.de.menu.main]]
 identifier = "subnet-calculator"
-name = "VPC Subnetz Rechner"
+name = "VPC Subnetzrechner"
 url = "subnet-calculator"
 parent = "tools"
-weight = 11
+weight = 13
 
 [[Languages.de.menu.main]]
 identifier = "terraform-collection"
 name = "Terraform Sammlung"
 url = "terraform-collection"
 parent = "tools"
-weight = 12
+weight = 14
 
 [[Languages.de.menu.main]]
 name = "Blog"
 url = "blog"
-weight = 13
+weight = 15
 
 [[Languages.de.menu.main]]
 name = "Team"
 url = "team"
-weight = 14
+weight = 16
 
 [[Languages.de.menu.main]]
 name = "Kontakt"
 url = "contact"
-weight = 15
+weight = 17
 
 ###################################### German Footer ######################################
 

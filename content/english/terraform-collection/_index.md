@@ -1,6 +1,6 @@
 ---
 title: "Terraform Collection"
-description: "..."
+description: "A colletion of Infrastructure as Code Terraform modules specifically designed to deploy and manage an enterprise ready, compliant and scalable AWS foundation."
 draft: false
 
 banner_section:

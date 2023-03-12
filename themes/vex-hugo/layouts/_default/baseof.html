@@ -109,7 +109,19 @@
 			return relocate_uri;
 		}
 
-		function validateCalculatorInputs() {
+		// function to copy subnet to clipboard
+		function copy_subnet(subnet, id) {
+			var $temp = $("<input>");
+			$("body").append($temp);
+			element = document.getElementById(id);
+			$temp.val(subnet).select();
+			document.execCommand("copy");
+			$temp.remove();
+			element.classList.add("fa-solid");
+		}
+
+		// function to add custom validation message for network ranges and cidr blocks
+		function subnetCalculatorValidate() {
 			const ip_range = document.getElementById('ip_range');
 			const subnet_cidrs = document.getElementById('subnet_cidrs');
 
@@ -119,7 +131,7 @@
 				ip_range.setCustomValidity('');
 			}
 			if(subnet_cidrs.validity.patternMismatch){
-				subnet_cidrs.setCustomValidity('Values must be between 16 and 28');
+				subnet_cidrs.setCustomValidity('Values can be comma(,) separated and each value must be between 16 and 28');
 			}else{
 				subnet_cidrs.setCustomValidity('');
 			}
@@ -166,9 +178,14 @@
 				subnet_ips_sum += subnet_ips
 				// generate new table row
 				var row = table.insertRow(-1);
-				var cell1 = row.insertCell(0); // TODO: add copy icon ?
+				var cell1 = row.insertCell(0);
 				var cell2 = row.insertCell(1);
-				cell1.innerHTML = subnet;
+				// generate cell content
+				copy_id = "copy-subnet" + i
+				copy_icon = "<i id='"+copy_id+"' class='fa-regular fa-copy'></i>";
+				copy_html = "<span class='copy-table-cell' onclick='copy_subnet(\""+subnet+"\", \""+copy_id+"\");'>"+copy_icon+"</span>";
+				subnet_cell = subnet + copy_html;
+				cell1.innerHTML = subnet_cell
 				cell2.innerHTML = 2**(32-subnet_cidr)-5;
 				if (subnet_ips_sum > supernet_ips) {
 					cell1.style.color = "Red";

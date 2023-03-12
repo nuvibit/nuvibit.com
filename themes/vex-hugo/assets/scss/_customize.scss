@@ -142,6 +142,10 @@ textarea.form-control {
     color: #FF9900 !important;
 }
 
+.color-green {
+    color: ForestGreen;
+}
+
 // ANCHOR customers, certifications & partners
 .badge-primary {
     background-color: $primary-color !important;
@@ -160,6 +164,24 @@ textarea.form-control {
 // ANCHOR lists
 div.content li {
     list-style-type: disc;
+}
+
+// ANCHOR table
+table.subnet-table th {
+    background: #bb9fe1;
+}
+
+table.subnet-table td {
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+table.subnet-table span.copy-table-cell {
+    float: left;
+}
+
+table.subnet-table span.copy-table-cell:hover {
+    color: #007bff !important;
+    cursor: pointer;
 }
 
 // ANCHOR spacings

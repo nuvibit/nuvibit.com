@@ -25,7 +25,7 @@ banner_section:
   About <span id="subnet_stats_usage" style="font-weight:bold;color:ForestGreen">0</span>% of available network address space is used
 </p>
 </section>
-{{<table "table table-striped table-bordered subnet-table">}}
+{{<table "table table-striped table-bordered text-center subnet-table">}}
 | SUBNET RANGE | AVAILABLE HOSTS <span style="color:red">*</span> |
 | ------------- | ------------- |
 | x.x.x.x/16 | 65531 |

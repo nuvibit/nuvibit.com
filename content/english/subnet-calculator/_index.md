@@ -1,6 +1,6 @@
 ---
 title: "VPC Subnet Calculator"
-description: "A network subnet calculator specifically tailored for AWS VPC subnets."
+description: "A network subnet calculator specifically designed for AWS VPC subnets. Supports static length and variable length IPv4 subnet calculations."
 draft: false
 
 banner_section:
@@ -8,7 +8,7 @@ banner_section:
     title: "VPC Subnet Calculator"
     content: "There are hundreds of great subnet calculators out there...<br>
     So why have another one?<br>
-    Even our cloud network sorcerer needs help from time to time, but he couldn't find the right tool for his needs, so he decided to build his own. This calculator is therefore specifically designed for [AWS VPC subnets](https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html#subnet-sizing) and should be clutter free.<br><br>
+    Even our cloud network sorcerer needs help from time to time, but he couldn't find the right tool for his needs, so he decided to build his own. This calculator is therefore specifically designed for [AWS VPC subnets](https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html#subnet-sizing) and aims to be clutter free.<br><br>
     **Usage example 1**<br>
     You have an IPv4 network range (172.31.0.0/16) and want to calculate how many VPCs with a CIDR of /24 you can create.<br>
     --> Insert <mark style='background-color:#fbe3fc;'>172.31.0.0/16</mark> into first field and <mark style='background-color: #fbe3fc;'>24</mark> into second field.<br><br>

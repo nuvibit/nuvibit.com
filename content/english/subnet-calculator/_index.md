@@ -8,7 +8,7 @@ banner_section:
     title: "VPC Subnet Calculator"
     content: "There are hundreds of great subnet calculators out there...<br>
     So why have another one?<br>
-    Even our cloud network sorcerer needs help from time to time, but he couldn't find the right tool for his needs, so he decided to build his own. This calculator is therefore specifically designed for [AWS VPC subnets](https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html#subnet-sizing) and should be easily accessible.<br><br>
+    Even our cloud network sorcerer needs help from time to time, but he couldn't find the right tool for his needs, so he decided to build his own. This calculator is therefore specifically designed for [AWS VPC subnets](https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html#subnet-sizing) and should be clutter free.<br><br>
     **Usage example 1**<br>
     You have an IPv4 network range (172.31.0.0/16) and want to calculate how many VPCs with a CIDR of /24 you can create.<br>
     --> Insert <mark style='background-color:#fbe3fc;'>172.31.0.0/16</mark> into first field and <mark style='background-color: #fbe3fc;'>24</mark> into second field.<br><br>
@@ -19,7 +19,7 @@ banner_section:
 ---
 <section id="subnet_stats" hidden>
 <p class="mb-3">
-  Calculation of <span id="subnet_stats_count" style="font-weight:bold;">0 subnets</span> was <span id="subnet_stats_status" style="font-weight:bold;color:ForestGreen;">successfull</span>
+  Calculation of <span id="subnet_stats_count" style="font-weight:bold;">0</span> subnets was <span id="subnet_stats_status" style="font-weight:bold;color:ForestGreen;">successfull</span>
 </p>
 <p class="mb-5">
   About <span id="subnet_stats_usage" style="font-weight:bold;color:ForestGreen">0</span>% of available network address space is used

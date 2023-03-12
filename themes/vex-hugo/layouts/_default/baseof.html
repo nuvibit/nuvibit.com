@@ -141,64 +141,41 @@
 			var subnets_calculated = []
 			var subnet_count = 0
 			var subnet_ips_sum = 0
-			// get table to dynamically append with calculation results
-			var table = document.getElementsByClassName("subnet-table")[0]
-			// delete existing table content
-			$(".subnet-table td").remove();
 			// if a single cidr block in list then divide network equally
 			if (subnet_cidrs.length == 1) {
-				subnet_cidr = subnet_cidrs[0]
-				subnet_count = 2**(subnet_cidr-supernet_cidr)
-				current_network = supernet_network
-				// loop for every subnet and calculate network address
-				for (let i = 0; i < subnet_count; i++) {
-					subnet_ips = 2**(32-subnet_cidr)
-					subnet = current_network+"/"+subnet_cidr
-					subnets_calculated.push(subnet)
-					current_subnet_decimal = IpSubnetCalculator.toDecimal(current_network);
-					current_subnet_decimal += subnet_ips
-					current_network = IpSubnetCalculator.toString(current_subnet_decimal)
-					subnet_ips_sum += subnet_ips
-					// generate new table row
-					var row = table.insertRow(-1);
-					var cell1 = row.insertCell(0); // TODO: add copy icon ?
-					var cell2 = row.insertCell(1);
-					cell1.innerHTML = subnet;
-					cell2.innerHTML = 2**(32-subnet_cidr)-5;
-					if (subnet_ips_sum > supernet_ips) {
-						console.log("error")
-						cell1.style.color = "Red";
-						cell2.style.color = "Red";
-					}
-				}
-			} else {
-				// if multiple cidr blocks in list then divide network variably
-				current_network = supernet_network
-				subnet_count = subnet_cidrs.length
-				// loop for every subnet and calculate network address
-				for (var i = 0, subnet_cidr; subnet_cidr = subnet_cidrs[i++];) {
-					subnet_ips = 2**(32-subnet_cidr)
-					subnet = current_network+"/"+subnet_cidr
-					subnets_calculated.push(subnet)
-					// update current network iteration
-					current_subnet_decimal = IpSubnetCalculator.toDecimal(current_network);
-					current_subnet_decimal += subnet_ips
-					current_network = IpSubnetCalculator.toString(current_subnet_decimal)
-					subnet_ips_sum += subnet_ips
-					// generate new table row
-					var row = table.insertRow(-1);
-					var cell1 = row.insertCell(0); // TODO: add copy icon ?
-					var cell2 = row.insertCell(1);
-					cell1.innerHTML = subnet;
-					cell2.innerHTML = 2**(32-subnet_cidr)-5;
-					if (subnet_ips_sum > supernet_ips) {
-						console.log("error")
-						cell1.style.color = "Red";
-						cell2.style.color = "Red";
-					}
+				prefix_length = subnet_cidrs[0]
+				prefix_count = 2**(Math.max(prefix_length-supernet_cidr, 0))
+				subnet_cidrs = Array(prefix_count).fill(prefix_length)
+			}
+			// set initial network iteration
+			current_network = supernet_network
+			subnet_count = subnet_cidrs.length
+			// get subnet table to dynamically append with calculation results
+			var table = document.getElementsByClassName("subnet-table")[0]
+			// delete existing subnet table content
+			$(".subnet-table td").remove();
+			// loop for every subnet and calculate network address
+			for (var i = 0, subnet_cidr; subnet_cidr = subnet_cidrs[i++];) {
+				subnet_ips = 2**(32-subnet_cidr)
+				subnet = current_network+"/"+subnet_cidr
+				subnets_calculated.push(subnet)
+				// update current network iteration
+				current_subnet_decimal = IpSubnetCalculator.toDecimal(current_network);
+				current_subnet_decimal += subnet_ips
+				current_network = IpSubnetCalculator.toString(current_subnet_decimal)
+				subnet_ips_sum += subnet_ips
+				// generate new table row
+				var row = table.insertRow(-1);
+				var cell1 = row.insertCell(0); // TODO: add copy icon ?
+				var cell2 = row.insertCell(1);
+				cell1.innerHTML = subnet;
+				cell2.innerHTML = 2**(32-subnet_cidr)-5;
+				if (subnet_ips_sum > supernet_ips) {
+					cell1.style.color = "Red";
+					cell2.style.color = "Red";
 				}
 			}
-			// enable calculation stats
+			// enable subnet calculation stats
 			document.getElementById("subnet_stats").hidden = false;
 			// check if address space was oversubscribed
 			if (subnet_ips_sum > supernet_ips) {
@@ -212,11 +189,11 @@
 			}
 			// enable and update subnet calculator stats
 			subnet_stats_count = document.getElementById("subnet_stats_count") ;
-			subnet_stats_count.innerHTML = subnet_count+" subnets";
+			subnet_stats_count.innerHTML = subnet_count;
 			subnet_stats_status = document.getElementById("subnet_stats_status");
 			subnet_stats_status.innerHTML = status;
 			subnet_stats_usage = document.getElementById("subnet_stats_usage");
-			subnet_stats_usage.innerHTML = subnet_ips_sum/supernet_ips*100;
+			subnet_stats_usage.innerHTML = Math.round(subnet_ips_sum/supernet_ips*100);
 		}
 
 		// determine the language preference for the user

@@ -19,7 +19,7 @@ banner_section:
 feature_section:
   enable : true
   title : "Key features"
-  image: "images/solutions/foundation-blueprint-illustration.png"
+  image: "images/solutions/account-baseline-illustration.png"
 
   # feature at the left of the image
   left_side:
@@ -54,34 +54,13 @@ excerpt_section:
     enable: true
     title: "In a nutshell..."
     list:
-      - title: "Assessment"
+      - title: "Account Baseline Workflow"
         enable: true
-        image: "images/solutions/foundation-blueprint-assessment.png"
-        content: "First and foremost, we need to get an overview of where you stand on your cloud journey and where you want to go.
-                  We will analyze your cloud strategy and organizational structures to adjust our Blueprint to them.
-                  Your connectivity, security and automation requirements are also identified and taken into account.<br/><br/>
-                  Part of the assessment also includes workshops to give you a better understanding of our Cloud Foundation."
-
-      - title: "Implementation"
-        enable: true
-        image: "images/solutions/foundation-blueprint-implementation.png"
-        content: "Once we have a clear overview and gathered all requirements, we assemble a team of specialists to build your tailored Cloud Foundation based on our Blueprint.
-                  We adapt our Foundation Blueprint Terraform modules to perfectly fit your needs and support you during implementation.<br/><br/>
-                  If needed, we can also adapt or build the tooling required for Infrastructure as Code deployments with Terraform."
-
-      - title: "Transition"
-        enable: true
-        image: "images/solutions/foundation-blueprint-transition.png"
-        content: "We have no interest in building a Cloud Foundation without ensuring that the necessary capabilities on your side will be established to run it successfully.
-                  Because we believe that hands-on experience is the best way to learn new skills, we support the employees responsible for operations with on-the-job training.<br/><br/>
-                  Part of the transition includes cementing the [Cloud Foundation Capabilities](/blog/cloud-foundation-map 'Nuvibit Cloud Foundation Blog Post') which are essential to establish a Cloud Operating Model."
-
-      - title: "Support"
-        enable: true
-        image: "images/solutions/foundation-blueprint-support.png"
-        content: "Even after the successful implementation of your Cloud Foundation, we want to continue supporting you on your cloud journey.
-                  We can help you to optimize and refine your Foundation based on our Terraform modules.<br/><br/>
-                  In addition, we can provide you with updates to our Foundation Terraform modules and implement your feature requests."
+        image: "images/solutions/account-baseline-diagram.png"
+        content: "The Account Baseline is centrally managed in a Git repository via Terraform.
+                  Either a user or an automated process starts the rollout of the baseline across multiple accounts.
+                  Terraform pipelines will manage all the resources necessary for the account base configuration.<br/>
+                  The Account Baseline includes hardening accounts, implementing compliance and security policies, and connecting accounts to the Foundation."
 
 link_section:
     enable: true
@@ -97,8 +76,8 @@ link_section:
       
       - title: "Blog"
         enable: true
-        content: "Read more about the Nuvibit Foundation Blueprint in these blog posts"
-        blog_tag: foundation
+        content: "Read more about Multi-Account Architecture and Account Baseline in these blog posts"
+        blog_tag: baseline
 
 testimonial_section:
     enable: false

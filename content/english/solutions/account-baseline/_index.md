@@ -1,15 +1,15 @@
 ---
 title: "Account Baseline"
-description: "We will tailor our Foundation Blueprint to your needs and enable you to deliver Foundation Capabilities to your Cloud Workload Development Teams with a high level of maturity."
+description: "Fully Terraform-native and extremely flexible Account Baseline solution to provision a secure baseline configuration to your AWS accounts."
 draft: false
 
 banner_section:
     enable: true
     title: "Account Baseline"
-    content: "Before deploying a productive workload on the public cloud there are many moving parts which have to be coordinated. 
-    There are technical parts such as connectivity or security and organizational parts such as finance or operations.
-    A secure, scalable cloud foundation will significantly accelerate your cloud adoption journey and is one of the most important and hardest challenges.<br/><br/>
-    Our Foundation Blueprint addresses exactly this concern and enables your organization to efficiently build a tailored Cloud Foundation."
+    content: "You could use AWS Control Tower to provision a common set of security baseline configurations for your AWS accounts. 
+    The headaches usually start when you need to tailor your account baseline based on different types of accounts and requirements.
+    This is where a Terraform Account Baseline can truly work its magic.<br/><br/>
+    Building a Landing Zone with Account Baseline from scratch is a lot of work. Good thing we took care of that."
     image : "images/solutions/account-baseline-logo.png"
     button:
         enable: true
@@ -25,29 +25,29 @@ feature_section:
   left_side:
   - title : "Infrastructure as Code"
     icon : "fa-file-code"
-    content : "At the heart of our Foundation Blueprint are [Terraform](https://www.terraform.io/intro/index.html 'Introduction to Terraform') modules, which dramatically simplify the management of the entire Cloud Foundation."
+    content : "Based on [Terraform modules](https://developer.hashicorp.com/terraform/tutorials/modules/module 'Terraform Modules Overview'), which dramatically simplifies the management."
 
   - title : "Scalability"
     icon : "fa-chart-line"
-    content : "Our Foundation is designed with scalability in mind and can grow with your workloads."
+    content : "Manage hundreds of AWS accounts across multiple regions while keeping operational overhead minimal."
     
   - title : "Well Architected"
     icon : "fa-drafting-compass"
-    content : "Our reference architectures are based on experience, best practices and the [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected 'AWS Well-Architected')."
+    content : "Our Account Baseline is based on practical experience, best practices and the [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected 'AWS Well-Architected')."
 
   # feature at the right of the image
   right_side:
-  - title : "Tailored to the needs"
+  - title : "Tailored to your needs"
     icon : "fa-cut"
-    content : "A great Foundation is just as unique as the customer himself and that's why we adjust our Blueprint exactly to your needs."
+    content : "The Account Baseline is supposed to be as unique as the customer himself and that's why we strongly embrace customization."
 
-  - title : "Transition of the organization"
-    icon : "fa-building"
-    content : "We put a lot of focus on the organizational structures and cloud strategy to maximize opportunities for success."
+  - title : "GitOps by design"
+    icon : "fa-code-branch"
+    content : "A new Account Baseline version can be tested and reviewed during pull request. The risk of critical failures can be significantly reduced by enforcing code review practices."
 
-  - title : "Workshops & Training"
+  - title : "Self-Service"
     icon : "fa-chalkboard-teacher"
-    content : "Our goal is to enable our customers to successfully adopt and operate our Foundation Blueprint."
+    content : "Implementation into an existing self-service portal can be easily achieved through a simple Git integration."
 
 
 excerpt_section:

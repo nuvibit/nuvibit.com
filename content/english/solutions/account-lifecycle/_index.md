@@ -9,7 +9,7 @@ banner_section:
     content: "As your AWS deployment grows, you will be faced with the need to provide secure and compliant AWS accounts in an automated manner. 
     It's important that the Account Lifecycle fits into your existing tooling landscape to reduce the learning curve and operational overhead for your teams. 
     That's why we designed this solution to be fully Terraform-native and extremely flexible.<br/><br/>
-    Our solution is not only capable of provisioning new AWS accounts, but also keeps them up to date and recycles them when they are no longer needed (a common requirement for experimental workloads)."
+    Building a Landing Zone with Account Lifecycle from scratch with Terraform is a lot of work. Good thing we took care of that."
     image : "images/solutions/account-lifecycle-logo.png"
     button:
         enable: true
@@ -31,7 +31,7 @@ feature_section:
     icon : "fa-chart-line"
     content : "Manage hundreds of AWS accounts while keeping operational overhead minimal."
     
-  - title : "Account Recycling"
+  - title : "Recycling"
     icon : "fa-recycle"
     content : "AWS allows deletion of accounts only with certain restrictions. To avoid this, we provide the possibility to recycle accounts."
 
@@ -39,11 +39,11 @@ feature_section:
   right_side:
   - title : "Tailored to your needs"
     icon : "fa-cut"
-    content : "The tooling landscape is customer-specific, and therefore we support a variety of integrations."
+    content : "The tooling landscape is customer-specific and therefore we support a variety of integrations."
 
   - title : "GitOps by design"
     icon : "fa-code-branch"
-    content : "A new AWS Account can be ordered with a simple pull request containing the required information."
+    content : "A new AWS account can be ordered with a simple pull request and all changes can be easily tracked."
 
   - title : "Self-Service"
     icon : "fa-chalkboard-teacher"

@@ -33,7 +33,7 @@ feature_section:
     
   - title : "Well Architected"
     icon : "fa-drafting-compass"
-    content : "Our reference architectures are based on experience, best practices and the [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected 'AWS Well-Architected')."
+    content : "Our reference architectures are based on practical experience, best practices and the [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected 'AWS Well-Architected')."
 
   # feature at the right of the image
   right_side:

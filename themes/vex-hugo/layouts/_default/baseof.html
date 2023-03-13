@@ -14,7 +14,7 @@
 		// in december (11) let it snow on landing page
 		document.addEventListener('DOMContentLoaded', function () {
 			const d = new Date();
-			let month = d.getMonth();
+			var month = d.getMonth();
 			if (month == 11) {
 				// let it snow
 				$("#snow").toggle();
@@ -43,7 +43,7 @@
 		// function to cancel image zoom
 		function cancel_zoom() {
 			window.removeEventListener('scroll', cancel_zoom);
-			let zoomed_img = document.getElementById("zoomed-image")
+			var zoomed_img = document.getElementById("zoomed-image")
 			if (zoomed_img) {
 				zoomed_img.classList.add("img-max-400");
 				zoomed_img.removeAttribute("id");
@@ -54,7 +54,7 @@
 
 		// function to image zoom
 		function image_zoom(element) {
-			let zoomed_img = element.firstElementChild;
+			var zoomed_img = element.firstElementChild;
 			if (zoomed_img && zoomed_img.id == "zoomed-image") {
 				zoomed_img.classList.add("img-max-400");
 				zoomed_img.removeAttribute("id");
@@ -139,16 +139,15 @@
 
 		// function to calculate subnets based on network range and cidr blocks
 		function subnetCalculator() {
-			let status = "successfull";
 			// get supernet/major network range from input
-			let supernet = document.getElementById("ip_range").value;
+			var supernet = document.getElementById("ip_range").value;
 			// calculate info of supernet
-			let supernet_network = supernet.split("/")[0]
-			let supernet_cidr = supernet.split("/")[1]
-			let supernet_ips = 2**(32-supernet_cidr)
+			var supernet_network = supernet.split("/")[0]
+			var supernet_cidr = supernet.split("/")[1]
+			var supernet_ips = 2**(32-supernet_cidr)
 			// get cidr blocks from input
-			let tmp = document.getElementById("subnet_cidrs").value;
-			let subnet_cidrs = tmp.replace("/", "").split(",").sort()
+			var tmp = document.getElementById("subnet_cidrs").value;
+			var subnet_cidrs = tmp.replace("/", "").split(",").sort()
 			// define subnet placeholder variables
 			var subnets_calculated = []
 			var subnet_count = 0
@@ -196,11 +195,17 @@
 			document.getElementById("subnet_stats").hidden = false;
 			// check if address space was oversubscribed
 			if (subnet_ips_sum > supernet_ips) {
-				status = "not successull";
+				var status = "not successfull";
+				if (userLangPref && userLangPref === "de"){
+					status = "nicht erfolgreich";
+				}
 				document.getElementById("subnet_stats_status").style.color = "Red";
 				document.getElementById("subnet_stats_usage").style.color = "Red";
 			} else {
-				status = "successull";
+				var status = "successfull";
+				if (userLangPref && userLangPref === "de"){
+					status = "erfolgreich";
+				}
 				document.getElementById("subnet_stats_status").style.color = "ForestGreen";
 				document.getElementById("subnet_stats_usage").style.color = "ForestGreen";
 			}

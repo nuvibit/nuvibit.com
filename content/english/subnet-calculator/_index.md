@@ -1,6 +1,6 @@
 ---
 title: "VPC Subnet Calculator"
-description: "A network subnet calculator specifically designed for AWS VPC subnets. Supports static length and variable length IPv4 subnet calculations."
+description: "This network subnet calculator is specifically designed for AWS VPC subnets. Supports static length and variable length IPv4 subnet calculations."
 draft: false
 
 banner_section:
@@ -14,7 +14,7 @@ banner_section:
     --> Insert <mark style='background-color:#fbe3fc;'>172.31.0.0/16</mark> into first field and <mark style='background-color: #fbe3fc;'>24</mark> into second field.<br><br>
     **Usage example 2**<br>
     You have a VPC network range (172.31.0.0/24) and you want to calculate variably sized subnets across 3 availability zones.<br>
-    --> Insert <mark style='background-color:#fbe3fc;'>172.31.0.0/24</mark> into first field and <mark style='background-color: #fbe3fc;'>26,26,26,28,28,28</mark> into second field.<br><br>"
+    --> Insert <mark style='background-color:#fbe3fc;'>172.31.0.0/24</mark> into first field and <mark style='background-color: #fbe3fc;'>26,26,26,28,28,28</mark> into second field."
     image : "images/illustrations/network-sorcerer.png"
 ---
 <section id="subnet_stats" hidden>

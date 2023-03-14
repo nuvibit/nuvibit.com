@@ -120,6 +120,7 @@
 			element.classList.add("fa-solid");
 		}
 
+		// function to reset custom validation
 		function clearValidate() {
 			const validation_error = document.getElementById("validation_message")
 			if (validation_error.innerHTML != ""){
@@ -136,7 +137,8 @@
 			const subnet_cidrs = document.getElementById('subnet_cidrs');
 			const subnet_cidrs_regex = /^\/?(1[6-9]|2[0-8])(,\s?\/?(1[6-9]|2[0-8]))*$/
 
-			if(ip_range_regex.test(ip_range.value)){
+			if (ip_range_regex.test(ip_range.value)){
+				document.getElementById("validation_message").innerHTML = "";
 				ip_range.classList.remove("btn-validation-error");
 			}else{
 				let message = "Allowed is a valid IPv4 network range (e.g. 172.31.0.0/16) with CIDR block between 8 and 28"
@@ -144,7 +146,8 @@
 				document.getElementById("validation_message").innerHTML = message;
 				return false;
 			}
-			if(subnet_cidrs_regex.test(subnet_cidrs.value)){
+
+			if (subnet_cidrs_regex.test(subnet_cidrs.value)){
 				document.getElementById("validation_message").innerHTML = "";
 				subnet_cidrs.classList.remove("btn-validation-error");
 			}else{
@@ -153,6 +156,7 @@
 				document.getElementById("validation_message").innerHTML = message;
 				return false;
 			}
+			return true;
 		}
 
 		function resetCalculator() {

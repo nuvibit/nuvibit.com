@@ -57,7 +57,7 @@ excerpt_section:
       - title: "Account Lifecycle Workflow"
         enable: true
         image: "images/solutions/account-lifecycle-diagram.png"
-        content: "The Account Lifecycle is managed in a Git repository via Terraform.
+        content: "The Account Lifecycle is centrally managed in a Git repository via Terraform.
                   Either a user or an automated process updates the account list with Git.
                   A Terraform pipeline will manage all the resources necessary to create and lifecycle an AWS account.<br/>
                   External resources which are required for the AWS accounts can also be managed with this solution."

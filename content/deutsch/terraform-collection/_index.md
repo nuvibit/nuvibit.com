@@ -1,17 +1,18 @@
 ---
-title: "Terraform Collection"
-description: "A colletion of Infrastructure as Code Terraform modules specifically designed to deploy and manage an enterprise ready, compliant and scalable AWS foundation."
+title: "Terraform Sammlung"
+description: "Eine Sammlung von Infrastructure as Code Terraform-Modulen, die spezifisch für die Bereitstellung und Verwaltung einer AWS Cloud Foundation entwickelt wurden."
 draft: false
 
 banner_section:
     enable: true
-    title: "Terraform Collection"
-    content: "A collection of [Terraform modules](https://developer.hashicorp.com/terraform/tutorials/modules/module) specifically designed to deploy and manage an enterprise ready, compliant and scalable AWS foundation. Our modules are used by numerous companies in production. Some modules are open source, others are only accessible to our customers and all of them are continuously improved.<br><br>
-    Did something catch your eye?"
+    title: "Terraform Sammlung"
+    content: "Eine Sammlung unserer [Terraform Modulen](https://developer.hashicorp.com/terraform/tutorials/modules/module), die spezifisch für die Bereitstellung und Verwaltungeiner AWS Cloud Foundation entwickelt wurden. 
+              Unsere Module werden von zahlreichen Unternehmen in der Produktion eingesetzt. Einige Module sind Open Source, andere sind nur für unsere Kunden zugänglich und alle Module werden kontinuierlich weiterentwickelt.<br><br>
+              Interesse geweckt?"
     image : "images/illustrations/cloud-infrastructure-as-code.png"
     button:
         enable: true
-        label: "Get in touch"
+        label: "Kontakt aufnehmen"
         link: "contact"
 ---
 

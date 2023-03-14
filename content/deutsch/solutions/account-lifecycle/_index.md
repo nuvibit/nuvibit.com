@@ -1,19 +1,19 @@
 ---
 title: "Account Lifecycle"
-description: "Fully Terraform-native and extremely flexible Account Lifecycle solution to provision and manage AWS accounts."
+description: "Komplett Terraform-basierte und extrem flexible Account Lifecycle Lösung zur Bereitstellung und Verwaltung Ihrer AWS-Accounts."
 draft: false
 
 banner_section:
     enable: true
     title: "Account Lifecycle"
-    content: "As your AWS deployment grows, you will be faced with the need to provide secure and compliant AWS accounts in an automated manner. 
-    It's important that the Account Lifecycle fits into your existing tooling landscape to reduce the learning curve and operational overhead for your teams. 
-    That's why we designed this solution to be fully Terraform-native and extremely flexible.<br/><br/>
-    Building a Landing Zone with Account Lifecycle from scratch with Terraform is a lot of work. Good thing we took care of that."
+    content: "Sobald Ihre AWS Umgebung wächst, entsteht meist der Wunsch und die Anforderung, sichere und konforme AWS Accounts auf automatisierte Weise bereitzustellen. 
+    Es ist wichtig, dass sich der Account Lifecycle in Ihre bestehende Tooling-Landschaft einfügt, um die Lernkurve und den Betriebsaufwand für Ihre Teams zu reduzieren. 
+    Aus diesem Grund haben wir diese Lösung so konzipiert, dass sie vollständig Terraform-basiert und extrem flexibel ist.<br/><br/>
+    Eine Landing Zone mit Account Lifecycle von Grund auf zu entwickeln, ist eine Menge Arbeit. Gut, dass wir uns darum gekümmert haben."
     image : "images/solutions/account-lifecycle-logo.png"
     button:
         enable: true
-        label: "Get in touch"
+        label: "Kontakt aufnehmen"
         link: "contact"
 
 feature_section:
@@ -25,47 +25,47 @@ feature_section:
   left_side:
   - title : "Infrastructure as Code"
     icon : "fa-file-code"
-    content : "Based on [Terraform modules](https://developer.hashicorp.com/terraform/tutorials/modules/module 'Terraform Modules Overview'), which dramatically simplifies the management."
+    content : "Basierend auf [Terraform Modulen](https://developer.hashicorp.com/terraform/tutorials/modules/module 'Terraform Modules Overview'), wodurch sich die Handhabung drastisch vereinfacht."
 
-  - title : "Scalability"
+  - title : "Skalierbarkeit"
     icon : "fa-chart-line"
-    content : "Manage hundreds of AWS accounts while keeping operational overhead minimal."
+    content : "Verwaltung von Hunderten von AWS-Accounts über mehreren Regionen mit minimalem Betriebsaufwand."
     
   - title : "Recycling"
     icon : "fa-recycle"
-    content : "AWS allows deletion of accounts only with certain restrictions. To avoid this, we provide the possibility to recycle accounts."
+    content : "AWS erlaubt die Löschung von Accounts nur mit bestimmten Einschränkungen. Um dies zu vermeiden, bieten wir die Möglichkeit, Accounts zu recyceln."
 
   # feature at the right of the image
   right_side:
-  - title : "Tailored to your needs"
+  - title : "Massgeschneidert auf den Bedarf"
     icon : "fa-cut"
-    content : "The tooling landscape is customer-specific and therefore we support a variety of integrations."
+    content : "Die Tooling-Landschaft ist kundenspezifisch und wir unterstützen deshalb eine Vielzahl von Integratione"
 
   - title : "GitOps by design"
     icon : "fa-code-branch"
-    content : "A new AWS account can be ordered with a simple pull request and all changes can be easily tracked."
+    content : "Ein neuer AWS-Account kann mit einem einfachen Pull-Request bestellt werden und alle Änderungen können leicht nachvollzogen werden."
 
   - title : "Self-Service"
     icon : "fa-chalkboard-teacher"
-    content : "Implementation into an existing self-service portal can be easily achieved through a simple Git integration."
+    content : "Die Implementierung in ein bestehendes Self-Service Portal kann durch eine einfache Git-Integration erreicht werden."
 
 
 excerpt_section:
     enable: true
-    title: "In a nutshell..."
+    title: "Kurz und knapp..."
     list:
       - title: "Account Lifecycle Workflow"
         enable: true
         image: "images/solutions/account-lifecycle-diagram.png"
-        content: "The Account Lifecycle is managed in a Git repository via Terraform.
-                  Either a user or an automated process updates the account list with Git.
-                  A Terraform pipeline will manage all the resources necessary to create and lifecycle an AWS account.<br/>
-                  External resources which are required for the AWS accounts can also be managed with this solution."
+        content: "Der Account Lifecycle wird zentral in einem Git-Repository mittels Terraform verwaltet.
+                  Ein Benutzer oder ein automatisierter Prozess aktualisiert die Account-Liste über Git.
+                  Eine Terraform-Pipeline verwaltet alle Ressourcen, die für die Erstellung und den Lifecycle eines AWS-Accounts erforderlich sind.<br/>
+                  Auch externe Ressourcen, die für die Bereitstellung der AWS-Accounts benötigt werden, können mit dieser Lösung gesteuert werden."
 
 link_section:
     enable: true
     list:
-      - title: "Documentation"
+      - title: "Dokumentation"
         enable: false
         content: "You can find more details in our documentation"
         links:
@@ -76,7 +76,7 @@ link_section:
       
       - title: "Blog"
         enable: true
-        content: "Read more about Account Lifecycle in these blog posts"
+        content: "Lesen Sie mehr über Account Lifecycle in den folgenden Blogbeiträgen"
         blog_tag: lifecycle
 
 testimonial_section:

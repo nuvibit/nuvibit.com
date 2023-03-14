@@ -7,6 +7,7 @@ summary: "In einer AWS Multi-Account Umgebung ist es wichtig, dass AWS Accounts 
 tags:
   - aws
   - foundation
+  - lifecycle
 duration: 5
 draft: false
 ---

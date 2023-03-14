@@ -39,9 +39,10 @@
                     <div class="col-lg-6 mb-3">
                     <input type="text" class="form-control mb-2 text-md-center" id="subnet_cidrs" name="subnet_cidrs" pattern="^\/?(1[6-9]|2[0-8])(,\/?(1[6-9]|2[0-8]))*$" placeholder='IPv4 CIDR block(s)' required>
                     </div>
-                    <div class="col-12 align-self-center text-center mt-3 mb-5">
-                    <button type="submit" value="send" class="btn btn-main" onclick="subnetCalculatorValidate();">Calculate</button>
-                    <noscript><br><br><font color=red>JavaScript must be enabled for this subnet calculator</font></noscript>
+                    <div class="col-12 align-self-center text-md-center mt-3">
+                        <button value="send" class="btn btn-main btn-reset mr-3 mb-4" style="min-width:190px;" onclick="resetCalculator();">{{ i18n "reset" }}</button>
+                        <button type="submit" value="send" class="btn btn-main mr-3 mb-4" style="min-width:190px;" onclick="subnetCalculatorValidate();">{{ i18n "calculate" }}</button>
+                        <noscript><br><br><font color=red>JavaScript must be enabled for this subnet calculator</font></noscript>
                     </div>
                 </form>
             </div>

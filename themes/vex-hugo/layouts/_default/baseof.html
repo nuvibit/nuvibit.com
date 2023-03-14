@@ -137,6 +137,13 @@
 			}
 		}
 
+		function resetCalculator() {
+			// reset button values
+			document.getElementById("ip_range").value = "";
+			document.getElementById("subnet_cidrs").value = "";
+			location.reload();
+		}
+
 		// function to calculate subnets based on network range and cidr blocks
 		function subnetCalculator() {
 			// get supernet/major network range from input

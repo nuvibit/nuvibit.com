@@ -76,6 +76,8 @@ link = "plugins/slick/slick.min.js"
 link = "plugins/cookieconsent/cookieconsent.min.js"
 [[params.plugins.js]]
 link = "plugins/snow/snow.min.js"
+[[params.plugins.js]]
+link = "plugins/ipaddr/ipaddr.js"
 
 ########################### Default Parameters ##########################
 
@@ -159,26 +161,60 @@ parent = "solutions"
 weight = 8
 
 [[Languages.en.menu.main]]
-identifier = "semper"
-name = "SEMPER"
-url = "solutions/semper"
+identifier = "account-lifecycle"
+name = "Account Lifecycle"
+url = "solutions/account-lifecycle"
 parent = "solutions"
 weight = 9
 
 [[Languages.en.menu.main]]
+identifier = "account-baseline"
+name = "Account Baseline"
+url = "solutions/account-baseline"
+parent = "solutions"
+weight = 10
+
+[[Languages.en.menu.main]]
+identifier = "semper"
+name = "SEMPER"
+url = "solutions/semper"
+parent = "solutions"
+weight = 11
+
+[[Languages.en.menu.main]]
+identifier = "tools"
+name = "Tools"
+url = "tools"
+weight = 12
+
+[[Languages.en.menu.main]]
+identifier = "subnet-calculator"
+name = "VPC Subnet Calculator"
+url = "subnet-calculator"
+parent = "tools"
+weight = 13
+
+[[Languages.en.menu.main]]
+identifier = "terraform-collection"
+name = "Terraform Collection"
+url = "terraform-collection"
+parent = "tools"
+weight = 14
+
+[[Languages.en.menu.main]]
 name = "Blog"
 url = "blog"
-weight = 10
+weight = 15
 
 [[Languages.en.menu.main]]
 name = "Team"
 url = "team"
-weight = 11
+weight = 16
 
 [[Languages.en.menu.main]]
 name = "Contact"
 url = "contact"
-weight = 12
+weight = 17
 
 ###################################### English Footer ######################################
 
@@ -277,7 +313,7 @@ weight = 1
 
 [[Languages.de.menu.main]]
 identifier = "services"
-name = "Dienstleistungen"
+name = "Services"
 url = "services"
 weight = 2
 
@@ -311,7 +347,7 @@ weight = 6
 
 [[Languages.de.menu.main]]
 identifier = "solutions"
-name = "Lösungen"
+name = "Solutions"
 url = "solutions"
 weight = 7
 
@@ -323,26 +359,60 @@ parent = "solutions"
 weight = 8
 
 [[Languages.de.menu.main]]
-identifier = "semper"
-name = "SEMPER"
-url = "solutions/semper"
+identifier = "account-lifecycle"
+name = "Account Lifecycle"
+url = "solutions/account-lifecycle"
 parent = "solutions"
 weight = 9
 
 [[Languages.de.menu.main]]
+identifier = "account-baseline"
+name = "Account Baseline"
+url = "solutions/account-baseline"
+parent = "solutions"
+weight = 10
+
+[[Languages.de.menu.main]]
+identifier = "semper"
+name = "SEMPER"
+url = "solutions/semper"
+parent = "solutions"
+weight = 11
+
+[[Languages.de.menu.main]]
+identifier = "tools"
+name = "Tools"
+url = "tools"
+weight = 12
+
+[[Languages.de.menu.main]]
+identifier = "subnet-calculator"
+name = "VPC Subnetzrechner"
+url = "subnet-calculator"
+parent = "tools"
+weight = 13
+
+[[Languages.de.menu.main]]
+identifier = "terraform-collection"
+name = "Terraform Sammlung"
+url = "terraform-collection"
+parent = "tools"
+weight = 14
+
+[[Languages.de.menu.main]]
 name = "Blog"
 url = "blog"
-weight = 10
+weight = 15
 
 [[Languages.de.menu.main]]
 name = "Team"
 url = "team"
-weight = 11
+weight = 16
 
 [[Languages.de.menu.main]]
 name = "Kontakt"
 url = "contact"
-weight = 12
+weight = 17
 
 ###################################### German Footer ######################################
 

@@ -45,3 +45,9 @@
 
 - id: "reading_duration"
   translation: "Reading time"
+
+- id: "calculate"
+  translation: "Calculate"
+
+- id: "reset"
+  translation: "Reset"

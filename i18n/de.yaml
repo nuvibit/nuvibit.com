@@ -45,3 +45,9 @@
 
 - id: "reading_duration"
   translation: "Lesezeit"
+
+- id: "calculate"
+  translation: "Berechnen"
+
+- id: "reset"
+  translation: "Zurücksetzen"

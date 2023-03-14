@@ -7,6 +7,7 @@ summary: "We introduce the Nuvibit reference architecture for customers with an 
 tags:
   - aws
   - foundation
+  - baseline
 duration: 5
 draft: false
 ---

@@ -25,7 +25,7 @@ feature_section:
   left_side:
   - title : "Infrastructure as Code"
     icon : "fa-file-code"
-    content : "At the heart of our Foundation Blueprint are [Terraform](https://www.terraform.io/intro/index.html 'Introduction to Terraform') modules, which dramatically simplify the management of the entire Cloud Foundation."
+    content : "At the heart of our Foundation Blueprint are [Terraform modules](https://developer.hashicorp.com/terraform/tutorials/modules/module 'Terraform Modules Overview'), which dramatically simplify the management of the entire Cloud Foundation."
 
   - title : "Scalability"
     icon : "fa-chart-line"
@@ -33,11 +33,11 @@ feature_section:
     
   - title : "Well Architected"
     icon : "fa-drafting-compass"
-    content : "Our reference architectures are based on experience, best practices and the [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected 'AWS Well-Architected')."
+    content : "Our reference architectures are based on practical experience, best practices and the [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected 'AWS Well-Architected')."
 
   # feature at the right of the image
   right_side:
-  - title : "Tailored to the needs"
+  - title : "Tailored to your needs"
     icon : "fa-cut"
     content : "A great Foundation is just as unique as the customer himself and that's why we adjust our Blueprint exactly to your needs."
 

@@ -7,6 +7,7 @@ summary: "Wir stellen die Nuvibit Referenzarchitektur für Kunden mit einer AWS 
 tags:
   - aws
   - foundation
+  - baseline
 duration: 5
 
 draft: false

@@ -1,18 +1,19 @@
 ---
-title: "AWS Account Lifecycle Manager"
+title: "AWS Account Lifecycle"
 date: 2022-01-05T11:00:00+06:00
-image: "images/blog/aws-account-lifecycle-manager/account-lifecycle-illustration.png"
+image: "images/blog/aws-account-lifecycle/account-lifecycle-illustration.png"
 description: "In diesem Blogbeitrag stellen wir unsere Lifecycle-Management-Lösung für AWS Accounts vor."
 summary: "In einer AWS Multi-Account Umgebung ist es wichtig, dass AWS Accounts auf automatisierte Art und Weise erstellt, verwaltet und recycelt werden können. In diesem Blogbeitrag stellen wir unsere Lifecycle-Management-Lösung für AWS Accounts vor."
 tags:
   - aws
   - foundation
+  - lifecycle
 duration: 5
 draft: false
 ---
 ## Kontext
 Sobald Ihre AWS Umgebung wächst, entsteht meist der Wunsch und die Anforderung, sichere und konforme AWS Accounts auf automatisierte Weise bereitzustellen.
-Der [Nuvibit Cloud Foundation Blueprint](solutions/foundation-blueprint) beinhaltet unseren **Account Lifecycle Manager** mit genau dieser Funktionalität. Unsere Lösung ist nicht nur in der Lage, neue AWS Accounts bereitzustellen, sondern hält sie auch auf dem neuesten Stand und recycelt sie, wenn sie nicht mehr benötigt werden (eine typische Anforderung für experimentelle Workloads).
+Der [Nuvibit Cloud Foundation Blueprint](solutions/foundation-blueprint) beinhaltet unseren **Account Lifecycle** mit genau dieser Funktionalität. Unsere Lösung ist nicht nur in der Lage, neue AWS Accounts bereitzustellen, sondern hält sie auch auf dem neuesten Stand und recycelt sie, wenn sie nicht mehr benötigt werden (eine typische Anforderung für experimentelle Workloads).
 
 ## GitOps by design
 Wir sind überzeugt, dass [GitOps](faq/#gitops 'What is GitOps?') die beste Methode für Mitarbeiter ist, um neue technische Ressourcen zu bestellen.
@@ -48,15 +49,15 @@ Aus diesem Grund haben wir unsere Lösung so konzipiert, dass ein neuer AWS Acco
 Jeder AWS Account wird in einem eigenen Konfigurations-Block definiert.
 Das Team, welches für die Cloud Foundation zuständig ist, kann diese Pull Requests sorgfältig prüfen und im Anschluss freigeben oder ablehnen.
 
-Der **Account Lifecycle Manager** entscheidet anhand der Attribute welche [AWS Organizations Unit (OU)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html) ein Account zugewiesen wird. 
+Der **Account Lifecycle** entscheidet anhand der Attribute welche [AWS Organizations Unit (OU)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html) ein Account zugewiesen wird. 
 Die Liste kann selbstverständlich mit den Attributen erweitert werden, die für Ihre Organisation wichtig sind (z.B. Kostenstelle, Team Name, DNS Zone, Kostenverantwortlicher, etc). 
-Der **Account Lifecycle Manager** kann diese Attribute auch zu einem späteren Zeitpunkt aktualisieren, den Account in eine andere OU schieben, die Bereitstellung von Netzwerkressourcen einleiten und beispielsweise einen neuen Account Owner hinterlegen.<br/>
+Der **Account Lifecycle** kann diese Attribute auch zu einem späteren Zeitpunkt aktualisieren, den Account in eine andere OU schieben, die Bereitstellung von Netzwerkressourcen einleiten und beispielsweise einen neuen Account Owner hinterlegen.<br/>
 Alle diese Attribute werden als Tags des AWS Accounts gespeichert und können in Ihrer [IaC](faq/#iac 'What is Infrastructure as Code?') Definition aufgerufen werden.
 
 ## Account Rollout
 Der Rollout eines neuen AWS Accounts kann in vier Phasen unterteilt werden:
 
-![img](images/blog/aws-account-lifecycle-manager/rollout-diag-highres.png)
+![img](images/blog/aws-account-lifecycle/rollout-diag-highres.png)
 <br/>
 {{<table "table table-striped table-bordered">}}
 | Phase | Beschreibung |
@@ -84,7 +85,7 @@ Um einen AWS Account zu recyclen, reicht es, im Account Inventory Repository das
 ```
 
 Das Recycling wird in fünf Phasen ausgeführt:
-![img](images/blog/aws-account-lifecycle-manager/recycling-diag-highres.png)
+![img](images/blog/aws-account-lifecycle/recycling-diag-highres.png)
 
 <br/>
 {{<table "table table-striped table-bordered">}}
@@ -113,7 +114,7 @@ Sobald ein neuer Account benötigt wird, kann ein recycelter Account wiederverwe
 
 ## Massgeschneidert für Ihre Umgebung
 Uns ist bewusst, dass die Toolchain in jeder Firma eine individuelle Entscheidung ist. 
-Es ist essentiell, dass der Account Lifecycle Manager **in die bestehende Toolchain passt**. 
+Es ist essentiell, dass der Account Lifecycle **in die bestehende Toolchain passt**. 
 Dadurch wird die Einstiegshürde für die Teams auch deutlich verringert.
 Aus diesem Grund haben wir unsere Lösung so konzipiert, dass sie extrem flexibel ist.<br/>
 

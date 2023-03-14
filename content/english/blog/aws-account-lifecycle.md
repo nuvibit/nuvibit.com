@@ -1,18 +1,19 @@
 ---
-title: "AWS Account Lifecycle Manager"
+title: "AWS Account Lifecycle"
 date: 2022-01-05T11:00:00+06:00
-image: "images/blog/aws-account-lifecycle-manager/account-lifecycle-illustration.png"
+image: "images/blog/aws-account-lifecycle/account-lifecycle-illustration.png"
 description: "In this blog post, we introduce our lifecycle management solution for AWS Accounts."
 summary: "In an AWS multi-account environment, it is essential that AWS Accounts can be created, managed, and recycled in an automated manner. In this blog post, we introduce our lifecycle management solution for AWS Accounts."
 tags:
   - aws
   - foundation
+  - lifecycle
 duration: 5
 draft: false
 ---
 ## Context
 As your AWS footprint grows you will encounter the need to provision secure and compliant AWS Accounts in an automated way.
-Our [Nuvibit Cloud Foundation Blueprint](solutions/foundation-blueprint "Foundation Blueprint product page") includes the **Account Lifecycle Manager**, which addresses exactly this challenge. Our solution is not only able to provision new AWS Accounts, but also keeps them up to date and recycles them when they are no longer needed (a common requirement for experimental workloads).
+Our [Nuvibit Cloud Foundation Blueprint](solutions/foundation-blueprint "Foundation Blueprint product page") includes the **Account Lifecycle**, which addresses exactly this challenge. Our solution is not only able to provision new AWS Accounts, but also keeps them up to date and recycles them when they are no longer needed (a common requirement for experimental workloads).
 
 ## GitOps by design
 We believe that [GitOps](faq/#gitops 'What is GitOps?') is the best way for employees to order new resources. Therefore, a new AWS Account can be ordered with a simple pull request containing the required information.
@@ -47,15 +48,15 @@ We believe that [GitOps](faq/#gitops 'What is GitOps?') is the best way for empl
 Every AWS Account is defined in a dedicated config code block.
 Pull requests can be approved or denied after thorough review by the team responsible for your Cloud Foundation.
 
-The **Account Lifecycle Manager** determines the [AWS Organizations Unit (OU)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html) placement based on the defined attributes.
+The **Account Lifecycle** determines the [AWS Organizations Unit (OU)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html) placement based on the defined attributes.
 Naturally, the list of attributes can be extended to your organizational requirements (i.e. cost center, DNS zone, team name, manager mail).
-The **Account Lifecycle Manager** can also update these attributes later on and will automatically migrate AWS Accounts into the correct OU, initiate provisioning of network resources and for example assign a new owner.<br/>
+The **Account Lifecycle** can also update these attributes later on and will automatically migrate AWS Accounts into the correct OU, initiate provisioning of network resources and for example assign a new owner.<br/>
 All these attributes are stored as tags of the AWS Account and can be retrieved in your [IaC](faq/#iac 'What is Infrastructure as Code?') definition.
 
 ## Account Rollout
 The rollout of a new AWS Account can be divided into four stages:
 
-![img](images/blog/aws-account-lifecycle-manager/rollout-diag-highres.png)
+![img](images/blog/aws-account-lifecycle/rollout-diag-highres.png)
 <br/>
 {{<table "table table-striped table-bordered">}}
 | Stage | Description |
@@ -83,7 +84,7 @@ To recycle an AWS Account you can simply update the account inventory repository
 
 The recycling is done in five stages:
 
-![img](images/blog/aws-account-lifecycle-manager/recycling-diag-highres.png)
+![img](images/blog/aws-account-lifecycle/recycling-diag-highres.png)
 
 <br/>
 {{<table "table table-striped table-bordered">}}
@@ -111,7 +112,7 @@ As soon as a new account is needed the recycled account can be reused by removin
 ```
 
 ## Customized to fit your environment
-We understand that tooling is a very individual choice for every organization. It is crucial that the account lifecycle manager **fits into the existing tooling landscape** to reduce the learning curve for your teams as much as possible.
+We understand that tooling is a very individual choice for every organization. It is crucial that the Account Lifecycle **fits into the existing tooling landscape** to reduce the learning curve for your teams as much as possible.
 That is why we designed this solution to be highly flexible.<br/>
 
 The [CI/CD](faq/#cicd 'What is CI/CD?') workflows can be implemented with the tooling of your choice (Jenkins, Bamboo, Gitlab, CircleCI, GitHub Actions, etc). 

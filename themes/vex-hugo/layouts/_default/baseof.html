@@ -14,7 +14,7 @@
 		// in december (11) let it snow on landing page
 		document.addEventListener('DOMContentLoaded', function () {
 			const d = new Date();
-			let month = d.getMonth();
+			var month = d.getMonth();
 			if (month == 11) {
 				// let it snow
 				$("#snow").toggle();
@@ -43,7 +43,7 @@
 		// function to cancel image zoom
 		function cancel_zoom() {
 			window.removeEventListener('scroll', cancel_zoom);
-			let zoomed_img = document.getElementById("zoomed-image")
+			var zoomed_img = document.getElementById("zoomed-image")
 			if (zoomed_img) {
 				zoomed_img.classList.add("img-max-400");
 				zoomed_img.removeAttribute("id");
@@ -54,7 +54,7 @@
 
 		// function to image zoom
 		function image_zoom(element) {
-			let zoomed_img = element.firstElementChild;
+			var zoomed_img = element.firstElementChild;
 			if (zoomed_img && zoomed_img.id == "zoomed-image") {
 				zoomed_img.classList.add("img-max-400");
 				zoomed_img.removeAttribute("id");
@@ -107,6 +107,122 @@
 			}
 
 			return relocate_uri;
+		}
+
+		// function to copy subnet to clipboard
+		function copy_subnet(subnet, id) {
+			var $temp = $("<input>");
+			$("body").append($temp);
+			element = document.getElementById(id);
+			$temp.val(subnet).select();
+			document.execCommand("copy");
+			$temp.remove();
+			element.classList.add("fa-solid");
+		}
+
+		// function to add custom validation message for network ranges and cidr blocks
+		function subnetCalculatorValidate() {
+			const ip_range = document.getElementById('ip_range');
+			const subnet_cidrs = document.getElementById('subnet_cidrs');
+
+			if(ip_range.validity.patternMismatch){
+				ip_range.setCustomValidity('Value must be valid IPv4 network range (e.g. 172.31.0.0/16) and CIDR block must be between 8 and 28');
+			}else{
+				ip_range.setCustomValidity('');
+			}
+			if(subnet_cidrs.validity.patternMismatch){
+				subnet_cidrs.setCustomValidity('Values can be comma(,) separated and each value must be between 16 and 28');
+			}else{
+				subnet_cidrs.setCustomValidity('');
+			}
+		}
+
+		function resetCalculator() {
+			// reset button values
+			document.getElementById("ip_range").value = "";
+			document.getElementById("subnet_cidrs").value = "";
+			location.reload();
+		}
+
+		// function to calculate subnets based on network range and cidr blocks
+		function subnetCalculator() {
+			// get supernet/major network range from input
+			var supernet = document.getElementById("ip_range").value;
+			// calculate info of supernet
+			var supernet_network = supernet.split("/")[0]
+			var supernet_cidr = supernet.split("/")[1]
+			var supernet_ips = 2**(32-supernet_cidr)
+			// get cidr blocks from input
+			var tmp = document.getElementById("subnet_cidrs").value;
+			var subnet_cidrs = tmp.replace("/", "").split(",").sort()
+			// define subnet placeholder variables
+			var subnets_calculated = []
+			var subnet_count = 0
+			var subnet_ips_sum = 0
+			// if a single cidr block in list then divide network equally
+			if (subnet_cidrs.length == 1) {
+				prefix_length = subnet_cidrs[0]
+				prefix_count = 2**(Math.max(prefix_length-supernet_cidr, 0))
+				subnet_cidrs = Array(prefix_count).fill(prefix_length)
+			}
+			// set initial network iteration
+			current_network = supernet_network
+			subnet_count = subnet_cidrs.length
+			// get subnet table to dynamically append with calculation results
+			var table = document.getElementsByClassName("subnet-table")[0]
+			// delete existing subnet table content
+			$(".subnet-table td").remove();
+			// loop for every subnet and calculate network address
+			for (var i = 0, subnet_cidr; subnet_cidr = subnet_cidrs[i++];) {
+				subnet_ips = 2**(32-subnet_cidr)
+				subnet = current_network+"/"+subnet_cidr
+				subnets_calculated.push(subnet)
+				// update current network iteration
+				current_subnet_decimal = IpSubnetCalculator.toDecimal(current_network);
+				current_subnet_decimal += subnet_ips
+				current_network = IpSubnetCalculator.toString(current_subnet_decimal)
+				subnet_ips_sum += subnet_ips
+				// generate new table row
+				var row = table.insertRow(-1);
+				var cell1 = row.insertCell(0);
+				var cell2 = row.insertCell(1);
+				// generate cell content
+				copy_id = "copy-subnet" + i
+				copy_icon = "<i id='"+copy_id+"' class='fa-regular fa-copy'></i>";
+				copy_html = "<span class='copy-table-cell' onclick='copy_subnet(\""+subnet+"\", \""+copy_id+"\");'>"+copy_icon+"</span>";
+				subnet_cell = subnet + copy_html;
+				cell1.innerHTML = subnet_cell
+				cell2.innerHTML = 2**(32-subnet_cidr)-5;
+				if (subnet_ips_sum > supernet_ips) {
+					cell1.style.color = "Red";
+					cell2.style.color = "Red";
+				}
+			}
+			// enable subnet calculation stats
+			document.getElementById("subnet_stats").hidden = false;
+			// check if address space was oversubscribed
+			if (subnet_ips_sum > supernet_ips) {
+				var status = "not successfull";
+				if (userLangPref && userLangPref === "de"){
+					status = "nicht erfolgreich";
+				}
+				document.getElementById("subnet_stats_status").style.color = "Red";
+				document.getElementById("subnet_stats_usage").style.color = "Red";
+			} else {
+				var status = "successfull";
+				if (userLangPref && userLangPref === "de"){
+					status = "erfolgreich";
+				}
+				document.getElementById("subnet_stats_status").style.color = "ForestGreen";
+				document.getElementById("subnet_stats_usage").style.color = "ForestGreen";
+			}
+			// enable and update subnet calculator stats
+			subnet_stats_count = document.getElementById("subnet_stats_count") ;
+			subnet_stats_count.innerHTML = subnet_count;
+			subnet_stats_status = document.getElementById("subnet_stats_status");
+			subnet_stats_status.innerHTML = status;
+			subnet_stats_usage = document.getElementById("subnet_stats_usage");
+			subnet_stats_usage.innerHTML = Math.round(subnet_ips_sum/supernet_ips*100);
 		}
 
 		// determine the language preference for the user

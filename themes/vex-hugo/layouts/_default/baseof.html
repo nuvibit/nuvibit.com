@@ -120,20 +120,38 @@
 			element.classList.add("fa-solid");
 		}
 
+		function clearValidate() {
+			const validation_error = document.getElementById("validation_message")
+			if (validation_error.innerHTML != ""){
+				document.getElementById('ip_range').classList.remove("btn-validation-error");
+				document.getElementById('subnet_cidrs').classList.remove("btn-validation-error");
+				validation_error.innerHTML = "";
+			}
+		}
+
 		// function to add custom validation message for network ranges and cidr blocks
 		function subnetCalculatorValidate() {
 			const ip_range = document.getElementById('ip_range');
+			const ip_range_regex = /^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}\s?\/([8-9]|1[0-9]|2[0-8])$/
 			const subnet_cidrs = document.getElementById('subnet_cidrs');
+			const subnet_cidrs_regex = /^\/?(1[6-9]|2[0-8])(,\s?\/?(1[6-9]|2[0-8]))*$/
 
-			if(ip_range.validity.patternMismatch){
-				ip_range.setCustomValidity('Value must be valid IPv4 network range (e.g. 172.31.0.0/16) and CIDR block must be between 8 and 28');
+			if(ip_range_regex.test(ip_range.value)){
+				ip_range.classList.remove("btn-validation-error");
 			}else{
-				ip_range.setCustomValidity('');
+				let message = "Allowed is a valid IPv4 network range (e.g. 172.31.0.0/16) with CIDR block between 8 and 28"
+				ip_range.classList.add("btn-validation-error");
+				document.getElementById("validation_message").innerHTML = message;
+				return false;
 			}
-			if(subnet_cidrs.validity.patternMismatch){
-				subnet_cidrs.setCustomValidity('Values can be comma(,) separated and each value must be between 16 and 28');
+			if(subnet_cidrs_regex.test(subnet_cidrs.value)){
+				document.getElementById("validation_message").innerHTML = "";
+				subnet_cidrs.classList.remove("btn-validation-error");
 			}else{
-				subnet_cidrs.setCustomValidity('');
+				let message = "Allowed is a single CIDR block (e.g. 24) or a comma separated list (e.g. 24,24,24) between 16 and 28"
+				subnet_cidrs.classList.add("btn-validation-error");
+				document.getElementById("validation_message").innerHTML = message;
+				return false;
 			}
 		}
 
@@ -147,13 +165,13 @@
 		// function to calculate subnets based on network range and cidr blocks
 		function subnetCalculator() {
 			// get supernet/major network range from input
-			var supernet = document.getElementById("ip_range").value;
+			var supernet = document.getElementById("ip_range").value.replace(/\s+/g, '');
 			// calculate info of supernet
 			var supernet_network = supernet.split("/")[0]
 			var supernet_cidr = supernet.split("/")[1]
 			var supernet_ips = 2**(32-supernet_cidr)
 			// get cidr blocks from input
-			var tmp = document.getElementById("subnet_cidrs").value;
+			var tmp = document.getElementById("subnet_cidrs").value.replace(/\s+/g, '');
 			var subnet_cidrs = tmp.replace("/", "").split(",").sort()
 			// define subnet placeholder variables
 			var subnets_calculated = []

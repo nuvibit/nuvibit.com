@@ -173,6 +173,12 @@
 			// calculate info of supernet
 			var supernet_network = supernet.split("/")[0]
 			var supernet_cidr = supernet.split("/")[1]
+			// get network address
+			var network_info = IpSubnetCalculator.calculateSubnetMask(supernet_network, supernet_cidr);
+			// replace ip range with actual network range
+			supernet_network = network_info.ipLowStr
+
+
 			var supernet_ips = 2**(32-supernet_cidr)
 			// get cidr blocks from input
 			var tmp = document.getElementById("subnet_cidrs").value.replace(/\s+/g, '');
@@ -239,6 +245,8 @@
 				document.getElementById("subnet_stats_usage").style.color = "ForestGreen";
 			}
 			// enable and update subnet calculator stats
+			subnet_stats_network = document.getElementById("subnet_stats_network") ;
+			subnet_stats_network.innerHTML = supernet_network+"/"+supernet_cidr;
 			subnet_stats_count = document.getElementById("subnet_stats_count") ;
 			subnet_stats_count.innerHTML = subnet_count;
 			subnet_stats_status = document.getElementById("subnet_stats_status");

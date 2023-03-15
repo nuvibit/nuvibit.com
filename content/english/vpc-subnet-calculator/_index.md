@@ -19,6 +19,9 @@ banner_section:
 ---
 <section id="subnet_stats" hidden>
 <p class="mb-3">
+  Network Range is <span id="subnet_stats_network" style="font-weight:bold;">0.0.0.0/0</span>
+</p>
+<p class="mb-3">
   Calculation of <span id="subnet_stats_count" style="font-weight:bold;">0</span> subnets was <span id="subnet_stats_status" style="font-weight:bold;color:ForestGreen;">successful</span>
 </p>
 <p class="mb-5">
@@ -26,7 +29,7 @@ banner_section:
 </p>
 </section>
 {{<table "table table-striped table-bordered text-center subnet-table">}}
-| SUBNET RANGE | AVAILABLE HOSTS <span style="color:red">*</span> |
+| SUBNET RANGE | HOSTS <span style="color:red">*</span> |
 | ------------- | ------------- |
 | x.x.x.x/16 | 65531 |
 | x.x.x.x/17 | 32763 |

@@ -19,6 +19,9 @@ banner_section:
 ---
 <section id="subnet_stats" hidden>
 <p class="mb-3">
+  Netzbereich ist <span id="subnet_stats_network" style="font-weight:bold;">0.0.0.0/0</span>
+</p>
+<p class="mb-3">
   Berechnung von <span id="subnet_stats_count" style="font-weight:bold;">0</span> Subnetzen war <span id="subnet_stats_status" style="font-weight:bold;color:ForestGreen;">erfolgreich</span>
 </p>
 <p class="mb-5">
@@ -26,7 +29,7 @@ banner_section:
 </p>
 </section>
 {{<table "table table-striped table-bordered text-center subnet-table">}}
-| SUBNETZBEREICH | VERFÜGBARE HOSTS <span style="color:red">*</span> |
+| SUBNETZBEREICH | HOSTS <span style="color:red">*</span> |
 | ------------- | ------------- |
 | x.x.x.x/16 | 65531 |
 | x.x.x.x/17 | 32763 |

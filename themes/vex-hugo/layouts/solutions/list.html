@@ -146,6 +146,20 @@
 {{- end }}
 <!-- TESTIMONIALS -->
 
+<!-- MARKDOWN CONTENT -->
+{{- if .Params.markdown_content.enable }}
+<div class="container mb-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10 text-center text-md-left mb-5">
+            <div class="container markdown">
+                {{ .Content }}
+            </div>
+        </div>
+    </div>
+</div>
+{{- end }}
+<!-- /MARKDOWN CONTENT -->
+
 <!-- LINKS -->
 {{- if .Params.link_section.enable }}
 {{- with .Params.link_section }}

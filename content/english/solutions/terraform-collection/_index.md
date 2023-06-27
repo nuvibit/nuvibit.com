@@ -6,13 +6,12 @@ draft: false
 banner_section:
     enable: true
     title: "Terraform Collection"
-    content: "A collection of our [Terraform modules](https://developer.hashicorp.com/terraform/tutorials/modules/module) specifically designed to deploy and manage an enterprise ready, compliant and scalable AWS cloud foundation. 
-              Our modules are used by numerous companies in production. Some modules are open source, others are only accessible to our customers and all of them are continuously improved.<br><br>
-              Did something catch your eye?"
+    content: "A collection of [Terraform modules](https://developer.hashicorp.com/terraform/tutorials/modules/module) specifically designed to deploy and manage an enterprise ready, compliant and scalable AWS cloud foundation. 
+              Our modules are used by numerous companies in production. Some modules are open source, others are only accessible to our customers and all of them are continuously improved.<br><br>"
     image : "images/solutions/ntc-logo.png"
     button:
         enable: true
-        label: "Get in touch"
+        label: "Book a demo"
         link: "contact"
 
 feature_section:
@@ -22,31 +21,31 @@ feature_section:
 
   # feature at the left of the image
   left_side:
-  - title : "Infrastructure as Code"
+  - title : "100% Terraform-native"
     icon : "fa-file-code"
-    content : "At the heart of our Foundation Blueprint are [Terraform modules](https://developer.hashicorp.com/terraform/tutorials/modules/module 'Terraform Modules Overview'), which dramatically simplify the management of the entire Cloud Foundation."
+    content : "Manage your AWS Foundation / Landing Zone entirely with Terraform without any dependencies on AWS Control Tower and CloudFormation."
 
-  - title : "Scalability"
+  - title : "Enterprise-ready and scalable"
     icon : "fa-chart-line"
-    content : "Our Foundation is designed with scalability in mind and can grow with your workloads."
+    content : "Designed for enterprises with high scalability requirements while leveraging industry standards and AWS best practices."
     
-  - title : "Well Architected"
-    icon : "fa-drafting-compass"
-    content : "Our reference architectures are based on practical experience, best practices and the [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected 'AWS Well-Architected')."
+  - title : "Designed for GitOps"
+    icon : "fa-brands fa-git"
+    content : "Manage your AWS Foundation / Landing Zone with a full GitOps approach. A self-service portal can be easily integrated via Git."
 
   # feature at the right of the image
   right_side:
-  - title : "Tailored to your needs"
-    icon : "fa-cut"
-    content : "A great Foundation is just as unique as the customer himself and that's why we adjust our Blueprint exactly to your needs."
+  - title : "Get updates and support"
+    icon : "fa-handshake-angle"
+    content : "Receive updates and support for our modules and keep your Foundation up to date and running. We specialize in AWS and Terraform with years of hands-on experience."
 
-  - title : "Transition of the organization"
-    icon : "fa-building"
-    content : "We put a lot of focus on the organizational structures and cloud strategy to maximize opportunities for success."
+  - title : "Accelerate your cloud journey"
+    icon : "fa-truck-fast"
+    content : "Building a scalable Landing Zone takes a lot of time and effort. We've poured all of our expertise into our collection, with focus on painless deployment and management."
 
-  - title : "Workshops & Training"
-    icon : "fa-chalkboard-teacher"
-    content : "Our goal is to enable our customers to successfully adopt and operate our Foundation Blueprint."
+  - title : "Continuously growing"
+    icon : "fa-seedling"
+    content : "We are continuously expanding and improving our collection, relying heavily on feedback from our customers."
 
 markdown_content:
   enable: true
@@ -111,13 +110,13 @@ testimonial_section:
 
 ---
 
-`This collection is constantly expanding and improving through customer feedback`
+`Nuvibit Terraform Collection (NTC)`
 {{<table "table table-striped table-bordered terraform-table">}}
 | MODULE | DESCRIPTION |
 | ------------- | ------------- |
 | <mark style="font-weight:900;background-color:#fbe3fc;">NTC Parameters</mark><img width=150/> | Terraform module to store and retrieve Terraform or JSON parameters without limitations of AWS SSM Parameter Store. This module is specifically designed to integrate with our NTC modules. |
 | <mark style="font-weight:900;background-color:#fbe3fc;">NTC Organizations</mark> | Terraform module to manage AWS Organizations. Supports nested Organizational Units (OU), delegated administrators and Service Control Policies. |
-| <mark style="font-weight:900;background-color:#fbe3fc;">NTC Account Factory</mark> | Terraform module for account vending, account lifecycle. |
+| <mark style="font-weight:900;background-color:#fbe3fc;">NTC Account Factory</mark> | Terraform module to manage account vending, account lifecycle and account baseline. Enables running an enterprise-ready and scalable Terraform Landing Zone. |
 | <mark style="font-weight:900;background-color:#fbe3fc;">NTC Identity Center</mark> | Terraform module to deploy and manage Single Sign-On via AWS IAM Identity Center (successor to AWS SSO). |
 | <mark style="font-weight:900;background-color:#fbe3fc;">NTC Log Archive</mark> | Terraform module to deploy and manage a central log archive, where foundation logs like cloudtrail, aws config, vpc flow logs will be saved. |
 | <mark style="font-weight:900;background-color:#fbe3fc;">NTC Security Tooling</mark> | Terraform module to deploy and manage central security tooling like AWS Security Hub, AWS Config and Amazon GuardDuty. |

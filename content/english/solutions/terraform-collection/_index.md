@@ -24,28 +24,28 @@ feature_section:
   - title : "100% Terraform-native"
     icon : "fa-file-code"
     content : "Manage your AWS Foundation / Landing Zone entirely with Terraform without any dependencies on AWS Control Tower and CloudFormation."
-
-  - title : "Enterprise-ready and scalable"
-    icon : "fa-chart-line"
-    content : "Designed for enterprises with high scalability requirements while leveraging industry standards and AWS best practices."
     
   - title : "Designed for GitOps"
     icon : "fa-brands fa-git"
-    content : "Manage your AWS Foundation / Landing Zone with a full GitOps approach. A self-service portal can be easily integrated via Git."
+    content : "Manage your AWS Foundation with a full GitOps approach. A self-service portal can be easily integrated via Git."
+
+  - title : "Simple to customize"
+    icon : "fa-user-gear"
+    content : "Our modular approach offers a lot of flexibility and options when it comes to implementing a personalized AWS Foundation / Landing Zone. We provide customization templates as a starting point that can be adopted or modified."
 
   # feature at the right of the image
   right_side:
-  - title : "Get updates and support"
-    icon : "fa-handshake-angle"
-    content : "Receive updates and support for our modules and keep your Foundation up to date and running. We specialize in AWS and Terraform with years of hands-on experience."
-
   - title : "Accelerate your cloud journey"
     icon : "fa-truck-fast"
-    content : "Building a scalable Landing Zone takes a lot of time and effort. We've poured all of our expertise into our collection, with focus on painless deployment and management."
+    content : "Building a scalable AWS Foundation / Landing Zone takes a lot of time and effort. We've poured all of our expertise into our collection, with focus on painless deployment and management."
 
-  - title : "Continuously growing"
-    icon : "fa-seedling"
-    content : "We are continuously expanding and improving our collection, relying heavily on feedback from our customers."
+  - title : "Enterprise-ready and scalable"
+    icon : "fa-chart-line"
+    content : "Designed for enterprises with high scalability requirements, aligned with industry standards and AWS best practices."
+
+  - title : "Get updates and support"
+    icon : "fa-handshake-angle"
+    content : "Receive updates and support for our modules and keep your AWS Foundation up to date and running. We specialize in AWS and Terraform with years of hands-on experience."
 
 markdown_content:
   enable: true
@@ -54,34 +54,10 @@ excerpt_section:
     enable: false
     title: "In a nutshell..."
     list:
-      - title: "Assessment"
+      - title: "Placeholder"
         enable: true
-        image: "images/solutions/foundation-blueprint-assessment.png"
-        content: "First and foremost, we need to get an overview of where you stand on your cloud journey and where you want to go.
-                  We will analyze your cloud strategy and organizational structures to adjust our Blueprint to them.
-                  Your connectivity, security and automation requirements are also identified and taken into account.<br/><br/>
-                  Part of the assessment also includes workshops to give you a better understanding of our Cloud Foundation."
-
-      - title: "Implementation"
-        enable: true
-        image: "images/solutions/foundation-blueprint-implementation.png"
-        content: "Once we have a clear overview and gathered all requirements, we assemble a team of specialists to build your tailored Cloud Foundation based on our Blueprint.
-                  We adapt our Foundation Blueprint Terraform modules to perfectly fit your needs and support you during implementation.<br/><br/>
-                  If needed, we can also adapt or build the tooling required for Infrastructure as Code deployments with Terraform."
-
-      - title: "Transition"
-        enable: true
-        image: "images/solutions/foundation-blueprint-transition.png"
-        content: "We have no interest in building a Cloud Foundation without ensuring that the necessary capabilities on your side will be established to run it successfully.
-                  Because we believe that hands-on experience is the best way to learn new skills, we support the employees responsible for operations with on-the-job training.<br/><br/>
-                  Part of the transition includes cementing the [Cloud Foundation Capabilities](/blog/cloud-foundation-map 'Nuvibit Cloud Foundation Blog Post') which are essential to establish a Cloud Operating Model."
-
-      - title: "Support"
-        enable: true
-        image: "images/solutions/foundation-blueprint-support.png"
-        content: "Even after the successful implementation of your Cloud Foundation, we want to continue supporting you on your cloud journey.
-                  We can help you to optimize and refine your Foundation based on our Terraform modules.<br/><br/>
-                  In addition, we can provide you with updates to our Foundation Terraform modules and implement your feature requests."
+        image: "images/solutions/placeholder.png"
+        content: "Lorem Ipsum.<br/><br/>"
 
 link_section:
     enable: false
@@ -110,9 +86,9 @@ testimonial_section:
 
 ---
 
-`Nuvibit Terraform Collection (NTC)`
+## Nuvibit Terraform Collection (NTC) Modules 
 {{<table "table table-striped table-bordered terraform-table">}}
-| MODULE | DESCRIPTION |
+| NAME | DESCRIPTION |
 | ------------- | ------------- |
 | <mark style="font-weight:900;background-color:#fbe3fc;">NTC Parameters</mark><img width=150/> | Terraform module to store and retrieve Terraform or JSON parameters without limitations of AWS SSM Parameter Store. This module is specifically designed to integrate with our NTC modules. |
 | <mark style="font-weight:900;background-color:#fbe3fc;">NTC Organizations</mark> | Terraform module to manage AWS Organizations. Supports nested Organizational Units (OU), delegated administrators and Service Control Policies. |
@@ -123,6 +99,31 @@ testimonial_section:
 | <mark style="font-weight:900;background-color:#fbe3fc;">NTC IPAM</mark> | Terraform module to deploy and manage Amazon VPC IP Address Manager (IPAM). In combination with the VPC module a highly automated AWS network can be realized. |
 | <mark style="font-weight:900;background-color:#fbe3fc;">NTC VPC</mark> | Terraform module to deploy and manage AWS VPC networking. This module is designed for high flexibility and allows extensive scaling. |
 | <mark style="font-weight:900;background-color:#fbe3fc;">Account Baseline Templates</mark> | Terraform module which provides templates for account baseline configurations. Can be combined with NTC Account Factory module to precisely roll out account baselines across AWS accounts in multiple regions. |
-| <mark style="font-weight:900;background-color:#fbe3fc;">Account Lifecycle Templates</mark> | Terraform module which provides templates for account lifecycle customization. Can be combined with NTC Account Factory module to manage the AWS account lifecycle (e.g. destroy default VPCs when new AWS account is created). |
+| <mark style="font-weight:900;background-color:#fbe3fc;">Account Lifecycle Templates</mark> | Terraform module which provides templates for account lifecycle customization. Can be combined with NTC Account Factory module to manage the AWS account lifecycle (e.g. destroy default VPC when new account is created). |
 | <mark style="font-weight:900;background-color:#fbe3fc;">SCP Templates</mark> | Terraform module which provides templates for Service Control Policies (SCP). Can be combined with NTC Organizations module to precisely roll out SCPs across Organizational Units and AWS accounts. |
 {{</table>}}
+<br><br>
+
+## Comparison
+{{<table "table table-striped table-bordered terraform-table">}}
+| FEATURE | LANDING ZONE ACCELERATOR | AWS CONTROL TOWER | NUVIBIT TERRAFORM COLLECTION |
+| ------------- | ------------- | ------------- | ------------- |
+| Delivery mechanism | CDK and CloudFormation | AWS Managed Service | Terraform |
+| Architectural Support | | | |
+| Account Structure | | | |
+| Federated Access | | | |
+| Operations | | | |
+| Use existing AWS Organization | | | |
+| Use existing SSO environment | | | |
+| Use existing AWS Service Catalog environment | | | |
+| When to use? | | | |
+{{</table>}}
+
+
+<!-- 
+https://www.sierra-cedar.com/2023/06/13/aws-account-factory-for-terraform-vs-aws-landing-zone-accelerator/
+https://www.meshcloud.io/de/blog/aws-landing-zone-comparison/
+https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-foundation-playbook/landing-zone.html
+https://www.ecloudcontrol.com/aws-landing-zone-vs-control-tower/
+https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-aws-environment/building-landing-zones.html 
+-->

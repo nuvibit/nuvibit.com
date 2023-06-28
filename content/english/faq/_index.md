@@ -67,4 +67,10 @@ faq:
               The code is then delivered quickly and seamlessly as a part of the CD process."
       anchor: cicd
       enable: true
+      
+    - question: "what is segregation of duties?"
+      answer: "Segregation of duties is the practice of dividing critical tasks and responsibilities among multiple individuals within an organization to prevent conflicts of interest and reduce the risk of fraud or errors.<br>
+      By ensuring that no one person has complete control over an entire process, controls and practices are established that promote transparency and accountability."
+      anchor: segregation
+      enable: true
 ---

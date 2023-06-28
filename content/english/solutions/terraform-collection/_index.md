@@ -26,8 +26,8 @@ feature_section:
     content : "Manage your AWS Foundation / Landing Zone entirely with Terraform without any dependencies on AWS Control Tower and CloudFormation."
     
   - title : "Designed for GitOps"
-    icon : "fa-brands fa-git"
-    content : "Manage your AWS Foundation with a full GitOps approach. A self-service portal can be easily integrated via Git."
+    icon : "fa-brands fa-git-alt"
+    content : "Manage your AWS Foundation with a full GitOps approach. A self-service portal can be easily integrated via Git. Separation of duties can be enforced with Git and pipeline permissions."
 
   - title : "Simple to customize"
     icon : "fa-user-gear"
@@ -104,19 +104,27 @@ testimonial_section:
 {{</table>}}
 <br><br>
 
-## Comparison
+## AWS Foundation / Landing Zone Comparison
+\
+An AWS Foundation / Landing Zone refers to a well-architected, pre-configured environment that serves as a foundation for deploying and managing workloads in the AWS cloud.
+It provides a set of best practices and architectural patterns to ensure consistency, security, and scalability across your AWS infrastructure. 
+It helps organizations establish a standardized and secure baseline setup, reducing the time and effort required for initial infrastructure deployment. 
+
+There are several solutions for deploying an out-of-the-box AWS Landing Zone.
+Each solution offers certain benefits and has its own limitations.
+\
+\
 {{<table "table table-striped table-bordered terraform-table">}}
-| FEATURE | LANDING ZONE ACCELERATOR | AWS CONTROL TOWER | NUVIBIT TERRAFORM COLLECTION |
+|  | AWS LANDING ZONE ACCELERATOR | AWS CONTROL TOWER | NUVIBIT TERRAFORM COLLECTION |
 | ------------- | ------------- | ------------- | ------------- |
-| Delivery mechanism | CDK and CloudFormation | AWS Managed Service | Terraform |
-| Architectural Support | | | |
-| Account Structure | | | |
-| Federated Access | | | |
-| Operations | | | |
-| Use existing AWS Organization | | | |
-| Use existing SSO environment | | | |
-| Use existing AWS Service Catalog environment | | | |
-| When to use? | | | |
+| <mark style="font-weight:900;">Purpose</mark> | Provides a framework for rapidly deploying a multi-account AWS environment with recommended best practices. | Offers an automated and prescriptive approach to set up and govern a secure multi-account AWS environment. | Provides a customizable, declarative, and modular approach to deploying and managing a scalable and enterprise-ready AWS environment. |
+| <mark style="font-weight:900;">Delivery mechanism</mark> | CDK and CloudFormation | AWS Managed Service + Add-on solutions | Terraform |
+| <mark style="font-weight:900;">Setup Complexity</mark> | Requires some CloudFormation and CDK knowledge. Control Tower or AWS Organizations must be set up first. A CloudFormation template must be executed for the initial deployment of the solution. YAML configuration files are then managed in AWS CodeCommit and deployed through CodePipelines and CloudFormation StackSets. | Control Tower itself can be deployed and managed directly via the AWS console. For customization, additional knowledge in CloudFormation or Terraform is required. Add-on solutions for Control Tower need to be provisioned separately and drastically increase complexity. | Requires Terraform knowledge to implement and operate. The modules will be parameterized and deployed individually. Detailed sample repositories are provided as a blueprint for implementing the entire solution. Additional documentation and step-by-step instructions are also available. |
+| <mark style="font-weight:900;">Solution lifecycle</mark> | Entire solution needs to be updated via CloudFormation template. After updating the solution all CodePipelines will be invoked and rolled out. There is no support for a staged rollout. | AWS Control Tower landing zone can be updated through the Landing zone settings page. Additionally enrolled accounts need to be updated in a second step. Add-on solutions need to be updated separately. | Each module has its own lifecycle and can be updated and downgraded individually. Running a Terraform plan highlights the changes and should be reviewed to avoid unwanted changes. A staged rollout is supported and recommended. |
+| <mark style="font-weight:900;">Automation in CI/CD</mark> | Based on AWS CodeCommit, CodeBuild and CodePipelines. Cannot be integrated with customer pipelines | Automation is executed in the background by AWS and is not configurable by the user. Add-ons (e.g. Account Factory for Terraform) offer some customization via customer pipelines. | All Terraform modules are deployed via customer pipelines. In addition, NTC Account Factory provides a native AWS solution for dynamically rolling out account baselines with Terraform across multiple accounts and regions. |
+| <mark style="font-weight:900;">Operation and troubleshooting</mark> | Errors can occur in the CDK code (TypeScript), CloudFormation Templates / StackSets and CodePipelines. In combination with the Control Tower, the operating and troubleshooting effort becomes even greater. | Errors can occur in the AWS Service Catalog, CloudFormation Templates / StackSets, and by specifying invalid inputs or by not updating Landing Zone and account enrollments. When using add-ons (e.g. Account Factory for Terraform), additional errors may occur in the add-on solution itself and when customizing the solution (e.g. account baseline). | Everything is deployed with Terraform and therefore potential errors are also related to Terraform. Errors can occur in the Terraform code, Terraform dependencies (versions and providers) and the customization (account lifecycle and account baseline). |
+| <mark style="font-weight:900;">Support</mark> | Issues can be submitted to Githup Repository. AWS offers assistance with an AWS Business or Enterprise Support plan. | AWS offers assistance for Control Tower itself with an AWS Business or Enterprise Support plan. Issues with add-ons (e.g. Account Factory for Terraform) can be submitted to Githup Repository. | Support for the Terraform modules is included in the subscription. Additional assistance (e.g. training) can be offered separately. |
+| <mark style="font-weight:900;">License</mark> | OpenSource | Proprietary. Control Tower source code is not viewable. No additional fees for Control Tower service itself. | Only available with active subscription that provides access to modules, updates, documentation, and support. Source code is fully viewable, and downloaded modules can be modified and used even after the subscription expires. |
 {{</table>}}
 
 

@@ -126,3 +126,13 @@ There are several solutions for deploying a ready-to-use AWS Foundation / Landin
 | <mark style="font-weight:900;">Support</mark> | Issues can be submitted to Githup Repository. AWS offers assistance with an AWS Business or Enterprise Support plan. | AWS offers assistance for Control Tower itself with an AWS Business or Enterprise Support plan. Issues with add-on solutions (e.g. Account Factory for Terraform) can be submitted to Githup Repository. | Support for the Terraform modules is included in the subscription. Additional assistance (e.g. training) can be offered separately. |
 | <mark style="font-weight:900;">License</mark> | Open source. The source code is fully viewable. | Proprietary AWS managed service. Control Tower source code is not viewable. No additional fees for Control Tower service itself. | Must be licensed to access modules, updates, documentation, and support. The source code is fully viewable, and downloaded modules can be modified and used even after the license expires. |
 {{</table>}}
+<br>
+
+## Choose the right AWS Foundation / Landing Zone approach
+
+There is no single solution for AWS Foundation / Landing Zone which meets the requirements for all customers.<br>
+While we believe that our Terraform Collection offers many unique key benefits for a platform engineering team, there are still some cases where we would not necessarily recommend our solution.
+<br><br>
+There are many aspects to consider when choosing the right solution, but this simplified flowchart can provide some guidance.
+
+![img](images/solutions/ntc-decision-tree.png)

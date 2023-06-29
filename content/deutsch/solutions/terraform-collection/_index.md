@@ -1,12 +1,12 @@
 ---
 title: "Terraform Collection"
-description: "A colletion of Infrastructure as Code Terraform modules specifically designed to deploy and manage an enterprise ready, compliant and scalable AWS cloud foundation."
+description: "A colletion of Infrastructure as Code Terraform modules specifically designed to deploy and manage an enterprise-ready, compliant and scalable AWS cloud foundation."
 draft: false
 
 banner_section:
     enable: true
     title: "Terraform Collection"
-    content: "A collection of [Terraform modules](https://developer.hashicorp.com/terraform/tutorials/modules/module) specifically designed to deploy and manage an enterprise ready, compliant and scalable AWS cloud foundation. 
+    content: "A collection of [Terraform modules](https://developer.hashicorp.com/terraform/tutorials/modules/module) specifically designed to deploy and manage an enterprise-ready, compliant and scalable AWS cloud foundation. 
               Our modules are used by numerous companies in production. Some modules are open source, others are only accessible to our customers and all of them are continuously improved.<br><br>"
     image : "images/solutions/ntc-logo.png"
     button:

@@ -1,16 +1,17 @@
 ---
 title: "Terraform Collection"
-description: "A colletion of Infrastructure as Code Terraform modules specifically designed to deploy and manage an enterprise-ready, compliant and scalable AWS Foundation / Landing Zone."
+description: "Eine Sammlung von Infrastructure as Code Terraform-Modulen, die spezifisch für die Bereitstellung und Verwaltung einer AWS Foundation / Landing Zone entwickelt wurden."
 draft: false
 
 banner_section:
     enable: true
     title: "Terraform Collection"
-    content: "A collection of [Terraform modules](https://developer.hashicorp.com/terraform/tutorials/modules/module) specifically designed to deploy and manage an enterprise-ready, compliant and scalable AWS Foundation / Landing Zone. Our flexible, declarative, and modular approach offers many unique benefits to a platform engineering team and drastically reduces the time and effort required for implementation.<br><br>"
+    content: "Eine Sammlung unserer [Terraform Module](https://developer.hashicorp.com/terraform/tutorials/modules/module), die spezifisch für die Bereitstellung und Verwaltung einer AWS Foundation / Landing Zone entwickelt wurden. 
+              Unser flexibler, deklarativer und modularer Ansatz bietet viele einzigartige Vorteile für ein Plattformentwicklungsteam und reduziert den Zeit- und Arbeitsaufwand für die Implementierung drastisch.<br><br>"
     image : "images/solutions/ntc-logo.png"
     button:
         enable: true
-        label: "Book a demo"
+        label: "Demo buchen"
         link: "contact"
 
 feature_section:
@@ -20,69 +21,68 @@ feature_section:
 
   # feature at the left of the image
   left_side:
-  - title : "100% Terraform-native"
+  - title : "100% Terraform-nativ"
     icon : "fa-file-code"
-    content : "Manage your AWS Foundation / Landing Zone entirely with Terraform without dependencies on AWS Control Tower and CloudFormation."
+    content : "Verwalten Sie Ihre AWS Foundation / Landing Zone vollständig mit Terraform ohne Abhängigkeiten von AWS Control Tower und CloudFormation."
     
-  - title : "Designed for GitOps"
+  - title : "Konzipiert für GitOps"
     icon : "fa-brands fa-git-alt"
-    content : "Manage your AWS Foundation / Landing Zone with a full GitOps approach. [Segregation of duties](/faq/#segregation 'What is segregation of duties?') can be enforced with Git repositories and pipeline permissions."
+    content : "Verwalten Sie Ihre AWS Foundation / Landing Zone mit einem vollständigen GitOps-Ansatz. [Segregation of duties](/faq/#segregation 'Was ist Aufgabentrennung?') kann mit Git-Repositories und Pipeline-Berechtigungen durchgesetzt werden."
 
-  - title : "Simple to customize"
+  - title : "Einfach personalisierbar"
     icon : "fa-user-gear"
-    content : "Our modular approach offers a lot of flexibility and options when it comes to implementing a personalized AWS Foundation / Landing Zone. We provide customization templates as a starting point which can be adopted or modified."
+    content : "Unser modularer Ansatz bietet eine hohe Flexibilität und viele Optionen, wenn es um die Implementierung einer personalisierten AWS Foundation / Landing Zone geht. Wir bieten Vorlagen für die Personalisierung, die als Ausgangspunkt dienen und direkt übernommen oder angepasst werden können."
 
   # feature at the right of the image
   right_side:
-  - title : "Get updates and support"
+  - title : "Updates und Support"
     icon : "fa-handshake-angle"
-    content : "Receive updates and support for our modules and keep your AWS Foundation / Landing Zone up to date and running. We are specialized in AWS and Terraform with years of hands-on experience."
+    content : "Erhalten Sie Updates und Support für unsere Module und bleiben Sie mit Ihrer AWS Foundation / Landing Zone auf dem neuesten Stand und funktionsfähig. Wir sind auf AWS und Terraform spezialisiert mit langjähriger praktischer Erfahrung."
 
-  - title : "Enterprise-ready and scalable"
+  - title : "Enterprise-ready und skalierbar"
     icon : "fa-chart-line"
-    content : "Designed for enterprises with high scalability requirements, aligned with industry standards and AWS best practices. Reliably manage hundreds of accounts."
+    content : "Entwickelt für Unternehmen mit hohen Skalierbarkeitsanforderungen, abgestimmt auf Branchenstandards und AWS Best Practices. Verwalten Sie zuverlässig Hunderte von Accounts."
 
-  - title : "Accelerate your cloud journey"
+  - title : "Beschleunigung der Cloud Journey"
     icon : "fa-truck-fast"
-    content : "Building a scalable AWS Foundation / Landing Zone takes a lot of time and effort. With our collection, you can leverage our extensive experience with AWS and Terraform to significantly accelerate your implementation process."
+    content : "Der Aufbau einer skalierbaren AWS Foundation / Landing Zone erfordert viel Zeit und Mühe. Mit unserer Collection können Sie unsere umfassende Erfahrung mit AWS und Terraform nutzen, um Ihren Implementierungsprozess erheblich zu beschleunigen."
 
 markdown_content:
   enable: true
 
 excerpt_section:
     enable: false
-    title: "In a nutshell..."
-    list:
-      - title: "Placeholder"
-        enable: true
-        image: "images/solutions/placeholder.png"
-        content: "Lorem Ipsum.<br/><br/>"
+    # title: "In a nutshell..."
+    # list:
+    #   - title: "Placeholder"
+    #     enable: true
+    #     image: "images/solutions/placeholder.png"
+    #     content: "Lorem Ipsum.<br/><br/>"
 
 link_section:
     enable: false
-    list:
-      - title: "Documentation"
-        enable: false
-        content: "You can find more details in our documentation"
-        links:
-          - url: "https://url1"
-            link_name: "documentation 1"
-          - url: "https://url2"
-            link_name: "documentation 1"
-      
-      - title: "Blog"
-        enable: true
-        content: "Read more about the Nuvibit Foundation Blueprint in these blog posts"
-        blog_tag: foundation
+    # list:
+    #   - title: "Documentation"
+    #     enable: false
+    #     content: "You can find more details in our documentation"
+    #     links:
+    #       - url: "https://url1"
+    #         link_name: "documentation 1"
+    #       - url: "https://url2"
+    #         link_name: "documentation 1"
+
+    #   - title: "Blog"
+    #     enable: true
+    #     content: "Read more about the Nuvibit Foundation Blueprint in these blog posts"
+    #     blog_tag: foundation
 
 testimonial_section:
     enable: false
-    title: "Customer References"
-    list:
-      - image: "images/logo/logo_nuvibit_dark.png"
-        name: "Lorem ipsum dolor"
-        content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt"
-
+    # title: "Customer References"
+    # list:
+    #   - image: "images/logo/logo_nuvibit_dark.png"
+    #     name: "Lorem ipsum dolor"
+    #     content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt"
 ---
 
 ## Nuvibit Terraform Collection (NTC) Modules 
@@ -135,46 +135,3 @@ While we are confident that our Terraform Collection offers many unique benefits
 There are many aspects to consider when choosing the right solution (e.g. delivery mechanism determines how customization and troubleshooting is performed), but this simplified decision tree can provide guidance.
 
 ![img](images/solutions/ntc-decision-tree.png)
-
-
-
-
-<!-- 
----
-title: "Terraform Collection"
-description: "Eine Sammlung von Infrastructure as Code Terraform-Modulen, die spezifisch für die Bereitstellung und Verwaltung einer AWS Cloud Foundation entwickelt wurden."
-draft: false
-
-banner_section:
-    enable: true
-    title: "Terraform Collection"
-    content: "Eine Sammlung unserer [Terraform Module](https://developer.hashicorp.com/terraform/tutorials/modules/module), die spezifisch für die Bereitstellung und Verwaltung einer AWS Cloud Foundation entwickelt wurden. 
-              Unsere Module werden von zahlreichen Unternehmen in der Produktion eingesetzt. Einige Module sind Open Source, andere sind nur für unsere Kunden zugänglich und alle Module werden kontinuierlich weiterentwickelt.<br><br>
-              Interesse geweckt?"
-    image : "images/solutions/ntc-logo.png"
-    button:
-        enable: true
-        label: "Kontakt aufnehmen"
-        link: "contact"
----
-
-`Diese Sammlung wird laufend erweitert und durch Kundenfeedback verbessert`
-{{<table "table table-striped table-bordered terraform-table">}}
-| NAME | BESCHREIBUNG | KATEGORIE |
-| ------------- | ------------- | ------------- |
-| <mark style="font-weight:900;background-color:#9ec8ff;">Github Workflows</mark><img width=100/> | Wiederverwendbare Workflows für [Github Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) zur Umsetzung einer Terraform Pipeline. Unterstützt Terraform Cloud & Enterprise und kann zum Testen von Terraform Modulen mit [Terratest](https://terratest.gruntwork.io/) verwendet werden. | [Open Source](https://github.com/nuvibit/github-terraform-workflows) <img width=70/> |
-| <mark style="font-weight:900;background-color:#fbe3fc;">Lambda</mark> | Terraform Modul zur Provisionierung von AWS Lambda Funktionen. Unsere Serverless-Lösungen basieren auf diesem Modul. | [Open Source](https://registry.terraform.io/modules/nuvibit/lambda/aws/latest) |
-| <mark style="font-weight:900;background-color:#fbe3fc;">Core Parameters</mark> | Terraform Modul zum Speichern und Lesen einer Terraform HCL map via AWS SSM Parameter Store. Dies ermöglicht das Speichern von zentral verwalteten Parametern, die über mehrere Pipelines und AWS-Accounts für die Foundation genutzt werden können. | [Open Source](https://registry.terraform.io/modules/nuvibit/core-parameters/aws/latest) |
-| <mark style="font-weight:900;background-color:#fbe3fc;">NTC Parameters</mark> | Terraform Modul zum Speichern und Abrufen von Terraform- oder JSON-Parametern ohne die Einschränkungen von AWS SSM Parameter Store. Dieses Modul ist speziell für die Integration mit unseren privaten Modulen konzipiert. | <i id="copy-subnet1" class="fa-solid fa-lock"></i> Privat |
-| <mark style="font-weight:900;background-color:#fbe3fc;">Organization</mark> | Terraform-Modul zur Bereitstellung und Verwaltung von AWS Organizations. Unterstützt Account Erstellung, Organisationseinheiten, Delegation von Administrationsaufgaben und Service Control Policies. | <i id="copy-subnet1" class="fa-solid fa-lock"></i> Privat |
-| <mark style="font-weight:900;background-color:#fbe3fc;">Identity Center</mark> | Terraform Modul zur Bereitstellung und Verwaltung von Single Sign-On in AWS IAM Identity Center (Nachfolger von AWS SSO). | <i id="copy-subnet1" class="fa-solid fa-lock"></i> Privat |
-| <mark style="font-weight:900;background-color:#fbe3fc;">VPC</mark> | Terraform Modul zur Bereitstellung und Verwaltung von AWS VPC-Netzwerken. Dieses Modul ist auf starke Flexibilität ausgelegt und ermöglicht umfangreiche Skalierung. | <i id="copy-subnet1" class="fa-solid fa-lock"></i> Privat |
-| <mark style="font-weight:900;background-color:#fbe3fc;">IPAM</mark> | Terraform Modul zur Bereitstellung und Verwaltung von Amazon VPC IP Address Manager (IPAM). In Kombination mit dem VPC-Modul kann ein hochautomatisiertes AWS-Netzwerk realisiert werden. | <i id="copy-subnet1" class="fa-solid fa-lock"></i> Privat |
-| <mark style="font-weight:900;background-color:#fbe3fc;">Route 53</mark> | Terraform Modul zur Bereitstellung und Verwaltung des Amazon Route 53 DNS Service. | <i id="copy-subnet1" class="fa-solid fa-lock"></i> Privat |
-| <mark style="font-weight:900;background-color:#ffbaba;">Account Lifecycle</mark> | Flexible Lösung zur Verwaltung von AWS-Accounts mit Terraform. Einfach und effizient mit Support für Self-Service-Integration auf Basis von Git. | <i id="copy-subnet1" class="fa-solid fa-lock"></i> Privat |
-| <mark style="font-weight:900;background-color:#ffbaba;">Account Baseline</mark> | Flexible Lösung zur Verwaltung der Basiskonfiguration von AWS-Accounts mit Terraform. Skalierbar und effizient mit Support für Hunderte von Accounts über mehrere Regionen. | <i id="copy-subnet1" class="fa-solid fa-lock"></i> Privat |
-{{</table>}}
-<mark style="font-weight:900;background-color:#9ec8ff;">Hilfsmittel</mark>
-<mark style="font-weight:900;background-color:#fbe3fc;">Terraform Modul</mark>
-<mark style="font-weight:900;background-color:#ffbaba;">Terraform native Lösung</mark>
--->

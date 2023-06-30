@@ -6,7 +6,8 @@ draft: false
 banner_section:
     enable: true
     title: "Terraform Collection"
-    content: "A collection of [Terraform modules](https://developer.hashicorp.com/terraform/tutorials/modules/module) specifically designed to deploy and manage an enterprise-ready, compliant and scalable AWS Foundation / Landing Zone. Our flexible, declarative, and modular approach offers many unique benefits to a platform engineering team and drastically reduces the time and effort required for implementation.<br><br>"
+    content: "A collection of [Terraform modules](https://developer.hashicorp.com/terraform/tutorials/modules/module) specifically designed to deploy and manage an enterprise-ready, compliant and scalable AWS Foundation / Landing Zone. 
+              Our flexible, declarative, and modular approach offers many unique benefits to a platform engineering team and drastically reduces the time and effort required for the implementation process.<br><br>"
     image : "images/solutions/ntc-logo.png"
     button:
         enable: true
@@ -34,7 +35,7 @@ feature_section:
 
   # feature at the right of the image
   right_side:
-  - title : "Get updates and support"
+  - title : "Updates and support"
     icon : "fa-handshake-angle"
     content : "Receive updates and support for our modules and keep your AWS Foundation / Landing Zone up to date and running. We are specialized in AWS and Terraform with years of hands-on experience."
 
@@ -51,38 +52,37 @@ markdown_content:
 
 excerpt_section:
     enable: false
-    title: "In a nutshell..."
-    list:
-      - title: "Placeholder"
-        enable: true
-        image: "images/solutions/placeholder.png"
-        content: "Lorem Ipsum.<br/><br/>"
+    # title: "In a nutshell..."
+    # list:
+    #   - title: "Placeholder"
+    #     enable: true
+    #     image: "images/solutions/placeholder.png"
+    #     content: "Lorem Ipsum.<br/><br/>"
 
 link_section:
     enable: false
-    list:
-      - title: "Documentation"
-        enable: false
-        content: "You can find more details in our documentation"
-        links:
-          - url: "https://url1"
-            link_name: "documentation 1"
-          - url: "https://url2"
-            link_name: "documentation 1"
+    # list:
+    #   - title: "Documentation"
+    #     enable: false
+    #     content: "You can find more details in our documentation"
+    #     links:
+    #       - url: "https://url1"
+    #         link_name: "documentation 1"
+    #       - url: "https://url2"
+    #         link_name: "documentation 1"
       
-      - title: "Blog"
-        enable: true
-        content: "Read more about the Nuvibit Foundation Blueprint in these blog posts"
-        blog_tag: foundation
+    #   - title: "Blog"
+    #     enable: true
+    #     content: "Read more about the Nuvibit Foundation Blueprint in these blog posts"
+    #     blog_tag: foundation
 
 testimonial_section:
     enable: false
-    title: "Customer References"
-    list:
-      - image: "images/logo/logo_nuvibit_dark.png"
-        name: "Lorem ipsum dolor"
-        content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt"
-
+    # title: "Customer References"
+    # list:
+    #   - image: "images/logo/logo_nuvibit_dark.png"
+    #     name: "Lorem ipsum dolor"
+    #     content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt"
 ---
 
 ## Nuvibit Terraform Collection (NTC) Modules 

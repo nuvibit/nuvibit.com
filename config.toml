@@ -87,7 +87,7 @@ logo_banner_width = "200px"
 logo_footer = "images/logo/logo-nuvibit-badge.png"
 logo_footer_width = "175px"
 # Meta data
-description = "We help you build an enterprise ready, compliant and scalable foundation for the public cloud."
+description = "We help you build an enterprise-ready, compliant and scalable foundation for the public cloud."
 author = "Nuvibit AG"
 contact_form_url = "https://forms.zohopublic.eu/nuvibit/form/Contactus/formperma/TUZO-GqMg11XIInReyJqMICqAS7hWGm6YdW3oVM32hE"
 
@@ -163,58 +163,44 @@ weight = 8
 [[Languages.en.menu.main]]
 identifier = "terraform-collection"
 name = "Terraform Collection"
-url = "terraform-collection"
+url = "solutions/terraform-collection"
 parent = "solutions"
 weight = 9
-
-[[Languages.en.menu.main]]
-identifier = "account-lifecycle"
-name = "Account Lifecycle"
-url = "solutions/account-lifecycle"
-parent = "solutions"
-weight = 10
-
-[[Languages.en.menu.main]]
-identifier = "account-baseline"
-name = "Account Baseline"
-url = "solutions/account-baseline"
-parent = "solutions"
-weight = 11
 
 [[Languages.en.menu.main]]
 identifier = "semper"
 name = "SEMPER"
 url = "solutions/semper"
 parent = "solutions"
-weight = 12
+weight = 10
 
 [[Languages.en.menu.main]]
 identifier = "tools"
 name = "Tools"
 url = "tools"
-weight = 13
+weight = 11
 
 [[Languages.en.menu.main]]
 identifier = "vpc-subnet-calculator"
 name = "VPC Subnet Calculator"
 url = "vpc-subnet-calculator"
 parent = "tools"
-weight = 14
+weight = 12
 
 [[Languages.en.menu.main]]
 name = "Blog"
 url = "blog"
-weight = 15
+weight = 13
 
 [[Languages.en.menu.main]]
 name = "Team"
 url = "team"
-weight = 16
+weight = 14
 
 [[Languages.en.menu.main]]
 name = "Contact"
 url = "contact"
-weight = 17
+weight = 15
 
 ###################################### English Footer ######################################
 
@@ -361,58 +347,44 @@ weight = 8
 [[Languages.de.menu.main]]
 identifier = "terraform-collection"
 name = "Terraform Collection"
-url = "terraform-collection"
+url = "solutions/terraform-collection"
 parent = "solutions"
 weight = 9
-
-[[Languages.de.menu.main]]
-identifier = "account-lifecycle"
-name = "Account Lifecycle"
-url = "solutions/account-lifecycle"
-parent = "solutions"
-weight = 10
-
-[[Languages.de.menu.main]]
-identifier = "account-baseline"
-name = "Account Baseline"
-url = "solutions/account-baseline"
-parent = "solutions"
-weight = 11
 
 [[Languages.de.menu.main]]
 identifier = "semper"
 name = "SEMPER"
 url = "solutions/semper"
 parent = "solutions"
-weight = 12
+weight = 10
 
 [[Languages.de.menu.main]]
 identifier = "tools"
 name = "Tools"
 url = "tools"
-weight = 13
+weight = 11
 
 [[Languages.de.menu.main]]
 identifier = "vpc-subnet-calculator"
 name = "VPC Subnetzrechner"
 url = "vpc-subnet-calculator"
 parent = "tools"
-weight = 14
+weight = 12
 
 [[Languages.de.menu.main]]
 name = "Blog"
 url = "blog"
-weight = 15
+weight = 13
 
 [[Languages.de.menu.main]]
 name = "Team"
 url = "team"
-weight = 16
+weight = 14
 
 [[Languages.de.menu.main]]
 name = "Kontakt"
 url = "contact"
-weight = 17
+weight = 15
 
 ###################################### German Footer ######################################
 

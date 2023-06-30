@@ -13,7 +13,7 @@ banner_section:
     image: "images/solutions/semper-logo.png"
     button:
         enable: true
-        label: "Get in touch"
+        label: "Book a demo"
         link: "contact"
 
 feature_section:

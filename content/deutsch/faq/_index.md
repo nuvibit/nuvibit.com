@@ -70,4 +70,10 @@ faq:
               CD ist dafür zuständig, dass die Änderungen automatisiert in die bestehende Systemumgebung integriert werden."
       anchor: cicd
       enable: true
+      
+    - question: "Was is Segregation of Duties?"
+      answer: "Segregation of duties bedeutet die Aufteilung kritischer Aufgaben und Verantwortlichkeiten auf verschiedene Personen innerhalb einer Organisation, um Interessenkonflikte zu vermeiden und das Risiko von Betrug oder Fehlern zu reduzieren. <br>
+      Indem sichergestellt wird, dass keine einzelne Person die vollständige Kontrolle über einen gesamten Prozess hat, werden Kontrollen und Praktiken eingeführt, die Transparenz und Verantwortlichkeit fördern."
+      anchor: segregation
+      enable: true
 ---

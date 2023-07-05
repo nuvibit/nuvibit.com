@@ -13,7 +13,7 @@
 	<input type=hidden id="js_base_url" value='{{ .Site.BaseURL }}'/>
 	<input type=hidden id="js_uri" value='{{ .Permalink | relURL }}'/>
 	<input type=hidden id="js_cookieconsent_message" value='{{ i18n "cookie_message" }}'/>
-	<input type=hidden id="js_cookieconsent_dismiss" value='{{ i18n "close" }}'/>
+	<input type=hidden id="js_cookieconsent_dismiss" value='{{ i18n "confirm" }}'/>
 	<input type=hidden id="js_cookieconsent_link" value='{{ i18n "cookie_policy" }}'/>
 	<input type=hidden id="js_cookieconsent_href" value='{{ "/privacy-policy/#51-cookies" | relLangURL }}'/>
 	{{- partial "footer.html" . -}}

@@ -17,10 +17,13 @@
   translation: "English"
 
 - id: "cookie_policy"
-  translation: "Unsere Cookie Richtlinien"
+  translation: "Mehr erfahren"
 
 - id: "cookie_message"
-  translation: "Auf dieser Webseite werden Cookies eingesetzt, um Ihnen das beste Nutzererlebnis zu bieten."
+  translation: "Auf unserer Webseite verwenden wir Cookies, um Ihnen das beste Nutzererlebnis zu ermöglichen."
+
+- id: "confirm"
+  translation: "Alles klar!"
 
 - id: "close"
   translation: "Schliessen"

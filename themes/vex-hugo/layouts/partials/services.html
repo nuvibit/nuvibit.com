@@ -16,7 +16,7 @@
     {{ range $index, $element := (where .items "enable" true) }}
     {{- if (mod $index 2) }}
     <div class="row item-row">
-      <div class="col-md-6 text-center p-md-7 p-5 mb-lg-0 zoom" onclick="image_zoom(this)">
+      <div class="col-md-6 text-center p-md-7 p-5 mb-lg-0 zoom">
         <img class="img-fluid img-max-400" src="{{ .image | absURL }}" alt='Illustration of {{ .image | replaceRE ".*?([\\w-]+).png" "$1" }} service'>
       </div>
       <div class="col-md-6 align-self-center text-center text-md-left">
@@ -44,7 +44,7 @@
           {{ end }}
         </div>
       </div>
-      <div class="col-md-6 order-md-2 order-1 text-center p-5 mb-lg-0 zoom" onclick="image_zoom(this)">
+      <div class="col-md-6 order-md-2 order-1 text-center p-5 mb-lg-0 zoom">
         <img class="img-fluid img-max-400" src="{{ .image | absURL }}" alt='Illustration of {{ .image | replaceRE ".*?([\\w-]+).png" "$1" }} service'>
       </div>
     </div>

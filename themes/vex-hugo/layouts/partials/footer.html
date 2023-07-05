@@ -19,7 +19,7 @@
 						{{ if eq $translation.Lang .Lang }}
 						{{ $selected := false }}
 							<li class="list-group-item bg-transparent border-0 p-0 mb-2">
-								<a href="{{ $translation.Permalink }}" onclick='update_language_pref("{{.Lang}}")'>
+								<a href="{{ $translation.Permalink }}" id="lang-element" data-value="{{.Lang}}">
 									{{ if eq $pageLang .Lang}}
 									<i class="fas fa-toggle-on"></i>
 									{{ else }}

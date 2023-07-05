@@ -18,7 +18,7 @@
 
                 <div class="product-slider">
                     {{ range (where .Site.RegularPages "Section" "certifications") }}
-                    <div class="block m-3" onclick='redirect("{{ .Permalink }}")'>
+                    <div class="block m-3" id="badge-element" data-value="{{ .Permalink }}">
                         <div class="gallery-overlay">
                             <a href="{{ .Permalink }}" class="gallery-popup">
                                 <i class="fas fa-plus"></i>

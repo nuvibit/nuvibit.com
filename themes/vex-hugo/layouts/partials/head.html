@@ -26,5 +26,10 @@
   <meta property="og:image" content="{{ . | absURL }}" />
   {{ end }}
   {{ template "_internal/opengraph.html" . }}
-  {{ template "_internal/google_analytics.html" . }}
+
+  {{/*  
+    {{ template "_internal/google_analytics.html" . }}  
+    integrated hugo template includes inline script. using own implementation with custom.js
+  */}}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.Config.Services.GoogleAnalytics.ID }}"></script>
 </head>

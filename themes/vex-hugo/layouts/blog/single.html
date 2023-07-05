@@ -21,7 +21,7 @@
         <a href="mailto:?subject={{ .Title | safeHTML }}&body={{ .Title | safeHTML }}%0d%0a{{ .Permalink | absURL }}" target="_blank" alt="send mail">
           <i class="fas fa-envelope mr-4"></i>
         </a>
-        <a href="#" onclick="copy_url(url='{{ .Permalink | absURL }}')">
+        <a href="#" id="copy-element" data-value="{{ .Permalink | absURL }}">
           <i class="fas fa-link"></i>
         </a>
         <div class="p-0 mt-md-0 mt-3 col-sm-12 col-md-6 float-left text-muted text-center text-md-left">
@@ -29,7 +29,7 @@
         </div>
       </div>
 
-      <div class="w-75 mt-4 alert alert-primary" style="display:none;" id="alert">
+      <div class="w-75 mt-4 alert alert-primary inline-display-none" id="alert">
         <strong>Link has been copied to clipboard.</strong>
       </div>
       <hr class="w-75 pb-3"/>
@@ -51,7 +51,7 @@
         <a href="mailto:?subject={{ .Title | safeHTML }}&body={{ .Title | safeHTML }}%0d%0a{{ .Permalink | absURL }}" target="_blank" alt="send mail">
           <i class="fas fa-envelope mr-4"></i>
         </a>
-        <a href="#" onclick="copy_url(url='{{ .Permalink | absURL }}')" alt="copy link">
+        <a href="#" id="copy-element" data-value="{{ .Permalink | absURL }}" alt="copy link">
           <i class="fas fa-link"></i>
         </a>
     </div>

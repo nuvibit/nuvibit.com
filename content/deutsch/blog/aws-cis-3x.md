@@ -98,7 +98,7 @@ Wir empfehlen die Verwendung von Amazon EventBridge Rules auf dem default event-
 Sie erhalten so eine sofortige Ereignisbenachrichtigung mit vollständigen Ereignisinformationen.  
   
 Beispiel für ein CIS AWS 3.10-Ereignis:
-```json {linenos=table,hl_lines=[],linenostart=50}
+```json {linenos=table,hl_lines=[],linenostart=50, noClasses=false}
 {
   "version": "0",
   "id": "3bfd2f21-b57f-5cae-5423-cefcda82691b",

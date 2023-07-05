@@ -18,7 +18,7 @@ Our [Nuvibit Cloud Foundation Blueprint](solutions/foundation-blueprint "Foundat
 ## GitOps by design
 We believe that [GitOps](faq/#gitops 'What is GitOps?') is the best way for employees to order new resources. Therefore, a new AWS Account can be ordered with a simple pull request containing the required information.
 
-```terraform {linenos=table,hl_lines=[],linenostart=50}
+```terraform {linenos=table,hl_lines=[],linenostart=50, noClasses=false}
   aws-c1-lifecycle = {
     title         = "lifecycle account"
     account_owner = "max.muster@customer1.com"
@@ -61,10 +61,10 @@ The rollout of a new AWS Account can be divided into four stages:
 {{<table "table table-striped table-bordered">}}
 | Stage | Description |
 | ---   | :---  |
-| <span style="color: #009900">**1. Pull Request**</span> | The user creates a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) in the account inventory repository containing all the required tags. The pull request is reviewed, approved and merged by the team responsible for the cloud foundation. |
-| <span style="color: #0008FF">**2. Account Provisioning**</span> | Terraform is triggered by the merge commit and creates a new AWS Account, enables AWS SSO, creates a new repository and finally creates the [CI/CD](faq/#cicd 'What is CI/CD?') pipeline that provisions the workload resources to the AWS Account. <br/> In this example we use github for the code repositories and terraform cloud for CI/CD. |
-| <span style="color: #009999">**3. Account Configuration**</span> | Not everything can be done via terraform as there are some tools and actions that are not yet supported. For those exceptions we implemented [AWS Step Functions](https://aws.amazon.com/step-functions/?step-functions.sort-by=item.additionalFields.postDateTime&step-functions.sort-order=desc). <br/>The step functions are triggered by the CloudTrail Event that occurs as soon as a new account gets created. <br/>In our example we deploy three step functions: <br/>**- setup account**: deletes the default VPCs and all attached resources<br/>**- create email alias**: creates an email alias (in this example with Microsoft 365)<br/>**- add account to baseline**: Adds the new account to the global baseline repository
-| <span style="color: #FF00FF">**4. Global Baseline**</span> | The commit to the global baseline repository triggers the pipeline of the global baseline. The account baseline is rolled out to the newly created account and all the core components of the foundation are updated to interact with the new account.<br/>To learn more about the global baseline and it's components read our blog post about the [Reference architecture for AWS Multi-Account Customers](blog/aws-multiaccount-reference-architecture).|
+| <span class="inline-color-009900">**1. Pull Request**</span> | The user creates a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) in the account inventory repository containing all the required tags. The pull request is reviewed, approved and merged by the team responsible for the cloud foundation. |
+| <span class="inline-color-0008FF">**2. Account Provisioning**</span> | Terraform is triggered by the merge commit and creates a new AWS Account, enables AWS SSO, creates a new repository and finally creates the [CI/CD](faq/#cicd 'What is CI/CD?') pipeline that provisions the workload resources to the AWS Account. <br/> In this example we use github for the code repositories and terraform cloud for CI/CD. |
+| <span class="inline-color-009999">**3. Account Configuration**</span> | Not everything can be done via terraform as there are some tools and actions that are not yet supported. For those exceptions we implemented [AWS Step Functions](https://aws.amazon.com/step-functions/?step-functions.sort-by=item.additionalFields.postDateTime&step-functions.sort-order=desc). <br/>The step functions are triggered by the CloudTrail Event that occurs as soon as a new account gets created. <br/>In our example we deploy three step functions: <br/>**- setup account**: deletes the default VPCs and all attached resources<br/>**- create email alias**: creates an email alias (in this example with Microsoft 365)<br/>**- add account to baseline**: Adds the new account to the global baseline repository
+| <span class="inline-color-FF00FF">**4. Global Baseline**</span> | The commit to the global baseline repository triggers the pipeline of the global baseline. The account baseline is rolled out to the newly created account and all the core components of the foundation are updated to interact with the new account.<br/>To learn more about the global baseline and it's components read our blog post about the [Reference architecture for AWS Multi-Account Customers](blog/aws-multiaccount-reference-architecture).|
 {{</table>}}
 <br/>
 
@@ -72,7 +72,7 @@ The rollout of a new AWS Account can be divided into four stages:
 AWS does not offer a simple solution to delete accounts in an automated manner. To bypass this constraint we implemented an account recycling feature.
 To recycle an AWS Account you can simply update the account inventory repository with the **recycled flag**:
 
-```terraform {linenos=table,hl_lines=[6],linenostart=50}
+```terraform {linenos=table,hl_lines=[6],linenostart=50, noClasses=false}
  aws-c1-0001 = {
     title         = "marketing application - nonprod"
     account_owner = "max.muster@customer1.com"
@@ -90,11 +90,11 @@ The recycling is done in five stages:
 {{<table "table table-striped table-bordered">}}
 | Stage | Description |
 | ---   | :---  |
-| <span style="color: #CC6600">**1. Account Cleanup**</span> | The user has to perform a [terraform destroy](https://www.terraform.io/cli/commands/destroy "What is terraform destroy?") in his workspace to remove all resources that he has deployed over time.
-| <span style="color: #009900">**2. Pull Request**</span> | The user creates a pull request where he sets the **recycled** flag to **true**.
-| <span style="color: #0008FF">**3. Account recycling**</span> | Terraform removes the account pipline and repository and disables AWS SSO. Furthermore the account tags are updated to show that the account is recycled. |
-| <span style="color: #009999">**4. Baseline Commit**</span> | The tag change creates a CloutTrail Event which in turn triggers the step function that removes the account from the global basline repository.|
-| <span style="color: #FF00FF">**5. Global Baseline**</span> | The commit to the global baseline repository triggers the pipeline of the global baseline. The account baseline is removed from the account and all the core components of the foundation are updated to prevent interaction with the new account.<br/>Again, to learn more about the global baseline and it's components read our blog post about the [Reference architecture for AWS Multi-Account Customers](blog/aws-multiaccount-reference-architecture "Blog post: Reference architecture for AWS Multi-Account Customers").|
+| <span class="inline-color-CC6600">**1. Account Cleanup**</span> | The user has to perform a [terraform destroy](https://www.terraform.io/cli/commands/destroy "What is terraform destroy?") in his workspace to remove all resources that he has deployed over time.
+| <span class="inline-color-009900">**2. Pull Request**</span> | The user creates a pull request where he sets the **recycled** flag to **true**.
+| <span class="inline-color-0008FF">**3. Account recycling**</span> | Terraform removes the account pipline and repository and disables AWS SSO. Furthermore the account tags are updated to show that the account is recycled. |
+| <span class="inline-color-009999">**4. Baseline Commit**</span> | The tag change creates a CloutTrail Event which in turn triggers the step function that removes the account from the global basline repository.|
+| <span class="inline-color-FF00FF">**5. Global Baseline**</span> | The commit to the global baseline repository triggers the pipeline of the global baseline. The account baseline is removed from the account and all the core components of the foundation are updated to prevent interaction with the new account.<br/>Again, to learn more about the global baseline and it's components read our blog post about the [Reference architecture for AWS Multi-Account Customers](blog/aws-multiaccount-reference-architecture "Blog post: Reference architecture for AWS Multi-Account Customers").|
 {{</table>}}
 <br/>
 
@@ -102,7 +102,7 @@ The only thing left is an empty hull of the account that does not create any cos
 
 As soon as a new account is needed the recycled account can be reused by removing the recyled flag and updating the account attributes:
 
-```terraform {linenos=table,hl_lines=[],linenostart=50}
+```terraform {linenos=table,hl_lines=[],linenostart=50, noClasses=false}
   aws-c1-OOO1 = {
     title         = "sales application - nonprod"
     account_owner = "john.doe@customer1.com"

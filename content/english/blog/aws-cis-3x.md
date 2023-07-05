@@ -96,7 +96,7 @@ To find the alarm-triggering event information, you need to search the Amazon Cl
 ## Recommendation
 What we recommend is utilizing Amazon EventBridge Rules on the default event-bus for the CIS AWS 3.x event signatures. You will get an instant event notification with full event information.  
 Sample of an CIS AWS 3.10 Event:
-```json {linenos=table,hl_lines=[],linenostart=50}
+```json {linenos=table,hl_lines=[],linenostart=50, noClasses=false}
 {
   "version": "0",
   "id": "3bfd2f21-b57f-5cae-5423-cefcda82691b",

@@ -1081,3 +1081,55 @@ h1.faq-anchor {
         padding-bottom: 2rem !important;
     }
 }
+
+// ANCHOR inline styles
+.inline-color-009900 {
+    color: #009900;
+}
+
+.inline-color-0008FF {
+    color: #0008FF;
+}
+
+.inline-color-009999 {
+    color: #009999;
+}
+
+.inline-color-FF00FF {
+    color: #FF00FF;
+}
+
+.inline-color-CC6600 {
+    color: #CC6600;
+}
+
+.inline-color-red {
+    color: red;
+}
+
+.inline-color-lightgrey {
+    color: lightgrey;
+}
+
+.inline-mark-FBE3FC {
+    font-weight: 900;
+    background-color: #FBE3FC;
+}
+
+.inline-bold-900 {
+    font-weight: 900
+}
+
+.inline-display-none {
+    display: none;
+}
+
+.inline-iframe {
+    height: 600px;
+    width: 99%;
+    border: none;
+}
+
+.inline-min-width-190 {
+    min-width: 190px;
+}

@@ -5,7 +5,7 @@
 <section class="section" id="banner">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 text-center p-5 mb-md-0 zoom" onclick="image_zoom(this)">
+            <div class="col-md-6 text-center p-5 mb-md-0 zoom">
                 <img class="img-fluid" src="{{ .image | absURL }}"
                     alt='Illustration of {{ .Image | replaceRE ".*?(\\w+).png" "$1" }}'>
             </div>
@@ -35,17 +35,17 @@
                 <p id="validation_message" class="color-red"></p>
             </div>
             <div class="col-lg-10 text-center text-md-center mb-5">
-                <form name="vpccalc" onsubmit="event.preventDefault();subnetCalculator();" class="row">
+                <form name="vpccalc" class="row">
                     <input type="hidden" id="type" name="form" value="vpccalc">
                     <div class="col-lg-6 mb-3">
-                        <input type="text" class="form-control mb-2 text-md-center" id="ip_range" name="ip_range" oninput="clearValidate()" placeholder='IPv4 Network Range'>
+                        <input type="text" class="form-control mb-2 text-md-center" id="ip_range" name="ip_range" data-value="clear" placeholder='IPv4 Network Range'>
                     </div>
                     <div class="col-lg-6 mb-3">
-                        <input type="text" class="form-control mb-2 text-md-center" id="subnet_cidrs" name="subnet_cidrs" oninput="clearValidate()" placeholder='IPv4 CIDR block(s)'>
+                        <input type="text" class="form-control mb-2 text-md-center" id="subnet_cidrs" name="subnet_cidrs" data-value="clear" placeholder='IPv4 CIDR block(s)'>
                     </div>
                     <div class="col-12 align-self-center text-md-center mt-3">
-                        <button type="button" class="btn btn-main btn-reset mr-3 mb-4" style="min-width:190px;" onclick="resetCalculator();">{{ i18n "reset" }}</button>
-                        <button type="submit" value="send" class="btn btn-main mr-3 mb-4" style="min-width:190px;" onclick="return subnetCalculatorValidate();">{{ i18n "calculate" }}</button>
+                        <button type="button" class="btn btn-main btn-reset mr-3 mb-4 inline-min-width-190" id="calc-element" data-value="reset">{{ i18n "reset" }}</button>
+                        <button type="submit" value="send" class="btn btn-main mr-3 mb-4 inline-min-width-190" id="calc-element" data-value="validate">{{ i18n "calculate" }}</button>
                     </div>
                 </form>
             </div>

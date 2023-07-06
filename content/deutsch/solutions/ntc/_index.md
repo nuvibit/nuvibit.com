@@ -1,13 +1,12 @@
 ---
-title: "Terraform Collection"
-description: "Eine Sammlung von Infrastructure as Code Terraform-Modulen, die spezifisch für die Bereitstellung und Verwaltung einer AWS Foundation / Landing Zone entwickelt wurden."
+title: "Nuvibit Terraform Collection (NTC) - AWS Landing Zone / Foundation"
+description: "Nuvibit Terraform Collection (NTC) ist eine AWS Landing Zone / Foundation Lösung, basierend auf Infrastructure as Code Terraform-Modulen, die spezifisch für die Bereitstellung und Verwaltung einer unternehmenstauglichen, konformen und skalierbaren AWS-Umgebung entwickelt wurde."
 draft: false
 
 banner_section:
     enable: true
-    title: "Terraform Collection"
-    content: "Eine Sammlung unserer [Terraform Module](https://developer.hashicorp.com/terraform/tutorials/modules/module), die spezifisch für die Bereitstellung und Verwaltung einer AWS Foundation / Landing Zone entwickelt wurden. 
-              Unser flexibler, deklarativer und modularer Ansatz bietet viele einzigartige Vorteile für ein Plattform-Engineering-Team und reduziert den Zeit- und Arbeitsaufwand für die Implementierung drastisch.<br><br>"
+    title: "Nuvibit Terraform Collection (NTC)"
+    content: "ist eine AWS Landing Zone / Foundation Lösung, basierend auf Infrastructure as Code Terraform-Modulen, die spezifisch für die Bereitstellung und Verwaltung einer unternehmenstauglichen, konformen und skalierbaren AWS-Umgebung entwickelt wurde. Unser flexibler, deklarativer und modularer Ansatz bietet viele einzigartige Vorteile für ein Plattform-Engineering-Team und reduziert den Zeit- und Arbeitsaufwand für die Implementierung drastisch.<br><br>"
     image : "images/solutions/ntc-logo.png"
     button:
         enable: true
@@ -23,21 +22,21 @@ feature_section:
   left_side:
   - title : "100% Terraform-nativ"
     icon : "fa-file-code"
-    content : "Verwalten Sie Ihre AWS Foundation / Landing Zone vollständig mit Terraform ohne Abhängigkeiten von AWS Control Tower und CloudFormation."
+    content : "Verwalten Sie Ihre AWS Landing Zone / Foundation vollständig mit Terraform ohne Abhängigkeiten von AWS Control Tower und CloudFormation."
     
   - title : "Konzipiert für GitOps"
     icon : "fa-brands fa-git-alt"
-    content : "Verwalten Sie Ihre AWS Foundation / Landing Zone mit einem vollständigen GitOps-Ansatz. [Segregation of duties](/faq/#segregation 'Was ist Aufgabentrennung?') kann mit Git-Repositories und Pipeline-Berechtigungen durchgesetzt werden."
+    content : "Verwalten Sie Ihre AWS Landing Zone / Foundation mit einem vollständigen GitOps-Ansatz. [Segregation of duties](/faq/#segregation 'Was ist Aufgabentrennung?') kann mit Git-Repositories und Pipeline-Berechtigungen durchgesetzt werden."
 
   - title : "Einfach personalisierbar"
     icon : "fa-user-gear"
-    content : "Unser modularer Ansatz bietet eine hohe Flexibilität und viele Optionen, wenn es um die Implementierung einer personalisierten AWS Foundation / Landing Zone geht. Wir bieten Vorlagen für die Personalisierung, die als Ausgangspunkt dienen und direkt übernommen oder angepasst werden können."
+    content : "Unser modularer Ansatz bietet eine hohe Flexibilität und viele Optionen, wenn es um die Implementierung einer personalisierten AWS Landing Zone / Foundation geht. Wir bieten Vorlagen für die Personalisierung, die als Ausgangspunkt dienen und direkt übernommen oder angepasst werden können."
 
   # feature at the right of the image
   right_side:
   - title : "Updates und Support"
     icon : "fa-handshake-angle"
-    content : "Erhalten Sie Updates und Support für unsere Module und bleiben Sie mit Ihrer AWS Foundation / Landing Zone auf dem neuesten Stand und funktionsfähig. Wir sind auf AWS und Terraform spezialisiert mit langjähriger praktischer Erfahrung."
+    content : "Erhalten Sie Updates und Support für unsere Module und bleiben Sie mit Ihrer AWS Landing Zone / Foundation auf dem neuesten Stand und funktionsfähig. Wir sind auf AWS und Terraform spezialisiert mit langjähriger praktischer Erfahrung."
 
   - title : "Unternehmenstauglich und skalierbar"
     icon : "fa-chart-line"
@@ -45,7 +44,7 @@ feature_section:
 
   - title : "Beschleunigung der Cloud Journey"
     icon : "fa-truck-fast"
-    content : "Der Aufbau einer skalierbaren AWS Foundation / Landing Zone erfordert viel Zeit und Mühe. Mit unserer Collection können Sie unsere umfassende Erfahrung mit AWS und Terraform nutzen, um Ihren Implementierungsprozess erheblich zu beschleunigen."
+    content : "Der Aufbau einer skalierbaren AWS Landing Zone / Foundation erfordert viel Zeit und Mühe. Mit unserer Collection können Sie unsere umfassende Erfahrung mit AWS und Terraform nutzen, um Ihren Implementierungsprozess erheblich zu beschleunigen."
 
 markdown_content:
   enable: true
@@ -103,12 +102,12 @@ testimonial_section:
 {{</table>}}
 <br><br>
 
-## AWS Foundation / Landing Zone Vergleich
-<br>Eine AWS Foundation / Landing Zone ist eine gut strukturierte, vorkonfigurierte Umgebung, die als Grundlage für die Bereitstellung und Verwaltung von Workloads in der AWS-Cloud dient.
+## AWS Landing Zone / Foundation Vergleich
+<br>Eine AWS Landing Zone / Foundation ist eine gut strukturierte, vorkonfigurierte Umgebung, die als Grundlage für die Bereitstellung und Verwaltung von Workloads in der AWS-Cloud dient.
 Sie bietet eine Reihe von Best Practices und Architekturmustern, um Konsistenz, Sicherheit und Skalierbarkeit in Ihrer AWS-Infrastruktur zu gewährleisten. 
 Sie hilft Unternehmen dabei, eine standardisierte und sichere Grundkonfiguration einzurichten und so den Zeit- und Arbeitsaufwand für die anfängliche Bereitstellung der Infrastruktur zu reduzieren.
 
-Es gibt verschiedene Lösungen für die Bereitstellung einer einsatzbereiten AWS Foundation / Landing Zone. Jede Lösung bietet bestimmte Vorteile und hat bestimmte Einschränkungen.<br><br>
+Es gibt verschiedene Lösungen für die Bereitstellung einer einsatzbereiten AWS Landing Zone / Foundation. Jede Lösung bietet bestimmte Vorteile und hat bestimmte Einschränkungen.<br><br>
 
 {{<table "table table-striped table-bordered terraform-table">}}
 |  | AWS LANDING ZONE ACCELERATOR | AWS CONTROL TOWER | NUVIBIT TERRAFORM COLLECTION |
@@ -125,9 +124,9 @@ Es gibt verschiedene Lösungen für die Bereitstellung einer einsatzbereiten AWS
 {{</table>}}
 <br>
 
-## Die richtige AWS Foundation / Landing Zone wählen
+## Die richtige AWS Landing Zone / Foundation wählen
 
-Es gibt keine Standardlösung für AWS Foundation / Landing Zone, die die Anforderungen aller Kunden erfüllt.<br>
+Es gibt keine Standardlösung für AWS Landing Zone / Foundation, die die Anforderungen aller Kunden erfüllt.<br>
 Obwohl wir überzeugt sind, dass unsere Terraform Collection viele einzigartige Vorteile für ein Plattform-Engineering-Team bietet, gibt es auch Fälle, in denen wir unsere Lösung nicht zwingend empfehlen würden.<br><br>
 
 Bei der Auswahl der richtigen Lösung sind viele Aspekte zu berücksichtigen (z.B. bestimmt der Bereitstellungsmechanismus, wie Personalisierung und Fehlersuche durchgeführt werden), dennoch kann dieser vereinfachte Entscheidungsbaum als Orientierung dienen.

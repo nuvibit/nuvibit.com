@@ -1,12 +1,12 @@
 ---
-title: "Terraform Collection"
-description: "A colletion of Infrastructure as Code Terraform modules specifically designed to deploy and manage an enterprise-ready, compliant and scalable AWS Foundation / Landing Zone."
+title: "Nuvibit Terraform Collection (NTC) - AWS Landing Zone / Foundation"
+description: "Nuvibit Terraform Collection (NTC) is an AWS Landing Zone / Foundation solution based on Infrastructure as Code Terraform modules, specifically designed to deploy and manage an enterprise-ready, compliant and scalable AWS environment."
 draft: false
 
 banner_section:
     enable: true
-    title: "Terraform Collection"
-    content: "A collection of [Terraform modules](https://developer.hashicorp.com/terraform/tutorials/modules/module) specifically designed to deploy and manage an enterprise-ready, compliant and scalable AWS Foundation / Landing Zone. 
+    title: "Nuvibit Terraform Collection (NTC)"
+    content: "is an AWS Landing Zone / Foundation solution based on Infrastructure as Code Terraform modules, specifically designed to deploy and manage an enterprise-ready, compliant and scalable AWS environment. 
               Our flexible, declarative, and modular approach offers many unique benefits to a platform engineering team and drastically reduces the time and effort required for the implementation process.<br><br>"
     image : "images/solutions/ntc-logo.png"
     button:
@@ -23,21 +23,21 @@ feature_section:
   left_side:
   - title : "100% Terraform-native"
     icon : "fa-file-code"
-    content : "Manage your AWS Foundation / Landing Zone entirely with Terraform without dependencies on AWS Control Tower and CloudFormation."
+    content : "Manage your AWS Landing Zone / Foundation entirely with Terraform without dependencies on AWS Control Tower and CloudFormation."
     
   - title : "Designed for GitOps"
     icon : "fa-brands fa-git-alt"
-    content : "Manage your AWS Foundation / Landing Zone with a full GitOps approach. [Segregation of duties](/faq/#segregation 'What is segregation of duties?') can be enforced with Git repositories and pipeline permissions."
+    content : "Manage your AWS Landing Zone / Foundation with a full GitOps approach. [Segregation of duties](/faq/#segregation 'What is segregation of duties?') can be enforced with Git repositories and pipeline permissions."
 
   - title : "Simple to customize"
     icon : "fa-user-gear"
-    content : "Our modular approach offers a lot of flexibility and options when it comes to implementing a personalized AWS Foundation / Landing Zone. We provide customization templates as a starting point which can be adopted or modified."
+    content : "Our modular approach offers a lot of flexibility and options when it comes to implementing a personalized AWS Landing Zone / Foundation. We provide customization templates as a starting point which can be adopted or modified."
 
   # feature at the right of the image
   right_side:
   - title : "Updates and support"
     icon : "fa-handshake-angle"
-    content : "Receive updates and support for our modules and keep your AWS Foundation / Landing Zone up to date and running. We are specialized in AWS and Terraform with years of hands-on experience."
+    content : "Receive updates and support for our modules and keep your AWS Landing Zone / Foundation up to date and running. We are specialized in AWS and Terraform with years of hands-on experience."
 
   - title : "Enterprise-ready and scalable"
     icon : "fa-chart-line"
@@ -45,7 +45,7 @@ feature_section:
 
   - title : "Accelerate your cloud journey"
     icon : "fa-truck-fast"
-    content : "Building a scalable AWS Foundation / Landing Zone takes a lot of time and effort. With our collection, you can leverage our extensive experience with AWS and Terraform to significantly accelerate your implementation process."
+    content : "Building a scalable AWS Landing Zone / Foundation takes a lot of time and effort. With our collection, you can leverage our extensive experience with AWS and Terraform to significantly accelerate your implementation process."
 
 markdown_content:
   enable: true
@@ -103,12 +103,12 @@ testimonial_section:
 {{</table>}}
 <br><br>
 
-## AWS Foundation / Landing Zone Comparison
-<br>An AWS Foundation / Landing Zone refers to a well-architected, pre-configured environment that serves as a foundation for deploying and managing workloads in the AWS cloud.
+## AWS Landing Zone / Foundation Comparison
+<br>An AWS Landing Zone / Foundation refers to a well-architected, pre-configured environment that serves as a foundation for deploying and managing workloads in the AWS cloud.
 It provides a set of best practices and architectural patterns to ensure consistency, security, and scalability across your AWS infrastructure. 
 It helps organizations establish a standardized and secure baseline setup, reducing the time and effort required for initial infrastructure deployment. 
 
-There are several solutions for deploying a ready-to-use AWS Foundation / Landing Zone. Each solution offers certain benefits and has its own limitations.<br><br>
+There are several solutions for deploying a ready-to-use AWS Landing Zone / Foundation. Each solution offers certain benefits and has its own limitations.<br><br>
 
 {{<table "table table-striped table-bordered terraform-table">}}
 |  | AWS LANDING ZONE ACCELERATOR | AWS CONTROL TOWER | NUVIBIT TERRAFORM COLLECTION |
@@ -125,9 +125,9 @@ There are several solutions for deploying a ready-to-use AWS Foundation / Landin
 {{</table>}}
 <br>
 
-## Choose the right AWS Foundation / Landing Zone approach
+## Choose the right AWS Landing Zone / Foundation approach
 
-There is no single solution for AWS Foundation / Landing Zone which meets the requirements for all customers.<br>
+There is no single solution for AWS Landing Zone / Foundation which meets the requirements for all customers.<br>
 While we are confident that our Terraform Collection offers many unique benefits to a platform engineering team, there are some cases where we would not necessarily recommend our solution.
 <br><br>
 There are many aspects to consider when choosing the right solution (e.g. delivery mechanism determines how customization and troubleshooting is performed), yet this simplified decision tree can provide guidance.

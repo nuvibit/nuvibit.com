@@ -7,12 +7,12 @@
             <div class="col-md-12">
                 <div class="heading">
                     {{- with $data.homepage.certifications }}
-                    <section class="inline-heading-h2">
+                    <h4 class="inline-heading-h2">
                         {{ $.Page.RenderString .title }}
                         <a href="{{ .link | absLangURL }}" aria-label='Read more about {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }} certification'>
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
-                    </section>
+                    </h4>
                     {{ end }}
                 </div>
 

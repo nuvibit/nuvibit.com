@@ -8,7 +8,7 @@
 				
 				<!-- Language List -->
 				<div class="bottom-nav col-md-4 col-10 p-0 float-left mb-3">
-					<h5 class="mb-4 font-weight-bold">{{ i18n "languages" }}</h5>
+					<h4 class="mb-4 font-weight-bold">{{ i18n "languages" }}</h4>
 					<ul class="list-group">
 					{{ if gt .Page.AllTranslations 0 }}
 						{{ $siteLanguages := .Site.Languages }}
@@ -19,7 +19,7 @@
 						{{ if eq $translation.Lang .Lang }}
 						{{ $selected := false }}
 							<li class="list-group-item bg-transparent border-0 p-0 mb-2">
-								<a href="{{ $translation.Permalink }}" id="lang-element" data-value="{{.Lang}}">
+								<a href="{{ $translation.Permalink }}" id="lang-element{{.Lang}}" data-value="{{.Lang}}">
 									{{ if eq $pageLang .Lang}}
 									<i class="fas fa-toggle-on"></i>
 									{{ else }}
@@ -47,7 +47,7 @@
 				{{ range site.Menus.footer }}
 				{{ if .HasChildren }}
 				<div class="bottom-nav col-md-4 col-10 p-0 float-left mb-3">
-					<h5 class="mb-4 font-weight-bold">{{ .Name }}</h5>
+					<h4 class="mb-4 font-weight-bold">{{ .Name }}</h4>
 					<ul class="list-group">
 						{{ range .Children}} 
 						{{ with . }}

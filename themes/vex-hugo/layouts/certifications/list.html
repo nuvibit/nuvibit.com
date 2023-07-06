@@ -10,7 +10,7 @@
         <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <div class="block mb-4" id="badge-element" data-value="{{ .Permalink }}">
                 <div class="gallery-overlay">
-                    <a href="{{ .Permalink }}" class="gallery-popup">
+                    <a href="{{ .Permalink }}" class="gallery-popup" aria-label='Read more about {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }} certification' >
                         <i class="fas fa-plus"></i>
                     </a>
                 </div>

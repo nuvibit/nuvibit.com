@@ -7,12 +7,12 @@
             <div class="col-md-12">
                 <div class="heading">
                     {{- with $data.homepage.customers }}
-                    <h2>
+                    <section class="inline-heading-h2">
                         {{ $.Page.RenderString .title }}
-                        <a href="{{ .link | absLangURL }}">
+                        <a href="{{ .link | absLangURL }}" aria-label='Read more about {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }} customer'>
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
-                    </h2>
+                    </section>
                     {{ end }}
                 </div>
 
@@ -20,7 +20,7 @@
                     {{ range (where .Site.RegularPages "Section" "customers") }}
                     <div class="block ml-3 mr-3" id="badge-element" data-value="{{ .Permalink }}">
                         <div class="gallery-overlay">
-                            <a href="{{ .Permalink }}" class="gallery-popup">
+                            <a href="{{ .Permalink }}" class="gallery-popup" aria-label='Read more about {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }} customer'>
                                 <i class="fas fa-plus"></i>
                             </a>
                         </div>

@@ -35,8 +35,8 @@ window.addEventListener("load",function(){
         autoplay: true,
         dots: false,
         arrows: true,
-        prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fas fa-arrow-left' aria-hidden='true'></i></button>",
-        nextArrow: "<button type='button' class='slick-next pull-right'><i class='fas fa-arrow-right' aria-hidden='true'></i></button>",
+        prevArrow: "<button type='button' aria-label='Previous arrow' class='slick-prev pull-left'><i class='fas fa-arrow-left' aria-hidden='true'></i></button>",
+        nextArrow: "<button type='button' aria-label='Next arrow' class='slick-next pull-right'><i class='fas fa-arrow-right' aria-hidden='true'></i></button>",
         responsive: [{
             breakpoint: 1024,
             settings: {
@@ -88,7 +88,7 @@ zoom_elements.forEach(el => el.addEventListener('click', event => {
     image_zoom(el);
 }));
 
-const language_elements = document.querySelectorAll('#lang-element');
+const language_elements = document.querySelectorAll('[id^="lang-element"]');
 language_elements.forEach(el => el.addEventListener('click', event => {
     update_language_pref(el.getAttribute('data-value'));
 }));

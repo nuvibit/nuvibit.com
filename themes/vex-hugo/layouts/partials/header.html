@@ -12,10 +12,10 @@
           {{ range site.Menus.main }}
           {{ if .HasChildren }}
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown{{ .Name }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               {{ .Name }}
             </a>
-            <div class="nav-item dropdown-menu" aria-labelledby="navbarDropdown">
+            <div class="nav-item dropdown-menu" aria-labelledby="navbarDropdown{{ .Name }}">
               {{ range .Children }} 
               <a class="dropdown-item" href="{{if .Pre}}{{site.BaseURL | relLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
               {{ end }}

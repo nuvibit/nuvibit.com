@@ -462,6 +462,7 @@ weight = 13
 [[server.headers]]
   for = '/**'
   [server.headers.values]
+    Access-Control-Allow-Origin = '*'
     Strict-Transport-Security = 'max-age=63072000; includeSubdomains; preload'
     Content-Security-Policy = "default-src 'self' forms.zohopublic.eu; img-src 'self' data:; script-src 'self' www.googletagmanager.com; style-src 'self' fonts.googleapis.com; object-src 'none'; font-src 'self' fonts.gstatic.com;"
     X-Content-Type-Options = 'nosniff'

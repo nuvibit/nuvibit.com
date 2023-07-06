@@ -60,7 +60,7 @@ Using a log metric filter together with an alarm just indicates that the event o
 Especially in a multi-account setup leveraging AWS CloudTrail for AWS Organizations leaves you in a potential permanent alarm situation. In this scenario, digging for the actual source for the alarm is waste of effort and time.
 
 Sample of an CIS AWS 3.10 alarm sent to a Amazon Simple Notification Service (SNS) topic - hardly any valuable information:
-```text 
+```text { noClasses=false }
 You are receiving this email because your Amazon CloudWatch Alarm "CIS.3.10" in the US East (N. Virginia) region has entered  
 the ALARM state, because "Threshold Crossed: 1 out of the last 1 datapoints [2.0 (15/09/21 18:27:00)] was greater than the  
 threshold (1.0) (minimum 1 datapoint for OK -> ALARM transition)." at "Wednesday 15 September, 2021 18:32:31 UTC".

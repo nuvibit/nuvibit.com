@@ -463,7 +463,7 @@ weight = 13
   for = '/**'
   [server.headers.values]
     Strict-Transport-Security = 'max-age=63072000; includeSubdomains; preload'
-    Content-Security-Policy = "default-src 'self' forms.zohopublic.eu; img-src 'self' data:; script-src 'self' www.googletagmanager.com; style-src 'self' fonts.googleapis.com; object-src 'none'; font-src 'self' fonts.gstatic.com; require-trusted-types-for 'script'"
+    Content-Security-Policy = "default-src 'self' forms.zohopublic.eu; img-src 'self' data:; script-src 'self' www.googletagmanager.com; style-src 'self' fonts.googleapis.com; object-src 'none'; font-src 'self' fonts.gstatic.com;"
     X-Content-Type-Options = 'nosniff'
     X-Frame-Options = 'DENY'
     X-XSS-Protection = '1; mode=block'

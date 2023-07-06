@@ -59,6 +59,14 @@ window.addEventListener("load",function(){
     });
 })(jQuery);
 
+// open faq fields by hash
+if (window.location.pathname == "/faq/"){
+    var hash = window.location.hash;
+    if (hash != ""){
+        document.getElementById("details"+hash).open = true;
+    }
+}
+
 // in december (11) let it snow on landing page
 document.addEventListener('DOMContentLoaded', function () {
     const d = new Date();

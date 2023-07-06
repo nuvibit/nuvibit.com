@@ -41,7 +41,7 @@ To maintain a clear overview, we divide the AWS accounts into three domains:
 
 {{<table "table table-striped table-bordered">}}
 | Domain | Description |
-| ---   | :---  |
+| ---   | ---  |
 | **Foundation Core** | Accounts that host core components of the Nuvibit Cloud Foundation and are managed by the Cloud Foundation Core Team(s). |
 | **Foundation Shared Service** | Account that host shared services and platforms (streaming platform, data lake, analitics platform, API management) and are managed by the Cloud Foundation Shared Service Team(s). |
 | **Business Workload** | Accounts that host all the components of the business applications and are managed by the Cloud Workload Development Team(s). |
@@ -57,7 +57,7 @@ We recommend setting up the following **Foundation Core Accounts** and at least 
 
 {{<table "table table-striped table-bordered">}}
 | Domain | Account Type | Description |
-| ---   | :---  | :---  |
+| ---   | ---  | ---  |
 | Foundation Core | AWS Organizations Management | [AWS Organization](https://aws.amazon.com/organizations/), [Organization-unit (OU)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html) and [service control policy (SCP)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) management. Consolidated billing over the AWS organization |
 | Foundation Core | Core Account Lifecycle | Account lifecycle management including vending, baselining and retirement. |
 | Foundation Core | Core Security | Aggregation of [AWS Config](https://aws.amazon.com/config/), [AWS Security Hub](https://aws.amazon.com/security-hub/) and [Amazon GuardDuty](https://aws.amazon.com/guardduty/). <br/> Our security event management solution [SEMPER](/solutions/semper) is also a citizen of this account. |

@@ -55,6 +55,8 @@ privacyEnhanced = false
 [[params.plugins.css]]
 link = "https://fonts.googleapis.com/css?family=Open%20Sans:400|Nunito:300,400,600,700"
 [[params.plugins.css]]
+link = "plugins/cookieconsent/cconsent.min.css"
+[[params.plugins.css]]
 link = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
 link = "plugins/fontawesome/css/all.min.css"
@@ -453,3 +455,15 @@ parent = "social"
 name = "Youtube"
 url = "https://www.youtube.com/channel/UCmQCd8jMiZviVlWOqqbpYBw/playlists"
 weight = 13
+
+###################################### DEVELOPMENT ######################################
+
+[server]
+[[server.headers]]
+  for = '/**'
+  [server.headers.values]
+    Strict-Transport-Security = 'max-age=63072000; includeSubdomains; preload'
+    Content-Security-Policy = "default-src 'self' forms.zohopublic.eu; img-src 'self' data:; script-src 'self' www.googletagmanager.com; style-src 'self' fonts.googleapis.com; object-src 'none'; font-src 'self' fonts.gstatic.com; require-trusted-types-for 'script'"
+    X-Content-Type-Options = 'nosniff'
+    X-Frame-Options = 'DENY'
+    X-XSS-Protection = '1; mode=block'

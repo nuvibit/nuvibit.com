@@ -60,7 +60,7 @@ The rollout of a new AWS Account can be divided into four stages:
 <br/>
 {{<table "table table-striped table-bordered">}}
 | Stage | Description |
-| ---   | :---  |
+| ---   | ---  |
 | <span class="inline-color-009900">**1. Pull Request**</span> | The user creates a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) in the account inventory repository containing all the required tags. The pull request is reviewed, approved and merged by the team responsible for the cloud foundation. |
 | <span class="inline-color-0008FF">**2. Account Provisioning**</span> | Terraform is triggered by the merge commit and creates a new AWS Account, enables AWS SSO, creates a new repository and finally creates the [CI/CD](faq/#cicd 'What is CI/CD?') pipeline that provisions the workload resources to the AWS Account. <br/> In this example we use github for the code repositories and terraform cloud for CI/CD. |
 | <span class="inline-color-009999">**3. Account Configuration**</span> | Not everything can be done via terraform as there are some tools and actions that are not yet supported. For those exceptions we implemented [AWS Step Functions](https://aws.amazon.com/step-functions/?step-functions.sort-by=item.additionalFields.postDateTime&step-functions.sort-order=desc). <br/>The step functions are triggered by the CloudTrail Event that occurs as soon as a new account gets created. <br/>In our example we deploy three step functions: <br/>**- setup account**: deletes the default VPCs and all attached resources<br/>**- create email alias**: creates an email alias (in this example with Microsoft 365)<br/>**- add account to baseline**: Adds the new account to the global baseline repository
@@ -89,7 +89,7 @@ The recycling is done in five stages:
 <br/>
 {{<table "table table-striped table-bordered">}}
 | Stage | Description |
-| ---   | :---  |
+| ---   | ---  |
 | <span class="inline-color-CC6600">**1. Account Cleanup**</span> | The user has to perform a [terraform destroy](https://www.terraform.io/cli/commands/destroy "What is terraform destroy?") in his workspace to remove all resources that he has deployed over time.
 | <span class="inline-color-009900">**2. Pull Request**</span> | The user creates a pull request where he sets the **recycled** flag to **true**.
 | <span class="inline-color-0008FF">**3. Account recycling**</span> | Terraform removes the account pipline and repository and disables AWS SSO. Furthermore the account tags are updated to show that the account is recycled. |

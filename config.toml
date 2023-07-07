@@ -465,7 +465,7 @@ weight = 13
   [server.headers.values]
     Access-Control-Allow-Origin = '*'
     Strict-Transport-Security = 'max-age=63072000; includeSubdomains; preload'
-    Content-Security-Policy = "default-src 'self' forms.zohopublic.eu; img-src 'self' data:; script-src 'self' www.googletagmanager.com; style-src 'self' fonts.googleapis.com; object-src 'none'; font-src 'self' fonts.gstatic.com;"
+    Content-Security-Policy = "default-src 'self' forms.zohopublic.eu; img-src 'self' data: https://www.google-analytics.com; script-src 'self' https://www.google-analytics.com https://ssl.google-analytics.com https://www.googletagmanager.com 'sha256-XZjOLS67JdKgeeMB3dbqndAgpwfz7EvsT1rX5iv3p1s='; style-src 'self' fonts.googleapis.com; object-src 'none'; font-src 'self' fonts.gstatic.com; connect-src 'self' https://*.google-analytics.com;"
     X-Content-Type-Options = 'nosniff'
     X-Frame-Options = 'DENY'
     X-XSS-Protection = '1; mode=block'

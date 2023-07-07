@@ -16,7 +16,6 @@
   {{ "<!-- Main Stylesheet -->" | safeHTML }}
   {{ $styles := resources.Get site.Params.css_path | toCSS | minify }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
-  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
 
   {{ "<!--Favicon-->" | safeHTML }}
   <link rel="shortcut icon" href="{{ `images/favicon/favicon.ico` | absURL }} " type="image/x-icon">
@@ -26,10 +25,14 @@
   <meta property="og:image" content="{{ . | absURL }}" />
   {{ end }}
   {{ template "_internal/opengraph.html" . }}
-
-  {{/*  
-    {{ template "_internal/google_analytics.html" . }}  
-    integrated hugo template includes inline script. using own implementation in scripts.js
-  */}}
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.Config.Services.GoogleAnalytics.ID }}"></script>
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.Config.Services.GoogleAnalytics.ID }}"></script>
+{{/* csp scrip hash: sha256-MZiXdKIUh83KF2n0G7q3zY/ES1Yexlw6qgnGWR30Jdo=  */}}
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.Config.Services.GoogleAnalytics.ID }}');
+</script>

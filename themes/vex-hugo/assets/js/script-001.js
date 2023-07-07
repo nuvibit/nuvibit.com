@@ -129,12 +129,6 @@ form_elements.forEach(el => el.addEventListener('submit', event => {
     }
 }));
 
-// google analytics
-window.dataLayer = window.dataLayer || [];
-function gtag() { dataLayer.push(arguments); }
-gtag('js', new Date());
-gtag('config', '{{ site.Config.Services.GoogleAnalytics.ID }}', { 'anonymize_ip': true });
-
 // function to copy content to clipboard and display message
 function copy_url(url) {
     var $temp = $("<input>");

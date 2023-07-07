@@ -82,6 +82,10 @@ header .dropdown-menu {
     opacity: 70% !important;
 }
 
+.navbar-brand img {
+    max-width: 200px;
+}
+
 .nav-link {
     color: #fafafa !important;
     font-size: 18px !important;
@@ -824,6 +828,10 @@ figure.profile:hover img {
 
 .portrait {
     border-radius: 2rem !important;
+}
+
+.footer-logo img {
+    width: 175px;
 }
 
 @media only screen and (max-width: 1200px) {

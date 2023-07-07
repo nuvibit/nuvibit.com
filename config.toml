@@ -83,9 +83,7 @@ link = "plugins/ipaddr/ipaddr.js"
 
 [params]
 logo_banner = "images/logo/logo-nuvibit-banner.png"
-logo_banner_width = "200px"
 logo_footer = "images/logo/logo-nuvibit-badge.png"
-logo_footer_width = "175px"
 # Meta data
 description = "We help you build an enterprise-ready, compliant and scalable foundation for the public cloud."
 author = "Nuvibit AG"

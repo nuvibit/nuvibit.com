@@ -1,7 +1,23 @@
 <header class="sticky-top bg-dark">
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">{{ if site.Params.logo_banner }} <img src="{{ site.Params.logo_banner | absURL }}" alt='{{ site.Params.logo_banner | replaceRE ".*?([\\w-]+).png" "$1" }}' {{with site.Params.logo_banner_width}}width="{{.}}"{{end}}> {{ else }} {{ site.Title }} {{ end }}</a>
+      <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
+        {{ if site.Params.logo_banner }}
+        {{/* HUGO IMAGE RENDERER */}}
+        {{ $image_class := "img-fluid"}}
+        {{ $image_path := site.Params.logo_banner }}
+        {{ $image := resources.Get $image_path }}
+        {{ $post_image_webp := partial "imageConverter.html" (dict "ImageSrc" $image_path "ImgParam" (printf "%dx%d webp q100" $image.Width $image.Height)) }}
+        {{ $post_image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image_path "ImgParam" (printf "%dx%d jpg q100" $image.Width $image.Height)) }}
+        <picture>
+            <source srcset="{{ $post_image_webp }}" type="image/webp">
+            <source srcset="{{ $post_image_jpg }}" type="image/jpeg">
+            <img class="{{ $image_class }}" src="{{ $post_image_jpg }}" width="{{ $image.Width }}" height="{{ $image.Height  }}" alt='{{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+        </picture>
+        {{ else }}
+        {{ site.Title }}
+        {{ end }}
+      </a>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
         aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

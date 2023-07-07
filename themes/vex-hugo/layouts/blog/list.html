@@ -17,7 +17,7 @@
         <picture>
             <source srcset="{{ $post_image_webp }}" type="image/webp">
             <source srcset="{{ $post_image_jpg }}" type="image/jpeg">
-            <img class="{{ $image_class }}" src="{{ $post_image_jpg }}" width="{{ $image.Width }}" height="{{ $image.Height  }}" alt='Illustration of {{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+            <img loading="eager" class="{{ $image_class }}" src="{{ $post_image_jpg }}" width="{{ $image.Width }}" height="{{ $image.Height  }}" alt='Illustration of {{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
         </picture>
         {{ end }}
 			</div>
@@ -37,7 +37,7 @@
             <picture>
                 <source srcset="{{ $post_image_webp }}" type="image/webp">
                 <source srcset="{{ $post_image_jpg }}" type="image/jpeg">
-                <img class="{{ $image_class }}" src="{{ $post_image_jpg }}" width="{{ $image.Width }}" height="{{ $image.Height  }}" alt='Illustration of {{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+                <img loading="lazy" class="{{ $image_class }}" src="{{ $post_image_jpg }}" width="{{ $image.Width }}" height="{{ $image.Height  }}" alt='Illustration of {{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
             </picture>
             <div class="card-body blog-tile-body text-left">
               <h5 class="card-title font-weight-bold p-3 pb-0">{{ .Title }}</h5>
@@ -64,7 +64,7 @@
             <picture>
                 <source srcset="{{ $post_image_webp }}" type="image/webp">
                 <source srcset="{{ $post_image_jpg }}" type="image/jpeg">
-                <img class="{{ $image_class }}" src="{{ $post_image_jpg }}" width="{{ $image.Width }}" height="{{ $image.Height  }}" alt='Illustration of {{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+                <img loading="lazy" class="{{ $image_class }}" src="{{ $post_image_jpg }}" width="{{ $image.Width }}" height="{{ $image.Height  }}" alt='Illustration of {{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
             </picture>
             <div class="card-body blog-tile-body text-left">
               <h5 class="card-title font-weight-bold p-3 pb-0">{{ .Title }}</h5>

@@ -26,7 +26,7 @@
           <picture>
               <source srcset="{{ $post_image_webp }}" type="image/webp">
               <source srcset="{{ $post_image_jpg }}" type="image/jpeg">
-              <img class="{{ $image_class }}" src="{{ $post_image_jpg }}" width="{{ $image.Width }}" height="{{ $image.Height  }}" alt='Profile picture of {{ $image_path | replaceRE ".*?([\\w-]+).(png|jpg)" "$1" }}'>
+              <img loading="lazy" class="{{ $image_class }}" src="{{ $post_image_jpg }}" width="{{ $image.Width }}" height="{{ $image.Height  }}" alt='Profile picture of {{ $image_path | replaceRE ".*?([\\w-]+).(png|jpg)" "$1" }}'>
           </picture>
         </div>
         <div class="col-md-8 align-self-center text-center text-md-left about-text">

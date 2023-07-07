@@ -157,9 +157,9 @@ parent = "solutions"
 weight = 8
 
 [[Languages.en.menu.main]]
-identifier = "ntc"
+identifier = "terraform-collection"
 name = "Nuvibit Terraform Collection (NTC)"
-url = "solutions/ntc"
+url = "solutions/terraform-collection"
 parent = "solutions"
 weight = 9
 
@@ -339,9 +339,9 @@ parent = "solutions"
 weight = 8
 
 [[Languages.de.menu.main]]
-identifier = "ntc"
+identifier = "terraform-collection"
 name = "Nuvibit Terraform Collection (NTC)"
-url = "solutions/ntc"
+url = "solutions/terraform-collection"
 parent = "solutions"
 weight = 9
 

@@ -1,7 +1,5 @@
-$primary-font: 'Nunito',
-sans-serif;
-$secondary-font: 'Open Sans',
-sans-serif;
+$primary-font: 'Nunito', sans-serif;
+$secondary-font: 'Open Sans', sans-serif;
 $primary-color: #3fa7df;
 $icon-font: 'themefisher-font' !important;
 
@@ -90,8 +88,10 @@ header .dropdown-menu {
     color: rgba(255, 255, 255, .5) !important;
 }
 
-.show .nav-link {
-    color: rgba(255, 255, 255, .5) !important;
+@media (min-width: 900px) { 
+    .show .nav-link {
+        color: rgba(255, 255, 255, .5) !important;
+    }
 }
 
 .bg-dark {
@@ -747,8 +747,12 @@ p.copyright-text {
     cursor: zoom-in;
 }
 
+.zoom a {
+    display: block;
+}
+
 .zoomed {
-    z-index: 100;
+    z-index: 1000;
     cursor: -webkit-zoom-out;
     cursor: -moz-zoom-out;
     cursor: zoom-out;
@@ -770,6 +774,7 @@ p.copyright-text {
 
 .zoomed img {
     max-height: 80vh !important;
+    width: auto !important;
 }
 
 // ANCHOR let it snow

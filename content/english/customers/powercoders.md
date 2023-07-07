@@ -1,7 +1,7 @@
 ---
 title: "powercoders"
 date: 2022-12-20T11:00:00+06:00
-image: "images/customers/powercoders.svg"
+image: "images/customers/powercoders.png"
 
 # meta description
 description : "We work with Powercoders to support refugees and migrants to enter the IT industry with the AWS re/Start program."

@@ -49,9 +49,8 @@ simple = false
 disable = true
 privacyEnhanced = false
 
-#################################### Plugins ##########################################
+#################################### CSS Plugins ##########################################
 
-# CSS Plugins
 [[params.plugins.css]]
 link = "https://fonts.googleapis.com/css?family=Open%20Sans:400|Nunito:300,400,600,700"
 [[params.plugins.css]]
@@ -65,7 +64,8 @@ link = "plugins/slick/slick.css"
 [[params.plugins.css]]
 link = "plugins/snow/snow.min.css"
 
-# JS Plugins
+#################################### JS Plugins ##########################################
+
 [[params.plugins.js]]
 link = "plugins/cookieconsent/cconsent.min.js"
 [[params.plugins.js]]

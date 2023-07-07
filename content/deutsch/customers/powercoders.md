@@ -1,7 +1,7 @@
 ---
 title: "Powercoders"
 date: 2022-12-20T11:00:00+06:00
-image: "images/customers/powercoders.svg"
+image: "images/customers/powercoders.png"
 
 # meta description
 description : "Wir führen gemeinsam mit Powercoders das erste AWS re/Start Programm in der Schweiz durch."

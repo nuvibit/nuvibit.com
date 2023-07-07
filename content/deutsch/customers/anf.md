@@ -1,7 +1,7 @@
 ---
 title: "a&f systems ag"
 date: 2022-10-16T11:00:00+06:00
-image: "images/customers/anf.svg"
+image: "images/customers/anf.png"
 
 # meta description
 description : "Unser Kunde a&f system AG ist ein bekannter Schweizer Systemintegrator für innovative Publishing-Software und nachhaltige Business-IT-Lösungen."

@@ -7,8 +7,17 @@
         <!-- certifications image slider -->
         <div class="product-image">
           <div data-image="{{ .Params.image | absURL }}">
-            <img class="certifications-badge w-100 img-fluid" src="{{ .Params.image | absURL }}"
-            alt='{{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }} badge'>
+            {{/* HUGO IMAGE RENDERER */}}
+            {{ $image_class := "certifications-badge w-100 img-fluid"}}
+            {{ $image_path := .Params.image }}
+            {{ $image := resources.Get $image_path }}
+            {{ $post_image_webp := partial "imageConverter.html" (dict "ImageSrc" $image_path "ImgParam" (printf "%dx%d webp q100" $image.Width $image.Height)) }}
+            {{ $post_image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image_path "ImgParam" (printf "%dx%d jpg q100" $image.Width $image.Height)) }}
+            <picture>
+                <source srcset="{{ $post_image_webp }}" type="image/webp">
+                <source srcset="{{ $post_image_jpg }}" type="image/jpeg">
+                <img loading="lazy" class="{{ $image_class }}" src="{{ $post_image_jpg }}" width="{{ $image.Width }}" height="{{ $image.Height  }}" alt='{{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }} badge'>
+            </picture>
           </div>
         </div>
       </div>

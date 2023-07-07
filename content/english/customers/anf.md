@@ -1,7 +1,7 @@
 ---
 title: "a&f systems ag"
 date: 2022-10-16T11:00:00+06:00
-image: "images/customers/anf.svg"
+image: "images/customers/anf.png"
 
 # meta description
 description : "Our customer a&f system AG is well known system integrator for innovative publishing software and business IT solutions for media corporations"

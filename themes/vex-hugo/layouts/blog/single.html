@@ -7,7 +7,17 @@
 				<div class="block">
 					<h1 class="font-weight-bold mb-4 font-size-60">{{ .Title }}</h1>
           <div class="col-md-10 m-auto p-3 blog-page">
-            <img class="card-img-top blog-tile-img" src="{{ .Params.image | absURL }}" alt='Illustration of {{ .Params.Image | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+            {{/* HUGO IMAGE RENDERER */}}
+            {{ $image_class := "card-img-top blog-tile-img"}}
+            {{ $image_path := .Params.image }}
+            {{ $image := resources.Get $image_path }}
+            {{ $post_image_webp := partial "imageConverter.html" (dict "ImageSrc" $image_path "ImgParam" (printf "%dx%d webp q100" $image.Width $image.Height)) }}
+            {{ $post_image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image_path "ImgParam" (printf "%dx%d jpg q100" $image.Width $image.Height)) }}
+            <picture>
+                <source srcset="{{ $post_image_webp }}" type="image/webp">
+                <source srcset="{{ $post_image_jpg }}" type="image/jpeg">
+                <img loading="lazy" class="{{ $image_class }}" src="{{ $post_image_jpg }}" width="{{ $image.Width }}" height="{{ $image.Height  }}" alt='Illustration of {{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+            </picture>
           </div>
 				</div>
 			</div>

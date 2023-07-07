@@ -1,9 +1,19 @@
 <div class="col-md-10 m-auto p-3 text-right zoom">
     {{ $imgPath := .Destination }}
+    {{/* HUGO IMAGE RENDERER */}}
+    {{ $image_class := "img-fluid"}}
+    {{ $image_path := (replace .Destination "-highres.png" ".png") }}
+    {{ $image := resources.Get $image_path }}
+    {{ $post_image_webp := partial "imageConverter.html" (dict "ImageSrc" $image_path "ImgParam" (printf "%dx%d webp q100" $image.Width $image.Height)) }}
+    {{ $post_image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image_path "ImgParam" (printf "%dx%d jpg q100" $image.Width $image.Height)) }}
+    <picture>
+        <source srcset="{{ $post_image_webp }}" type="image/webp">
+        <source srcset="{{ $post_image_jpg }}" type="image/jpeg">
+        <img loading="lazy" class="{{ $image_class }}" src="{{ $post_image_jpg }}" width="{{ $image.Width }}" height="{{ $image.Height  }}" alt='Illustration of {{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+    </picture>
     {{- if strings.HasSuffix $imgPath "-highres.png" }}
-    <img class="img-fluid" src='{{ (replace .Destination "-highres.png" ".png") | absURL }}' alt='Illustration of {{ (replace .Destination "-highres.png" ".png") | replaceRE ".*?([\\w-]+).png" "$1" }}'>
-    <a href='{{ .Destination | absURL }}' target="_blank"><i class="fas fa-external-link-alt"></i> high resolution</a>
+    {{ $image_highres := resources.Get .Destination }}
+    <a href='{{ $image_highres.RelPermalink }}' target="_blank"><i class="fas fa-external-link-alt"></i> high resolution</a>
     {{- else }}
-    <img class="img-fluid" src="{{ .Destination | absURL }}" alt='Illustration of {{ .Destination | replaceRE ".*?([\\w-]+).png" "$1" }}'>
     {{- end }}
 </div>

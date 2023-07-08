@@ -3,21 +3,13 @@
 baseurl = "https://nuvibit.com/"
 title = "Nuvibit"
 theme = "vex-hugo"
-# post excert
 summarylength = "20"
-
-# google analytics
 googleAnalytics = "G-65QED8XYJ9"
-# disable language
 disableLanguages = []
-# check all links for correct absolute language url before enabling language
+enableRobotsTXT = true
 
-# unsafe html
 [markup.goldmark.renderer]
 unsafe = true
-
-# robots
-enableRobotsTXT = true
 
 #################################### Privacy ##########################################
 
@@ -54,12 +46,10 @@ privacyEnhanced = false
 [params]
 logo_banner = "images/logo/logo-nuvibit-banner.png"
 logo_footer = "images/logo/logo-nuvibit-badge.png"
-# Meta data
 description = "We help you build an enterprise-ready, compliant and scalable foundation for the public cloud."
 author = "Nuvibit AG"
 contact_form_url = "https://forms.zohopublic.eu/nuvibit/form/Contactus/formperma/TUZO-GqMg11XIInReyJqMICqAS7hWGm6YdW3oVM32hE"
 copyright = "Copyright © 2021 - 2023 Nuvibit AG"
-# CSS & JS version
 css_path = "css/style-001.css"
 js_path = "js/script-001.js"
 
@@ -73,7 +63,6 @@ weight = 1
 
 ###################################### English Navigation ######################################
 
-# homepage section menu
 [[Languages.en.menu.main]]
 name = "Home"
 url = "/"
@@ -255,7 +244,6 @@ weight = 2
 
 ###################################### German Navigation ######################################
 
-# homepage section menu
 [[Languages.de.menu.main]]
 name = "Home"
 url = "/"

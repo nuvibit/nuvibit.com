@@ -89,10 +89,9 @@
 </footer>
 
 <!-- JS Plugins -->
-{{ range site.Params.plugins.js}}
-<script src="{{ .link | absURL }}" defer></script>
-{{ end }}
+{{ $JS := resources.Match "plugins/**.js" | resources.Concat "js/plugins.js" | minify }}
+<script defer src="{{ $JS.RelPermalink }}"></script>
 
 <!-- Main Script -->
-{{ $script := resources.Get site.Params.js_path }}
-<script src="{{ $script.Permalink }}" defer></script>
+{{ $script := resources.Get site.Params.js_path | minify }}
+<script defer src="{{ $script.Permalink }}"></script>

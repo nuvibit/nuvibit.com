@@ -49,36 +49,6 @@ simple = false
 disable = true
 privacyEnhanced = false
 
-#################################### CSS Plugins ##########################################
-
-[[params.plugins.css]]
-link = "https://fonts.googleapis.com/css?family=Open%20Sans:400|Nunito:300,400,600,700&display=swap"
-[[params.plugins.css]]
-link = "plugins/cookieconsent/cconsent.min.css"
-[[params.plugins.css]]
-link = "plugins/bootstrap/bootstrap.min.css"
-[[params.plugins.css]]
-link = "plugins/fontawesome/css/all.min.css"
-[[params.plugins.css]]
-link = "plugins/slick/slick.css"
-[[params.plugins.css]]
-link = "plugins/snow/snow.min.css"
-
-#################################### JS Plugins ##########################################
-
-[[params.plugins.js]]
-link = "plugins/cookieconsent/cconsent.min.js"
-[[params.plugins.js]]
-link = "plugins/jquery/jquery.js"
-[[params.plugins.js]]
-link = "plugins/bootstrap/bootstrap.min.js"
-[[params.plugins.js]]
-link = "plugins/slick/slick.min.js"
-[[params.plugins.js]]
-link = "plugins/snow/snow.min.js"
-[[params.plugins.js]]
-link = "plugins/ipaddr/ipaddr.js"
-
 ########################### Default Parameters ##########################
 
 [params]
@@ -90,7 +60,7 @@ author = "Nuvibit AG"
 contact_form_url = "https://forms.zohopublic.eu/nuvibit/form/Contactus/formperma/TUZO-GqMg11XIInReyJqMICqAS7hWGm6YdW3oVM32hE"
 copyright = "Copyright © 2021 - 2023 Nuvibit AG"
 # CSS & JS version
-css_path = "scss/style-001.scss"
+css_path = "css/style-001.css"
 js_path = "js/script-001.js"
 
 ################################### English Language #####################################

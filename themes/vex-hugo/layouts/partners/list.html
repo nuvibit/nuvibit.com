@@ -15,23 +15,23 @@
                     </a>
                 </div>
                 {{/* HUGO IMAGE RENDERER */}}
-                {{ $img_data := newScratch }}
+                {{ $image_resolutions := (slice "300x" "500x" "800x") }}
+                {{ $image_data := newScratch }}
                 {{ $image_class := "img-fluid w-100"}}
                 {{ $image_path := .Params.image }}
-                {{ $image := resources.Get $image_path }}
-                {{ $image_fallback := partial "imageConverter.html" (dict "ImageSrc" $image "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" (index $resolutions 1))) }}
-                {{ $resolutions := (slice "300x" "500x" "800x") }}
-                {{ range $index, $resolutions }}
-                    {{ $image_webp := partial "imageConverter.html" (dict "ImageSrc" $image "ImgParam" (printf "%s webp q90 Lanczos" .)) }}
-                    {{ $img_data.Add "srcset_webp" (printf "%s %s," $image_webp (replace . "x" "w")) }}
-                    {{ $image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" .)) }}
-                    {{ $img_data.Add "srcset_jpg" (printf "%s %s," $image_jpg (replace . "x" "w")) }}
+                {{ $image_buffer := resources.Get $image_path }}
+                {{ $image_fallback := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" (index $image_resolutions 1))) }}
+                {{ range $index, $image_resolutions }}
+                    {{ $image_webp := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s webp q90 Lanczos" .)) }}
+                    {{ $image_data.Add "srcset_webp" (printf "%s %s," $image_webp (replace . "x" "w")) }}
+                    {{ $image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" .)) }}
+                    {{ $image_data.Add "srcset_jpg" (printf "%s %s," $image_jpg (replace . "x" "w")) }}
                 {{ end }}
-				{{ $new_size := $image.Resize (index $resolutions 1) }}
+				{{ $image_size := $image_buffer.Resize (index $image_resolutions 1) }}
                 <picture>
-                    <source type="image/webp" srcset='{{ $img_data.Get "srcset_webp" }}'>
-                    <source type="image/jpeg" srcset='{{ $img_data.Get "srcset_jpg" }}'>
-                    <img loading="lazy" class="{{ $image_class }}" src="{{ $image_fallback }}" width="{{ $new_size.Width }}" height="{{ $new_size.Height }}" alt='{{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }} badge'>
+                    <source type="image/webp" srcset='{{ $image_data.Get "srcset_webp" }}'>
+                    <source type="image/jpeg" srcset='{{ $image_data.Get "srcset_jpg" }}'>
+                    <img loading="lazy" class="{{ $image_class }}" src="{{ $image_fallback }}" width="{{ $image_size.Width }}" height="{{ $image_size.Height }}" alt='{{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }} badge'>
                 </picture>
                 {{/* HUGO IMAGE RENDERER */}}
             </div>

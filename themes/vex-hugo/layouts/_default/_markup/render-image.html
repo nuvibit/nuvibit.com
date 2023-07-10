@@ -4,15 +4,15 @@
     {{ $image_class := "img-fluid"}}
     {{ $image_path := (replace .Destination "-highres.png" ".png") }}
     {{ $image := resources.Get $image_path }}
-    {{ $image_fallback := partial "imageConverter.html" (dict "ImageSrc" $image "ImgParam" (printf "%s jpg #fafafa q100 Lanczos" (index site.Params.image_resolutions 1))) }}
-    {{ $resolutions := site.Params.image_resolutions }}
+    {{ $image_fallback := partial "imageConverter.html" (dict "ImageSrc" $image "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" (index $resolutions 1))) }}
+    {{ $resolutions := (slice "300x" "500x" "800x") }}
     {{ range $index, $resolutions }}
-        {{ $image_webp := partial "imageConverter.html" (dict "ImageSrc" $image "ImgParam" (printf "%s webp q100 Lanczos" .)) }}
+        {{ $image_webp := partial "imageConverter.html" (dict "ImageSrc" $image "ImgParam" (printf "%s webp q90 Lanczos" .)) }}
         {{ $img_data.Add "srcset_webp" (printf "%s %s," $image_webp (replace . "x" "w")) }}
-        {{ $image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image "ImgParam" (printf "%s jpg #fafafa q100 Lanczos" .)) }}
+        {{ $image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" .)) }}
         {{ $img_data.Add "srcset_jpg" (printf "%s %s," $image_jpg (replace . "x" "w")) }}
     {{ end }}
-    {{ $new_size := $image.Resize (index site.Params.image_resolutions 1) }}
+    {{ $new_size := $image.Resize (index $resolutions 1) }}
     <picture>
         <source type="image/webp" srcset='{{ $img_data.Get "srcset_webp" }}'>
         <source type="image/jpeg" srcset='{{ $img_data.Get "srcset_jpg" }}'>

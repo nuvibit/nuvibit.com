@@ -52,7 +52,6 @@ contact_form_url = "https://forms.zohopublic.eu/nuvibit/form/Contactus/formperma
 copyright = "Copyright © 2021 - 2023 Nuvibit AG"
 css_path = "css/style-001.css"
 js_path = "js/script-001.js"
-image_resolutions = ["320x", "600x", "800x"]
 
 ################################### English Language #####################################
 

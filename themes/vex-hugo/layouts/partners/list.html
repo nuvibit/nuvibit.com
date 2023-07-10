@@ -15,7 +15,7 @@
                     </a>
                 </div>
                 {{/* HUGO IMAGE RENDERER */}}
-                {{ $image_resolutions := (slice "300x" "500x" "800x") }}
+                {{ $image_resolutions := (slice "300x" "500x") }}
                 {{ $image_data := newScratch }}
                 {{ $image_class := "img-fluid w-100"}}
                 {{ $image_path := .Params.image }}

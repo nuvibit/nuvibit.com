@@ -189,7 +189,7 @@
                             {{/* HUGO IMAGE RENDERER */}}
                             {{ $image_resolutions := (slice "300x" "500x" "800x") }}
                             {{ $image_data := newScratch }}
-                            {{ $image_class := "customer-logo img-fluid"}}
+                            {{ $image_class := "img-fluid"}}
                             {{ $image_path := .image }}
                             {{ $image_buffer := resources.Get $image_path }}
                             {{ $image_fallback := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" (index $image_resolutions 1))) }}

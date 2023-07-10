@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-md-6 mb-3 text-center footer-logo">
 				{{/* HUGO IMAGE RENDERER */}}
-				{{ $image_resolutions := (slice "300x" "500x" "800x") }}
+				{{ $image_resolutions := (slice "300x" "500x") }}
 				{{ $image_data := newScratch }}
 				{{ $image_class := "img-fluid"}}
 				{{ $image_path := site.Params.logo_footer }}

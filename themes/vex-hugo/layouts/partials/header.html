@@ -4,7 +4,7 @@
       <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
         {{ if site.Params.logo_banner }}
 				{{/* HUGO IMAGE RENDERER */}}
-        {{ $image_resolutions := (slice "300x" "500x" "800x") }}
+        {{ $image_resolutions := (slice "300x" "500x") }}
 				{{ $image_data := newScratch }}
         {{ $image_class := "img-fluid"}}
         {{ $image_path := site.Params.logo_banner }}

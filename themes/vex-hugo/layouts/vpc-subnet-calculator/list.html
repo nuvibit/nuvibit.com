@@ -7,16 +7,25 @@
         <div class="row">
             <div class="col-md-6 text-center p-5 mb-md-0 zoom">
                 {{/* HUGO IMAGE RENDERER */}}
+                {{ $img_data := newScratch }}
                 {{ $image_class := "img-fluid"}}
                 {{ $image_path := .image }}
                 {{ $image := resources.Get $image_path }}
-                {{ $post_image_webp := partial "imageConverter.html" (dict "ImageSrc" $image_path "ImgParam" (printf "%dx%d webp q100" $image.Width $image.Height)) }}
-                {{ $post_image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image_path "ImgParam" (printf "%dx%d jpg q100" $image.Width $image.Height)) }}
+                {{ $image_fallback := partial "imageConverter.html" (dict "ImageSrc" $image "ImgParam" (printf "%s jpg #fafafa q100 Lanczos" (index site.Params.image_resolutions 1))) }}
+                {{ $resolutions := site.Params.image_resolutions }}
+                {{ range $index, $resolutions }}
+                    {{ $image_webp := partial "imageConverter.html" (dict "ImageSrc" $image "ImgParam" (printf "%s webp q100 Lanczos" .)) }}
+                    {{ $img_data.Add "srcset_webp" (printf "%s %s," $image_webp (replace . "x" "w")) }}
+                    {{ $image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image "ImgParam" (printf "%s jpg #fafafa q100 Lanczos" .)) }}
+                    {{ $img_data.Add "srcset_jpg" (printf "%s %s," $image_jpg (replace . "x" "w")) }}
+                {{ end }}
+				{{ $new_size := $image.Resize (index site.Params.image_resolutions 1) }}
                 <picture>
-                    <source srcset="{{ $post_image_webp }}" type="image/webp">
-                    <source srcset="{{ $post_image_jpg }}" type="image/jpeg">
-                    <img loading="eager" class="{{ $image_class }}" src="{{ $post_image_jpg }}" width="{{ $image.Width }}" height="{{ $image.Height  }}" alt='Illustration of {{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+                    <source type="image/webp" srcset='{{ $img_data.Get "srcset_webp" }}'>
+                    <source type="image/jpeg" srcset='{{ $img_data.Get "srcset_jpg" }}'>
+                    <img loading="eager" class="{{ $image_class }}" src="{{ $image_fallback }}" width="{{ $new_size.Width }}" height="{{ $new_size.Height }}" alt='Illustration of {{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
                 </picture>
+                {{/* HUGO IMAGE RENDERER */}}
             </div>
             <div class="col-md-6 align-self-center text-center text-md-left">
                 <div class="block">

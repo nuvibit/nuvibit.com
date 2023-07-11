@@ -101,4 +101,4 @@
 {{ $js_main := resources.Match "js/**.js" | resources.Concat "js/buffer_script.js" | minify }}
 {{ $js := slice $js_plugins $js_main | resources.Concat "js/script.js" | minify | fingerprint }}
 <link rel="preload" as="script" href="{{ $js.RelPermalink }}">
-<script defer src="{{ $js.Permalink }}"></script>
+<script defer src="{{ $js.RelPermalink }}"></script>

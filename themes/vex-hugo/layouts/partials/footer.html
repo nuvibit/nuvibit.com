@@ -99,9 +99,11 @@
 <!-- JS Plugins -->
 {{ $JSP := resources.Match "plugins/**.js" | resources.Concat "js/plugins.js" | minify }}
 {{ $JSP_HASHED := $JSP | resources.Fingerprint "sha256" -}}
+<link rel="preload" as="script" href="{{ $JSP_HASHED.RelPermalink }}">
 <script defer src="{{ $JSP_HASHED.RelPermalink }}"></script>
 
 <!-- Main Script -->
 {{ $JS := resources.Match "js/**.js" | resources.Concat "js/script.js" | minify }}
 {{ $JS_HASHED := $JS | resources.Fingerprint "sha256" -}}
+<link rel="preload" as="script" href="{{ $JSP_HASHED.RelPermalink }}">
 <script defer src="{{ $JS_HASHED.Permalink }}"></script>

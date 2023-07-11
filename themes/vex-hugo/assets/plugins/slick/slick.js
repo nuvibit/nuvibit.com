@@ -144,11 +144,11 @@
                     ? 0 === t && 0 === s.$slides.length
                         ? i(e).appendTo(s.$slideTrack)
                         : o
-                        ? i(e).insertBefore(s.$slides.eq(t))
-                        : i(e).insertAfter(s.$slides.eq(t))
+                            ? i(e).insertBefore(s.$slides.eq(t))
+                            : i(e).insertAfter(s.$slides.eq(t))
                     : !0 === o
-                    ? i(e).prependTo(s.$slideTrack)
-                    : i(e).appendTo(s.$slideTrack),
+                        ? i(e).prependTo(s.$slideTrack)
+                        : i(e).appendTo(s.$slideTrack),
                 (s.$slides = s.$slideTrack.children(this.options.slide)),
                 s.$slideTrack.children(this.options.slide).detach(),
                 s.$slideTrack.append(s.$slides),
@@ -175,28 +175,28 @@
                         ? s.$slideTrack.animate({ left: e }, s.options.speed, s.options.easing, t)
                         : s.$slideTrack.animate({ top: e }, s.options.speed, s.options.easing, t)
                     : !1 === s.cssTransitions
-                    ? (!0 === s.options.rtl && (s.currentLeft = -s.currentLeft),
-                      i({ animStart: s.currentLeft }).animate(
-                          { animStart: e },
-                          {
-                              duration: s.options.speed,
-                              easing: s.options.easing,
-                              step: function (i) {
-                                  (i = Math.ceil(i)), !1 === s.options.vertical ? ((o[s.animType] = "translate(" + i + "px, 0px)"), s.$slideTrack.css(o)) : ((o[s.animType] = "translate(0px," + i + "px)"), s.$slideTrack.css(o));
-                              },
-                              complete: function () {
-                                  t && t.call();
-                              },
-                          }
-                      ))
-                    : (s.applyTransition(),
-                      (e = Math.ceil(e)),
-                      !1 === s.options.vertical ? (o[s.animType] = "translate3d(" + e + "px, 0px, 0px)") : (o[s.animType] = "translate3d(0px," + e + "px, 0px)"),
-                      s.$slideTrack.css(o),
-                      t &&
-                          setTimeout(function () {
-                              s.disableTransition(), t.call();
-                          }, s.options.speed));
+                        ? (!0 === s.options.rtl && (s.currentLeft = -s.currentLeft),
+                            i({ animStart: s.currentLeft }).animate(
+                                { animStart: e },
+                                {
+                                    duration: s.options.speed,
+                                    easing: s.options.easing,
+                                    step: function (i) {
+                                        (i = Math.ceil(i)), !1 === s.options.vertical ? ((o[s.animType] = "translate(" + i + "px, 0px)"), s.$slideTrack.css(o)) : ((o[s.animType] = "translate(0px," + i + "px)"), s.$slideTrack.css(o));
+                                    },
+                                    complete: function () {
+                                        t && t.call();
+                                    },
+                                }
+                            ))
+                        : (s.applyTransition(),
+                            (e = Math.ceil(e)),
+                            !1 === s.options.vertical ? (o[s.animType] = "translate3d(" + e + "px, 0px, 0px)") : (o[s.animType] = "translate3d(0px," + e + "px, 0px)"),
+                            s.$slideTrack.css(o),
+                            t &&
+                            setTimeout(function () {
+                                s.disableTransition(), t.call();
+                            }, s.options.speed));
         }),
         (e.prototype.getNavTarget = function () {
             var e = this,
@@ -234,20 +234,20 @@
                 i.focussed ||
                 (!1 === i.options.infinite &&
                     (1 === i.direction && i.currentSlide + 1 === i.slideCount - 1 ? (i.direction = 0) : 0 === i.direction && ((e = i.currentSlide - i.options.slidesToScroll), i.currentSlide - 1 == 0 && (i.direction = 1))),
-                i.slideHandler(e));
+                    i.slideHandler(e));
         }),
         (e.prototype.buildArrows = function () {
             var e = this;
             !0 === e.options.arrows &&
                 ((e.$prevArrow = i(e.options.prevArrow).addClass("slick-arrow")),
-                (e.$nextArrow = i(e.options.nextArrow).addClass("slick-arrow")),
-                e.slideCount > e.options.slidesToShow
-                    ? (e.$prevArrow.removeClass("slick-hidden").removeAttr("aria-hidden tabindex"),
-                      e.$nextArrow.removeClass("slick-hidden").removeAttr("aria-hidden tabindex"),
-                      e.htmlExpr.test(e.options.prevArrow) && e.$prevArrow.prependTo(e.options.appendArrows),
-                      e.htmlExpr.test(e.options.nextArrow) && e.$nextArrow.appendTo(e.options.appendArrows),
-                      !0 !== e.options.infinite && e.$prevArrow.addClass("slick-disabled").attr("aria-disabled", "true"))
-                    : e.$prevArrow.add(e.$nextArrow).addClass("slick-hidden").attr({ "aria-disabled": "true", tabindex: "-1" }));
+                    (e.$nextArrow = i(e.options.nextArrow).addClass("slick-arrow")),
+                    e.slideCount > e.options.slidesToShow
+                        ? (e.$prevArrow.removeClass("slick-hidden").removeAttr("aria-hidden tabindex"),
+                            e.$nextArrow.removeClass("slick-hidden").removeAttr("aria-hidden tabindex"),
+                            e.htmlExpr.test(e.options.prevArrow) && e.$prevArrow.prependTo(e.options.appendArrows),
+                            e.htmlExpr.test(e.options.nextArrow) && e.$nextArrow.appendTo(e.options.appendArrows),
+                            !0 !== e.options.infinite && e.$prevArrow.addClass("slick-disabled").attr("aria-disabled", "true"))
+                        : e.$prevArrow.add(e.$nextArrow).addClass("slick-hidden").attr({ "aria-disabled": "true", tabindex: "-1" }));
         }),
         (e.prototype.buildDots = function () {
             var e,
@@ -324,12 +324,12 @@
                 null !== s
                     ? null !== r.activeBreakpoint
                         ? (s !== r.activeBreakpoint || t) &&
-                          ((r.activeBreakpoint = s),
-                          "unslick" === r.breakpointSettings[s] ? r.unslick(s) : ((r.options = i.extend({}, r.originalSettings, r.breakpointSettings[s])), !0 === e && (r.currentSlide = r.options.initialSlide), r.refresh(e)),
-                          (l = s))
+                        ((r.activeBreakpoint = s),
+                            "unslick" === r.breakpointSettings[s] ? r.unslick(s) : ((r.options = i.extend({}, r.originalSettings, r.breakpointSettings[s])), !0 === e && (r.currentSlide = r.options.initialSlide), r.refresh(e)),
+                            (l = s))
                         : ((r.activeBreakpoint = s),
-                          "unslick" === r.breakpointSettings[s] ? r.unslick(s) : ((r.options = i.extend({}, r.originalSettings, r.breakpointSettings[s])), !0 === e && (r.currentSlide = r.options.initialSlide), r.refresh(e)),
-                          (l = s))
+                            "unslick" === r.breakpointSettings[s] ? r.unslick(s) : ((r.options = i.extend({}, r.originalSettings, r.breakpointSettings[s])), !0 === e && (r.currentSlide = r.options.initialSlide), r.refresh(e)),
+                            (l = s))
                     : null !== r.activeBreakpoint && ((r.activeBreakpoint = null), (r.options = r.originalSettings), !0 === e && (r.currentSlide = r.options.initialSlide), r.refresh(e), (l = s)),
                     e || !1 === l || r.$slider.trigger("breakpoint", [r, l]);
             }
@@ -373,11 +373,11 @@
             e.options.dots &&
                 null !== e.$dots &&
                 (i("li", e.$dots).off("click.slick", e.changeSlide).off("mouseenter.slick", i.proxy(e.interrupt, e, !0)).off("mouseleave.slick", i.proxy(e.interrupt, e, !1)),
-                !0 === e.options.accessibility && e.$dots.off("keydown.slick", e.keyHandler)),
+                    !0 === e.options.accessibility && e.$dots.off("keydown.slick", e.keyHandler)),
                 e.$slider.off("focus.slick blur.slick"),
                 !0 === e.options.arrows &&
-                    e.slideCount > e.options.slidesToShow &&
-                    (e.$prevArrow && e.$prevArrow.off("click.slick", e.changeSlide),
+                e.slideCount > e.options.slidesToShow &&
+                (e.$prevArrow && e.$prevArrow.off("click.slick", e.changeSlide),
                     e.$nextArrow && e.$nextArrow.off("click.slick", e.changeSlide),
                     !0 === e.options.accessibility && (e.$prevArrow && e.$prevArrow.off("keydown.slick", e.keyHandler), e.$nextArrow && e.$nextArrow.off("keydown.slick", e.keyHandler))),
                 e.$list.off("touchstart.slick mousedown.slick", e.swipeHandler),
@@ -414,19 +414,19 @@
                 i(".slick-cloned", t.$slider).detach(),
                 t.$dots && t.$dots.remove(),
                 t.$prevArrow &&
-                    t.$prevArrow.length &&
-                    (t.$prevArrow.removeClass("slick-disabled slick-arrow slick-hidden").removeAttr("aria-hidden aria-disabled tabindex").css("display", ""), t.htmlExpr.test(t.options.prevArrow) && t.$prevArrow.remove()),
+                t.$prevArrow.length &&
+                (t.$prevArrow.removeClass("slick-disabled slick-arrow slick-hidden").removeAttr("aria-hidden aria-disabled tabindex").css("display", ""), t.htmlExpr.test(t.options.prevArrow) && t.$prevArrow.remove()),
                 t.$nextArrow &&
-                    t.$nextArrow.length &&
-                    (t.$nextArrow.removeClass("slick-disabled slick-arrow slick-hidden").removeAttr("aria-hidden aria-disabled tabindex").css("display", ""), t.htmlExpr.test(t.options.nextArrow) && t.$nextArrow.remove()),
+                t.$nextArrow.length &&
+                (t.$nextArrow.removeClass("slick-disabled slick-arrow slick-hidden").removeAttr("aria-hidden aria-disabled tabindex").css("display", ""), t.htmlExpr.test(t.options.nextArrow) && t.$nextArrow.remove()),
                 t.$slides &&
-                    (t.$slides
-                        .removeClass("slick-slide slick-active slick-center slick-visible slick-current")
-                        .removeAttr("aria-hidden")
-                        .removeAttr("data-slick-index")
-                        .each(function () {
-                            i(this).attr("style", i(this).data("originalStyling"));
-                        }),
+                (t.$slides
+                    .removeClass("slick-slide slick-active slick-center slick-visible slick-current")
+                    .removeAttr("aria-hidden")
+                    .removeAttr("data-slick-index")
+                    .each(function () {
+                        i(this).attr("style", i(this).data("originalStyling"));
+                    }),
                     t.$slideTrack.children(this.options.slide).detach(),
                     t.$slideTrack.detach(),
                     t.$list.detach(),
@@ -448,11 +448,11 @@
             !1 === t.cssTransitions
                 ? (t.$slides.eq(i).css({ zIndex: t.options.zIndex }), t.$slides.eq(i).animate({ opacity: 1 }, t.options.speed, t.options.easing, e))
                 : (t.applyTransition(i),
-                  t.$slides.eq(i).css({ opacity: 1, zIndex: t.options.zIndex }),
-                  e &&
-                      setTimeout(function () {
-                          t.disableTransition(i), e.call();
-                      }, t.options.speed));
+                    t.$slides.eq(i).css({ opacity: 1, zIndex: t.options.zIndex }),
+                    e &&
+                    setTimeout(function () {
+                        t.disableTransition(i), e.call();
+                    }, t.options.speed));
         }),
         (e.prototype.fadeSlideOut = function (i) {
             var e = this;
@@ -482,9 +482,9 @@
                 o = 0;
             if (!0 === i.options.infinite)
                 if (i.slideCount <= i.options.slidesToShow) ++o;
-                else for (; e < i.slideCount; ) ++o, (e = t + i.options.slidesToScroll), (t += i.options.slidesToScroll <= i.options.slidesToShow ? i.options.slidesToScroll : i.options.slidesToShow);
+                else for (; e < i.slideCount;) ++o, (e = t + i.options.slidesToScroll), (t += i.options.slidesToScroll <= i.options.slidesToShow ? i.options.slidesToScroll : i.options.slidesToShow);
             else if (!0 === i.options.centerMode) o = i.slideCount;
-            else if (i.options.asNavFor) for (; e < i.slideCount; ) ++o, (e = t + i.options.slidesToScroll), (t += i.options.slidesToScroll <= i.options.slidesToShow ? i.options.slidesToScroll : i.options.slidesToShow);
+            else if (i.options.asNavFor) for (; e < i.slideCount;) ++o, (e = t + i.options.slidesToScroll), (t += i.options.slidesToScroll <= i.options.slidesToShow ? i.options.slidesToScroll : i.options.slidesToShow);
             else o = 1 + Math.ceil((i.slideCount - i.options.slidesToShow) / i.options.slidesToScroll);
             return o - 1;
         }),
@@ -500,29 +500,29 @@
                 (t = n.$slides.first().outerHeight(!0)),
                 !0 === n.options.infinite
                     ? (n.slideCount > n.options.slidesToShow &&
-                          ((n.slideOffset = n.slideWidth * n.options.slidesToShow * -1),
-                          (s = -1),
-                          !0 === n.options.vertical && !0 === n.options.centerMode && (2 === n.options.slidesToShow ? (s = -1.5) : 1 === n.options.slidesToShow && (s = -2)),
-                          (r = t * n.options.slidesToShow * s)),
-                      n.slideCount % n.options.slidesToScroll != 0 &&
-                          i + n.options.slidesToScroll > n.slideCount &&
-                          n.slideCount > n.options.slidesToShow &&
-                          (i > n.slideCount
-                              ? ((n.slideOffset = (n.options.slidesToShow - (i - n.slideCount)) * n.slideWidth * -1), (r = (n.options.slidesToShow - (i - n.slideCount)) * t * -1))
-                              : ((n.slideOffset = (n.slideCount % n.options.slidesToScroll) * n.slideWidth * -1), (r = (n.slideCount % n.options.slidesToScroll) * t * -1))))
+                        ((n.slideOffset = n.slideWidth * n.options.slidesToShow * -1),
+                            (s = -1),
+                            !0 === n.options.vertical && !0 === n.options.centerMode && (2 === n.options.slidesToShow ? (s = -1.5) : 1 === n.options.slidesToShow && (s = -2)),
+                            (r = t * n.options.slidesToShow * s)),
+                        n.slideCount % n.options.slidesToScroll != 0 &&
+                        i + n.options.slidesToScroll > n.slideCount &&
+                        n.slideCount > n.options.slidesToShow &&
+                        (i > n.slideCount
+                            ? ((n.slideOffset = (n.options.slidesToShow - (i - n.slideCount)) * n.slideWidth * -1), (r = (n.options.slidesToShow - (i - n.slideCount)) * t * -1))
+                            : ((n.slideOffset = (n.slideCount % n.options.slidesToScroll) * n.slideWidth * -1), (r = (n.slideCount % n.options.slidesToScroll) * t * -1))))
                     : i + n.options.slidesToShow > n.slideCount && ((n.slideOffset = (i + n.options.slidesToShow - n.slideCount) * n.slideWidth), (r = (i + n.options.slidesToShow - n.slideCount) * t)),
                 n.slideCount <= n.options.slidesToShow && ((n.slideOffset = 0), (r = 0)),
                 !0 === n.options.centerMode && n.slideCount <= n.options.slidesToShow
                     ? (n.slideOffset = (n.slideWidth * Math.floor(n.options.slidesToShow)) / 2 - (n.slideWidth * n.slideCount) / 2)
                     : !0 === n.options.centerMode && !0 === n.options.infinite
-                    ? (n.slideOffset += n.slideWidth * Math.floor(n.options.slidesToShow / 2) - n.slideWidth)
-                    : !0 === n.options.centerMode && ((n.slideOffset = 0), (n.slideOffset += n.slideWidth * Math.floor(n.options.slidesToShow / 2))),
+                        ? (n.slideOffset += n.slideWidth * Math.floor(n.options.slidesToShow / 2) - n.slideWidth)
+                        : !0 === n.options.centerMode && ((n.slideOffset = 0), (n.slideOffset += n.slideWidth * Math.floor(n.options.slidesToShow / 2))),
                 (e = !1 === n.options.vertical ? i * n.slideWidth * -1 + n.slideOffset : i * t * -1 + r),
                 !0 === n.options.variableWidth &&
-                    ((o = n.slideCount <= n.options.slidesToShow || !1 === n.options.infinite ? n.$slideTrack.children(".slick-slide").eq(i) : n.$slideTrack.children(".slick-slide").eq(i + n.options.slidesToShow)),
+                ((o = n.slideCount <= n.options.slidesToShow || !1 === n.options.infinite ? n.$slideTrack.children(".slick-slide").eq(i) : n.$slideTrack.children(".slick-slide").eq(i + n.options.slidesToShow)),
                     (e = !0 === n.options.rtl ? (o[0] ? -1 * (n.$slideTrack.width() - o[0].offsetLeft - o.width()) : 0) : o[0] ? -1 * o[0].offsetLeft : 0),
                     !0 === n.options.centerMode &&
-                        ((o = n.slideCount <= n.options.slidesToShow || !1 === n.options.infinite ? n.$slideTrack.children(".slick-slide").eq(i) : n.$slideTrack.children(".slick-slide").eq(i + n.options.slidesToShow + 1)),
+                    ((o = n.slideCount <= n.options.slidesToShow || !1 === n.options.infinite ? n.$slideTrack.children(".slick-slide").eq(i) : n.$slideTrack.children(".slick-slide").eq(i + n.options.slidesToShow + 1)),
                         (e = !0 === n.options.rtl ? (o[0] ? -1 * (n.$slideTrack.width() - o[0].offsetLeft - o.width()) : 0) : o[0] ? -1 * o[0].offsetLeft : 0),
                         (e += (n.$list.width() - o.outerWidth()) / 2))),
                 e
@@ -537,7 +537,7 @@
                 t = 0,
                 o = 0,
                 s = [];
-            for (!1 === e.options.infinite ? (i = e.slideCount) : ((t = -1 * e.options.slidesToScroll), (o = -1 * e.options.slidesToScroll), (i = 2 * e.slideCount)); t < i; )
+            for (!1 === e.options.infinite ? (i = e.slideCount) : ((t = -1 * e.options.slidesToScroll), (o = -1 * e.options.slidesToScroll), (i = 2 * e.slideCount)); t < i;)
                 s.push(t), (t = o + e.options.slidesToScroll), (o += e.options.slidesToScroll <= e.options.slidesToShow ? e.options.slidesToScroll : e.options.slidesToShow);
             return s;
         }),
@@ -552,9 +552,9 @@
                 (t = !0 === o.options.centerMode ? o.slideWidth * Math.floor(o.options.slidesToShow / 2) : 0),
                 !0 === o.options.swipeToSlide
                     ? (o.$slideTrack.find(".slick-slide").each(function (s, n) {
-                          if (n.offsetLeft - t + i(n).outerWidth() / 2 > -1 * o.swipeLeft) return (e = n), !1;
-                      }),
-                      Math.abs(i(e).attr("data-slick-index") - o.currentSlide) || 1)
+                        if (n.offsetLeft - t + i(n).outerWidth() / 2 > -1 * o.swipeLeft) return (e = n), !1;
+                    }),
+                        Math.abs(i(e).attr("data-slick-index") - o.currentSlide) || 1)
                     : o.options.slidesToScroll
             );
         }),
@@ -577,10 +577,10 @@
                 });
             e.$slides.add(e.$slideTrack.find(".slick-cloned")).attr({ "aria-hidden": "true", tabindex: "-1" }).find("a, input, button, select").attr({ tabindex: "-1" }),
                 null !== e.$dots &&
-                    (e.$slides.not(e.$slideTrack.find(".slick-cloned")).each(function (t) {
-                        var s = o.indexOf(t);
-                        i(this).attr({ role: "tabpanel", id: "slick-slide" + e.instanceUid + t, tabindex: -1 }), -1 !== s && i(this).attr({ "aria-describedby": "slick-slide-control" + e.instanceUid + s });
-                    }),
+                (e.$slides.not(e.$slideTrack.find(".slick-cloned")).each(function (t) {
+                    var s = o.indexOf(t);
+                    i(this).attr({ role: "tabpanel", id: "slick-slide" + e.instanceUid + t, tabindex: -1 }), -1 !== s && i(this).attr({ "aria-describedby": "slick-slide-control" + e.instanceUid + s });
+                }),
                     e.$dots
                         .attr("role", "tablist")
                         .find("li")
@@ -604,8 +604,8 @@
             !0 === i.options.arrows &&
                 i.slideCount > i.options.slidesToShow &&
                 (i.$prevArrow.off("click.slick").on("click.slick", { message: "previous" }, i.changeSlide),
-                i.$nextArrow.off("click.slick").on("click.slick", { message: "next" }, i.changeSlide),
-                !0 === i.options.accessibility && (i.$prevArrow.on("keydown.slick", i.keyHandler), i.$nextArrow.on("keydown.slick", i.keyHandler)));
+                    i.$nextArrow.off("click.slick").on("click.slick", { message: "next" }, i.changeSlide),
+                    !0 === i.options.accessibility && (i.$prevArrow.on("keydown.slick", i.keyHandler), i.$nextArrow.on("keydown.slick", i.keyHandler)));
         }),
         (e.prototype.initDotEvents = function () {
             var e = this;
@@ -679,16 +679,16 @@
                         ? (s = (o = n.currentSlide + (n.options.slidesToShow / 2 + 1)) + n.options.slidesToShow + 2)
                         : ((o = Math.max(0, n.currentSlide - (n.options.slidesToShow / 2 + 1))), (s = n.options.slidesToShow / 2 + 1 + 2 + n.currentSlide))
                     : ((o = n.options.infinite ? n.options.slidesToShow + n.currentSlide : n.currentSlide), (s = Math.ceil(o + n.options.slidesToShow)), !0 === n.options.fade && (o > 0 && o--, s <= n.slideCount && s++)),
-                (t = n.$slider.find(".slick-slide").slice(o, s)),
-                "anticipated" === n.options.lazyLoad)
+                    (t = n.$slider.find(".slick-slide").slice(o, s)),
+                    "anticipated" === n.options.lazyLoad)
             )
                 for (var r = o - 1, l = s, d = n.$slider.find(".slick-slide"), a = 0; a < n.options.slidesToScroll; a++) r < 0 && (r = n.slideCount - 1), (t = (t = t.add(d.eq(r))).add(d.eq(l))), r--, l++;
             e(t),
                 n.slideCount <= n.options.slidesToShow
                     ? e(n.$slider.find(".slick-slide"))
                     : n.currentSlide >= n.slideCount - n.options.slidesToShow
-                    ? e(n.$slider.find(".slick-cloned").slice(0, n.options.slidesToShow))
-                    : 0 === n.currentSlide && e(n.$slider.find(".slick-cloned").slice(-1 * n.options.slidesToShow));
+                        ? e(n.$slider.find(".slick-cloned").slice(0, n.options.slidesToShow))
+                        : 0 === n.currentSlide && e(n.$slider.find(".slick-cloned").slice(-1 * n.options.slidesToShow));
         }),
         (e.prototype.loadSlider = function () {
             var i = this;
@@ -713,11 +713,11 @@
             var t = this;
             t.unslicked ||
                 (t.$slider.trigger("afterChange", [t, e]),
-                (t.animating = !1),
-                t.slideCount > t.options.slidesToShow && t.setPosition(),
-                (t.swipeLeft = null),
-                t.options.autoplay && t.autoPlay(),
-                !0 === t.options.accessibility && (t.initADA(), t.options.focusOnChange && i(t.$slides.get(t.currentSlide)).attr("tabindex", 0).focus()));
+                    (t.animating = !1),
+                    t.slideCount > t.options.slidesToShow && t.setPosition(),
+                    (t.swipeLeft = null),
+                    t.options.autoplay && t.autoPlay(),
+                    !0 === t.options.accessibility && (t.initADA(), t.options.focusOnChange && i(t.$slides.get(t.currentSlide)).attr("tabindex", 0).focus()));
         }),
         (e.prototype.prev = e.prototype.slickPrev = function () {
             this.changeSlide({ data: { message: "previous" } });
@@ -736,24 +736,24 @@
                 d = i("img[data-lazy]", l.$slider);
             d.length
                 ? ((t = d.first()),
-                  (o = t.attr("data-lazy")),
-                  (s = t.attr("data-srcset")),
-                  (n = t.attr("data-sizes") || l.$slider.attr("data-sizes")),
-                  ((r = document.createElement("img")).onload = function () {
-                      s && (t.attr("srcset", s), n && t.attr("sizes", n)),
-                          t.attr("src", o).removeAttr("data-lazy data-srcset data-sizes").removeClass("slick-loading"),
-                          !0 === l.options.adaptiveHeight && l.setPosition(),
-                          l.$slider.trigger("lazyLoaded", [l, t, o]),
-                          l.progressiveLazyLoad();
-                  }),
-                  (r.onerror = function () {
-                      e < 3
-                          ? setTimeout(function () {
+                    (o = t.attr("data-lazy")),
+                    (s = t.attr("data-srcset")),
+                    (n = t.attr("data-sizes") || l.$slider.attr("data-sizes")),
+                    ((r = document.createElement("img")).onload = function () {
+                        s && (t.attr("srcset", s), n && t.attr("sizes", n)),
+                            t.attr("src", o).removeAttr("data-lazy data-srcset data-sizes").removeClass("slick-loading"),
+                            !0 === l.options.adaptiveHeight && l.setPosition(),
+                            l.$slider.trigger("lazyLoaded", [l, t, o]),
+                            l.progressiveLazyLoad();
+                    }),
+                    (r.onerror = function () {
+                        e < 3
+                            ? setTimeout(function () {
                                 l.progressiveLazyLoad(e + 1);
                             }, 500)
-                          : (t.removeAttr("data-lazy").removeClass("slick-loading").addClass("slick-lazyload-error"), l.$slider.trigger("lazyLoadError", [l, t, o]), l.progressiveLazyLoad());
-                  }),
-                  (r.src = o))
+                            : (t.removeAttr("data-lazy").removeClass("slick-loading").addClass("slick-lazyload-error"), l.$slider.trigger("lazyLoadError", [l, t, o]), l.progressiveLazyLoad());
+                    }),
+                    (r.src = o))
                 : l.$slider.trigger("allImagesLoaded", [l]);
         }),
         (e.prototype.refresh = function (e) {
@@ -779,7 +779,7 @@
                 s.respondTo = s.options.respondTo || "window";
                 for (e in n)
                     if (((o = s.breakpoints.length - 1), n.hasOwnProperty(e))) {
-                        for (t = n[e].breakpoint; o >= 0; ) s.breakpoints[o] && s.breakpoints[o] === t && s.breakpoints.splice(o, 1), o--;
+                        for (t = n[e].breakpoint; o >= 0;) s.breakpoints[o] && s.breakpoints[o] === t && s.breakpoints.splice(o, 1), o--;
                         s.breakpoints.push(t), (s.breakpointSettings[t] = n[e].settings);
                     }
                 s.breakpoints.sort(function (i, e) {
@@ -817,9 +817,9 @@
             var e = this;
             i(window).width() !== e.windowWidth &&
                 (clearTimeout(e.windowDelay),
-                (e.windowDelay = window.setTimeout(function () {
-                    (e.windowWidth = i(window).width()), e.checkResponsive(), e.unslicked || e.setPosition();
-                }, 50)));
+                    (e.windowDelay = window.setTimeout(function () {
+                        (e.windowWidth = i(window).width()), e.checkResponsive(), e.unslicked || e.setPosition();
+                    }, 50)));
         }),
         (e.prototype.removeSlide = e.prototype.slickRemove = function (i, e, t) {
             var o = this;
@@ -855,8 +855,8 @@
                 !1 === i.options.vertical && !1 === i.options.variableWidth
                     ? ((i.slideWidth = Math.ceil(i.listWidth / i.options.slidesToShow)), i.$slideTrack.width(Math.ceil(i.slideWidth * i.$slideTrack.children(".slick-slide").length)))
                     : !0 === i.options.variableWidth
-                    ? i.$slideTrack.width(5e3 * i.slideCount)
-                    : ((i.slideWidth = Math.ceil(i.listWidth)), i.$slideTrack.height(Math.ceil(i.$slides.first().outerHeight(!0) * i.$slideTrack.children(".slick-slide").length)));
+                        ? i.$slideTrack.width(5e3 * i.slideCount)
+                        : ((i.slideWidth = Math.ceil(i.listWidth)), i.$slideTrack.height(Math.ceil(i.$slides.first().outerHeight(!0) * i.$slideTrack.children(".slick-slide").length)));
             var e = i.$slides.first().outerWidth(!0) - i.$slides.first().width();
             !1 === i.options.variableWidth && i.$slideTrack.children(".slick-slide").width(i.slideWidth - e);
         }),
@@ -888,8 +888,8 @@
                 ("object" === i.type(arguments[0])
                     ? ((o = arguments[0]), (l = arguments[1]), (n = "multiple"))
                     : "string" === i.type(arguments[0]) &&
-                      ((o = arguments[0]), (s = arguments[1]), (l = arguments[2]), "responsive" === arguments[0] && "array" === i.type(arguments[1]) ? (n = "responsive") : void 0 !== arguments[1] && (n = "single")),
-                "single" === n)
+                    ((o = arguments[0]), (s = arguments[1]), (l = arguments[2]), "responsive" === arguments[0] && "array" === i.type(arguments[1]) ? (n = "responsive") : void 0 !== arguments[1] && (n = "single")),
+                    "single" === n)
             )
                 r.options[o] = s;
             else if ("multiple" === n)
@@ -900,7 +900,7 @@
                 for (t in s)
                     if ("array" !== i.type(r.options.responsive)) r.options.responsive = [s[t]];
                     else {
-                        for (e = r.options.responsive.length - 1; e >= 0; ) r.options.responsive[e].breakpoint === s[t].breakpoint && r.options.responsive.splice(e, 1), e--;
+                        for (e = r.options.responsive.length - 1; e >= 0;) r.options.responsive[e].breakpoint === s[t].breakpoint && r.options.responsive.splice(e, 1), e--;
                         r.options.responsive.push(s[t]);
                     }
             l && (r.unload(), r.reinit());
@@ -919,7 +919,7 @@
                 void 0 !== e.OTransform && ((i.animType = "OTransform"), (i.transformType = "-o-transform"), (i.transitionType = "OTransition"), void 0 === e.perspectiveProperty && void 0 === e.webkitPerspective && (i.animType = !1)),
                 void 0 !== e.MozTransform && ((i.animType = "MozTransform"), (i.transformType = "-moz-transform"), (i.transitionType = "MozTransition"), void 0 === e.perspectiveProperty && void 0 === e.MozPerspective && (i.animType = !1)),
                 void 0 !== e.webkitTransform &&
-                    ((i.animType = "webkitTransform"), (i.transformType = "-webkit-transform"), (i.transitionType = "webkitTransition"), void 0 === e.perspectiveProperty && void 0 === e.webkitPerspective && (i.animType = !1)),
+                ((i.animType = "webkitTransform"), (i.transformType = "-webkit-transform"), (i.transitionType = "webkitTransition"), void 0 === e.perspectiveProperty && void 0 === e.webkitPerspective && (i.animType = !1)),
                 void 0 !== e.msTransform && ((i.animType = "msTransform"), (i.transformType = "-ms-transform"), (i.transitionType = "msTransition"), void 0 === e.msTransform && (i.animType = !1)),
                 void 0 !== e.transform && !1 !== i.animType && ((i.animType = "transform"), (i.transformType = "transform"), (i.transitionType = "transition")),
                 (i.transformsEnabled = i.options.useTransform && null !== i.animType && !1 !== i.animType);
@@ -934,37 +934,37 @@
                 var r = n.options.slidesToShow % 2 == 0 ? 1 : 0;
                 (e = Math.floor(n.options.slidesToShow / 2)),
                     !0 === n.options.infinite &&
-                        (i >= e && i <= n.slideCount - 1 - e
-                            ? n.$slides
-                                  .slice(i - e + r, i + e + 1)
-                                  .addClass("slick-active")
-                                  .attr("aria-hidden", "false")
-                            : ((o = n.options.slidesToShow + i),
-                              t
-                                  .slice(o - e + 1 + r, o + e + 2)
-                                  .addClass("slick-active")
-                                  .attr("aria-hidden", "false")),
+                    (i >= e && i <= n.slideCount - 1 - e
+                        ? n.$slides
+                            .slice(i - e + r, i + e + 1)
+                            .addClass("slick-active")
+                            .attr("aria-hidden", "false")
+                        : ((o = n.options.slidesToShow + i),
+                            t
+                                .slice(o - e + 1 + r, o + e + 2)
+                                .addClass("slick-active")
+                                .attr("aria-hidden", "false")),
                         0 === i ? t.eq(t.length - 1 - n.options.slidesToShow).addClass("slick-center") : i === n.slideCount - 1 && t.eq(n.options.slidesToShow).addClass("slick-center")),
                     n.$slides.eq(i).addClass("slick-center");
             } else
                 i >= 0 && i <= n.slideCount - n.options.slidesToShow
                     ? n.$slides
-                          .slice(i, i + n.options.slidesToShow)
-                          .addClass("slick-active")
-                          .attr("aria-hidden", "false")
+                        .slice(i, i + n.options.slidesToShow)
+                        .addClass("slick-active")
+                        .attr("aria-hidden", "false")
                     : t.length <= n.options.slidesToShow
-                    ? t.addClass("slick-active").attr("aria-hidden", "false")
-                    : ((s = n.slideCount % n.options.slidesToShow),
-                      (o = !0 === n.options.infinite ? n.options.slidesToShow + i : i),
-                      n.options.slidesToShow == n.options.slidesToScroll && n.slideCount - i < n.options.slidesToShow
-                          ? t
-                                .slice(o - (n.options.slidesToShow - s), o + s)
-                                .addClass("slick-active")
-                                .attr("aria-hidden", "false")
-                          : t
-                                .slice(o, o + n.options.slidesToShow)
-                                .addClass("slick-active")
-                                .attr("aria-hidden", "false"));
+                        ? t.addClass("slick-active").attr("aria-hidden", "false")
+                        : ((s = n.slideCount % n.options.slidesToShow),
+                            (o = !0 === n.options.infinite ? n.options.slidesToShow + i : i),
+                            n.options.slidesToShow == n.options.slidesToScroll && n.slideCount - i < n.options.slidesToShow
+                                ? t
+                                    .slice(o - (n.options.slidesToShow - s), o + s)
+                                    .addClass("slick-active")
+                                    .attr("aria-hidden", "false")
+                                : t
+                                    .slice(o, o + n.options.slidesToShow)
+                                    .addClass("slick-active")
+                                    .attr("aria-hidden", "false"));
             ("ondemand" !== n.options.lazyLoad && "anticipated" !== n.options.lazyLoad) || n.lazyLoad();
         }),
         (e.prototype.setupInfinite = function () {
@@ -1018,63 +1018,63 @@
             if (((e = e || !1), !((!0 === a.animating && !0 === a.options.waitForAnimate) || (!0 === a.options.fade && a.currentSlide === i))))
                 if (
                     (!1 === e && a.asNavFor(i),
-                    (o = i),
-                    (d = a.getLeft(o)),
-                    (r = a.getLeft(a.currentSlide)),
-                    (a.currentLeft = null === a.swipeLeft ? r : a.swipeLeft),
-                    !1 === a.options.infinite && !1 === a.options.centerMode && (i < 0 || i > a.getDotCount() * a.options.slidesToScroll))
+                        (o = i),
+                        (d = a.getLeft(o)),
+                        (r = a.getLeft(a.currentSlide)),
+                        (a.currentLeft = null === a.swipeLeft ? r : a.swipeLeft),
+                        !1 === a.options.infinite && !1 === a.options.centerMode && (i < 0 || i > a.getDotCount() * a.options.slidesToScroll))
                 )
                     !1 === a.options.fade &&
                         ((o = a.currentSlide),
-                        !0 !== t
-                            ? a.animateSlide(r, function () {
-                                  a.postSlide(o);
-                              })
-                            : a.postSlide(o));
+                            !0 !== t
+                                ? a.animateSlide(r, function () {
+                                    a.postSlide(o);
+                                })
+                                : a.postSlide(o));
                 else if (!1 === a.options.infinite && !0 === a.options.centerMode && (i < 0 || i > a.slideCount - a.options.slidesToScroll))
                     !1 === a.options.fade &&
                         ((o = a.currentSlide),
-                        !0 !== t
-                            ? a.animateSlide(r, function () {
-                                  a.postSlide(o);
-                              })
-                            : a.postSlide(o));
+                            !0 !== t
+                                ? a.animateSlide(r, function () {
+                                    a.postSlide(o);
+                                })
+                                : a.postSlide(o));
                 else {
                     if (
                         (a.options.autoplay && clearInterval(a.autoPlayTimer),
-                        (s =
-                            o < 0
-                                ? a.slideCount % a.options.slidesToScroll != 0
-                                    ? a.slideCount - (a.slideCount % a.options.slidesToScroll)
-                                    : a.slideCount + o
-                                : o >= a.slideCount
-                                ? a.slideCount % a.options.slidesToScroll != 0
-                                    ? 0
-                                    : o - a.slideCount
-                                : o),
-                        (a.animating = !0),
-                        a.$slider.trigger("beforeChange", [a, a.currentSlide, s]),
-                        (n = a.currentSlide),
-                        (a.currentSlide = s),
-                        a.setSlideClasses(a.currentSlide),
-                        a.options.asNavFor && (l = (l = a.getNavTarget()).slick("getSlick")).slideCount <= l.options.slidesToShow && l.setSlideClasses(a.currentSlide),
-                        a.updateDots(),
-                        a.updateArrows(),
-                        !0 === a.options.fade)
+                            (s =
+                                o < 0
+                                    ? a.slideCount % a.options.slidesToScroll != 0
+                                        ? a.slideCount - (a.slideCount % a.options.slidesToScroll)
+                                        : a.slideCount + o
+                                    : o >= a.slideCount
+                                        ? a.slideCount % a.options.slidesToScroll != 0
+                                            ? 0
+                                            : o - a.slideCount
+                                        : o),
+                            (a.animating = !0),
+                            a.$slider.trigger("beforeChange", [a, a.currentSlide, s]),
+                            (n = a.currentSlide),
+                            (a.currentSlide = s),
+                            a.setSlideClasses(a.currentSlide),
+                            a.options.asNavFor && (l = (l = a.getNavTarget()).slick("getSlick")).slideCount <= l.options.slidesToShow && l.setSlideClasses(a.currentSlide),
+                            a.updateDots(),
+                            a.updateArrows(),
+                            !0 === a.options.fade)
                     )
                         return (
                             !0 !== t
                                 ? (a.fadeSlideOut(n),
-                                  a.fadeSlide(s, function () {
-                                      a.postSlide(s);
-                                  }))
+                                    a.fadeSlide(s, function () {
+                                        a.postSlide(s);
+                                    }))
                                 : a.postSlide(s),
                             void a.animateHeight()
                         );
                     !0 !== t
                         ? a.animateSlide(d, function () {
-                              a.postSlide(s);
-                          })
+                            a.postSlide(s);
+                        })
                         : a.postSlide(s);
                 }
         }),
@@ -1100,18 +1100,18 @@
                         ? "left"
                         : "right"
                     : o <= 360 && o >= 315
-                    ? !1 === s.options.rtl
-                        ? "left"
-                        : "right"
-                    : o >= 135 && o <= 225
-                    ? !1 === s.options.rtl
-                        ? "right"
-                        : "left"
-                    : !0 === s.options.verticalSwiping
-                    ? o >= 35 && o <= 135
-                        ? "down"
-                        : "up"
-                    : "vertical"
+                        ? !1 === s.options.rtl
+                            ? "left"
+                            : "right"
+                        : o >= 135 && o <= 225
+                            ? !1 === s.options.rtl
+                                ? "right"
+                                : "left"
+                            : !0 === s.options.verticalSwiping
+                                ? o >= 35 && o <= 135
+                                    ? "down"
+                                    : "up"
+                                : "vertical"
             );
         }),
         (e.prototype.swipeEnd = function (i) {
@@ -1137,7 +1137,7 @@
             var e = this;
             if (!(!1 === e.options.swipe || ("ontouchend" in document && !1 === e.options.swipe) || (!1 === e.options.draggable && -1 !== i.type.indexOf("mouse"))))
                 switch (
-                    ((e.touchObject.fingerCount = i.originalEvent && void 0 !== i.originalEvent.touches ? i.originalEvent.touches.length : 1),
+                ((e.touchObject.fingerCount = i.originalEvent && void 0 !== i.originalEvent.touches ? i.originalEvent.touches.length : 1),
                     (e.touchObject.minSwipe = e.listWidth / e.options.touchThreshold),
                     !0 === e.options.verticalSwiping && (e.touchObject.minSwipe = e.listHeight / e.options.touchThreshold),
                     i.data.action)
@@ -1163,7 +1163,7 @@
             return (
                 (n = void 0 !== i.originalEvent ? i.originalEvent.touches : null),
                 !(!l.dragging || l.scrolling || (n && 1 !== n.length)) &&
-                    ((e = l.getLeft(l.currentSlide)),
+                ((e = l.getLeft(l.currentSlide)),
                     (l.touchObject.curX = void 0 !== n ? n[0].pageX : i.clientX),
                     (l.touchObject.curY = void 0 !== n ? n[0].pageY : i.clientY),
                     (l.touchObject.swipeLength = Math.round(Math.sqrt(Math.pow(l.touchObject.curX - l.touchObject.startX, 2)))),
@@ -1171,18 +1171,18 @@
                     !l.options.verticalSwiping && !l.swiping && r > 4
                         ? ((l.scrolling = !0), !1)
                         : (!0 === l.options.verticalSwiping && (l.touchObject.swipeLength = r),
-                          (t = l.swipeDirection()),
-                          void 0 !== i.originalEvent && l.touchObject.swipeLength > 4 && ((l.swiping = !0), i.preventDefault()),
-                          (s = (!1 === l.options.rtl ? 1 : -1) * (l.touchObject.curX > l.touchObject.startX ? 1 : -1)),
-                          !0 === l.options.verticalSwiping && (s = l.touchObject.curY > l.touchObject.startY ? 1 : -1),
-                          (o = l.touchObject.swipeLength),
-                          (l.touchObject.edgeHit = !1),
-                          !1 === l.options.infinite &&
-                              ((0 === l.currentSlide && "right" === t) || (l.currentSlide >= l.getDotCount() && "left" === t)) &&
-                              ((o = l.touchObject.swipeLength * l.options.edgeFriction), (l.touchObject.edgeHit = !0)),
-                          !1 === l.options.vertical ? (l.swipeLeft = e + o * s) : (l.swipeLeft = e + o * (l.$list.height() / l.listWidth) * s),
-                          !0 === l.options.verticalSwiping && (l.swipeLeft = e + o * s),
-                          !0 !== l.options.fade && !1 !== l.options.touchMove && (!0 === l.animating ? ((l.swipeLeft = null), !1) : void l.setCSS(l.swipeLeft))))
+                            (t = l.swipeDirection()),
+                            void 0 !== i.originalEvent && l.touchObject.swipeLength > 4 && ((l.swiping = !0), i.preventDefault()),
+                            (s = (!1 === l.options.rtl ? 1 : -1) * (l.touchObject.curX > l.touchObject.startX ? 1 : -1)),
+                            !0 === l.options.verticalSwiping && (s = l.touchObject.curY > l.touchObject.startY ? 1 : -1),
+                            (o = l.touchObject.swipeLength),
+                            (l.touchObject.edgeHit = !1),
+                            !1 === l.options.infinite &&
+                            ((0 === l.currentSlide && "right" === t) || (l.currentSlide >= l.getDotCount() && "left" === t)) &&
+                            ((o = l.touchObject.swipeLength * l.options.edgeFriction), (l.touchObject.edgeHit = !0)),
+                            !1 === l.options.vertical ? (l.swipeLeft = e + o * s) : (l.swipeLeft = e + o * (l.$list.height() / l.listWidth) * s),
+                            !0 === l.options.verticalSwiping && (l.swipeLeft = e + o * s),
+                            !0 !== l.options.fade && !1 !== l.options.touchMove && (!0 === l.animating ? ((l.swipeLeft = null), !1) : void l.setCSS(l.swipeLeft))))
             );
         }),
         (e.prototype.swipeStart = function (i) {
@@ -1214,26 +1214,26 @@
             var i = this;
             Math.floor(i.options.slidesToShow / 2),
                 !0 === i.options.arrows &&
-                    i.slideCount > i.options.slidesToShow &&
-                    !i.options.infinite &&
-                    (i.$prevArrow.removeClass("slick-disabled").attr("aria-disabled", "false"),
+                i.slideCount > i.options.slidesToShow &&
+                !i.options.infinite &&
+                (i.$prevArrow.removeClass("slick-disabled").attr("aria-disabled", "false"),
                     i.$nextArrow.removeClass("slick-disabled").attr("aria-disabled", "false"),
                     0 === i.currentSlide
                         ? (i.$prevArrow.addClass("slick-disabled").attr("aria-disabled", "true"), i.$nextArrow.removeClass("slick-disabled").attr("aria-disabled", "false"))
                         : i.currentSlide >= i.slideCount - i.options.slidesToShow && !1 === i.options.centerMode
-                        ? (i.$nextArrow.addClass("slick-disabled").attr("aria-disabled", "true"), i.$prevArrow.removeClass("slick-disabled").attr("aria-disabled", "false"))
-                        : i.currentSlide >= i.slideCount - 1 &&
-                          !0 === i.options.centerMode &&
-                          (i.$nextArrow.addClass("slick-disabled").attr("aria-disabled", "true"), i.$prevArrow.removeClass("slick-disabled").attr("aria-disabled", "false")));
+                            ? (i.$nextArrow.addClass("slick-disabled").attr("aria-disabled", "true"), i.$prevArrow.removeClass("slick-disabled").attr("aria-disabled", "false"))
+                            : i.currentSlide >= i.slideCount - 1 &&
+                            !0 === i.options.centerMode &&
+                            (i.$nextArrow.addClass("slick-disabled").attr("aria-disabled", "true"), i.$prevArrow.removeClass("slick-disabled").attr("aria-disabled", "false")));
         }),
         (e.prototype.updateDots = function () {
             var i = this;
             null !== i.$dots &&
                 (i.$dots.find("li").removeClass("slick-active").end(),
-                i.$dots
-                    .find("li")
-                    .eq(Math.floor(i.currentSlide / i.options.slidesToScroll))
-                    .addClass("slick-active"));
+                    i.$dots
+                        .find("li")
+                        .eq(Math.floor(i.currentSlide / i.options.slidesToScroll))
+                        .addClass("slick-active"));
         }),
         (e.prototype.visibility = function () {
             var i = this;

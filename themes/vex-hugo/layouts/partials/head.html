@@ -9,14 +9,16 @@
   {{ hugo.Generator }}
 
   {{ "<!-- Plugin Stylesheet -->" | safeHTML }}
-  {{ $CSS := resources.Match "plugins/**.css" | resources.Concat "/css/plugins.css" | minify }}
+  {{ $CSS := resources.Match "plugins/**.css" | resources.Concat "/css/plugins.css" }}
   {{ $CSS_HASHED := $CSS | resources.Fingerprint "sha256" -}}
-  <link defer rel="stylesheet" type="text/css" href="{{ $CSS_HASHED.RelPermalink }}">
+  <link rel="preload" as="style" href="{{ $CSS_HASHED.RelPermalink }}">
+  <link rel="stylesheet" type="text/css" href="{{ $CSS_HASHED.RelPermalink }}">
 
   {{ "<!-- Main Stylesheet -->" | safeHTML }}
-  {{ $SCSS := resources.Match "scss/**.scss" | resources.Concat "/css/style.css" | toCSS | minify }}
+  {{ $SCSS := resources.Match "scss/**.scss" | resources.Concat "/css/style.css" | toCSS }}
   {{ $SCSS_HASHED := $SCSS | resources.Fingerprint "sha256" -}}
-  <link defer rel="stylesheet" type="text/css" href="{{ $SCSS_HASHED.RelPermalink }}">
+  <link rel="preload" as="style" href="{{ $SCSS_HASHED.RelPermalink }}">
+  <link rel="stylesheet" type="text/css" href="{{ $SCSS_HASHED.RelPermalink }}">
 
   {{ "<!--Favicon-->" | safeHTML }}
   <link rel="shortcut icon" href="{{ `images/favicon/favicon.ico` | absURL }} " type="image/x-icon">

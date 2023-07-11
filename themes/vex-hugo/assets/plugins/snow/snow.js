@@ -1,12 +1,3 @@
-/*!
- * Snow.js v1.0.0
- * https://github.com/zmfe/snow.js
- *
- * Copyright (c) 2018 undefined
- * Released under the MIT license
- *
- * Date: 2018-01-16T11:55:01.675Z
- */
 !(function (t, i) {
     "object" == typeof exports && "undefined" != typeof module ? (module.exports = i()) : "function" == typeof define && define.amd ? define(i) : (t.Snow = i());
 })(this, function () {
@@ -18,8 +9,8 @@
         return Math.PI * (t / 180);
     }
     var h = function (t, i) {
-            if (!(t instanceof i)) throw new TypeError("Cannot call a class as a function");
-        },
+        if (!(t instanceof i)) throw new TypeError("Cannot call a class as a function");
+    },
         o = (function () {
             function t(t, i) {
                 for (var e = 0; e < i.length; e++) {

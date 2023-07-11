@@ -50,8 +50,6 @@ description = "We help you build an enterprise-ready, compliant and scalable fou
 author = "Nuvibit AG"
 contact_form_url = "https://forms.zohopublic.eu/nuvibit/form/Contactus/formperma/TUZO-GqMg11XIInReyJqMICqAS7hWGm6YdW3oVM32hE"
 copyright = "Copyright © 2021 - 2023 Nuvibit AG"
-css_path = "css/style-001.css"
-js_path = "js/script-001.js"
 
 ################################### English Language #####################################
 

@@ -10,11 +10,13 @@
 
   {{ "<!-- Plugin Stylesheet -->" | safeHTML }}
   {{ $CSS := resources.Match "plugins/**.css" | resources.Concat "/css/plugins.css" | minify }}
-  <link defer rel="stylesheet" type="text/css" href="{{ $CSS.RelPermalink }}">
+  {{ $CSS_HASHED := $CSS | resources.Fingerprint "sha256" -}}
+  <link defer rel="stylesheet" type="text/css" href="{{ $CSS_HASHED.RelPermalink }}">
 
   {{ "<!-- Main Stylesheet -->" | safeHTML }}
-  {{ $SCSS := resources.Match "scss/**.scss" | resources.Concat site.Params.css_path | toCSS | minify }}
-  <link defer rel="stylesheet" type="text/css" href="{{ $SCSS.RelPermalink }}">
+  {{ $SCSS := resources.Match "scss/**.scss" | resources.Concat "/css/style.css" | toCSS | minify }}
+  {{ $SCSS_HASHED := $SCSS | resources.Fingerprint "sha256" -}}
+  <link defer rel="stylesheet" type="text/css" href="{{ $SCSS_HASHED.RelPermalink }}">
 
   {{ "<!--Favicon-->" | safeHTML }}
   <link rel="shortcut icon" href="{{ `images/favicon/favicon.ico` | absURL }} " type="image/x-icon">

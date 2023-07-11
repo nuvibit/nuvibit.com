@@ -2,25 +2,20 @@
   <meta charset="utf-8">
   <title>{{ .Title }}</title>
 
-  {{ "<!-- mobile responsive meta -->" | safeHTML }}
+  <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
   {{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
   {{ hugo.Generator }}
 
-  {{ "<!-- Plugin Stylesheet -->" | safeHTML }}
-  {{ $CSS := resources.Match "plugins/**.css" | resources.Concat "/css/plugins.css" | minify }}
-  {{ $CSS_HASHED := $CSS | resources.Fingerprint "sha256" -}}
-  <link rel="preload" as="style" href="{{ $CSS_HASHED.RelPermalink }}">
-  <link rel="stylesheet" type="text/css" href="{{ $CSS_HASHED.RelPermalink }}">
+  <!-- CSS Stylesheet -->
+  {{ $css_plugins := resources.Match "plugins/**.css" | resources.Concat "css/buffer_plugins.css" }}
+  {{ $css_main := resources.Match "scss/**.scss" | resources.Concat "css/buffer_style.css" | toCSS }}
+  {{ $css := slice $css_plugins $css_main | resources.Concat "css/style.css" | minify | fingerprint }}
+  <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
+  <link rel="stylesheet" type="text/css" href="{{ $css.RelPermalink }}">
 
-  {{ "<!-- Main Stylesheet -->" | safeHTML }}
-  {{ $SCSS := resources.Match "scss/**.scss" | resources.Concat "/css/style.css" | toCSS | minify }}
-  {{ $SCSS_HASHED := $SCSS | resources.Fingerprint "sha256" -}}
-  <link rel="preload" as="style" href="{{ $SCSS_HASHED.RelPermalink }}">
-  <link rel="stylesheet" type="text/css" href="{{ $SCSS_HASHED.RelPermalink }}">
-
-  {{ "<!--Favicon-->" | safeHTML }}
+  <!-- Favicon -->
   <link rel="shortcut icon" href="{{ `images/favicon/favicon.ico` | absURL }} " type="image/x-icon">
   <link rel="icon" href="{{ `images/favicon/favicon-32x32.png` | absURL }} " type="image/x-icon">
 

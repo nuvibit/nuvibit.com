@@ -11,6 +11,16 @@ enableRobotsTXT = true
 [markup.goldmark.renderer]
 unsafe = true
 
+########################### Default Parameters ##########################
+
+[params]
+logo_banner = "images/logo/logo-nuvibit-banner.png"
+logo_footer = "images/logo/logo-nuvibit-badge.png"
+description = "We help you build an enterprise-ready, compliant and scalable foundation for the public cloud."
+author = "Nuvibit AG"
+contact_form_url = "https://forms.zohopublic.eu/nuvibit/form/Contactus/formperma/TUZO-GqMg11XIInReyJqMICqAS7hWGm6YdW3oVM32hE"
+copyright = "Copyright © 2021 - 2023 Nuvibit AG"
+
 #################################### Privacy ##########################################
 
 [privacy]
@@ -40,16 +50,6 @@ simple = false
 [privacy.youtube]
 disable = true
 privacyEnhanced = false
-
-########################### Default Parameters ##########################
-
-[params]
-logo_banner = "images/logo/logo-nuvibit-banner.png"
-logo_footer = "images/logo/logo-nuvibit-badge.png"
-description = "We help you build an enterprise-ready, compliant and scalable foundation for the public cloud."
-author = "Nuvibit AG"
-contact_form_url = "https://forms.zohopublic.eu/nuvibit/form/Contactus/formperma/TUZO-GqMg11XIInReyJqMICqAS7hWGm6YdW3oVM32hE"
-copyright = "Copyright © 2021 - 2023 Nuvibit AG"
 
 ################################### English Language #####################################
 

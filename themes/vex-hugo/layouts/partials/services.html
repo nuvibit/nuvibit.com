@@ -23,14 +23,14 @@
         {{ $image_class := "img-fluid"}}
         {{ $image_path := .image }}
         {{ $image_buffer := resources.Get $image_path }}
-        {{ $image_fallback := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" (index $image_resolutions 0))) }}
+        {{ $image_fallback := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" (index (last 1 $image_resolutions) 0))) }}
         {{ range $index, $image_resolutions }}
             {{ $image_webp := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s webp q90 Lanczos" .)) }}
             {{ $image_data.Add "srcset_webp" (printf "%s %s," $image_webp (replace . "x" "w")) }}
             {{ $image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" .)) }}
             {{ $image_data.Add "srcset_jpg" (printf "%s %s," $image_jpg (replace . "x" "w")) }}
         {{ end }}
-				{{ $image_dimensions := $image_buffer.Resize (index $image_resolutions 0) }}
+				{{ $image_dimensions := $image_buffer.Resize (index (last 1 $image_resolutions) 0) }}
         <picture>
             <source type="image/webp" srcset='{{ $image_data.Get "srcset_webp" }}'>
             <source type="image/jpeg" srcset='{{ $image_data.Get "srcset_jpg" }}'>

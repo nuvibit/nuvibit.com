@@ -96,14 +96,9 @@
 	</div>
 </footer>
 
-<!-- JS Plugins -->
-{{ $JSP := resources.Match "plugins/**.js" | resources.Concat "js/plugins.js" | minify }}
-{{ $JSP_HASHED := $JSP | resources.Fingerprint "sha256" -}}
-<link rel="preload" as="script" href="{{ $JSP_HASHED.RelPermalink }}">
-<script defer src="{{ $JSP_HASHED.RelPermalink }}"></script>
-
-<!-- Main Script -->
-{{ $JS := resources.Match "js/**.js" | resources.Concat "js/script.js" | minify }}
-{{ $JS_HASHED := $JS | resources.Fingerprint "sha256" -}}
-<link rel="preload" as="script" href="{{ $JSP_HASHED.RelPermalink }}">
-<script defer src="{{ $JS_HASHED.Permalink }}"></script>
+<!-- JavaScript -->
+{{ $js_plugins := resources.Match "plugins/**.js" | resources.Concat "js/buffer_plugins.js" | minify }}
+{{ $js_main := resources.Match "js/**.js" | resources.Concat "js/buffer_script.js" | minify }}
+{{ $js := slice $js_plugins $js_main | resources.Concat "js/script.js" | minify | fingerprint }}
+<link rel="preload" as="script" href="{{ $js.RelPermalink }}">
+<script defer src="{{ $js.Permalink }}"></script>

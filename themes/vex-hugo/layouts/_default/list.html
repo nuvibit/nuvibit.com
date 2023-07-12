@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center mb-5">
-        <h1 class="font-weight-bold mb-4 font-size-60">{{.Title}}</h1>
+        <h1 class="fw-bold mb-4 font-size-60">{{.Title}}</h1>
       </div>
     </div>
     {{ range $index, $element := (where .Site.RegularPages "Section" "blog") }}
@@ -13,7 +13,7 @@
       <div class="col-md-6 text-center mb-5 mb-lg-0 zoom">
         <img class="img-fluid w-85" src="{{ .Params.image | absURL }}" alt='Illustration of {{ .Params.Image | replaceRE ".*?([\\w-]+).png" "$1" }}'>
       </div>
-      <div class="col-md-6 align-self-center text-center text-md-left">
+      <div class="col-md-6 align-self-center text-center text-md-start">
         <div class="content">
           <h4 class="subheading"><a class="link-title" href="{{ .Permalink }}">{{ $.Page.RenderString .Title }}</a></h4>
           <p>{{ .Summary }}</p>
@@ -26,7 +26,7 @@
     <br>
     {{- else }}
     <div class="row mb-40">
-      <div class="col-md-6 order-md-1 order-2 align-self-center text-center text-md-left">
+      <div class="col-md-6 order-md-1 order-2 align-self-center text-center text-md-start">
         <div class="content">
           <h4 class="subheading"><a class="link-title" href="{{ .Permalink }}">{{ $.Page.RenderString .Title }}</a></h4>
           <p>{{ .Summary }}</p>

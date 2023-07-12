@@ -86,7 +86,7 @@ testimonial_section:
 ---
 
 ## Nuvibit Terraform Collection (NTC) Modules 
-{{<table "table table-striped table-bordered terraform-table">}}
+{{<table "table table-striped table-bordered table-overflow">}}
 | NAME | DESCRIPTION |
 | ------------- | ------------- |
 | <mark class="inline-mark-FBE3FC">NTC Parameters</mark><img width=150/> | Terraform module to store and retrieve Terraform or JSON parameters across multiple AWS accounts and CI/CD pipelines. This module is specifically designed to integrate with our NTC modules. |
@@ -110,7 +110,7 @@ It helps organizations establish a standardized and secure baseline setup, reduc
 
 There are several solutions for deploying a ready-to-use AWS Landing Zone / Foundation. Each solution offers certain benefits and has its own limitations.<br><br>
 
-{{<table "table table-striped table-bordered terraform-table">}}
+{{<table "table table-striped table-bordered table-overflow">}}
 |  | AWS LANDING ZONE ACCELERATOR | AWS CONTROL TOWER | NUVIBIT TERRAFORM COLLECTION |
 | ------------- | ------------- | ------------- | ------------- |
 | <mark class="inline-bold-900">Purpose</mark> | Provides a framework for rapidly deploying a multi-account AWS environment with recommended best practices. | Offers an automated and prescriptive approach to set up and govern a secure multi-account AWS environment. | Provides a flexible, declarative, and modular approach to deploying and managing an enterprise-ready and scalable AWS environment with potentially hundreds of accounts. |

@@ -27,9 +27,9 @@
                 </picture>
                 {{/* HUGO IMAGE RENDERER */}}
             </div>
-            <div class="col-md-6 align-self-center text-center text-md-left">
+            <div class="col-md-6 align-self-center text-center text-md-start">
                 <div class="block">
-                    <h1 class="font-weight-bold mb-4 font-size-60">{{ $.Page.RenderString .title }}</h1>
+                    <h1 class="fw-bold mb-4 font-size-60">{{ $.Page.RenderString .title }}</h1>
                     <p class="mb-4">{{ $.Page.RenderString .content }}</p>
                     {{ if .button.enable }}
                     {{ with .button }}
@@ -62,12 +62,12 @@
                         <input type="text" class="form-control mb-2 text-md-center" id="subnet_cidrs" name="subnet_cidrs" data-value="clear" placeholder='IPv4 CIDR block(s)'>
                     </div>
                     <div class="col-12 align-self-center text-md-center mt-3">
-                        <button type="button" class="btn btn-main btn-reset mr-3 mb-4 inline-min-width-190" id="calc-element" data-value="reset">{{ i18n "reset" }}</button>
-                        <button type="submit" value="send" class="btn btn-main mr-3 mb-4 inline-min-width-190" id="calc-element" data-value="validate">{{ i18n "calculate" }}</button>
+                        <button type="button" class="btn btn-main btn-reset me-3 mb-4 inline-min-width-190" id="calc-element" data-value="reset">{{ i18n "reset" }}</button>
+                        <button type="submit" value="send" class="btn btn-main me-3 mb-4 inline-min-width-190" id="calc-element" data-value="validate">{{ i18n "calculate" }}</button>
                     </div>
                 </form>
             </div>
-            <div class="col-lg-10 text-center text-md-left mb-5">
+            <div class="col-lg-10 text-center text-md-start mb-5">
                 <div class="container markdown">
                     {{ .Content }}
                 </div>

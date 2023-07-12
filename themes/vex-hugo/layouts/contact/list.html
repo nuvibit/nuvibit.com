@@ -2,16 +2,16 @@
 
 <section class="section">
   <div class="container">
-    <div class="row justify-content-center text-center text-md-left">
+    <div class="row justify-content-center text-center text-md-start">
       {{ with .Params.contact }}
       <div class="col-lg-5 col-sm-6 mb-5">
-        <h2 class="font-weight-bold mb-4">{{ $.Page.RenderString .title }}</h2>
+        <h2 class="fw-bold mb-4">{{ $.Page.RenderString .title }}</h2>
         <p>{{ $.Page.RenderString .content }}</p>
         <br>
         <ul class="list-unstyled contact-list">
-          {{with .phone}} <li class="mb-3"><a href="tel:{{ . }}" title="Call us via phone" aria-label="Call us via phone"><i class="fas fa-phone mr-3"></i>{{ . }}</a></li>{{ end }}
-          {{with .email}} <li class="mb-3"><a href="mailto:{{ . }}" title="Send us an Email" aria-label="Send us an Email"><i class="fas fa-envelope mr-3"></i>{{ . }}</a></li>{{end }}
-          {{with .location }} <li class="mb-3"><i class="fas fa-map-marked-alt mr-3"></i>{{ . }}</li>{{ end }}
+          {{with .phone}} <li class="mb-3"><a href="tel:{{ . }}" title="Call us via phone" aria-label="Call us via phone"><i class="fas fa-phone me-3"></i>{{ . }}</a></li>{{ end }}
+          {{with .email}} <li class="mb-3"><a href="mailto:{{ . }}" title="Send us an Email" aria-label="Send us an Email"><i class="fas fa-envelope me-3"></i>{{ . }}</a></li>{{end }}
+          {{with .location }} <li class="mb-3"><i class="fas fa-map-marked-alt me-3"></i>{{ . }}</li>{{ end }}
         </ul>
       </div>
       {{ end }}

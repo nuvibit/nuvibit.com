@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-10 text-center mb-3">
-        <h1 class="font-weight-bold">{{.Title}}</h1>
+        <h1 class="fw-bold">{{.Title}}</h1>
       </div>
       <div class="col-md-5 text-center p-4 zoom">
 				{{ with .Params }}
@@ -57,11 +57,11 @@
               <img loading="lazy" decoding="async" class="{{ $image_class }}" src="{{ $image_fallback }}" width="{{ $image_dimensions.Width }}" height="{{ $image_dimensions.Height }}" alt='Illustration of {{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
             </picture>
             {{/* HUGO IMAGE RENDERER */}}
-            <div class="card-body blog-tile-body text-left">
-              <h5 class="card-title font-weight-bold p-3 pb-0">{{ .Title }}</h5>
+            <div class="card-body blog-tile-body text-start">
+              <h5 class="card-title fw-bold p-3 pb-0">{{ .Title }}</h5>
               <p class="card-text p-3">{{ $.Page.RenderString .Params.Summary }}</p>
             </div>
-            <div class="card-footer bg-transparent text-muted text-left">
+            <div class="card-footer bg-transparent text-muted text-start">
               {{ .Params.Date | time.Format ":date_long" }} | {{ i18n "reading_duration" }} {{ .Params.Duration }} min
             </div>
           </a>
@@ -93,11 +93,11 @@
               <img loading="lazy" decoding="async" class="{{ $image_class }}" src="{{ $image_fallback }}" width="{{ $image_dimensions.Width }}" height="{{ $image_dimensions.Height }}" alt='Illustration of {{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
             </picture>
             {{/* HUGO IMAGE RENDERER */}}
-            <div class="card-body blog-tile-body text-left">
-              <h5 class="card-title font-weight-bold p-3 pb-0">{{ .Title }}</h5>
+            <div class="card-body blog-tile-body text-start">
+              <h5 class="card-title fw-bold p-3 pb-0">{{ .Title }}</h5>
               <p class="card-text p-3">{{ $.Page.RenderString .Params.Summary }}</p>
             </div>
-            <div class="card-footer bg-transparent text-muted text-left">
+            <div class="card-footer bg-transparent text-muted text-start">
               {{ .Params.Date | time.Format ":date_long" }} | {{ i18n "reading_duration" }} {{ .Params.Duration }} min
             </div>
           </a>

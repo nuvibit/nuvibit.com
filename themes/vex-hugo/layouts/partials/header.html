@@ -1,6 +1,6 @@
 <header class="sticky-top bg-dark">
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark px-2">
       <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
         {{ if site.Params.logo_banner }}
 				{{/* HUGO IMAGE RENDERER */}}
@@ -33,7 +33,7 @@
       </button>
 
       <div class="collapse navbar-collapse text-center" id="navigation">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ms-auto">
           {{ range site.Menus.main }}
           {{ if .HasChildren }}
           <li class="nav-item dropdown">

@@ -3,10 +3,10 @@
   <div class="container mb-5">
     <div class="row justify-content-center">
       <div class="col-lg-10 text-center mb-5">
-        <h1 class="font-weight-bold">{{.Title}}</h1>
+        <h1 class="fw-bold">{{.Title}}</h1>
       </div>
 
-      <div class="col-lg-10 text-center text-md-left mb-5">
+      <div class="col-lg-10 text-center text-md-start mb-5">
         <div class="content">
           <p>{{ $.Page.RenderString .Params.about_us.introduction }}</p>
         </div>
@@ -38,7 +38,7 @@
           </picture>
           {{/* HUGO IMAGE RENDERER */}}
         </div>
-        <div class="col-md-8 align-self-center text-center text-md-left about-text">
+        <div class="col-md-8 align-self-center text-center text-md-start about-text">
           <div class="content">
             <h4 class="subheading mb-10 pb-0">{{ $.Page.RenderString .name }}
               <a class="social" href="{{ .linkedin | safeURL }}" class="h2" title="linkedin">

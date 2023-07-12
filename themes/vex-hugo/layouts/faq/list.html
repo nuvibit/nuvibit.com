@@ -4,9 +4,9 @@
   <div class="container mb-5">
     <div class="row justify-content-center">
 
-			<div class="col-md-3 align-self-center text-center text-md-left">
+			<div class="col-md-3 align-self-center text-center text-md-start">
 				<div class="block">
-          <h1 class="faq-title font-weight-bold">{{ $.Page.RenderString .Title }}</h1>
+          <h1 class="faq-title fw-bold">{{ $.Page.RenderString .Title }}</h1>
 				</div>
 			</div>
       <div class="col-md-5 text-center p-4 zoom">
@@ -43,7 +43,7 @@
           <h1 class="faq-anchor" id="{{ .anchor }}"></h1>
           <details id="details#{{ .anchor }}" class="faq-detail col-lg-12">
             <summary class="faq-summary">
-              <span class="faq-question font-weight-bold">{{ $.Page.RenderString .question }}</span>
+              <span class="faq-question fw-bold">{{ $.Page.RenderString .question }}</span>
               <i class="fas fa-plus"></i>
               <i class="fas fa-minus"></i>
             </summary>

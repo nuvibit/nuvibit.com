@@ -28,9 +28,9 @@
 				</picture>
 				{{/* HUGO IMAGE RENDERER */}}
 			</div>
-			<div class="col-md-6 align-self-center text-center text-md-left">
+			<div class="col-md-6 align-self-center text-center text-md-start">
 				<div class="block">
-					<h1 class="font-weight-bold mb-4 font-size-50">{{ $.Page.RenderString .title }}</h1>
+					<h1 class="fw-bold mb-4 font-size-50">{{ $.Page.RenderString .title }}</h1>
 					<p class="mb-4">{{ $.Page.RenderString .content }}</p>
 					{{ if .button.enable }}
 					{{ with .button }}

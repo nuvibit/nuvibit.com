@@ -13,12 +13,13 @@ unsafe = true
 ########################### Default Parameters ##########################
 
 [params]
-author = "Nuvibit AG"
-images = ["images/logo/logo-nuvibit-badge.png"]
+title = "Nuvibit | Streamline Your Cloud Infrastructure with Terraform"
+description = "Simplify Cloud Management with Nuvibit. Experience peak performance, compliance and scalability with our AWS Landing Zone / Foundation."
 logo_banner = "images/logo/logo-nuvibit-banner.png"
 logo_footer = "images/logo/logo-nuvibit-badge.png"
 contact_form_url = "https://forms.zohopublic.eu/nuvibit/form/Contactus/formperma/TUZO-GqMg11XIInReyJqMICqAS7hWGm6YdW3oVM32hE"
 copyright = "Copyright © 2021 - 2023 Nuvibit AG"
+author = "Nuvibit AG"
 
 #################################### Privacy ##########################################
 
@@ -56,11 +57,8 @@ privacyEnhanced = false
 languageName = "english"
 languageCode = "en-us"
 contentDir = "content/english"
-weight = 1
-
-[languages.en.params]
 title = "Nuvibit | Streamline Your Cloud Infrastructure with Terraform"
-description = "Simplify Cloud Management with Nuvibit. Experience peak performance, compliance and scalability with our AWS Landing Zone / Foundation."
+weight = 1
 
 ###################################### English Navigation ######################################
 

@@ -7,10 +7,6 @@ body {
     background: #fafafa !important;
 }
 
-.glider {
-    scrollbar-width: none;
-}  
-
 // ANCHOR headers
 .heading {
     h2 {
@@ -209,6 +205,21 @@ div.content li {
 }
 
 // ANCHOR table
+.table-overflow {
+    display: block;
+    overflow-x: auto;
+}
+
+.lntable {
+    display: block;
+    overflow-x: auto;
+}
+
+table.lntable td:nth-child(2n + 2) {
+    width: 100%;
+    color:red;
+}
+
 table.subnet-table th {
     background: #bb9fe1;
 }
@@ -472,7 +483,6 @@ div.markdown h6 a.header-link i:hover {
 .venn {
     pointer-events: none;
     position: absolute;
-    top: 50%;
     left: 50%;
     height: 500px;
     width: 500px;
@@ -501,7 +511,6 @@ div.markdown h6 a.header-link i:hover {
     pointer-events: none;
     position: absolute;
     line-height: initial;
-    top: 50%;
     left: 50%;
     height: 500px;
     width: 500px;
@@ -514,6 +523,7 @@ div.markdown h6 a.header-link i:hover {
     animation-fill-mode: forwards;
 
     @include mobile {
+        --offset: 55px;
         height: 200px;
         width: 200px;
         left: 50%;
@@ -571,10 +581,18 @@ div.markdown h6 a.header-link i:hover {
     }
 }
 
+@media only screen and (min-width: 1200px) {
+    /* Desktop */
+    .one,
+    .two {
+        --offset: 125px;
+    }
+}
+
 @keyframes slide-one {
     100% {
         opacity: 1;
-        left: 35%;
+        left: calc(50% - var(--offset));
         transform: translate(-50%, -50%);
     }
 }
@@ -582,7 +600,7 @@ div.markdown h6 a.header-link i:hover {
 @keyframes slide-two {
     100% {
         opacity: 1;
-        left: 65%;
+        left: calc(50% + var(--offset));
         transform: translate(-50%, -50%);
     }
 }
@@ -661,9 +679,9 @@ p.md a:hover {
 }
 
 .blog-tile-list {
-    -ms-flex: 0 0 45.9% !important;
-    flex: 0 0 45.9% !important;
-    max-width: 45.9% !important;
+    -ms-flex: 0 0 47% !important;
+    flex: 0 0 47% !important;
+    max-width: 47% !important;
     margin-bottom: 3rem !important;
 }
 
@@ -684,6 +702,8 @@ p.md a:hover {
 }
 
 .card-deck .card {
+    margin-left: auto;
+    margin-right: auto;
     @include mobile {
         margin-bottom: 3rem !important;
     }
@@ -1104,6 +1124,11 @@ h1.faq-anchor {
     }
 }
 
+// ANCHOR carousel
+.glider {
+    scrollbar-width: none;
+}  
+
 // ANCHOR inline styles
 .inline-color-009900 {
     color: #009900;
@@ -1165,6 +1190,7 @@ h1.faq-anchor {
     line-height: 40px;
 }
 
+// ANCHOR fonts
 @font-face {
     font-display: swap;
     font-family: 'Nunito';

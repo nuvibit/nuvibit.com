@@ -2,11 +2,13 @@
   <meta charset="utf-8">
   <title>{{ .Title }}</title>
 
-  <!-- mobile responsive meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
-  {{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+  <!-- Meta Tags -->
+  <link rel="canonical" href="{{ .Permalink }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+  <meta name="author" content="{{ site.Params.author }}">
   {{ hugo.Generator }}
+  {{ template "_internal/opengraph.html" . }}
 
   <!-- CSS Stylesheet -->
   {{ $css_plugins := resources.Match "plugins/**.css" | resources.Concat "css/buffer_plugins.css" }}
@@ -18,11 +20,6 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="{{ `images/favicon/favicon.ico` | absURL }} " type="image/x-icon">
   <link rel="icon" href="{{ `images/favicon/favicon-32x32.png` | absURL }} " type="image/x-icon">
-
-  {{ with .Params.image }}
-  <meta property="og:image" content="{{ . | absURL }}" />
-  {{ end }}
-  {{ template "_internal/opengraph.html" . }}
 </head>
 
 <!-- Google tag (gtag.js) -->

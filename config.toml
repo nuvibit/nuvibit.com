@@ -1,7 +1,6 @@
 ################################### Default Configuration ############################
 
 baseurl = "https://nuvibit.com/"
-title = "Nuvibit"
 theme = "vex-hugo"
 summarylength = "20"
 googleAnalytics = "G-65QED8XYJ9"
@@ -14,10 +13,10 @@ unsafe = true
 ########################### Default Parameters ##########################
 
 [params]
+author = "Nuvibit AG"
+images = ["images/logo/logo-nuvibit-badge.png"]
 logo_banner = "images/logo/logo-nuvibit-banner.png"
 logo_footer = "images/logo/logo-nuvibit-badge.png"
-description = "We help you build an enterprise-ready, compliant and scalable foundation for the public cloud."
-author = "Nuvibit AG"
 contact_form_url = "https://forms.zohopublic.eu/nuvibit/form/Contactus/formperma/TUZO-GqMg11XIInReyJqMICqAS7hWGm6YdW3oVM32hE"
 copyright = "Copyright © 2021 - 2023 Nuvibit AG"
 
@@ -54,6 +53,8 @@ privacyEnhanced = false
 ################################### English Language #####################################
 
 [Languages.en]
+title = "Nuvibit | Streamline Your Cloud Infrastructure with Terraform"
+description = "Simplify Cloud Management with Nuvibit. Experience peak performance, compliance and scalability with our AWS Landing Zone / Foundation."
 languageName = "english"
 languageCode = "en-us"
 contentDir = "content/english"
@@ -235,6 +236,8 @@ weight = 13
 ################################### German Language #####################################
 
 [Languages.de]
+title = "Nuvibit | Vereinfachen Sie Ihre Cloud-Infrastruktur mit Terraform"
+description = "Vereinfachen Sie das Cloud-Management mit Nuvibit. Erleben Sie Spitzenleistung, Compliance und Skalierbarkeit mit unserer AWS Landing Zone / Foundation."
 languageName = "german"
 languageCode = "de-de"
 contentDir = "content/deutsch"

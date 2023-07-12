@@ -9,7 +9,7 @@
                     {{- with $data.homepage.certifications }}
                     <h4 class="inline-heading-h2">
                         {{ $.Page.RenderString .title }}
-                        <a href="{{ .link | absLangURL }}" aria-label='Read more about {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }} certification'>
+                        <a href="{{ .link | absLangURL }}" title='Read more about our certifications' aria-label='Read more about our certifications'>
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </h4>
@@ -20,7 +20,7 @@
                     {{ range (where .Site.RegularPages "Section" "certifications") }}
                     <div class="block m-3" id="badge-element" data-value="{{ .Permalink }}">
                         <div class="gallery-overlay">
-                            <a href="{{ .Permalink }}" class="gallery-popup" aria-label='Read more about {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }} certification'>
+                            <a href="{{ .Permalink }}" class="gallery-popup" title='Read more about our {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }} certification' aria-label='Read more about our {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }} certification'>
                                 <i class="fas fa-plus"></i>
                             </a>
                         </div>

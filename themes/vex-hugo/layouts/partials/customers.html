@@ -9,7 +9,7 @@
                     {{- with $data.homepage.customers }}
                     <h4 class="inline-heading-h2">
                         {{ $.Page.RenderString .title }}
-                        <a href="{{ .link | absLangURL }}" aria-label='Read more about {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }} customer'>
+                        <a href="{{ .link | absLangURL }}" title='Read more about our customer' aria-label='Read more about our customer'>
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </h4>
@@ -20,7 +20,7 @@
                     {{ range (where .Site.RegularPages "Section" "customers") }}
                     <div class="block ml-3 mr-3" id="badge-element" data-value="{{ .Permalink }}">
                         <div class="gallery-overlay">
-                            <a href="{{ .Permalink }}" class="gallery-popup" aria-label='Read more about {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }} customer'>
+                            <a href="{{ .Permalink }}" class="gallery-popup" title='Read more about our customer {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }}' aria-label='Read more about our customer {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }}'>
                                 <i class="fas fa-plus"></i>
                             </a>
                         </div>

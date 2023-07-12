@@ -16,35 +16,41 @@
                     {{ end }}
                 </div>
 
-                <div class="product-slider">
-                    {{ range (where .Site.RegularPages "Section" "certifications") }}
-                    <div class="block m-3" id="badge-element" data-value="{{ .Permalink }}">
-                        <div class="gallery-overlay">
-                            <a href="{{ .Permalink }}" class="gallery-popup" title='Read more about our {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }} certification' aria-label='Read more about our {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }} certification'>
-                                <i class="fas fa-plus"></i>
-                            </a>
+                <div class="glider-contain">
+                    <div class="glider product-slider">
+                        {{ range (where .Site.RegularPages "Section" "certifications") }}
+                        <div class="block m-3" id="badge-element" data-value="{{ .Permalink }}">
+                            <div class="gallery-overlay">
+                                <a href="{{ .Permalink }}" class="gallery-popup" title='Read more about our {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }} certification' aria-label='Read more about our {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }} certification'>
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                            {{/* HUGO IMAGE RENDERER */}}
+                            {{ $image_resolutions := (slice "300x" "500x") }}
+                            {{ $image_data := newScratch }}
+                            {{ $image_class := "img-fluid"}}
+                            {{ $image_path := .Params.image }}
+                            {{ $image_buffer := resources.Get $image_path }}
+                            {{ $image_fallback := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" (index (last 1 $image_resolutions) 0))) }}
+                            {{ range $index, $image_resolutions }}
+                            {{ $image_webp := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s webp q90 Lanczos" .)) }}
+                            {{ $image_data.Add "srcset_webp" (printf "%s %s," $image_webp (replace . "x" "w")) }}
+                            {{ $image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" .)) }}
+                            {{ $image_data.Add "srcset_jpg" (printf "%s %s," $image_jpg (replace . "x" "w")) }}
+                            {{ end }}
+                            {{ $image_dimensions := $image_buffer.Resize (index (last 1 $image_resolutions) 0) }}
+                            <picture>
+                            <source type="image/webp" srcset='{{ $image_data.Get "srcset_webp" }}'>
+                            <source type="image/jpeg" srcset='{{ $image_data.Get "srcset_jpg" }}'>
+                            <img loading="lazy" decoding="async" class="{{ $image_class }}" src="{{ $image_fallback }}" width="{{ $image_dimensions.Width }}" height="{{ $image_dimensions.Height }}" alt='{{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }} badge'>
+                            {{/* HUGO IMAGE RENDERER */}}
                         </div>
-                        {{/* HUGO IMAGE RENDERER */}}
-                        {{ $image_resolutions := (slice "300x" "500x") }}
-                        {{ $image_data := newScratch }}
-                        {{ $image_class := "img-fluid"}}
-                        {{ $image_path := .Params.image }}
-                        {{ $image_buffer := resources.Get $image_path }}
-                        {{ $image_fallback := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" (index (last 1 $image_resolutions) 0))) }}
-                        {{ range $index, $image_resolutions }}
-                        {{ $image_webp := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s webp q90 Lanczos" .)) }}
-                        {{ $image_data.Add "srcset_webp" (printf "%s %s," $image_webp (replace . "x" "w")) }}
-                        {{ $image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" .)) }}
-                        {{ $image_data.Add "srcset_jpg" (printf "%s %s," $image_jpg (replace . "x" "w")) }}
                         {{ end }}
-                        {{ $image_dimensions := $image_buffer.Resize (index (last 1 $image_resolutions) 0) }}
-                        <picture>
-                        <source type="image/webp" srcset='{{ $image_data.Get "srcset_webp" }}'>
-                        <source type="image/jpeg" srcset='{{ $image_data.Get "srcset_jpg" }}'>
-                        <img loading="lazy" decoding="async" class="{{ $image_class }}" src="{{ $image_fallback }}" width="{{ $image_dimensions.Width }}" height="{{ $image_dimensions.Height }}" alt='{{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }} badge'>
-                        {{/* HUGO IMAGE RENDERER */}}
                     </div>
-                    {{ end }}
+                    {{/*  <button aria-label="Previous" class="glider-prev pull-left"><i class='fas fa-arrow-left' aria-hidden='true'></i></button>
+                    <button aria-label="Next" class="glider-next pull-right"><i class='fas fa-arrow-right' aria-hidden='true'></i></button>  */}}
+                    <button role="button" aria-label="Previous" class="glider-prev">«</button>
+                    <button role="button" aria-label="Next" class="glider-next">»</button>
                 </div>
             </div>
         </div>

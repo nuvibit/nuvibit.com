@@ -96,6 +96,13 @@
 	</div>
 </footer>
 
+{{/*  {{ $js_plugins := resources.Match "plugins/**.js" }}
+{{ $js_main := resources.Get "js/custom-script.js" }}
+{{ range $js_plugins }}
+<script defer src="{{ .RelPermalink }}"></script>
+{{ end }}
+<script defer src="{{ $js_main.RelPermalink }}"></script>  */}}
+
 <!-- JavaScript -->
 {{ $js_plugins := resources.Match "plugins/**.js" | resources.Concat "js/buffer_plugins.js" | minify }}
 {{ $js_main := resources.Match "js/**.js" | resources.Concat "js/buffer_script.js" | minify }}

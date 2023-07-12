@@ -15,49 +15,64 @@ window.addEventListener("load",function(){
     })
 });
 
+// glider carousel
+const glider_elements = document.querySelectorAll('.glider');
+if (glider_elements.length > 0) {
+    glider_elements.forEach(function(element) {
+        new Glider(element, {
+            slidesToShow: 4,
+            draggable: true,
+            arrows: {
+                prev: '.glider-prev',
+                next: '.glider-next'
+            }
+        });
+    });
+}
+
 // slick carousel
-(function ($) {
-    'use strict';
-    $('.product-image-slider').slick({
-        autoplay: false,
-        infinite: true,
-        arrows: false,
-        dots: true,
-        customPaging: function (slider, i) {
-            var image = $(slider.$slides[i]).data('image');
-            return '<img class="img-fluid" src="' + image + '" alt="product-image">';
-        }
-    });
-    $('.product-slider').slick({
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        dots: false,
-        arrows: true,
-        prevArrow: "<button type='button' aria-label='Previous arrow' class='slick-prev pull-left'><i class='fas fa-arrow-left' aria-hidden='true'></i></button>",
-        nextArrow: "<button type='button' aria-label='Next arrow' class='slick-next pull-right'><i class='fas fa-arrow-right' aria-hidden='true'></i></button>",
-        responsive: [{
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1
-            }
-        }
-        ]
-    });
-})(jQuery);
+// (function ($) {
+//     'use strict';
+//     $('.product-image-slider').slick({
+//         autoplay: false,
+//         infinite: true,
+//         arrows: false,
+//         dots: true,
+//         customPaging: function (slider, i) {
+//             var image = $(slider.$slides[i]).data('image');
+//             return '<img class="img-fluid" src="' + image + '" alt="product-image">';
+//         }
+//     });
+//     $('.product-slider').slick({
+//         infinite: true,
+//         slidesToShow: 4,
+//         slidesToScroll: 1,
+//         autoplay: true,
+//         dots: false,
+//         arrows: true,
+//         prevArrow: "<button type='button' aria-label='Previous arrow' class='slick-prev pull-left'><i class='fas fa-arrow-left' aria-hidden='true'></i></button>",
+//         nextArrow: "<button type='button' aria-label='Next arrow' class='slick-next pull-right'><i class='fas fa-arrow-right' aria-hidden='true'></i></button>",
+//         responsive: [{
+//             breakpoint: 1024,
+//             settings: {
+//                 slidesToShow: 3
+//             }
+//         },
+//         {
+//             breakpoint: 600,
+//             settings: {
+//                 slidesToShow: 2
+//             }
+//         },
+//         {
+//             breakpoint: 480,
+//             settings: {
+//                 slidesToShow: 1
+//             }
+//         }
+//         ]
+//     });
+// })(jQuery);
 
 // open faq fields by hash
 if (window.location.pathname == "/faq/"){
@@ -66,21 +81,6 @@ if (window.location.pathname == "/faq/"){
         document.getElementById("details"+hash).open = true;
     }
 }
-
-// in december (11) let it snow on landing page
-document.addEventListener('DOMContentLoaded', function () {
-    const d = new Date();
-    var month = d.getMonth();
-    if (month == 11) {
-        // let it snow
-        $("#snow").toggle();
-        new Snow('#snow', {
-            number: 50,
-            r: 5,
-            v: 0.8
-        });
-    }
-});
 
 // event_listeners instead of on_click 
 const zoom_elements = document.querySelectorAll('.zoom');
@@ -131,20 +131,52 @@ form_elements.forEach(el => el.addEventListener('submit', event => {
 
 // function to copy content to clipboard and display message
 function copy_url(url) {
-    var $temp = $("<input>");
-    $("body").append($temp);
-    $temp.val(url).select();
+    var tempInput = document.createElement('input');
+    document.body.appendChild(tempInput);
+    tempInput.value = url;
+    tempInput.select();
     document.execCommand("copy");
-    $temp.remove();
+    document.body.removeChild(tempInput);
     // display alert message
-    $(".alert").show();
-    $(".alert").delay(2000).slideUp(200, function () {
-        $(this).hide();
-    });
+    var alertElement = document.querySelector(".alert");
+    alertElement.style.display = "block";
+    setTimeout(function() {
+        alertElement.style.display = "none";
+    }, 2000);
+}
+
+// function to image zoom
+function image_zoom(element) {
+    var zoomed_img = element.firstElementChild;
+    if (zoomed_img && zoomed_img.id == "zoomed-image") {
+        zoomed_img.classList.add("img-max-400");
+        zoomed_img.removeAttribute("id");
+    } else if (zoomed_img && zoomed_img.classList.contains("img-max-400")) {
+        zoomed_img.classList.remove("img-max-400");
+        zoomed_img.setAttribute("id", "zoomed-image");
+    }
+    var zoomedElements = document.getElementsByClassName("zoomed");
+    if (!element.classList.contains("zoomed")) {
+        for (var i = 0; i < zoomedElements.length; i++) {
+            zoomedElements[i].classList.remove("zoomed");
+        }
+    }
+    element.classList.toggle("zoomed");
+    var zoomBlurElements = document.getElementsByClassName("zoom-blur");
+    for (var i = 0; i < zoomBlurElements.length; i++) {
+        zoomBlurElements[i].style.display = (zoomBlurElements[i].style.display != 'block') ? 'block' : 'none';
+    }
+    setTimeout(function () {
+        if (element.classList.contains("zoomed")) {
+            window.addEventListener('scroll', cancel_zoom, false);
+        } else {
+            window.removeEventListener('scroll', cancel_zoom);
+        }
+    }, 100);
 }
 
 // function to cancel image zoom
-function cancel_zoom() {
+function cancel_zoom_jq() {
     window.removeEventListener('scroll', cancel_zoom);
     var zoomed_img = document.getElementById("zoomed-image")
     if (zoomed_img) {
@@ -155,29 +187,21 @@ function cancel_zoom() {
     $(".zoom-blur").toggle();
 }
 
-// function to image zoom
-function image_zoom(element) {
-    var zoomed_img = element.firstElementChild;
-    if (zoomed_img && zoomed_img.id == "zoomed-image") {
+function cancel_zoom() {
+    window.removeEventListener('scroll', cancel_zoom);
+    var zoomed_img = document.getElementById("zoomed-image");
+    if (zoomed_img) {
         zoomed_img.classList.add("img-max-400");
         zoomed_img.removeAttribute("id");
-    } else if (zoomed_img.classList.contains("img-max-400")) {
-        zoomed_img.classList.remove("img-max-400");
-        zoomed_img.setAttribute("id", "zoomed-image");
     }
-    if (!element.classList.contains("zoomed")) {
-        $(".zoomed").removeClass("zoomed");
+    var zoomedElements = document.getElementsByClassName("zoomed");
+    for (var i = 0; i < zoomedElements.length; i++) {
+        zoomedElements[i].classList.remove("zoomed");
     }
-    element.classList.toggle('zoomed');
-    $(".zoom-blur").toggle();
-
-    setTimeout(function () {
-        if (element.classList.contains("zoomed")) {
-            window.addEventListener('scroll', cancel_zoom, false)
-        } else {
-            window.removeEventListener('scroll', cancel_zoom);
-        }
-    }, 100);
+    var zoomBlurElements = document.getElementsByClassName("zoom-blur");
+    for (var i = 0; i < zoomBlurElements.length; i++) {
+        zoomBlurElements[i].style.display = (zoomBlurElements[i].style.display != 'block') ? 'block' : 'none';
+    }
 }
 
 // function to redirect to subpage
@@ -214,14 +238,16 @@ function uri_translate(uri, lang_now, lang_new) {
 
 // function to copy subnet to clipboard
 function copy_subnet(subnet, id) {
-    var $temp = $("<input>");
-    $("body").append($temp);
-    element = document.getElementById(id);
-    $temp.val(subnet).select();
+    var tempInput = document.createElement('input');
+    document.body.appendChild(tempInput);
+    var element = document.getElementById(id);
+    tempInput.value = subnet;
+    tempInput.select();
     document.execCommand("copy");
-    $temp.remove();
+    document.body.removeChild(tempInput);
     element.classList.add("fa-solid");
 }
+
 
 // function to reset custom validation
 function clearValidate() {
@@ -302,7 +328,10 @@ function subnetCalculator() {
     // get subnet table to dynamically append with calculation results
     var table = document.getElementsByClassName("subnet-table")[0]
     // delete existing subnet table content
-    $(".subnet-table td").remove();
+    var subnetTableCells = document.querySelectorAll('.subnet-table td');
+    subnetTableCells.forEach(function(cell) {
+        cell.remove();
+    });
     // loop for every subnet and calculate network address
     for (var i = 0, subnet_cidr; subnet_cidr = subnet_cidrs[i++];) {
         subnet_ips = 2 ** (32 - subnet_cidr)
@@ -398,6 +427,8 @@ if (userLangPref && supportedLang.includes(userLangPref)) {
 }
 
 // append open in new tab to links which are external
-$(document.links).filter(function () {
-    return this.hostname != window.location.hostname;
-}).attr('target', '_blank');
+Array.from(document.links).filter(function(link) {
+    return link.hostname !== window.location.hostname;
+}).forEach(function(link) {
+    link.target = '_blank';
+});

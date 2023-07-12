@@ -53,12 +53,14 @@ privacyEnhanced = false
 ################################### English Language #####################################
 
 [Languages.en]
-title = "Nuvibit | Streamline Your Cloud Infrastructure with Terraform"
-description = "Simplify Cloud Management with Nuvibit. Experience peak performance, compliance and scalability with our AWS Landing Zone / Foundation."
 languageName = "english"
 languageCode = "en-us"
 contentDir = "content/english"
 weight = 1
+
+[languages.en.params]
+title = "Nuvibit | Streamline Your Cloud Infrastructure with Terraform"
+description = "Simplify Cloud Management with Nuvibit. Experience peak performance, compliance and scalability with our AWS Landing Zone / Foundation."
 
 ###################################### English Navigation ######################################
 
@@ -236,12 +238,14 @@ weight = 13
 ################################### German Language #####################################
 
 [Languages.de]
-title = "Nuvibit | Vereinfachen Sie Ihre Cloud-Infrastruktur mit Terraform"
-description = "Vereinfachen Sie das Cloud-Management mit Nuvibit. Erleben Sie Spitzenleistung, Compliance und Skalierbarkeit mit unserer AWS Landing Zone / Foundation."
 languageName = "german"
 languageCode = "de-de"
 contentDir = "content/deutsch"
 weight = 2
+
+[Languages.de.params]
+title = "Nuvibit | Vereinfachen Sie Ihre Cloud-Infrastruktur mit Terraform"
+description = "Vereinfachen Sie das Cloud-Management mit Nuvibit. Erleben Sie Spitzenleistung, Compliance und Skalierbarkeit mit unserer AWS Landing Zone / Foundation."
 
 ###################################### German Navigation ######################################
 

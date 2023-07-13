@@ -12,9 +12,10 @@
   {{ template "_internal/opengraph.html" . }}
 
   <!-- CSS Stylesheet -->
+  {{ $css_bootstrap := resources.Get "plugins/_bootstrap/scss/bootstrap.scss" | toCSS }}
   {{ $css_plugins := resources.Match "plugins/**.css" | resources.Concat "css/buffer_plugins.css" }}
-  {{ $css_main := resources.Match "scss/**.scss" | resources.Concat "css/buffer_style.css" | toCSS }}
-  {{ $css := slice $css_plugins $css_main | resources.Concat "css/style.css" | minify | fingerprint }}
+  {{ $css_customize := resources.Get "scss/custom-style.scss" | toCSS }}
+  {{ $css := slice $css_bootstrap $css_plugins $css_customize | resources.Concat "css/style.css" | minify | fingerprint }}
   <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
   <link rel="stylesheet" type="text/css" href="{{ $css.RelPermalink }}">
 

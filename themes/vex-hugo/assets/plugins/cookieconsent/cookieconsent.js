@@ -154,7 +154,7 @@ function a() {
         "wpcb-pushdown",
         "padding",
         "name",
-        "_blank",
+        "", // _blank
         "navigator",
         "domain",
         "clientHeight",

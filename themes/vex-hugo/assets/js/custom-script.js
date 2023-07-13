@@ -1,84 +1,124 @@
 // cookie consent
-window.addEventListener("load",function(){
+window.addEventListener("load", function () {
     window.wpcb.init({
-        "border":"thin",
-        "colors":{"popup":{"background":"#606060","text":"#ffffff","border":"#f9f9f9"},
-        "button":{"background":"#f9f9f9","text":"#000000"}},
-        "corners":"large",
-        "content":{
-            "href":document.getElementById("js_cookieconsent_href").value,
+        "border": "thin",
+        "colors": {
+            "popup": { "background": "#606060", "text": "#ffffff", "border": "#f9f9f9" },
+            "button": { "background": "#f9f9f9", "text": "#000000" }
+        },
+        "corners": "large",
+        "content": {
+            "href": document.getElementById("js_cookieconsent_href").value,
             "message": document.getElementById("js_cookieconsent_message").value,
             "link": document.getElementById("js_cookieconsent_link").value,
             "button": document.getElementById("js_cookieconsent_dismiss").value
         },
-        "position":"bottom-right"
+        "position": "bottom-right"
     })
 });
 
-// glider carousel
+const enable_glider_autoplay = true
 const glider_elements = document.querySelectorAll('.glider');
 if (glider_elements.length > 0) {
-    glider_elements.forEach(function(element) {
-        new Glider(element, {
+    glider_elements.forEach(function (element) {
+        var glider = new Glider(element, {
             slidesToShow: 4,
+            slidesToScroll: 1,
+            scrollLock: true,
             draggable: true,
+            rewind: true,
             arrows: {
-                prev: '.glider-prev',
-                next: '.glider-next'
-            }
+                prev: element.parentNode.querySelector('.glider-prev'),
+                next: element.parentNode.querySelector('.glider-next')
+            },
+            responsive: [
+                {
+                    // screens greater than >= 0px
+                    breakpoint: 0,
+                    settings: {
+                        // Set to `auto` and provide item width to adjust to viewport
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        duration: 0.75
+                    }
+                },
+                {
+                    // screens greater than >= 775px
+                    breakpoint: 775,
+                    settings: {
+                        // Set to `auto` and provide item width to adjust to viewport
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        duration: 0.75
+                    }
+                },
+                {
+                    // screens greater than >= 1024px
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        duration: 0.75
+                    }
+                }
+            ]
         });
+        if (enable_glider_autoplay == true) {
+            slideAutoPaly(glider);
+        }
     });
 }
 
-// slick carousel
-// (function ($) {
-//     'use strict';
-//     $('.product-image-slider').slick({
-//         autoplay: false,
-//         infinite: true,
-//         arrows: false,
-//         dots: true,
-//         customPaging: function (slider, i) {
-//             var image = $(slider.$slides[i]).data('image');
-//             return '<img class="img-fluid" src="' + image + '" alt="product-image">';
-//         }
-//     });
-//     $('.product-slider').slick({
-//         infinite: true,
-//         slidesToShow: 4,
-//         slidesToScroll: 1,
-//         autoplay: true,
-//         dots: false,
-//         arrows: true,
-//         prevArrow: "<button type='button' aria-label='Previous arrow' class='slick-prev pull-left'><i class='fas fa-arrow-left' aria-hidden='true'></i></button>",
-//         nextArrow: "<button type='button' aria-label='Next arrow' class='slick-next pull-right'><i class='fas fa-arrow-right' aria-hidden='true'></i></button>",
-//         responsive: [{
-//             breakpoint: 1024,
-//             settings: {
-//                 slidesToShow: 3
-//             }
-//         },
-//         {
-//             breakpoint: 600,
-//             settings: {
-//                 slidesToShow: 2
-//             }
-//         },
-//         {
-//             breakpoint: 480,
-//             settings: {
-//                 slidesToShow: 1
-//             }
-//         }
-//         ]
-//     });
-// })(jQuery);
+// glider carousel
+function slideAutoPaly(glider, delay = 3000, repeat = true) {
+    let autoplay = null;
+    const slidesCount = glider.track.childElementCount;
+    let nextIndex = 1;
+    let pause = true;
+    function slide() {
+        autoplay = setInterval(() => {
+            if (nextIndex >= slidesCount) {
+                if (!repeat) {
+                    clearInterval(autoplay);
+                } else {
+                    nextIndex = 0;
+                }
+            }
+            glider.scrollItem(nextIndex++);
+        }, delay);
+    }
+    overflow = false
+    glider.track.childNodes.forEach(function callback(child, index) {
+        if (overflow == false && child.classList.contains("visible") == false) {
+            overflow = true
+        }
+    });
+    if (overflow == true) {
+        glider.arrows.next.removeAttribute("hidden");
+        glider.arrows.prev.removeAttribute("hidden");
+        slide();
+        [glider.ele, glider.arrows.next, glider.arrows.prev].forEach(item => {
+            item.addEventListener('mouseover', event => {
+                if (pause) {
+                    clearInterval(autoplay);
+                    pause = false;
+                }
+            }, 300);
+            item.addEventListener('mouseout', event => {
+                if (!pause) {
+                    slide();
+                    pause = true;
+                }
+            }, 300);
+        })
+    }
+}
 
 // open faq fields by hash
-if (window.location.pathname == "/faq/"){
+if (window.location.pathname == "/faq/") {
     var hash = window.location.hash;
-    if (hash != ""){
-        document.getElementById("details"+hash).open = true;
+    if (hash != "") {
+        document.getElementById("details" + hash).open = true;
     }
 }
 
@@ -140,7 +180,7 @@ function copy_url(url) {
     // display alert message
     var alertElement = document.querySelector(".alert");
     alertElement.style.display = "block";
-    setTimeout(function() {
+    setTimeout(function () {
         alertElement.style.display = "none";
     }, 2000);
 }
@@ -329,7 +369,7 @@ function subnetCalculator() {
     var table = document.getElementsByClassName("subnet-table")[0]
     // delete existing subnet table content
     var subnetTableCells = document.querySelectorAll('.subnet-table td');
-    subnetTableCells.forEach(function(cell) {
+    subnetTableCells.forEach(function (cell) {
         cell.remove();
     });
     // loop for every subnet and calculate network address
@@ -427,8 +467,8 @@ if (userLangPref && supportedLang.includes(userLangPref)) {
 }
 
 // append open in new tab to links which are external
-Array.from(document.links).filter(function(link) {
+Array.from(document.links).filter(function (link) {
     return link.hostname !== window.location.hostname;
-}).forEach(function(link) {
+}).forEach(function (link) {
     link.target = '_blank';
 });

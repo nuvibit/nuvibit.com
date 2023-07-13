@@ -30,7 +30,7 @@
           </div>
 				</div>
 			</div>
-      <div class="col-md-8 text-center text-md-end mt-5 blog-social">
+      <div class="col-md-9 text-center text-md-end mt-5 blog-social">
         <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink | absURL }}" title="Share this blog post on LinkedIn" aria-label="Share this blog post on LinkedIn" target="_blank" alt="linkedin post">
           <i class="fab fa-linkedin me-4"></i>
         </a>
@@ -43,7 +43,7 @@
         <a href="#" id="copy-element" title="Copy the link to this blog post" aria-label="Copy the link to this blog post" data-value="{{ .Permalink | absURL }}" alt="copy link">
           <i class="fas fa-link"></i>
         </a>
-        <div class="p-0 mt-md-0 mt-3 col-sm-12 col-md-6 float-start text-muted text-center text-md-start">
+        <div class="p-0 mt-md-0 mt-3 col-12 col-md-6 float-start text-muted text-center text-md-start">
           {{ .Params.Date | time.Format ":date_long" }} | {{ i18n "reading_duration" }} {{ .Params.Duration }} min
         </div>
       </div>
@@ -51,7 +51,7 @@
       <div class="w-75 mt-4 alert alert-primary inline-display-none" id="alert">
         <strong>Link has been copied to clipboard.</strong>
       </div>
-      <hr class="w-75 pb-3"/>
+      <hr class="w-75 pb-3 mt-3"/>
 
       <div class="col-lg-10 text-center text-md-start mb-5">
         <div class="container markdown">

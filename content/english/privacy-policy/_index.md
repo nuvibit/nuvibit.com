@@ -37,7 +37,7 @@ Loonstrasse 36<br/>
 
 We have the following data protection representation pursuant to [Article 27 of the GDPR](https://steigerlegal.ch/dsgvo/dsgvo-27/) in the European Economic Area (EEA), including the European Union (EU) and the Principality of Liechtenstein, Iceland and Norway, as an _additional_ point of contact for supervisory authorities and data subjects for inquiries related to the General Data Protection Regulation (GDPR):
 
-[VGS Datenschutzpartner UG](https://www.datenschutzpartner.eu/kontakt/)<br/>
+[VGS Datenschutzpartner GmbH](https://www.datenschutzpartner.eu)<br/>
 Am Kaiserkai 69<br/>
 20457 Hamburg<br/>
 Germany

@@ -37,7 +37,7 @@ Loonstrasse 36<br/>
 
 Wir verfügen über nachfolgende Datenschutz-Vertretung gemäss [Art. 27 DSGVO](https://steigerlegal.ch/dsgvo/dsgvo-27/) im Europäischen Wirtschaftsraum (EWR) einschliesslich Europäischer Union (EU) und Fürstentum Liechtenstein, Island und Norwegen als _zusätzliche_ Anlaufstelle für Aufsichtsbehörden und betroffene Personen für Anfragen im Zusammenhang mit der Datenschutz-Grundverordnung (DSGVO):
 
-[VGS Datenschutzpartner UG](https://www.datenschutzpartner.eu/kontakt/)<br/>
+[VGS Datenschutzpartner GmbH](https://www.datenschutzpartner.eu)<br/>
 Am Kaiserkai 69<br/>
 20457 Hamburg<br/>
 Deutschland

@@ -20,25 +20,25 @@ Wir sind überzeugt, dass [GitOps](faq/#gitops 'What is GitOps?') die beste Meth
 Aus diesem Grund haben wir unsere Lösung so konzipiert, dass ein neuer AWS Account mit einem einfachen Pull Request bestellt werden kann, der die erforderlichen Informationen enthält.
 
 ```terraform {linenos=table,hl_lines=[],linenostart=50, noClasses=false}
-  aws-c1-lifecycle = {
+  "aws-c1-lifecycle" = {
     title         = "lifecycle account"
     account_owner = "max.muster@customer1.com"
     tenant        = "core"
     environment   = "prod"
   }
-  aws-c1-logging = {
+  "aws-c1-logging" = {
     title         = "logging account"
     account_owner = "max.muster@customer1.com"
     tenant        = "core"
     environment   = "prod"
   }
-  aws-c1-security = {
+  "aws-c1-security" = {
     title         = "security account"
     account_owner = "max.muster@customer1.com"
     tenant        = "core"
     environment   = "prod"
   }
-  aws-c1-OOO1 = {
+  "aws-c1-0001" = {
     title         = "marketing application - nonprod"
     account_owner = "max.muster@customer1.com"
     tenant        = "marketing"
@@ -75,7 +75,7 @@ Um diese Einschränkung zu umgehen, haben wir ein Account Recycling implementier
 Um einen AWS Account zu recyclen, reicht es, im Account Inventory Repository das Attribut **recycled** zu aktivieren:
 
 ```terraform {linenos=table,hl_lines=[6],linenostart=50, noClasses=false}
- aws-c1-0001 = {
+ "aws-c1-0001" = {
     title         = "marketing application - nonprod"
     account_owner = "max.muster@customer1.com"
     tenant        = "marketing"
@@ -104,7 +104,7 @@ Das Einzige, was bleibt, ist eine leere Hülle des AWS Accounts, die keine Koste
 Sobald ein neuer Account benötigt wird, kann ein recycelter Account wiederverwendet werden, indem das Kennzeichen **recyceled** entfernt und die Attribute des Accounts aktualisiert werden:
 
 ```terraform {linenos=table,hl_lines=[],linenostart=50, noClasses=false}
-  aws-c1-OOO1 = {
+  "aws-c1-0001" = {
     title         = "sales application - nonprod"
     account_owner = "john.doe@customer1.com"
     tenant        = "sales"

@@ -221,7 +221,6 @@ div.content li {
 
 table.lntable td:nth-child(2n + 2) {
     width: 100%;
-    color:red;
 }
 
 table.subnet-table th {
@@ -258,18 +257,6 @@ table.subnet-table span.copy-table-cell:hover {
     padding-bottom: 20px !important;
 }
 
-.pb-40 {
-    padding-bottom: 40px !important;
-}
-
-.mb-0 {
-    margin-bottom: 0px !important;
-}
-
-.mb-5r {
-    margin-bottom: 5rem !important;
-}
-
 .mb-10 {
     margin-bottom: 10px !important;
 }
@@ -282,10 +269,6 @@ table.subnet-table span.copy-table-cell:hover {
     margin-bottom: 40px !important;
 }
 
-.mb-60 {
-    margin-bottom: 60px !important;
-}
-
 .mt-0 {
     margin-top: 0px !important;
 }
@@ -296,22 +279,6 @@ table.subnet-table span.copy-table-cell:hover {
 
 .w-85 {
     width: 85% !important;
-}
-
-.w-90 {
-    width: 90% !important;
-}
-
-.height-150 {
-    height: 150px !important;
-}
-
-.height-250 {
-    height: 250px !important;
-}
-
-.height-350 {
-    height: 350px !important;
 }
 
 br.nl {
@@ -623,10 +590,6 @@ p.md a:hover {
     text-decoration: underline !important;
 }
 
-.preloader img {
-    width: 200px;
-}
-
 .social {
     color: #444 !important;
     text-decoration: none !important;
@@ -811,17 +774,6 @@ p.copyright-text {
 .zoomed img {
     max-height: 70vh !important;
     width: auto !important;
-}
-
-// ANCHOR let it snow
-#snow {
-    height: 100vh;
-    width: 100vw;
-    background: lightgrey;
-    position: fixed;
-    z-index: 0;
-    display: none;
-    opacity: 0.5;
 }
 
 // ANCHOR about
@@ -1237,6 +1189,11 @@ h1.faq-anchor {
     font-weight: 700;
     font-size: 40px;
     line-height: 40px;
+}
+
+// ANCHOR chroma
+.chroma .hl {
+    background-color: #ffffcc3d;
 }
 
 // ANCHOR fonts

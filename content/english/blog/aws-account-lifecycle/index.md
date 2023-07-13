@@ -19,25 +19,25 @@ Our [Nuvibit Cloud Foundation Blueprint](solutions/foundation-blueprint "Foundat
 We believe that [GitOps](faq/#gitops 'What is GitOps?') is the best way for employees to order new resources. Therefore, a new AWS Account can be ordered with a simple pull request containing the required information.
 
 ```terraform {linenos=table,hl_lines=[],linenostart=50, noClasses=false}
-  aws-c1-lifecycle = {
+  "aws-c1-lifecycle" = {
     title         = "lifecycle account"
     account_owner = "max.muster@customer1.com"
     tenant        = "core"
     environment   = "prod"
   }
-  aws-c1-logging = {
+  "aws-c1-logging" = {
     title         = "logging account"
     account_owner = "max.muster@customer1.com"
     tenant        = "core"
     environment   = "prod"
   }
-  aws-c1-security = {
+  "aws-c1-security" = {
     title         = "security account"
     account_owner = "max.muster@customer1.com"
     tenant        = "core"
     environment   = "prod"
   }
-  aws-c1-OOO1 = {
+  "aws-c1-0001" = {
     title         = "marketing application - nonprod"
     account_owner = "max.muster@customer1.com"
     tenant        = "marketing"
@@ -73,7 +73,7 @@ AWS does not offer a simple solution to delete accounts in an automated manner. 
 To recycle an AWS Account you can simply update the account inventory repository with the **recycled flag**:
 
 ```terraform {linenos=table,hl_lines=[6],linenostart=50, noClasses=false}
- aws-c1-0001 = {
+ "aws-c1-0001" = {
     title         = "marketing application - nonprod"
     account_owner = "max.muster@customer1.com"
     tenant        = "marketing"
@@ -103,7 +103,7 @@ The only thing left is an empty hull of the account that does not create any cos
 As soon as a new account is needed the recycled account can be reused by removing the recyled flag and updating the account attributes:
 
 ```terraform {linenos=table,hl_lines=[],linenostart=50, noClasses=false}
-  aws-c1-OOO1 = {
+  "aws-c1-0001" = {
     title         = "sales application - nonprod"
     account_owner = "john.doe@customer1.com"
     tenant        = "sales"

@@ -164,10 +164,6 @@ Wir verwenden insbesondere:
 
 Wir verwenden Dienste von Dritten, um ausgewählte Schriftarten sowie Icons, Logos und Symbole in unsere Website einbetten zu können.
 
-Wir verwenden insbesondere:
-
-*   **[Google Fonts:](https://fonts.google.com)** Schriftarten; Anbieterinnen: Google LLC (USA) / Google Ireland Limited (Irland) für Nutzerinnen und Nutzer im Europäischen Wirtschaftsraum (EWR) und in der Schweiz; Angaben zum Datenschutz: [Was bedeutet die Verwendung der Google Fonts-API für die Privatsphäre meiner Nutzerinnen und Nutzer? (What does using the Google Fonts API mean for the privacy of my users?)](https://developers.google.com/fonts/faq#what_does_using_the_google_fonts_api_mean_for_the_privacy_of_my_users), [Grundsätze zu Datenschutz und Sicherheit](https://safety.google/intl/de/principles/), [Datenschutzerklärung](https://policies.google.com/privacy?hl=de).
-
 ## 9\. Schlussbestimmungen
 
 Wir haben diese Datenschutzerklärung mit dem [Datenschutz-Generator](https://www.datenschutzpartner.ch/angebot-datenschutz-generator/) von [Datenschutzpartner](https://datenschutzpartner.ch/) erstellt.

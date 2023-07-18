@@ -49,8 +49,14 @@
                         </div>
                         {{ end }}
                     </div>
-                    <button hidden aria-label="Previous" class="glider-prev pull-left"><i class='fa-solid fa-arrow-left' aria-hidden='true'></i></button>
-                    <button hidden aria-label="Next" class="glider-next pull-right"><i class='fa-solid fa-arrow-right' aria-hidden='true'></i></button>
+                    <button hidden aria-label="Previous" class="glider-prev pull-left">
+                        {{/*  <i class='fa-solid fa-arrow-left' aria-hidden='true'></i>  */}}
+                        {{ partial "svg" "fa-solid fa-arrow-left" }}
+                    </button>
+                    <button hidden aria-label="Next" class="glider-next pull-right">
+                        {{/*  <i class='fa-solid fa-arrow-right' aria-hidden='true'></i>  */}}
+                        {{ partial "svg" "fa-solid fa-arrow-right" }}
+                    </button>
                 </div>
             </div>
         </div>

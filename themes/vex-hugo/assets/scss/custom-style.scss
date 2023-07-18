@@ -538,11 +538,13 @@ div.markdown h6 {
 }
 
 @media only screen and (min-width: 1200px) {
+
     /* Desktop */
     .one,
     .two {
         --offset: 125px;
     }
+
     .container {
         max-width: 1200px;
     }
@@ -659,6 +661,7 @@ p.md a:hover {
 .card-deck .card {
     margin-left: auto;
     margin-right: auto;
+
     @include mobile {
         margin-bottom: 3rem !important;
     }
@@ -1078,7 +1081,7 @@ h1.faq-anchor {
     margin: auto;
 }
 
-.glider-slide {  
+.glider-slide {
     display: grid;
 }
 
@@ -1208,7 +1211,7 @@ svg.minus {
     opacity: 0.5 !important;
 }
 
-.header-link:hover svg {
+a.header-link:hover svg {
     fill: #3fa7df !important;
     opacity: 1 !important;
 }
@@ -1218,13 +1221,13 @@ svg.minus {
     margin-right: 0.75rem !important;
 }
 
-.blog-social:hover svg {
+.blog-social a:hover svg {
     fill: #007bff !important;
     text-decoration: none !important;
 }
 
 a.highres svg {
-    fill: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
+    fill: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
 }
 
 .contact-list svg {
@@ -1238,6 +1241,7 @@ a.highres svg {
 .faq-summary svg {
     fill: #3b4045;
 }
+
 .faq-summary:hover svg {
     fill: #3fa7df;
 }
@@ -1262,6 +1266,16 @@ details[open] .faq-summary svg.minus {
     margin-right: 14px;
 }
 
+.social svg {
+    fill: #444 !important;
+    margin: 1rem !important;
+    vertical-align: -.7em;
+}
+
+.social:hover svg {
+    fill: #2867b2 !important;
+}
+
 // ANCHOR chroma
 .chroma .hl {
     background-color: #ffffcc3d;
@@ -1273,7 +1287,10 @@ details[open] .faq-summary svg.minus {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 300;
-    src: url('../webfonts/nunito-v25-latin-300.woff2') format('woff2');
+    src: url('../webfonts/nunito-v25-latin-300.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        url('../webfonts/nunito-v25-latin-300.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
 @font-face {
@@ -1281,7 +1298,10 @@ details[open] .faq-summary svg.minus {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
-    src: url('../webfonts/nunito-v25-latin-regular.woff2') format('woff2');
+    src: url('../webfonts/nunito-v25-latin-regular.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        url('../webfonts/nunito-v25-latin-regular.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
 @font-face {
@@ -1289,7 +1309,10 @@ details[open] .faq-summary svg.minus {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 600;
-    src: url('../webfonts/nunito-v25-latin-600.woff2') format('woff2');
+    src: url('../webfonts/nunito-v25-latin-600.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        url('../webfonts/nunito-v25-latin-600.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
 @font-face {
@@ -1297,5 +1320,8 @@ details[open] .faq-summary svg.minus {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
-    src: url('../webfonts/nunito-v25-latin-700.woff2') format('woff2');
+    src: url('../webfonts/nunito-v25-latin-700.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        url('../webfonts/nunito-v25-latin-700.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }

@@ -170,10 +170,6 @@ We use in particular:
 
 We use third party services to embed selected fonts, as well as icons, logos and symbols on our website.
 
-We specifically use:
-
-*   **[Google Fonts:](https://fonts.google.com)** Fonts; Provider: Google LLC (USA) / Google Ireland Limited (Ireland) for users in the European Economic Area (EEA) and Switzerland; privacy information: [What does using the Google Fonts API mean for my users' privacy?](https://developers.google.com/fonts/faq#what_does_using_the_google_fonts_api_mean_for_the_privacy_of_my_users), [Privacy and Security Principles](https://safety.google/intl/de/principles/), [Privacy Policy](https://policies.google.com/privacy?hl=de)
-
 ## 9\. Final provisions
 
 We have created this privacy statement using the [Privacy Statement Generator](https://www.datenschutzpartner.ch/angebot-datenschutz-generator/) from [datenschutzpartner.ch](https://datenschutzpartner.ch/)

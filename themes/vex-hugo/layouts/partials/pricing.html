@@ -27,12 +27,14 @@
                             {{ else }}
                             {{ if .enable }}
                             <li class="mb-25">
-                                <i class="d-inline-block h3 mb-10 tf-ion-ios-checkmark text-success"></i>
+                                {{/*  <i class="d-inline-block h3 mb-10 tf-ion-ios-checkmark text-success"></i>  */}}
+                                {{ partial "svg" "fa-solid fa-check" }}
                                 <span class="h4 ps-2">{{ $.Page.RenderString .name }}</span>
                             </li>
                             {{ else }}
                             <li class="mb-25 inline-color-lightgrey" >
-                                <i class="d-inline-block h3 mb-10 tf-ion-ios-close"></i>
+                                {{/*  <i class="d-inline-block h3 mb-10 tf-ion-ios-close"></i>  */}}
+                                {{ partial "svg" "fa-solid fa-xmark" }}
                                 <span class="h4 ps-2">{{ $.Page.RenderString .name }}</span>
                             </li>
                             {{ end }}

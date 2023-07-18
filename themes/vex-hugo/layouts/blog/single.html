@@ -32,16 +32,20 @@
 			</div>
       <div class="col-md-9 text-center text-md-end mt-5 blog-social">
         <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink | absURL }}" title="Share this blog post on LinkedIn" aria-label="Share this blog post on LinkedIn" target="_blank" alt="linkedin post">
-          <i class="fab fa-linkedin me-4"></i>
+          {{/*  <i class="fa-brands fa-linkedin me-4"></i>  */}}
+          {{ partial "svg" "fa-brands fa-linkedin me-4" }}
         </a>
         <a href="https://twitter.com/intent/tweet?text={{ .Title | safeHTML }} {{ .Permalink | absURL }}" title="Share this blog post on Twitter" aria-label="Share this blog post on Twitter" target="_blank" alt="twitter post">
-          <i class="fab fa-twitter me-4"></i>
+          {{/*  <i class="fa-brands fa-twitter me-4"></i>  */}}
+          {{ partial "svg" "fa-brands fa-twitter me-4" }}
         </a>
         <a href="mailto:?subject={{ .Title | safeHTML }}&body={{ .Title | safeHTML }}%0d%0a{{ .Permalink | absURL }}" title="Share this blog post via Email" aria-label="Share this blog post via Email" target="_blank" alt="send mail">
-          <i class="fas fa-envelope me-4"></i>
+          {{/*  <i class="fa-solid fa-envelope me-4"></i>  */}}
+          {{ partial "svg" "fa-solid fa-envelope me-4" }}
         </a>
         <a href="#" id="copy-element" title="Copy the link to this blog post" aria-label="Copy the link to this blog post" data-value="{{ .Permalink | absURL }}" alt="copy link">
-          <i class="fas fa-link"></i>
+          {{/*  <i class="fa-solid fa-link"></i>  */}}
+          {{ partial "svg" "fa-solid fa-link" "me-4" }}
         </a>
         <div class="p-0 mt-md-0 mt-3 col-12 col-md-6 float-start text-muted text-center text-md-start">
           {{ .Params.Date | time.Format ":date_long" }} | {{ i18n "reading_duration" }} {{ .Params.Duration }} min
@@ -62,16 +66,20 @@
       <hr class="w-75 mb-4"/>
       <div class="col-md-8 text-center text-md-end blog-social">
         <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink | absURL }}" title="Share this blog post on LinkedIn" aria-label="Share this blog post on LinkedIn" target="_blank" alt="linkedin post">
-          <i class="fab fa-linkedin me-4"></i>
+          {{/*  <i class="fa-brands fa-linkedin me-4"></i>  */}}
+          {{ partial "svg" "fa-brands fa-linkedin me-4" }}
         </a>
         <a href="https://twitter.com/intent/tweet?text={{ .Title | safeHTML }} {{ .Permalink | absURL }}" title="Share this blog post on Twitter" aria-label="Share this blog post on Twitter" target="_blank" alt="twitter post">
-          <i class="fab fa-twitter me-4"></i>
+          {{/*  <i class="fa-brands fa-twitter me-4"></i>  */}}
+          {{ partial "svg" "fa-brands fa-twitter me-4" }}
         </a>
         <a href="mailto:?subject={{ .Title | safeHTML }}&body={{ .Title | safeHTML }}%0d%0a{{ .Permalink | absURL }}" title="Share this blog post via Email" aria-label="Share this blog post via Email" target="_blank" alt="send mail">
-          <i class="fas fa-envelope me-4"></i>
+          {{/*  <i class="fa-solid fa-envelope me-4"></i>  */}}
+          {{ partial "svg" "fa-solid fa-envelope me-4" }}
         </a>
         <a href="#" id="copy-element" title="Copy the link to this blog post" aria-label="Copy the link to this blog post" data-value="{{ .Permalink | absURL }}" alt="copy link">
-          <i class="fas fa-link"></i>
+          {{/*  <i class="fa-solid fa-link"></i>  */}}
+          {{ partial "svg" "fa-solid fa-link" }}
         </a>
     </div>
 

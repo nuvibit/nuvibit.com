@@ -91,7 +91,7 @@
             <div class="col-md-4">
                 {{ range .right_side }}
                 <div class="feature-body mb-40 text-center text-md-start">
-                    <i class="fas {{ .icon }} fa-3x"></i>
+                    <i class="fa-solid {{ .icon }} fa-3x"></i>
                     <h4 class="fw-bold mb-2">{{ $.Page.RenderString .title }}</h4>
                     <p>{{ $.Page.RenderString .content }}</p>
                 </div>
@@ -177,12 +177,12 @@
                     {{ range .list }}
                     <div class="block me-3 ms-3" id="testimonial-element" data-value="{{ .Permalink }}">
                         <div class="text-center testimonial-block">
-                            <i class="fas fa-quote-right"></i>
+                            <i class="fa-solid fa-quote-right"></i>
                             <p>{{ $.Page.RenderString .content }}</p>
                         </div>
                         <div class="gallery-overlay">
                             <a href="{{ .link | absLangURL }}" class="gallery-popup">
-                                <i class="fas fa-plus"></i>
+                                <i class="fa-solid fa-plus"></i>
                             </a>
                         </div>
                         <div class="me-5 ms-5">

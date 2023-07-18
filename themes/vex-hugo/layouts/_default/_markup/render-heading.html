@@ -2,6 +2,9 @@
 <div class="pt-3">
     <h{{ .Level }} id="{{ $text | anchorize | safeURL }}" class="fw-bold">
         {{ $text }}
-        <a class="header-link ps-1" href="#{{ $text | anchorize | safeURL }}"><i class="fas fa-link fa-2x"></i></a>
+        <a class="header-link ps-1" href="#{{ $text | anchorize | safeURL }}">
+            {{/*  <i class="fa-solid fa-link fa-2x"></i>  */}}
+            {{ partial "svg" "fa-solid fa-link" }}
+        </a>
     </h{{ .Level }}>
 </div>

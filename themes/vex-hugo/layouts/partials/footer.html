@@ -40,9 +40,11 @@
 							<li class="list-group-item bg-transparent border-0 p-0 mb-2">
 								<a href="{{ $translation.Permalink }}" id="lang-element{{.Lang}}" data-value="{{.Lang}}">
 									{{ if eq $pageLang .Lang}}
-									<i class="fas fa-toggle-on"></i>
+									{{/*  <i class="fa-solid fa-toggle-on"></i>  */}}
+									{{ partial "svg" "fa-solid fa-toggle-on" }}
 									{{ else }}
-									<i class="fas fa-toggle-off"></i>
+									{{/*  <i class="fa-solid fa-toggle-off"></i>  */}}
+									{{ partial "svg" "fa-solid fa-toggle-off" }}
 									{{ end }}
 									{{ humanize (i18n .LanguageName) }}
 								</a>
@@ -53,7 +55,8 @@
 					{{ else }}
 						<li class="list-group-item bg-transparent border-0 p-0 mb-2">
 							<a href="/" value="default-language">
-								<i class="fas fa-toggle-on"></i>
+								{{/*  <i class="fa-solid fa-toggle-on"></i>  */}}
+								{{ partial "svg" "fa-solid fa-toggle-on" }}
 								{{ humanize (i18n "english") }}
 							</a>
 						</li>
@@ -73,7 +76,9 @@
 						<li class="list-group-item bg-transparent border-0 p-0 mb-2">
 							<a href="{{ .URL | relLangURL }}">
 							{{ if eq .Parent "social" }}
-								<i class="fab fa-{{ lower .Name }} me-2"></i>
+								{{/*  <i class="fa-brands fa-{{ lower .Name }} me-2"></i>  */}}
+								{{ $brand := lower .Name }}
+								{{ partial "svg" (printf "fa-brands fa-%s me-2" $brand) }}
 							{{ end }}
 								{{ .Name }}
 							</a>

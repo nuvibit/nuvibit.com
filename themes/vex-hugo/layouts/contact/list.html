@@ -9,9 +9,28 @@
         <p>{{ $.Page.RenderString .content }}</p>
         <br>
         <ul class="list-unstyled contact-list">
-          {{with .phone}} <li class="mb-3"><a href="tel:{{ . }}" title="Call us via phone" aria-label="Call us via phone"><i class="fas fa-phone me-3"></i>{{ . }}</a></li>{{ end }}
-          {{with .email}} <li class="mb-3"><a href="mailto:{{ . }}" title="Send us an Email" aria-label="Send us an Email"><i class="fas fa-envelope me-3"></i>{{ . }}</a></li>{{end }}
-          {{with .location }} <li class="mb-3"><i class="fas fa-map-marked-alt me-3"></i>{{ . }}</li>{{ end }}
+          {{with .phone}} 
+          <li class="mb-3">
+            <a href="tel:{{ . }}" title="Call us via phone" aria-label="Call us via phone">
+              {{/*  <i class="fa-solid fa-phone me-3"></i>{{ . }}  */}}
+              {{ partial "svg" "fa-solid fa-phone" }}{{ . }}
+            </a>
+            </li>
+          {{ end }}
+          {{with .email}}
+          <li class="mb-3">
+            <a href="mailto:{{ . }}" title="Send us an Email" aria-label="Send us an Email">
+              {{/*  <i class="fa-solid fa-envelope me-3"></i>{{ . }}  */}}
+              {{ partial "svg" "fa-solid fa-envelope" }}{{ . }}
+            </a>
+          </li>
+          {{end }}
+          {{with .location }}
+          <li class="mb-3">
+            {{/*  <i class="fa-solid fa-map-marked-alt me-3"></i>{{ . }}  */}}
+            {{ partial "svg" "fa-solid fa-map-location-dot" }}{{ . }}
+          </li>
+          {{ end }}
         </ul>
       </div>
       {{ end }}

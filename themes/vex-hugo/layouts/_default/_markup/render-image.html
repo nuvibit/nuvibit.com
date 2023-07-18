@@ -22,7 +22,10 @@
     {{ $imgPath := .Destination }}
     {{- if strings.HasSuffix $imgPath "-highres.png" }}
     {{ $image_highres := resources.Get .Destination }}
-    <a href='{{ $image_highres.RelPermalink }}' target="_blank"><i class="fas fa-external-link-alt"></i> high resolution</a>
+    <a class="highres" href='{{ $image_highres.RelPermalink }}' target="_blank">
+        {{/*  <i class="fa-solid fa-external-link-alt"></i> high resolution  */}}
+        high resolution {{ partial "svg" "fa-solid fa-arrow-up-right-from-square" }}
+    </a>
     {{- else }}
     {{- end }}
 </div>

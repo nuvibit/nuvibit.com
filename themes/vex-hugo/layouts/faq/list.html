@@ -44,8 +44,10 @@
           <details id="details#{{ .anchor }}" class="faq-detail col-lg-12">
             <summary class="faq-summary">
               <span class="faq-question fw-bold">{{ $.Page.RenderString .question }}</span>
-              <i class="fas fa-plus"></i>
-              <i class="fas fa-minus"></i>
+              {{/*  <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-minus"></i>  */}}
+              {{ partial "svg" "fa-solid fa-plus" }}
+              {{ partial "svg" "fa-solid fa-minus" }}
             </summary>
             <p class="faq-text">{{ $.Page.RenderString .answer }}</p>
           </details>

@@ -9,8 +9,9 @@
                     {{- with $data.homepage.certifications }}
                     <h4 class="inline-heading-h2">
                         {{ $.Page.RenderString .title }}
-                        <a href="{{ .link | absLangURL }}" title='Read more about our certifications' aria-label='Read more about our certifications'>
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <a class="header-link" href="{{ .link | absLangURL }}" title='Read more about our certifications' aria-label='Read more about our certifications'>
+                            {{/*  <i class="fa-solid fa-arrow-up-right-from-square"></i>  */}}
+                            {{ partial "svg" "fa-solid fa-arrow-up-right-from-square" }}
                         </a>
                     </h4>
                     {{ end }}
@@ -21,7 +22,8 @@
                         <div class="block m-3" id="badge-element" data-value="{{ .Permalink }}">
                             <div class="gallery-overlay">
                                 <a href="{{ .Permalink }}" class="gallery-popup" title='Read more about our {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }} certification' aria-label='Read more about our {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }} certification'>
-                                    <i class="fas fa-plus"></i>
+                                    {{/*  <i class="fa-solid fa-plus"></i>  */}}
+                                    {{ partial "svg" "fa-solid fa-plus" }}
                                 </a>
                             </div>
                             {{/* HUGO IMAGE RENDERER */}}
@@ -47,8 +49,14 @@
                         </div>
                         {{ end }}
                     </div>
-                    <button hidden aria-label="Previous" class="glider-prev pull-left"><i class='fas fa-arrow-left' aria-hidden='true'></i></button>
-                    <button hidden aria-label="Next" class="glider-next pull-right"><i class='fas fa-arrow-right' aria-hidden='true'></i></button>
+                    <button hidden aria-label="Previous" class="glider-prev pull-left">
+                        {{/*  <i class='fa-solid fa-arrow-left' aria-hidden='true'></i>  */}}
+                        {{ partial "svg" "fa-solid fa-arrow-left" }}
+                    </button>
+                    <button hidden aria-label="Next" class="glider-next pull-right">
+                        {{/*  <i class='fa-solid fa-arrow-right' aria-hidden='true'></i>  */}}
+                        {{ partial "svg" "fa-solid fa-arrow-right" }}
+                    </button>
                 </div>
             </div>
         </div>

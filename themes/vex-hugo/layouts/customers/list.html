@@ -11,7 +11,8 @@
             <div class="block mb-4" id="badge-element" data-value="{{ .Permalink }}">
                 <div class="gallery-overlay">
                     <a href="{{ .Permalink }}" class="gallery-popup" title='Read more about our customer {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }}' aria-label='Read more about our customer {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }}'>
-                        <i class="fas fa-plus"></i>
+                        {{/*  <i class="fa-solid fa-plus"></i>  */}}
+                        {{ partial "svg" "fa-solid fa-plus" }}
                     </a>
                 </div>
 				{{/* HUGO IMAGE RENDERER */}}

@@ -5,7 +5,6 @@
 $primary-font: 'Nunito', sans-serif;
 $secondary-font: 'Open Sans', sans-serif;
 $primary-color: #3fa7df;
-$icon-font: 'themefisher-font' !important;
 
 body {
     background: #fafafa !important;
@@ -25,6 +24,7 @@ body {
 
         a:hover {
             color: #007bff !important;
+            fill: #007bff !important;
             text-decoration: none !important;
         }
     }
@@ -41,6 +41,7 @@ body {
 
         a:hover {
             color: #007bff !important;
+            fill: #007bff !important;
             text-decoration: none !important;
         }
     }
@@ -301,26 +302,6 @@ div.markdown h6 {
     padding-bottom: 10px !important;
 }
 
-div.markdown h1 a.header-link i,
-div.markdown h2 a.header-link i,
-div.markdown h3 a.header-link i,
-div.markdown h4 a.header-link i,
-div.markdown h5 a.header-link i,
-div.markdown h6 a.header-link i {
-    font-size: 0.65em !important;
-    color: #3fa7df !important;
-    opacity: 0.5 !important;
-}
-
-div.markdown h1 a.header-link i:hover,
-div.markdown h2 a.header-link i:hover,
-div.markdown h3 a.header-link i:hover,
-div.markdown h4 a.header-link i:hover,
-div.markdown h5 a.header-link i:hover,
-div.markdown h6 a.header-link i:hover {
-    opacity: 1 !important;
-}
-
 .highlight {
     margin-bottom: 1rem;
     text-align: left !important;
@@ -562,6 +543,9 @@ div.markdown h6 a.header-link i:hover {
     .two {
         --offset: 125px;
     }
+    .container {
+        max-width: 1200px;
+    }
 }
 
 @keyframes slide-one {
@@ -707,12 +691,14 @@ footer {
 
 footer a {
     color: rgba(255, 255, 255, .5) !important;
+    fill: rgba(255, 255, 255, .5) !important;
     text-decoration: none !important;
     font-weight: bold !important;
 }
 
 footer a:hover {
     color: #fafafa !important;
+    fill: #fafafa !important;
 }
 
 footer .bottom-logo {
@@ -776,7 +762,7 @@ p.copyright-text {
 }
 
 .zoomed img {
-    max-height: 70vh !important;
+    max-height: 75vh !important;
     width: auto !important;
 }
 
@@ -1043,7 +1029,6 @@ details[open] .faq-summary i.fa-minus {
 
 .faq-detail[open] .faq-summary {
     color: #3fa7df;
-    ;
 }
 
 h1.faq-anchor {
@@ -1121,17 +1106,20 @@ h1.faq-anchor {
     border-radius: 5px;
     background-color: #2b3346;
     color: #fff;
+    fill: #fff;
 }
 
 .glider-next:hover,
 .glider-prev:hover {
     background-color: #3fa7df;
     color: #fff;
+    fill: #fff;
 }
 
 .glider-next:focus,
 .glider-prev:focus {
     color: #fff;
+    fill: #fff;
 }
 
 // ANCHOR inline styles
@@ -1193,6 +1181,85 @@ h1.faq-anchor {
     font-weight: 700;
     font-size: 40px;
     line-height: 40px;
+}
+
+// ANCHOR icons
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -.125em;
+}
+
+svg.plus {
+    vertical-align: -.6em;
+    font-size: 1.8rem;
+    fill: #fff;
+}
+
+svg.minus {
+    vertical-align: -.6em;
+    font-size: 1.8rem;
+    fill: #fff;
+}
+
+.header-link svg {
+    font-size: 0.9em !important;
+    fill: #3fa7df !important;
+    opacity: 0.5 !important;
+}
+
+.header-link:hover svg {
+    fill: #3fa7df !important;
+    opacity: 1 !important;
+}
+
+.blog-social svg {
+    margin-left: 0.75rem !important;
+    margin-right: 0.75rem !important;
+}
+
+.blog-social:hover svg {
+    fill: #007bff !important;
+    text-decoration: none !important;
+}
+
+a.highres svg {
+    fill: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
+}
+
+.contact-list svg {
+    margin-right: 1rem !important;
+}
+
+.contact-list a:hover {
+    text-decoration: underline !important;
+}
+
+.faq-summary svg {
+    fill: #3b4045;
+}
+.faq-summary:hover svg {
+    fill: #3fa7df;
+}
+
+.faq-summary svg.plus {
+    opacity: 1;
+    margin-top: 20px;
+}
+
+.faq-summary svg.minus {
+    opacity: 0;
+    margin-top: 20px;
+    margin-left: -20px;
+}
+
+details[open] .faq-summary svg.plus {
+    opacity: 0;
+}
+
+details[open] .faq-summary svg.minus {
+    opacity: 1;
+    margin-right: 14px;
 }
 
 // ANCHOR chroma

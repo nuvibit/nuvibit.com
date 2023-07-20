@@ -61,7 +61,7 @@ body {
 }
 
 .item-row {
-    margin-bottom: 7em !important;
+    margin-bottom: 10em !important;
 
     @include mobile {
         margin-bottom: 3rem !important;
@@ -187,6 +187,14 @@ textarea.form-control {
 
 .color-red {
     color: Red !important;
+}
+
+.content a * {
+    margin-bottom: 0 !important;
+}
+
+.content a {
+    text-decoration: none;
 }
 
 // ANCHOR customers, certifications & partners

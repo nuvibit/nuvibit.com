@@ -6,10 +6,10 @@ draft: false
 faq:
   image: "images/illustrations/questions-and-answers.png"
   items:
-    - question: "what is a cloud foundation?"
+    - question: "what is a Cloud Foundation?"
       answer: "Before deploying a workload on the public cloud there are many moving parts which have to be coordinated.
               There are technical parts such as connectivity or security and organizational parts such as finance or operations.<br>
-              A secure, scalable cloud foundation will significantly accelerate your cloud adoption journey and is the key to success."
+              A secure, scalable Cloud Foundation will significantly accelerate your cloud adoption journey and is the key to success."
       anchor: foundation
       enable: true
 

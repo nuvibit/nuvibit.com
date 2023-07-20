@@ -6,10 +6,11 @@ draft: false
 banner_section:
     enable: true
     title: "Foundation Blueprint"
-    content: "Before deploying a productive workload on the public cloud there are many moving parts which have to be coordinated. 
-    There are technical parts such as connectivity or security and organizational parts such as finance or operations.
-    A secure, scalable cloud foundation will significantly accelerate your cloud adoption journey and is one of the most important and hardest challenges.<br/><br/>
-    Our Foundation Blueprint addresses exactly this concern and enables your organization to efficiently build a tailored Cloud Foundation."
+    content: "Before deploying a productive workload on AWS there are many moving parts which have to be coordinated. 
+              There are technical parts such as connectivity or security and organizational parts such as finance or operations.
+              A secure, scalable [Cloud Foundation](/faq/#foundation 'What is a Cloud Foundation?') will significantly accelerate your cloud adoption journey and is one of the most important and hardest challenges.
+              Our Foundation Blueprint addresses exactly this concern and enables your organization to efficiently deploy workloads in AWS.<br><br>
+              Transform your cloud strategy into reality with our expert support and achieve unparalleled operational excellence."
     image : "images/solutions/foundation-blueprint-logo.png"
     button:
         enable: true

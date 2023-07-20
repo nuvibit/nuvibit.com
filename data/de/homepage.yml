@@ -60,19 +60,19 @@ services:
 ############################# customers ########################
 customers:
   enable : true
-  title : "Unsere Kunden"
+  title : "Kundenerfolgsgeschichten"
   link: "/customers"
 
 ############################# certifications ########################
 certifications:
   enable : true
-  title : "Unsere Zertifizierungen"
+  title : "AWS Kompetenzen"
   link: "/certifications"
 
 ############################# partners ########################
 partners:
   enable : true
-  title : "Unsere Partnerschaften"
+  title : "Partnerschaft"
   link: "/partners"
 
 ############################# newsletter ########################

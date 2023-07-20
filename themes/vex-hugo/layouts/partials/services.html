@@ -44,7 +44,8 @@
           <p>{{ $.Page.RenderString .content }}</p>
           {{ if .link.enable }}
           {{ with .link }}
-          <p><a href="{{ .link | absLangURL }}" class="link-primary">{{ .label }}</a></p>
+          {{/*  <p><a href="{{ .link | absLangURL }}" class="link-primary">{{ .label }}</a></p>  */}}
+          <a href="{{ .link | absLangURL }}" class="btn btn-main">{{.label}}</a>
           {{ end }}
           {{ end }}
         </div>
@@ -58,7 +59,8 @@
           <p>{{ $.Page.RenderString .content }}</p>
           {{ if .link.enable }}
           {{ with .link }}
-          <p><a href="{{ .link | absLangURL }}" class="link-primary">{{ .label }}</a></p>
+          {{/*  <p><a href="{{ .link | absLangURL }}" class="link-primary">{{ .label }}</a></p>  */}}
+          <a href="{{ .link | absLangURL }}" class="btn btn-main">{{.label}}</a>
           {{ end }}
           {{ end }}
         </div>

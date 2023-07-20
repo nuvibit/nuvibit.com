@@ -13,8 +13,8 @@ unsafe = true
 ########################### Default Parameters ##########################
 
 [params]
-title = "Nuvibit | Streamline Your Cloud Infrastructure with Terraform"
-description = "Simplify Cloud Management with Nuvibit. Experience peak performance, compliance and scalability with our AWS Landing Zone / Foundation."
+title = "Nuvibit | Streamline Your AWS Cloud Infrastructure"
+description = "Simplify cloud management with Nuvibit. Experience peak performance, compliance and scalability with our AWS Landing Zone & Foundation."
 logo_banner = "images/logo/logo-nuvibit-banner.png"
 logo_footer = "images/logo/logo-nuvibit-badge.png"
 contact_form_url = "https://forms.zohopublic.eu/nuvibit/form/Contactus/formperma/TUZO-GqMg11XIInReyJqMICqAS7hWGm6YdW3oVM32hE"
@@ -68,93 +68,59 @@ url = "/"
 weight = 1
 
 [[Languages.en.menu.main]]
-identifier = "services"
-name = "Services"
-url = "services"
-weight = 2
-
-[[Languages.en.menu.main]]
-identifier = "assistance"
-name = "Cloud Assistance"
-url = "services/assistance"
-parent = "services"
-weight = 3
-
-[[Languages.en.menu.main]]
-identifier = "management"
-name = "Cloud Management at Scale"
-url = "services/management"
-parent = "services"
-weight = 4
-
-[[Languages.en.menu.main]]
-identifier = "security"
-name = "Cloud Security and Compliance"
-url = "services/security"
-parent = "services"
-weight = 5
-
-[[Languages.en.menu.main]]
-identifier = "connectivity"
-name = "Cloud Connectivity"
-url = "services/connectivity"
-parent = "services"
-weight = 6
-
-[[Languages.en.menu.main]]
 identifier = "solutions"
 name = "Solutions"
 url = "solutions"
-weight = 7
-
-[[Languages.en.menu.main]]
-identifier = "foundation-blueprint"
-name = "Foundation Blueprint"
-url = "solutions/foundation-blueprint"
-parent = "solutions"
-weight = 8
+weight = 2
 
 [[Languages.en.menu.main]]
 identifier = "terraform-collection"
 name = "Nuvibit Terraform Collection (NTC)"
 url = "solutions/terraform-collection"
 parent = "solutions"
-weight = 9
+weight = 3
 
 [[Languages.en.menu.main]]
 identifier = "semper"
 name = "SEMPER"
 url = "solutions/semper"
 parent = "solutions"
-weight = 10
+weight = 4
+
+[[Languages.en.menu.main]]
+identifier = "foundation-blueprint"
+name = "Foundation Blueprint"
+url = "solutions/foundation-blueprint"
+parent = "solutions"
+weight = 5
 
 [[Languages.en.menu.main]]
 identifier = "tools"
 name = "Tools"
 url = "tools"
-weight = 11
+weight = 6
 
 [[Languages.en.menu.main]]
 identifier = "vpc-subnet-calculator"
 name = "VPC Subnet Calculator"
 url = "vpc-subnet-calculator"
 parent = "tools"
-weight = 12
+weight = 7
 
 [[Languages.en.menu.main]]
 name = "Blog"
 url = "blog"
-weight = 13
+weight = 8
 
 [[Languages.en.menu.main]]
 name = "Team"
 url = "team"
-weight = 14
+weight = 9
 
 [[Languages.en.menu.main]]
 name = "Contact"
 url = "contact"
-weight = 15
+weight = 10
 
 ###################################### English Footer ######################################
 
@@ -243,7 +209,7 @@ weight = 2
 
 [Languages.de.params]
 title = "Nuvibit | Vereinfachen Sie Ihre Cloud-Infrastruktur mit Terraform"
-description = "Vereinfachen Sie das Cloud-Management mit Nuvibit. Erleben Sie Spitzenleistung, Compliance und Skalierbarkeit mit unserer AWS Landing Zone / Foundation."
+description = "Vereinfachen Sie das Cloud-Management mit Nuvibit. Erleben Sie Spitzenleistung, Compliance und Skalierbarkeit mit unserer AWS Landing Zone & Foundation."
 
 ###################################### German Navigation ######################################
 
@@ -253,93 +219,59 @@ url = "/"
 weight = 1
 
 [[Languages.de.menu.main]]
-identifier = "services"
-name = "Services"
-url = "services"
-weight = 2
-
-[[Languages.de.menu.main]]
-identifier = "assistance"
-name = "Cloud Assistance"
-url = "services/assistance"
-parent = "services"
-weight = 3
-
-[[Languages.de.menu.main]]
-identifier = "management"
-name = "Cloud Management at Scale"
-url = "services/management"
-parent = "services"
-weight = 4
-
-[[Languages.de.menu.main]]
-identifier = "security"
-name = "Cloud Security and Compliance"
-url = "services/security"
-parent = "services"
-weight = 5
-
-[[Languages.de.menu.main]]
-identifier = "connectivity"
-name = "Cloud Connectivity"
-url = "services/connectivity"
-parent = "services"
-weight = 6
-
-[[Languages.de.menu.main]]
 identifier = "solutions"
 name = "Solutions"
 url = "solutions"
-weight = 7
-
-[[Languages.de.menu.main]]
-identifier = "foundation-blueprint"
-name = "Foundation Blueprint"
-url = "solutions/foundation-blueprint"
-parent = "solutions"
-weight = 8
+weight = 2
 
 [[Languages.de.menu.main]]
 identifier = "terraform-collection"
 name = "Nuvibit Terraform Collection (NTC)"
 url = "solutions/terraform-collection"
 parent = "solutions"
-weight = 9
+weight = 3
 
 [[Languages.de.menu.main]]
 identifier = "semper"
 name = "SEMPER"
 url = "solutions/semper"
 parent = "solutions"
-weight = 10
+weight = 4
+
+[[Languages.de.menu.main]]
+identifier = "foundation-blueprint"
+name = "Foundation Blueprint"
+url = "solutions/foundation-blueprint"
+parent = "solutions"
+weight = 5
 
 [[Languages.de.menu.main]]
 identifier = "tools"
 name = "Tools"
 url = "tools"
-weight = 11
+weight = 6
 
 [[Languages.de.menu.main]]
 identifier = "vpc-subnet-calculator"
 name = "VPC Subnetzrechner"
 url = "vpc-subnet-calculator"
 parent = "tools"
-weight = 12
+weight = 7
 
 [[Languages.de.menu.main]]
 name = "Blog"
 url = "blog"
-weight = 13
+weight = 8
 
 [[Languages.de.menu.main]]
 name = "Team"
 url = "team"
-weight = 14
+weight = 9
 
 [[Languages.de.menu.main]]
 name = "Kontakt"
 url = "contact"
-weight = 15
+weight = 10
 
 ###################################### German Footer ######################################
 

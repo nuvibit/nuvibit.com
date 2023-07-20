@@ -6,10 +6,10 @@ draft: false
 banner_section:
     enable: true
     title: "SEMPER"
-    content: "You manage multiple AWS accounts and have your workload distributed in multiple AWS regions?<br>
-              Then you are familiar with the challenge of keeping track of the security compliance of your AWS resources and managing security events in real time.<br><br>
-              SEMPER enables you to manage your security sensors at a very granular level in a consistent and auditable way and automatically filter accepted security findings.<br>
-              All conveniently managed through a central **[Policy as Code](/faq/#pac 'What is Security / Policy as Code?')** repository."
+    content: "As you distribute workloads across different AWS accounts and regions, maintaining security compliance and monitoring security events in real time can be daunting. 
+              SEMPER revolutionizes your approach by enabling precise security sensor management, ensuring consistency, and automating the processing of security findings.
+              A central [Policy as Code](/faq/#pac 'What is Security / Policy as Code?') repository simplifies and streamlines the entire process, giving you complete control over your AWS security landscape.<br><br>
+              Experience the peace of mind that seamless security management with SEMPER provides."
     image: "images/solutions/semper-logo.png"
     button:
         enable: true

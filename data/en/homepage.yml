@@ -2,7 +2,7 @@
 banner:
   enable: true
   title: "We have the right tools and bits for your AWS Cloud Foundation"
-  content: "Simplify cloud management and unleash the full potential of your AWS environment. 
+  content: "Simplify cloud management and unlock the full potential of your AWS environment.
             Supercharge your cloud journey with our leading experts and cutting-edge solutions."
   image: "images/illustrations/cloud-tools.png"
   button:
@@ -21,7 +21,7 @@ services:
       content: "NTC is a next-generation AWS Landing Zone & Foundation solution based entirely on Infrastructure as Code with Terraform.
                 It is specifically designed to deploy and manage an enterprise-ready, compliant and scalable AWS environment.
                 Our flexible, declarative, and modular approach offers many unique benefits to a platform engineering team and drastically reduces implementation time and effort.<br>
-                Revolutionize your AWS infrastructure with simplified management, streamlined deployment, and [GitOps](/faq/#gitops 'What is GitOps?') best practices."
+                Revolutionize your AWS infrastructure with streamlined management, accelerated deployment, and [GitOps](/faq/#gitops 'What is GitOps?') best practices."
       link:
           enable: true
           label: "Next Generation AWS Landing Zone"
@@ -55,13 +55,13 @@ services:
 ############################# customers ########################
 customers:
   enable : true
-  title : "Customer Success Stories"
+  title : "Success Stories"
   link: "/customers"
 
 ############################# certifications ########################
 certifications:
   enable : true
-  title : "AWS Competence"
+  title : "Competence"
   link: "/certifications"
 
 ############################# partners ########################

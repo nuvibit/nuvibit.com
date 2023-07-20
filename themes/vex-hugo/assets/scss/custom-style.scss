@@ -10,6 +10,12 @@ body {
     background: #fafafa !important;
 }
 
+p {
+    line-height: 1.7;
+    font-size: 18px;
+    font-weight: 300;
+}
+
 // ANCHOR headers
 .heading {
     h2 {
@@ -208,6 +214,10 @@ textarea.form-control {
     width: 100%;
 }
 
+.gallery {
+    padding-bottom: 5rem;
+}
+
 .gallery .row {
     justify-content: center;
 }
@@ -270,6 +280,10 @@ table.subnet-table span.copy-table-cell:hover {
     padding-bottom: 20px !important;
 }
 
+.mb-7 {
+    margin-bottom: 7rem !important;
+}
+
 .mb-10 {
     margin-bottom: 10px !important;
 }
@@ -284,6 +298,10 @@ table.subnet-table span.copy-table-cell:hover {
 
 .mt-0 {
     margin-top: 0px !important;
+}
+
+.mt-7 {
+    margin-top: 7rem !important;
 }
 
 .mt--20 {
@@ -1282,6 +1300,15 @@ details[open] .faq-summary svg.minus {
 
 .social:hover svg {
     fill: #2867b2 !important;
+}
+
+// ANCHOR banner
+.banner-icons {
+    font-size: 5rem;
+}
+
+.banner-icons .aws {
+    margin-right: 3rem;
 }
 
 // ANCHOR chroma

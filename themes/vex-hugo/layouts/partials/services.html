@@ -5,7 +5,7 @@
 <section class="feature-list section">
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 pb-md-5">
         {{ if .title }}
         <div class="heading">
           <h2>{{ $.Page.RenderString .title }}</h2>
@@ -44,7 +44,6 @@
           <p>{{ $.Page.RenderString .content }}</p>
           {{ if .link.enable }}
           {{ with .link }}
-          {{/*  <p><a href="{{ .link | absLangURL }}" class="link-primary">{{ .label }}</a></p>  */}}
           <a href="{{ .link | absLangURL }}" class="btn btn-main">{{.label}}</a>
           {{ end }}
           {{ end }}
@@ -59,7 +58,6 @@
           <p>{{ $.Page.RenderString .content }}</p>
           {{ if .link.enable }}
           {{ with .link }}
-          {{/*  <p><a href="{{ .link | absLangURL }}" class="link-primary">{{ .label }}</a></p>  */}}
           <a href="{{ .link | absLangURL }}" class="btn btn-main">{{.label}}</a>
           {{ end }}
           {{ end }}

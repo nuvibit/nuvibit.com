@@ -4,10 +4,11 @@
 <section class="gallery" id="customers">
     <div class="container">
         <div class="row">
+            <hr class="w-75 mb-7">
             <div class="col-md-12">
                 <div class="heading">
                     {{- with $data.homepage.customers }}
-                    <h4 class="inline-heading-h2">
+                    <h4 class="subheading">
                         {{ $.Page.RenderString .title }}
                         <a class="header-link" href="{{ .link | absLangURL }}" title='Read more about our customer' aria-label='Read more about our customer'>
                             {{/*  <i class="fa-solid fa-arrow-up-right-from-square"></i>  */}}

@@ -1,5 +1,5 @@
 ---
-title: "powercoders"
+title: "'Shape talents of the future' powercoders"
 date: 2022-12-20T11:00:00+06:00
 image: "images/customers/powercoders.png"
 

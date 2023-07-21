@@ -59,15 +59,15 @@ excerpt_section:
         enable: true
         image: "images/solutions/foundation-blueprint-assessment.png"
         content: "First and foremost, we need to get an overview of where you stand on your cloud journey and where you want to go.
-                  We will analyze your cloud strategy and organizational structures to adjust the Blueprint to them.
+                  We will analyze your cloud strategy and organizational structures to adjust the Blueprint accordingly.
                   Your connectivity, security and automation requirements are also identified and taken into account.<br/><br/>
-                  Part of the assessment also includes workshops to give you a better understanding of our Cloud Foundation."
+                  Part of the assessment can also include a series of workshops that will provide a better understanding of the Cloud Foundation."
 
       - title: "Implementation"
         enable: true
         image: "images/solutions/foundation-blueprint-implementation.png"
-        content: "Once we have a clear overview and gathered all requirements, we assemble a team of specialists to build your tailored Cloud Foundation based on the Blueprint.
-                  We adapt our Foundation Blueprint Terraform modules to perfectly fit your needs and support you during implementation.<br/><br/>
+        content: "Once we have an overview and gathered all the requirements, we design the Cloud Foundation together with the customer.
+                  We support and collaborate in the implementation of the Foundation to accelerate the process.<br/><br/>
                   If needed, we can also adapt or build the tooling required for Infrastructure as Code deployments with Terraform."
 
       - title: "Transition"
@@ -81,8 +81,8 @@ excerpt_section:
         enable: true
         image: "images/solutions/foundation-blueprint-support.png"
         content: "Even after the successful implementation of your Cloud Foundation, we want to continue supporting you on your cloud journey.
-                  We can help you to optimize and refine your Foundation based on our Terraform modules.<br/><br/>
-                  In addition, we can provide you with updates to our Foundation Terraform modules and implement your feature requests."
+                  We can help you to optimize and refine your Foundation with audits and reviews.<br/><br/>
+                  In addition, we can help identify and resolve performance, security, and scaling issues."
 
 link_section:
     enable: true

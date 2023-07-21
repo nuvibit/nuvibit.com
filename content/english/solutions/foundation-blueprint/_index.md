@@ -6,10 +6,11 @@ draft: false
 banner_section:
     enable: true
     title: "Foundation Blueprint"
-    content: "Before deploying a productive workload on the public cloud there are many moving parts which have to be coordinated. 
-    There are technical parts such as connectivity or security and organizational parts such as finance or operations.
-    A secure, scalable cloud foundation will significantly accelerate your cloud adoption journey and is one of the most important and hardest challenges.<br/><br/>
-    Our Foundation Blueprint addresses exactly this concern and enables your organization to efficiently build a tailored Cloud Foundation."
+    content: "Before deploying a productive workload on AWS there are many moving parts which have to be coordinated. 
+              There are technical parts such as connectivity or security and organizational parts such as finance or operations.
+              A secure, scalable [Cloud Foundation](/faq/#foundation 'What is a Cloud Foundation?') will significantly accelerate your cloud adoption journey and is one of the most important and hardest challenges.
+              Our Foundation Blueprint addresses exactly this concern and enables your organization to efficiently deploy workloads in AWS.<br><br>
+              Transform your cloud strategy into reality with our expert support and achieve unparalleled operational excellence."
     image : "images/solutions/foundation-blueprint-logo.png"
     button:
         enable: true
@@ -23,13 +24,13 @@ feature_section:
 
   # feature at the left of the image
   left_side:
-  - title : "Infrastructure as Code"
+  - title : "Leading Expertise"
     icon : "fa-file-code"
-    content : "At the heart of our Foundation Blueprint are [Terraform modules](https://developer.hashicorp.com/terraform/tutorials/modules/module 'Terraform Modules Overview'), which dramatically simplify the management of the entire Cloud Foundation."
+    content : "We specialize in AWS Cloud Foundation, and our seasoned team of AWS experts is always up for a new challenge."
 
-  - title : "Scalability"
+  - title : "Security and Connectivity"
     icon : "fa-chart-line"
-    content : "Our Foundation is designed with scalability in mind and can grow with your workloads."
+    content : "Security from day one and a highly available AWS network are a top priority for us. We support from the initial concept to the final implementation."
     
   - title : "Well Architected"
     icon : "fa-drafting-compass"
@@ -39,7 +40,7 @@ feature_section:
   right_side:
   - title : "Tailored to your needs"
     icon : "fa-cut"
-    content : "A great Foundation is just as unique as the customer himself and that's why we adjust our Blueprint exactly to your needs."
+    content : "A great Foundation is just as unique as the customer himself and that's why we adjust the Blueprint exactly to your needs."
 
   - title : "Transition of the organization"
     icon : "fa-building"
@@ -47,7 +48,7 @@ feature_section:
 
   - title : "Workshops & Training"
     icon : "fa-chalkboard-teacher"
-    content : "Our goal is to enable our customers to successfully adopt and operate our Foundation Blueprint."
+    content : "Our goal is to enable our customers to successfully adopt and operate the Foundation Blueprint."
 
 
 excerpt_section:
@@ -58,15 +59,15 @@ excerpt_section:
         enable: true
         image: "images/solutions/foundation-blueprint-assessment.png"
         content: "First and foremost, we need to get an overview of where you stand on your cloud journey and where you want to go.
-                  We will analyze your cloud strategy and organizational structures to adjust our Blueprint to them.
+                  We will analyze your cloud strategy and organizational structures to adjust the Blueprint accordingly.
                   Your connectivity, security and automation requirements are also identified and taken into account.<br/><br/>
-                  Part of the assessment also includes workshops to give you a better understanding of our Cloud Foundation."
+                  Part of the assessment can also include a series of workshops that will provide a better understanding of the Cloud Foundation."
 
       - title: "Implementation"
         enable: true
         image: "images/solutions/foundation-blueprint-implementation.png"
-        content: "Once we have a clear overview and gathered all requirements, we assemble a team of specialists to build your tailored Cloud Foundation based on our Blueprint.
-                  We adapt our Foundation Blueprint Terraform modules to perfectly fit your needs and support you during implementation.<br/><br/>
+        content: "Once we have an overview and gathered all the requirements, we design the Cloud Foundation together with the customer.
+                  We support and collaborate in the implementation of the Foundation to accelerate the process.<br/><br/>
                   If needed, we can also adapt or build the tooling required for Infrastructure as Code deployments with Terraform."
 
       - title: "Transition"
@@ -80,8 +81,8 @@ excerpt_section:
         enable: true
         image: "images/solutions/foundation-blueprint-support.png"
         content: "Even after the successful implementation of your Cloud Foundation, we want to continue supporting you on your cloud journey.
-                  We can help you to optimize and refine your Foundation based on our Terraform modules.<br/><br/>
-                  In addition, we can provide you with updates to our Foundation Terraform modules and implement your feature requests."
+                  We can help you to optimize and refine your Foundation with audits and reviews.<br/><br/>
+                  In addition, we can help identify and resolve performance, security, and scaling issues."
 
 link_section:
     enable: true

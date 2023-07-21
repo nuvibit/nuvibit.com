@@ -6,7 +6,7 @@ draft: false
 about_us:
   introduction: "Nuvibit was founded by a group of cloud enthusiasts who were eager to take on a fresh challenge.<br>
                 Originally, the founding members worked for the same company in different departments.
-                Right after the company announced it's cloud strategy, we were tasked with building a cloud foundation on AWS.
+                Right after the company announced it's cloud strategy, we were tasked with building a Cloud Foundation on AWS.
                 We poured our blood, sweat, and tears into it and managed to achieve an outstanding level of maturity.<br>
                 Each and every one of us has gone above and beyond, which ultimately led to the idea of starting a company with like-minded, motivated people."
   items:

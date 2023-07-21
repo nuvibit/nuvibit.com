@@ -1,78 +1,73 @@
 ############################# banner ############################
 banner:
   enable: true
-  title: "We have the right tools and bits for your cloud foundation."
-  content: "We help you build an enterprise-ready, compliant and scalable [cloud foundation](/faq/#foundation 'What is a cloud foundation?').<br><br>"
+  title: "We have the right tools and bits for your AWS Cloud Foundation"
+  content: "Simplify cloud management and unlock the full potential of your AWS environment.
+            Supercharge your cloud journey with our leading experts and cutting-edge solutions."
   image: "images/illustrations/cloud-tools.png"
   button:
-    enable: true
+    enable: false
     label: "Get in touch"
     link: "/contact"
 
 ############################# services ##########################
 services:
   enable: true
-  title: "Let us join your cloud journey!"
+  title: "Streamline Your Cloud Infrastructure!"
   items:
-    - image: "images/illustrations/cloud-assistance.png"
+    - image : "images/solutions/ntc-logo.png"
       enable: true
-      title: "Together we are stronger."
-      content: "Rome wasn't built in a day and the same goes for a reliable cloud foundation.<br>
-                As a former cross-functional team in a large enterprise we have conquered numerous cloud challenges.
-                Now it's your turn and we want to guide you along the way!"
+      title: "Nuvibit Terraform Collection (NTC)"
+      content: "NTC is a next-generation AWS Landing Zone & Foundation solution based entirely on Infrastructure as Code with Terraform.
+                It is specifically designed to deploy and manage an enterprise-ready, compliant and scalable AWS environment.
+                Our flexible, declarative, and modular approach offers many unique benefits to a platform engineering team and drastically reduces implementation time and effort.<br>
+                Revolutionize your AWS infrastructure with streamlined management, accelerated deployment, and [GitOps](/faq/#gitops 'What is GitOps?') best practices."
       link:
-        enable: true
-        label: "Discover our assistance services"
-        link: "/services/assistance"
+          enable: true
+          label: "Next Generation AWS Landing Zone"
+          link: "/solutions/terraform-collection"
 
-    - image: "images/illustrations/cloud-management.png"
+    - image : "images/solutions/semper-logo.png"
       enable: true
-      title: "Prime your business for cloud success."
-      content: "Designing a cloud strategy is the first and easiest step. 
-                The hard part is turning the vision into reality and achieving operational excellence.<br>
-                With our practical experience in reshaping organizations we can help you along the way."
+      title: "SEMPER"
+      content: "As you distribute workloads across different AWS accounts and regions, maintaining security compliance and monitoring security events in real time can be daunting. 
+                SEMPER revolutionizes your approach by enabling precise security sensor management, ensuring consistency, and automating the processing of security findings.
+                A central [Policy as Code](/faq/#pac 'What is Security / Policy as Code?') repository simplifies and streamlines the entire process, giving you complete control over your AWS security landscape.<br>
+                Experience the peace of mind that seamless security management with SEMPER provides."
       link:
-        enable: true
-        label: "Discover our management services"
-        link: "/services/management"
+          enable: true
+          label: "Take AWS security one step further"
+          link: "/solutions/semper"
 
-    - image: "images/illustrations/cloud-security-compliance.png"
+    - image : "images/solutions/foundation-blueprint-logo.png"
       enable: true
-      title: "Security compliance from day one!"
-      content: "The security maturity of your public cloud environment is business critical.
-                Compliance is a major challenge for an enterprise with numerous workloads.<br>
-                Cloud security is one of our specialties and we are happy to support you!"
+      title: "Foundation Blueprint"
+      content: "Before deploying a productive workload on AWS there are many moving parts which have to be coordinated. 
+                There are technical parts such as connectivity or security and organizational parts such as finance or operations.
+                A secure, scalable [Cloud Foundation](/faq/#foundation 'What is a Cloud Foundation?') will significantly accelerate your cloud adoption journey and is one of the most important and hardest challenges.
+                Our Foundation Blueprint addresses exactly this concern and enables your organization to efficiently deploy workloads in AWS.<br>
+                Transform your cloud strategy into reality with our expert support and achieve unparalleled operational excellence."
       link:
-        enable: true
-        label: "Discover our security services"
-        link: "/services/security"
-
-    - image: "images/illustrations/cloud-connectivity.png"
-      enable: true
-      title: "First, build a solid network foundation!"
-      content: "Connectivity is one of the first key topics which must be tackled to jump-start your cloud journey.<br>
-                We make sure that all your workloads are seamlessly connected to the AWS cloud with top-priority on reliability, scalability and security."
-      link:
-        enable: true
-        label: "Discover our connectivity services"
-        link: "/services/connectivity"
+          enable: true
+          label: "Discover our expert consulting services"
+          link: "/solutions/foundation-blueprint"
 
 ############################# customers ########################
 customers:
   enable : true
-  title : "Our customers"
+  title : "Success Stories"
   link: "/customers"
 
 ############################# certifications ########################
 certifications:
   enable : true
-  title : "Our certifications"
+  title : "Competence"
   link: "/certifications"
 
 ############################# partners ########################
 partners:
   enable : true
-  title : "Our partnerships"
+  title : "Partnership"
   link: "/partners"
 
 ############################# newsletter ########################

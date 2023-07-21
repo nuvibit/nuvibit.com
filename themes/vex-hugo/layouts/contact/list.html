@@ -2,29 +2,67 @@
 
 <section class="section">
   <div class="container">
-    <div class="row justify-content-center text-center text-md-left">
+    <div class="row justify-content-center text-center text-md-start">
       {{ with .Params.contact }}
       <div class="col-lg-5 col-sm-6 mb-5">
-        <h2 class="font-weight-bold mb-4">{{ $.Page.RenderString .title }}</h2>
+        <h2 class="fw-bold mb-4">{{ $.Page.RenderString .title }}</h2>
         <p>{{ $.Page.RenderString .content }}</p>
         <br>
         <ul class="list-unstyled contact-list">
-          {{with .phone}} <li class="mb-3"><a href="tel:{{ . }}"><i class="fas fa-phone mr-3"></i>{{ . }}</a></li>{{ end }}
-          {{with .email}} <li class="mb-3"><a href="mailto:{{ . }}"><i class="fas fa-envelope mr-3"></i>{{ . }}</a></li>{{end }}
-          {{with .location }} <li class="mb-3"><i class="fas fa-map-marked-alt mr-3"></i>{{ . }}</li>{{ end }}
+          {{with .phone}} 
+          <li class="mb-3">
+            <a href="tel:{{ . }}" title="Call us via phone" aria-label="Call us via phone">
+              {{/*  <i class="fa-solid fa-phone me-3"></i>{{ . }}  */}}
+              {{ partial "svg" "fa-solid fa-phone" }}{{ . }}
+            </a>
+            </li>
+          {{ end }}
+          {{with .email}}
+          <li class="mb-3">
+            <a href="mailto:{{ . }}" title="Send us an Email" aria-label="Send us an Email">
+              {{/*  <i class="fa-solid fa-envelope me-3"></i>{{ . }}  */}}
+              {{ partial "svg" "fa-solid fa-envelope" }}{{ . }}
+            </a>
+          </li>
+          {{end }}
+          {{with .location }}
+          <li class="mb-3">
+            {{/*  <i class="fa-solid fa-map-marked-alt me-3"></i>{{ . }}  */}}
+            {{ partial "svg" "fa-solid fa-map-location-dot" }}{{ . }}
+          </li>
+          {{ end }}
         </ul>
       </div>
       {{ end }}
       <div class="col-lg-3 col-sm-6 mb-5">
         {{ with .Params.contact }}
-        <img class="img-fluid w-100" src="{{ .Image | absURL }}" alt='Illustration of {{ .Image | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+        {{/* HUGO IMAGE RENDERER */}}
+        {{ $image_resolutions := (slice "300x" "500x") }}
+        {{ $image_data := newScratch }}
+        {{ $image_class := "img-fluid w-100"}}
+        {{ $image_path := .image }}
+        {{ $image_buffer := resources.Get $image_path }}
+        {{ $image_fallback := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" (index (last 1 $image_resolutions) 0))) }}
+        {{ range $index, $image_resolutions }}
+          {{ $image_webp := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s webp q90 Lanczos" .)) }}
+          {{ $image_data.Add "srcset_webp" (printf "%s %s," $image_webp (replace . "x" "w")) }}
+          {{ $image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" .)) }}
+          {{ $image_data.Add "srcset_jpg" (printf "%s %s," $image_jpg (replace . "x" "w")) }}
+        {{ end }}
+				{{ $image_dimensions := $image_buffer.Resize (index (last 1 $image_resolutions) 0) }}
+        <picture>
+          <source type="image/webp" srcset='{{ $image_data.Get "srcset_webp" }}'>
+          <source type="image/jpeg" srcset='{{ $image_data.Get "srcset_jpg" }}'>
+          <img loading="lazy" decoding="async" class="{{ $image_class }}" src="{{ $image_fallback }}" width="{{ $image_dimensions.Width }}" height="{{ $image_dimensions.Height }}" alt='Illustration of {{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+        </picture>
+        {{/* HUGO IMAGE RENDERER */}}
         {{ end }}
       </div>
     </div>
     <div class="row justify-content-center">
       <div class="col-lg-8">
         {{/* add translation support for iframe after zoho one trial */}}
-        <iframe scrolling="no" frameborder="0" style="height:600px;width:99%;border:none;" src='{{ site.Params.contact_form_url }}'></iframe>
+        <iframe scrolling="no" frameborder="0" class="inline-iframe" src='{{ site.Params.contact_form_url }}'></iframe>
       </div>
     </div>
   </div>

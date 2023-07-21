@@ -5,13 +5,37 @@
 <section class="section">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 text-center p-4 mb-md-0 zoom" onclick="image_zoom(this)">
-				<img class="img-fluid" src="{{ .image | absURL }}" alt='Illustration of {{ .image | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+			<div class="col-md-6 text-center p-4 mb-md-0 zoom">
+				{{/* HUGO IMAGE RENDERER */}}
+				{{ $image_resolutions := (slice "300x" "500x" "800x") }}
+				{{ $image_data := newScratch }}
+				{{ $image_class := "img-fluid"}}
+				{{ $image_path := .image }}
+				{{ $image_buffer := resources.Get $image_path }}
+				{{ $image_fallback := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" (index (last 1 $image_resolutions) 0))) }}
+				{{ range $index, $image_resolutions }}
+					{{ $image_buffer := resources.Get $image_path }}
+					{{ $image_webp := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s webp q90 Lanczos" .)) }}
+					{{ $image_data.Add "srcset_webp" (printf "%s %s," $image_webp (replace . "x" "w")) }}
+					{{ $image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" .)) }}
+					{{ $image_data.Add "srcset_jpg" (printf "%s %s," $image_jpg (replace . "x" "w")) }}
+				{{ end }}
+				{{ $image_dimensions := $image_buffer.Resize (index (last 1 $image_resolutions) 0) }}
+				<picture>
+					<source type="image/webp" srcset='{{ $image_data.Get "srcset_webp" }}'>
+					<source type="image/jpeg" srcset='{{ $image_data.Get "srcset_jpg" }}'> 
+					<img loading="eager" class="{{ $image_class }}" src="{{ $image_fallback }}" width="{{ $image_dimensions.Width }}" height="{{ $image_dimensions.Height }}" alt='Illustration of {{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+				</picture>
+				{{/* HUGO IMAGE RENDERER */}}
 			</div>
-			<div class="col-md-6 align-self-center text-center text-md-left">
+			<div class="col-md-6 align-self-center text-center text-md-start">
 				<div class="block">
-					<h1 class="font-weight-bold mb-4 font-size-50">{{ $.Page.RenderString .title }}</h1>
+					<h1 class="fw-bold mb-5 font-size-50">{{ $.Page.RenderString .title }}</h1>
 					<p class="mb-4">{{ $.Page.RenderString .content }}</p>
+					<div class="banner-icons pt-5">
+					<a href="https://aws.amazon.com/what-is-aws/" title="What is AWS?">{{ partial "svg" "fa-brands fa-aws" }}</a>
+					<a href="https://developer.hashicorp.com/terraform/intro" title="What is Terraform?">{{ partial "svg" "fa-custom fa-terraform" }}</a>
+					</div>
 					{{ if .button.enable }}
 					{{ with .button }}
 					<a href="{{ .link | absLangURL }}" class="btn btn-main">{{.label}}</a>

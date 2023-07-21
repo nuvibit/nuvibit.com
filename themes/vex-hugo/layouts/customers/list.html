@@ -4,18 +4,38 @@
     <div class="container">
         <div class="row">
         <div class="col-12 text-center mb-5">
-            <h1 class="font-weight-bold">{{.Title}}</h1>
+            <h1 class="fw-bold">{{.Title}}</h1>
         </div>
         {{ range (where .Site.RegularPages "Section" "customers") }}
         <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-            <div class="block mb-4" onclick='redirect("{{ .Permalink }}")'>
+            <div class="block mb-4" id="badge-element" data-value="{{ .Permalink }}">
                 <div class="gallery-overlay">
-                    <a href="{{ .Permalink }}" class="gallery-popup">
-                        <i class="fas fa-plus"></i>
+                    <a href="{{ .Permalink }}" class="gallery-popup" title='Read more about our customer {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }}' aria-label='Read more about our customer {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+                        {{/*  <i class="fa-solid fa-plus"></i>  */}}
+                        {{ partial "svg" "fa-solid fa-plus" }}
                     </a>
                 </div>
-                <img class="customer-logo img-fluid" src="{{ .Params.image | absURL }}"
-                alt='{{ .Params.image | replaceRE ".*?([\\w-]+).(png|svg)" "$1" }} logo'>            </div>
+				{{/* HUGO IMAGE RENDERER */}}
+                {{ $image_resolutions := (slice "300x" "500x") }}
+				{{ $image_data := newScratch }}
+                {{ $image_class := "customer-logo img-fluid"}}
+                {{ $image_path := .Params.image }}
+				{{ $image_buffer := resources.Get $image_path }}
+				{{ $image_fallback := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" (index (last 1 $image_resolutions) 0))) }}
+				{{ range $index, $image_resolutions }}
+					{{ $image_webp := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s webp q90 Lanczos" .)) }}
+					{{ $image_data.Add "srcset_webp" (printf "%s %s," $image_webp (replace . "x" "w")) }}
+					{{ $image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" .)) }}
+					{{ $image_data.Add "srcset_jpg" (printf "%s %s," $image_jpg (replace . "x" "w")) }}
+				{{ end }}
+				{{ $image_dimensions := $image_buffer.Resize (index (last 1 $image_resolutions) 0) }}
+				<picture>
+					<source type="image/webp" srcset='{{ $image_data.Get "srcset_webp" }}'>
+					<source type="image/jpeg" srcset='{{ $image_data.Get "srcset_jpg" }}'>
+					<img loading="lazy" decoding="async" class="{{ $image_class }}" src="{{ $image_fallback }}" width="{{ $image_dimensions.Width }}" height="{{ $image_dimensions.Height }}" alt='Customer logo of {{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+				</picture>
+				{{/* HUGO IMAGE RENDERER */}}
+            </div>
             <div class="product-info">
                 <h4 class="mb-2"><a href="{{ .Permalink }}" class="link-title">{{.Title}}</a></h4>
             </div>

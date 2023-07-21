@@ -1,78 +1,73 @@
 ############################# banner ############################
 banner:
   enable: true
-  title: "Wir haben die richtigen Tools und Bits für Ihre Cloud Foundation."
-  content: "Wir unterstützen beim Aufbau Ihrer [Cloud Foundation](/faq/#foundation 'Was ist eine Cloud Foundation?').<br>Skalierbar, Automatisiert, Enterprise-Ready.<br><br>"
+  title: "Wir haben die richtigen Tools und Bits für Ihre AWS Cloud Foundation"
+  content: "Vereinfachen Sie das Cloud-Management und schöpfen Sie das volle Potenzial Ihrer AWS-Umgebung aus. 
+            Optimieren Sie Ihre Cloud-Journey mit unseren führenden Experten und innovativen Lösungen."
   image: "images/illustrations/cloud-tools.png"
   button:
-    enable: true
+    enable: false
     label: "Kontakt aufnehmen"
     link: "/contact"
 
 ############################# services ##########################
 services:
   enable: true
-  title: "Wir möchten Sie auf Ihrer Cloud Journey begleiten!"
+  title: "Modernisieren Sie Ihre Cloud-Infrastruktur!"
   items:
-    - image: "images/illustrations/cloud-assistance.png"
+    - image : "images/solutions/ntc-logo.png"
       enable: true
-      title: "Zusammen sind wir stark."
-      content: "Rom wurde nicht an einem Tag erbaut, und das Gleiche gilt für eine zuverlässige Cloud Foundation.<br>
-                Als ehemaliges funktionsübergreifendes Team in einem grossen Schweizer Unternehmen haben wir zahlreiche Cloud Herausforderungen gemeistert.
-                Jetzt sind Sie am Zug und wir können Sie dabei unterstützen!"
+      title: "Nuvibit Terraform Collection (NTC)"
+      content: "NTC ist eine AWS Landing Zone & Foundation-Lösung der nächsten Generation, die vollständig auf Infrastructure as Code mit Terraform basiert.
+                Sie wurde spezifisch für die Bereitstellung und Verwaltung einer unternehmenstauglichen, konformen und skalierbaren AWS-Umgebung entwickelt.
+                Unser flexibler, deklarativer und modularer Ansatz bietet viele einzigartige Vorteile für ein Plattform-Engineering-Team und reduziert die Implementierungszeit und den Aufwand drastisch.<br>
+                Revolutionieren Sie Ihre AWS-Infrastruktur mit effizienter Verwaltung, beschleunigter Bereitstellung und [GitOps](/faq/#gitops 'Was ist GitOps?') Best Practices."
       link:
-        enable: true
-        label: "Entdecken Sie unsere Assistance Dienstleistungen"
-        link: "/services/assistance"
+          enable: true
+          label: "Next Generation AWS Landing Zone"
+          link: "/solutions/terraform-collection"
 
-    - image: "images/illustrations/cloud-management.png"
+    - image : "images/solutions/semper-logo.png"
       enable: true
-      title: "Optimieren Sie Ihr Unternehmen für die Cloud."
-      content: "Die Ausarbeitung einer Cloud Strategie ist der erste und einfachste Schritt.
-                Die Umsetzung dieser Vision in die Realität und die Befähigung der Organisation ist der komplexe Teil.<br>
-                Mit unserer praktischen Erfahrung bei der Umstrukturierung einer Organisation können wir Sie auf diesem Weg tatkräftig unterstützen."
+      title: "SEMPER"
+      content: "Mit der Verteilung von Workloads über verschiedene AWS-Accounts und -Regionen kann die Aufrechterhaltung der Sicherheits-Compliance und die Überwachung von Sicherheitsereignissen in Echtzeit entmutigend sein.  
+                SEMPER revolutioniert Ihren Ansatz, indem es eine präzise Verwaltung von Sicherheitssensoren ermöglicht, Konsistenz gewährleistet und die Verarbeitung von Sicherheitsbefunden automatisiert.
+                Ein zentrales [Policy as Code](/faq/#pac 'What is Security / Policy as Code?') Repository vereinfacht und optimiert den gesamten Prozess und gibt Ihnen die vollständige Kontrolle über Ihre AWS-Sicherheitslandschaft.<br>
+                Erleben Sie den Gedankenfrieden, den das nahtlose Sicherheitsmanagement mit SEMPER bietet."
       link:
-        enable: true
-        label: "Entdecken Sie unsere Management Dienstleistungen"
-        link: "/services/management"
+          enable: true
+          label: "Verbessern Sie die AWS-Sicherheit"
+          link: "/solutions/semper"
 
-    - image: "images/illustrations/cloud-security-compliance.png"
+    - image : "images/solutions/foundation-blueprint-logo.png"
       enable: true
-      title: "Security Compliance vom ersten Tag an!"
-      content: "Die Sicherheitsreife Ihrer Cloud Umgebung ist geschäftskritisch.
-                Die Compliance ist für Unternehmen mit einer umfangreichen Applikationslandschaft eine grosse Herausforderung.<br>
-                Cloud Security ist eine unserer Spezialitäten und wir unterstützen Sie gerne!"
+      title: "Foundation Blueprint"
+      content: "Vor der Bereitstellung eines produktiven Workloads auf AWS gibt es viele bewegliche Teile, die koordiniert werden müssen. 
+                Es gibt technische Aspekte wie Konnektivität oder Sicherheit und organisatorische Aspekte wie Finanzen oder Betrieb.
+                Eine sichere, skalierbare [Cloud Foundation](/faq/#foundation 'Was ist eine Cloud Foundation?') wird Ihre Reise in die Cloud erheblich beschleunigen und ist eine der wichtigsten und schwierigsten Herausforderungen.
+                Unser Foundation Blueprint adressiert genau dieses Problem und ermöglicht Ihrem Unternehmen die effiziente Bereitstellung von Workloads in AWS.<br><br>
+                Realisieren Sie Ihre Cloud-Strategie mit unserer fachkundigen Unterstützung und erreichen Sie eine herausragende operative Exzellenz."
       link:
-        enable: true
-        label: "Entdecken Sie unsere Security Dienstleistungen"
-        link: "/services/security"
-
-    - image: "images/illustrations/cloud-connectivity.png"
-      enable: true
-      title: "Legen Sie den Grundstein mit einem soliden Netzwerk!"
-      content: "Connectivity ist eines der ersten Schlüsselthemen, die es auf der Cloud Journey zu lösen gilt.<br>
-                Wir stellen sicher, dass alle Ihre Workloads sicher, skalierbar und zuverlässig mit der AWS Cloud verbunden sind."
-      link:
-        enable: true
-        label: "Entdecken Sie unsere Connectivity Dienstleistungen"
-        link: "/services/connectivity"
+          enable: true
+          label: "Unsere kompetenten Beratungsleistungen"
+          link: "/solutions/foundation-blueprint"
 
 ############################# customers ########################
 customers:
   enable : true
-  title : "Unsere Kunden"
+  title : "Success Stories"
   link: "/customers"
 
 ############################# certifications ########################
 certifications:
   enable : true
-  title : "Unsere Zertifizierungen"
+  title : "Kompetenzen"
   link: "/certifications"
 
 ############################# partners ########################
 partners:
   enable : true
-  title : "Unsere Partnerschaften"
+  title : "Partnerschaft"
   link: "/partners"
 
 ############################# newsletter ########################

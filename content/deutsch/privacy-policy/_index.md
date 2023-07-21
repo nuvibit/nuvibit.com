@@ -37,7 +37,7 @@ Loonstrasse 36<br/>
 
 Wir verfügen über nachfolgende Datenschutz-Vertretung gemäss [Art. 27 DSGVO](https://steigerlegal.ch/dsgvo/dsgvo-27/) im Europäischen Wirtschaftsraum (EWR) einschliesslich Europäischer Union (EU) und Fürstentum Liechtenstein, Island und Norwegen als _zusätzliche_ Anlaufstelle für Aufsichtsbehörden und betroffene Personen für Anfragen im Zusammenhang mit der Datenschutz-Grundverordnung (DSGVO):
 
-[VGS Datenschutzpartner UG](https://www.datenschutzpartner.eu/kontakt/)<br/>
+[VGS Datenschutzpartner GmbH](https://www.datenschutzpartner.eu)<br/>
 Am Kaiserkai 69<br/>
 20457 Hamburg<br/>
 Deutschland
@@ -163,10 +163,6 @@ Wir verwenden insbesondere:
 ### 8.3 Schriftarten
 
 Wir verwenden Dienste von Dritten, um ausgewählte Schriftarten sowie Icons, Logos und Symbole in unsere Website einbetten zu können.
-
-Wir verwenden insbesondere:
-
-*   **[Google Fonts:](https://fonts.google.com)** Schriftarten; Anbieterinnen: Google LLC (USA) / Google Ireland Limited (Irland) für Nutzerinnen und Nutzer im Europäischen Wirtschaftsraum (EWR) und in der Schweiz; Angaben zum Datenschutz: [Was bedeutet die Verwendung der Google Fonts-API für die Privatsphäre meiner Nutzerinnen und Nutzer? (What does using the Google Fonts API mean for the privacy of my users?)](https://developers.google.com/fonts/faq#what_does_using_the_google_fonts_api_mean_for_the_privacy_of_my_users), [Grundsätze zu Datenschutz und Sicherheit](https://safety.google/intl/de/principles/), [Datenschutzerklärung](https://policies.google.com/privacy?hl=de).
 
 ## 9\. Schlussbestimmungen
 

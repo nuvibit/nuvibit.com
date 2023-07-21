@@ -5,7 +5,7 @@
 <section class="feature-list section">
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 pb-md-5">
         {{ if .title }}
         <div class="heading">
           <h2>{{ $.Page.RenderString .title }}</h2>
@@ -16,16 +16,35 @@
     {{ range $index, $element := (where .items "enable" true) }}
     {{- if (mod $index 2) }}
     <div class="row item-row">
-      <div class="col-md-6 text-center p-md-7 p-5 mb-lg-0 zoom" onclick="image_zoom(this)">
-        <img class="img-fluid img-max-400" src="{{ .image | absURL }}" alt='Illustration of {{ .image | replaceRE ".*?([\\w-]+).png" "$1" }} service'>
+      <div class="col-md-6 text-center p-md-7 p-5 mb-lg-0 zoom">
+        {{/* HUGO IMAGE RENDERER */}}
+        {{ $image_resolutions := (slice "300x" "500x" "800x") }}
+        {{ $image_data := newScratch }}
+        {{ $image_class := "img-fluid"}}
+        {{ $image_path := .image }}
+        {{ $image_buffer := resources.Get $image_path }}
+        {{ $image_fallback := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" (index (last 1 $image_resolutions) 0))) }}
+        {{ range $index, $image_resolutions }}
+            {{ $image_webp := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s webp q90 Lanczos" .)) }}
+            {{ $image_data.Add "srcset_webp" (printf "%s %s," $image_webp (replace . "x" "w")) }}
+            {{ $image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" .)) }}
+            {{ $image_data.Add "srcset_jpg" (printf "%s %s," $image_jpg (replace . "x" "w")) }}
+        {{ end }}
+				{{ $image_dimensions := $image_buffer.Resize (index (last 1 $image_resolutions) 0) }}
+        <picture>
+            <source type="image/webp" srcset='{{ $image_data.Get "srcset_webp" }}'>
+            <source type="image/jpeg" srcset='{{ $image_data.Get "srcset_jpg" }}'>
+            <img loading="lazy" decoding="async" class="{{ $image_class }}" src="{{ $image_fallback }}" width="{{ $image_dimensions.Width }}" height="{{ $image_dimensions.Height }}" alt='Illustration of {{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }} service'>
+        </picture>
+        {{/* HUGO IMAGE RENDERER */}}
       </div>
-      <div class="col-md-6 align-self-center text-center text-md-left">
+      <div class="col-md-6 align-self-center text-center text-md-start">
         <div class="content">
-          <h4 class="subheading">{{ $.Page.RenderString .title }}</h4>
+          <h3 class="subheading">{{ $.Page.RenderString .title }}</h3>
           <p>{{ $.Page.RenderString .content }}</p>
           {{ if .link.enable }}
           {{ with .link }}
-          <p><a href="{{ .link | absLangURL }}" class="link-primary">{{ .label }}</a></p>
+          <a href="{{ .link | absLangURL }}" class="btn btn-main">{{.label}}</a>
           {{ end }}
           {{ end }}
         </div>
@@ -33,19 +52,38 @@
     </div>
     {{- else }}
     <div class="row item-row">
-      <div class="col-md-6 order-md-1 order-2 align-self-center text-center text-md-left">
+      <div class="col-md-6 order-md-1 order-2 align-self-center text-center text-md-start">
         <div class="content">
-          <h4 class="subheading">{{ $.Page.RenderString .title }}</h4>
+          <h3 class="subheading">{{ $.Page.RenderString .title }}</h3>
           <p>{{ $.Page.RenderString .content }}</p>
           {{ if .link.enable }}
           {{ with .link }}
-          <p><a href="{{ .link | absLangURL }}" class="link-primary">{{ .label }}</a></p>
+          <a href="{{ .link | absLangURL }}" class="btn btn-main">{{.label}}</a>
           {{ end }}
           {{ end }}
         </div>
       </div>
-      <div class="col-md-6 order-md-2 order-1 text-center p-5 mb-lg-0 zoom" onclick="image_zoom(this)">
-        <img class="img-fluid img-max-400" src="{{ .image | absURL }}" alt='Illustration of {{ .image | replaceRE ".*?([\\w-]+).png" "$1" }} service'>
+      <div class="col-md-6 order-md-2 order-1 text-center p-5 mb-lg-0 zoom">
+        {{/* HUGO IMAGE RENDERER */}}
+        {{ $image_resolutions := (slice "300x" "500x" "800x") }}
+        {{ $image_data := newScratch }}
+        {{ $image_class := "img-fluid"}}
+        {{ $image_path := .image }}
+        {{ $image_buffer := resources.Get $image_path }}
+        {{ $image_fallback := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" (index (last 1 $image_resolutions) 0))) }}
+        {{ range $index, $image_resolutions }}
+            {{ $image_webp := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s webp q90 Lanczos" .)) }}
+            {{ $image_data.Add "srcset_webp" (printf "%s %s," $image_webp (replace . "x" "w")) }}
+            {{ $image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" .)) }}
+            {{ $image_data.Add "srcset_jpg" (printf "%s %s," $image_jpg (replace . "x" "w")) }}
+        {{ end }}
+				{{ $image_dimensions := $image_buffer.Resize (index (last 1 $image_resolutions) 0) }}
+        <picture>
+            <source type="image/webp" srcset='{{ $image_data.Get "srcset_webp" }}'>
+            <source type="image/jpeg" srcset='{{ $image_data.Get "srcset_jpg" }}'>
+            <img loading="lazy" decoding="async" class="{{ $image_class }}" src="{{ $image_fallback }}" width="{{ $image_dimensions.Width }}" height="{{ $image_dimensions.Height }}" alt='Illustration of {{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }} service'>
+        </picture>
+        {{/* HUGO IMAGE RENDERER */}}
       </div>
     </div>
     {{ end }}

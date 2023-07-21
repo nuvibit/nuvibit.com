@@ -11,25 +11,25 @@ banner_section:
     Sogar unser Cloud Netzwerk-Zauberer braucht von Zeit zu Zeit etwas Unterstützung, aber er konnte kein wirklich passendes Tool finden, also beschloss er einfach, sein eigenes zu bauen. Dieser Rechner wurde daher speziell für [AWS VPC-Subnetze](https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html#subnet-sizing) entwickelt und beschränkt sich auf das Wesentliche.<br><br>
     **Anwendungsbeispiel 1**<br>
     Du hast einen IPv4-Netzwerkbereich (172.31.0.0/16) und möchtest berechnen, wie viele VPCs mit einem CIDR von /24 erstellt werden können.<br>
-    --> Füge <mark style='background-color:#fbe3fc;'>172.31.0.0/16</mark> in das erste Feld und <mark style='background-color: #fbe3fc;'>24</mark> in das zweite Feld ein.<br><br>
+    --> Füge <mark class='inline-mark-FBE3FC'>172.31.0.0/16</mark> in das erste Feld und <mark class='inline-mark-FBE3FC'>24</mark> in das zweite Feld ein.<br><br>
     **Anwendungsbeispiel 2**<br>
     du hast einen VPC-Netzwerkbereich (172.31.0.0/24) und möchtest unterschiedlich grosse Subnetze über 3 Verfügbarkeitszonen hinweg berechnen.<br>
-    --> Füge <mark style='background-color:#fbe3fc;'>172.31.0.0/24</mark> in das erste Feld und <mark style='background-color: #fbe3fc;'>26,26,26,28,28,28</mark> in das zweite Feld ein."
+    --> Füge <mark class='inline-mark-FBE3FC'>172.31.0.0/24</mark> in das erste Feld und <mark class='inline-mark-FBE3FC'>26,26,26,28,28,28</mark> in das zweite Feld ein."
     image : "images/illustrations/network-sorcerer.png"
 ---
 <section id="subnet_stats" hidden>
 <p class="mb-3">
-  Netzbereich ist <span id="subnet_stats_network" style="font-weight:bold;">0.0.0.0/0</span>
+  Netzbereich ist <span id="subnet_stats_network" class="inline-bold-900">0.0.0.0/0</span>
 </p>
 <p class="mb-3">
-  Berechnung von <span id="subnet_stats_count" style="font-weight:bold;">0</span> Subnetzen war <span id="subnet_stats_status" style="font-weight:bold;color:ForestGreen;">erfolgreich</span>
+  Berechnung von <span id="subnet_stats_count" class="inline-bold-900">0</span> Subnetzen war <span id="subnet_stats_status" class="inline-bold-900 inline-color-009900">erfolgreich</span>
 </p>
 <p class="mb-5">
-  Rund <span id="subnet_stats_usage" style="font-weight:bold;color:ForestGreen">0</span>% des verfügbaren Netzwerkadressraums wird genutzt
+  Rund <span id="subnet_stats_usage" class="inline-bold-900 inline-color-009900">0</span>% des verfügbaren Netzwerkadressraums wird genutzt
 </p>
 </section>
 {{<table "table table-striped table-bordered text-center subnet-table">}}
-| SUBNETZBEREICH | HOSTS <span style="color:red">*</span> |
+| SUBNETZBEREICH | HOSTS <span class="inline-color-red">*</span> |
 | ------------- | ------------- |
 | x.x.x.x/16 | 65531 |
 | x.x.x.x/17 | 32763 |
@@ -45,7 +45,7 @@ banner_section:
 | x.x.x.x/27 | 27 |
 | x.x.x.x/28 | 11 |
 {{</table>}}
-<span style="color:red">*</span> In AWS können die ersten vier IP-Adressen und die letzte IP-Adresse in jedem Subnetz-CIDR-Block nicht genutzt werden.
+<span class="inline-color-red">*</span> In AWS können die ersten vier IP-Adressen und die letzte IP-Adresse in jedem Subnetz-CIDR-Block nicht genutzt werden.
 <br><br><br>
 
 Irgendwelche Probleme oder eine fehlende Funktion? Bitte ein Issue öffnen auf [Github](https://github.com/nuvibit/nuvibit.com/issues)

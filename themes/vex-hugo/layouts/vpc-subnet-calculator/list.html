@@ -5,13 +5,31 @@
 <section class="section" id="banner">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 text-center p-5 mb-md-0 zoom" onclick="image_zoom(this)">
-                <img class="img-fluid" src="{{ .image | absURL }}"
-                    alt='Illustration of {{ .Image | replaceRE ".*?(\\w+).png" "$1" }}'>
+            <div class="col-md-6 text-center p-5 mb-md-0 zoom">
+                {{/* HUGO IMAGE RENDERER */}}
+                {{ $image_resolutions := (slice "300x" "500x" "800x") }}
+                {{ $image_data := newScratch }}
+                {{ $image_class := "img-fluid"}}
+                {{ $image_path := .image }}
+                {{ $image_buffer := resources.Get $image_path }}
+                {{ $image_fallback := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" (index (last 1 $image_resolutions) 0))) }}
+                {{ range $index, $image_resolutions }}
+                    {{ $image_webp := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s webp q90 Lanczos" .)) }}
+                    {{ $image_data.Add "srcset_webp" (printf "%s %s," $image_webp (replace . "x" "w")) }}
+                    {{ $image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" .)) }}
+                    {{ $image_data.Add "srcset_jpg" (printf "%s %s," $image_jpg (replace . "x" "w")) }}
+                {{ end }}
+				{{ $image_dimensions := $image_buffer.Resize (index (last 1 $image_resolutions) 0) }}
+                <picture> 
+                    <source type="image/webp" srcset='{{ $image_data.Get "srcset_webp" }}'>
+                    <source type="image/jpeg" srcset='{{ $image_data.Get "srcset_jpg" }}'>
+                    <img loading="eager" class="{{ $image_class }}" src="{{ $image_fallback }}" width="{{ $image_dimensions.Width }}" height="{{ $image_dimensions.Height }}" alt='Illustration of {{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+                </picture>
+                {{/* HUGO IMAGE RENDERER */}}
             </div>
-            <div class="col-md-6 align-self-center text-center text-md-left">
+            <div class="col-md-6 align-self-center text-center text-md-start">
                 <div class="block">
-                    <h1 class="font-weight-bold mb-4 font-size-60">{{ $.Page.RenderString .title }}</h1>
+                    <h1 class="fw-bold mb-4 font-size-60">{{ $.Page.RenderString .title }}</h1>
                     <p class="mb-4">{{ $.Page.RenderString .content }}</p>
                     {{ if .button.enable }}
                     {{ with .button }}
@@ -35,21 +53,21 @@
                 <p id="validation_message" class="color-red"></p>
             </div>
             <div class="col-lg-10 text-center text-md-center mb-5">
-                <form name="vpccalc" onsubmit="event.preventDefault();subnetCalculator();" class="row">
+                <form name="vpccalc" class="row">
                     <input type="hidden" id="type" name="form" value="vpccalc">
                     <div class="col-lg-6 mb-3">
-                        <input type="text" class="form-control mb-2 text-md-center" id="ip_range" name="ip_range" oninput="clearValidate()" placeholder='IPv4 Network Range'>
+                        <input type="text" class="form-control mb-2 text-md-center" id="ip_range" name="ip_range" data-value="clear" placeholder='IPv4 Network Range'>
                     </div>
                     <div class="col-lg-6 mb-3">
-                        <input type="text" class="form-control mb-2 text-md-center" id="subnet_cidrs" name="subnet_cidrs" oninput="clearValidate()" placeholder='IPv4 CIDR block(s)'>
+                        <input type="text" class="form-control mb-2 text-md-center" id="subnet_cidrs" name="subnet_cidrs" data-value="clear" placeholder='IPv4 CIDR block(s)'>
                     </div>
                     <div class="col-12 align-self-center text-md-center mt-3">
-                        <button type="button" class="btn btn-main btn-reset mr-3 mb-4" style="min-width:190px;" onclick="resetCalculator();">{{ i18n "reset" }}</button>
-                        <button type="submit" value="send" class="btn btn-main mr-3 mb-4" style="min-width:190px;" onclick="return subnetCalculatorValidate();">{{ i18n "calculate" }}</button>
+                        <button type="button" class="btn btn-main btn-reset me-3 mb-4 inline-min-width-190" id="calc-element" data-value="reset">{{ i18n "reset" }}</button>
+                        <button type="submit" value="send" class="btn btn-main me-3 mb-4 inline-min-width-190" id="calc-element" data-value="validate">{{ i18n "calculate" }}</button>
                     </div>
                 </form>
             </div>
-            <div class="col-lg-10 text-center text-md-left mb-5">
+            <div class="col-lg-10 text-center text-md-start mb-5">
                 <div class="container markdown">
                     {{ .Content }}
                 </div>

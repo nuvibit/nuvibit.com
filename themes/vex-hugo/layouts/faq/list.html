@@ -4,14 +4,33 @@
   <div class="container mb-5">
     <div class="row justify-content-center">
 
-			<div class="col-md-3 align-self-center text-center text-md-left">
+			<div class="col-md-3 align-self-center text-center text-md-start">
 				<div class="block">
-          <h1 class="faq-title font-weight-bold">{{ $.Page.RenderString .Title }}</h1>
+          <h1 class="faq-title fw-bold">{{ $.Page.RenderString .Title }}</h1>
 				</div>
 			</div>
-      <div class="col-md-5 text-center p-4 zoom" onclick="image_zoom(this)">
+      <div class="col-md-5 text-center p-4 zoom">
 				{{ with .Params.faq }}
-        <img class="img-fluid w-100" src="{{ .Image | absURL }}" alt='Illustration of {{ .Image | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+        {{/* HUGO IMAGE RENDERER */}}
+        {{ $image_resolutions := (slice "300x" "500x") }}
+        {{ $image_data := newScratch }}
+        {{ $image_class := "img-fluid w-100"}}
+        {{ $image_path := .image }}
+        {{ $image_buffer := resources.Get $image_path }}
+        {{ $image_fallback := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" (index (last 1 $image_resolutions) 0))) }}
+        {{ range $index, $image_resolutions }}
+          {{ $image_webp := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s webp q90 Lanczos" .)) }}
+          {{ $image_data.Add "srcset_webp" (printf "%s %s," $image_webp (replace . "x" "w")) }}
+          {{ $image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" .)) }}
+          {{ $image_data.Add "srcset_jpg" (printf "%s %s," $image_jpg (replace . "x" "w")) }}
+        {{ end }}
+				{{ $image_dimensions := $image_buffer.Resize (index (last 1 $image_resolutions) 0) }}
+        <picture>
+          <source type="image/webp" srcset='{{ $image_data.Get "srcset_webp" }}'>
+          <source type="image/jpeg" srcset='{{ $image_data.Get "srcset_jpg" }}'>
+          <img loading="lazy" decoding="async" class="{{ $image_class }}" src="{{ $image_fallback }}" width="{{ $image_dimensions.Width }}" height="{{ $image_dimensions.Height }}" alt='Illustration of {{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+        </picture>
+        {{/* HUGO IMAGE RENDERER */}}
         {{ end }}
 			</div>
       <hr class="w-75 mt-5 pb-5"/>
@@ -24,9 +43,11 @@
           <h1 class="faq-anchor" id="{{ .anchor }}"></h1>
           <details id="details#{{ .anchor }}" class="faq-detail col-lg-12">
             <summary class="faq-summary">
-              <span class="faq-question font-weight-bold">{{ $.Page.RenderString .question }}</span>
-              <i class="fas fa-plus"></i>
-              <i class="fas fa-minus"></i>
+              <span class="faq-question fw-bold">{{ $.Page.RenderString .question }}</span>
+              {{/*  <i class="fa-solid fa-plus"></i>  */}}
+              {{/*  <i class="fa-solid fa-minus"></i>  */}}
+              {{ partial "svg" "fa-solid fa-plus" }}
+              {{ partial "svg" "fa-solid fa-minus" }}
             </summary>
             <p class="faq-text">{{ $.Page.RenderString .answer }}</p>
           </details>
@@ -36,12 +57,4 @@
     </div>
   </div>
 </section>
-
-<script>
-  var hash = window.location.hash;
-  if (hash != ""){
-    document.getElementById("details"+hash).open = true;
-  }
-</script>
-
 {{ end }}

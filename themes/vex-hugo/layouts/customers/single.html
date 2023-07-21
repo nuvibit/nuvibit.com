@@ -2,17 +2,35 @@
 
 <section class="section">
   <div class="container">
-    <div class="row">
-      <div class="col-md-5 mb-4 mb-md-0">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
         <!-- customer image slider -->
-        <div class="product-image">
+        <div class="product-image align-self-center float-start p-5">
           <div data-image="{{ .Params.image | absURL }}">
-            <img class="customer-logo img-fluid  w-100" src="{{ .Params.image | absURL }}"
-            alt='{{ .Params.image | replaceRE ".*?([\\w-]+).(png|svg)" "$1" }} logo'>
+            {{/* HUGO IMAGE RENDERER */}}
+            {{ $image_resolutions := (slice "300x" "500x" "800x") }}
+            {{ $image_data := newScratch }}
+            {{ $image_class := "customer-logo img-fluid w-100"}}
+            {{ $image_path := .Params.image }}
+            {{ $image_buffer := resources.Get $image_path }}
+            {{ $image_fallback := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" (index (last 1 $image_resolutions) 0))) }}
+            {{ range $index, $image_resolutions }}
+              {{ $image_webp := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s webp q90 Lanczos" .)) }}
+              {{ $image_data.Add "srcset_webp" (printf "%s %s," $image_webp (replace . "x" "w")) }}
+              {{ $image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" .)) }}
+              {{ $image_data.Add "srcset_jpg" (printf "%s %s," $image_jpg (replace . "x" "w")) }}
+            {{ end }}
+            {{ $image_dimensions := $image_buffer.Resize (index (last 1 $image_resolutions) 0) }}
+            <picture>
+              <source type="image/webp" srcset='{{ $image_data.Get "srcset_webp" }}'>
+              <source type="image/jpeg" srcset='{{ $image_data.Get "srcset_jpg" }}'>
+              <img loading="lazy" decoding="async" class="{{ $image_class }}" src="{{ $image_fallback }}" width="{{ $image_dimensions.Width }}" height="{{ $image_dimensions.Height }}" alt='Customer logo of {{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+            </picture>
+            {{/* HUGO IMAGE RENDERER */}}
           </div>
         </div>
       </div>
-      <div class="col-lg-6 col-md-7 offset-lg-1 align-self-center text-center text-md-left">
+      <div class="col-md-10 align-self-center text-center text-md-start p-5">
         <h1 class="mb-4">{{ .Title }}</h1>
         <div class="content">{{.Content}}</div>
       </div>

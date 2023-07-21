@@ -4,30 +4,60 @@
 <section class="gallery" id="customers">
     <div class="container">
         <div class="row">
+            <hr class="w-75 mb-7">
             <div class="col-md-12">
                 <div class="heading">
                     {{- with $data.homepage.customers }}
-                    <h2>
+                    <h4 class="subheading">
                         {{ $.Page.RenderString .title }}
-                        <a href="{{ .link | absLangURL }}">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <a class="header-link" href="{{ .link | absLangURL }}" title='Read more about our customer' aria-label='Read more about our customer'>
+                            {{/*  <i class="fa-solid fa-arrow-up-right-from-square"></i>  */}}
+                            {{ partial "svg" "fa-solid fa-arrow-up-right-from-square" }}
                         </a>
-                    </h2>
+                    </h4>
                     {{ end }}
                 </div>
-
-                <div class="product-slider">
-                    {{ range (where .Site.RegularPages "Section" "customers") }}
-                    <div class="block ml-3 mr-3" onclick='redirect("{{ .Permalink }}")'>
-                        <div class="gallery-overlay">
-                            <a href="{{ .Permalink }}" class="gallery-popup">
-                                <i class="fas fa-plus"></i>
-                            </a>
+                <div class="glider-contain">
+                    <div class="glider product-slider">
+                        {{ range (where .Site.RegularPages "Section" "customers") }}
+                        <div class="block m-3" id="badge-element" data-value="{{ .Permalink }}">
+                            <div class="gallery-overlay">
+                                <a href="{{ .Permalink }}" class="gallery-popup" title='Read more about our customer {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }}' aria-label='Read more about our customer {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+                                    {{/*  <i class="fa-solid fa-plus"></i>  */}}
+                                    {{ partial "svg" "fa-solid fa-plus" }}
+                                </a>
+                            </div>
+                            {{/* HUGO IMAGE RENDERER */}}
+                            {{ $image_resolutions := (slice "300x" "500x") }}
+                            {{ $image_data := newScratch }}
+                            {{ $image_class := "img-fluid"}}
+                            {{ $image_path := .Params.image }}
+                            {{ $image_buffer := resources.Get $image_path }}
+                            {{ $image_fallback := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" (index (last 1 $image_resolutions) 0))) }}
+                            {{ range $index, $image_resolutions }}
+                                {{ $image_webp := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s webp q90 Lanczos" .)) }}
+                                {{ $image_data.Add "srcset_webp" (printf "%s %s," $image_webp (replace . "x" "w")) }}
+                                {{ $image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" .)) }}
+                                {{ $image_data.Add "srcset_jpg" (printf "%s %s," $image_jpg (replace . "x" "w")) }}
+                            {{ end }}
+                            {{ $image_dimensions := $image_buffer.Resize (index (last 1 $image_resolutions) 0) }}
+                            <picture>
+                                <source type="image/webp" srcset='{{ $image_data.Get "srcset_webp" }}'>
+                                <source type="image/jpeg" srcset='{{ $image_data.Get "srcset_jpg" }}'>
+                                <img loading="lazy" decoding="async" class="{{ $image_class }}" src="{{ $image_fallback }}" width="{{ $image_dimensions.Width }}" height="{{ $image_dimensions.Height }}" alt='Customer logo of {{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+                            </picture>
+                            {{/* HUGO IMAGE RENDERER */}}
                         </div>
-                        <img class="customer-logo" src="{{ .Params.image | absURL }}"
-                            alt='{{ .Params.image | replaceRE ".*?([\\w-]+).(png|svg)" "$1" }} logo'>
+                        {{ end }}
                     </div>
-                    {{ end }}
+                    <button hidden aria-label="Previous" class="glider-prev pull-left">
+                        {{/*  <i class='fa-solid fa-arrow-left' aria-hidden='true'></i>  */}}
+                        {{ partial "svg" "fa-solid fa-arrow-left" }}
+                    </button>
+                    <button hidden aria-label="Next" class="glider-next pull-right">
+                        {{/*  <i class='fa-solid fa-arrow-right' aria-hidden='true'></i>  */}}
+                        {{ partial "svg" "fa-solid fa-arrow-right" }}
+                    </button>
                 </div>
             </div>
         </div>

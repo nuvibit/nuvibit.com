@@ -2,13 +2,32 @@
 	<div class="container pt-5">
 		<div class="row">
 			<div class="col-md-6 mb-3 text-center footer-logo">
-				<img src="{{ site.Params.logo_footer | absURL }}" alt='{{ site.Params.logo_footer | replaceRE ".*?([\\w-]+).png" "$1" }}' width="{{ site.Params.logo_footer_width }}">
+				{{/* HUGO IMAGE RENDERER */}}
+				{{ $image_resolutions := (slice "300x" "500x") }}
+				{{ $image_data := newScratch }}
+				{{ $image_class := "img-fluid"}}
+				{{ $image_path := site.Params.logo_footer }}
+				{{ $image_buffer := resources.Get $image_path }}
+				{{ $image_fallback := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" (index (last 1 $image_resolutions) 0))) }}
+				{{ range $index, $image_resolutions }}
+					{{ $image_webp := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s webp q90 Lanczos" .)) }}
+					{{ $image_data.Add "srcset_webp" (printf "%s %s," $image_webp (replace . "x" "w")) }}
+					{{ $image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" .)) }}
+					{{ $image_data.Add "srcset_jpg" (printf "%s %s," $image_jpg (replace . "x" "w")) }}
+				{{ end }}
+				{{ $image_dimensions := $image_buffer.Resize (index (last 1 $image_resolutions) 0) }}
+				<picture>
+					<source type="image/webp" srcset='{{ $image_data.Get "srcset_webp" }}'>
+					<source type="image/jpeg" srcset='{{ $image_data.Get "srcset_jpg" }}'>
+				<img loading="lazy" decoding="async" class="{{ $image_class }}" src="{{ $image_fallback }}" width="{{ $image_dimensions.Width }}" height="{{ $image_dimensions.Height }}" alt='{{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+				</picture>
+				{{/* HUGO IMAGE RENDERER */}}
 			</div>
-			<div class="col-md-6 mb-4 text-left footer-links">
+			<div class="col-md-6 mb-4 text-start footer-links">
 				
 				<!-- Language List -->
-				<div class="bottom-nav col-md-4 col-10 p-0 float-left mb-3">
-					<h5 class="mb-4 font-weight-bold">{{ i18n "languages" }}</h5>
+				<div class="bottom-nav col-md-4 col-10 p-0 float-start mb-3">
+					<h5 class="mb-4 fw-bold">{{ i18n "languages" }}</h5>
 					<ul class="list-group">
 					{{ if gt .Page.AllTranslations 0 }}
 						{{ $siteLanguages := .Site.Languages }}
@@ -19,11 +38,13 @@
 						{{ if eq $translation.Lang .Lang }}
 						{{ $selected := false }}
 							<li class="list-group-item bg-transparent border-0 p-0 mb-2">
-								<a href="{{ $translation.Permalink }}" onclick='update_language_pref("{{.Lang}}")'>
+								<a href="{{ $translation.Permalink }}" id="lang-element{{.Lang}}" data-value="{{.Lang}}">
 									{{ if eq $pageLang .Lang}}
-									<i class="fas fa-toggle-on"></i>
+									{{/*  <i class="fa-solid fa-toggle-on"></i>  */}}
+									{{ partial "svg" "fa-solid fa-toggle-on" }}
 									{{ else }}
-									<i class="fas fa-toggle-off"></i>
+									{{/*  <i class="fa-solid fa-toggle-off"></i>  */}}
+									{{ partial "svg" "fa-solid fa-toggle-off" }}
 									{{ end }}
 									{{ humanize (i18n .LanguageName) }}
 								</a>
@@ -34,7 +55,8 @@
 					{{ else }}
 						<li class="list-group-item bg-transparent border-0 p-0 mb-2">
 							<a href="/" value="default-language">
-								<i class="fas fa-toggle-on"></i>
+								{{/*  <i class="fa-solid fa-toggle-on"></i>  */}}
+								{{ partial "svg" "fa-solid fa-toggle-on" }}
 								{{ humanize (i18n "english") }}
 							</a>
 						</li>
@@ -46,15 +68,17 @@
 				<!-- Footer Navigation -->
 				{{ range site.Menus.footer }}
 				{{ if .HasChildren }}
-				<div class="bottom-nav col-md-4 col-10 p-0 float-left mb-3">
-					<h5 class="mb-4 font-weight-bold">{{ .Name }}</h5>
+				<div class="bottom-nav col-md-4 col-10 p-0 float-start mb-3">
+					<h5 class="mb-4 fw-bold">{{ .Name }}</h5>
 					<ul class="list-group">
 						{{ range .Children}} 
 						{{ with . }}
 						<li class="list-group-item bg-transparent border-0 p-0 mb-2">
 							<a href="{{ .URL | relLangURL }}">
 							{{ if eq .Parent "social" }}
-								<i class="fab fa-{{ lower .Name }} mr-2"></i>
+								{{/*  <i class="fa-brands fa-{{ lower .Name }} me-2"></i>  */}}
+								{{ $brand := lower .Name }}
+								{{ partial "svg" (printf "fa-brands fa-%s me-2" $brand) }}
 							{{ end }}
 								{{ .Name }}
 							</a>
@@ -78,11 +102,16 @@
 	</div>
 </footer>
 
-<!-- JS Plugins -->
-{{ range site.Params.plugins.js}}
-<script src="{{ .link | absURL }}"></script>
+{{/*  {{ $js_plugins := resources.Match "plugins/**.js" }}
+{{ $js_main := resources.Get "js/custom-script.js" }}
+{{ range $js_plugins }}
+<script defer src="{{ .RelPermalink }}"></script>
 {{ end }}
+<script defer src="{{ $js_main.RelPermalink }}"></script>  */}}
 
-<!-- Main Script -->
-{{ $script := resources.Get "js/script.js" }}
-<script src="{{ $script.Permalink }}"></script>
+<!-- JavaScript -->
+{{ $js_plugins := resources.Match "plugins/**.js" | resources.Concat "js/buffer_plugins.js" | minify }}
+{{ $js_main := resources.Match "js/**.js" | resources.Concat "js/buffer_script.js" | minify }}
+{{ $js := slice $js_plugins $js_main | resources.Concat "js/script.js" | minify | fingerprint }}
+<link rel="preload" as="script" href="{{ $js.RelPermalink }}">
+<script defer src="{{ $js.RelPermalink }}"></script>

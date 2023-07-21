@@ -37,7 +37,7 @@ Loonstrasse 36<br/>
 
 We have the following data protection representation pursuant to [Article 27 of the GDPR](https://steigerlegal.ch/dsgvo/dsgvo-27/) in the European Economic Area (EEA), including the European Union (EU) and the Principality of Liechtenstein, Iceland and Norway, as an _additional_ point of contact for supervisory authorities and data subjects for inquiries related to the General Data Protection Regulation (GDPR):
 
-[VGS Datenschutzpartner UG](https://www.datenschutzpartner.eu/kontakt/)<br/>
+[VGS Datenschutzpartner GmbH](https://www.datenschutzpartner.eu)<br/>
 Am Kaiserkai 69<br/>
 20457 Hamburg<br/>
 Germany
@@ -169,10 +169,6 @@ We use in particular:
 ### 8.3 Fonts
 
 We use third party services to embed selected fonts, as well as icons, logos and symbols on our website.
-
-We specifically use:
-
-*   **[Google Fonts:](https://fonts.google.com)** Fonts; Provider: Google LLC (USA) / Google Ireland Limited (Ireland) for users in the European Economic Area (EEA) and Switzerland; privacy information: [What does using the Google Fonts API mean for my users' privacy?](https://developers.google.com/fonts/faq#what_does_using_the_google_fonts_api_mean_for_the_privacy_of_my_users), [Privacy and Security Principles](https://safety.google/intl/de/principles/), [Privacy Policy](https://policies.google.com/privacy?hl=de)
 
 ## 9\. Final provisions
 

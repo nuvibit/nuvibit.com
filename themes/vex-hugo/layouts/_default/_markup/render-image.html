@@ -1,9 +1,31 @@
-<div class="col-md-10 m-auto p-3 text-right zoom" onclick="image_zoom(this)">
+<div class="col-md-10 m-auto p-3 text-end zoom">
+    {{/* HUGO IMAGE RENDERER */}}
+    {{ $image_resolutions := (slice "400x" "800x" "1200x") }}
+    {{ $image_data := newScratch }}
+    {{ $image_class := "img-fluid"}}
+    {{ $image_path := (replace .Destination "-highres.png" ".png") }}
+    {{ $image_buffer := resources.Get $image_path }}
+    {{ $image_fallback := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" (index (last 1 $image_resolutions) 0))) }}
+    {{ range $index, $image_resolutions }}
+        {{ $image_webp := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s webp q90 Lanczos" .)) }}
+        {{ $image_data.Add "srcset_webp" (printf "%s %s," $image_webp (replace . "x" "w")) }}
+        {{ $image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" .)) }}
+        {{ $image_data.Add "srcset_jpg" (printf "%s %s," $image_jpg (replace . "x" "w")) }}
+    {{ end }}
+    {{ $image_dimensions := $image_buffer.Resize (index (last 1 $image_resolutions) 0) }}
+    <picture>
+        <source type="image/webp" srcset='{{ $image_data.Get "srcset_webp" }}'>
+        <source type="image/jpeg" srcset='{{ $image_data.Get "srcset_jpg" }}'>
+        <img loading="lazy" decoding="async" class="{{ $image_class }}" src="{{ $image_fallback }}" width="{{ $image_dimensions.Width }}" height="{{ $image_dimensions.Height }}" alt='Illustration of {{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+    </picture>
+    {{/* HUGO IMAGE RENDERER */}}
     {{ $imgPath := .Destination }}
     {{- if strings.HasSuffix $imgPath "-highres.png" }}
-    <img class="img-fluid" src='{{ (replace .Destination "-highres.png" ".png") | absURL }}' alt='Illustration of {{ (replace .Destination "-highres.png" ".png") | replaceRE ".*?([\\w-]+).png" "$1" }}'>
-    <a href='{{ .Destination | absURL }}' target="_blank"><i class="fas fa-external-link-alt"></i> high resolution</a>
+    {{ $image_highres := resources.Get .Destination }}
+    <a class="highres" href='{{ $image_highres.RelPermalink }}' target="_blank">
+        {{/*  <i class="fa-solid fa-external-link-alt"></i> high resolution  */}}
+        high resolution {{ partial "svg" "fa-solid fa-arrow-up-right-from-square" }}
+    </a>
     {{- else }}
-    <img class="img-fluid" src="{{ .Destination | absURL }}" alt='Illustration of {{ .Destination | replaceRE ".*?([\\w-]+).png" "$1" }}'>
     {{- end }}
 </div>

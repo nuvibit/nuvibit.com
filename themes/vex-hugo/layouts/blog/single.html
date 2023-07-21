@@ -5,54 +5,81 @@
     <div class="row justify-content-center">
 			<div class="col-lg-10 align-self-center text-center">
 				<div class="block">
-					<h1 class="font-weight-bold mb-4 font-size-60">{{ .Title }}</h1>
+					<h1 class="fw-bold mb-4 font-size-60">{{ .Title }}</h1>
           <div class="col-md-10 m-auto p-3 blog-page">
-            <img class="card-img-top blog-tile-img" src="{{ .Params.image | absURL }}" alt='Illustration of {{ .Params.Image | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+            {{/* HUGO IMAGE RENDERER */}}
+            {{ $image_resolutions := (slice "300x" "500x" "800x") }}
+            {{ $image_data := newScratch }}
+            {{ $image_class := "card-img-top blog-tile-img"}}
+            {{ $image_path := .Params.image }}
+            {{ $image_buffer := resources.Get $image_path }}
+            {{ $image_fallback := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" (index (last 1 $image_resolutions) 0))) }}
+            {{ range $index, $image_resolutions }}
+              {{ $image_webp := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s webp q90 Lanczos" .)) }}
+              {{ $image_data.Add "srcset_webp" (printf "%s %s," $image_webp (replace . "x" "w")) }}
+              {{ $image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" .)) }}
+              {{ $image_data.Add "srcset_jpg" (printf "%s %s," $image_jpg (replace . "x" "w")) }}
+            {{ end }}
+            {{ $image_dimensions := $image_buffer.Resize (index (last 1 $image_resolutions) 0) }}
+            <picture>
+              <source type="image/webp" srcset='{{ $image_data.Get "srcset_webp" }}'>
+              <source type="image/jpeg" srcset='{{ $image_data.Get "srcset_jpg" }}'>
+              <img loading="eager" class="{{ $image_class }}" src="{{ $image_fallback }}" width="{{ $image_dimensions.Width }}" height="{{ $image_dimensions.Height }}" alt='Illustration of {{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+            </picture>
+            {{/* HUGO IMAGE RENDERER */}}
           </div>
 				</div>
 			</div>
-      <div class="col-md-8 text-center text-md-right mt-5 blog-social">
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink | absURL }}" target="_blank">
-          <i class="fab fa-linkedin mr-4"></i>
+      <div class="col-md-9 text-center text-md-end mt-5 blog-social">
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink | absURL }}" title="Share this blog post on LinkedIn" aria-label="Share this blog post on LinkedIn" target="_blank" alt="linkedin post">
+          {{/*  <i class="fa-brands fa-linkedin me-4"></i>  */}}
+          {{ partial "svg" "fa-brands fa-linkedin me-4" }}
         </a>
-        <a href="https://twitter.com/intent/tweet?text={{ .Title | safeHTML }} {{ .Permalink | absURL }}" target="_blank">
-          <i class="fab fa-twitter mr-4"></i>
+        <a href="https://twitter.com/intent/tweet?text={{ .Title | safeHTML }} {{ .Permalink | absURL }}" title="Share this blog post on Twitter" aria-label="Share this blog post on Twitter" target="_blank" alt="twitter post">
+          {{/*  <i class="fa-brands fa-twitter me-4"></i>  */}}
+          {{ partial "svg" "fa-brands fa-twitter me-4" }}
         </a>
-        <a href="mailto:?subject={{ .Title | safeHTML }}&body={{ .Title | safeHTML }}%0d%0a{{ .Permalink | absURL }}" target="_blank" alt="send mail">
-          <i class="fas fa-envelope mr-4"></i>
+        <a href="mailto:?subject={{ .Title | safeHTML }}&body={{ .Title | safeHTML }}%0d%0a{{ .Permalink | absURL }}" title="Share this blog post via Email" aria-label="Share this blog post via Email" target="_blank" alt="send mail">
+          {{/*  <i class="fa-solid fa-envelope me-4"></i>  */}}
+          {{ partial "svg" "fa-solid fa-envelope me-4" }}
         </a>
-        <a href="#" onclick="copy_url(url='{{ .Permalink | absURL }}')">
-          <i class="fas fa-link"></i>
+        <a href="#" id="copy-element" title="Copy the link to this blog post" aria-label="Copy the link to this blog post" data-value="{{ .Permalink | absURL }}" alt="copy link">
+          {{/*  <i class="fa-solid fa-link"></i>  */}}
+          {{ partial "svg" "fa-solid fa-link" "me-4" }}
         </a>
-        <div class="p-0 mt-md-0 mt-3 col-sm-12 col-md-6 float-left text-muted text-center text-md-left">
+        <div class="p-0 mt-md-0 mt-3 col-12 col-md-6 float-start text-muted text-center text-md-start">
           {{ .Params.Date | time.Format ":date_long" }} | {{ i18n "reading_duration" }} {{ .Params.Duration }} min
         </div>
       </div>
 
-      <div class="w-75 mt-4 alert alert-primary" style="display:none;" id="alert">
+      <div class="w-75 mt-4 alert alert-primary inline-display-none" id="alert">
         <strong>Link has been copied to clipboard.</strong>
       </div>
-      <hr class="w-75 pb-3"/>
+      <hr class="w-75 pb-3 mt-3"/>
 
-      <div class="col-lg-10 text-center text-md-left mb-5">
+      <div class="col-lg-10 text-center text-md-start mb-5">
         <div class="container markdown">
           {{ .Content }}
         </div>
       </div>
 
       <hr class="w-75 mb-4"/>
-      <div class="col-md-8 text-center text-md-right blog-social">
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink | absURL }}" target="_blank" alt="linkedin post">
-          <i class="fab fa-linkedin mr-4"></i>
+      <div class="col-md-9 text-center text-md-end blog-social">
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink | absURL }}" title="Share this blog post on LinkedIn" aria-label="Share this blog post on LinkedIn" target="_blank" alt="linkedin post">
+          {{/*  <i class="fa-brands fa-linkedin me-4"></i>  */}}
+          {{ partial "svg" "fa-brands fa-linkedin me-4" }}
         </a>
-        <a href="https://twitter.com/intent/tweet?text={{ .Title | safeHTML }} {{ .Permalink | absURL }}" target="_blank" alt="twitter post">
-          <i class="fab fa-twitter mr-4"></i>
+        <a href="https://twitter.com/intent/tweet?text={{ .Title | safeHTML }} {{ .Permalink | absURL }}" title="Share this blog post on Twitter" aria-label="Share this blog post on Twitter" target="_blank" alt="twitter post">
+          {{/*  <i class="fa-brands fa-twitter me-4"></i>  */}}
+          {{ partial "svg" "fa-brands fa-twitter me-4" }}
         </a>
-        <a href="mailto:?subject={{ .Title | safeHTML }}&body={{ .Title | safeHTML }}%0d%0a{{ .Permalink | absURL }}" target="_blank" alt="send mail">
-          <i class="fas fa-envelope mr-4"></i>
+        <a href="mailto:?subject={{ .Title | safeHTML }}&body={{ .Title | safeHTML }}%0d%0a{{ .Permalink | absURL }}" title="Share this blog post via Email" aria-label="Share this blog post via Email" target="_blank" alt="send mail">
+          {{/*  <i class="fa-solid fa-envelope me-4"></i>  */}}
+          {{ partial "svg" "fa-solid fa-envelope me-4" }}
         </a>
-        <a href="#" onclick="copy_url(url='{{ .Permalink | absURL }}')" alt="copy link">
-          <i class="fas fa-link"></i>
+        <a href="#" id="copy-element" title="Copy the link to this blog post" aria-label="Copy the link to this blog post" data-value="{{ .Permalink | absURL }}" alt="copy link">
+          {{/*  <i class="fa-solid fa-link"></i>  */}}
+          {{ partial "svg" "fa-solid fa-link" }}
         </a>
     </div>
 

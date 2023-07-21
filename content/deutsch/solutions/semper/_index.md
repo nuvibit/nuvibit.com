@@ -6,10 +6,10 @@ draft: false
 banner_section:
     enable: true
     title: "SEMPER"
-    content: "Sie verwalten mehrere AWS Accounts und haben Ihre Workloads auf mehrere AWS Regionen verteilt? <br>
-              Dann wissen Sie, wie schwierig es ist, die Sicherheitskonformität Ihrer AWS Ressourcen zu überwachen und Sicherheitswarnungen in Echtzeit zu verwalten.<br><br>
-              SEMPER ermöglicht es Ihnen, Ihre Sicherheitssensoren sehr granular und auf konsistente und überprüfbare Weise zu verwalten und akzeptierte Sicherheitsergebnisse automatisch zu filtern.<br>
-              Alles bequem über ein zentrales **[Policy as Code](/faq/#pac 'What is Security / Policy as Code?')** Repository verwaltet."
+    content: "Mit der Verteilung von Workloads über verschiedene AWS-Accounts und -Regionen kann die Aufrechterhaltung der Sicherheits-Compliance und die Überwachung von Sicherheitsereignissen in Echtzeit entmutigend sein.  
+              SEMPER revolutioniert Ihren Ansatz, indem es eine präzise Verwaltung von Sicherheitssensoren ermöglicht, Konsistenz gewährleistet und die Verarbeitung von Sicherheitsbefunden automatisiert.
+              Ein zentrales [Policy as Code](/faq/#pac 'What is Security / Policy as Code?') Repository vereinfacht und optimiert den gesamten Prozess und gibt Ihnen die vollständige Kontrolle über Ihre AWS-Sicherheitslandschaft.<br><br>
+              Erleben Sie den Gedankenfrieden, den das nahtlose Sicherheitsmanagement mit SEMPER bietet."
     image: "images/solutions/semper-logo.png"
     button:
         enable: true

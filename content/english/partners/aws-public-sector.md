@@ -12,7 +12,7 @@ button_link: "#"
 draft: false
 ---
 
-We build your cloud foundation on a solid platform!
+We build your Cloud Foundation on a solid platform!
 
 Amazon Web Services (AWS) has been the leading provider of public cloud infrastructure for years.
 

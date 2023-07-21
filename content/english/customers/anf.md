@@ -1,7 +1,7 @@
 ---
-title: "a&f systems ag"
+title: "'Put it through the acid test' a&f systems ag"
 date: 2022-10-16T11:00:00+06:00
-image: "images/customers/anf.svg"
+image: "images/customers/anf.png"
 
 # meta description
 description : "Our customer a&f system AG is well known system integrator for innovative publishing software and business IT solutions for media corporations"
@@ -16,20 +16,9 @@ The core business of a&f systems ag are multi-channel publishing, product inform
 
 The main software suppliers for a&f systems ag have an AWS only strategy. Also a&f systems ag received several customer requests about hosting components on AWS. Therefor a&f systems ag will build and host their interface solutions as well as the applications they build for their customers on AWS.
 
-We were able to support a&f systems ag on their cloud journey with the following activities: 
-* landing zone review
-* landing zone architecture workshops
-* workload account review
-* solution architecture workshops
-* terraform training</br>
+### How did we help?
+During a&f systems ag's cloud journey, we provided valuable support through various activities. Firstly, we conducted a comprehensive landing zone review to ensure a strong foundation. We then facilitated interactive landing zone architecture workshops, tailoring the setup to their specific needs. Additionally, we conducted a thorough workload account review, ensuring optimal efficiency and resource allocation.
 
-a&f systems ag uses several AWS services including:
-* AWS Control Tower
-* AWS IAM Identity Center (SS0)
-* AWS Lambda
-* AWS WAF
-* Amazon SQL
-* Amazon API Gateway
-* Amazon VPC
-* Amazon EC2
-* Amazon Route53</br>
+To further enhance their cloud environment, we organized solution architecture workshops, helping them design robust and scalable solutions. Moreover, we delivered specialized Terraform training to empower their team with the necessary skills for efficient infrastructure management.
+
+Throughout their AWS journey, a&f systems ag leveraged a wide range of AWS services. These included AWS IAM Identity Center (SSO) for streamlined access management, AWS Lambda for serverless computing, AWS WAF for web application security, Amazon SQL for managed database services, and Amazon API Gateway for seamless interactions with their applications.

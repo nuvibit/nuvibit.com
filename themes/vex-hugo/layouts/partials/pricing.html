@@ -18,22 +18,24 @@
                         {{ if .image }}
                         <img class="img-fluid" src="{{.image}}{{.|absURL}}" alt='Illustration of {{ .Image | replaceRE ".*?([\\w-]+).png" "$1" }}'>
                         {{ end }}
-                        <h3 class="h2 font-weight-bold mt-15 mb-10">{{ $.Page.RenderString .name }}</h3>
+                        <h3 class="h2 fw-bold mt-15 mb-10">{{ $.Page.RenderString .name }}</h3>
                         <p class="border-bottom pb-20">{{ $.Page.RenderString .label }}</p>
-                        <ul class="list-unstyled check-list-2 mt-30 mb-40 text-left float-left">
+                        <ul class="list-unstyled check-list-2 mt-30 mb-40 text-start float-start">
                             {{ range .features }}
                             {{ if .separator }}
                                 <hr>
                             {{ else }}
                             {{ if .enable }}
                             <li class="mb-25">
-                                <i class="d-inline-block h3 mb-10 tf-ion-ios-checkmark text-success"></i>
-                                <span class="h4 pl-2">{{ $.Page.RenderString .name }}</span>
+                                {{/*  <i class="d-inline-block h3 mb-10 tf-ion-ios-checkmark text-success"></i>  */}}
+                                {{ partial "svg" "fa-solid fa-check" }}
+                                <span class="h4 ps-2">{{ $.Page.RenderString .name }}</span>
                             </li>
                             {{ else }}
-                            <li class="mb-25" style="color:lightgrey;">
-                                <i class="d-inline-block h3 mb-10 tf-ion-ios-close"></i>
-                                <span class="h4 pl-2">{{ $.Page.RenderString .name }}</span>
+                            <li class="mb-25 inline-color-lightgrey" >
+                                {{/*  <i class="d-inline-block h3 mb-10 tf-ion-ios-close"></i>  */}}
+                                {{ partial "svg" "fa-solid fa-xmark" }}
+                                <span class="h4 ps-2">{{ $.Page.RenderString .name }}</span>
                             </li>
                             {{ end }}
                             {{ end }}

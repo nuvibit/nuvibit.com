@@ -110,5 +110,5 @@ We are available for Hiring of your next HUGO project. Drop Us a mail [mehedi@th
 ## Premium Themes
 
 | [![Mega-Bundle-HUGO](https://gethugothemes.com/wp-content/uploads/edd/2019/09/Mega-Bundle-HUGO.png)](https://themefisher.com/products/hugo-mega-bundle/) | [![Adrian](https://gethugothemes.com/wp-content/uploads/edd/2019/12/adrian-ecommerce-template.jpg)](https://gethugothemes.com/products/adrian/) | [![influencer](https://gethugothemes.com/wp-content/uploads/2019/11/Influencer.png)](https://gethugothemes.com/products/influencer-hugo/) |
-|:---:|:---:|:---:|
+|---:|---:|---:|
 | **Hugo Mega Bundle**  | **Adrian**  | **Influencer**  |

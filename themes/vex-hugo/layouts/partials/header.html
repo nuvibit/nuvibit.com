@@ -1,21 +1,46 @@
 <header class="sticky-top bg-dark">
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">{{ if site.Params.logo_banner }} <img src="{{ site.Params.logo_banner | absURL }}" alt='{{ site.Params.logo_banner | replaceRE ".*?([\\w-]+).png" "$1" }}' {{with site.Params.logo_banner_width}}width="{{.}}"{{end}}> {{ else }} {{ site.Title }} {{ end }}</a>
-      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+    <nav class="navbar navbar-expand-lg navbar-dark px-2">
+      <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
+        {{ if site.Params.logo_banner }}
+				{{/* HUGO IMAGE RENDERER */}}
+        {{ $image_resolutions := (slice "300x" "500x") }}
+				{{ $image_data := newScratch }}
+        {{ $image_class := "img-fluid"}}
+        {{ $image_path := site.Params.logo_banner }}
+				{{ $image_buffer := resources.Get $image_path }}
+				{{ $image_fallback := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" (index (last 1 $image_resolutions) 0))) }}
+				{{ range $index, $image_resolutions }}
+					{{ $image_webp := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s webp q90 Lanczos" .)) }}
+					{{ $image_data.Add "srcset_webp" (printf "%s %s," $image_webp (replace . "x" "w")) }}
+					{{ $image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" .)) }}
+					{{ $image_data.Add "srcset_jpg" (printf "%s %s," $image_jpg (replace . "x" "w")) }}
+				{{ end }}
+				{{ $image_dimensions := $image_buffer.Resize (index (last 1 $image_resolutions) 0) }}
+				<picture>
+					<source type="image/webp" srcset='{{ $image_data.Get "srcset_webp" }}'>
+					<source type="image/jpeg" srcset='{{ $image_data.Get "srcset_jpg" }}'>
+					<img loading="eager" class="{{ $image_class }}" src="{{ $image_fallback }}" width="{{ $image_dimensions.Width }}" height="{{ $image_dimensions.Height }}" alt='{{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+				</picture>
+				{{/* HUGO IMAGE RENDERER */}}
+        {{ else }}
+        {{ site.Title }}
+        {{ end }}
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
         aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse text-center" id="navigation">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ms-auto">
           {{ range site.Menus.main }}
           {{ if .HasChildren }}
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown{{ .Name }}" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               {{ .Name }}
             </a>
-            <div class="nav-item dropdown-menu" aria-labelledby="navbarDropdown">
+            <div class="nav-item dropdown-menu" aria-labelledby="navbarDropdown{{ .Name }}">
               {{ range .Children }} 
               <a class="dropdown-item" href="{{if .Pre}}{{site.BaseURL | relLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
               {{ end }}

@@ -1,5 +1,5 @@
 ---
-title: "Unsere Zertifizierungen"
+title: "Kompetenz"
 description : ""
 draft: false
 ---

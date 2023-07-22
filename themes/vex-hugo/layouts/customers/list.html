@@ -4,13 +4,13 @@
     <div class="container">
         <div class="row">
         <div class="col-12 text-center mb-5">
-            <h1 class="fw-bold">{{.Title}}</h1>
+            <h1>{{.Title}}</h1>
         </div>
         {{ range (where .Site.RegularPages "Section" "customers") }}
         <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <div class="block mb-4" id="badge-element" data-value="{{ .Permalink }}">
                 <div class="gallery-overlay">
-                    <a href="{{ .Permalink }}" class="gallery-popup" title='Read more about our customer {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }}' aria-label='Read more about our customer {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+                    <a href="{{ .Permalink }}" class="gallery-popup" title='Read more about the success story of our customer {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }}' aria-label='Read more about the success story of our customer {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }}'>
                         {{/*  <i class="fa-solid fa-plus"></i>  */}}
                         {{ partial "svg" "fa-solid fa-plus" }}
                     </a>

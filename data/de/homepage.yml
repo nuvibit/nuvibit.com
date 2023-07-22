@@ -24,7 +24,7 @@ services:
                 Revolutionieren Sie Ihre AWS-Infrastruktur mit effizienter Verwaltung, beschleunigter Bereitstellung und [GitOps](/faq/#gitops 'Was ist GitOps?') Best Practices."
       link:
           enable: true
-          label: "Next Generation AWS Landing Zone"
+          label: "Terraform-native AWS Landing Zone"
           link: "/solutions/terraform-collection"
 
     - image : "images/solutions/semper-logo.png"

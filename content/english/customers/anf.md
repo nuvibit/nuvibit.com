@@ -1,5 +1,5 @@
 ---
-title: "'Put it through the acid test' a&f systems ag"
+title: "Putting the AWS environment of a&f systems ag through the acid test"
 date: 2022-10-16T11:00:00+06:00
 image: "images/customers/anf.png"
 

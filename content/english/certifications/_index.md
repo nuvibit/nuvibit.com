@@ -1,5 +1,5 @@
 ---
-title: "Our certifications"
+title: "Competence"
 description : ""
 draft: false
 ---

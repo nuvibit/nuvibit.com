@@ -436,8 +436,8 @@ function subnetCalculator() {
 // determine the language preference for the user
 var pageLang = document.getElementById("js_pageLang").value;
 // get browser language as shortcode - example: de_ch -> de
-var browserLang = navigator.language || navigator.userLanguage;
-browserLang = browserLang.substring(0, 2);
+var checkBrowserLang = navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
+var browserLang = checkBrowserLang.substring(0, 2) || "en";
 // get supported languages from hugo
 var supportedLang = document.getElementById("js_supportedLang").value.match(/\[(.*?)\]/)[1].split(" ");
 // get base url and uri
@@ -445,24 +445,28 @@ var base_url = document.getElementById("js_base_url").value.replace(/\/$/, "");
 var uri = document.getElementById("js_uri").value;
 // try to read language preference from local storage and check if supported
 userLangPref = localStorage.getItem('lang');
-if (userLangPref && supportedLang.includes(userLangPref)) {
-    // switch language if current language is not same as preference
-    if (pageLang !== userLangPref) {
-        // translate uri before redirecting - example: /de/contact -> /contact
-        relocate_uri = uri_translate(uri, lang_now = pageLang, lang_new = userLangPref);
-        window.location.href = base_url + relocate_uri;
-    }
-} else {
-    // set language to english if browser language not supported
-    if (!supportedLang.includes(browserLang)) {
-        browserLang = "en";
-    }
-    // save language preference to local storage
-    localStorage.setItem('lang', browserLang);
-    if (localStorage.getItem('lang') === browserLang && pageLang !== browserLang) {
-        // translate uri before redirecting - example: /contact -> /de/contact
-        relocate_uri = uri_translate(uri, lang_now = pageLang, lang_new = browserLang);
-        window.location.href = base_url + relocate_uri;
+// check if redirect is necessary
+if (pageLang === "en") {
+    if (userLangPref && supportedLang.includes(userLangPref)) {
+        // switch language if current language is not same as preference
+        if (pageLang !== userLangPref) {
+            // translate uri before redirecting - example: /de/contact -> /contact
+            relocate_uri = uri_translate(uri, lang_now = pageLang, lang_new = userLangPref);
+            window.location.href = base_url + relocate_uri;
+        }
+    } else {
+        // set language to english if browser language not supported
+        if (!supportedLang.includes(browserLang)) {
+            browserLang = "en";
+        }
+        localStorage.setItem('lang', browserLang);
+        userLangPref = localStorage.getItem('lang');
+        // redirect to preferred language
+        if (userLangPref === browserLang && pageLang !== browserLang) {
+            // translate uri before redirecting - example: /contact -> /de/contact
+            relocate_uri = uri_translate(uri, lang_now = pageLang, lang_new = browserLang);
+            window.location.href = base_url + relocate_uri;
+        }
     }
 }
 

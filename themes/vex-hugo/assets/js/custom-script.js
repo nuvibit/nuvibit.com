@@ -433,20 +433,21 @@ function subnetCalculator() {
     }));
 }
 
-// determine the language preference for the user
-var pageLang = document.getElementById("js_pageLang").value;
-// get browser language as shortcode - example: de_ch -> de
-var checkBrowserLang = navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
-var browserLang = checkBrowserLang.substring(0, 2) || "en";
-// get supported languages from hugo
-var supportedLang = document.getElementById("js_supportedLang").value.match(/\[(.*?)\]/)[1].split(" ");
-// get base url and uri
-var base_url = document.getElementById("js_base_url").value.replace(/\/$/, "");
+// check language preference when on root of page
 var uri = document.getElementById("js_uri").value;
-// try to read language preference from local storage and check if supported
-userLangPref = localStorage.getItem('lang');
-// check if redirect is necessary
-if (pageLang === "en") {
+if (uri === "/") {
+    // determine the language preference for the user
+    var pageLang = document.getElementById("js_pageLang").value;
+    // get browser language as shortcode - example: de_ch -> de
+    var checkBrowserLang = navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
+    var browserLang = checkBrowserLang.substring(0, 2) || "en";
+    // get supported languages from hugo
+    var supportedLang = document.getElementById("js_supportedLang").value.match(/\[(.*?)\]/)[1].split(" ");
+    // get base url
+    var base_url = document.getElementById("js_base_url").value.replace(/\/$/, "");
+    // try to read language preference from local storage and check if supported
+    userLangPref = localStorage.getItem('lang');
+    // check if redirect is necessary
     if (userLangPref && supportedLang.includes(userLangPref)) {
         // switch language if current language is not same as preference
         if (pageLang !== userLangPref) {

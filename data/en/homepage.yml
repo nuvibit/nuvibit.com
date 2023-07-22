@@ -13,7 +13,7 @@ banner:
 ############################# services ##########################
 services:
   enable: true
-  title: "Streamline Your Cloud Infrastructure!"
+  title: "Revolutionize Your Cloud Infrastructure!"
   items:
     - image : "images/solutions/ntc-logo.png"
       enable: true

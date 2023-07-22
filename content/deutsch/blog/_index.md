@@ -1,6 +1,6 @@
 ---
 title: "Nuvibit Blog"
-description: "Nuvibit Blog. Wir teilen unsere Erfahrungen mit der Community: Cloud Native, Infastructure as Code, Connectivity, Security und mehr."
+description: "Unsere AWS-Experten teilen ihre Erfahrungen mit der Community: Cloud Native, Infastructure as Code, Connectivity, Sicherheit und mehr."
 image: "images/illustrations/blog.png"
 draft: false
 ---

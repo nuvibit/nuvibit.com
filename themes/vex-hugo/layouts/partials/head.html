@@ -1,8 +1,16 @@
 <head>
   <meta charset="utf-8">
-  <title>{{ .Site.Params.title }}</title>
+  <title>{{ .Title }}</title>
 
   <!-- Meta Tags -->
+  {{- if .IsTranslated -}}
+    {{ range .AllTranslations }}
+      <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+    {{- end -}}
+    {{ range first 1 .AllTranslations }}
+      <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+    {{- end -}}
+  {{ end }}
   <link rel="canonical" href="{{ .Permalink }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">

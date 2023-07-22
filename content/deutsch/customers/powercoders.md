@@ -1,5 +1,5 @@
 ---
-title: "'Talente der Zukunft prägen' powercoders"
+title: "Die Talente der Zukunft mit Powercoders prägen"
 date: 2022-12-20T11:00:00+06:00
 image: "images/customers/powercoders.png"
 

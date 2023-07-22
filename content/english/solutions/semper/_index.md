@@ -1,6 +1,6 @@
 ---
-title: "SEMPER"
-description: "SEMPER is an AWS Native Security Event and Finding Management solution that allows you to manage your security sensors at a very granular level in a consistent and auditable way and to automatically filter accepted security findings."
+title: "Nuvibit SEMPER | Complete control over your AWS Security"
+description: "SEMPER revolutionizes precise security sensor management, ensures consistency and automates security findings processing"
 draft: false
 
 banner_section:
@@ -23,7 +23,7 @@ feature_section:
 
   # feature at the left of the image
   left_side:
-  - title : "Serverless and AWS Native"
+  - title : "Serverless and AWS-native"
     icon : "fa-cloud"
     content : "Our serverless solution seamlessly integrates with AWS Config, AWS CloudTrail, AWS Security Hub and Amazon GuardDuty."
 

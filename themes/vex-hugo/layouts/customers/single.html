@@ -5,12 +5,12 @@
     <div class="row justify-content-center">
       <div class="col-md-10">
         <!-- customer image slider -->
-        <div class="product-image align-self-center float-start p-5">
+        <div class="product-image align-self-center float-start col-md-6 p-5">
           <div data-image="{{ .Params.image | absURL }}">
             {{/* HUGO IMAGE RENDERER */}}
             {{ $image_resolutions := (slice "300x" "500x" "800x") }}
             {{ $image_data := newScratch }}
-            {{ $image_class := "customer-logo img-fluid w-100"}}
+            {{ $image_class := "customer-logo img-fluid"}}
             {{ $image_path := .Params.image }}
             {{ $image_buffer := resources.Get $image_path }}
             {{ $image_fallback := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" (index (last 1 $image_resolutions) 0))) }}
@@ -30,8 +30,8 @@
           </div>
         </div>
       </div>
-      <div class="col-md-10 align-self-center text-center text-md-start p-5">
-        <h1 class="mb-4">{{ .Title }}</h1>
+      <div class="col-md-10 align-self-center text-center text-md-start p-md-5">
+        <h2 class="mb-4 fw-bold">{{ .Title }}</h2>
         <div class="content">{{.Content}}</div>
       </div>
     </div>

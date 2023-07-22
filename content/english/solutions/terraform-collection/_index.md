@@ -1,13 +1,13 @@
 ---
-title: "Nuvibit Terraform Collection (NTC) - AWS Landing Zone & Foundation"
-description: "Nuvibit Terraform Collection (NTC) is a next-generation AWS Landing Zone & Foundation solution based entirely on Infrastructure as Code with Terraform."
+title: "NTC | Terraform-native AWS Landing Zone & Foundation"
+description: "Nuvibit Terraform Collection (NTC) is a revolutionary AWS Landing Zone & Foundation solution based entirely on Terraform."
 draft: false
 
 banner_section:
     enable: true
     title: "Nuvibit Terraform Collection (NTC)"
-    content: "NTC is a next-generation AWS Landing Zone & Foundation solution based entirely on Infrastructure as Code with Terraform.
-              It is specifically designed to deploy and manage an enterprise-ready, compliant and scalable AWS environment.
+    content: "NTC is a revolutionary AWS Landing Zone & Foundation solution based entirely on Infrastructure as Code with Terraform.
+              NTC is specifically designed to deploy and manage an enterprise-ready, compliant and scalable AWS environment.
               Our flexible, declarative, and modular approach offers many unique benefits to a platform engineering team and drastically reduces implementation time and effort.<br><br>
               Revolutionize your AWS infrastructure with streamlined management, accelerated deployment, and [GitOps](/faq/#gitops 'What is GitOps?') best practices."
     image : "images/solutions/ntc-logo.png"
@@ -33,13 +33,13 @@ feature_section:
 
   - title : "Simple to customize"
     icon : "fa-user-gear"
-    content : "Our modular approach offers a lot of flexibility and options when it comes to implementing a personalized AWS Landing Zone & Foundation. We provide customization templates as a starting point which can be adopted or modified."
+    content : "Our modular approach offers a lot of flexibility when it comes to implementing a personalized AWS Landing Zone & Foundation. We provide customization templates as a starting point which can be adopted or modified."
 
   # feature at the right of the image
   right_side:
   - title : "Updates and support"
     icon : "fa-handshake-angle"
-    content : "Receive updates and support for our modules and keep your AWS Landing Zone & Foundation up to date and running. We are specialized in AWS and Terraform with years of hands-on experience."
+    content : "Receive updates and support for our modules and keep your AWS Landing Zone & Foundation up to date and running."
 
   - title : "Enterprise-ready and scalable"
     icon : "fa-chart-line"

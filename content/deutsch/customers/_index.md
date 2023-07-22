@@ -1,5 +1,5 @@
 ---
-title: "Unsere Kunden"
-description : "Als spezialisierter AWS Consulting Partner unterstützen wir unsere Unternehmenskunden auf ihrem Weg in die Public Cloud."
+title: "Success Stories"
+description : "Lesen Sie mehr über die Erfolgsgeschichten unserer Kunden und lassen Sie sich davon inspirieren."
 draft: false
 ---

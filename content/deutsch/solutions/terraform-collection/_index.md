@@ -1,12 +1,15 @@
 ---
-title: "Nuvibit Terraform Collection (NTC) - AWS Landing Zone & Foundation"
-description: "Nuvibit Terraform Collection (NTC) ist eine AWS Landing Zone & Foundation Lösung, basierend auf Infrastructure as Code Terraform-Modulen, die spezifisch für die Bereitstellung und Verwaltung einer unternehmenstauglichen, konformen und skalierbaren AWS-Umgebung entwickelt wurde."
+title: "NTC | Terraform-native AWS Landing Zone & Foundation"
+description: "Nuvibit Terraform Collection (NTC) ist eine revolutionäre AWS Landing Zone & Foundation-Lösung, die vollständig auf Terraform basiert."
 draft: false
 
 banner_section:
     enable: true
     title: "Nuvibit Terraform Collection (NTC)"
-    content: "ist eine AWS Landing Zone & Foundation Lösung, basierend auf Infrastructure as Code Terraform-Modulen, die spezifisch für die Bereitstellung und Verwaltung einer unternehmenstauglichen, konformen und skalierbaren AWS-Umgebung entwickelt wurde. Unser flexibler, deklarativer und modularer Ansatz bietet viele einzigartige Vorteile für ein Plattform-Engineering-Team und reduziert den Zeit- und Arbeitsaufwand für die Implementierung drastisch.<br><br>"
+    content: "NTC ist eine revolutionäre AWS Landing Zone & Foundation-Lösung, die vollständig auf Infrastructure as Code mit Terraform basiert.
+                NTC wurde spezifisch für die Bereitstellung und Verwaltung einer unternehmenstauglichen, konformen und skalierbaren AWS-Umgebung entwickelt.
+                Unser flexibler, deklarativer und modularer Ansatz bietet viele einzigartige Vorteile für ein Plattform-Engineering-Team und reduziert die Implementierungszeit und den Aufwand drastisch.<br><br>
+                Revolutionieren Sie Ihre AWS-Infrastruktur mit effizienter Verwaltung, beschleunigter Bereitstellung und [GitOps](/faq/#gitops 'Was ist GitOps?') Best Practices."
     image : "images/solutions/ntc-logo.png"
     button:
         enable: true
@@ -26,25 +29,25 @@ feature_section:
     
   - title : "Konzipiert für GitOps"
     icon : "fa-brands fa-git-alt"
-    content : "Verwalten Sie Ihre AWS Landing Zone & Foundation mit einem vollständigen GitOps-Ansatz. [Segregation of duties](/faq/#segregation 'Was ist Aufgabentrennung?') kann mit Git-Repositories und Pipeline-Berechtigungen durchgesetzt werden."
+    content : "Verwalten Sie Ihre AWS Landing Zone & Foundation im GitOps-Ansatz. [Segregation of duties](/faq/#segregation 'Was ist Aufgabentrennung?') kann mit Git-Repositories und Pipeline-Berechtigungen durchgesetzt werden."
 
   - title : "Einfach personalisierbar"
     icon : "fa-user-gear"
-    content : "Unser modularer Ansatz bietet eine hohe Flexibilität und viele Optionen, wenn es um die Implementierung einer personalisierten AWS Landing Zone & Foundation geht. Wir bieten Vorlagen für die Personalisierung, die als Ausgangspunkt dienen und direkt übernommen oder angepasst werden können."
+    content : "Unser modularer Ansatz bietet eine hohe Flexibilität, wenn es um die Implementierung einer personalisierten AWS Landing Zone & Foundation geht. Vorlagen für die Personalisierung können direkt übernommen oder angepasst werden."
 
   # feature at the right of the image
   right_side:
   - title : "Updates und Support"
     icon : "fa-handshake-angle"
-    content : "Erhalten Sie Updates und Support für unsere Module und bleiben Sie mit Ihrer AWS Landing Zone & Foundation auf dem neuesten Stand und funktionsfähig. Wir sind auf AWS und Terraform spezialisiert mit langjähriger praktischer Erfahrung."
+    content : "Erhalten Sie Updates und Support für unsere Module und bleiben Sie mit Ihrer AWS Landing Zone & Foundation auf dem neuesten Stand und funktionsfähig."
 
-  - title : "Unternehmenstauglich und skalierbar"
+  - title : "Unternehmenstauglich"
     icon : "fa-chart-line"
-    content : "Entwickelt für Unternehmen mit hohen Skalierbarkeitsanforderungen, abgestimmt auf Branchenstandards und AWS Best Practices. Verwalten Sie zuverlässig Hunderte von Accounts."
+    content : "Entwickelt für Unternehmen mit hohen Anforderungen an Skalierbarkeit, abgestimmt auf Branchenstandards und AWS Empfehlungen. Verwalten Sie zuverlässig Hunderte von Accounts."
 
   - title : "Beschleunigung der Cloud Journey"
     icon : "fa-truck-fast"
-    content : "Der Aufbau einer skalierbaren AWS Landing Zone & Foundation erfordert viel Zeit und Mühe. Mit unserer Collection können Sie unsere umfassende Erfahrung mit AWS und Terraform nutzen, um Ihren Implementierungsprozess erheblich zu beschleunigen."
+    content : "Der Aufbau einer skalierbaren AWS Landing Zone & Foundation erfordert viel Zeit und Mühe. Profitieren Sie von unserer langjährigen Erfahrung mit AWS und Terraform, um den Implementierungsprozess erheblich zu beschleunigen."
 
 markdown_content:
   enable: true

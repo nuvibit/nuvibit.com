@@ -1,5 +1,5 @@
 ---
-title: "'Auf Herz und Nieren prüfen' a&f systems ag"
+title: "Die AWS-Umgebung der a&f systems ag auf Herz und Nieren prüfen"
 date: 2022-10-16T11:00:00+06:00
 image: "images/customers/anf.png"
 

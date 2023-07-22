@@ -13,8 +13,6 @@ unsafe = true
 ########################### Default Parameters ##########################
 
 [params]
-title = "Nuvibit | Streamline Your AWS Cloud Infrastructure"
-description = "Simplify cloud management with Nuvibit. Experience peak performance, compliance and scalability with our AWS Landing Zone & Foundation."
 logo_banner = "images/logo/logo-nuvibit-banner.png"
 logo_footer = "images/logo/logo-nuvibit-badge.png"
 contact_form_url = "https://forms.zohopublic.eu/nuvibit/form/Contactus/formperma/TUZO-GqMg11XIInReyJqMICqAS7hWGm6YdW3oVM32hE"
@@ -57,8 +55,11 @@ privacyEnhanced = false
 languageName = "english"
 languageCode = "en-us"
 contentDir = "content/english"
-title = "Nuvibit | Streamline Your Cloud Infrastructure with Terraform"
 weight = 1
+title = "Nuvibit | Revolutionize Your AWS Cloud Infrastructure"
+
+[Languages.en.params]
+description = "Simplify cloud management and maximize performance, compliance and scalability with an AWS Landing Zone & Foundation from Nuvibit."
 
 ###################################### English Navigation ######################################
 
@@ -102,7 +103,7 @@ weight = 6
 
 [[Languages.en.menu.main]]
 identifier = "vpc-subnet-calculator"
-name = "VPC Subnet Calculator"
+name = "AWS VPC Subnet Calculator"
 url = "vpc-subnet-calculator"
 parent = "tools"
 weight = 7
@@ -206,10 +207,10 @@ languageName = "german"
 languageCode = "de-de"
 contentDir = "content/deutsch"
 weight = 2
+title = "Nuvibit | Revolutionieren Sie Ihre AWS Cloud-Infrastruktur"
 
 [Languages.de.params]
-title = "Nuvibit | Vereinfachen Sie Ihre Cloud-Infrastruktur mit Terraform"
-description = "Vereinfachen Sie das Cloud-Management mit Nuvibit. Erleben Sie Spitzenleistung, Compliance und Skalierbarkeit mit unserer AWS Landing Zone & Foundation."
+description = "Vereinfachtes Cloud-Management und maximale Performance, Compliance und Skalierbarkeit mit einer AWS Landing Zone & Foundation von Nuvibit."
 
 ###################################### German Navigation ######################################
 
@@ -253,7 +254,7 @@ weight = 6
 
 [[Languages.de.menu.main]]
 identifier = "vpc-subnet-calculator"
-name = "VPC Subnetzrechner"
+name = "AWS VPC Subnetzrechner"
 url = "vpc-subnet-calculator"
 parent = "tools"
 weight = 7

@@ -1,6 +1,6 @@
 ---
-title: "VPC Subnetz-Rechner"
-description: "Dieser Subnetz-Rechner ist speziell für AWS VPC-Subnetze konzipiert. Unterstützt IPv4-Subnetzberechnungen mit statischer und variabler Länge."
+title: "Nuvibit | AWS VPC Subnetz-Rechner"
+description: "Vereinfachen Sie Ihre AWS-Netzwerkplanung mit diesem VPC Subnetz-Rechner. Unterstützt Berechnung von IPv4-Subnetzen mit statischer Länge und variabler Länge."
 draft: false
 
 banner_section:

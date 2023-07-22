@@ -1,5 +1,5 @@
 ---
-title: "Nuvibit Foundation Blueprint | Transform your Cloud Journey"
+title: "Nuvibit Foundation Blueprint | Sorgenfreie Cloud-Journey"
 description: "The Nuvibit Foundation Blueprint significantly accelerates your cloud adoption journey and enables your organization to efficiently deploy workloads in AWS."
 draft: false
 

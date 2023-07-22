@@ -13,8 +13,6 @@ unsafe = true
 ########################### Default Parameters ##########################
 
 [params]
-title = "Nuvibit | Streamline Your AWS Cloud Infrastructure"
-description = "Simplify cloud management with Nuvibit. Experience peak performance, compliance and scalability with our AWS Landing Zone & Foundation."
 logo_banner = "images/logo/logo-nuvibit-banner.png"
 logo_footer = "images/logo/logo-nuvibit-badge.png"
 contact_form_url = "https://forms.zohopublic.eu/nuvibit/form/Contactus/formperma/TUZO-GqMg11XIInReyJqMICqAS7hWGm6YdW3oVM32hE"
@@ -57,8 +55,9 @@ privacyEnhanced = false
 languageName = "english"
 languageCode = "en-us"
 contentDir = "content/english"
-title = "Nuvibit | Streamline Your Cloud Infrastructure with Terraform"
 weight = 1
+title = "Nuvibit | Streamline Your AWS Cloud Infrastructure"
+description = "Simplify cloud management with Nuvibit. Experience peak performance, compliance and scalability with our AWS Landing Zone & Foundation."
 
 ###################################### English Navigation ######################################
 
@@ -206,9 +205,7 @@ languageName = "german"
 languageCode = "de-de"
 contentDir = "content/deutsch"
 weight = 2
-
-[Languages.de.params]
-title = "Nuvibit | Vereinfachen Sie Ihre Cloud-Infrastruktur mit Terraform"
+title = "Nuvibit | Optimieren Sie Ihre Cloud-Infrastruktur"
 description = "Vereinfachen Sie das Cloud-Management mit Nuvibit. Erleben Sie Spitzenleistung, Compliance und Skalierbarkeit mit unserer AWS Landing Zone & Foundation."
 
 ###################################### German Navigation ######################################

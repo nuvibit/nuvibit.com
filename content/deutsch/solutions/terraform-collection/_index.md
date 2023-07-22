@@ -1,6 +1,6 @@
 ---
-title: "Nuvibit Terraform Collection | AWS Landing Zone & Foundation"
-description: "Nuvibit Terraform Collection (NTC) ist eine revolutionäre AWS Landing Zone & Foundation-Lösung, die vollständig auf Infrastructure as Code mit Terraform basiert."
+title: "NTC | Terraform-native AWS Landing Zone & Foundation"
+description: "Nuvibit Terraform Collection (NTC) ist eine revolutionäre AWS Landing Zone & Foundation-Lösung, die vollständig auf Terraform basiert."
 draft: false
 
 banner_section:

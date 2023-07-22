@@ -1,6 +1,6 @@
 ---
-title: "Foundation Blueprint"
-description: "We will tailor our Foundation Blueprint to your needs and enable you to deliver Foundation Capabilities to your Cloud Workload Development Teams with a high level of maturity."
+title: "Nuvibit Foundation Blueprint | Transform your Cloud Journey"
+description: "The Nuvibit Foundation Blueprint significantly accelerates your cloud adoption journey and enables your organization to efficiently deploy workloads in AWS."
 draft: false
 
 banner_section:
@@ -9,7 +9,7 @@ banner_section:
     content: "Before deploying a productive workload on AWS there are many moving parts which have to be coordinated. 
               There are technical parts such as connectivity or security and organizational parts such as finance or operations.
               A secure, scalable [Cloud Foundation](/faq/#foundation 'What is a Cloud Foundation?') will significantly accelerate your cloud adoption journey and is one of the most important and hardest challenges.
-              Our Foundation Blueprint addresses exactly this concern and enables your organization to efficiently deploy workloads in AWS.<br><br>
+              Our Foundation Blueprint significantly accelerates your cloud adoption journey and enables your organization to efficiently deploy workloads in AWS.<br><br>
               Transform your cloud strategy into reality with our expert support and achieve unparalleled operational excellence."
     image : "images/solutions/foundation-blueprint-logo.png"
     button:

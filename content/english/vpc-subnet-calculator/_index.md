@@ -1,6 +1,6 @@
 ---
-title: "VPC Subnet Calculator"
-description: "This network subnet calculator is specifically designed for AWS VPC subnets. Supports static length and variable length IPv4 subnet calculations."
+title: "Nuvibit | AWS VPC Subnet Calculator"
+description: "Simplify your AWS network planning with this VPC Subnet Calculator. Can be used to calculate static length and variable length IPv4 subnets."
 draft: false
 
 banner_section:

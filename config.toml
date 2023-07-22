@@ -102,7 +102,7 @@ weight = 6
 
 [[Languages.en.menu.main]]
 identifier = "vpc-subnet-calculator"
-name = "VPC Subnet Calculator"
+name = "AWS VPC Subnet Calculator"
 url = "vpc-subnet-calculator"
 parent = "tools"
 weight = 7
@@ -253,7 +253,7 @@ weight = 6
 
 [[Languages.de.menu.main]]
 identifier = "vpc-subnet-calculator"
-name = "VPC Subnetzrechner"
+name = "AWS VPC Subnetzrechner"
 url = "vpc-subnet-calculator"
 parent = "tools"
 weight = 7

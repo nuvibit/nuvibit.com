@@ -1,5 +1,5 @@
 ---
 title: "Success Stories"
-description : "As a specialized AWS Consulting Partner, we support our enterprise customers on their journey to the public cloud."
+description : "Read more about the success stories of our customers and let them inspire you."
 draft: false
 ---

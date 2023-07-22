@@ -1,5 +1,5 @@
 ---
 title: "Kompetenz"
-description : ""
+description : "Das Nuvibit-Team ist hoch qualifiziert und rundum zertifiziert."
 draft: false
 ---

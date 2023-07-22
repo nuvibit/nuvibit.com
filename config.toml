@@ -56,8 +56,10 @@ languageName = "english"
 languageCode = "en-us"
 contentDir = "content/english"
 weight = 1
-title = "Nuvibit | Streamline Your AWS Cloud Infrastructure"
-description = "Simplify cloud management with Nuvibit. Experience peak performance, compliance and scalability with our AWS Landing Zone & Foundation."
+title = "Nuvibit | Revolutionize Your AWS Cloud Infrastructure"
+
+[Languages.en.params]
+description = "Simplify cloud management and maximize performance, compliance and scalability with an AWS Landing Zone & Foundation from Nuvibit."
 
 ###################################### English Navigation ######################################
 
@@ -205,8 +207,10 @@ languageName = "german"
 languageCode = "de-de"
 contentDir = "content/deutsch"
 weight = 2
-title = "Nuvibit | Optimieren Sie Ihre Cloud-Infrastruktur"
-description = "Vereinfachen Sie das Cloud-Management mit Nuvibit. Erleben Sie Spitzenleistung, Compliance und Skalierbarkeit mit unserer AWS Landing Zone & Foundation."
+title = "Nuvibit | Revolutionieren Sie Ihre AWS Cloud-Infrastruktur"
+
+[Languages.de.params]
+description = "Vereinfachtes Cloud-Management und maximale Performance, Compliance und Skalierbarkeit mit einer AWS Landing Zone & Foundation von Nuvibit."
 
 ###################################### German Navigation ######################################
 

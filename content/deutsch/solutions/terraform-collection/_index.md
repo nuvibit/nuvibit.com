@@ -41,7 +41,7 @@ feature_section:
     icon : "fa-handshake-angle"
     content : "Erhalten Sie Updates und Support für unsere Module und bleiben Sie mit Ihrer AWS Landing Zone & Foundation auf dem neuesten Stand und funktionsfähig."
 
-  - title : "Unternehmenstauglich"
+  - title : "Enterprise tauglich"
     icon : "fa-chart-line"
     content : "Entwickelt für Unternehmen mit hohen Anforderungen an Skalierbarkeit, abgestimmt auf Branchenstandards und AWS Empfehlungen. Verwalten Sie zuverlässig Hunderte von Accounts."
 

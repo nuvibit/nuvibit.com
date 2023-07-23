@@ -7,7 +7,7 @@ banner_section:
     enable: true
     title: "Nuvibit Terraform Collection (NTC)"
     content: "NTC ist eine revolutionäre AWS Landing Zone & Foundation-Lösung, die vollständig auf Infrastructure as Code mit Terraform basiert.
-                NTC wurde spezifisch für die Bereitstellung und Verwaltung einer unternehmenstauglichen, konformen und skalierbaren AWS-Umgebung entwickelt.
+                NTC wurde spezifisch für die Bereitstellung und Verwaltung einer Enterprise tauglichen, konformen und skalierbaren AWS-Umgebung entwickelt.
                 Unser flexibler, deklarativer und modularer Ansatz bietet viele einzigartige Vorteile für ein Plattform-Engineering-Team und reduziert die Implementierungszeit und den Aufwand drastisch.<br><br>
                 Revolutionieren Sie Ihre AWS-Infrastruktur mit effizienter Verwaltung, beschleunigter Bereitstellung und [GitOps](/faq/#gitops 'Was ist GitOps?') Best Practices."
     image : "images/solutions/ntc-logo.png"

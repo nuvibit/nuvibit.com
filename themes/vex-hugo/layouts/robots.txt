@@ -1,7 +1,7 @@
 User-agent: *
-
-{{ range .Pages }}
-Allow: {{ .RelPermalink }}
-{{ end }}
+Disallow: /tags/
+Disallow: /categories/
+Disallow: /de/tags/
+Disallow: /de/categories/
 
 Sitemap: {{ "sitemap.xml" | absLangURL }}

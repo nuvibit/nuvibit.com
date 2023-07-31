@@ -71,56 +71,56 @@ weight = 1
 [[Languages.en.menu.main]]
 identifier = "solutions"
 name = "Solutions"
-url = "solutions"
+url = "/solutions/"
 weight = 2
 
 [[Languages.en.menu.main]]
 identifier = "terraform-collection"
 name = "Nuvibit Terraform Collection (NTC)"
-url = "solutions/terraform-collection"
+url = "/solutions/terraform-collection/"
 parent = "solutions"
 weight = 3
 
 [[Languages.en.menu.main]]
 identifier = "semper"
 name = "SEMPER"
-url = "solutions/semper"
+url = "/solutions/semper/"
 parent = "solutions"
 weight = 4
 
 [[Languages.en.menu.main]]
 identifier = "foundation-blueprint"
 name = "Foundation Blueprint"
-url = "solutions/foundation-blueprint"
+url = "/solutions/foundation-blueprint/"
 parent = "solutions"
 weight = 5
 
 [[Languages.en.menu.main]]
 identifier = "tools"
 name = "Tools"
-url = "tools"
+url = "/tools/"
 weight = 6
 
 [[Languages.en.menu.main]]
 identifier = "vpc-subnet-calculator"
 name = "AWS VPC Subnet Calculator"
-url = "vpc-subnet-calculator"
+url = "/vpc-subnet-calculator/"
 parent = "tools"
 weight = 7
 
 [[Languages.en.menu.main]]
 name = "Blog"
-url = "blog"
+url = "/blog/"
 weight = 8
 
 [[Languages.en.menu.main]]
 name = "Team"
-url = "team"
+url = "/team/"
 weight = 9
 
 [[Languages.en.menu.main]]
 name = "Contact"
-url = "contact"
+url = "/contact/"
 weight = 10
 
 ###################################### English Footer ######################################
@@ -138,37 +138,37 @@ weight = 2
 [[Languages.en.menu.footer]]
 parent = "company"
 name = "FAQ"
-url = "/faq"
+url = "/faq/"
 weight = 3
 
 [[Languages.en.menu.footer]]
 parent = "company"
 name = "Team"
-url = "/team"
+url = "/team/"
 weight = 4
 
 [[Languages.en.menu.footer]]
 parent = "company"
 name = "Contact"
-url = "/contact"
+url = "/contact/"
 weight = 5
 
 # [[Languages.en.menu.footer]]
 # parent = "company"
 # name = "Customers"
-# url = "/customers"
+# url = "/customers/"
 # weight = 6
 
 [[Languages.en.menu.footer]]
 parent = "company"
 name = "Cookie Policy"
-url = "/privacy-policy/#51-cookies"
+url = "/privacy-policy/#51-cookies/"
 weight = 7
 
 [[Languages.en.menu.footer]]
 parent = "company"
 name = "Privacy Policy"
-url = "/privacy-policy"
+url = "/privacy-policy/"
 weight = 8
 
 [[Languages.en.menu.footer]]
@@ -222,56 +222,56 @@ weight = 1
 [[Languages.de.menu.main]]
 identifier = "solutions"
 name = "Solutions"
-url = "solutions"
+url = "/solutions/"
 weight = 2
 
 [[Languages.de.menu.main]]
 identifier = "terraform-collection"
 name = "Nuvibit Terraform Collection (NTC)"
-url = "solutions/terraform-collection"
+url = "/solutions/terraform-collection/"
 parent = "solutions"
 weight = 3
 
 [[Languages.de.menu.main]]
 identifier = "semper"
 name = "SEMPER"
-url = "solutions/semper"
+url = "/solutions/semper/"
 parent = "solutions"
 weight = 4
 
 [[Languages.de.menu.main]]
 identifier = "foundation-blueprint"
 name = "Foundation Blueprint"
-url = "solutions/foundation-blueprint"
+url = "/solutions/foundation-blueprint/"
 parent = "solutions"
 weight = 5
 
 [[Languages.de.menu.main]]
 identifier = "tools"
 name = "Tools"
-url = "tools"
+url = "/tools/"
 weight = 6
 
 [[Languages.de.menu.main]]
 identifier = "vpc-subnet-calculator"
 name = "AWS VPC Subnetzrechner"
-url = "vpc-subnet-calculator"
+url = "/vpc-subnet-calculator/"
 parent = "tools"
 weight = 7
 
 [[Languages.de.menu.main]]
 name = "Blog"
-url = "blog"
+url = "/blog/"
 weight = 8
 
 [[Languages.de.menu.main]]
 name = "Team"
-url = "team"
+url = "/team/"
 weight = 9
 
 [[Languages.de.menu.main]]
 name = "Kontakt"
-url = "contact"
+url = "/contact/"
 weight = 10
 
 ###################################### German Footer ######################################
@@ -289,37 +289,37 @@ weight = 2
 [[Languages.de.menu.footer]]
 parent = "company"
 name = "FAQ"
-url = "/faq"
+url = "/faq/"
 weight = 3
 
 [[Languages.de.menu.footer]]
 parent = "company"
 name = "Team"
-url = "/team"
+url = "/team/"
 weight = 4
 
 [[Languages.de.menu.footer]]
 parent = "company"
 name = "Kontakt"
-url = "/contact"
+url = "/contact/"
 weight = 5
 
 # [[Languages.de.menu.footer]]
 # parent = "company"
 # name = "Kunden"
-# url = "/customers"
+# url = "/customers/"
 # weight = 6
 
 [[Languages.de.menu.footer]]
 parent = "company"
 name = "Cookie Richtlinien"
-url = "/privacy-policy/#51-cookies"
+url = "/privacy-policy/#51-cookies/"
 weight = 7
 
 [[Languages.de.menu.footer]]
 parent = "company"
 name = "Datenschutzerklärung"
-url = "/privacy-policy"
+url = "/privacy-policy/"
 weight = 8
 
 [[Languages.de.menu.footer]]

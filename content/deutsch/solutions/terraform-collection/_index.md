@@ -7,7 +7,7 @@ banner_section:
     enable: true
     title: "Nuvibit Terraform Collection (NTC)"
     content: "NTC ist eine revolutionäre AWS Landing Zone & Foundation-Lösung, die vollständig auf Infrastructure as Code mit Terraform basiert.
-                NTC wurde spezifisch für die Bereitstellung und Verwaltung einer Enterprise tauglichen, konformen und skalierbaren AWS-Umgebung entwickelt.
+                NTC wurde spezifisch für die Bereitstellung und Verwaltung einer Enterprise-tauglichen, konformen und skalierbaren AWS-Umgebung entwickelt.
                 Unser flexibler, deklarativer und modularer Ansatz bietet viele einzigartige Vorteile für ein Plattform-Engineering-Team und reduziert die Implementierungszeit und den Aufwand drastisch.<br><br>
                 Revolutionieren Sie Ihre AWS-Infrastruktur mit effizienter Verwaltung, beschleunigter Bereitstellung und [GitOps](/faq/#gitops 'Was ist GitOps?') Best Practices."
     image : "images/solutions/ntc-logo.png"
@@ -41,7 +41,7 @@ feature_section:
     icon : "fa-handshake-angle"
     content : "Erhalten Sie Updates und Support für unsere Module und bleiben Sie mit Ihrer AWS Landing Zone & Foundation auf dem neuesten Stand und funktionsfähig."
 
-  - title : "Enterprise tauglich"
+  - title : "Enterprise-ready"
     icon : "fa-chart-line"
     content : "Entwickelt für Unternehmen mit hohen Anforderungen an Skalierbarkeit, abgestimmt auf Branchenstandards und AWS Empfehlungen. Verwalten Sie zuverlässig Hunderte von Accounts."
 
@@ -115,7 +115,7 @@ Es gibt verschiedene Lösungen für die Bereitstellung einer einsatzbereiten AWS
 {{<table "table table-striped table-bordered table-overflow">}}
 |  | NUVIBIT TERRAFORM COLLECTION | AWS LANDING ZONE ACCELERATOR | AWS CONTROL TOWER |
 | ------------- | ------------- | ------------- | ------------- |
-| <mark class="inline-bold-900">Verwendungszweck</mark> | Bietet einen flexiblen, deklarativen und modularen Ansatz für die Bereitstellung und Verwaltung einer unternehmenstauglichen und skalierbaren AWS-Umgebung mit potenziell Hunderten von Accounts. | Bietet ein Framework für die schnelle Bereitstellung einer AWS-Umgebung mit mehreren Accounts mit empfohlenen Best Practices. | Bietet einen automatisierten und vorgegebenen Ansatz zum Einrichten und Verwalten einer sicheren AWS-Umgebung mit mehreren Accounts. |
+| <mark class="inline-bold-900">Verwendungszweck</mark> | Bietet einen flexiblen, deklarativen und modularen Ansatz für die Bereitstellung und Verwaltung einer Enterprise-tauglichen und skalierbaren AWS-Umgebung mit potenziell Hunderten von Accounts. | Bietet ein Framework für die schnelle Bereitstellung einer AWS-Umgebung mit mehreren Accounts mit empfohlenen Best Practices. | Bietet einen automatisierten und vorgegebenen Ansatz zum Einrichten und Verwalten einer sicheren AWS-Umgebung mit mehreren Accounts. |
 | <mark class="inline-bold-900">Bereitstellungsmechanismus</mark> | Terraform | CDK und CloudFormation | AWS managed service + Add-on Lösungen |
 | <mark class="inline-bold-900">Komplexität des Aufbaus</mark> | Erfordert Terraform-Kenntnisse zur Implementierung und zum Betrieb. Die Module werden individuell parametrisiert und bereitgestellt. Detaillierte Beispiel-Repositories werden als Blueprint für die Implementierung der gesamten Lösung bereitgestellt. Zusätzliche Dokumentation und Schritt-für-Schritt-Anleitungen sind ebenfalls verfügbar. | Erfordert CloudFormation und idealerweise CDK-Kenntnisse. Control Tower oder AWS-Organisationen müssen zuerst eingerichtet werden. Für die erste Bereitstellung der Lösung muss eine CloudFormation-Vorlage ausgeführt werden. YAML-Konfigurationsdateien werden dann in AWS CodeCommit verwaltet und über CodePipelines und CloudFormation StackSets bereitgestellt. | Control Tower selbst kann direkt über die AWS-Konsole bereitgestellt und verwaltet werden. Für individuelle Anpassungen sind zusätzliche Kenntnisse in CloudFormation und/oder Terraform erforderlich. Add-on Lösungen für Control Tower müssen separat bereitgestellt werden und können die Komplexität drastisch erhöhen. |
 | <mark class="inline-bold-900">Lösungslebenszyklus</mark> | Jedes Modul hat seinen eigenen Lebenszyklus und kann einzeln aktualisiert und zurückgestuft werden. Die Ausführung eines Terraform Plans kennzeichnet die Veränderungen und sollte überprüft werden, um unerwünschte Anpassungen zu vermeiden. Ein stufenweiser Rollout wird unterstützt und empfohlen. | Die gesamte Lösung muss über die CloudFormation-Vorlage aktualisiert werden. Nach dem Aktualisieren der Lösung werden alle CodePipelines gestartet und ausgerollt. Es gibt keine Unterstützung für ein gestaffeltes Rollout. | AWS Control Tower kann über die Einstellungen der Landing Zone aktualisiert werden. Zusätzlich müssen registrierte Accounts in einem zweiten Schritt aktualisiert werden. Add-on Lösungen müssen separat aktualisiert werden. |

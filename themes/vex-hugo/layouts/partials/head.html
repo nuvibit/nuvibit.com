@@ -28,8 +28,15 @@
   <link rel="stylesheet" type="text/css" href="{{ $css.RelPermalink }}">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="{{ `images/favicon/favicon.ico` | absURL }} " type="image/x-icon">
-  <link rel="icon" href="{{ `images/favicon/favicon-32x32.png` | absURL }} " type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ `images/favicon/apple-touch-icon.png` | absURL }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ `images/favicon/favicon-32x32.png` | absURL }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ `images/favicon/favicon-16x16.png` | absURL }}">
+  <link rel="manifest" href="{{ `images/favicon/site.webmanifest` | absURL }}">
+  <link rel="mask-icon" href="{{ `images/favicon/safari-pinned-tab.svg` | absURL }}" color="#3fa7df">
+  <link rel="shortcut icon" href="{{ `images/favicon/favicon.ico` | absURL }}">
+  <meta name="msapplication-TileColor" content="#2b3346">
+  <meta name="msapplication-config" content="{{ `images/favicon/browserconfig.xml` | absURL }}">
+  <meta name="theme-color" content="#2b3346">
 </head>
 
 <!-- Google tag (gtag.js) -->

@@ -400,17 +400,19 @@ function subnetCalculator() {
     }
     // enable subnet calculation stats
     document.getElementById("subnet_stats").hidden = false;
+    // get page language
+    var pageLang = document.getElementById("js_pageLang").value;
     // check if address space was oversubscribed
     if (subnet_ips_sum > supernet_ips) {
         var status = "not successful";
-        if (userLangPref && userLangPref === "de") {
+        if (pageLang === "de") {
             status = "nicht erfolgreich";
         }
         document.getElementById("subnet_stats_status").style.color = "Red";
         document.getElementById("subnet_stats_usage").style.color = "Red";
     } else {
         var status = "successful";
-        if (userLangPref && userLangPref === "de") {
+        if (pageLang === "de") {
             status = "erfolgreich";
         }
         document.getElementById("subnet_stats_status").style.color = "ForestGreen";

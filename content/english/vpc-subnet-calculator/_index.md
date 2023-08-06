@@ -5,7 +5,7 @@ draft: false
 
 banner_section:
     enable: true
-    title: "VPC Subnet Calculator"
+    title: "AWS VPC Subnet Calculator"
     content: "There are hundreds of great subnet calculators out there...<br>
     So why have another one?<br>
     Even our cloud network sorcerer needs help from time to time, but he couldn't find the right tool for his needs, so he decided to build his own. This calculator is therefore specifically designed for [AWS VPC subnets](https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html#subnet-sizing) and aims to be clutter free.<br><br>

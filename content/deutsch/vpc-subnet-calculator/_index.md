@@ -5,7 +5,7 @@ draft: false
 
 banner_section:
     enable: true
-    title: "VPC Subnetz-Rechner"
+    title: "AWS VPC Subnetz-Rechner"
     content: "Es gibt bereits unzählige gute Subnetz-Rechner...<br>
     Warum also noch einer?<br>
     Sogar unser Cloud Netzwerk-Zauberer braucht von Zeit zu Zeit etwas Unterstützung, aber er konnte kein wirklich passendes Tool finden, also beschloss er einfach, sein eigenes zu bauen. Dieser Rechner wurde daher speziell für [AWS VPC-Subnetze](https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html#subnet-sizing) entwickelt und beschränkt sich auf das Wesentliche.<br><br>

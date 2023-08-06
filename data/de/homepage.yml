@@ -13,7 +13,7 @@ banner:
 ############################# services ##########################
 services:
   enable: true
-  title: "Modernisieren Sie Ihre Cloud-Infrastruktur!"
+  title: "Revolutionieren Sie Ihre Cloud-Infrastruktur!"
   items:
     - image : "images/solutions/ntc-logo.png"
       enable: true

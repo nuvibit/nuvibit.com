@@ -93,7 +93,7 @@ Wir können Personendaten in Staaten, deren Recht keinen angemessenen Datenschut
 
 ## 5\. Rechte von betroffenen Personen
 
-### 5.1 Datenschutzrechtliche Ansprüche</h3>
+### 5.1 Datenschutzrechtliche Ansprüche
 
 Wir gewähren betroffenen Personen sämtliche Ansprüche gemäss dem anwendbaren Datenschutzrecht. Betroffene Personen verfügen insbesondere über folgende Rechte:
 
@@ -154,7 +154,7 @@ Wir sind auf Social Media-Plattformen und anderen Online-Plattformen präsent, u
 
 Es gelten jeweils auch die Allgemeinen Geschäftsbedingungen (AGB) und Nutzungsbedingungen sowie Datenschutzerklärungen und sonstigen Bestimmungen der einzelnen Betreiber solcher Plattformen. Diese Bestimmungen informieren insbesondere über die Rechte von betroffenen Personen direkt gegenüber der jeweiligen Plattform, wozu beispielsweise das Recht auf Auskunft zählt.
 
-## 9\. Dienste von Dritten<
+## 9\. Dienste von Dritten
 
 Wir nutzen Dienste von spezialisierten Dritten, um unsere Aktivitäten und Tätigkeiten dauerhaft, nutzerfreundlich, sicher und zuverlässig ausüben zu können. Mit solchen Diensten können wir unter anderem Funktionen und Inhalte in unsere Website einbetten. Bei einer solchen Einbettung erfassen die genutzten Dienste aus technisch zwingenden Gründen mindestens zeitweilig die Internet Protocol (IP)-Adressen der Nutzerinnen und Nutzer.
 

@@ -24,7 +24,7 @@ Wir weisen darauf hin, wenn es im Einzelfall andere Verantwortliche für die Bea
 
 ### 1.1 Datenschutzbeauftragter
 
-Wir verfügen über die nachfolgende Datenschutzbeauftragte bzw. den nachfolgenden Datenschutzberater als Anlaufstelle für betroffene Personen und Behörden bei Anfragen im Zusammenhang mit dem Datenschutz:
+Wir verfügen über den nachfolgende Datenschutzbeauftragten als Anlaufstelle für betroffene Personen und Behörden bei Anfragen im Zusammenhang mit dem Datenschutz:
 
 **Nuvibit AG**<br/>
 Roman Plessl<br/>

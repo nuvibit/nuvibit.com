@@ -10,6 +10,7 @@ Für einzelne oder zusätzliche Aktivitäten und Tätigkeiten können weitere Da
 
 Wir unterliegen dem schweizerischen Datenschutzrecht sowie allenfalls anwendbarem ausländischem Datenschutzrecht wie insbesondere jenem der Europäischen Union (EU) mit der Datenschutz-Grundverordnung (DSGVO). Die Europäische Kommission <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32000D0518" rel="nofollow noopener noreferrer" target="_blank">anerkennt</a>, dass das schweizerische Datenschutzrecht einen angemessenen Datenschutz gewährleistet.
 
+
 ## 1\. Kontaktadressen
 
 Verantwortung für die Bearbeitung von Personendaten:
@@ -46,6 +47,7 @@ Deutschland
 
 Die Datenschutz-Vertretung dient betroffenen Personen und Behörden in der Europäischen Union (EU) und im übrigen Europäischen Wirtschaftsraum (EWR) als *zusätzliche* Anlaufstelle für Anfragen im Zusammenhang mit der DSGVO.
 
+
 ## 2\. Bearbeitung von Personendaten
 
 ### 2.1 Begriffe
@@ -69,6 +71,7 @@ Wir bearbeiten – sofern und soweit die Datenschutz-Grundverordnung (DSGVO) anw
 *   Art. 6 Abs. 1 lit. a DSGVO für die Bearbeitung von Personendaten mit Einwilligung der betroffenen Person.
 *   Art. 6 Abs. 1 lit. d DSGVO für die erforderliche Bearbeitung von Personendaten, um lebenswichtige Interessen der betroffenen Person oder einer anderen natürlichen Person zu schützen.
 
+
 ## 3\. Art, Umfang und Zweck
 
 Wir bearbeiten jene Personendaten, die _erforderlich_ sind, um unsere Aktivitäten und Tätigkeiten dauerhaft, nutzerfreundlich, sicher und zuverlässig ausüben zu können. Solche Personendaten können insbesondere in die Kategorien von Bestandes- und Kontaktdaten, Browser- und Gerätedaten, Inhaltsdaten, Meta- bzw. Randdaten und Nutzungsdaten, Standortdaten, Verkaufsdaten sowie Vertrags- und Zahlungsdaten fallen.
@@ -83,6 +86,7 @@ In diesem Rahmen bearbeiten wir insbesondere Angaben, die eine betroffene Person
 
 Wir bearbeiten ausserdem Personendaten, die wir von Dritten erhalten, aus öffentlich zugänglichen Quellen beschaffen oder bei der Ausübung unserer Aktivitäten und Tätigkeiten erheben, sofern und soweit eine solche Bearbeitung aus rechtlichen Gründen zulässig ist.
 
+
 ## 4\. Personendaten im Ausland
 
 Wir bearbeiten Personendaten _grundsätzlich_ in der Schweiz und im Europäischen Wirtschafts­raum (EWR). Wir können Personendaten aber auch in andere Staaten exportieren bzw. übermitteln, insbesondere um sie dort zu bearbeiten oder bearbeiten zu lassen.
@@ -90,6 +94,7 @@ Wir bearbeiten Personendaten _grundsätzlich_ in der Schweiz und im Europäische
 Wir können Personendaten in alle <a href="https://de.wikipedia.org/wiki/Liste_der_Staaten_der_Erde#Tabelle" rel="nofollow noopener noreferrer" target="_blank">Staaten und Territorien auf der Erde</a> sowie anderswo im <a href="https://www.datenschutzpartner.ch/2022/04/23/datenschutzerklaerung-daten-export-universum-mond/" rel="nofollow noopener noreferrer" target="_blank">Universum</a> exportieren, sofern das dortige Recht gemäss <a href="https://steigerlegal.ch/2022/09/10/ndsg-schweiz-staatenliste/" rel="nofollow noopener noreferrer" target="_blank">Beschluss des Schweizerischen Bundesrates</a> einen angemessenen Datenschutz sowie – sofern und soweit die Datenschutz-Grundverordnung (DSGVO) anwendbar ist – gemäss <a href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_de" rel="nofollow noopener noreferrer" target="_blank">Beschluss der Europäischen Kommission</a> einen angemessenen Datenschutz gewährleistet.
 
 Wir können Personendaten in Staaten, deren Recht keinen angemessenen Datenschutz gewährleistet, übermitteln, sofern der Datenschutz aus anderen Gründen gewährleistet ist, insbesondere auf Grundlage von Standard­datenschutzklauseln oder mit anderen geeigneten Garantien. Ausnahmsweise können wir Personendaten in Staaten ohne angemessenen oder geeigneten Datenschutz exportieren, wenn dafür die besonderen datenschutzrechtlichen Voraussetzungen erfüllt sind, beispielsweise die ausdrückliche Einwilligung der betroffenen Personen oder ein unmittelbarer Zusammenhang mit dem Abschluss oder der Abwicklung eines Vertrages. Wir geben betroffenen Personen auf Nachfrage gerne Auskunft über allfällige Garantien oder liefern eine Kopie allfälliger Garantien.
+
 
 ## 5\. Rechte von betroffenen Personen
 
@@ -118,6 +123,7 @@ Betroffene Personen haben – sofern und soweit die Datenschutz-Grundverordnung 
 
 Betroffene Personen, deren Personendaten wir bearbeiten, verfügen über die Rechte gemäss schweizerischem Datenschutzrecht. Dazu zählen das Recht auf Auskunft sowie das Recht auf Berichtigung, Löschung oder Sperrung der bearbeiteten Personendaten.
 
+
 ## 6\. Datensicherheit
 
 Wir treffen geeignete technische und organisatorische Massnahmen, um eine dem jeweiligen Risiko angemessene Datensicherheit zu gewährleisten. Wir können aber keine absolute Datensicherheit gewährleisten.
@@ -125,6 +131,7 @@ Wir treffen geeignete technische und organisatorische Massnahmen, um eine dem je
 Der Zugriff auf unsere Website erfolgt mittels Transportverschlüsselung (TLS, insbesondere mit dem Hypertext Transfer Protocol Secure, abgekürzt HTTPS). Die meisten Browser kennzeichnen Transportverschlüsselung mit einem Vorhängeschloss in der Adressleiste.
 
 Unsere digitale Kommunikation unterliegt – wie _grundsätzlich_ jede digitale Kommunikation – der Massenüberwachung ohne Anlass und Verdacht sowie sonstiger Überwachung durch Sicherheitsbehörden in der Schweiz, im übrigen Europa, in den Vereinigten Staaten von Amerika (USA) und in anderen Staaten. Wir können keinen direkten Einfluss auf die entsprechende Bearbeitung von Personendaten durch Geheimdienste, Polizeistellen und andere Sicherheitsbehörden nehmen.
+
 
 ## 7\. Nutzung der Website
 
@@ -148,11 +155,13 @@ Wir speichern solche Angaben, die auch Personendaten darstellen können, in Serv
 
 Wir können Zählpixel auf unserer Website verwenden. Zählpixel werden auch als Web-Beacons bezeichnet. Bei Zählpixeln – auch von Dritten, deren Dienste wir nutzen – handelt es sich um kleine, üblicherweise nicht sichtbare Bilder, die beim Besuch unserer Website automatisch abgerufen werden. Mit Zählpixeln können die gleichen Angaben wie in Server-Logdateien erfasst werden.
 
+
 ## 8\. Social Media
 
 Wir sind auf Social Media-Plattformen und anderen Online-Plattformen präsent, um mit interessierten Personen kommunizieren sowie über unsere Aktivitäten und Tätigkeiten informieren zu können. Im Zusammenhang mit solchen Plattformen können Personendaten auch ausserhalb der Schweiz und des Europäischen Wirtschaftsraumes (EWR) bearbeitet werden.
 
 Es gelten jeweils auch die Allgemeinen Geschäftsbedingungen (AGB) und Nutzungsbedingungen sowie Datenschutzerklärungen und sonstigen Bestimmungen der einzelnen Betreiber solcher Plattformen. Diese Bestimmungen informieren insbesondere über die Rechte von betroffenen Personen direkt gegenüber der jeweiligen Plattform, wozu beispielsweise das Recht auf Auskunft zählt.
+
 
 ## 9\. Dienste von Dritten
 
@@ -174,7 +183,6 @@ Wir nutzen insbesondere:
 
 * **<a href="https://aws.amazon.com/de/" rel="nofollow noopener noreferrer" target="_blank">Amazon Web Services (AWS):</a>** Speicherplatz und sonstige Infrastruktur; Anbieterinnen: Amazon Web Services Inc. (USA) für Nutzerinnen und Nutzer in der Schweiz / Amazon Web Services EMEA SARL (Luxemburg) für Nutzerinnen und Nutzer im Europäischen Wirtschaftsraum (EWR); Angaben zum Datenschutz: <a href="https://aws.amazon.com/de/privacy/" rel="nofollow noopener noreferrer" target="_blank">Datenschutzerklärung</a>, <a href="https://aws.amazon.com/de/compliance/data-privacy/" rel="nofollow noopener noreferrer" target="_blank">«Datenschutz-Zentrum»</a>, <a href="https://aws.amazon.com/de/compliance/data-privacy-faq/" rel="nofollow noopener noreferrer" target="_blank">«Häufig gestellte Fragen zum Datenschutz»</a>, <a href="https://aws.amazon.com/de/compliance/gdpr-center/" rel="nofollow noopener noreferrer" target="_blank">«Datenschutz-Grundverordnung (DSGVO)-Zentrum»</a>.
 
-
 ### 9.2 Kontaktmöglichkeiten
 
 Wir nutzen Dienste von ausgewählten Anbietern, um mit Dritten wie beispielsweise potenziellen sowie bestehenden Kundinnen und Kunden besser kommunizieren zu können.
@@ -182,7 +190,6 @@ Wir nutzen Dienste von ausgewählten Anbietern, um mit Dritten wie beispielsweis
 Wir nutzen insbesondere:
 
 * **<a href="https://www.zoho.com/de/crm/" rel="nofollow noopener noreferrer" target="_blank">Zoho CRM:</a>**Customer-Relationship-Management (CRM); Anbieterin: Zoho Corporation (USA) gemeinsam mit <a href="https://www.zoho.com/privacy/zoho-group.html" rel="nofollow noopener noreferrer" target="_blank">Gruppengesellschaften («Zoho Group»)</a>; Angaben zum Datenschutz: <a href="https://www.zoho.com/privacy-commitment.html" rel="nofollow noopener noreferrer" target="_blank">«Datenschutz» («Privacy»)</a>, <a href="https://www.zoho.com/privacy.html" rel="nofollow noopener noreferrer" target="_blank">Datenschutzerklärung</a>, <a href="https://www.zoho.com/privacy/privacy-faq.html" rel="nofollow noopener noreferrer" target="_blank">«Häufig gestellte Fragen zum Datenschutz» («Frequently Asked Questions on Privacy»)</a>, <a href="https://www.zoho.com/de/security.html" rel="nofollow noopener noreferrer" target="_blank">«Sicherheit»</a>.
-
 
 ### 9.3 Audio- und Video-Konferenzen
 
@@ -219,6 +226,7 @@ Bei der Erfolgs- und Reichweitenmessung können Cookies zum Einsatz kommen und N
 Wir nutzen insbesondere:
 
 * **<a href="https://marketingplatform.google.com/about/tag-manager/" rel="nofollow noopener noreferrer" target="_blank">Google Tag Manager:</a>** Einbindung und Verwaltung von sonstigen Diensten für die Erfolgs- und Reichweitenmessung sowie weiteren Diensten von Google als auch von Dritten; Anbieterin: Google; Google Tag Manager-spezifische Angaben: <a href="https://support.google.com/tagmanager/answer/9323295?hl=de" rel="nofollow noopener noreferrer" target="_blank">«Mit Google Tag Manager erfasste Daten»</a>; weitere Angaben zum Datenschutz finden sich bei den einzelnen eingebundenen und verwalteten Diensten.
+
 
 ## 11. Schlussbestimmungen
 

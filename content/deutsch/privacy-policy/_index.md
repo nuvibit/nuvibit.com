@@ -24,7 +24,7 @@ Wir weisen darauf hin, wenn es im Einzelfall andere Verantwortliche für die Bea
 
 ### 1.1 Datenschutzbeauftragter
 
-Wir verfügen über den nachfolgende Datenschutzbeauftragten als Anlaufstelle für betroffene Personen und Behörden bei Anfragen im Zusammenhang mit dem Datenschutz:
+Wir verfügen über den nachfolgenden Datenschutzbeauftragten als Anlaufstelle für betroffene Personen und Behörden bei Anfragen im Zusammenhang mit dem Datenschutz:
 
 **Nuvibit AG**<br/>
 Roman Plessl<br/>
@@ -60,7 +60,7 @@ Der **Europäische Wirtschaftsraum (EWR)** umfasst die <a href="https://de.wikip
 
 Wir bearbeiten Personendaten im Einklang mit dem schweizerischen Datenschutzrecht wie insbesondere dem <a href="https://www.fedlex.admin.ch/eli/oc/2022/491/de" rel="nofollow noopener noreferrer" target="_blank" id="45254">Bundesgesetz über den Datenschutz</a> (Datenschutzgesetz, DSG) und der <a href="https://www.fedlex.admin.ch/eli/oc/2022/568/de" rel="nofollow noopener" target="_blank">Verordnung über den Datenschutz</a> (Datenschutzverordnung, DSV).</p>
 
-<span id="rechtsgrundlagen-dsgvo">Wir bearbeiten – sofern und soweit die Datenschutz-Grundverordnung (DSGVO) anwendbar ist – Personendaten gemäss _mindestens_ einer der folgenden Rechtsgrundlagen:</span>
+Wir bearbeiten – sofern und soweit die Datenschutz-Grundverordnung (DSGVO) anwendbar ist – Personendaten gemäss _mindestens_ einer der folgenden Rechtsgrundlagen:
 
 *   <a href="https://steigerlegal.ch/dsgvo/dsgvo-6/" rel="nofollow noopener noreferrer" target="_blank">Art. 6 Abs. 1 lit. b DSGVO</a> für die erforderliche Bearbeitung von Personendaten zur Erfüllung eines Vertrages mit der betroffenen Person sowie zur Durchführung vorvertraglicher Massnahmen.
 *   Art. 6 Abs. 1 lit. f DSGVO für die erforderliche Bearbeitung von Personendaten, um die berechtigten Interessen von uns oder von Dritten zu wahren, sofern nicht die Grundfreiheiten und Grundrechte sowie Interessen der betroffenen Person überwiegen. Berechtigte Interessen sind insbesondere unser Interesse, unsere Aktivitäten und Tätigkeiten dauerhaft, nutzerfreundlich, sicher und zuverlässig ausüben sowie darüber kommunizieren zu können, die Gewährleistung der Informationssicherheit, der Schutz vor Missbrauch, die Durchsetzung von eigenen rechtlichen Ansprüchen und die Einhaltung von schweizerischem Recht.

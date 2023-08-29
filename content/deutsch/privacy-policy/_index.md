@@ -4,11 +4,12 @@ description: "Diese Datenschutzerklärung informiert darüber, welche personenbe
 draft: false
 ---
 
-Mit dieser **Datenschutzerklärung** informieren wir, welche Personendaten wir wofür, wie und wo bearbeiten, insbesondere im Zusammenhang mit unserer **nuvibit.com Website** und unserem sonstigen Angebot. Wir informieren mit dieser Datenschutzerklärung ausserdem über die Rechte von Personen, deren Daten wir bearbeiten.
+Mit dieser **Datenschutzerklärung** informieren wir, welche Personendaten wir im Zusammenhang mit unseren **Aktivitäten und Tätigkeiten** einschliesslich unserer **nuvibit.com-Website** bearbeiten. Wir informieren insbesondere, wofür, wie und wo wir welche Personendaten bearbeiten. Wir informieren ausserdem über die Rechte von Personen, deren Daten wir bearbeiten.
 
-Für einzelne oder zusätzliche Angebote und Leistungen können besondere, ergänzende oder weitere Datenschutzerklärungen sowie sonstige rechtliche Dokumente wie Allgemeine Geschäftsbedingungen (AGB), Nutzungsbedingungen oder Teilnahmebedingungen gelten.
+Für einzelne oder zusätzliche Aktivitäten und Tätigkeiten können weitere Datenschutzerklärungen sowie sonstige rechtliche Dokumente wie Allgemeine Geschäftsbedingungen (AGB), Nutzungsbedingungen oder Teilnahmebedingungen gelten.
 
-Unser Angebot unterliegt dem schweizerischen Datenschutzrecht sowie allenfalls anwendbarem ausländischem Datenschutzrecht wie insbesondere jenem der Europäischen Union (EU) mit der Datenschutz-Grundverordnung (DSGVO). Die Europäische Kommission [anerkennt](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32000D0518), dass das schweizerische Datenschutzrecht einen angemessenen Datenschutz gewährleistet.
+Wir unterliegen dem schweizerischen Datenschutzrecht sowie allenfalls anwendbarem ausländischem Datenschutzrecht wie insbesondere jenem der Europäischen Union (EU) mit der Datenschutz-Grundverordnung (DSGVO). Die Europäische Kommission <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32000D0518" rel="nofollow noopener noreferrer" target="_blank">anerkennt</a>, dass das schweizerische Datenschutzrecht einen angemessenen Datenschutz gewährleistet.
+
 
 ## 1\. Kontaktadressen
 
@@ -24,7 +25,7 @@ Wir weisen darauf hin, wenn es im Einzelfall andere Verantwortliche für die Bea
 
 ### 1.1 Datenschutzbeauftragter
 
-Wir verfügen über nachfolgenden Datenschutzbeauftragten als Anlaufstelle für betroffene Personen und als Ansprechpartner für Aufsichtsbehörden bei datenschutzrechtlichen Anfragen:
+Wir verfügen über den nachfolgenden Datenschutzbeauftragten als Anlaufstelle für betroffene Personen und Behörden bei Anfragen im Zusammenhang mit dem Datenschutz:
 
 **Nuvibit AG**<br/>
 Roman Plessl<br/>
@@ -35,135 +36,200 @@ Loonstrasse 36<br/>
 
 ### 1.2 Datenschutz-Vertretung im Europäischen Wirtschaftsraum (EWR)
 
-Wir verfügen über nachfolgende Datenschutz-Vertretung gemäss [Art. 27 DSGVO](https://steigerlegal.ch/dsgvo/dsgvo-27/) im Europäischen Wirtschaftsraum (EWR) einschliesslich Europäischer Union (EU) und Fürstentum Liechtenstein, Island und Norwegen als _zusätzliche_ Anlaufstelle für Aufsichtsbehörden und betroffene Personen für Anfragen im Zusammenhang mit der Datenschutz-Grundverordnung (DSGVO):
+Wir verfügen über nachfolgende Datenschutz-Vertretung gemäss <a href="https://steigerlegal.ch/dsgvo/dsgvo-27/" rel="nofollow noopener noreferrer" target="_blank">Art.&nbsp;27 DSGVO</a>:
 
-[VGS Datenschutzpartner GmbH](https://www.datenschutzpartner.eu)<br/>
+[VGS Datenschutzpartner GmbH](https://www.datenschutzpartner.eu/kontakt)<br/>
 Am Kaiserkai 69<br/>
 20457 Hamburg<br/>
 Deutschland
 
 [info@datenschutzpartner.eu](mailto:info@datenschutzpartner.eu)
 
+Die Datenschutz-Vertretung dient betroffenen Personen und Behörden in der Europäischen Union (EU) und im übrigen Europäischen Wirtschaftsraum (EWR) als *zusätzliche* Anlaufstelle für Anfragen im Zusammenhang mit der DSGVO.
+
+
 ## 2\. Bearbeitung von Personendaten
 
 ### 2.1 Begriffe
 
-**Personendaten** sind alle Angaben, die sich auf eine bestimmte oder bestimmbare Person beziehen. Eine **betroffene Person** ist eine Person, über die Personendaten bearbeitet werden. **Bearbeiten** umfasst _jeden_ Umgang mit Personendaten, _unabhängig_ von den angewandten Mitteln und Verfahren, insbesondere das Aufbewahren, Bekanntgeben, Beschaffen, Erheben, Löschen, Speichern, Verändern, Vernichten und Verwenden von Personendaten.
+**Personendaten** sind _alle_ Angaben, die sich auf eine bestimmte oder bestimmbare natürliche Person beziehen. Eine **betroffene Person** ist eine Person, über die wir Personendaten bearbeiten.
 
-Der **Europäische Wirtschaftsraum (EWR)** umfasst die Europäische Union (EU) sowie das Fürstentum Liechtenstein, Island und Norwegen. Die Datenschutz-Grundverordnung (DSGVO) bezeichnet die Bearbeitung von Personendaten als Verarbeitung von personenbezogenen Daten.
+**Bearbeiten** umfasst _jeden_ Umgang mit Personendaten, _unabhängig_ vvon den angewandten Mitteln und Verfahren, beispielsweise das Abfragen, Abgleichen, Anpassen, Archivieren, Aufbewahren, Auslesen, Bekanntgeben, Beschaffen, Erfassen, Erheben, Löschen, Offenlegen, Ordnen, Organisieren, Speichern, Verändern, Verbreiten, Verknüpfen, Vernichten und Verwenden von Personendaten.
+
+Der **Europäische Wirtschaftsraum (EWR)** umfasst die <a href="https://de.wikipedia.org/wiki/Mitgliedstaaten_der_Europ%C3%A4ischen_Union" rel="nofollow noopener" target="_blank">Mitgliedstaaten der Europäischen Union</a> (EU) sowie das Fürstentum Liechtenstein, Island und Norwegen. Die Datenschutz-Grundverordnung (DSGVO) bezeichnet die Bearbeitung von Personendaten als Verarbeitung von personenbezogenen Daten.
 
 ### 2.2 Rechtsgrundlagen
 
-Wir bearbeiten Personendaten im Einklang mit dem schweizerischen Datenschutzrecht wie insbesondere dem [Bundesgesetz über den Datenschutz](https://www.admin.ch/opc/de/classified-compilation/19920153/index.html) (DSG) und der [Verordnung zum Bundesgesetz über den Datenschutz](https://www.admin.ch/opc/de/classified-compilation/19930159/index.html) (VDSG).
+Wir bearbeiten Personendaten im Einklang mit dem schweizerischen Datenschutzrecht wie insbesondere dem <a href="https://www.fedlex.admin.ch/eli/oc/2022/491/de" rel="nofollow noopener noreferrer" target="_blank" id="45254">Bundesgesetz über den Datenschutz</a> (Datenschutzgesetz, DSG) und der <a href="https://www.fedlex.admin.ch/eli/oc/2022/568/de" rel="nofollow noopener" target="_blank">Verordnung über den Datenschutz</a> (Datenschutzverordnung, DSV).</p>
 
-<span id="dsgvo">Wir bearbeiten – sofern und soweit die Datenschutz-Grundverordnung (DSGVO) anwendbar ist – Personendaten gemäss _mindestens_ einer der folgenden Rechtsgrundlagen:</span>
+Wir bearbeiten – sofern und soweit die Datenschutz-Grundverordnung (DSGVO) anwendbar ist – Personendaten gemäss _mindestens_ einer der folgenden Rechtsgrundlagen:
 
-*   [Art. 6 Abs. 1 lit. b DSGVO](https://steigerlegal.ch/dsgvo/dsgvo-6/) für die erforderliche Bearbeitung von Personendaten zur Erfüllung eines Vertrages mit der betroffenen Person sowie zur Durchführung vorvertraglicher Massnahmen.
-*   Art. 6 Abs. 1 lit. f DSGVO für die erforderliche Bearbeitung von Personendaten, um die berechtigten Interessen von uns oder von Dritten zu wahren, sofern nicht die Grundfreiheiten und Grundrechte sowie Interessen der betroffenen Person überwiegen. Berechtigte Interessen sind insbesondere unser Interesse, unser Angebot dauerhaft, nutzerfreundlich, sicher und zuverlässig bereitstellen sowie dafür bei Bedarf werben zu können, die Informationssicherheit sowie der Schutz vor Missbrauch und unbefugter Nutzung, die Durchsetzung von eigenen rechtlichen Ansprüchen und die Einhaltung von schweizerischem Recht.
+*   <a href="https://steigerlegal.ch/dsgvo/dsgvo-6/" rel="nofollow noopener noreferrer" target="_blank">Art. 6 Abs. 1 lit. b DSGVO</a> für die erforderliche Bearbeitung von Personendaten zur Erfüllung eines Vertrages mit der betroffenen Person sowie zur Durchführung vorvertraglicher Massnahmen.
+*   Art. 6 Abs. 1 lit. f DSGVO für die erforderliche Bearbeitung von Personendaten, um die berechtigten Interessen von uns oder von Dritten zu wahren, sofern nicht die Grundfreiheiten und Grundrechte sowie Interessen der betroffenen Person überwiegen. Berechtigte Interessen sind insbesondere unser Interesse, unsere Aktivitäten und Tätigkeiten dauerhaft, nutzerfreundlich, sicher und zuverlässig ausüben sowie darüber kommunizieren zu können, die Gewährleistung der Informationssicherheit, der Schutz vor Missbrauch, die Durchsetzung von eigenen rechtlichen Ansprüchen und die Einhaltung von schweizerischem Recht.
 *   Art. 6 Abs. 1 lit. c DSGVO für die erforderliche Bearbeitung von Personendaten zur Erfüllung einer rechtlichen Verpflichtung, der wir gemäss allenfalls anwendbarem Recht von Mitgliedstaaten im Europäischen Wirtschaftsraum (EWR) unterliegen.
 *   Art. 6 Abs. 1 lit. e DSGVO für die erforderliche Bearbeitung von Personendaten zur Wahrnehmung einer Aufgabe, die im öffentlichen Interesse liegt.
 *   Art. 6 Abs. 1 lit. a DSGVO für die Bearbeitung von Personendaten mit Einwilligung der betroffenen Person.
 *   Art. 6 Abs. 1 lit. d DSGVO für die erforderliche Bearbeitung von Personendaten, um lebenswichtige Interessen der betroffenen Person oder einer anderen natürlichen Person zu schützen.
 
-### 2.3 Art, Umfang und Zweck
 
-Wir bearbeiten jene Personendaten, die **erforderlich** sind, um unser Angebot dauerhaft, nutzerfreundlich, sicher und zuverlässig bereitstellen zu können. Solche Personendaten können insbesondere in die Kategorien von Bestandes- und Kontaktdaten, Browser- und Gerätedaten, Inhaltsdaten, Meta- beziehungsweise Randdaten und Nutzungsdaten, Standortdaten, Verkaufs-, Vertrags- und Zahlungsdaten fallen.
+## 3\. Art, Umfang und Zweck
 
-Wir bearbeiten Personendaten während jener **Dauer**, die für den jeweiligen Zweck beziehungsweise die jeweiligen Zwecke oder gesetzlich erforderlich ist. Personendaten, deren Bearbeitung nicht mehr erforderlich ist, werden anonymisiert oder gelöscht. Personen, deren Daten wir bearbeiten, haben _grundsätzlich_ ein Recht auf Löschung.
+Wir bearbeiten jene Personendaten, die _erforderlich_ sind, um unsere Aktivitäten und Tätigkeiten dauerhaft, nutzerfreundlich, sicher und zuverlässig ausüben zu können. Solche Personendaten können insbesondere in die Kategorien von Bestandes- und Kontaktdaten, Browser- und Gerätedaten, Inhaltsdaten, Meta- bzw. Randdaten und Nutzungsdaten, Standortdaten, Verkaufsdaten sowie Vertrags- und Zahlungsdaten fallen.
 
-Wir bearbeiten Personendaten _grundsätzlich_ nur nach Einwilligung der betroffenen Person, es sei denn, die Bearbeitung ist aus anderen rechtlichen Gründen zulässig, beispielsweise zur Erfüllung eines Vertrages mit der betroffenen Person und für entsprechende vorvertragliche Massnahmen, um unsere überwiegenden berechtigten Interessen zu wahren, weil die Bearbeitung aus den Umständen ersichtlich ist oder nach vorgängiger Information.
+Wir bearbeiten Personendaten während jener _Dauer_, die für den jeweiligen Zweck bzw. die jeweiligen Zwecke oder gesetzlich erforderlich ist. Personendaten, deren Bearbeitung nicht mehr erforderlich ist, werden anonymisiert oder gelöscht.
 
-In diesem Rahmen bearbeiten wir insbesondere Angaben, die eine betroffene Person bei der Kontaktaufnahme – beispielsweise per Briefpost, E-Mail, Kontaktformular, Social Media oder Telefon – oder bei der Registrierung für ein Nutzerkonto _freiwillig und selbst_ an uns übermittelt. Wir können solche Angaben beispielsweise in einem Adressbuch oder mit vergleichbaren Hilfsmitteln speichern. Sofern Sie Personendaten über Dritte an uns übermitteln, sind Sie verpflichtet, den Datenschutz gegenüber solchen Dritten zu gewährleisten sowie die Richtigkeit solcher Personendaten sicherzustellen.
+Wir können Personendaten _durch Dritte_ bearbeiten lassen. Wir können Personendaten gemeinsam mit Dritten bearbeiten oder an Dritte übermitteln. Bei solchen Dritten handelt es sich insbesondere um spezialisierte Anbieter, deren Leistungen wir in Anspruch nehmen. Wir gewährleisten auch bei solchen Dritten den Datenschutz.
 
-Wir bearbeiten ausserdem Personendaten, die wir von Dritten erhalten, aus öffentlich zugänglichen Quellen beschaffen oder bei der Bereitstellung unseres Angebotes erheben, sofern und soweit eine solche Bearbeitung aus rechtlichen Gründen zulässig ist.
+Wir bearbeiten Personendaten _grundsätzlich_ nur mit Einwilligung der betroffenen Personen. Sofern und soweit die Bearbeitung aus anderen rechtlichen Gründen zulässig ist, können wir darauf verzichten, eine Einwilligung einzuholen. Wir können Personendaten beispielsweise ohne Einwilligung bearbeiten, um einen Vertrag zu erfüllen, um rechtliche Verpflichtungen zu erfüllen oder um überwiegende Interessen zu wahren.
 
-### 2.4 Bearbeitung von Personendaten durch Dritte, auch im Ausland
+In diesem Rahmen bearbeiten wir insbesondere Angaben, die eine betroffene Person bei der Kontaktaufnahme – beispielsweise per Briefpost, E-Mail, Instant Messaging, Kontaktformular, Social Media oder Telefon – oder bei der Registrierung für ein Nutzerkonto _freiwillig_ an uns übermittelt. Wir können solche Angaben beispielsweise in einem Adressbuch, in einem Customer-Relationship-Management-System (CRM-System) oder mit vergleichbaren Hilfsmitteln speichern. Wenn wir Daten über andere Personen übermittelt erhalten, sind die übermittelnden Personen verpflichtet, den Datenschutz gegenüber diesen Personen zu gewährleisten sowie die Richtigkeit dieser Personendaten sicherzustellen.
 
-Wir können Personendaten durch beauftragte Dritte bearbeiten lassen oder gemeinsam mit Dritten sowie mit Hilfe von Dritten bearbeiten oder an Dritte übermitteln. Bei solchen Dritten handelt es sich insbesondere um Anbieter, deren Leistungen wir in Anspruch nehmen. Wir gewährleisten auch bei solchen Dritten einen angemessenen Datenschutz.
+Wir bearbeiten ausserdem Personendaten, die wir von Dritten erhalten, aus öffentlich zugänglichen Quellen beschaffen oder bei der Ausübung unserer Aktivitäten und Tätigkeiten erheben, sofern und soweit eine solche Bearbeitung aus rechtlichen Gründen zulässig ist.
 
-Solche Dritte befinden sich _grundsätzlich_ in der Schweiz sowie im Europäischen Wirtschaftsraum (EWR). Solche Dritte können sich auch in [sonstigen Staaten und Territorien auf der Erde](https://de.wikipedia.org/wiki/Liste_der_Staaten_der_Erde#Tabelle) sowie anderswo im Universum befinden, sofern deren Datenschutzrecht nach [Einschätzung des Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten](https://www.edoeb.admin.ch/edoeb/de/home/datenschutz/handel-und-wirtschaft/uebermittlung-ins-ausland.html) (EDÖB) und – sofern und soweit die Datenschutz-Grundverordnung (DSGVO) anwendbar ist – nach [Einschätzung der Europäischen Kommission](https://ec.europa.eu/info/law/law-topic/data-protection/data-transfers-outside-eu/adequacy-protection-personal-data-non-eu-countries_de) einen angemessenen Datenschutz gewährleistet, oder wenn aus anderen Gründen, wie beispielsweise durch eine entsprechende vertragliche Vereinbarung, insbesondere auf Grundlage von Standardvertragsklauseln, oder durch eine entsprechende Zertifizierung, ein angemessener Datenschutz gewährleistet ist. Ausnahmsweise kann sich ein solcher Dritter in einem Land ohne angemessenen Datenschutz befinden, sofern dafür die datenschutzrechtlichen Voraussetzungen wie beispielsweise die ausdrückliche Einwilligung der betroffenen Person erfüllt werden.
 
-## 3\. Rechte von betroffenen Personen
+## 4\. Personendaten im Ausland
+
+Wir bearbeiten Personendaten _grundsätzlich_ in der Schweiz und im Europäischen Wirtschafts­raum (EWR). Wir können Personendaten aber auch in andere Staaten exportieren bzw. übermitteln, insbesondere um sie dort zu bearbeiten oder bearbeiten zu lassen.
+
+Wir können Personendaten in alle <a href="https://de.wikipedia.org/wiki/Liste_der_Staaten_der_Erde#Tabelle" rel="nofollow noopener noreferrer" target="_blank">Staaten und Territorien auf der Erde</a> sowie anderswo im <a href="https://www.datenschutzpartner.ch/2022/04/23/datenschutzerklaerung-daten-export-universum-mond/" rel="nofollow noopener noreferrer" target="_blank">Universum</a> exportieren, sofern das dortige Recht gemäss <a href="https://steigerlegal.ch/2022/09/10/ndsg-schweiz-staatenliste/" rel="nofollow noopener noreferrer" target="_blank">Beschluss des Schweizerischen Bundesrates</a> einen angemessenen Datenschutz sowie – sofern und soweit die Datenschutz-Grundverordnung (DSGVO) anwendbar ist – gemäss <a href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_de" rel="nofollow noopener noreferrer" target="_blank">Beschluss der Europäischen Kommission</a> einen angemessenen Datenschutz gewährleistet.
+
+Wir können Personendaten in Staaten, deren Recht keinen angemessenen Datenschutz gewährleistet, übermitteln, sofern der Datenschutz aus anderen Gründen gewährleistet ist, insbesondere auf Grundlage von Standard­datenschutzklauseln oder mit anderen geeigneten Garantien. Ausnahmsweise können wir Personendaten in Staaten ohne angemessenen oder geeigneten Datenschutz exportieren, wenn dafür die besonderen datenschutzrechtlichen Voraussetzungen erfüllt sind, beispielsweise die ausdrückliche Einwilligung der betroffenen Personen oder ein unmittelbarer Zusammenhang mit dem Abschluss oder der Abwicklung eines Vertrages. Wir geben betroffenen Personen auf Nachfrage gerne Auskunft über allfällige Garantien oder liefern eine Kopie allfälliger Garantien.
+
+
+## 5\. Rechte von betroffenen Personen
+
+### 5.1 Datenschutzrechtliche Ansprüche
+
+Wir gewähren betroffenen Personen sämtliche Ansprüche gemäss dem anwendbaren Datenschutzrecht. Betroffene Personen verfügen insbesondere über folgende Rechte:
+
+* **Auskunft:** Betroffene Personen können Auskunft verlangen, ob wir Personendaten über sie bearbeiten, und falls ja, um welche Personendaten es sich handelt. Betroffene Personen erhalten ferner jene Informationen, die erforderlich sind, um ihre datenschutzrechtlichen Ansprüche geltend zu machen und Transparenz zu gewährleisten. Dazu zählen die bearbeiteten Personendaten als solche, aber unter anderem auch Angaben zum Bearbeitungszweck, zur Dauer der Aufbewahrung, zu einer allfälligen Bekanntgabe bzw. einem allfälligen Export von Daten in andere Staaten und zur Herkunft der Personendaten.
+* **Berichtigung und Einschränkung:** Betroffene Personen können unrichtige Personendaten berichtigen, unvollständige Daten vervollständigen und die Bearbeitung ihrer Daten einschränken lassen.
+* **Löschung und Widerspruch:** Betroffene Personen können Personendaten löschen lassen («Recht auf Vergessen») und der Bearbeitung ihrer Daten mit Wirkung für die Zukunft widersprechen.
+* **Datenherausgabe und Datenübertragung:** Betroffene Personen können die Herausgabe von Personendaten oder die Übertragung ihrer Daten an einen anderen Verantwortlichen verlangen.
+
+Wir können die Ausübung der Rechte von betroffenen Personen im rechtlich zulässigen Rahmen aufschieben, einschränken oder verweigern. Wir können betroffene Personen auf allenfalls zu erfüllende Voraussetzungen für die Ausübung ihrer datenschutzrechtlichen Ansprüche hinweisen. Wir können beispielsweise die Auskunft mit Verweis auf Geschäftsgeheimnisse oder den Schutz anderer Personen ganz oder teilweise verweigern. Wir können beispielsweise auch die Löschung von Personendaten mit Verweis auf gesetzliche Aufbewahrungspflichten ganz oder teilweise verweigern.
+
+Wir können für die Ausübung der Rechte _ausnahmsweise_ Kosten vorsehen. Wir informieren betroffene Personen vorgängig über allfällige Kosten.
+
+Wir sind verpflichtet, betroffene Personen, die Auskunft verlangen oder andere Rechte geltend machen, mit angemessenen Massnahmen zu identifizieren. Betroffene Personen sind zur Mitwirkung verpflichtet.
+
+### 5.2 Recht auf Beschwerde
+
+Betroffene Personen haben das Recht, ihre datenschutzrechtlichen Ansprüche auf dem Rechtsweg durchzusetzen oder Beschwerde bei einer zuständigen Datenschutz-Aufsichtsbehörde zu erheben.
+
+Datenschutz-Aufsichtsbehörde für private Verantwortliche und Bundesorgane in der Schweiz ist der <a href="https://www.edoeb.admin.ch/" rel="nofollow noopener noreferrer" target="_blank">Eidgenössische Datenschutz- und Öffentlichkeitsbeauftragte</a> (EDÖB).
+
+Betroffene Personen haben – sofern und soweit die Datenschutz-Grundverordnung (DSGVO) anwendbar ist – das Recht, Beschwerde bei einer zuständigen <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_de" rel="nofollow noopener noreferrer" target="_blank">europäischen Datenschutz-Aufsichtsbehörde</a> zu erheben.
 
 Betroffene Personen, deren Personendaten wir bearbeiten, verfügen über die Rechte gemäss schweizerischem Datenschutzrecht. Dazu zählen das Recht auf Auskunft sowie das Recht auf Berichtigung, Löschung oder Sperrung der bearbeiteten Personendaten.
 
-Betroffene Personen, deren Personendaten wir bearbeiten, können – sofern und soweit die Datenschutz-Grundverordnung (DSGVO) anwendbar ist – unentgeltlich eine Bestätigung, ob wir ihre Personendaten bearbeiten und, falls ja, Auskunft über die Bearbeitung ihrer Personendaten verlangen, die Bearbeitung ihrer Personendaten einschränken lassen, ihr Recht auf Datenübertragbarkeit wahrnehmen sowie ihre Personendaten berichtigen, löschen («Recht auf Vergessen»), sperren oder vervollständigen lassen.
 
-Betroffene Personen, deren Personendaten wir bearbeiten, können – sofern und soweit die DSGVO anwendbar ist – eine erteilte Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen und jederzeit Widerspruch gegen die Bearbeitung ihrer Personendaten erheben.
+## 6\. Datensicherheit
 
-Betroffene Personen, deren Personendaten wir bearbeiten, verfügen über ein Beschwerderecht bei einer zuständigen Aufsichtsbehörde. Aufsichtsbehörde für den Datenschutz in der Schweiz ist der [Eidgenössische Datenschutz- und Öffentlichkeitsbeauftragte](https://www.edoeb.admin.ch/edoeb/de/home/der-edoeb/kontakt.html) (EDÖB).
+Wir treffen geeignete technische und organisatorische Massnahmen, um eine dem jeweiligen Risiko angemessene Datensicherheit zu gewährleisten. Wir können aber keine absolute Datensicherheit gewährleisten.
 
-## 4\. Datensicherheit
+Der Zugriff auf unsere Website erfolgt mittels Transportverschlüsselung (TLS, insbesondere mit dem Hypertext Transfer Protocol Secure, abgekürzt HTTPS). Die meisten Browser kennzeichnen Transportverschlüsselung mit einem Vorhängeschloss in der Adressleiste.
 
-Wir treffen angemessene sowie geeignete technische und organisatorische Massnahmen, um den Datenschutz und insbesondere die Datensicherheit zu gewährleisten. Allerdings kann die Bearbeitung von Personendaten im Internet trotz solcher Massnahmen immer Sicherheitslücken aufweisen. Wir können deshalb keine absolute Datensicherheit gewährleisten.
+Unsere digitale Kommunikation unterliegt – wie _grundsätzlich_ jede digitale Kommunikation – der Massenüberwachung ohne Anlass und Verdacht sowie sonstiger Überwachung durch Sicherheitsbehörden in der Schweiz, im übrigen Europa, in den Vereinigten Staaten von Amerika (USA) und in anderen Staaten. Wir können keinen direkten Einfluss auf die entsprechende Bearbeitung von Personendaten durch Geheimdienste, Polizeistellen und andere Sicherheitsbehörden nehmen.
 
-Der Zugriff auf unser Online-Angebot erfolgt mittels Transportverschlüsselung (SSL / TLS, insbesondere mit dem Hypertext Transfer Protocol Secure, abgekürzt HTTPS). Die meisten Browser kennzeichnen Transportverschlüsselung mit einem Vorhängeschloss in der Adressleiste.
 
-Der Zugriff auf unser Online-Angebot unterliegt – wie _grundsätzlich_ jede Internet-Nutzung – der anlasslosen und verdachtsunabhängigen Massenüberwachung sowie sonstiger Überwachung durch Sicherheitsbehörden in der Schweiz, in der Europäischen Union (EU), in den Vereinigten Staaten von Amerika (USA) und in anderen Staaten. Wir können keinen direkten Einfluss auf die entsprechende Bearbeitung von Personendaten durch Geheimdienste, Polizeistellen und andere Sicherheitsbehörden nehmen.
+## 7\. Nutzung der Website
 
-## 5\. Nutzung der Website
+### 7.1 Cookies
 
-### 5.1 Cookies
+Wir können Cookies verwenden. Bei Cookies – eigenen Cookies (First-Party-Cookies) als auch Cookies von Dritten, deren Dienste wir nutzen (Third-Party-Cookies) – handelt es sich um Daten, die im Browser gespeichert werden. Solche gespeicherten Daten müssen nicht auf traditionelle Cookies in Textform beschränkt sein.
 
-Wir können Cookies für unsere Website verwenden. Bei Cookies – bei eigenen Cookies (First-Party-Cookies) als auch bei Cookies von Dritten, deren Dienste wir nutzen (Cookies von Dritten beziehungsweise Third-Party-Cookies) – handelt es sich um Daten, die in Ihrem Browser gespeichert werden. Solche gespeicherten Daten müssen nicht auf traditionelle Cookies in Textform beschränkt sein. Cookies können keine Programme ausführen oder Schadsoftware wie Trojaner und Viren übertragen.
+Cookies können im Browser temporär als «Session Cookies» oder für einen bestimmten Zeitraum als sogenannte permanente Cookies gespeichert werden. «Session Cookies» werden automatisch gelöscht, wenn der Browser geschlossen wird. Permanente Cookies haben eine bestimmte Speicherdauer. Cookies ermöglichen insbesondere, einen Browser beim nächsten Besuch unserer Website wiederzuerkennen und dadurch beispielsweise die Reichweite unserer Website zu messen. Permanente Cookies können aber beispielsweise auch für Online-Marketing verwendet werden.
 
-Cookies können beim Besuch unserer Website in Ihrem Browser temporär als «Session Cookies» oder für einen bestimmten Zeitraum als sogenannte permanente Cookies gespeichert werden. «Session Cookies» werden automatisch gelöscht, wenn Sie Ihren Browser schliessen. Permanente Cookies haben eine bestimmte Speicherdauer. Sie ermöglichen insbesondere, Ihren Browser beim nächsten Besuch unserer Website wiederzuerkennen und dadurch beispielsweise die Reichweite unserer Website zu messen. Permanente Cookies können aber beispielsweise auch für Online-Marketing verwendet werden.
+Cookies können in den Browser-Einstellungen jederzeit ganz oder teilweise deaktiviert sowie gelöscht werden. Ohne Cookies steht unsere Website allenfalls nicht mehr in vollem Umfang zur Verfügung. Wir ersuchen – mindestens sofern und soweit erforderlich – aktiv um die ausdrückliche Einwilligung in die Verwendung von Cookies.
 
-Sie können Cookies in Ihren Browser-Einstellungen jederzeit ganz oder teilweise deaktivieren sowie löschen. Ohne Cookies steht unsere Website allenfalls nicht mehr in vollem Umfang zur Verfügung. Wir ersuchen Sie – sofern und soweit erforderlich – aktiv um Ihre ausdrückliche Einwilligung für die Verwendung von Cookies.
+Bei Cookies, die für die Erfolgs- und Reichweitenmessung oder für Werbung verwendet werden, ist für zahlreiche Dienste ein allgemeiner Widerspruch («Opt-out») über die <a href="https://youradchoices.ca/" rel="nofollow noopener noreferrer" target="_blank">AdChoices</a> (Digital Advertising Alliance of Canada), die <a href="https://optout.networkadvertising.org/" rel="nofollow noopener noreferrer" target="_blank">Network Advertising Initiative</a> (NAI), <a href="https://optout.aboutads.info/" rel="nofollow noopener noreferrer" target="_blank">YourAdChoices</a> (Digital Advertising Alliance) oder <a href="https://www.youronlinechoices.com/ch-de/praferenzmanagement" rel="nofollow noopener noreferrer" target="_blank">Your Online Choices</a> (European Interactive Digital Advertising Alliance, EDAA) möglich.
 
-Bei Cookies, die für die Erfolgs- und Reichweitenmessung oder für Werbung verwendet werden, ist für zahlreiche Dienste ein allgemeiner Widerspruch («Opt-out») über die [Network Advertising Initiative](https://optout.networkadvertising.org/) (NAI), [YourAdChoices](https://optout.aboutads.info/) (Digital Advertising Alliance) oder [Your Online Choices](https://www.youronlinechoices.com/ch-de/praferenzmanagement) (European Interactive Digital Advertising Alliance, EDAA) möglich.
+### 7.2 Server-Logdateien
 
-### 5.2 Server-Logdateien
+Wir können für jeden Zugriff auf unsere Website nachfolgende Angaben erfassen, sofern diese von Ihrem Browser an unsere Server-Infrastruktur übermittelt werden oder von unserem Webserver ermittelt werden können: Datum und Zeit einschliesslich Zeitzone, Internet Protocol (IP)-Adresse, Zugriffsstatus (HTTP-Statuscode), Betriebssystem einschliesslich Benutzeroberfläche und Version, Browser einschliesslich Sprache und Version, aufgerufene einzelne Unter-Seite unserer Website einschliesslich übertragener Datenmenge, zuletzt im gleichen Browser-Fenster aufgerufene Webseite (Referer bzw. Referrer).
 
-Wir können für jeden Zugriff auf unsere Website nachfolgende Angaben erfassen, sofern diese von Ihrem Browser an unsere Server-Infrastruktur übermittelt werden oder von unserem Webserver ermittelt werden können: Datum und Zeit einschliesslich Zeitzone, Internet Protocol (IP)-Adresse, Zugriffsstatus (HTTP-Statuscode), Betriebssystem einschliesslich Benutzeroberfläche und Version, Browser einschliesslich Sprache und Version, aufgerufene einzelne Unter-Seite unserer Website einschliesslich übertragener Datenmenge, zuletzt im gleichen Browser-Fenster aufgerufene Webseite (Referer beziehungsweise Referrer).
+Wir speichern solche Angaben, die auch Personendaten darstellen können, in Server-Logdateien. Die Angaben sind erforderlich, um unsere Website dauerhaft, nutzerfreundlich und zuverlässig bereitstellen sowie um die Datensicherheit und damit insbesondere den Schutz von Personendaten sicherstellen zu können – auch durch Dritte oder mit Hilfe von Dritten.
 
-Wir speichern solche Angaben, die auch Personendaten darstellen können, in Server-Logdateien. Die Angaben sind erforderlich, um unser Online-Angebot dauerhaft, nutzerfreundlich und zuverlässig bereitstellen sowie um die Datensicherheit und damit insbesondere den Schutz von Personendaten sicherstellen zu können – auch durch Dritte oder mit Hilfe von Dritten.
-
-### 5.3 Zählpixel
+### 7.3 Zählpixel
 
 Wir können Zählpixel auf unserer Website verwenden. Zählpixel werden auch als Web-Beacons bezeichnet. Bei Zählpixeln – auch von Dritten, deren Dienste wir nutzen – handelt es sich um kleine, üblicherweise nicht sichtbare Bilder, die beim Besuch unserer Website automatisch abgerufen werden. Mit Zählpixeln können die gleichen Angaben wie in Server-Logdateien erfasst werden.
 
-## 6\. Social Media
 
-Wir sind auf Social Media-Plattformen und anderen Online-Plattformen präsent, um mit interessierten Personen kommunizieren und über unser Angebot informieren zu können. Dabei können Personendaten auch ausserhalb der Schweiz und des Europäischen Wirtschaftsraumes (EWR) bearbeitet werden.
+## 8\. Social Media
 
-Es gelten jeweils auch die Allgemeinen Geschäftsbedingungen (AGB) und Nutzungsbedingungen sowie Datenschutzerklärungen und sonstigen Bestimmungen der einzelnen Betreiber solcher Online-Plattformen. Diese Bestimmungen informieren insbesondere über die Rechte von betroffenen Personen, wozu insbesondere das Recht auf Auskunft zählt.
+Wir sind auf Social Media-Plattformen und anderen Online-Plattformen präsent, um mit interessierten Personen kommunizieren sowie über unsere Aktivitäten und Tätigkeiten informieren zu können. Im Zusammenhang mit solchen Plattformen können Personendaten auch ausserhalb der Schweiz und des Europäischen Wirtschaftsraumes (EWR) bearbeitet werden.
 
-## 7\. Erfolgs- und Reichweitenmessung
+Es gelten jeweils auch die Allgemeinen Geschäftsbedingungen (AGB) und Nutzungsbedingungen sowie Datenschutzerklärungen und sonstigen Bestimmungen der einzelnen Betreiber solcher Plattformen. Diese Bestimmungen informieren insbesondere über die Rechte von betroffenen Personen direkt gegenüber der jeweiligen Plattform, wozu beispielsweise das Recht auf Auskunft zählt.
 
-Wir verwenden Dienste und Programme, um zu ermitteln, wie unser Online-Angebot genutzt wird. In diesem Rahmen können wir zum Beispiel den Erfolg und die Reichweite unseres Online-Angebotes sowie die Wirkung von Verlinkungen Dritter auf unsere Website messen. Wir können aber beispielsweise auch ausprobieren und vergleichen, wie unterschiedliche Versionen unseres Online-Angebotes oder Teile unseres Online-Angebotes genutzt werden («A/B-Test»-Methode). Aufgrund der Ergebnisse der Erfolgs- und Reichweitenmessung können wir insbesondere Fehler beheben, besonders gefragte Inhalte stärken oder Verbesserungen an unserem Online-Angebot vornehmen.
 
-Bei der Verwendung von Diensten und Programmen für die Erfolgs- und Reichweitenmessung müssen die Internet Protocol (IP)-Adressen von einzelnen Nutzerinnen und Nutzern gespeichert werden. IP-Adressen werden _grundsätzlich_ gekürzt, um durch die entsprechende Pseudonymisierung dem Grundsatz der Datensparsamkeit zu folgen sowie den Datenschutz der Besucherinnen und Besucher unserer Website zu verbessern («IP-Masking»).
+## 9\. Dienste von Dritten
 
-Bei der Verwendung von Diensten und Programmen für die Erfolgs- und Reichweitenmessung können Cookies zum Einsatz kommen und Nutzerprofile erstellt werden. Nutzerprofile umfassen beispielsweise die besuchten Seiten oder betrachteten Inhalte auf unserer Website, Angaben zur Grösse von Bildschirm oder Browserfenster und den – zumindest ungefähren – Standort. _Grundsätzlich_ werden Nutzerprofile ausschliesslich pseudonymisiert erstellt. Wir verwenden Nutzerprofile nicht für die Identifizierung einzelner Besucherinnen und Besucher unserer Website. Einzelne Dienste, bei denen Sie als Nutzerin oder Nutzer angemeldet sind, können die Nutzung unseres Online-Angebotes allenfalls Ihrem Profil beim jeweiligen Dienst zuordnen, wobei Sie dafür üblicherweise vorgängig Ihre Einwilligung in diese Zuordnung erteilen mussten.
+Wir nutzen Dienste von spezialisierten Dritten, um unsere Aktivitäten und Tätigkeiten dauerhaft, nutzerfreundlich, sicher und zuverlässig ausüben zu können. Mit solchen Diensten können wir unter anderem Funktionen und Inhalte in unsere Website einbetten. Bei einer solchen Einbettung erfassen die genutzten Dienste aus technisch zwingenden Gründen mindestens zeitweilig die Internet Protocol (IP)-Adressen der Nutzerinnen und Nutzer.
 
-Wir verwenden insbesondere:
+Für erforderliche sicherheitsrelevante, statistische und technische Zwecke können Dritte, deren Dienste wir nutzen, Daten im Zusammenhang mit unseren Aktivitäten und Tätigkeiten aggregiert, anonymisiert oder pseudonymisiert bearbeiten. Es handelt sich beispielsweise um Leistungs- oder Nutzungsdaten, um den jeweiligen Dienst anbieten zu können.
 
-*   **[Google Analytics:](https://analytics.google.com/)** Erfolgs- und Reichweitenmessung; Anbieterinnen: Google LLC (USA) / Google Ireland Limited (Irland) für Nutzerinnen und Nutzer im Europäischen Wirtschaftsraum (EWR) und in der Schweiz; Angaben zum Datenschutz: Messung auch über verschiedene Browser und Geräte hinweg **(Cross-Device Tracking)** sowie mit pseudonymisierten Internet Protocol (IP)-Adressen, die nur _ausnahmsweise_ vollständig an Google in den USA übertragen werden, [Grundsätze zu Datenschutz und Sicherheit](https://safety.google/intl/de/principles/), [Datenschutzerklärung](https://policies.google.com/privacy?hl=de), [Leitfaden zum Datenschutz in Google-Produkten» (einschliesslich Google Analytics)](https://policies.google.com/technologies/product-privacy?hl=de), [Wie wir Daten von Websites oder Apps verwenden, auf beziehungsweise in denen unsere Dienste genutzt werden (Angaben von Google)](https://policies.google.com/technologies/partner-sites?hl=de), [So verwendet Google Cookies](https://policies.google.com/technologies/cookies?hl=de), [Browser Add-on zur Deaktivierung von Google Analytics](https://tools.google.com/dlpage/gaoptout), [Personalisierte Werbung (Aktivierung / Deaktivierung / Einstellungen)](https://adssettings.google.com/).
+Wir nutzen insbesondere:
 
-## 8\. Dienste von Dritten
+* **<a href="https://about.google/products/" rel="nofollow noopener noreferrer" target="_blank">Dienste von Google:</a>** Anbieterinnen: Google LLC (USA) / Google Ireland Limited (Irland) für Nutzerinnen und Nutzer im Europäischen Wirtschaftsraum (EWR) und in der Schweiz; Allgemeine Angaben zum Datenschutz: <a href="https://safety.google/intl/de/principles/" rel="nofollow noopener noreferrer" target="_blank">«Grundsätze zu Datenschutz und Sicherheit»</a>, <a href="https://policies.google.com/privacy?hl=de" rel="nofollow noopener noreferrer" target="_blank">Datenschutzerklärung</a>, <a href="https://privacy.google.com/intl/de/businesses/compliance/" rel="nofollow noopener noreferrer" target="_blank">«Google ist der Einhaltung der anwendbaren Datenschutzgesetze verpflichtet»</a>, <a href="https://policies.google.com/technologies/product-privacy?hl=de" rel="nofollow noopener noreferrer" target="_blank">«Leitfaden zum Datenschutz in Google-Produkten»</a>, <a href="https://policies.google.com/technologies/partner-sites?hl=de" rel="nofollow noopener noreferrer" target="_blank">«Wie wir Daten von Websites oder Apps verwenden, auf bzw. in denen unsere Dienste genutzt werden» (Angaben von Google)</a>, <a href="https://policies.google.com/technologies/cookies?hl=de" rel="nofollow noopener noreferrer" target="_blank">«Von Google verwendete Cookie-Arten und sonstige Technologien»</a>, <a href="https://adssettings.google.com/" rel="nofollow noopener noreferrer" target="_blank">«Personalisierte Werbung» (Aktivierung / Deaktivierung / Einstellungen)</a>.
 
-Wir verwenden Dienste von Dritten, um unser Angebot dauerhaft, nutzerfreundlich, sicher und zuverlässig bereitstellen zu können. Solche Dienste dienen auch dazu, Inhalte in unsere Website einbetten zu können. Solche Dienste – beispielsweise Hosting- und Speicherdienste, Video-Dienste und Zahlungsdienste – benötigen Ihre Internet Protocol (IP)-Adresse, da solche Dienste die entsprechenden Inhalte ansonsten nicht übermitteln können. Solche Dienste können sich ausserhalb der Schweiz und des Europäischen Wirtschaftsraumes (EWR) befinden, sofern ein angemessener Datenschutz gewährleistet ist.
+* **<a href="https://www.microsoft.com/de-ch" rel="nofollow noopener noreferrer" target="_blank">Dienste von Microsoft:</a>** Anbieterinnen: Microsoft Corporation (USA)&nbsp;/ Microsoft Ireland Operations Limited (Irland) für Nutzerinnen und Nutzer im Europäischen Wirtschaftsraum&nbsp;(EWR), in Grossbritannien und in der Schweiz; Allgemeine Angaben zum Datenschutz: <a href="https://privacy.microsoft.com/de-de" rel="nofollow noopener noreferrer" target="_blank">«Datenschutz bei Microsoft»</a>, <a href="https://www.microsoft.com/de-ch/trust-center/privacy" rel="nofollow noopener noreferrer" target="_blank">«Datenschutz und Privatsphäre (Trust Center)»</a>, <a href="https://privacy.microsoft.com/de-de/privacystatement" rel="nofollow noopener noreferrer" target="_blank">Datenschutzerklärung</a>, <a href="https://account.microsoft.com/account/privacy?lang=de-DE" rel="nofollow noopener noreferrer" target="_blank">Datenschutz-Dashboard (Daten- und Datenschutz-Einstellungen)</a>.
 
-Für ihre eigenen sicherheitsrelevanten, statistischen und technischen Zwecke können Dritte, deren Dienste wir nutzen, auch Daten im Zusammenhang mit unserem Angebot sowie aus anderen Quellen – unter anderem mit Cookies, Logdateien und Zählpixeln – aggregiert, anonymisiert oder pseudonymisiert bearbeiten.
+### 9.1 Digitale Infrastruktur
 
-### 8.1 Digitale Infrastruktur
+Wir nutzen Dienste von spezialisierten Dritten, um benötigte digitale Infrastruktur im Zusammenhang mit unseren Aktivitäten und Tätigkeiten in Anspruch nehmen zu können. Dazu zählen beispielsweise Hosting- und Speicherdienste von ausgewählten Anbietern.
 
-Wir nutzen Dienste von Dritten, um benötigte digitale Infrastruktur für unser Angebot in Anspruch nehmen zu können. Dazu zählen beispielsweise Hosting- und Speicherdienste von spezialisierten Anbietern.
+Wir nutzen insbesondere:
 
-### 8.2 Audio- und Video-Konferenzen
+* **<a href="https://aws.amazon.com/de/" rel="nofollow noopener noreferrer" target="_blank">Amazon Web Services (AWS):</a>** Speicherplatz und sonstige Infrastruktur; Anbieterinnen: Amazon Web Services Inc. (USA) für Nutzerinnen und Nutzer in der Schweiz / Amazon Web Services EMEA SARL (Luxemburg) für Nutzerinnen und Nutzer im Europäischen Wirtschaftsraum (EWR); Angaben zum Datenschutz: <a href="https://aws.amazon.com/de/privacy/" rel="nofollow noopener noreferrer" target="_blank">Datenschutzerklärung</a>, <a href="https://aws.amazon.com/de/compliance/data-privacy/" rel="nofollow noopener noreferrer" target="_blank">«Datenschutz-Zentrum»</a>, <a href="https://aws.amazon.com/de/compliance/data-privacy-faq/" rel="nofollow noopener noreferrer" target="_blank">«Häufig gestellte Fragen zum Datenschutz»</a>, <a href="https://aws.amazon.com/de/compliance/gdpr-center/" rel="nofollow noopener noreferrer" target="_blank">«Datenschutz-Grundverordnung (DSGVO)-Zentrum»</a>.
 
-Wir verwenden Dienste für Audio- und Video-Konferenzen, um online kommunizieren zu können. Wir können damit beispielsweise virtuelle Besprechungen oder Online-Unterricht und Webinare durchführen. Es gelten ergänzend zu dieser Datenschutzerklärung jeweils auch allenfalls ersichtliche Bedingungen der verwendeten Dienste wie beispielsweise Nutzungsbedingungen oder Datenschutzerklärungen.
+### 9.2 Kontaktmöglichkeiten
 
-Wir verwenden insbesondere:
+Wir nutzen Dienste von ausgewählten Anbietern, um mit Dritten wie beispielsweise potenziellen sowie bestehenden Kundinnen und Kunden besser kommunizieren zu können.
 
-*   **[Microsoft Teams:](https://www.microsoft.com/de-de/microsoft-teams/group-chat-software)** Plattform unter anderem für Audio- und Video-Konferenzen; Anbieterinnen: Microsoft Corporation (USA) / Microsoft Ireland Operations Limited (Irland) für Nutzerinnen und Nutzer im Europäischen Wirtschaftsraum (EWR), in Grossbritannien und in der Schweiz; Angaben zum Datenschutz: [Datenschutz» (Microsoft Trust Center)](https://www.microsoft.com/de-ch/trust-center/privacy), [Datenschutzerklärung](https://privacy.microsoft.com/de-de/privacystatement), [Datenschutz bei Microsoft](https://privacy.microsoft.com/de-de/), [Datenschutz und Microsoft Teams](https://docs.microsoft.com/de-de/microsoftteams/teams-privacy).
-*   **[Zoom:](https://zoom.us/)** Video-Konferenzen; Anbieterin: Zoom Video Communications Inc. (USA); Angaben zum Datenschutz: [Datenschutzerklärung](https://zoom.us/de-de/privacy.html), [Datenschutz bei Zoom](https://zoom.us/de-de/trust/privacy.html), [Rechtskonformitäts-Center](https://zoom.us/de-de/trust/legal-compliance.html).
+Wir nutzen insbesondere:
 
-### 8.3 Schriftarten
+* **<a href="https://www.zoho.com/de/crm/" rel="nofollow noopener noreferrer" target="_blank">Zoho CRM:</a>**Customer-Relationship-Management (CRM); Anbieterin: Zoho Corporation (USA) gemeinsam mit <a href="https://www.zoho.com/privacy/zoho-group.html" rel="nofollow noopener noreferrer" target="_blank">Gruppengesellschaften («Zoho Group»)</a>; Angaben zum Datenschutz: <a href="https://www.zoho.com/privacy-commitment.html" rel="nofollow noopener noreferrer" target="_blank">«Datenschutz» («Privacy»)</a>, <a href="https://www.zoho.com/privacy.html" rel="nofollow noopener noreferrer" target="_blank">Datenschutzerklärung</a>, <a href="https://www.zoho.com/privacy/privacy-faq.html" rel="nofollow noopener noreferrer" target="_blank">«Häufig gestellte Fragen zum Datenschutz» («Frequently Asked Questions on Privacy»)</a>, <a href="https://www.zoho.com/de/security.html" rel="nofollow noopener noreferrer" target="_blank">«Sicherheit»</a>.
 
-Wir verwenden Dienste von Dritten, um ausgewählte Schriftarten sowie Icons, Logos und Symbole in unsere Website einbetten zu können.
+### 9.3 Audio- und Video-Konferenzen
 
-## 9\. Schlussbestimmungen
+Wir nutzen spezialisierte Dienste für Audio- und Video-Konferenzen, um online kommunizieren zu können. Wir können damit beispielsweise virtuelle Besprechungen abhalten oder Online-Unterricht und Webinare durchführen. Für die Teilnahme an Audio- und Video-Konferenzen gelten ergänzend die Rechtstexte der einzelnen Dienste wie Datenschutzerklärungen und Nutzungsbedingungen.
 
-Wir haben diese Datenschutzerklärung mit dem [Datenschutz-Generator](https://www.datenschutzpartner.ch/angebot-datenschutz-generator/) von [Datenschutzpartner](https://datenschutzpartner.ch/) erstellt.
+Wir empfehlen, je nach Lebenssituation bei der Teilnahme an Audio- oder Video-Konferenzen das Mikrofon standardmässig stumm zu schalten sowie den Hintergrund unscharf zu stellen oder einen virtuellen Hintergrund einblenden zu lassen.
+
+Wir nutzen insbesondere:
+
+* **<a href="https://www.microsoft.com/de-de/microsoft-teams/group-chat-software" rel="nofollow noopener noreferrer" target="_blank">Microsoft Teams:</a>** Plattform unter anderem für Audio- und Video-Konferenzen; Anbieterin: Microsoft; Teams-spezifische Angaben: <a href="https://docs.microsoft.com/de-de/microsoftteams/teams-privacy" rel="nofollow noopener noreferrer" target="_blank">«Datenschutz und Microsoft Teams»</a>.
+
+* **<a href="https://zoom.us/" rel="nofollow noopener noreferrer" target="_blank">Zoom:</a>** Video-Konferenzen; Anbieterin: Zoom Video Communications Inc. (USA); Angaben zum Datenschutz: <a href="https://zoom.us/de-de/privacy.html" rel="nofollow noopener noreferrer" target="_blank">Datenschutzerklärung</a>, <a href="https://zoom.us/de-de/trust/privacy.html" rel="nofollow noopener noreferrer" target="_blank">«Datenschutz bei Zoom»</a>, <a href="https://zoom.us/de-de/trust/legal-compliance.html" rel="nofollow noopener noreferrer" target="_blank">«Rechtskonformitäts-Center»</a>.
+
+* **<a href="https://meet.google.com" rel="nofollow noopener noreferrer" target="_blank">Google Meet:</a>** Video-Konferenzen; Anbieterin: Google; Google Meet-spezifische Angaben: <a href="https://support.google.com/meet/answer/9852160" rel="nofollow noopener noreferrer" target="_blank">«Google Meet&nbsp;– Sicherheit und Datenschutz für Nutzer»</a>.
+
+
+### 9.4 Online-Zusammenarbeit
+
+Wir nutzen Dienste von Dritten, um die Online-Zusammenarbeit zu ermöglichen. Es gelten ergänzend zu dieser Datenschutzerklärung jeweils auch allenfalls direkt ersichtliche Bedingungen der genutzten Dienste wie beispielsweise Nutzungsbedingungen oder Datenschutzerklärungen.
+
+Wir nutzen insbesondere:
+
+* **<a href="https://miro.com/de/" rel="nofollow noopener noreferrer" target="_blank">Miro:</a>** Whiteboard-Plattform; Anbieterin: RealtimeBoard Inc. (USA); Angaben zum Datenschutz: <a href="https://miro.com/legal/privacy-policy/" rel="nofollow noopener noreferrer" target="_blank">Datenschutzerklärung</a>, <a href="https://miro.com/security/" rel="nofollow noopener noreferrer" target="_blank">«Vertrauen in Miro» («Miro Trust Center»)</a>.
+
+
+## 10\. Erfolgs- und Reichweitenmessung
+
+Wir versuchen zu ermitteln, wie unser Online-Angebot genutzt wird. In diesem Rahmen können wir beispielsweise den Erfolg und die Reichweite unserer Aktivitäten und Tätigkeiten sowie die Wirkung von Verlinkungen Dritter auf unsere Website messen. Wir können aber beispielsweise auch ausprobieren und vergleichen, wie unterschiedliche Teile oder Versionen unseres Online-Angebotes genutzt werden («A/B-Test»-Methode). Aufgrund der Ergebnisse der Erfolgs- und Reichweitenmessung können wir insbesondere Fehler beheben, beliebte Inhalte stärken oder Verbesserungen an unserem Online-Angebot vornehmen.
+
+Für die Erfolgs- und Reichweitenmessung werden in den meisten Fällen die Internet Protocol (IP)-Adressen von einzelnen Nutzerinnen und Nutzern gespeichert. IP-Adressen werden in diesem Fall _grundsätzlich_ gekürzt («IP-Masking»), um durch die entsprechende Pseudonymisierung dem Grundsatz der Datensparsamkeit zu folgen.
+
+Bei der Erfolgs- und Reichweitenmessung können Cookies zum Einsatz kommen und Nutzerprofile erstellt werden. Allenfalls erstellte Nutzerprofile umfassen beispielsweise die besuchten einzelnen Seiten oder betrachteten Inhalte auf unserer Website, Angaben zur Grösse von Bildschirm oder Browser-Fenster und den – zumindest ungefähren – Standort. _Grundsätzlich_ werden allfällige Nutzerprofile ausschliesslich pseudonymisiert erstellt und nicht für die Identifizierung einzelner Nutzerinnen und Nutzer verwendet. Einzelne Dienste von Dritten, bei denen Nutzerinnen oder Nutzer angemeldet sind, können die Nutzung unseres Online-Angebotes allenfalls dem Nutzerkonto oder Nutzerprofil beim jeweiligen Dienst zuordnen.
+
+Wir nutzen insbesondere:
+
+* **<a href="https://marketingplatform.google.com/about/tag-manager/" rel="nofollow noopener noreferrer" target="_blank">Google Tag Manager:</a>** Einbindung und Verwaltung von sonstigen Diensten für die Erfolgs- und Reichweitenmessung sowie weiteren Diensten von Google als auch von Dritten; Anbieterin: Google; Google Tag Manager-spezifische Angaben: <a href="https://support.google.com/tagmanager/answer/9323295?hl=de" rel="nofollow noopener noreferrer" target="_blank">«Mit Google Tag Manager erfasste Daten»</a>; weitere Angaben zum Datenschutz finden sich bei den einzelnen eingebundenen und verwalteten Diensten.
+
+
+## 11. Schlussbestimmungen
+
+Wir haben diese Datenschutzerklärung mit dem <a href="https://www.datenschutzpartner.ch/angebot-datenschutz-generator/" rel="nofollow noopener noreferrer" target="_blank">Datenschutz-Generator</a> von <a href="https://datenschutzpartner.ch/" rel="nofollow noopener noreferrer" target="_blank">Datenschutzpartner</a> erstellt.
+
+Wir können diese Datenschutzerklärung jederzeit anpassen und ergänzen. Wir werden über solche Anpassungen und Ergänzungen in geeigneter Form informieren, insbesondere durch Veröffentlichung der jeweils aktuellen Datenschutzerklärung auf unserer Website.

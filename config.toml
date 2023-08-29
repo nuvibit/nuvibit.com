@@ -162,7 +162,7 @@ weight = 5
 [[Languages.en.menu.footer]]
 parent = "company"
 name = "Cookie Policy"
-url = "/privacy-policy/#51-cookies/"
+url = "/privacy-policy/#71-cookies"
 weight = 7
 
 [[Languages.en.menu.footer]]
@@ -313,7 +313,7 @@ weight = 5
 [[Languages.de.menu.footer]]
 parent = "company"
 name = "Cookie Richtlinien"
-url = "/privacy-policy/#51-cookies/"
+url = "/privacy-policy/#71-cookies"
 weight = 7
 
 [[Languages.de.menu.footer]]

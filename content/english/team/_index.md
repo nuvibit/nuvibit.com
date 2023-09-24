@@ -1,14 +1,11 @@
 ---
 title: "Meet our team"
-description: "Nuvibit was founded by a group of cloud enthusiasts who were eager to take on a fresh challenge."
+description: "Discover Nuvibit, your trusted partner for building enterprise-ready, compliant, and scalable AWS cloud foundations."
 draft: false
 
 about_us:
-  introduction: "Nuvibit was founded by a group of cloud enthusiasts who were eager to take on a fresh challenge.<br>
-                Originally, the founding members worked for the same company in different departments.
-                Right after the company announced it's cloud strategy, we were tasked with building a Cloud Foundation on AWS.
-                We poured our blood, sweat, and tears into it and managed to achieve an outstanding level of maturity.<br>
-                Each and every one of us has gone above and beyond, which ultimately led to the idea of starting a company with like-minded, motivated people."
+  introduction: "At Nuvibit, we're more than just a cloud services company. We're a team of dedicated cloud enthusiasts on a mission to redefine what's possible in the world of cloud computing. 
+                Founded in Switzerland by a group of passionate individuals, Nuvibit is a privately-owned company with a vision to empower organizations with a robust and scalable AWS cloud foundation."
   items:
     - image: "images/profiles/roman-plessl.jpg"
       enable: true
@@ -61,3 +58,22 @@ about_us:
       content: "Andreas gets the ball rolling! With many years of experience in designing and building solutions in the cloud, he gets your projects up and running.<br>
                 As an IaC specialist, he will help you digitalize your infrastructure and automate tasks that you have not considered before."
 ---
+
+# About Nuvibit
+At Nuvibit, we're more than just a cloud services company. We're a team of dedicated cloud enthusiasts on a mission to redefine what's possible in the world of cloud computing. Founded in Switzerland by a group of passionate individuals, Nuvibit is a privately-owned company with a vision to empower organizations with a robust and scalable AWS cloud foundation.
+
+# Our Story
+Nuvibit was born out of a shared passion for cloud technology. Our founders, driven by a deep understanding of AWS cloud infrastructure, embarked on a journey to create something truly remarkable. With a strong sense of corporate culture and a commitment to work-life balance, we've built a company that not only delivers exceptional results but also values the well-being of our team.
+
+# Specialized in AWS Cloud Foundation
+Our expertise lies in crafting highly specialized AWS cloud foundations, specifically tailored for large multi-account environments. We understand the unique challenges that organizations face when navigating the cloud landscape, and we're here to provide the solutions they need to thrive.
+
+# Everything as Code with Terraform
+We're addicted to the concept of "everything as code," and our tool of choice is Terraform. This approach allows us to deliver infrastructure solutions that are not only efficient but also easily maintainable. It's a philosophy that drives our work and sets us apart in the industry.
+
+# Mission, Vision, and Values
+Mission: Our mission is simple yet powerful—to enable our customers to run an enterprise-ready, compliant, and scalable cloud foundation. We believe that the foundation is the cornerstone of any successful cloud journey.
+Vision: We aspire to be the go-to partner for AWS cloud foundation solutions. When organizations think of building a strong cloud infrastructure, they should think of Nuvibit.
+Values: At Nuvibit, we live by our values. We're bold in our approach, passionate about what we do, and dedicated team players. We understand the importance of work-life balance and believe that a happy team is the key to success.
+
+Join us on our journey to revolutionize cloud computing. Discover the Nuvibit difference and see how we can help you achieve your cloud goals.

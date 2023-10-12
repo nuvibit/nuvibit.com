@@ -44,7 +44,7 @@ draft: false
 
 ### SEMPER Architecture
 
-Via [GitOps](faq/#gitops 'What is GitOps?') the customer is able to maintain policies ([Documentation on SEMPER Policies](#)) that will automatically manage the lifecycle of their AWS Security Findings.
+Via [GitOps](faq/#gitops 'What is GitOps?') the customer is able to maintain policies ([Documentation on SEMPER Policies](https://github.com/nuvibit/semper-policy-repo-sample/wiki/10-SEMPER-Policies)) that will automatically manage the lifecycle of their AWS Security Findings.
 
 SEMPER is operated entirely self-contained in the customer's perimeter.
 

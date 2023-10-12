@@ -1,7 +1,7 @@
 ---
 title: "SEMPER at RWE - energized AWS Security Findings Management"
 date: 2023-10-12T11:00:00+06:00
-image: "images/customers/rwe_logo.png"
+image: "images/customers/rwe_logo2.png"
 
 # meta description
 description : "Nuvibit SEMPER helps RWE to manage their Security in a streamlined was."

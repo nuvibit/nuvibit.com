@@ -1,5 +1,5 @@
 ---
-title: "NTC abstrahiert die Komplexität der Infrastruktur und ermöglicht es den Solution Teams, sich auf die Erbringung von Business Values zu konzentrieren."
+title: "NTC abstrahiert die Komplexität der Infrastruktur und ermöglicht es, den Fokus auf Business Values zu legen."
 date: 2023-10-12T11:00:00+06:00
 image: "images/customers/meteoswiss.png"
 

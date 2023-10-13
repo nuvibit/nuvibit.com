@@ -41,7 +41,7 @@ SEMPER wird vollständig im eigenen Bereich des Kunden betrieben.
 - **Schnelle Umsetzung von Richtlinien**: Neue Rules oder individuelle Anpassungen können nahtlos innerhalb weniger Minuten in die gesamte Landschaft integriert werden.
 - **Fortgeschrittene Automatisierung**: Der gesamte Lebenszyklus der Findings profitiert von den automatisierten Policies, was die Prozesse bei Erkennung, Analyse und Reaktion optimiert.
 - **Erhöhte Nachvollziehbarkeit**: Die Policies beschreiben akzeptierte Risiken und Ausnahmen. Diese gewährleistet die Nachvollziehbarkeit und den einfachen Zugriff auf historische Daten.
-- **Mehr Kontext**: Zusätzliche Kontextdaten in Bezug auf Security Findings unterstützen automatisierte und manuelle Triage-Prozesse, was zu schnelleren und fundierteren Entscheidungen führt.
+- **Mehr Kontext**: Zusätzliche Kontextdaten in Bezug auf Security Findings unterstützen automatisierte und manuelle Triage-Prozesse, was zu schnelleren und fundierten Entscheidungen führt.
 - **Fokussierung auf das Wesentliche**: Durch das Filtern von unnötigem Rauschen kann sich das SOC-Team nun ausschließlich auf relevante Security Findings konzentrieren, was ihre Arbeitsabläufe optimiert und eine rechtzeitige Reaktion sicherstellt.
 - **Ermöglichung von Auto-Remediation**: Wo immer sinnvoll, können Probleme nun automatisch behoben werden, was den manuellen Aufwand minimiert und die Reaktionszeiten verbessert.
 

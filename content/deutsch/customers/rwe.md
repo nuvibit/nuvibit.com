@@ -32,9 +32,9 @@ SEMPER wird vollständig im eigenen Bereich des Kunden betrieben.
 
 ![Architekturdiagramm](images/solutions/SEMPER-Flow.png)
 
-1. **Konfiguration**: Gezielte Bereitstellung von AWS Config-, AWS Event Rules-Ereignissen und AWS Security Hub-Steuerungen.
-2. **Verarbeitung**: Anreichern und Filtern von AWS Security Findings.
-3. **Nachverarbeitung**: Archivierung und weitere Workflow-Automatisierung (Alarmierung, automatische Behebung).
+1. **Configuration**: Gezielte Bereitstellung von AWS Config, AWS Event Rule Events und AWS Security Hub Controls.
+2. **Processing**: Anreichern und Filtern von AWS Security Findings.
+3. **Post-Processing**: Archivierung und weitere Workflow-Automatisierung (Alarmierung, auto-remeditation).
 
 ### Ergebnisse: Qualitativ
 
@@ -43,7 +43,7 @@ SEMPER wird vollständig im eigenen Bereich des Kunden betrieben.
 - **Erhöhte Nachvollziehbarkeit**: Die Policies beschreiben akzeptierte Risiken und Ausnahmen. Diese gewährleistet die Nachvollziehbarkeit und den einfachen Zugriff auf historische Daten.
 - **Mehr Kontext**: Zusätzliche Kontextdaten in Bezug auf Security Findings unterstützen automatisierte und manuelle Triage-Prozesse, was zu schnelleren und fundierteren Entscheidungen führt.
 - **Fokussierung auf das Wesentliche**: Durch das Filtern von unnötigem Rauschen kann sich das SOC-Team nun ausschließlich auf relevante Security Findings konzentrieren, was ihre Arbeitsabläufe optimiert und eine rechtzeitige Reaktion sicherstellt.
-- **Erleichterte automatische Behebung**: Wo immer sinnvoll, können Probleme nun automatisch behoben werden, was den manuellen Aufwand minimiert und die Reaktionszeiten verbessert.
+- **Ermöglichung von Auto-Remediation**: Wo immer sinnvoll, können Probleme nun automatisch behoben werden, was den manuellen Aufwand minimiert und die Reaktionszeiten verbessert.
 
 ### Ergebnisse: Quantitativ
 

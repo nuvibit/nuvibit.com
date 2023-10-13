@@ -3,22 +3,22 @@ title: "SEMPER bei RWE - Energiegeladene Verwaltung von AWS Security Findings"
 date: 2023-10-12T11:00:00+06:00
 image: "images/customers/rwe_logo2.png"
 
-# Meta-Beschreibung
-Beschreibung : "Nuvibit SEMPER hilft RWE, ihre Sicherheit auf effiziente Weise zu verwalten."
+# meta description
+description : "Nuvibit SEMPER hilft RWE, ihre Sicherheit auf effiziente Weise zu verwalten."
 
-# Schaltflächenlink
+# button link
 button_link: "#"
 
 draft: false
 ---
 
-## Situationsüberblick
+## Situationsübersicht
 
-[RWE](https://https://www.rwe.com//) ist ein weltweit führendes Energieunternehmen, das für die Produktion und Verteilung von konventioneller und erneuerbarer Energie bekannt ist. Sie sind in verschiedenen Regionen tätig und haben eine starke Präsenz in Europa, Nordamerika und Asien. [RWE](https://https://www.rwe.com//) verwaltet eine komplexe AWS Multi-Account Konfiguration mit rund 200 Accounts in vier Regionen, die verschiedene Entwicklungsteams unterstützt. Sie legen großen Wert auf die digitale Sicherheit und integrieren AWS-Dienste wie AWS Config, AWS Security Hub und Amazon GuardDuty. Ihr Security Operations Center verarbeitet jede Woche einen enormen Datenfluss von über 500 Millionen AWS CloudTrail-Ereignissen, die auf ihr SIEM-System ausgerichtet sind.
+[RWE](https://https://www.rwe.com//) ist ein weltweit führendes Energieunternehmen, das für die Produktion und Verteilung von konventioneller und erneuerbarer Energie bekannt ist. Sie sind in verschiedenen Regionen tätig und haben eine starke Präsenz in Europa, Nordamerika und Asien. [RWE](https://https://www.rwe.com//) verwaltet eine komplexe AWS Multi-Account Konfiguration mit rund 200 Accounts in vier Regionen, die von diversen Entwicklungsteams genutzt werden. Sie legen großen Wert auf die digitale Sicherheit und integrieren AWS-Dienste wie AWS Config, AWS Security Hub und Amazon GuardDuty. Ihr Security Operations Center verarbeitet jede Woche einen enormen Datenfluss von über 500 Millionen AWS CloudTrail-Ereignissen, die in ihrem SIEM-System aufschlagen.
 
 ### Herausforderung
 
-[RWE](https://https://www.rwe.com//) stand vor Herausforderungen aufgrund der großen Anzahl von AWS-Accounts und den damit verbundenen Security Findings, was es ihrem SOC-Team erschwerte, sie effizient zu verarbeiten. Viele der Befunde waren mit akzeptierten Risiken verbunden, was die zeitaufwändige Natur der Aufgabe verstärkte. Um dem entgegenzuwirken, wollte [RWE](https://https://www.rwe.com//) die Accounts nach ihrem Sicherheitsniveau kategorisieren (z. B. Produktion, Nicht-Produktion, Abteilungen) und wichtige Informationen über das Ursprungskonto in den Befunden aufnehmen. Die Automatisierung war ein Hauptziel für [RWE](https://https://www.rwe.com//) und zielte darauf ab, neue Regeln für Kontountergruppen bereitzustellen, automatisierte Aktionen für bestimmte Ereignisse zu definieren und Ereignisse in bestimmten Kontexten zu filtern. [RWE](https://https://www.rwe.com//) benötigte auch, dass die Erklärungen nachvollziehbar und historisch für die Einhaltung bewährter Sicherheitspraktiken sind.
+[RWE](https://https://www.rwe.com//) sah sich aufgrund der großen Anzahl von AWS Accounts und der damit verbundenen Securit Findings mit Herausforderungen konfrontiert, die es dem SOC-Team schwer machten, diese effizient zu bearbeiten. Viele Findings bezogen sich auf akzeptierte Risiken, was die Aufgabe noch zeitaufwändiger machte. Um dieses Problem zu lösen, wollte [RWE](https://https://www.rwe.com//) die Accounts auf der Grundlage ihrer Sicherheitsstufe (z. B. Produktion, Nicht-Produktion, Abteilungen) in Gruppen einteilen und das Finding mit wesentliche Informationen über den Source Account ergänzen. Die Automatisierung war ein wichtiges Ziel für [RWE](https://https://www.rwe.com//). Damit sollen neue Rules in Subsets von Accounts ausgerollt, Autmatisierte Aktionen definiert und speziefische Event filter deployed werden können. Für [RWE](https://https://www.rwe.com//) war es außerdem wichtig, dass die Deklarationen rückverfolgbar und historisch nachvollziehbar sind, um ihre Compliance Anforderungen zu erfüllen.
 
 ## Unsere Lösung: SEMPER
 

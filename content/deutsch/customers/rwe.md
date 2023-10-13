@@ -38,17 +38,17 @@ SEMPER wird vollständig im eigenen Bereich des Kunden betrieben.
 
 ### Ergebnisse: Qualitativ
 
-- **Schnelle Umsetzung von Richtlinien**: Neue Regeln oder individuelle Anpassungen können nahtlos innerhalb weniger Minuten in die gesamte Landschaft integriert werden.
-- **Fortgeschrittene Automatisierung**: Der gesamte Lebenszyklus der Befunde profitiert von automatisierter Politik, was die Prozesse bei Erkennung, Analyse und Reaktion optimiert.
-- **Erhöhte Nachverfolgbarkeit**: Die Richtlinien verfolgen nun von Natur aus akzeptierte Befunde und Ausnahmen, was die Verantwortlichkeit und den einfachen Zugriff auf historische Daten gewährleistet.
+- **Schnelle Umsetzung von Richtlinien**: Neue Rules oder individuelle Anpassungen können nahtlos innerhalb weniger Minuten in die gesamte Landschaft integriert werden.
+- **Fortgeschrittene Automatisierung**: Der gesamte Lebenszyklus der Findings profitiert von den automatisierten Policies, was die Prozesse bei Erkennung, Analyse und Reaktion optimiert.
+- **Erhöhte Nachvollziehbarkeit**: Die Policies beschreiben akzeptierte Risiken und Ausnahmen. Diese gewährleistet die Nachvollziehbarkeit und den einfachen Zugriff auf historische Daten.
 - **Mehr Kontext**: Zusätzliche Kontextdaten in Bezug auf Security Findings unterstützen automatisierte und manuelle Triage-Prozesse, was zu schnelleren und fundierteren Entscheidungen führt.
-- **Fokussierung auf das Wesentliche**: Durch das Filtern von unnötigem Rauschen kann sich das SOC-Team nun ausschließlich auf relevante Security Findings konzentrieren, was ihre Bemühungen optimiert und eine rechtzeitige Behebung sicherstellt.
-- **Erleichterte automatische Behebung**: Wenn möglich, können Probleme nun automatisch behoben werden, was den manuellen Eingriff minimiert und die Reaktionszeiten verbessert.
+- **Fokussierung auf das Wesentliche**: Durch das Filtern von unnötigem Rauschen kann sich das SOC-Team nun ausschließlich auf relevante Security Findings konzentrieren, was ihre Arbeitsabläufe optimiert und eine rechtzeitige Reaktion sicherstellt.
+- **Erleichterte automatische Behebung**: Wo immer sinnvoll, können Probleme nun automatisch behoben werden, was den manuellen Aufwand minimiert und die Reaktionszeiten verbessert.
 
 ### Ergebnisse: Quantitativ
 
-- **Effizienz bei Befunden**: 99,9 % weniger Befunde - im Vergleich zu SEMPER-Befunden zu CloudTrail-Protokollen
+- **Effizienz bei Befunden**: 99,9 % weniger Findings - SEMPER Findings im Vergleich zu den CloudTrail Events davor
 - **Mitarbeiterproduktivität**: Signifikante Zeitersparnis für SOC-Mitarbeiter
-- **Automatisierte Eingriffe**: Tausende automatischer Behebungen pro Woche ausgelöst
+- **Automatisierte Eingriffe**: Tausende automatische Eingriffe pro Woche ausgelöst
 - **Reduzierter Ingenieuraufwand**: Bemerkenswerte Reduzierung der Arbeitsbelastung
-- **ROI**: Positive und greifbare Rendite für Investitionen
+- **ROI**: Signifikanter return of invest

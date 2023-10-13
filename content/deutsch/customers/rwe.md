@@ -22,13 +22,13 @@ draft: false
 
 ## Unsere Lösung: SEMPER
 
-[RWE](https://https://www.rwe.com//) entschied sich, unsere Lösung **[SEMPER](/solutions/semper 'Produktseite!')** in ihrer AWS-Organisation einzuführen.
+[RWE](https://https://www.rwe.com//) entschied sich, unsere serverless Lösung **[SEMPER](/solutions/semper 'Produktseite!')** in ihrer AWS-Organisation einzuführen.
 
 ### SEMPER-Architektur
 
 Durch [GitOps](faq/#gitops 'Was ist GitOps?') ist der Kunde in der Lage, Richtlinien ([Dokumentation zu SEMPER-Richtlinien](https://github.com/nuvibit/semper-policy-repo-sample/wiki/10-SEMPER-Policies)), die automatisch den Lebenszyklus ihrer AWS Security Findings verwalten, aufrechtzuerhalten.
 
-SEMPER wird vollständig im eigenen Bereich des Kunden betrieben.
+SEMPER wird vollständig in der Umgebung des Kunden betrieben.
 
 ![Architekturdiagramm](images/solutions/SEMPER-Flow.png)
 

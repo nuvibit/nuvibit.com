@@ -22,7 +22,7 @@ draft: false
 
 ## Our Solution: SEMPER
 
-[RWE](https://https://www.rwe.com//) decided to introduce our solution **[SEMPER](/solutions/semper 'Product page!')** into their AWS Organization.
+[RWE](https://https://www.rwe.com//) decided to introduce our serverless solution **[SEMPER](/solutions/semper 'Product page!')** into their AWS Organization.
 
 ### SEMPER Architecture
 

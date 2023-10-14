@@ -171,12 +171,13 @@ form_elements.forEach(el => el.addEventListener('submit', event => {
 
 // function to copy content to clipboard and display message
 function copy_url(url) {
-    var tempInput = document.createElement('input');
-    document.body.appendChild(tempInput);
-    tempInput.value = url;
-    tempInput.select();
-    document.execCommand("copy");
-    document.body.removeChild(tempInput);
+    // var tempInput = document.createElement('input');
+    // document.body.appendChild(tempInput);
+    // tempInput.value = url;
+    // tempInput.select();
+    // document.execCommand("copy");
+    // document.body.removeChild(tempInput);
+    navigator.clipboard.writeText(url)
     // display alert message
     var alertElement = document.querySelector(".alert");
     alertElement.style.display = "block";
@@ -278,16 +279,18 @@ function uri_translate(uri, lang_now, lang_new) {
 
 // function to copy subnet to clipboard
 function copy_subnet(subnet, id) {
-    var tempInput = document.createElement('input');
-    document.body.appendChild(tempInput);
+    navigator.clipboard.writeText(subnet)
     var element = document.getElementById(id);
-    tempInput.value = subnet;
-    tempInput.select();
-    document.execCommand("copy");
-    document.body.removeChild(tempInput);
-    element.classList.add("fa-solid");
+    element.classList.add("copy-solid");
+    // var tempInput = document.createElement('input');
+    // document.body.appendChild(tempInput);
+    // var element = document.getElementById(id);
+    // tempInput.value = subnet;
+    // tempInput.select();
+    // document.execCommand("copy");
+    // document.body.removeChild(tempInput);
+    // element.classList.add("fa-solid");
 }
-
 
 // function to reset custom validation
 function clearValidate() {
@@ -372,6 +375,8 @@ function subnetCalculator() {
     subnetTableCells.forEach(function (cell) {
         cell.remove();
     });
+    // get icon
+    var copy_icon = document.getElementById("copy-icon").innerHTML;
     // loop for every subnet and calculate network address
     for (var i = 0, subnet_cidr; subnet_cidr = subnet_cidrs[i++];) {
         subnet_ips = 2 ** (32 - subnet_cidr)
@@ -387,9 +392,8 @@ function subnetCalculator() {
         var cell1 = row.insertCell(0);
         var cell2 = row.insertCell(1);
         // generate cell content
-        copy_id = "copy-subnet" + i
-        copy_icon = "<i id='" + copy_id + "' class='fa-regular fa-copy'></i>";
-        copy_html = "<span class='copy-table-cell' id='subnet-element' data-value=\"" + subnet + "#" + copy_id + "\">" + copy_icon + "</span>";
+        copy_id = "copy-subnet" + i;
+        copy_html = "<span class='copy-table-cell' id='subnet-element' data-value=\"" + subnet + "#" + copy_id + "\"><i id='"+copy_id+"'>" + copy_icon + "</i></span>";
         subnet_cell = subnet + copy_html;
         cell1.innerHTML = subnet_cell
         cell2.innerHTML = 2 ** (32 - subnet_cidr) - 5;

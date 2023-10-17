@@ -79,16 +79,14 @@ link_section:
     #     blog_tag: foundation
 
 testimonial_section:
-    enable: false
-    # title: "Customer References"
-    # list:
-    #   - image: "images/logo/logo_nuvibit_dark.png"
-    #     name: "Lorem ipsum dolor"
-    #     content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt"
+    enable: true
+    title: "Success Stories"
+    story_tag: ntc
 ---
 
-## Nuvibit Terraform Collection (NTC) Module 
-{{<table "table table-striped table-bordered table-overflow">}}
+## NTC Foundation Blueprint
+![img](images/solutions/ntc-foundation-blueprint-highres.png)
+<!-- {{<table "table table-striped table-bordered table-overflow">}}
 | NAME | DESCRIPTION |
 | ------------- | ------------- |
 | <mark class="inline-mark-FBE3FC">NTC Parameters</mark><img width=150/> | Terraform-Modul zum Speichern und Abrufen von Terraform- oder JSON-Parametern in mehreren AWS-Konten und CI/CD-Pipelines. Dieses Modul ist speziell für die Integration mit unseren NTC-Modulen konzipiert. |
@@ -102,7 +100,7 @@ testimonial_section:
 | <mark class="inline-mark-FBE3FC">Account Baseline Templates</mark> | Terraform-Modul, welches Vorlagen für Account-Baseline-Konfigurationen bereitstellt. Kann mit dem Modul NTC Account Factory kombiniert werden, um Account-Baselines für AWS-Accounts in mehreren Regionen präzise auszurollen. |
 | <mark class="inline-mark-FBE3FC">Account Lifecycle Templates</mark> | Terraform-Modul, welches Vorlagen für die Anpassung des Account-Lebenszyklus bereitstellt. Kann mit dem Modul NTC Account Factory kombiniert werden, um den Lebenszyklus eines AWS-Accounts zu verwalten (z.B. Standard-VPC löschen, wenn ein neuer Account erstellt wird). |
 | <mark class="inline-mark-FBE3FC">SCP Templates</mark> | Terraform-Modul, welches Vorlagen für Service Control Policies (SCP) bereitstellt. Kann mit dem Modul NTC Organizations kombiniert werden, um SCPs über Organizational Units (OUs) und spezifische AWS-Accounts präzise auszurollen. |
-{{</table>}}
+{{</table>}} -->
 <br><br>
 
 ## AWS Landing Zone & Foundation Vergleich
@@ -131,4 +129,4 @@ Es gibt keine Standardlösung für AWS Landing Zone & Foundation, die die Anford
 Bei der Auswahl der richtigen Lösung sind viele Aspekte zu berücksichtigen (z.B. bestimmt der Bereitstellungsmechanismus, wie Personalisierung und Fehlersuche durchgeführt werden).<br><br>
 Dieser vereinfachte Entscheidungsbaum soll als Orientierungshilfe bei der Wahl der richtigen Lösung dienen:
 
-![img](images/solutions/ntc-decision-tree.png)
+![img](images/solutions/ntc-decision-tree-highres.png)

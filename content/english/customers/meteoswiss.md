@@ -2,6 +2,8 @@
 title: "NTC abstracts the complexity of infrastructure and allows us to focus on delivering business value."
 date: 2023-10-12T11:00:00+06:00
 image: "images/customers/meteoswiss.png"
+tags:
+  - ntc
 
 # meta description
 description : "Our customer MeteoSwiss embarked on an ambitious mission to migrate approximately 200 applications to AWS and NTC (Nuvibit Terraform Collection) is paving the way."

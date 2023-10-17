@@ -104,6 +104,20 @@
 {{- end }}
 <!-- /FEATURES -->
 
+<!-- MARKDOWN CONTENT -->
+{{- if .Params.markdown_content.enable }}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-12 text-center text-md-start mb-5">
+            <div class="container markdown">
+                {{ .Content }}
+            </div>
+        </div>
+    </div>
+</div>
+{{- end }}
+<!-- /MARKDOWN CONTENT -->
+
 <!-- EXCERPTS -->
 {{ if .Params.excerpt_section.enable }}
 {{ with .Params.excerpt_section }}
@@ -164,73 +178,55 @@
 
 <!-- TESTIMONIALS -->
 {{- if .Params.testimonial_section.enable }}
-{{- with .Params.testimonial_section }}
-<section class="gallery testimonials section pt-0" id="testimonial">
+<section class="section gallery">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center">
-                <div class="heading">
-                    <h2>{{ $.Page.RenderString .title }}</h2>
+        <div class="heading">
+            {{- with .Params.testimonial_section }}
+            <h2 class="fw-bold">{{ $.Page.RenderString .title }}</h2>
+            {{- end }}
+            <hr class="w-100 mt-5">
+        </div>
+        {{ $Tag := .Params.testimonial_section.story_tag }}
+        {{ range (where .Site.RegularPages "Section" "customers") }}
+        {{ if in .Params.tags $Tag }}
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="block mb-4 text-center" id="badge-element" data-value="{{ .Permalink }}">
+                <div class="gallery-overlay">
+                    <a href="{{ .Permalink }}" class="gallery-popup" title='Read more about the success story of our customer {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }}' aria-label='Read more about the success story of our customer {{ .Params.image | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+                        {{ partial "svg" "fa-solid fa-plus" }}
+                    </a>
                 </div>
-
-                <div class="product-slider">
-                    {{ range .list }}
-                    <div class="block me-3 ms-3" id="testimonial-element" data-value="{{ .Permalink }}">
-                        <div class="text-center testimonial-block">
-                            <i class="fa-solid fa-quote-right"></i>
-                            <p>{{ $.Page.RenderString .content }}</p>
-                        </div>
-                        <div class="gallery-overlay">
-                            <a href="{{ .link | absLangURL }}" class="gallery-popup">
-                                <i class="fa-solid fa-plus"></i>
-                            </a>
-                        </div>
-                        <div class="me-5 ms-5">
-                            {{/* HUGO IMAGE RENDERER */}}
-                            {{ $image_resolutions := (slice "300x" "500x" "800x") }}
-                            {{ $image_data := newScratch }}
-                            {{ $image_class := "img-fluid"}}
-                            {{ $image_path := .image }}
-                            {{ $image_buffer := resources.Get $image_path }}
-                            {{ $image_fallback := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" (index (last 1 $image_resolutions) 0))) }}
-                            {{ range $index, $image_resolutions }}
-                                {{ $image_webp := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s webp q90 Lanczos" .)) }}
-                                {{ $image_data.Add "srcset_webp" (printf "%s %s," $image_webp (replace . "x" "w")) }}
-                                {{ $image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" .)) }}
-                                {{ $image_data.Add "srcset_jpg" (printf "%s %s," $image_jpg (replace . "x" "w")) }}
-                            {{ end }}
-                            {{ $image_dimensions := $image_buffer.Resize (index (last 1 $image_resolutions) 0) }}
-                            <picture>
-                                <source type="image/webp" srcset='{{ $image_data.Get "srcset_webp" }}'>
-                                <source type="image/jpeg" srcset='{{ $image_data.Get "srcset_jpg" }}'>
-                                <img loading="lazy" decoding="async" class="{{ $image_class }}" src="{{ $image_fallback }}" width="{{ $image_dimensions.Width }}" height="{{ $image_dimensions.Height }}" alt='Customer logo of {{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
-                            </picture>
-                            {{/* HUGO IMAGE RENDERER */}}
-                        </div>
-                    </div>
-                    {{ end }}
-                </div>
+				{{/* HUGO IMAGE RENDERER */}}
+                {{ $image_resolutions := (slice "300x" "500x") }}
+				{{ $image_data := newScratch }}
+                {{ $image_class := "customer-logo img-fluid"}}
+                {{ $image_path := .Params.image }}
+				{{ $image_buffer := resources.Get $image_path }}
+				{{ $image_fallback := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" (index (last 1 $image_resolutions) 0))) }}
+				{{ range $index, $image_resolutions }}
+					{{ $image_webp := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s webp q90 Lanczos" .)) }}
+					{{ $image_data.Add "srcset_webp" (printf "%s %s," $image_webp (replace . "x" "w")) }}
+					{{ $image_jpg := partial "imageConverter.html" (dict "ImageSrc" $image_buffer "ImgParam" (printf "%s jpg #fafafa q90 Lanczos" .)) }}
+					{{ $image_data.Add "srcset_jpg" (printf "%s %s," $image_jpg (replace . "x" "w")) }}
+				{{ end }}
+				{{ $image_dimensions := $image_buffer.Resize (index (last 1 $image_resolutions) 0) }}
+				<picture class="mb-4">
+					<source type="image/webp" srcset='{{ $image_data.Get "srcset_webp" }}'>
+					<source type="image/jpeg" srcset='{{ $image_data.Get "srcset_jpg" }}'>
+					<img loading="lazy" decoding="async" class="{{ $image_class }}" src="{{ $image_fallback }}" width="{{ $image_dimensions.Width }}" height="{{ $image_dimensions.Height }}" alt='Customer logo of {{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+				</picture>
+				{{/* HUGO IMAGE RENDERER */}}
+                <q class="product-info customer-quote">{{.Title}}</q>
             </div>
+        </div>
+        {{ end }}
+        {{ end }}
         </div>
     </div>
 </section>
 {{- end }}
-{{- end }}
 <!-- TESTIMONIALS -->
-
-<!-- MARKDOWN CONTENT -->
-{{- if .Params.markdown_content.enable }}
-<div class="container mb-5">
-    <div class="row justify-content-center">
-        <div class="col-lg-12 text-center text-md-start mb-5">
-            <div class="container markdown">
-                {{ .Content }}
-            </div>
-        </div>
-    </div>
-</div>
-{{- end }}
-<!-- /MARKDOWN CONTENT -->
 
 <!-- LINKS -->
 {{- if .Params.link_section.enable }}

@@ -79,16 +79,14 @@ link_section:
     #     blog_tag: foundation
 
 testimonial_section:
-    enable: false
-    # title: "Customer References"
-    # list:
-    #   - image: "images/logo/logo_nuvibit_dark.png"
-    #     name: "Lorem ipsum dolor"
-    #     content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt"
+    enable: true
+    title: "Success Stories"
+    story_tag: ntc
 ---
 
-## Nuvibit Terraform Collection (NTC) Modules 
-{{<table "table table-striped table-bordered table-overflow">}}
+## NTC Foundation Blueprint
+![img](images/solutions/ntc-foundation-blueprint-highres.png)
+<!-- {{<table "table table-striped table-bordered table-overflow">}}
 | NAME | DESCRIPTION |
 | ------------- | ------------- |
 | <mark class="inline-mark-FBE3FC">NTC Parameters</mark><img width=150/> | Terraform module to store and retrieve Terraform or JSON parameters across multiple AWS accounts and CI/CD pipelines. This module is specifically designed to integrate with our NTC modules. |
@@ -102,7 +100,7 @@ testimonial_section:
 | <mark class="inline-mark-FBE3FC">Account Baseline Templates</mark> | Terraform module which provides templates for account baseline configurations. Can be combined with NTC Account Factory module to precisely roll out account baselines across AWS accounts in multiple regions. |
 | <mark class="inline-mark-FBE3FC">Account Lifecycle Templates</mark> | Terraform module which provides templates for account lifecycle customization. Can be combined with NTC Account Factory module to manage the AWS account lifecycle (e.g. destroy default VPC when new account is created). |
 | <mark class="inline-mark-FBE3FC">SCP Templates</mark> | Terraform module which provides templates for Service Control Policies (SCP). Can be combined with NTC Organizations module to precisely roll out SCPs across Organizational Units (OUs) and specific AWS accounts. |
-{{</table>}}
+{{</table>}} -->
 <br><br>
 
 ## AWS Landing Zone & Foundation Comparison
@@ -133,4 +131,4 @@ There is no single solution for AWS Landing Zone & Foundation which meets the re
 There are many aspects to consider when choosing the right solution (e.g. delivery mechanism determines how customization and troubleshooting is performed).<br><br>
 This simplified decision tree is intended to provide guidance in choosing the right solution:
 
-![img](images/solutions/ntc-decision-tree.png)
+![img](images/solutions/ntc-decision-tree-highres.png)

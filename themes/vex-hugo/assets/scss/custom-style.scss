@@ -258,8 +258,12 @@ table.subnet-table span.copy-table-cell {
 }
 
 table.subnet-table span.copy-table-cell:hover {
-    color: #007bff !important;
+    fill: #007bff !important;
     cursor: pointer;
+}
+
+.copy-solid {
+    fill: #a4a4a4 !important;
 }
 
 // ANCHOR spacings

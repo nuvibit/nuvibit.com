@@ -1,7 +1,7 @@
 ---
 title: "NTC abstracts the complexity of infrastructure and allows us to focus on delivering business value."
 date: 2023-10-12T11:00:00+06:00
-image: "images/customers/meteoswiss.png"
+image: "images/customers/meteoswiss.jpg"
 tags:
   - ntc
 

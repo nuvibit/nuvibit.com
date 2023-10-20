@@ -41,10 +41,10 @@
                                 {{ $image_data.Add "srcset_jpg" (printf "%s %s," $image_jpg (replace . "x" "w")) }}
                             {{ end }}
                             {{ $image_dimensions := $image_buffer.Resize (index (last 1 $image_resolutions) 0) }}
-                            <picture class="mb-4">
+                            <picture>
                                 <source type="image/webp" srcset='{{ $image_data.Get "srcset_webp" }}'>
                                 <source type="image/jpeg" srcset='{{ $image_data.Get "srcset_jpg" }}'>
-                                <img loading="lazy" decoding="async" class="{{ $image_class }}" src="{{ $image_fallback }}" width="{{ $image_dimensions.Width }}" height="{{ $image_dimensions.Height }}" alt='Customer logo of {{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
+                                <img loading="lazy" decoding="async" class="{{ $image_class }} mb-4" src="{{ $image_fallback }}" width="{{ $image_dimensions.Width }}" height="{{ $image_dimensions.Height }}" alt='Customer logo of {{ $image_path | replaceRE ".*?([\\w-]+).png" "$1" }}'>
                             </picture>
                             {{/* HUGO IMAGE RENDERER */}}
                             <q class="product-info customer-quote">{{.Title}}</q>

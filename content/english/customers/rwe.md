@@ -14,14 +14,14 @@ draft: false
 
 ## Situation Overview
 
-[RWE](https://https://www.rwe.com//) is a leading global energy company, known for the production and distribution of conventional and renewable energy. RWE operates in several regions and has a strong presence in Europe, North America and Asia.
-RWE manages a complex AWS multi-account configuration with around 200 AWS accounts across four AWS regions used by diverse development teams. They place great emphasis on digital security and integrate AWS services such as AWS Config, AWS Security Hub, and Amazon GuardDuty. Every week, their Security Operations Center processes an enormous flow of data close to 1 billion AWS CloudTrail events that hit their SIEM system.
+[RWE](https://https://www.rwe.com//) is a leading global energy company known for the production and distribution of both conventional and renewable energy. Operating in several regions, RWE has a strong presence in Europe, North America, and Asia.
+The company manages a complex AWS multi-account configuration, involving around 200 AWS accounts spread across four AWS regions and utilized by diverse development teams. RWE places great emphasis on digital security and integrates various AWS services, such as AWS Config, AWS Security Hub, and Amazon GuardDuty. Every week, their Security Operations Center (SOC) receives nearly 1 billion AWS CloudTrail events that feed into their SIEM system.
 
 ### Challenge
 
-The SOC team faced the challenge of efficiently prioritizing and processing the large number of AWS accounts and the numerous security findings associated with them based on importance.
-Many Findings related to accepted risks, which made the task even more time-consuming. To solve this problem, RWE wanted to group AWS accounts based on their security level (e.g., production, non-production, departments) and add essential information to the finding, such as the person responsible or the security status of the source account.
-Automation was an important goal for RWE. This should allow new rules to be rolled out to subsets of accounts, automated actions to be defined and specific event filters to be applied. Furthermore, RWE attached great importance to the fact that all configurations are designed to be both auditable and audit-proof in order to meet company-specific compliance requirements.
+The SOC team faces the challenge of efficiently prioritizing and processing a large number of security findings across numerous AWS accounts.
+Many of these findings relate to accepted risks, which adds complexity and time to the task. To address this issue, RWE aims to categorize AWS accounts based on their security levels, such as production, non-production, and departmental accounts. They also intend to enrich the security findings with essential information, like the individual responsible or the security status of the source account.
+Automation is another key focus for RWE. They plan to roll out new rules to subsets of accounts, define automated actions, and apply specific event filters. Furthermore, RWE places a high value on ensuring that all configurations are auditable and revision-proof to meet their company-specific compliance requirements.
 
 ## Our Solution: SEMPER
 
@@ -29,19 +29,19 @@ RWE decided to introduce our serverless solution **[SEMPER](/solutions/semper 'P
 
 ### SEMPER Architecture
 
-Through [GitOps](faq/#gitops 'What is GitOps?'), the customer is able to specify security policies ([Documentation on SEMPER Policies](https://github.com/nuvibit/semper-policy-repo-sample/wiki/10-SEMPER-Policies)) that automatically manage the lifecycle of their AWS Security Findings.
+Through [GitOps](faq/#gitops 'What is GitOps?'), the customer can specify security policies ([Documentation on SEMPER Policies](https://github.com/nuvibit/semper-policy-repo-sample/wiki/10-SEMPER-Policies)) that automatically manage the lifecycle of their AWS Security Findings.
 
-SEMPER is run entirely in the customer's environment.
+SEMPER operates entirely within the customer's environment.
 
 ![Architecture Diagram](images/solutions/SEMPER-Flow.png)
 
 1. **Configure**: Targeted deployment of AWS Config, AWS EventBridge rules, and AWS Security Hub controls.
 2. **Processing**: Enriching and filtering of AWS Security Findings.
-3. **Post-Processing**: Archiving and further workflow automation (alarming, auto-remediation).
+3. **Post-Processing**: Archiving and additional workflow automation, such as alarming and auto-remediation.
 
 ### Results: Qualitative
 
-- **Swift Policy Implementation**: New rules or customizations can be seamlessly integrated into the entire landscape within minutes.
+- **Swift Policy Implementation**: New rules or modifications can be integrated seamlessly into the entire landscape within minutes.
 - **Advanced Automation**: The entire findings lifecycle benefits from automated policies, streamlining detection, analysis, and response processes.
 - **Enhanced Traceability**: Policies describe accepted risks and exceptions. This ensures traceability and easy access to historical data.
 - **Richer Context**: Additional contextual data related to security findings supports automated and manual triage processes, resulting in faster and more informed decisions.

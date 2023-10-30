@@ -18,7 +18,7 @@ Das Bundesamt für Meteorologie und Klimatologie MeteoSchweiz ist der nationale 
 MeteoSchweiz beobachtet das Wetter rund um die Uhr, erstellt Wetterprognosen und warnt Einsatzbehörden und Bevölkerung, wenn Sturmwinde, starke Niederschläge, Gewitter oder Hitzewellen drohen. 
 Zudem erbringt sie umfassende Wetterdienstleistungen für die zivile, militärische und private Luftfahrt. 
 
-In Forschungs- und Entwicklungsprojekten engagieren sich die Wissenschaftler von MeteoSchweiz für ein besseres Verständnis von Wetter und Klima im Alpenraum und pflegen den Wissensaustausch über die Landesgrenzen hinaus.
+In Forschungs- und Entwicklungsprojekten engagieren sich die Wissenschaftlerinnen und Wissenschaftler von MeteoSchweiz für ein besseres Verständnis von Wetter und Klima im Alpenraum und pflegen den Wissensaustausch über die Landesgrenzen hinaus.
 
 ### Wie haben wir geholfen?
 MeteoSchweiz hat sich das ehrgeizige Ziel gesetzt, ca. 200 Anwendungen auf AWS zu migrieren. Diese Aufgabe erfordert den Aufbau einer konformen und skalierbaren AWS Landing Zone & Foundation, um den kritischen Betrieb aufrechtzuerhalten.

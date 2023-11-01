@@ -1,0 +1,16 @@
+name: HUGO DEPLOY
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hugo-deploy:
+    uses: nuvibit/github-workflows/.github/workflows/hugo-deploy.yml@hugo-deploy
+    with:
+      hugo_dry_run: true
+      hugo_target_name: "aws"
+    secrets:
+      HUGO_AWS_ACCESS_KEY_ID: ${{ secrets.HUGO_AWS_ACCESS_KEY_ID }}
+      HUGO_AWS_SECRET_ACCESS_KEY: ${{ secrets.HUGO_AWS_SECRET_ACCESS_KEY }}

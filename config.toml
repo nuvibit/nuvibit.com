@@ -363,3 +363,17 @@ weight = 13
     X-Content-Type-Options = 'nosniff'
     X-Frame-Options = 'DENY'
     X-XSS-Protection = '1; mode=block'
+
+
+###################################### DEPLOYMENT ######################################
+
+[deployment]
+# By default, files are uploaded in an arbitrary order.
+# Files that match the regular expressions in the "Order" list
+# will be uploaded first, in the listed order.
+order = ["images/*"]
+
+[[deployment.targets]]
+  name = "aws"
+  URL = "s3://www.nuvibit.com?region=eu-central-1&prefix=public/"
+  cloudFrontDistributionID = "E12OG0KGSMQIU3"

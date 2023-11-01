@@ -7,9 +7,9 @@ on:
 
 jobs:
   hugo-deploy:
-    uses: nuvibit/github-workflows/.github/workflows/hugo-deploy.yml@hugo-deploy
+    uses: nuvibit/github-workflows/.github/workflows/hugo-deploy.yml@v1
     with:
-      hugo_dry_run: true
+      hugo_dry_run: false
       hugo_target_name: "aws"
     secrets:
       HUGO_AWS_ACCESS_KEY_ID: ${{ secrets.HUGO_AWS_ACCESS_KEY_ID }}

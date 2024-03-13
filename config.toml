@@ -64,64 +64,70 @@ description = "Simplify cloud management and maximize performance, compliance an
 ###################################### English Navigation ######################################
 
 [[Languages.en.menu.main]]
-name = "Home"
-url = "/"
-weight = 1
-
-[[Languages.en.menu.main]]
-identifier = "solutions"
-name = "Solutions"
-url = "/solutions/"
+identifier = "services"
+name = "Services"
+url = "/services/"
 weight = 2
 
 [[Languages.en.menu.main]]
-identifier = "terraform-collection"
-name = "Nuvibit Terraform Collection (NTC)"
-url = "/solutions/terraform-collection/"
-parent = "solutions"
+identifier = "cloud-transformation"
+name = "Cloud Transformation"
+url = "/services/cloud-transformation/"
+parent = "services"
 weight = 3
 
 [[Languages.en.menu.main]]
-identifier = "semper"
-name = "SEMPER"
-url = "/solutions/semper/"
-parent = "solutions"
+identifier = "cloud-foundation"
+name = "AWS Foundation & Migration"
+url = "/services/cloud-foundation/"
+parent = "services"
 weight = 4
 
 [[Languages.en.menu.main]]
-identifier = "foundation-blueprint"
-name = "Foundation Blueprint"
-url = "/solutions/foundation-blueprint/"
-parent = "solutions"
+identifier = "managed-services"
+name = "Managed Services [placeholder]"
+url = "/services/managed-services/"
+parent = "services"
 weight = 5
 
 [[Languages.en.menu.main]]
-identifier = "tools"
-name = "Tools"
-url = "/tools/"
-weight = 6
+identifier = "nuvibit-terraform-collection"
+name = "NTC"
+url = "/nuvibit-terraform-collection/"
+weight = 7
+
+[[Languages.en.menu.main]]
+identifier = "success-stories"
+name = "Success Stories"
+url = "/success-stories/"
+weight = 8
+
+[[Languages.en.menu.main]]
+identifier = "resources"
+name = "Resources"
+url = "/resources"
+weight = 9
 
 [[Languages.en.menu.main]]
 identifier = "vpc-subnet-calculator"
 name = "AWS VPC Subnet Calculator"
 url = "/vpc-subnet-calculator/"
-parent = "tools"
-weight = 7
+parent = "resources"
+weight = 10
 
 [[Languages.en.menu.main]]
+identifier = "blog"
 name = "Blog"
 url = "/blog/"
-weight = 8
+parent = "resources"
+weight = 11
 
 [[Languages.en.menu.main]]
-name = "Team"
-url = "/team/"
-weight = 9
+identifier = "about-us"
+name = "About Us"
+url = "/about-us/"
+weight = 12
 
-[[Languages.en.menu.main]]
-name = "Contact"
-url = "/contact/"
-weight = 10
 
 ###################################### English Footer ######################################
 
@@ -213,11 +219,6 @@ title = "Nuvibit | Revolutionieren Sie Ihre AWS Cloud-Infrastruktur"
 description = "Vereinfachtes Cloud-Management und maximale Performance, Compliance und Skalierbarkeit mit einer AWS Landing Zone & Foundation von Nuvibit."
 
 ###################################### German Navigation ######################################
-
-[[Languages.de.menu.main]]
-name = "Home"
-url = "/"
-weight = 1
 
 [[Languages.de.menu.main]]
 identifier = "solutions"

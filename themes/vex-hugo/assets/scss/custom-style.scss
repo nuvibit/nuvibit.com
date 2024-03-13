@@ -97,7 +97,7 @@ header .dropdown-menu {
 
 .nav-link {
     color: #fafafa !important;
-    font-size: 18px !important;
+    font-size: 17px !important;
     font-weight: 700 !important;
 }
 
@@ -138,6 +138,12 @@ header .dropdown-menu {
 .btn-main {
     background-color: #3fa7df !important;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08) !important;
+}
+
+.btn-demo {
+    border-radius: 5px;
+    padding: 7px 15px;
+    margin-left: 50px;
 }
 
 .btn-main:hover {
